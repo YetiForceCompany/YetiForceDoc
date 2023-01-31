@@ -1,20 +1,30 @@
 {
 	"title": {
-		"message": "Dokumentacja YetiForce"
+		"message": "Dokumentacja YetiForce",
+		"description": "The title in the navbar"
 	},
 	"item.label.Introduction": {
-		"message": "Wprowadzenie"
+		"message": "Wprowadzenie",
+		"description": "Navbar item with label Introduction"
 	},
 	"item.label.User": {
-		"message": "Użytkownik"
+		"message": "Użytkownik",
+		"description": "Navbar item with label User"
 	},
 	"item.label.Administrator": {
-		"message": "Administrator"
+		"message": "Administrator",
+		"description": "Navbar item with label Administrator"
 	},
 	"item.label.Developer": {
-		"message": "Programista"
+		"message": "Programista",
+		"description": "Navbar item with label Developer"
 	},
 	"item.label.Contributing / Community": {
-		"message": "Społeczność"
+		"message": "Społeczność",
+		"description": "Navbar item with label Contributing / Community"
+	},
+	"item.label.Portal": {
+		"message": "Portal",
+		"description": "Navbar item with label Portal"
 	}
 }
