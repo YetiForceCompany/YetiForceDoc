@@ -1,0 +1,7 @@
+.idea/
+.history/
+.docusaurus/
+.frontmatter/
+node_modules/
+build/
+i18n — kopia/
