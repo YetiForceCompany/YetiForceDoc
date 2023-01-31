@@ -30,7 +30,7 @@ module.exports = {
 					routeBasePath: '/',
 					sidebarPath: require.resolve('./sidebars.js'),
 					// Please change this to your repo.
-					editUrl: 'https://github.com/YetiForceCompany/YetiForceDoc/main/'
+					editUrl: 'https://github.com/YetiForceCompany/YetiForceDoc/edit/main/'
 				},
 				theme: {
 					customCss: [require.resolve('./src/css/custom.css')]
