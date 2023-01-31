@@ -16,10 +16,8 @@ module.exports = {
 	organizationName: 'YetiForceCompany',
 	projectName: 'YetiForceCRM',
 	i18n: {
-		// defaultLocale: 'en',
-		// locales: ['en', 'pl']
-		defaultLocale: 'pl',
-		locales: ['pl']
+		defaultLocale: 'en',
+		locales: ['en', 'pl']
 	},
 	presets: [
 		[
