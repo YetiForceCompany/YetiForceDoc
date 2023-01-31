@@ -1,0 +1,20 @@
+{
+	"title": {
+		"message": "Dokumentacja YetiForce"
+	},
+	"item.label.Introduction": {
+		"message": "Wprowadzenie"
+	},
+	"item.label.User": {
+		"message": "Użytkownik"
+	},
+	"item.label.Administrator": {
+		"message": "Administrator"
+	},
+	"item.label.Developer": {
+		"message": "Programista"
+	},
+	"item.label.Contributing / Community": {
+		"message": "Społeczność"
+	}
+}

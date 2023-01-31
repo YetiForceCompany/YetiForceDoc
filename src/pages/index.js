@@ -25,7 +25,7 @@ const features = [
 		imageUrl: 'img/main/administrator.svg'
 	},
 	{
-		message: '📝 Developer Guides',
+		message: 'Developer Guides',
 		url: 'developer-guides',
 		imageUrl: 'img/main/developer.svg'
 	}
@@ -58,11 +58,14 @@ export default function Home() {
 	const context = useDocusaurusContext();
 	const { siteConfig = {} } = context;
 	return (
-		<Layout title={`${siteConfig.title}`} description="Official YetiForce open source system documentation/guide">
+		<Layout
+			title={`${translate({ message: siteConfig.title })}`}
+			description={`${translate({ message: 'Official documentation/guide of the YetiForce system' })}`}
+		>
 			<header className={clsx('hero hero--primary', styles.heroBanner)}>
 				<div className="container">
-					<h1 className="hero__title">{siteConfig.title}</h1>
-					<p className="hero__subtitle">{siteConfig.tagline}</p>
+					<h1 className="hero__title">{`${translate({ message: siteConfig.title })}`}</h1>
+					<p className="hero__subtitle">{`${translate({ message: siteConfig.tagline })}`}</p>
 					<div className={styles.buttons}>
 						<Link className={clsx('button button--outline button--secondary button--lg', styles.getStarted)} to={useBaseUrl('introduction/')}>
 							{translate({

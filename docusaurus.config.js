@@ -6,10 +6,10 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
 	title: 'YetiForce Documentation',
-	tagline: '🏗 Site under construction 🏗 / 👷 Strona w trakcie budowy 👷',
+	tagline: '👷 Site under construction 👷',
 	url: 'https://doc.yetiforce.com',
 	baseUrl: '/',
-	// baseUrl: '/doc_yetiforce_com/',
+	// baseUrl: '/YetiForceDoc/build/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
@@ -28,7 +28,9 @@ module.exports = {
 					routeBasePath: '/',
 					sidebarPath: require.resolve('./sidebars.js'),
 					// Please change this to your repo.
-					editUrl: 'https://github.com/YetiForceCompany/YetiForceDoc/edit/main/'
+					editUrl: 'https://github.com/YetiForceCompany/YetiForceDoc/edit/main/',
+					showLastUpdateAuthor: false,
+					showLastUpdateTime: true
 				},
 				theme: {
 					customCss: [require.resolve('./src/css/custom.css')]
