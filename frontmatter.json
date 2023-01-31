@@ -1,0 +1,13 @@
+{
+	"$schema": "https://frontmatter.codes/frontmatter.schema.json",
+	"frontMatter.framework.id": "docusaurus",
+	"frontMatter.content.publicFolder": "static",
+	"frontMatter.content.pageFolders": [
+		{
+			"title": "YetiForceDoc",
+			"path": "[[workspace]]"
+		}
+	],
+	"frontMatter.content.autoUpdateDate": false,
+	"frontMatter.content.fmHighlight": true
+}

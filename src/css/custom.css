@@ -1,0 +1,38 @@
+/**
+ * @copyright YetiForce S.A.
+ * @license   YetiForce Public License 5.0 (licenses/LicenseEN.txt or yetiforce.com)
+ * @author    Mariusz Krzaczkowski <m.krzaczkowski@yetiforce.com>
+ */
+@import url('https://doc.yetiforce.com/custom/fontawesome-free/css/all.css');
+@import url('https://doc.yetiforce.com//custom/icons/additionalIcons.css');
+@import url('https://doc.yetiforce.com//custom/icons/adminIcon.css');
+@import url('https://doc.yetiforce.com//custom/icons/yfi.css');
+@import url('https://doc.yetiforce.com//custom/icons/yfm.css');
+
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%;
+  --ifm-tabs-padding-horizontal: 1rem;
+  --ifm-tabs-padding-vertical: 0.1rem;
+  --ifm-list-item-margin: 0;
+  --ifm-list-paragraph-margin: 0.3rem;
+  --ifm-paragraph-margin-bottom: 0.3rem;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+.theme-doc-markdown img{
+	-webkit-box-shadow: 2px 2px 7px 1px rgb(66 68 90);
+	-moz-box-shadow: 2px 2px 7px 1px rgb(66 68 90);
+	box-shadow: 2px 2px 7px 1px rgb(66 68 90);
+}
