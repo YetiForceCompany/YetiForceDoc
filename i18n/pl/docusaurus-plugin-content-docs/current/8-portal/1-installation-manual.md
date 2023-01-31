@@ -13,9 +13,10 @@ tags:
   - instalacja
   - portal
 preview: install-1.png
+draft: true
 ---
 
-W tym artykule pokażemy jak szybko zainstalować [YetiForce Portal 2](https://github.com/YetiForceCompany/YetiForcePortal2). Portal może służyć jako miejsce przeznaczone dla klienta, dostawcy lub partnera. Jest to uniwersalne narzędzie do komunikacji ze wszystkimi osobami z którymi współpracujemy. 
+W tym artykule pokażemy jak szybko zainstalować [YetiForce Portal 2](https://github.com/YetiForceCompany/YetiForcePortal2). Portal może służyć jako miejsce przeznaczone dla klienta, dostawcy lub partnera. Jest to uniwersalne narzędzie do komunikacji ze wszystkimi osobami z którymi współpracujemy.
 
 :::tip
 **Koniecznie zapoznaj się ze wszystkimi poniższymi informacjami przed przystąpieniem do instalacji systemu.**
@@ -57,11 +58,11 @@ Instalacja Portalu odbywa się tak samo jak inatslacja systemu CRM - za pomocą 
 
 W pierwszej kolejności przygotuj pliki instalacyjne. Pobierz YetiForce i najnowszą wersję Portalu z naszych [oficjalnych źródeł](introduction/download).
 
-  :::warning
-  Zalecamy pobranie wersji oznaczonych jako "complete", na przykład `YetiForcePortal2-6.2-complete.zip`. Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`.
-  Ważna jest kolejność - najpierw `yarn`, potem `composer`.
-  Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
-  :::
+:::warning
+Zalecamy pobranie wersji oznaczonych jako "complete", na przykład `YetiForcePortal2-6.2-complete.zip`. Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`.
+Ważna jest kolejność - najpierw `yarn`, potem `composer`.
+Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
+:::
 
 - Pobrany plik ZIP rozpakuj, np. za pomocą programu 7-Zip.
 - Katalog z Portalem, który otrzymasz po rozpakowaniu pliku ZIP, skopiuj na serwer WWW, np. za pomocą programu FileZilla, WinSCP.

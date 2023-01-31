@@ -56,7 +56,7 @@ module.exports = {
 				{ to: 'administrator-guides', label: 'Administrator', position: 'left' },
 				{ to: 'developer-guides', label: 'Developer', position: 'left' },
 				{ to: 'contributing', label: 'Contributing / Community', position: 'left' },
-				{ to: 'portal', label: 'Portal', position: 'left' },
+				// { to: 'portal', label: 'Portal', position: 'left' },
 				{ type: 'localeDropdown', position: 'right' },
 				{ label: 'yetiforce.com', position: 'right', href: 'https://yetiforce.com/' },
 				{ label: 'GitHub', position: 'right', href: 'https://github.com/YetiForceCompany/YetiForceCRM' }
