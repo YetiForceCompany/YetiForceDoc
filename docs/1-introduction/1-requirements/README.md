@@ -208,6 +208,7 @@ Permissions to folders and files are often the most common source of problems fo
 We reccomend the following configuration: 
 - files [644]
 - folders [755]
+
 The configuration should allow the uploaded files to have full read and write access at the browser level, without changing the file and folder permissions. It is necessary to remember that when the application is running, it also performs various operations such as reading and writing, as well as creating and deleting files. If you don't know how to configure the permissions, ask your administrator to do it and send them a link to this article.
 
 - Configuration directory `config/`
