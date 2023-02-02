@@ -23,7 +23,13 @@
   --ifm-list-item-margin: 0;
   --ifm-list-paragraph-margin: 0.3rem;
   --ifm-paragraph-margin-bottom: 0.3rem;
+  --ifm-color-primary: #f7cb16;
+  --ifm-link-color: #01374d;
 }
+
+.footer--dark {
+	--ifm-footer-background-color: #01374d;
+  }
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
