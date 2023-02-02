@@ -8,20 +8,20 @@ keywords:
   - YetiForce
   - LAMP
   - LEMP
+  - środowisko
 tags:
   - serwer
   - wymagania
   - systemu
   - LAMP
   - LEMP
+  - środowisko
 description: Jakie są wymagania dla systemu YetiForce
 ---
 
 ## Wstęp
 
-YetiForce stawia pewne wymagania serwerom WWW - dostosowanie serwera jest kluczowe dla prawidłowej instalacji, jak również stabilnej pracy systemu. Nieprawidłowa konfiguracja serwera jest najczęstszą przyczyną problemów pojawiających się w YetiForce.
-
-Większość profesjonalnych serwerów WWW spełnia wymagania jakie podajemy poniżej. Jeżeli jednak zdarzy się, że Twój serwer nie spełnia wszystkich wymagań, poproś swojego administratora, aby poprawił konfigurację i podaj mu link do tego artykułu. Jeżeli Twój administrator nie chce zmienić konfiguracji, to czas najwyższy przejść na inny serwer, ponieważ to serwer powinien dostosować się do Ciebie, a nie Ty do serwera.
+YetiForce stawia pewne wymagania serwerom WWW - dostosowanie serwera jest kluczowe dla prawidłowej instalacji, jak również stabilnej pracy systemu. Nieprawidłowa konfiguracja serwera jest najczęstszą przyczyną problemów pojawiających się w YetiForce. Większość profesjonalnych serwerów WWW spełnia wymagania jakie podajemy poniżej. Jeżeli jednak zdarzy się, że Twój serwer nie spełnia wszystkich wymagań, poproś swojego administratora, aby poprawił konfigurację i podaj mu link do tego artykułu. Jeżeli Twój administrator nie chce zmienić konfiguracji, to czas najwyższy przejść na inny serwer, ponieważ to serwer powinien dostosować się do Ciebie, a nie Ty do serwera.
 
 Podczas instalacji system weryfikuje aktualną konfigurację serwera i pokazuje elementy, które są niepoprawne i należy im zmienić parametr. Należy pamiętać, że przedstawiane wymagania poniżej nie są idealne dla każdego, a więc w przypadku bardziej wymagających klientów wymagania te powinny zostać zweryfikowane i zoptymalizowane.
 
@@ -38,6 +38,7 @@ Wymagania są zależne od wersji systemu, przed rozpoczęciem sprawdź jakie wym
 
 Poniżej opisane wymagania dotyczą wersji [![Latest Stable Version](https://poser.pugx.org/yetiforce/yetiforce-crm/v/stable)](https://packagist.org/packages/yetiforce/yetiforce-crm)
 ![release date](https://img.shields.io/github/release-date/YetiForceCompany/YetiForceCRM)
+
 :::
 
 ## Możliwe problemy
@@ -57,7 +58,7 @@ import DocCardList from '@theme/DocCardList';
     System YetiForce nie działa prawidłowo z rozszerzeniem WWW ModSecurity
     :::
 
-- ** Baza danych**
+- **Baza danych**
 
   - **MariaDB `10.6` (rekomendowany)** - zalecamy najnowsze stabilne wersje oprogramowania. Nie zalecamy wersji starszych niż wersja `10.1`.
   - **MySQL `5.7`, `8.0`** - poprawnie działa również na wcześniejszej wersji tj. `5.6`, jednakże zalecamy najnowsze stabilne wersje oprogramowania. Możesz również używać oprogramowania alternatywnego, ale kompatybilnego z tym oprogramowaniem.
@@ -126,13 +127,23 @@ Przykładowa konfiguracja MariaDB/MySQL:
 
 Pliki konfiguracyjne np. `/etc/php/8.0/fpm/php.ini`, `/etc/php/8.0/cli/php.ini`
 
-```ini reference title="Ostatnia stabilna wersja: https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini"
+<details>
+  <summary>Ostatnia stabilna wersja: github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini</summary>
+
+```ini reference
 https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini
 ```
 
-```ini reference title="Wersja deweloperska: https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini"
+</details>
+
+<details>
+  <summary>Wersja deweloperska: github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini</summary>
+
+```ini reference
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini
 ```
+
+</details>
 
 ### Konfiguracja bibliotek zewnętrznych
 
@@ -207,7 +218,14 @@ Zalecamy aby połączenie z serwerem, na którym znajduje się nasz CRM, było z
 
 ### Uprawnienia do folderów i plików
 
-Uprawnienia do folderów i plików często są głównym źródłem problemów dla osób instalujących aplikacje na swoich serwerach VPS i serwerach dedykowanych. Wszystkie pliki i foldery CRM powinny mieć tego samego właściciela. Zalecamy taką konfigurację plików `644` i folderów `755`, aby wgrane pliki bez zmiany uprawnień na folderach i plikach miały z poziomu przeglądarki pełen dostęp do odczytu i zapisu (aby przeglądarka miała takie uprawnienia). Należy pamiętać, że sama aplikacja podczas pracy wykonuje różne operacje takie jak odczyt, zapis, jak również tworzenie i usuwanie plików. Jeżeli nie wiesz jak prawidłowo skonfigurować uprawnienia, poproś o to swojego administratora, wysyłając mu link do tego artykułu.
+Uprawnienia do folderów i plików często są głównym źródłem problemów dla osób instalujących aplikacje na swoich serwerach VPS i serwerach dedykowanych. Wszystkie pliki i foldery CRM powinny mieć tego samego właściciela.
+
+Zalecamy następującą konfigurację:
+
+- pliki `644` (rw-r--r--)
+- foldery `755` (rwxr-xr-x)
+
+Konfiguracja powinna umożliwiać serwerowi WWW na pełne uprawnienia do plików, bez konieczności zmiany uprawnień na plikach i folderach. Należy pamiętać, że sama aplikacja podczas pracy wykonuje różne operacje takie jak odczyt, zapis, jak również tworzenie i usuwanie plików. Jeżeli nie wiesz jak prawidłowo skonfigurować uprawnienia, poproś o to swojego administratora, wysyłając mu link do tego artykułu.
 
 - Configuration directory `config/`
 - Application data directory `app_data/`
@@ -274,7 +292,7 @@ Część serwerów umożliwia zmianę konfiguracji za pomocą pliku `.htaccess`,
 #### Apache module
 
 :::warning
-Poniższa konfiguracja działa tylko jak ustawiono w konfiguracji Apache np. `httpd.conf` "AllowOverride Options" lub"AllowOverride All"
+Poniższa konfiguracja działa tylko jak ustawiono w konfiguracji Apache np. `httpd.conf` "AllowOverride Options" lub "AllowOverride All"
 :::
 
 ```apacheconf
@@ -307,13 +325,20 @@ Poniższa konfiguracja działa tylko jak ustawiono w konfiguracji Apache np. `ht
 
 ## Dodatkowa konfiguracja z użyciem user.ini
 
-Istnieje możliwość szybkiej zmiany konfiguracji PHP przez utworzenie pliku user.ini w głównym katalogu `$_SERVER['DOCUMENT_ROOT']`, aktualnie wspiera to CGI/FastCGI.
-
-Jednak należy pamiętać, że nie wszystkie parametry można w ten sposób konfigurować (https://www.php.net/manual/en/configuration.changes.modes.php).
+Istnieje możliwość szybkiej zmiany konfiguracji PHP przez utworzenie pliku user.ini w głównym katalogu `$_SERVER['DOCUMENT_ROOT']`, aktualnie wspiera to CGI/FastCGI.Jednak należy pamiętać, że nie wszystkie parametry można w ten sposób konfigurować (https://www.php.net/manual/en/configuration.changes.modes.php).
 
 Więcej informacji znajduje się na stronie: https://secure.php.net/manual/en/configuration.file.per-user.php
 
-Przykładowy plik: https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/.user.ini
+Przykładowy plik:
+
+<details>
+  <summary>https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/.user.ini</summary>
+
+```ini reference
+https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/.user.ini
+```
+
+</details>
 
 ## Wymagania na czas aktualizacji systemu
 
