@@ -17,7 +17,7 @@ tags:
 description: YetiForce webserver requirements
 ---
 
-## Introduction
+## Introduction 1
 
 YetiForce CRM requires a proper web server configuration. It is a key element for the process of installation as well as for the system to be stable. Most professional web servers meet the requirements presented below. However, in case your server does not meet all the requirements, ask your administrator to adjust the configuration and send him a link to this article. If your administator cannot change the configuration, it might be time to consider upgrading your server.  
 
