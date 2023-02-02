@@ -1,14 +1,16 @@
 ---
-title: Release notes | Changelog
+title: Informacje o wydaniu | Dziennik zmian
 description: Opis zmian które pokazywały się w kolejnych wersjach systemu YetiForce.
 keywords:
-  - changes
-  - release
-  - What's
-  - New
+  - zmiany
+  - zmian
+  - wydania
+  - dziennik
+  - co nowego
 tags:
-  - release
-  - changes
+  - wydania
+  - dziennik zmian
+  - co nowego
 ---
 
 Opis zmian które pokazywały się w kolejnych wersjach systemu YetiForce. Zawierają one nie tylko opisy dotyczące nowych funkcjonalności, ale również naprawionych błędów czy też zmian w istniejących funkcjonalnościach.
