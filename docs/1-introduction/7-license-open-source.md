@@ -94,7 +94,7 @@ Aby lepiej zrozumieć problem opiszemy to na przykładzie najpopularniejszych li
 Poniżej znajduje się treść licencji, którą stworzyliśmy aby dostarczać otwarte oprogramowanie klasy enterprise dla najbardziej wymagających organizacji:
 
 ```txt reference
-https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/licenses/LicensePL.txt
+https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/licenses/LicenseEN.txt
 ```
 
 ### Różnica pomiędzy `YFPL` a licencją MIT
@@ -229,7 +229,7 @@ Poniżej znajduje się najważniejszy wycinek licencji pomiędzy YetiForce a wsp
 2. Udzielenie licencji patentowej
    Poprzez każdy Twój wkład w tworzenie systemu YetiForce, udzielasz także licencji patentowej spółce YetiForce S.A., a także odbiorcom oprogramowania. Daje to możliwość dalszego rozwoju, użytkowania i przekazywania Twojego wkładu, a tym samym nie pociąga spółki YetiForce do odpowiedzialności, jeśli jakikolwiek podmiot wytoczy przeciwko Tobie proces sądowy dotyczący patentu.
 3. Oświadczasz, że masz prawo do udzielenia powyższej licencji.
-   W przypadku jeśli Twój pracodawca ma jakiekolwiek prawo do Twojego wkładu, to powinieneś uzyskać jego zgodę na współtworzenie w jego imieniu, a on powinien zrezygnować z prawa do Twojego wkładu na rzecz YetiForce Sp. z o.o. Podpisując niniejszą umowę oświadczasz, że uzyskałeś takową zgodę od swojego pracodawcy.
+   W przypadku jeśli Twój pracodawca ma jakiekolwiek prawo do Twojego wkładu, to powinieneś uzyskać jego zgodę na współtworzenie w jego imieniu, a on powinien zrezygnować z prawa do Twojego wkładu na rzecz YetiForce S.A. Podpisując niniejszą umowę oświadczasz, że uzyskałeś takową zgodę od swojego pracodawcy.
 4. Oświadczasz, że każdy Twój wkład jest Twojego autorstwa.
    Zaświadczasz, że Twój wkład jest wynikiem własnej twórczości i nie narusza praw autorskich innych osób. W przypadku chęci złożenia wkładu, który nie jest Twojego autorstwa, możesz przesłać go do YetiForce S.A. podając źródło, oraz wszelkie informacje dotyczące licencji.
 5. Nie jesteś zobowiązany do udzielania wsparcia dla Twojego wkładu, poza zakresem, w jakim chcesz takiego wsparcia udzielać.
