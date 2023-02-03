@@ -41,7 +41,7 @@ module.exports = {
 	themeConfig: {
 		metadata: [
 			{ name: 'keywords', content: 'yetiforce,help,doc,docs,documentation,guides,wiki,knowledge' },
-			{ name: 'description', content: 'Official YetiForce Open Source System documentation / guide / knowledge' }
+			{ name: 'description', content: 'Official YetiForce System documentation / guide / knowledge' }
 		],
 		image: 'img/logo_horizontal.png',
 		prism: {
