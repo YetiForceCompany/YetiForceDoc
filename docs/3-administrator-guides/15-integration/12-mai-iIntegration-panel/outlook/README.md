@@ -31,8 +31,8 @@ Artykuł omawia najważniejsze kwestie związane z dodatkiem Outlook do systemu 
 
 ## Prezentacja wideo
 
-<Tabs groupId="Prezentacja wideo Office">
-	<TabItem value="youtube" label="🎬 YouTube">
+<Tabs groupId="WwgE1yX6akE">
+	<TabItem value="youtube-WwgE1yX6akE" label="🎬 YouTube">
 		<ReactPlayer
 			url="https://www.youtube.com/watch?v=WwgE1yX6akE"
 			width="100%"
@@ -40,7 +40,7 @@ Artykuł omawia najważniejsze kwestie związane z dodatkiem Outlook do systemu 
 			controls={true}
 		/>
 	</TabItem>
-	<TabItem value="yetiforce" label="🎥 YetiForce TV">
+	<TabItem value="yetiforce-WwgE1yX6akE" label="🎥 YetiForce TV">
 		<ReactPlayer url="/video/outlook-integration-panel.mp4" width="100%" height="500px" controls={true} />
 	</TabItem>
 </Tabs>

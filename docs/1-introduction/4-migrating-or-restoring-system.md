@@ -21,16 +21,16 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import ReactPlayer from 'react-player';
 
-<Tabs groupId="Prezentacja wideo">
-	<TabItem value="youtube" label="🎬 YouTube">
+<Tabs groupId="AAnD_Npa0ZM">
+	<TabItem value="youtube-AAnD_Npa0ZM" label="🎬 YouTube">
 		<ReactPlayer
-			url="https://www.youtube.com/watch?v=AAnD_Npa0ZM&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh"
+			url="https://www.youtube.com/watch?v=AAnD_Npa0ZM"
 			width="100%"
 			height="500px"
 			controls={true}
 		/>
 	</TabItem>
-	<TabItem value="yetiforce" label="🎥 YetiForce TV">
+	<TabItem value="yetiforce-AAnD_Npa0ZM" label="🎥 YetiForce TV">
 		<ReactPlayer url="/video/system-migration.mp4" width="100%" height="500px" controls={true} />
 	</TabItem>
 </Tabs>

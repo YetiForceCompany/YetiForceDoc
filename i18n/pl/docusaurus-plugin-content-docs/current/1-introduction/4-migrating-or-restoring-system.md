@@ -24,7 +24,7 @@ import ReactPlayer from 'react-player';
 <Tabs groupId="Prezentacja wideo">
 	<TabItem value="youtube" label="🎬 YouTube">
 		<ReactPlayer
-			url="https://www.youtube.com/watch?v=AAnD_Npa0ZM&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh"
+			url="https://www.youtube.com/watch?v=AAnD_Npa0ZM"
 			width="100%"
 			height="500px"
 			controls={true}

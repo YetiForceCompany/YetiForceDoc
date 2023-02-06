@@ -29,7 +29,7 @@ import ReactPlayer from 'react-player';
 <Tabs groupId="Language installation and update">
 	<TabItem value="youtube" label="🎬 YouTube">
 		<ReactPlayer
-			url="https://www.youtube.com/watch?v=V-2x00bb4CI&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh"
+			url="https://www.youtube.com/watch?v=V-2x00bb4CI"
 			width="100%"
 			height="500px"
 			controls={true}
