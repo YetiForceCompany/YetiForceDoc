@@ -73,11 +73,11 @@ import DocCardList from '@theme/DocCardList';
 
 Configuration files eg. `/etc/my.cnf`, `/etc/mysql/my.cnf`, `/etc/mysql/conf.d/`, `my.ini`
 
-- SQL_MODE should not contain STRICT_TRANS_TABLE i ONLY_FULL_GROUP_BY
-- ENGINE = InnoDB should be available and enabled by default (disable --skip-innodb)
+- `SQL_MODE` should not contain `STRICT_TRANS_TABLE` i `ONLY_FULL_GROUP_BY`
+- `ENGINE = InnoDB` should be available and enabled by default (disable --skip-innodb)
 
 :::warning
-Ze względów bezpieczeństwa zalecamy aby każda baza danych posiadała dedykowanego użytkowniku, nie zalecamy używania użytkownika bazodanowego `root` do komunikacji z bazą danych.
+Ze względów bezpieczeństwa zalecamy aby każda baza danych posiadała dedykowanego użytkownika, nie zalecamy używania użytkownika bazodanowego `root` do komunikacji z bazą danych.
 :::
 
 ```ini
