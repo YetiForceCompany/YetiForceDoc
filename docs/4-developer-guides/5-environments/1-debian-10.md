@@ -82,6 +82,8 @@ apt-get -y autoclean
 
 ## 7. Tworzenie użytkowników, grup oraz konfiguracja struktury
 
+Ze względów bezpieczeństwa tworzymy oddzielnego użytkownika w OS, dzięki temu ograniczamy uprawniania dla aplikacji.
+
 ```bash
 groupadd yfprod
 useradd -g yfprod yfprod
@@ -252,3 +254,10 @@ rm public_html/.user.ini
 ## 14. Instalacja systemu YetiForce
 
 Pełny opis instalacji systemu YetiForce znajduje się w artykule: [Instalacja systemu YetiForce](/introduction/installation-manual#jak-zainstalować-system-crm-)
+
+## 15. Uwagi końcowe
+
+:::warning
+Po zakończeniu konfiguracji dostęp do SSH powinien zostać ograniczony tylko do zaufanych adresów IP lub VPN.
+Zalecamy również wyłączenie możliwości logowania się na użytkownika root bezpośrednio przez SSH oraz instalację i konfigurację firewall.
+:::

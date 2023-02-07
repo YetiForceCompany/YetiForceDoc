@@ -50,6 +50,10 @@ import DocCardList from '@theme/DocCardList';
 ## Oprogramowanie bazowe dla serwera (LAMP/LEMP)
 
 - **System operacyjny - Debian, Ubuntu, RedHat, Mint** - działa na większości dystrybucji linuksowych. Nie zalecamy systemu operacyjnego MS Windows, jak również MS Windows Server. Pomimo, że nasz system dobrze sobie radzi na serwerach Windows, to nie są one optymalne pod kątem działania aplikacji WWW.
+  :::warning
+  Ze względów bezpieczeństwa zalecamy aby każda wersja systemu YetiForce (PROD i TEST) została uruchomiona na oddzielnym/dedykowanym użytkowniku systemu operacyjnego (a najlepiej na oddzielnym serwerze) np. yfprod, yftest.
+  Nie zalecamy używania jednego użytkownika systemu operacyjnego do kilku aplikacji/stron WWW.
+  :::
 - **Serwer WWW**
 
   - **Nginx `1.23` (rekomendowany)** - poprawnie działa również na wcześniejszych wersjach, jednakże zalecamy najnowsze stabilne wersje oprogramowania. Możesz również używać oprogramowania alternatywnego, ale kompatybilnego z tym oprogramowaniem.
@@ -71,6 +75,10 @@ Pliki konfiguracyjne np. `/etc/my.cnf`, `/etc/mysql/my.cnf`, `/etc/mysql/conf.d/
 
 - SQL_MODE nie powinno zawierać STRICT_TRANS_TABLE i ONLY_FULL_GROUP_BY
 - ENGINE = InnoDB powinno być dostępne i domyślnie włączone. (wyłącz --skip-innodb)
+
+:::warning
+Ze względów bezpieczeństwa zalecamy aby każda baza danych posiadała dedykowanego użytkowniku, nie zalecamy używania użytkownika bazodanowego `root` do komunikacji z bazą danych.
+:::
 
 ```ini
 [client]
