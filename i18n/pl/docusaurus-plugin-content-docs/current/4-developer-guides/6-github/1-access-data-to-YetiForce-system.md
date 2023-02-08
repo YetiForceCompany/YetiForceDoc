@@ -1,6 +1,15 @@
 ---
 title: Dane dostępowe do systemu YetiForce
-draft: true
+description: Jeśli jesteście użytkownikami systemu YetiForce i macie problem, które chcecie do nas zgłosić w ramach SLA, to artykuł opisuje jakie dane są nam potrzebne
+keywords:
+  - dane
+  - dostępowe
+  - problem
+  - zgłoszenie
+  - YetiForce
+tags:
+  - dane dostępowe
+  - sla
 ---
 
 Jeśli jesteście użytkownikami systemu YetiForce i macie problem, które chcecie do nas zgłosić w ramach SLA, to dla przyśpieszenia obsługi takiego zgłoszenia, potrzebujemy kilka podstawowych danych, opisanych poniżej:
