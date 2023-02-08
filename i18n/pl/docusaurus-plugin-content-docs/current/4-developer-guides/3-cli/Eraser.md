@@ -6,7 +6,7 @@ keywords:
   - CLI
   - YetiForce
 tags:
-  - YF CLI
+  - YFCLI
   - CLI
   - Konsola
 preview: Eraser-0.jpg

@@ -9,7 +9,7 @@ keywords:
   - YF
   - YetiForce
 tags:
-  - YF CLI
+  - YFCLI
   - CLI
   - Konsola
 preview: Cli.jpg
@@ -46,7 +46,7 @@ php cli.php -h
 
 ![Help CLI](Help.png)
 
-## Dostępne moduły YF CLI
+## Dostępne moduły YFCLI
 
 import DocCardList from '@theme/DocCardList';
 
