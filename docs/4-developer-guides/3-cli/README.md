@@ -12,6 +12,7 @@ tags:
   - YF CLI
   - CLI
   - Konsola
+preview: Cli.jpg
 ---
 
 Opis interfejsu CLI (Command Line Interface) do obsługi niestandardowych operacji systemu YetiForce.

@@ -9,6 +9,7 @@ tags:
   - YF CLI
   - CLI
   - Konsola
+preview: Eraser-0.jpg
 ---
 
 Moduł `Usuwanie danych` dostępny od wersji `6.4.146`
