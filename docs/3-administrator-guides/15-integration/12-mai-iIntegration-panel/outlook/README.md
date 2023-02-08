@@ -73,7 +73,7 @@ More information: [Outlook add-in requirements](https://learn.microsoft.com/en-u
 Please check your Outlook version as the add-on is based on the web browser engine.
 The YetiForce system will not work fully properly for old versions that support the "Internet Explorer" engine.
 
-For a full description of the requirements, see [Browsers used by Office add-ins](https://learn.microsoft.com/en-us/office/dev/add-ins/concepts/browsers-used-by-office-web- add-ins)
+For a full description of the requirements, see [Browsers used by Office add-ins](https://learn.microsoft.com/en-us/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins)
 
 ## Install / enable the integration
 
