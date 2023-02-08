@@ -1,15 +1,14 @@
 ---
-title: Dodatek typu add-in do programu Outlook
-description: Integracja umożliwia pokazanie/pracę systemu YetiForce w zewnętrznym kliencie
-  poczty Outlook.
+title: Outlook Add-in
+description: The integration enables the YetiForce system to work or be displayed in an external Outlook e-mail client.
 tags:
-  - poczta
+  - email
   - outlook add-in
-  - panel integracji
+  - integration panel
 keywords:
-  - poczta
+  - email
   - outlook add-in
-  - panel integracji
+  - integration panel
 preview: preview.png
 ---
 
@@ -17,19 +16,19 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import ReactPlayer from 'react-player';
 
-## Opis panelu
+## Panel description
 
-Dodatek został zbudowany zgodnie z Office Outlook Add-in ([Dokumentacja](https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/)), który umożliwia pokazanie okna w postaci panelu systemu YetiForce we wszystkich aplikacjach Outlook.
+The add-in was built in accordance with the Office Outlook Add-in ([Documentation](https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/)), which allows you to show a YetiForce panel in the form of a window in all Outlook applications.
 
-Dzięki takiemu rozwiązaniu nie jest konieczne wykonywanie kopii całego systemu YetiForce w Outlook - zamiast tego CRM jest pokazany i zintegrowany z pewnymi funkcjami Outlook-a.
+Thanks to this solution, it's not necessary to make a copy of the entire YetiForce system in Outlook - instead, the app is shown and integrated with certain Outlook functions.
 
-Implementacja umożliwia korzystanie ze wszystkich funkcjonalności YetiForce w Outlook.
+The implementation of the add-in allows you to use of all YetiForce functionalities in Outlook.
 
 :::important
-Artykuł omawia najważniejsze kwestie związane z dodatkiem Outlook do systemu YetiForce. Przeczytaj go w całości i zwróć szczególną uwagę na wytyczne aby dodatek działał prawidłowo.
+The article presents the most important issues related to the Outlook add-in for YetiForce CRM, so it is important to read it carefully and follow the guidelines for the add-in to work properly.
 :::
 
-## Prezentacja wideo
+## Video presentation
 
 <Tabs groupId="WwgE1yX6akE">
 	<TabItem value="youtube-WwgE1yX6akE" label="🎬 YouTube">
@@ -45,44 +44,44 @@ Artykuł omawia najważniejsze kwestie związane z dodatkiem Outlook do systemu 
 	</TabItem>
 </Tabs>
 
-## Wymagania
+## Requirements
 
 ### SSL/HTTPS
 
-Dodatek wymaga aby system YetiForce działał z ważnym certyfikatem SSL. Nieakceptowane są `self signed certificate`.
+The add-in requires the system to work with a valid SSL certificate. `Self signed certificates are not accepted`
 
-### Kompatybilność
+### Compatibility
 
-Dodatek Outlook do systemu YetiForce działa z następującymi typami aplikacji Outlook:
+The add-in suports the following Outlook application types::
 
-- Outlook 2013 lub nowszy w systemie Windows
-- Outlook 2016 lub nowszy na komputerze Mac
-- Outlook na iOS
-- Outlook na Androida
-- Outlook w sieci Web dla programu Exchange 2016 lub nowszego
-- Outlook w sieci Web dla programu Exchange 2013
+- Outlook 2013 or later on Windows
+- Outlook 2016 or later on Mac
+- Outlook on iOS
+- Outlook on Android
+- Outlook on the web for Exchange 2016 or later
+- Outlook on the web for Exchange 2013
 - Outlook.com
 
 :::warning
-Klient poczty musi być połączony z serwerem Exchange lub Microsoft 365 (dawniej Office 365) przy użyciu połączenia bezpośredniego. Podczas konfigurowania klienta użytkownik musi wybrać typ konta Exchange, Office lub Outlook.com. Dodatki nie zostaną załadowane jeśli klient poczty jest skonfigurowany do łączenia się przez POP3 lub IMAP.
+The client must be connected to an Exchange server or Microsoft 365 (formerly known as Office 365) using a direct connection. When configuring the client, the user must choose an Exchange, Office, or Outlook.com account type. Add-ons will not load if your mail client is configured to connect via POP3 or IMAP.
 
-Więcej informacji na stronie: [Wymagania dotyczące dodatku Outlook](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/add-in-requirements)
+More information: [Outlook add-in requirements](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/add-in-requirements)
 :::
 
-### Silnik przeglądarki
+### Browser engine
 
-Należy sprawdzić wersję Outlook, ponieważ dodatek bazuje na silniku przeglądarki internetowej.
-Stare wersje wspierają silnik „Internet Explorer”, dla którego CRM nie będzie działał w pełni prawidłowo.
+Please check your Outlook version as the add-on is based on the web browser engine.
+The YetiForce system will not work fully properly for old versions that support the "Internet Explorer" engine.
 
-Pełny opis wymagań znajduje sie na stronie [Przeglądarki używane przez dodatki pakietu Office](https://learn.microsoft.com/en-us/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins)
+For a full description of the requirements, see [Browsers used by Office add-ins](https://learn.microsoft.com/en-us/office/dev/add-ins/concepts/browsers-used-by-office-web- add-ins)
 
-## Instalacja/uruchomienie integracji
+## Install / enable the integration
 
-Po zakupie należy aktywować dodatek, jest to jednorazowa operacja. W Marketplace pojawi się przycisk `Wymaga interwencji`, należy wtedy przejść do zakładki `Integracja`, kliknąć `Aktywuj`, wprowadzić wymagane dane i ściągnąć plik instalacyjny.
+After the purchase, you need to activate the add-in. When the  `Requires intervention` button appears in the Marketplace, go to the `Integration` tab, click `Activate`, enter the required data, and download the installation file.
 
 ![Sklep](marketplace.png)
 
-### Tutorial wideo
+### Video tutorial
 
 <ReactPlayer
 	url="https://www.youtube.com/watch?v=HTRG81waq54"
@@ -91,37 +90,36 @@ Po zakupie należy aktywować dodatek, jest to jednorazowa operacja. W Marketpla
 	controls={true}
 />
 
-### Aktywacja
+### Activation
 
-W trakcie aktywacji system zostanie skonfigurowany pod kątem integracji z Outlook. Zostaną zmienione następujące parametry:
+During activation, the system will be configured for integration with Outlook. The following parameters will be changed:W 
 
-- zezwala na ładowanie CRM w ramce iframe
-- zezwala na ładowanie zewnętrznych skryptów WWW (https://appsforoffice.microsoft.com, https://ajax.aspnetcdn.com)
-- wyłącza HttpOnly w cookie (aby nie logować się za każdym uruchomieniem panelu integracyjnego)
-- zmienia cookie „SameSite” na „None”
+- allows loading the app in iframe
+- allows loading external web scripts (https://appsforoffice.microsoft.com, https://ajax.aspnetcdn.com)
+- disables HttpOnly in cookie (in order not to log in every time the integration panel is launched)
+- changes the "SameSite" cookie to "None"
 
 ![Aktywacja](activation.png)
 
-### Pobranie rozszerzenia add-ins
+### Download the add-in
 
-Aby była możliwa instalacja rozszerzenia konieczne jest pobranie pliku w formacie XML i zaimportowanie go w Outlook.
+In order to install the add-in you must first download the XML file and import it in Outlook.
 
-Aby go pobrać należy przejść do panelu `Konfiguracja systemu > Integracja > Panel integracji poczty` i kliknąć przycisk `Pobierz plik instalacyjny dodatku Outlook`. Pobrany plik XML jest dedykowany tylko dla danej wersji CRM i zawiera w sobie APP ID CRM-a, gdy [APP ID](/administrator-guides/app-id) ulegnie zmianie wymagane jest ponowne zainstalowanie pluginu. Zostało to tak zrobione, aby nie nie można było załadować CRM w dowolnym innym oknie.
+Go to `system settings > Integration > Mail integration panel` and click `Download the Outlook add-in installation file`. The XML you downloaded is exclusive for an individual version of YetiForce and includes the APP ID. If [APP ID](/administrator-guides/app-id) changes, you will have to reinstall the plugin. This has been done so that you cannot load the system in any other window.
 
-### Instalacja w Outlook rozszerzenia add-ins
+### Installation of the add-in extension in Outlook
 
-Instrukcja instalacji znajduje się na oficjalnej stronie microsoft.com: https://support.microsoft.com/en-us/office/installed-add-ins-a61762b7-7a82-47bd-b14e-bbc15eaeb70f
+Installation instructions are available at the [official Microsoft website](https://support.microsoft.com/en-us/office/installed-add-ins-a61762b7-7a82-47bd-b14e-bbc15eaeb70f). 
+Please follow the instructions from the link above for proper installation.
 
-Należy postępować zgodnie z wytycznymi zawartymi w instrukcji, aby prawidłowo zainstalować.
+###  Permission to access cookies (only the web version of Outlook web app)
 
-### Zezwolenie na dostęp do cookie (tylko wersja przeglądarkowa Outlook Web App)
-
-Wymagane jest zezwolenie na dostęp do cookie innych stron internetowych na stronie Outlook Web App.
-Domyślnie przeglądarka blokuje niechciane skrypty z dodatkowych stron internetowych.
+You must permit cookies from other websites on the Outlook Web App page. 
+By default, the browser blocks unwanted scripts from additional websites.
 
 ![cookies1](cookies1.png)
 
-Bez tego nie będzie możliwości zalogowania się do systemu YetiForce i użytkownik będzie cały czas widział stronę logowania, pomimo że wprowadza dane dostępowe.
+If you don't change it, it won't be possible to log into the YetiForce system and the user will only see the login page despite entering access data.
 
 ![cookies2](cookies2.png)
 
@@ -131,69 +129,69 @@ Bez tego nie będzie możliwości zalogowania się do systemu YetiForce i użytk
 
 ![cookies5](cookies5.png)
 
-## Uprawnienia
+## Permissions
 
-Użytkownicy muszą mieć dostęp do modułu `Panel integracji poczty` w celu korzystania z panelu integracyjnego.
+Users need access to the `Mail integration panel` in order to use the integration panel.
 
-## Dostęp do panelu
+## Panel access
 
-Uprawnienia do tego modułu konfiguruje się w [Konfiguracja systemu > Uprawnienia > Profile](/administrator-guides/permissions/profiles/). Dla odpowiedniego profilu należy nadać uprawnienia do tego modułu.
+Permissions for this panel can be configured in [System settings > Permissions > Profiles](/administrator-guides/permissions/profiles/). Grant the applicable module permissions for appropriate profiles. 
 
-Jeśli użytkownik nie będzie miał dostępu do modułu, to zobaczy komunikat `Błąd!!! Brak uprawnień`.
+If the user doesn't have access to the module, the following message will appear: `Error!!! Permission denied`.
 
 ![profiles1](profiles1.png)
 
-## Dostęp do importu maila
+## Access to email import
 
-Aby pojawił się przycisk importu maila, użytkownik w profilu musi mieć uprawnienia do tworzenia wiadomości mail.
-W tym celu należy zaznaczyć akcję `Tworzenie` dla modułu `Historia maili`.
+In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module. 
 
 ![profiles2](profiles2.png)
 
-## Powiązywanie danych
+## Data binding
 
-Aby było możliwe powiązane danych z wiadomości mailowej z danymi CRM-a należy określić warunki wyszukiwania.
+In order to be able to bind data from an e-mail message to system data, it is necessary to define how the system can find the data.
 
-Każdy użytkownik, na którego logujemy się w panelu integracyjnym, powinien w miejscu `Pola relacji rekordów (Outlook)` mieć ustawione pola z dostępnych modułów, w których ma szukać danych do powiązania.
+Each user that will use the integration panel should have fields from the available modules set in the `Record relation fields (Outlook)`, in which the system will search for data to bind.
 
-Wprowadzamy tu pola w zależności z jakich modułów/pól korzystamy, i z których dany użytkownik może korzystać.
+Enter fields here depending on which modules/fields you use and which modules/fields a given user can use.
 
-W polu `Dostępne akcje skanera poczty e-mail` należy wybrać `Stwórz e-maila` oraz `Tworzenie linków do e-maila`.
+In the `Available mail scanner actions` field select `Create email` and ` Create email links`. 
 
-Pola będą używane do wyszukiwania powiązanych rekordów przy wyświetlaniu maila oraz określenia z czym ma zostać powiązany email podczas importu.
+The fields will be used to search for related records when displaying an email and when importing an email.
 
-Bez tego w panelu integracyjnym nie zobaczymy żadnych danych, ponieważ system nie będzie wiedział gdzie ma szukać informacji.
+Otherwise, you will not see any data in the integration panel, because the system will not know where to search for information.
 
-Standardowe pola to: Kontakty - Mail podstawowy, Kontrahenci - Mail podstawowy, Leady - Mail podstawowy, Zgłoszenia - Nr, Pracownicy - Mail służbowy.
+Standard fields are: Contacts - Primary email, Accounts - Primary email, Leads - Primary email, Tickets - No., Employees - Business email.
 
 ![user1](user1.png)
 
-## Akcje
+## Actions
 
-Aby pojawił się przycisk `Zaimportuj maila ręcznie` użytkownik musi mieć skonfigurowane akcje.
-Akcje konfigurujemy na użytkowniku w polu `Dostępne akcje skanera poczty e-mail (Outlook)`.
-Standardowe akcje to:
+For the `Import email manually` to appear,it is required to configure actions.
+Actions are configured in the Users module in the `Available e-mail scanner actions (Outlook)` field.
 
-- Stwórz e-maila - akcja, która tworzy wiadomość e-mail.
-- Tworzenie linków do e-maila - akcja powiązująca wiadomość mailową z rekordami w systemie, w polu `Pola relacji rekordów` określamy po czym ma szukać i pozwiązywać. Jeśli w polu "Pola relacji rekordów" nie wybrano wartości, to powiązanie nie będzie działać.
+Standardowe actions:
+
+- Create email message - action that creates an e-mail
+- Create links to e-mail message - action binding the e-mail message with records in the system, select fields to bind in the "Record relation fields". If no value is selected in this field, the binding will not work.
 
 ![user2](user2.png)
 
-## Możliwe problemy
+## Possible issues
 
 ![issues1](issues1.png)
 
-Zawsze podczas wystąpienia problemów z panelem integracyjnym należy rozpocząć debugowanie problemu.
+Debugging should take place each time there are issues related to the integration panel.
 
-Poniżej umieszczamy listę możliwych problemów które napotkaliśmy.
+Below you can find a list of the possible issues we encountered.
 
-## Polityka CSP
+## CSP Policy
 
 `Refused to frame 'https://appsforoffice.microsoft.com/' because it violates the following Content Security Policy directive: "frame-src 'self' mailto: tel:".`
 
 ![issues2](issues2.png)
 
-W pliku konfiguracyjnym [config/Security.php](https://doc.yetiforce.com/code/classes/Config-Security.html) w zmiennej [$allowedDomainsLoadInFrame](https://doc.yetiforce.com/code/classes/Config-Security.html#property_allowedDomainsLoadInFrame) należy ustawić wartość :
+In the [config/Security.php](https://doc.yetiforce.com/code/classes/Config-Security.html) file in the [$allowedDomainsLoadInFrame](https://doc.yetiforce.com/code/classes/Config-Security.html#property_allowedDomainsLoadInFrame) variable set the following value:
 
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Security.php#L181-L185
 
@@ -209,10 +207,10 @@ public static $allowedScriptDomains = ['https://appsforoffice.microsoft.com', 'h
 public static $allowedDomainsLoadInFrame = ['https://appsforoffice.microsoft.com'];
 ```
 
-## Debugowanie
+## Debugging
 
-Gdy panel nie pokazuje się prawidłowo lub brakuje w nim danych: https://docs.microsoft.com/en-US/outlook/troubleshoot/user-interface/office-add-ins-not-displayed-correctly
+When the panel is not displayed correctly or data is missing: https://docs.microsoft.com/en-US/outlook/troubleshoot/user-interface/office-add-ins-not-displayed-correctly
 
-Debugowanie: https://docs.microsoft.com/en-us/office/dev/add-ins/testing/test-debug-office-add-ins
+Debugging: https://docs.microsoft.com/en-us/office/dev/add-ins/testing/test-debug-office-add-ins
 
-Debugowanie przy użyciu Microsoft Edge DevTools: https://docs.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-developer-tools-on-windows-10#debug-using-microsoft-edge-devtools
+Debugging using Microsoft Edge DevTools: https://docs.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-developer-tools-on-windows-10#debug-using-microsoft-edge-devtools
