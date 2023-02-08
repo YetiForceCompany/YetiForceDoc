@@ -11,6 +11,8 @@ tags:
   - Konsola
 ---
 
+Moduł `Usuwanie danych` dostępny do wersji `6.4.145`
+
 ![Eraser CLI](Eraser-0.jpg)
 
 ### ModTracker - Delete the history of non-existent entries
