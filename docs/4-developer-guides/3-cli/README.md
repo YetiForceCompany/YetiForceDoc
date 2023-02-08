@@ -15,7 +15,7 @@ tags:
 ---
 
 Opis interfejsu CLI (Command Line Interface) do obsługi niestandardowych operacji systemu YetiForce.
-Dostępne do wersji `6.2.0`
+Dostępne od wersji `6.2.0`
 
 ![Eraser CLI](Cli.jpg)
 

@@ -11,7 +11,7 @@ tags:
   - Konsola
 ---
 
-Moduł `Usuwanie danych` dostępny do wersji `6.4.145`
+Moduł `Usuwanie danych` dostępny od wersji `6.4.145`
 
 ![Eraser CLI](Eraser-0.jpg)
 
