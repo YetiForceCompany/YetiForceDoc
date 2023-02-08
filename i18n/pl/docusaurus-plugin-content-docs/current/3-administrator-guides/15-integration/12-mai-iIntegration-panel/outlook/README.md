@@ -1,7 +1,6 @@
 ---
 title: Dodatek typu add-in do programu Outlook
-description: Integracja umożliwia pokazanie/pracę systemu YetiForce w zewnętrznym kliencie
-  poczty Outlook.
+description: Integracja umożliwia pokazanie/pracę systemu YetiForce w zewnętrznym kliencie poczty Outlook.
 tags:
   - poczta
   - outlook add-in
