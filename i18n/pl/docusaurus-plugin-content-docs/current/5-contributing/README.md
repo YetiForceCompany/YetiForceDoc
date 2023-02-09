@@ -10,22 +10,22 @@ import DocCardList from '@theme/DocCardList';
 
 YetiForceCRM exists thanks to all the people who contribute.
 
-<a href="https://github.com/YetiForceCompany/YetiForceCRM/graphs/contributors">
-	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceCRM" class="no-shadow"  />
+<a class="no-shadow" href="https://github.com/YetiForceCompany/YetiForceCRM/graphs/contributors">
+	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceCRM"   />
 </a>
 
 ## YetiForcePortal2 Contributors
 
 YetiForcePortal2 exists thanks to all the people who contribute.
 
-<a href="https://github.com/YetiForceCompany/YetiForcePortal2/graphs/contributors">
-	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForcePortal2" class="no-shadow" />
+<a class="no-shadow" href="https://github.com/YetiForceCompany/YetiForcePortal2/graphs/contributors">
+	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForcePortal2"  />
 </a>
 
 ## Official YetiForce Documentation Contributors
 
 YetiForce Documentation exists thanks to all the people who contribute.
 
-<a href="https://github.com/YetiForceCompany/YetiForceDoc/graphs/contributors">
-	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceDoc" class="no-shadow" />
+<a class="no-shadow" href="https://github.com/YetiForceCompany/YetiForceDoc/graphs/contributors">
+	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceDoc"  />
 </a>
