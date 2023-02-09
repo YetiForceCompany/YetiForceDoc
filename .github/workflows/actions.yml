@@ -23,15 +23,7 @@ jobs:
       - name: Use Node.js 16.x
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
-          cache: 'yarn'
+          node-version: 16.x
 
-      - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install # will run `yarn install` command
-
-      - name: Build production bundle
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: build:prod # will run `yarn build:prod` command
+      - run: npm install
+      - run: npm run build
