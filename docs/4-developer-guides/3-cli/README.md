@@ -1,34 +1,34 @@
 ---
 title: YetiForce CLI
-description: Opis interfejsu CLI (Command Line Interface) do obsługi niestandardowych operacji systemu YetiForce
+description: Description of the CLI (Command Line Interface) to support custom YetiForce operations
 keywords:
-  - interfejs
-  - konsola
-  - problemów
+  - interface
+  - console
+  - problems
   - CLI
   - YF
   - YetiForce
 tags:
   - YFCLI
   - CLI
-  - Konsola
+  - Console
 preview: Cli.jpg
 ---
 
-Opis interfejsu CLI (Command Line Interface) do obsługi niestandardowych operacji systemu YetiForce.
-Dostępne od wersji `6.2.0`
+Description of the CLI (Command Line Interface) to support custom YetiForce operations.
+Available from version `6.2.0`
 
 ![Eraser CLI](Cli.jpg)
 
-## Jak uruchomić YetiForce CLI
+## How to launch YetiForce CLI
 
-Konsolę zawsze uruchamiany z głównego katalogu systemu YetiForce, czyli tam gdzie znajduje sie plik cli.php.
+Always launch the console from the main YetiForce system catalogue, that is, where the cli.php file is located.
 
 :::tip
-YetiForce CLI musi być zawsze uruchamiany na użytkowniku systemu operacyjnego, który jest właścicielem plików systemu YetiForce.
+YetiForce CLI must always be launched on the operating system user who owns the YetiForce system files.
 :::
 
-Możliwe komendy w zależności od środowiska:
+Possible commands depending on the environment:
 
 ```bash
 php cli.php
@@ -36,9 +36,9 @@ php cli.php
 sudo -u yfprod php cli.php
 ```
 
-## Pomoc
+## Help
 
-Pomoc zawsze dostępna po dodaniu argumentu `-h`
+Help available after adding the `-h` argument
 
 ```bash
 php cli.php -h
@@ -46,7 +46,7 @@ php cli.php -h
 
 ![Help CLI](Help.png)
 
-## Dostępne moduły YFCLI
+## Available YFCLI modules
 
 import DocCardList from '@theme/DocCardList';
 
