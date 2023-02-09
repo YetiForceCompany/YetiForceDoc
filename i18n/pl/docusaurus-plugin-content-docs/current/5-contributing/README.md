@@ -11,7 +11,7 @@ import DocCardList from '@theme/DocCardList';
 YetiForceCRM exists thanks to all the people who contribute.
 
 <a href="https://github.com/YetiForceCompany/YetiForceCRM/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceCRM" />
+	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceCRM" class="no-shadow"  />
 </a>
 
 ## YetiForcePortal2 Contributors
@@ -19,7 +19,7 @@ YetiForceCRM exists thanks to all the people who contribute.
 YetiForcePortal2 exists thanks to all the people who contribute.
 
 <a href="https://github.com/YetiForceCompany/YetiForcePortal2/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForcePortal2" />
+	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForcePortal2" class="no-shadow" />
 </a>
 
 ## Official YetiForce Documentation Contributors
@@ -27,5 +27,5 @@ YetiForcePortal2 exists thanks to all the people who contribute.
 YetiForce Documentation exists thanks to all the people who contribute.
 
 <a href="https://github.com/YetiForceCompany/YetiForceDoc/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceDoc" />
+	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceDoc" class="no-shadow" />
 </a>

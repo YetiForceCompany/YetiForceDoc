@@ -12,7 +12,7 @@ tags:
 preview: Users.png
 ---
 
-![Users CLI](Users.png)
+![Users CLI](Users.jpg)
 
 ### Reset user password
 

@@ -70,7 +70,7 @@ module.exports = {
 			jsLoader: 'matomo.js'
 		},
 		zoom: {
-			selector: '.markdown :not(em) img',
+			selector: '.markdown :not(em,a) img',
 			config: {
 				// options you can specify via https://github.com/francoischalifour/medium-zoom#usage
 				background: {

@@ -37,7 +37,7 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
-.theme-doc-markdown img{
+.theme-doc-markdown :not(.no-shadow) img{
 	-webkit-box-shadow: 2px 2px 7px 1px rgb(66 68 90);
 	-moz-box-shadow: 2px 2px 7px 1px rgb(66 68 90);
 	box-shadow: 2px 2px 7px 1px rgb(66 68 90);
