@@ -1,5 +1,5 @@
 ---
-title: Usuwanie danych | Eraser data
+title: Usuwanie danych
 description: Opis usuwania danych w systemie YetiForce za pomocą CLI
 keywords:
   - Eraser

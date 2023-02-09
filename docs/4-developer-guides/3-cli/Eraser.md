@@ -1,6 +1,6 @@
 ---
-title: Removing data | Data Eraser
-description: Desciption of how to remove data from YetiForce using CLI
+title: Data Eraser
+description: Description of how to remove data from YetiForce using CLI
 keywords:
   - Eraser
   - CLI
