@@ -1,6 +1,6 @@
 ---
-title: Usuwanie danych | Eraser data
-description: Opis usuwania danych w systemie YetiForce za pomocą CLI
+title: Removing data | Data Eraser
+description: Desciption of how to remove data from YetiForce using CLI
 keywords:
   - Eraser
   - CLI
@@ -8,11 +8,11 @@ keywords:
 tags:
   - YFCLI
   - CLI
-  - Konsola
+  - Console
 preview: Eraser-0.jpg
 ---
 
-Moduł `Usuwanie danych` dostępny od wersji `6.4.146`
+The `Data Eraser` module is available from version `6.4.146`
 
 ![Eraser CLI](Eraser-0.jpg)
 
@@ -34,7 +34,7 @@ php cli.php -m Eraser -a mtAll
 
 ### User data - Delete all entries
 
-Mechanizm usuwa dane z wszystkich modułów z pominięciem poniższych:
+The mechanism removes data from all the modules, excluding:
 
 - MultiCompany
 - OSSEmployees
