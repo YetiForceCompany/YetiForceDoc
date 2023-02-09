@@ -28,7 +28,13 @@ module.exports = {
 					routeBasePath: '/',
 					sidebarPath: require.resolve('./sidebars.js'),
 					// Please change this to your repo.
-					editUrl: 'https://github.com/YetiForceCompany/YetiForceDoc/edit/main/',
+					editUrl: ({ locale, versionDocsDirPath, docPath }) => {
+						if (locale !== 'en') {
+							return `https://github.com/YetiForceCompany/YetiForceDoc/edit/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
+						}
+						return `https://github.com/YetiForceCompany/YetiForceDoc/edit/main/${docPath}`;
+					},
+					// editUrl: 'https://github.com/YetiForceCompany/YetiForceDoc/edit/main/',
 					showLastUpdateAuthor: false,
 					showLastUpdateTime: true
 				},
