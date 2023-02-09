@@ -1,6 +1,6 @@
 ---
-title: 🏳️ Wielojęzyczność
-keywords:
+title: Translations
+description: You can submit your translations via Crowdin - a platform that allows the Community to translate software into any language.
   - języki
   - wielojęzyczność
   - tłumaczenia
@@ -11,9 +11,6 @@ tags:
   - wielojęzyczność
   - tłumaczenie
   - crowdin
-description: |-
-  YetiForce zostało przetłumaczone na wiele języków.
-  Crowdin jest oficjalną platformą tłumaczeń społecznościowych systemu YetiForce
 ---
 
 ![crowdin Localization Management Platform](https://support.crowdin.com/assets/logos/crowdin-logo-small-black.svg)
@@ -35,44 +32,3 @@ Jeśli potrzebujesz pomocy, skontaktuj się z naszymi kierownikami projektu.
 ## Obsługiwane języki
 
 Aktualna lista znajduje się pod adresem: https://crowdin.com/project/yetiforcecrm
-
-- Arabski
-- Bośniacki
-- Bułgarski
-- Birmańska
-- Chiński uproszczony
-- Chiński tradycyjny
-- Chorwacki
-- Czech
-- Duński
-- Holenderski
-- Holenderski, Belgia
-- Estoński
-- Fiński
-- Francuski
-- Niemiecki
-- Grecki
-- Hebrajski
-- Węgierski
-- Indonezyjski
-- Włoski
-- Japoński
-- Kannada
-- Koreański
-- Norweski
-- Perski
-- Polski
-- Portugalski
-- Portugalski, brazylijski
-- Rumuński
-- Rosyjski
-- Serbski (łaciński)
-- Serbsko-chorwacki
-- Słowacki
-- Słoweński
-- Hiszpański
-- Szwedzki
-- Tajski
-- Turecki
-- Ukraiński
-- Wietnamski
