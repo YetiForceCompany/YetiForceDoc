@@ -3,10 +3,13 @@ name: Test build
 on:
   push:
     branches:
-      - developer
+      - main
   pull_request:
     branches:
-      - developer
+      - main
+
+permissions:
+  contents: read
 
 jobs:
   build:
