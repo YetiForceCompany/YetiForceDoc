@@ -277,7 +277,13 @@ sudo setsebool -P httpd_can_network_connect on
 
 :::
 
-## Supported browsers
+## Wymagania użytkownika końcowego
+
+- System operacyjny - dowolny posiadający przeglądarkę internetową
+- Wyświetlacz: zalecane 1280 × 800
+- Przeglądarka zgodna z `ES5` ([ECMAScript 5](https://caniuse.com/?search=es5)) a od wersji 6.3 `ES6` ([ECMAScript 6](https://caniuse.com/?search=es6))
+
+### Supported browsers
 
 Users should always have the latest version of any browsers they use because only the most recent versions support the newest web technologies. Below is a list of browsers, starting from the one that is the most recommended for YetiForce (Google Chrome) to the least recommended.
 
