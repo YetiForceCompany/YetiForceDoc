@@ -32,7 +32,7 @@ module.exports = {
 						if (locale !== 'en') {
 							return `https://github.com/YetiForceCompany/YetiForceDoc/edit/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
 						}
-						return `https://github.com/YetiForceCompany/YetiForceDoc/edit/main/${docPath}`;
+						return `https://github.com/YetiForceCompany/YetiForceDoc/edit/main/docs/${docPath}`;
 					},
 					// editUrl: 'https://github.com/YetiForceCompany/YetiForceDoc/edit/main/',
 					showLastUpdateAuthor: false,
