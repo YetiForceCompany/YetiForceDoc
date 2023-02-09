@@ -46,7 +46,7 @@ module.exports = {
 	],
 	themeConfig: {
 		metadata: [
-			{ name: 'keywords', content: 'yetiforce,help,doc,docs,documentation,guides,wiki,knowledge' },
+			{ name: 'keywords', content: 'yetiforce,help,doc,docs,documentation,guides,wiki,knowledge,dokumentacja,baza wiedzy' },
 			{ name: 'description', content: 'Official YetiForce System documentation / guide / knowledge' }
 		],
 		image: 'img/logo_horizontal.png',
