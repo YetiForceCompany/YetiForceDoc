@@ -26,12 +26,12 @@ jobs:
           node-version: '16'
           cache: 'yarn'
 
-      - name: Run install
+      - name: Install
         uses: borales/actions-yarn@v4
         with:
-          cmd: install # will run `yarn install` command
+          cmd: install
 
-      - name: Build production bundle
+      - name: Build bundle
         uses: borales/actions-yarn@v4
         with:
-          cmd: build # will run `yarn build:prod` command
+          cmd: build
