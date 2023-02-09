@@ -1,41 +1,41 @@
 ---
-title: Dane dostępowe do systemu YetiForce
-description: Jeśli jesteście użytkownikami systemu YetiForce i macie problem, które chcecie do nas zgłosić w ramach SLA, to artykuł opisuje jakie dane są nam potrzebne
+title: Access data to the YetiForce system
+description: If you are a YetiForce user and you have a problem that you would like to report to us as part of SLA, this article lists all the necessary information you need to provide.
 keywords:
-  - dane
-  - dostępowe
+  - data
+  - access
   - problem
-  - zgłoszenie
+  - report
   - YetiForce
 tags:
-  - dane dostępowe
+  - credentials
   - sla
 ---
 
-Jeśli jesteście użytkownikami systemu YetiForce i macie problem, które chcecie do nas zgłosić w ramach SLA, to dla przyśpieszenia obsługi takiego zgłoszenia, potrzebujemy kilka podstawowych danych, opisanych poniżej:
+If you are a YetiForce user and you have a problem that you would like to report to us as part of SLA, we need some basic information in order to quickly handle your issue:
 
-1. adres pod którym działa system YetiForce
-2. dane dostępowe do system YetiForce czyli login i hasło (użytkownik musi mieć uprawnienia administratora).
-3. dane dostępowe do FTP / SFTP, musi to być właściciel plików system YetiForce (z uprawnieniami do odczytu i zapisu plików), czyli:
-   - adres serwera
+1. Your system's URL
+2. YetiForce credentials, that is the login and password to a user with administrator permissions
+3. Access data to FTP or SFTP (YetiForce system files owner) with read and write permissions for files, namely:
+   - server address
    - port
    - login
-   - hasło
-   - sposób szyfrowania danych (np.: FTP przez TLS)
-   - ścieżka pod którą jest CRM
+   - password
+   - encryption method (e.g.: FTP by TLS)
+   - path to where the system is located
 
-Konfiguracja serwera zawsze musi być zgodna z aktualnymi wymogami konfiguracyjnymi opisanymi na [stronie](/introduction/requirements/). Niezgodność może powodować błędy w funkcjonowaniu systemu, dodatkowo nie będą działać mechanizmy debugowania. Do weryfikacji konfiguracji można wykorzystać narzędzie wbudowane w systemie i dostępne pod adresem https://gitstable.yetiforce.com/index.phpparent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
+The server configuration must always comply with the current configuration requirements that can be found [here](/introduction/requirements/). If your server fails to meet the requirements, it can cause system errors and debugging won't work. In order to verify the configuration, you can use the built-in tool, which is available [here](https://gitstable.yetiforce.com/index.phpparent=Settings&module=ConfReport&view=Index&block=14&fieldid=65). 
 
-4. Dane dostępowe do bazy danych, czyli:
-   - adres bazy danych
+4.  Database access:
+   - database address
    - port
    - login
-   - hasło
+   - password
 
-Dostęp do bazy danych musi być możliwy przez klienta zewnętrznego, czyli musi być dostęp do bazy z zewnątrz lub musimy mieć dostęp do SSH aby tunelować połączenie.
+Access to the database must be possible for an external client, which means there must be external access to database or SSH access to tunnel the connection.
 
-5. Opcjonalnie - jeśli dostęp do Twoich danych wymaga VPN'a - prosimy dodatkowo o podanie nazwy programu potrzebnego do połączenia z VPN oraz dane do konfiguracji tego programu (adres, port, login, hasło, oraz inne informacje wymagane przez konkretny program, jak np. certyfikat).
+5. Optional - if access to your data requires VPN - please specify the name of the program that you use to connect to the VPN and data used for its configuration (address, port, login, password and other information required by the program, e.g. certificate). 
 
 :::tip
-Po realizacji przez nas zlecenia dane dostępowe należy zmienić a dostęp z zewnątrz należy wyłączyć zgodnie z dobrymi praktykami bezpieczeństwa.
+Once we complete all the work, change your access data and deactivate external access in accordance with good security practices.
 :::
