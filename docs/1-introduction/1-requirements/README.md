@@ -277,11 +277,11 @@ sudo setsebool -P httpd_can_network_connect on
 
 :::
 
-## Wymagania użytkownika końcowego
+## End user requirements
 
-- System operacyjny - dowolny posiadający przeglądarkę internetową
-- Wyświetlacz: zalecane 1280 × 800
-- Przeglądarka zgodna z `ES5` ([ECMAScript 5](https://caniuse.com/?search=es5)) a od wersji 6.3 `ES6` ([ECMAScript 6](https://caniuse.com/?search=es6))
+- OS - any OS that supports a web browser
+- Display: 1280 × 800 (recommended)
+- Browser compatible with `ES5` ([ECMAScript 5](https://caniuse.com/?search=es5)), and from YetiForce version 6.3 on `ES6` ([ECMAScript 6](https://caniuse.com/?search=es6))
 
 ### Supported browsers
 
