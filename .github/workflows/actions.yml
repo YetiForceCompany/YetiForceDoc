@@ -25,5 +25,12 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: npm install
-      - run: npm run build
+      - name: Run install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install # will run `yarn install` command
+
+      - name: Build production bundle
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build:prod # will run `yarn build:prod` command
