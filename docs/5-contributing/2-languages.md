@@ -1,6 +1,7 @@
 ---
 title: Translations
 description: You can submit your translations via Crowdin - a platform that allows the Community to translate software into any language.
+keywords:
   - languages
   - translations
   - YetiForce
