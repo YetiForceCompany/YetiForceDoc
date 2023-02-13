@@ -40,6 +40,6 @@ The development version can be downloaded directly from out website (full packag
 Read the server requirements and assess whether your server meets them and is ready to start the installation process before you download the system.
 :::
 
-Full list of requirements: [YetiForce requirements](requirements).
+Full list of requirements: [YetiForce requirements](/introduction/requirements).
 
-Step by step installation manual: [YetiForce installation guide](installation-manual).
+Step by step installation manual: [YetiForce installation guide](/introduction/installation-manual).
