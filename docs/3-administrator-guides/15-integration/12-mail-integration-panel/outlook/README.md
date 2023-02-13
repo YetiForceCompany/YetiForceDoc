@@ -52,7 +52,7 @@ The add-in requires the system to work with a valid SSL certificate. `Self signe
 
 ### Compatibility
 
-The add-in supports the following Outlook application types::
+The add-in supports the following Outlook application types:
 
 - Outlook 2013 or later on Windows
 - Outlook 2016 or later on Mac

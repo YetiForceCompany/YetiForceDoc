@@ -32,7 +32,7 @@ The development version can be downloaded directly from out website (full packag
 
 - ### [Packagist](https://packagist.org/packages/yetiforce/yetiforce-crm)
 
-- ### [Docker](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/docker.md) (wersja deweloperska)
+- ### [Docker](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/docker.md) (development version)
 
 ## YetiForce requirements
 
