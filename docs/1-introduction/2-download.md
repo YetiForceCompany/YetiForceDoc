@@ -1,13 +1,12 @@
 ---
 title: Download YetiForce
+description: Where to download YetiForce?
 keywords:
   - download
-  - find YetiForce
+  - find
   - YetiForce
 tags:
   - download
-  - find YetiForce
-description: Where to download YetiForce?
 ---
 
 Here you can find links to download the latest stable version of the system.

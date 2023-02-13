@@ -1,13 +1,13 @@
 ---
 title: Pobierz YetiForce
+description: Skąd pobrać system YetiForce?
 keywords:
   - pobierz
-  - znaleźć system YetiForce
+  - znaleźć
   - YetiForce
 tags:
   - pobierz
-  - znaleźć system YetiForce
-description: Skąd pobrać system YetiForce?
+  - znaleźć
 ---
 
 Tutaj znajdziesz linki do pobrania najnowszej stabilnej wersji systemu.
