@@ -170,7 +170,7 @@ Standard fields are: Contacts - Primary email, Accounts - Primary email, Leads -
 For the `Import email manually` to appear,it is required to configure actions.
 Actions are configured in the Users module in the `Available e-mail scanner actions (Outlook)` field.
 
-Standardowe actions:
+Standard actions:
 
 - Create email message - action that creates an e-mail
 - Create links to e-mail message - action binding the e-mail message with records in the system, select fields to bind in the "Record relation fields". If no value is selected in this field, the binding will not work.
