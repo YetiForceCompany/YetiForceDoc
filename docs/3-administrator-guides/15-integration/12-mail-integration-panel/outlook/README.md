@@ -52,7 +52,7 @@ The add-in requires the system to work with a valid SSL certificate. `Self signe
 
 ### Compatibility
 
-The add-in suports the following Outlook application types::
+The add-in supports the following Outlook application types::
 
 - Outlook 2013 or later on Windows
 - Outlook 2016 or later on Mac
@@ -77,9 +77,9 @@ For a full description of the requirements, see [Browsers used by Office add-ins
 
 ## Install / enable the integration
 
-After the purchase, you need to activate the add-in. When the  `Requires intervention` button appears in the Marketplace, go to the `Integration` tab, click `Activate`, enter the required data, and download the installation file.
+After the purchase, you need to activate the add-in. When the `Requires intervention` button appears in the Marketplace, go to the `Integration` tab, click `Activate`, enter the required data, and download the installation file.
 
-![Sklep](marketplace.png)
+![marketplace](marketplace.png)
 
 ### Video tutorial
 
@@ -92,14 +92,14 @@ After the purchase, you need to activate the add-in. When the  `Requires interve
 
 ### Activation
 
-During activation, the system will be configured for integration with Outlook. The following parameters will be changed:W 
+During activation, the system will be configured for integration with Outlook. The following parameters will be changed:W
 
 - allows loading the app in iframe
 - allows loading external web scripts (https://appsforoffice.microsoft.com, https://ajax.aspnetcdn.com)
 - disables HttpOnly in cookie (in order not to log in every time the integration panel is launched)
 - changes the "SameSite" cookie to "None"
 
-![Aktywacja](activation.png)
+![activation](activation.png)
 
 ### Download the add-in
 
@@ -109,12 +109,12 @@ Go to `system settings > Integration > Mail integration panel` and click `Downlo
 
 ### Installation of the add-in extension in Outlook
 
-Installation instructions are available at the [official Microsoft website](https://support.microsoft.com/en-us/office/installed-add-ins-a61762b7-7a82-47bd-b14e-bbc15eaeb70f). 
+Installation instructions are available at the [official Microsoft website](https://support.microsoft.com/en-us/office/installed-add-ins-a61762b7-7a82-47bd-b14e-bbc15eaeb70f).
 Please follow the instructions from the link above for proper installation.
 
-###  Permission to access cookies (only the web version of Outlook web app)
+### Permission to access cookies (only the web version of Outlook web app)
 
-You must permit cookies from other websites on the Outlook Web App page. 
+You must permit cookies from other websites on the Outlook Web App page.
 By default, the browser blocks unwanted scripts from additional websites.
 
 ![cookies1](cookies1.png)
@@ -135,7 +135,7 @@ Users need access to the `Mail integration panel` in order to use the integratio
 
 ## Panel access
 
-Permissions for this panel can be configured in [System settings > Permissions > Profiles](/administrator-guides/permissions/profiles/). Grant the applicable module permissions for appropriate profiles. 
+Permissions for this panel can be configured in [System settings > Permissions > Profiles](/administrator-guides/permissions/profiles/). Grant the applicable module permissions for appropriate profiles.
 
 If the user doesn't have access to the module, the following message will appear: `Error!!! Permission denied`.
 
@@ -143,7 +143,7 @@ If the user doesn't have access to the module, the following message will appear
 
 ## Access to email import
 
-In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module. 
+In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module.
 
 ![profiles2](profiles2.png)
 
@@ -155,7 +155,7 @@ Each user that will use the integration panel should have fields from the availa
 
 Enter fields here depending on which modules/fields you use and which modules/fields a given user can use.
 
-In the `Available mail scanner actions` field select `Create email` and ` Create email links`. 
+In the `Available mail scanner actions` field select `Create email` and ` Create email links`.
 
 The fields will be used to search for related records when displaying an email and when importing an email.
 
