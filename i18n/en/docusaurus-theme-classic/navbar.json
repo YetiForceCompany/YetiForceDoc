@@ -1,0 +1,30 @@
+{
+	"title": {
+		"message": "YetiForce Documentation",
+		"description": "The title in the navbar"
+	},
+	"item.label.Introduction": {
+		"message": "Introduction",
+		"description": "Navbar item with label Introduction"
+	},
+	"item.label.User": {
+		"message": "User",
+		"description": "Navbar item with label User"
+	},
+	"item.label.Administrator": {
+		"message": "Administrator",
+		"description": "Navbar item with label Administrator"
+	},
+	"item.label.Developer": {
+		"message": "Developer",
+		"description": "Navbar item with label Developer"
+	},
+	"item.label.Contributing / Community": {
+		"message": "Contributing / Community",
+		"description": "Navbar item with label Contributing / Community"
+	},
+	"item.label.Portal": {
+		"message": "Portal",
+		"description": "Navbar item with label Portal"
+	}
+}
