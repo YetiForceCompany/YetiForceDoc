@@ -1,21 +1,22 @@
 ---
-title: Migracja systemu na nowy serwer lub przywrócenie z kopii
-description: Jak prawidłowo przenieść, przywrócić z kopii system YetiForce na inny serwer.
+title: Migrating the system to a new server or restoring it from backup
+description: How to properly migrate or restore a backup copy of YetiForce
 keywords:
-  - przenieść
-  - migracja
-  - przywrócić
-  - kopii
-  - serwer
+  - move
+  - migrate
+  - restore
+  - copy
+  - backup
+  - server
   - YetiForce
 tags:
-  - migracja
-  - kopia
+  - migration
+  - backup
 ---
 
-Migracja lub przywracanie systemu z backupu odbywa się w kilku krokach. By mieć pewność, że wykonujesz ją poprawnie, zapoznaj się z artykułem poniżej.
+Migrating or restoring the system from backup takes place in a few steps. Please read the information below to avoid any errors and mistakes.
 
-## Prezentacja wideo
+## Video guide
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -35,30 +36,32 @@ import ReactPlayer from 'react-player';
 	</TabItem>
 </Tabs>
 
-## Wgraj pliki do katalogu web root
+## Upload files to the web root directory
 
-Najlepiej rozpakować pliki bezpośrednio na serwerze, dzięki temu będą zachowane oryginalne uprawnienia na plikach.
+It is best to unpack the files directly on the server, which will preserve the original permissions on the files.
 
 :::tip
-Jeżeli masz oddzielną kopię katalogu storage, tak jak w przypadku [Chmury (YetiForce Cloud)](https://yetiforce.com/pl/marketplace/chmura), to należy rozpakować kopię zapasową do katalogu `__YETIFORCE_PATH__/storage` tak, aby w tym katalogu nie było katalogu storage, tylko katalogi z danymi https://github.com/YetiForceCompany/YetiForceCRM/tree/developer/storage
+
+If you have a separate copy of the storage directory, like in case of [YetiForce Cloud](https://yetiforce.com/pl/marketplace/chmura) you need to unpack the backup copy to `__YETIFORCE_PATH__/storage` so that there is no storage directory in this directory, and only the following data directories instead: https://github.com/YetiForceCompany/YetiForceCRM/tree/developer/storage 
+
 :::
 
-## Wgraj bazę danych
+## Upload the database
 
-Bazę danych wgrywamy za pomocą konsoli CLI (zalecane) lub klienta bazodanowego np. DBeaver, Database Workbench , SQLyog
+Upload the database using the CLI console (recommended) or a database client eg. DBeaver,  Database Workbench , SQLyog
 
 ```sql
 mysql -P 3306 -h 127.0.0.1  -u yetiforce -p yetiforce < dump.sql
 ```
 
-## Aktualizacja plików konfiguracyjnych
+## Update the configuration files
 
-Po wgraniu plików i zaimportowaniu bazy danych zaktualizuj następujące pliki:
+After uploading the files and importing the database we should update the following files:
 
 - [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_site_URL)
 
 ```php
-/** Ukośnik odwrotny jest wymagany na końcu adresu URL */
+/** Backslash is required at the end of URL */
 public static $site_URL = 'https://example.yetiforce.cloud/';
 ```
 
@@ -79,7 +82,7 @@ public static $db_name = 'yetiforce';
 
 - [config/Security.php](https://doc.yetiforce.com/code/classes/Config-Security.html)
 
-Warto też sprawdzić następujące parametry:
+The parameters below are also worth checking:
 
 ```php
 /** Restricted domains */
@@ -95,14 +98,14 @@ public static $generallyAllowedDomains = ['yetiforce.com', 'github.com'];
 public static $purifierAllowedDomains = ['yetiforce.com', 'github.com'];
 ```
 
-Sprawdź czy jest włączone wymuszone HTTPS, jeśli na starym serwerze był HTTPS i włączone przekierowanie a nowy serwer nie ma aktywnego HTTPS, to mogą się pojawić problemy.
+Verify if enforcing HTTPS is enabled. There might be problems if HTTPS was on the old server and the redirection was enabled and the new server has no active HTTPS.
 
 ```php
 /** Force site access to always occur under SSL (https) for selected areas. You will not be able to access selected areas under non-ssl. Note, you must have SSL enabled on your server to utilise this option. */
 public static $forceHttpsRedirection = false;
 ```
 
-Sprawdź czy jest skonfigurowana komunikacja przez `proxy`
+Check if communication through `proxy` is enabled
 
 ```php
 /** Proxy protocol: http, https, tcp */
@@ -123,51 +126,53 @@ public static $proxyPassword = '';
 
 - [config/Components/Backup.php](https://doc.yetiforce.com/code/classes/Config-Components-Backup.html)
 
-Jeśli na serwerze mamy dostępny katalog dla kopii zapasowej, to możemy go włączyć (może to wymagać konfiguracji uprawnień do plików)
+If you have a backup directory available on the server, you can enable it (this may require configuration of file permissions)
 
 ```php
 /** Backup catalog path. */
 public static $BACKUP_PATH = '';
 ```
 
-## Zweryfikuj czy konfiguracja zgadza się z wymaganiami
+## Check if configuration complies with requirements
 
-Zawsze po przeniesieniu systemu na nowy serwer, przywróceniu z backupu lub aktualizacji serwera LAMP uruchom weryfikację konfiguracji serwera zgodnie z wymaganiami z wbudowanego narzędzia do weryfikacji konfiguracji ([Dokumentacja administratora > Logi > Serwer - konfiguracja](/administrator-guides/logs/server-configuration)) lub artykułu [Wymagania systemu YetiForce](/introduction/requirements/).
+Whenever the system is migrated, restored from backup, or the LAMP server is updated, it is important to check the system’s configuration in the built-in verification tool ([Administrator documentation > Logs > Server - configuration](/administrator-guides/logs/server-configuration)) or in the article [YetiForce requirements](/introduction/requirements/).
 
 :::warning
-Jeśli serwer nie spełnia wymogów, nie należy z niego korzystać, ponieważ może to powodować utratę danych. Jeśli jakieś parametry widnieją na żółto lub czerwono, to należy je poprawić.
+
+Don't use the server if it doesn't meet the requirements, as it may result in data loss. Fix any parameters that are highlighted in yellow or red.
+
 :::
 
-Ważnym jest również to, aby właścicielem plików był ten sam użytkownik na którym działa serwer www (apache, nginx).
+It is also important that the owner of the files is the same as the user running the web server (apache, nginx).
 
 ## CRON
 
-Uruchom i zweryfikuj działanie [CRON-a](/administrator-guides/automation/cron)
+Run [CRON](/administrator-guides/automation/cron) and verify its operation.
 
-## Zarejestruj ponownie system
+## Re-register your system
 
-Przeniesienie na nowy serwer lub przywrócenie z backupu [wymaga ponownej rejestracji systemu](/administrator-guides/app-id#dlaczego-app-id-ulega-zmianie).
+Migrating to a new server or restoring it from a backup requires [re-registration](/administrator-guides/app-id#why-does-the-app-id-change) of the system.
 
-## Aktualizacja dodatków
+## Update addons
 
-Niektóre dodatki mogą wymagać ponownej konfiguracji podczas zmiany lokalizacji lub adresu systemu YetiForce np. [Panel integracji poczty](/administrator-guides/integration/mai-iIntegration-panel/).
+Some addons may need to be reconfigured when changing the location or address of the system, eg. [Mail integration panel](/administrator-guides/integration/mail-integration-panel/).
 
 ### YetiForce Outlook Integration Panel
 
-Wymaga ponownej reinstalacji i zainstalowania nowego pliku XML.
-Stary dodatek zainstalowany w Outlook należy usunąć, pobrać nowy plik XML z panelu systemu YetiForce zgodnie z instrukcją [Dodatek typu add-in do programu Outlook](/administrator-guides/integration/mai-iIntegration-panel/outlook).
+Requires reinstallation and the installation of a new XML file. 
+The old addon installed in Outlook should be removed and the new XML file from the system panel should be downloaded according to the [instructions](/administrator-guides/integration/mail-integration-panel/outlook).
 
-## Tworzenie środowiska testowego
+## Create a test environment
 
-Jeżeli tworzymy środowisko testowe warto jest wprowadzić kilka istotnych zmian które pomogą nam w rozróżnieniu i bezpieczeństwie środowisk.
+If you create a test environment, it is worth introducing some important changes that will help you distinguish and secure the environments.
 
-### Zmienić hasła użytkowników
+### Change user passowrds
 
-### Wizualne odróżnienie środowisk
+### Add visuals
 
-Warto jest dodać komunikat o tym że jest to środowiska testowe, można to zrobić na stronie logowania oraz na górnej belce systemu.
+Display a test environment notice on the login page and on the top bar of the system.
 
-Od wersji `6.2` dostępna jest możliwość aby w pliku konfiguracyjnym [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_headerAlertMessage) ustawić dodatkowe komunikaty informacyjne.
+From version `6.2`  it is possible to add in the configuration file [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_headerAlertMessage) some additional messages.
 
 ```php
 /** Header alert message */
@@ -192,20 +197,21 @@ public static $loginPageAlertIcon = '';
 ![loginPageAlert](migrating-or-restoring-system-1.png)
 ![headerAlert](migrating-or-restoring-system-2.png)
 
-### Zmienić nazwę nadawcy w SMTP lub wyłączyć zadanie CRON-a wysyłające maile
+### Change the sender name in SMTP or disable the CRON task responsible for sending out emails
 
-Wiadomości wysyłane z nowego środowiska będą wyglądały identycznie jak z produkcyjnego, dlatego warto wyłączyć wysyłanie wiadomości mail lub zmienić nazwy nadawców w SMTP aby umieć odróżnić wiadomości mailowe.
+Messages sent from the new environment will look the same as the ones sent from the production environment, so it is worth disabling or changing the sender names in SMTP to be able to distinguish between these e-mail messages.
 
-Panel: [Konfiguracja systemu > Automatyzacja > CRON](/administrator-guides/automation/cron)
+Panel: [System settings > Automation > CRON](/administrator-guides/automation/cron)
 
-## Zmienić klucze API
+## Change API keys
 
-Warto zmienić dane dostępowe do API, aby były inne na każdym z środowisk. Aby przypadkiem ktoś mając dostęp do wersji testowej nie próbował uzyskać danych z wersji produkcyjnej.
+It is worth changing the API access data to make them different for each environment. So that someone who has access to the test version will not be able to get data from the production version.
 
-Panel: [Konfiguracja systemu > Integracja > Web service - Aplikacje](/administrator-guides/integration/webservice-apps/)
+Panel: [System settings > Integration > Web service - Applications](/administrator-guides/integration/webservice-apps/)
 
 :::warning
-W celu prawidłowego przeniesienia systemu YetiForce na inny serwer należy zrobić pełną kopię systemu (pliki i baza danych). Najlepiej spakować programem do kompresji danych np.
+
+In order to properly transfer the CRM system to another server, you should make a complete copy of the system (files and database). It is best to use compression software, e.g.
 
 ```bash
 zip -r `date +"%Y%m%d_%H%M"`.zip __YETIFORCE_PATH__ -q
@@ -215,6 +221,6 @@ zip -r `date +"%Y%m%d_%H%M"`.zip __YETIFORCE_PATH__ -q
 tar -zcvf /var/www/html/`date +"%Y%m%d_%H%M"`.tar.gz /var/www/html/
 ```
 
-Podczas przenoszenia lub przywracania systemu nie może wystąpić żaden błąd, ponieważ później może okazać sie, że baza jest niekompletna.
+**No error can occur during the transfer or recovery of the system, as the database may later turn out to be corrupted.**
 
 :::
