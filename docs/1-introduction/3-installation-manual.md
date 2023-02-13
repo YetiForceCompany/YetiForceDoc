@@ -1,43 +1,48 @@
 ---
-title: Instalacja systemu YetiForce
-description: Jak zainstalować system YetiForce
+title: YetiForce installation
+description: How to install YetiForce
 keywords:
-  - kreator
-  - instalacji
-  - instrukcja
+  - creator
+  - installation
+  - manual
   - YetiForce
-  - jak zainstalować
+  - how to install
 tags:
-  - instalacja
+  - installation
 preview: install-1.png
 ---
 
-W tym artykule znajdziesz wszystko, co powinieneś wiedzieć o instalacji YetiForce - niezbędne informacje, instrukcję instalacji krok po kroku, oraz najczęściej pojawiające się błędy i problemy. **Koniecznie zapoznaj się ze wszystkimi poniższymi informacjami przed przystąpieniem do instalacji systemu.**
+In this article, you will find everything you need to know about installing YetiForce CRM - the necessary information, step-by-step installation instructions, as well as the most common errors and problems. **Read all of the following information before proceeding with the installation process.**
 
-## Jak zainstalować system YetiForce?
+## How to install YetiForce?
 
-Instalacja YetiForce odbywa podobnie do instalacji większości aplikacji webowych, czyli za pomocą kreatora przez przeglądarkę.
+The installation process of YetiForce is very simple. It's done using a browser-based wizard - just like most web applications.
 
-Przed instalacją sprawdź czy twój serwer jest zgodny z wymaganiami: [Wymagania systemu YetiForce](requirements) lub [Jak skonfigurować serwer z Debian 10 dla systemu YetiForce](/developer-guides/environments/debian-10)
+Before the installation, check if your server complies with the requirements: [YetiForce requirements](requirements) or [How to configure a Debian 10 server for YetiForce](/developer-guides/environments/debian-10)
 
 :::important
-Osoba instalująca system powinna mieć przynajmniej podstawową wiedzę w zakresie zarządzania serwerem WWW, baz danych czy też uprawnień na serwerze. 99% problemów instalacyjnych wynika z niewystarczającej wiedzy osób, które instalują aplikację. Jeżeli nie jesteś pewien czy sobie poradzisz, poproś kogoś z odpowiednią wiedzą informatyczną. Cała operacja instalacji zajmie maksymalnie 2 - 30 minut. Instalacja YetiForce jest podobna do instalacji takich aplikacji jak: WordPress, Joomla, Drupal. Różnice pomiędzy poszczególnymi narzędziami są niewielkie. Tak więc, jeżeli poradziłeś sobie z instalacją systemu klasy CMS, to poradzisz sobie również z YetiForce.
+
+A person who is going to install the system should have at least basic knowledge of web servers, databases and server permissions. 99% of installation issues come from people with insufficient experience attempting to install the system. If you are not sure whether you can manage on your own, you can ask somebody with adequate IT expertise. The entire installation process will take up to 30 minutes. Installation of YetiForce is similar to the installation of applications such as WordPress, Joomla, Drupal. Differences between particular tools are minor, so if you managed to install a CMS system, you will also be able to install YetiForce.
+
 :::
 
-## Pobierz i wgraj pliki systemu
+## Download and upload system files
 
-W pierwszej kolejności przygotuj pliki instalacyjne. **[Pobierz YetiForce](download) z naszych oficjalnych źródeł.**
+First, prepare the installation files. **[Download YetiForce](download) from our official sources.**
+
 :::warning
-Zalecamy pobranie wersji oznaczonych jako "complete", na przykład `YetiForceCRM-6.4.0-complete.zip`. Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`.
-Ważna jest kolejność - najpierw `yarn`, potem `composer`.
-Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
+
+We recommend downloading the "complete" versions, for example `YetiForceCRM-6.4.0-complete.zip`.  If you don't download the "complete" version, you will have to install the libraries using `yarn` and `composer` before installing the system.
+The right order is important - first `yarn`, then `composer`.
+A sample installation script can be downloaded from [here](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
+
 :::
 
-- Pobrany plik ZIP rozpakuj, np. za pomocą programu [7-Zip](http://7-zip.org/).
-- Katalog z systemem CRM, który otrzymasz po rozpakowaniu pliku ZIP, skopiuj na serwer WWW, np. za pomocą programu [WinSCP](https://winscp.net/).
-- Następnie postępuj zgodnie z kreatorem, którego wywołasz z poziomu WWW tam, gdzie skopiowałeś pliki YetiForce CRM.
+- Unzip the file, with e.g [7-Zip](http://7-zip.org/).
+- Copy the directory to the web server, using e.g. [WinSCP](https://winscp.net/).
+- Start the installation wizard from the web level (where you copied the files) and follow the steps provided.
 
-Lub z konsoli bash
+You can also use the bash console
 
 ```bash
 cd /home/yfprod/html/
@@ -46,62 +51,62 @@ unzip YetiForceCRM.zip
 chown -R yfprod:yfprod /home/yfprod/html/
 ```
 
-## Krok 1 - Uruchomienie kreatora instalacji
+## Step 1 - Run the installation wizard
 
-Uruchom w oknie przeglądarki adres docelowy twojego systemu YetiForce, system powinien pokazać kreator instalacji. Jeśli nie, to może oznaczyć że wystąpiły jakieś problemy, możesz spróbować uruchomić adres: **SITE_URL**/install/Install.php np. https://gitdeveloper.yetiforce.com/install/Install.php
+Run the target address of your CRM in the browser window, the system should show the installation wizard. If it doesn't, there may be some problems, you can try running the address: **SITE_URL**/install/Install.php np. https://gitdeveloper.yetiforce.com/install/Install.php
 
 ![Krok 1](install-1.png)
 
-Na ekranie startowym w kreatorze instalacji dostępna jest możliwość konfiguracji języka instalacji (domyślnie język jest predefiniowany na podstawie języka przeglądarki). Po wybraniu jezyka kliknij przycisk `Instaluj`.
+On the start screen there are options that allow you to select a language of the installation (browser language is the default language) and to choose an installation mode (new installation or migration from a different system). We will go through the steps of a new installation. **Click `Install` and proceed to the next step.** 
 
-## Krok 2 - Zapoznanie się z warunkami licencji i ich akceptacja
+## Step 2 - Read and accept the license
 
-W drugim kroku kreator wymaga zaakceptowania licencji. Licencja YetiForce jest bardzo podobna do licencji MIT, jest otwarta i pozwala na dowolną modyfikację kodu z pozostawieniem informacji o pierwotnym autorze. Przeczytaj w pełni informacje o licencji, ponieważ z perspektywy firmy, dla której wdrażasz oprogramowanie, zapisy i warunki licencji są istotne.
+It's necessary to agree to the license terms in order to proceed with the installation process. The YetiForce License is very similar to the standard MIT license, it allows modification of the code and to leave information about the initial developer. We recommend reading the license.
 
 ![Krok 2](install-2.png)
 
-## Krok 3 - Wybierz rodzaj instalacji
+## Step 3 - Choose installation type
 
-Zdecyduj, gdzie chcesz zainstalować system - możesz wybrać własny serwer albo dokonać zakupu naszego hostingu lub chmury. Jeśli zdecydujesz się na jedną z naszych usług, to po kliknięciu przycisku `Kup` będziesz miał możliwość dokonania płatności.
+Decide where you want to install the system - you can choose your own server or buy our hosting or cloud services. If you'd like to use our services, after clicking the "Buy" button you will be able to make the payment.
 
 ![Krok 3](install-3.png)
 
-## Krok 4 - Weryfikacja konfiguracji serwera
+## Step 4 - Server configuration review
 
-W czwartym kroku jest widoczna aktualna konfiguracja serwera WWW oraz zalecenia, jakie stawia system YetiForce (czyli co trzeba zmienić i na jaką wartość). Należy pamiętać, że w zależności od wymagań, jakie się stawia aplikacji CRM, konfiguracja ta może ulec zmianom. Firma wdrożeniowa powinna uwzględnić zmiany we własnym zakresie. Dla przykładu, jeżeli generujesz duże raporty, których czas generowania jest dłuższy niż parametr `max_execution_time`, wtedy należy ten parametr ustawić tak, aby czas wykonywania skryptu był zawsze dłuższy niż czas generowania raportu. W przeciwnym wypadku taki raport może się nie wygenerować.
+In the fourth stepyou can find your current web server configuration compared to the requirements of YetiForce (what needs to be changed and to what values to set). It is necessary to remember that this configuration may change according to different requirements applied to the application and a deployment company should take it into consideration. For example, if you generate large reports that have a longer generating time than the maximum time set in `max_execution_time` parameter, then it is necessary to set the parameters in such a way that time of executing a script is always longer than time for generating a report. Otherwise, reports may not be generated successfully.
 
-Dla pewności, poproś swojego administratora, aby zapoznał się z tymi [wymaganiami dla serwerów WWW](/introduction/requirements/). Jeżeli nie będą spełnione wszystkie wymagane parametry i będziesz chciał przejść dalej, to aplikacja pokaże komunikat ostrzegawczy.
+Make sure your administrator is familiar with [web server requirements](/introduction/requirements/). If all required parameters are not met and you attempt to proceed with the installation, the application will display a warning message.
 
-Świadomy ryzyka związanego z niepoprawną konfiguracją środowiska WWW, możesz przejść dalej, klikając przycisk `Dalej`.
+Once you are aware of the risks associated with incorrect web server configuration you can click "OK" and move to the next step.
 
 ![Krok 4](install-4.png)
 
-## Krok 5 - Konfiguracja danych dostępowych
+## Step 5 - Access data configuration
 
-Na tym etapie musisz wypełnić podstawowe dane dostępowe do bazy danych i ustawić parametry wyjściowe dla systemu CRM. Na podstawie tych danych system utworzy bazę danych (o ile opcja ta została aktywowana), wgra strukturę bazy danych razem z podstawowymi danymi oraz utworzy podstawowe konto administratora, do którego będziesz mógł się zalogować po instalacji.
+In this step you need to enter access data to a database as well as set output parameters for the system. A database will be created on the basis of this data (when this option has been activated). The structure of the database will be copied together with basic records and an administrator account will be created, so after completing the installation it will be possible to log on this account.
 
-Jeżeli wprowadzisz nieprawidłowe dane dostępowe do bazy danych pokaże się błąd.
+If incorrect access data is entered into the database, an error message will be displayed.
 
-W takim wypadku musisz cofnąć się do ekranu poprzedniego i prawidłowo wprowadzić dane dostępowe. Jeżeli wszystko zostanie uzupełnione prawidłowo, zobaczysz ekran podobny do tego, który jest w kroku następnym.
+In this case, it is necessary to go back and enter the correct access data. If everything is set correctly, the screen from Step 7 will appear.
 
 ![Krok 5](install-5.png)
 
-## Krok 6 - Podsumowanie danych
+## Step 6 - Data summary
 
 ![Krok 6](install-6.png)
 
-## Krok 7 - Wprowadzenie danych rejestracyjnych
+## Step 7 - Enter registration information
 
-Wprowadź dane firmy która będzie korzystała z systemu, te dane będą potem używane do rejestracji systemu.
+Enter the data of the company that will use the CRM, the data will then be used to register the system. 
 
-Zgodnie z zapisami licencji każdy system musi być zarejestrowany po okresie próbnym 14 dni.
+According to the license, each system must be registered after the trial period of 14 days.
 
 ![Krok 7](install-7.png)
 
-## Krok 8 - Import bazy danych oraz konfigurowanie systemu
+## Step 8 - Database import and system configuration
 
 ![Krok 8](install-8.png)
 
-Jeżeli instalacja zostanie wykonana prawidłowo, zostaniesz automatycznie przeniesiony do systemu CRM.
+When the installation is performed correctly, you will be automatically redirected to the system.
 
 ![Krok 9](install-9.png)
