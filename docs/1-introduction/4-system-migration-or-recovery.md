@@ -1,5 +1,5 @@
 ---
-title: Migrating the system to a new server or restoring it from backup
+title: System migration or recovery
 description: How to properly migrate or restore a backup copy of YetiForce
 keywords:
   - move
