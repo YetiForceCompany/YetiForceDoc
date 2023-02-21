@@ -9,9 +9,12 @@ keywords:
 tags:
   - bugs
   - report
+preview: 3-how-to-report-bugs.jpg
 ---
 
 Please read the following article before you send us information about a bug. If you don't comply to it, instead of focusing on the development of the system, we may waste a lot of time for things that are trifling or have already been answered. We do our best to help everyone, so the better you are prepared, the quicker you will receive an answer. The following article isn't only about bugs but also about ideas for changes, new functionalities and asked questions.
+
+![3-how-to-report-bugs](3-how-to-report-bugs.jpg)
 
 ## 1. Language of issues
 
