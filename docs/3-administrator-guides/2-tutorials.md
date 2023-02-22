@@ -19,7 +19,7 @@ description: A collecton of video tutorials that present the administrative part
 - [🎬 YouTube](https://www.youtube.com/watch?v=55xh8UaLp7I&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/language-installation-update.mp4)
 
-## Migracja systemu na nowy serwer lub przywrócenie go z kopii zapasowej
+## Migrate the system to a new server or restore it from a backup
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=AAnD_Npa0ZM&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/system-migration.mp4)
