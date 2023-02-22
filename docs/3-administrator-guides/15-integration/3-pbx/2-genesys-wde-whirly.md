@@ -1,6 +1,6 @@
 ---
 title: Genesys WDE by Whirly
-description: Integracja z centralą telefoniczną za pośrednictwem aplikacji Bria Softphone
+description: Integracja z centralą telefoniczną za pośrednictwem aplikacji aplikacji Genesys Workspace Desktop Edition
 keywords:
   - Integracja
   - PBX
