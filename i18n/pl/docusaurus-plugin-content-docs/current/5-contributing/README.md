@@ -1,5 +1,5 @@
 ---
-title: Contributing / Community
+title: Społeczność
 description: One of the many advantages of open source software is the fact that everyone can contribute to its development.
 keywords:
   - Contributing
@@ -22,23 +22,22 @@ One of the many advantages of open source software is the fact that everyone can
 
 ## Meet the contributors
 
-Below you can find all the people who contributed to developing YetiForce and YetiForce Portal by submitting their contributions to our GitHub repository.
-**Thank you for all your hard work!**
+Below you can find all the people who contributed to developing YetiForce and YetiForce Portal by submitting their contributions to our GitHub repository. **Thank you for all your hard work!**
 
 ### YetiForceCRM Contributors
 
 <a class="no-shadow" href="https://github.com/YetiForceCompany/YetiForceCRM/graphs/contributors">
-	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceCRM"   />
+    <img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceCRM"   />
 </a>
 
 ### YetiForcePortal2 Contributors
 
 <a class="no-shadow" href="https://github.com/YetiForceCompany/YetiForcePortal2/graphs/contributors">
-	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForcePortal2"  />
+    <img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForcePortal2"  />
 </a>
 
 ### YetiForce Documentation Contributors
 
 <a class="no-shadow" href="https://github.com/YetiForceCompany/YetiForceDoc/graphs/contributors">
-	<img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceDoc"  />
+    <img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceDoc"  />
 </a>
