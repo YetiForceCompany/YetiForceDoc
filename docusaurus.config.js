@@ -9,7 +9,7 @@ module.exports = {
 	tagline: '👷 Site under construction 👷',
 	url: 'https://doc.yetiforce.com',
 	baseUrl: '/',
-	//baseUrl: '/YetiForceDoc/build/',
+	// baseUrl: '/YetiForceDoc/build/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
@@ -30,7 +30,8 @@ module.exports = {
 					// Please change this to your repo.
 					editUrl: ({ locale, versionDocsDirPath, docPath }) => {
 						if (locale !== 'en') {
-							return `https://github.com/YetiForceCompany/YetiForceDoc/edit/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
+							// return `https://github.com/YetiForceCompany/YetiForceDoc/edit/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
+							return `https://crowdin.com/project/yetiforcedoc/${locale}`;
 						}
 						return `https://github.com/YetiForceCompany/YetiForceDoc/edit/main/docs/${docPath}`;
 					},
