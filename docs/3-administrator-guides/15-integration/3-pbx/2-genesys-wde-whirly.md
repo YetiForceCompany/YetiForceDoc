@@ -1,8 +1,8 @@
 ---
 title: Genesys WDE by Whirly
-description: Integracja z centralą telefoniczną za pośrednictwem aplikacji aplikacji Genesys Workspace Desktop Edition
+description: PBX integration via Genesys Workspace Desktop Edition
 keywords:
-  - Integracja
+  - Integration
   - PBX
   - Genesys
   - YetiForce
@@ -12,62 +12,62 @@ tags:
 preview: genesys-wde-whirly.jpg
 ---
 
-Integracja z centralą telefoniczną za pośrednictwem aplikacji Genesys Workspace Desktop Edition.
+PBX integration via Genesys Workspace Desktop Edition.
 
 ![genesys-wde-whirly.jpg](genesys-wde-whirly.jpg)
 
-## Konfiguracja
+## Configuration
 
-W celu uruchomienia integracji należy wykonać poniższe kroki:
+In order to enable the integration, follow the steps below:
 
-### Dodanie konfiguracji do PBX
+### Add configuration to PBX
 
-Dodajemy wpis dp PBX o typie `Genesys WDE by Whirly`
+Add an entry to the PBX with the following type: `Genesys WDE by Whirly`
 
-W oknie należy podać następujące informacje:
+Provide the following information in the window:
 
-- Port nasłuchu HTTP - numer portu lokalnego, na którym nasłuchuje aplikacja WDE
-- Telefon - wymagany na potrzeby połączeń wychodzących, centrala umożliwia obsługę wielu numerów telefonu i należy określić, który jest używany po kliknięciu na numer telefonu.
-- Email - wymagany na potrzeby wysyłania wiadomości mailowych, centrala umożliwia obsługę wiadomości mail i należy określić, który adres mail ma być użyty po kliknięciu na adres e-mail.
+- HTTP listening port - the number of the local port used by the WDE application for listening
+- Phone - required for outgoing calls; the PBX supports multiple phone numbers and you must specify which one is used when a phone number is clicked.
+- Email - required for sending emails, the PBX supports emails and you must specify which address is used when you click on an email address.
 
 ![genesys-wde-whirly-1.jpg](genesys-wde-whirly-1.jpg)
 
-### Aktywacja dla użytkowników
+### Activation for users
 
-Kolejnym krokiem jest aktywowanie integracji dla użytkowników, domyślnie system używa podstawowej obsługi protokołów dla telefonu i adresu mail.
+The next step is to activate the integration for users; by default the system uses basic protocol support for telephone and e-mail address.
 
-Należy wejść na użytkownika, który ma mieć aktywną integrację i odnaleźć pola:
+Go to the user whose integration you want to enable and find the fields:
 
-- Genesys Agent ID (blok `Informacje podstawowe`) - wprowadzamy login użytkownika w Genesys WDE
+- Genesys Agent ID (block `Basic information`) - enter the user's login in Genesys WDE
 
 ![genesys-wde-whirly-2.jpg](genesys-wde-whirly-2.jpg)
 
-- Kompozytor poczty (blok `Integracja z pocztą e-mail`) - wybieramy `Genesys WDE by Whirly`
-- PBX użytkownika (blok `Centrala telefoniczna`) - wybieramy nazwę, którą wprowadziliśmy we wcześniejszym punkcie [Dodanie konfiguracji do PBX](#dodanie-konfiguracji-do-pbx)
+- Mail composer (block `Integration with mail`) - select `Genesys WDE by Whirly`
+- User PBX (block `Phone branch exchange`) - select the name you previously entered in [Add configuration to PBX](#add-configuration-to-pbx)
 
 ![genesys-wde-whirly-3.jpg](genesys-wde-whirly-3.jpg)
 
-### Dodanie konfiguracji do API
+### Add configuration to API
 
-Każda interakcja wysyła do API żądanie z pełnymi danymi i w odpowiedzi system YetiForce zwraca adres URL, który ma zostać uruchomiony użytkownikowi w Genesys WDE.
+Each interaction sends a request to the API with full data and in response the YetiForce system returns a URL to be enabled for the user in Genesys WDE.
 
-W tym celu należy dodać konfigurację w [`Konfiguracja systemu → Integracja → Web service - Aplikacje`](/administrator-guides/integration/webservice-apps/) o typie PBX.
+In oder to do that add PBX type configuration in [`Software configuration → Integration → Web service - Applications`](/administrator-guides/integration/webservice-apps/).
 
 ![genesys-wde-whirly-4.jpg](genesys-wde-whirly-4.jpg)
 
-Następnie należy skopiować klucz i wprowadzić go w konfiguracji Genesys Administrator.
+Then copy the key and paste it in Genesys Administrator configuration.
 
 ![genesys-wde-whirly-5.jpg](genesys-wde-whirly-5.jpg)
 
-### Dodanie konfiguracji do Genesys Administrator
+### Add configuration to Genesys Administrator
 
-W panelu Genesys Administrator wprowadzamy następujące parametry:
+Enter the following parameters in the Genesys Administrator panel:
 
 - Endpoint `__YETIFORCE_PATH__`/webservice/PBX/GenesysWdeWhirly/
-- Token/klucz wygenerowany w `Web service - Aplikacje`
+- Token/key generated in `Web service - Applications`
 
 ![genesys-wde-whirly-6.jpg](genesys-wde-whirly-6.jpg)
 
-## Odnośniki zewnętrzne
+## External links
 
 - https://www.genesys.com/collateral/genesys-workspace
