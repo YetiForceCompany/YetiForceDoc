@@ -16,6 +16,7 @@ preview: Cli.jpg
 ---
 
 Description of the CLI (Command Line Interface) to support custom YetiForce operations.
+
 Available from version `6.2.0`
 
 ![Eraser CLI](Cli.jpg)
