@@ -1,77 +1,77 @@
 ---
-title: Testuj
-description: Publiczna wersja testowa systemu YetiForce oraz Portalu klienta
+title: Test versions
+description: YetiForce and YetiForce Portal public test versions
 tags:
   - demo
-  - wersja testowa
+  - test version
 keywords:
   - demo
-  - wersja testowa
+  - test version
 ---
 
-## Wersja demonstracyjna systemu YetiForce
+## YetiForce demo
 
-### Wersja stabilna:
+### Stable:
 
-GitStable to stabilna wersja testowa systemu YetiForce.
+GitStable is the stable version of the YetiForce system.
 
-Adres: <a href="https://gitstable.yetiforce.com" target="_blank">gitstable.yetiforce.com</a>
+Address: <a href="https://gitstable.yetiforce.com" target="_blank">gitstable.yetiforce.com</a>
 
-- Uprawnienia administratora
-
-  - Login: demo
-  - Hasło: demo
-
-- Uprawnienia użytkownika (minimalny)
-
-  - Login: guest
-  - Hasło: guest
-
-- Uprawnienia użytkownika (podstawowy)
-  - Login: sales
-  - Hasło: sales
-
-Odświeżanie aplikacji w godzinach: ~7:30, ~19:25 CET
-
-### Wersja deweloperska:
-
-GitDeveloper to najbardziej aktualna deweloperska wersja systemu, która zawiera wszystkie najnowsze poprawki. Z tego powodu może ona również zawierać błędy.
-
-Adres: <a href="https://gitdeveloper.yetiforce.com" target="_blank">gitdeveloper.yetiforce.com</a>
-
-- Uprawnienia administratora
+- Admin permissions
 
   - Login: demo
-  - Hasło: demo
+  - Password: demo
 
-- Uprawnienia użytkownika (minimalny)
+- User permissions (minimal)
 
   - Login: guest
-  - Hasło: guest
+  - Password: guest
 
-- Uprawnienia użytkownika (podstawowy)
+- User permissions (basic)
   - Login: sales
-  - Hasło: sales
+  - Password: sales
 
-Odświeżanie aplikacji w godzinach: 7, 12, 15, 22 CET
+Application resets at: ~7:30, ~19:25 CET
 
-## Wersja demonstracyjna Portalu
+### Development:
 
-### Portal klienta
+GitDeveloper is the most recent development version of the system that includes all the latest fixes. Due to that, it's also likely to include some bugs and errors.
 
-Adres: <a href="https://gitdeveloper.yetiforce.com/portal/" target="_blank">gitdeveloper.yetiforce.com/portal</a>
+Address: <a href="https://gitdeveloper.yetiforce.com" target="_blank">gitdeveloper.yetiforce.com</a>
 
-- Klient - mały poziom uprawnień
+- Admin permissions
+
+  - Login: demo
+  - Password: demo
+
+- User permissions (minimal)
+
+  - Login: guest
+  - Password: guest
+
+- User permissions (basic)
+  - Login: sales
+  - Password: sales
+
+Application resets at: ~7, ~12, ~15, ~22 CET
+
+## Portal demo
+
+### Client Portal
+
+Address: <a href="https://gitdeveloper.yetiforce.com/portal/" target="_blank">gitdeveloper.yetiforce.com/portal</a>
+
+- Client - low permission level
   - Login: customer@yetiforce.com
-  - Hasło: customer
-- Dostawca - średni poziom uprawnień
+  - Password: customer
+- Vendor - middle permission level
   - Login: vendor@yetiforce.com
-  - Hasło: vendor
+  - Password: vendor
 
-### Portal partnera
+###  Partner Portal
 
-Adres: <a href="https://gitdevportal.yetiforce.com/" target="_blank">gitdevportal.yetiforce.com</a>
+Address: <a href="https://gitdevportal.yetiforce.com/" target="_blank">gitdevportal.yetiforce.com</a>
 
-- Partner - pełny poziom uprawnień
+- Partner - full permissions
   - Login: partner@yetiforce.com
-  - Hasło: partner
+  - Password: partner
