@@ -1,0 +1,36 @@
+name: Crowdin upload
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+
+      - name: Install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Crowdin upload
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: crowdin upload
+        env:
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}

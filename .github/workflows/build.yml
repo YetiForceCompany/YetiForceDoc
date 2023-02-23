@@ -35,10 +35,3 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: build
-
-      - name: Crowdin upload
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: crowdin upload
-        env:
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
