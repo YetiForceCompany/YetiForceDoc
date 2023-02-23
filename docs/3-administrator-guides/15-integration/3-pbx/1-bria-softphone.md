@@ -1,8 +1,8 @@
 ---
 title: Bria Softphone
-description: Integracja z centralą telefoniczną za pośrednictwem aplikacji Bria Softphone
+description: PBX integration via the Bria Softphone application
 keywords:
-  - Integracja
+  - Integration
   - PBX
   - Bria Softphone
   - YetiForce
@@ -12,12 +12,12 @@ tags:
 preview: bria-softphone-1.png
 ---
 
-:::tip Funkcjonalność dostępna od wersji YetiForce 6.5
+:::tip This functionality is available for YetiForce version 6.5 and later
 :::
 
-Integracja z centralą telefoniczną za pośrednictwem aplikacji Bria Softphone.
+PBX integration via the Bria Softphone application.
 
-Połączenie z Bria Softphone bazuje na `Bria Desktop API`, dzięki któremu użytkownik w czasie rzeczywistym otrzymuje informacje o połączeniach.
+The integration with Bria Softphone is based on `Bria Desktop API`, that allows the user to to receive information on calls in real time.
 
 ![bria-softphone-1.png](bria-softphone-1.png)
 
@@ -41,52 +41,52 @@ import ReactPlayer from 'react-player';
 	</TabItem>
 </Tabs>
 
-## Konfiguracja
+## Configuration
 
-### Dodanie konfiguracji do PBX
+### Add configuration to PBX
 
-Dodajemy wpis o typie `BRIA Softphone`
+Add a `BRIA Softphone` type entry
 
 ![bria-softphone-2.png](bria-softphone-2.png)
 
-### Wprowadzanie numeru wewnętrznego w użytkownikach
+### Enter internal number in users
 
-Wprowadzamy wewnętrzny numer telefonu dla użytkowników, którzy mają mieć aktywną integrację z Softphone
+Enter the internal number for users whose Bria Softphone integration you want to activate.
 
 ![bria-softphone-3.png](bria-softphone-3.png)
 
-## Status połączania z Softphone
+## Bria Softphone connection status
 
-Ikona na górnej belce systemu pokazuje aktualny status integracji z aplikacją Bria Softphone.
+The icon on the top bar shows the current Bria Softphone integration status.
 
-![bria-softphone-4.png](bria-softphone-4.png) Brak połączenia z telefonem
+![bria-softphone-4.png](bria-softphone-4.png) No connection with the phone
 
-![bria-softphone-5.png](bria-softphone-5.png) Aktywne połączenie z telefonem, widać numer/nazwę aktualnie zalogowanego użytkownika w Softphone
+![bria-softphone-5.png](bria-softphone-5.png) Connection with the phone is active; shows the current Bria Softphone user's number/name
 
-![bria-softphone-6.png](bria-softphone-6.png) Rozmowa wychodząca lub przychodząca, pokazuje nazwę/numer rozmówcy
+![bria-softphone-6.png](bria-softphone-6.png) Incoming or outgoing call; shows the caller's name/number
 
-## Wybieranie numeru telefonu
+## Dialing
 
-Jeśli integracja została aktywowana prawidłowo, to wszystkie pola o typie `telefon` będą miały dodatkową ikonę telefonu.
-Po kliknięciu numeru lub ikony telefonu zostanie wywołana metoda do utworzenia połączenia z wybranym numerem telefonu.
+If the integration has been activated correctly, all `phone` type field will show an additional phone icon.
+When you click on a phone number or icon, a method will be called to create a call to the selected phone number.
 
 ![bria-softphone-7.png](bria-softphone-7.png)
 
-## Połączenia przychodzące
+## Incoming calls
 
-Gdy otrzymujemy połączenie przychodzące system poinformuje o nim innym kolorem i ikoną oraz pokaże numer telefonu osoby dzwoniącej.
+When you receive an incoming call the system will inform you about it using a different icon and color, and will display the caller's number.
 
 ![bria-softphone-8.png](bria-softphone-8.png)
 
-## Odnośniki zewnętrzne
+## External links
 
 - https://www.counterpath.com/softphone-clients/
 - https://www.counterpath.com/teams-pricing/
 - https://www.counterpath.com/bria-desktop-api/
 
-## Debugowanie
+## Debugging
 
-W celu aktywacji logów w przeglądarce dla integracji należy ustawić w pliku [config/Debug.php](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) parametr [$JS_DEBUG](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) na `true`.
+In order to enable logs in the browser for the Bria Softphone integration set the [$JS_DEBUG](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) to `true` in the [config/Debug.php](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) file.
 
 ```php
 /** Turn on/off error debugging in javascript */
