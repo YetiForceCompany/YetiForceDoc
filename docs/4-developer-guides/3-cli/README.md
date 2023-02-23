@@ -15,9 +15,10 @@ tags:
 preview: Cli.jpg
 ---
 
-Description of the CLI (Command Line Interface) to support custom YetiForce operations.
+:::tip This functionality is available for YetiForce version `6.2.0` and later
+:::
 
-Available from version `6.2.0`
+Description of the CLI (Command Line Interface) to support custom YetiForce operations.
 
 ![Eraser CLI](Cli.jpg)
 

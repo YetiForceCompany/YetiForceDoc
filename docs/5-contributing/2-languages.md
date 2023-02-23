@@ -20,10 +20,12 @@ Thanks to the efforts of our community, YetiForce CRM has been translated into m
 
 ## Crowdin
 
-The official translation project of [YetiForce](https://crowdin.com/project/yetiforcecrm) [![Crowdin](https://badges.crowdin.net/yetiforcecrm/localized.svg)](https://crowdin.com/project/yetiforcecrm) and [YetiForcePortal2](https://crowdin.com/project/yetiforceportal2) [![Crowdin](https://badges.crowdin.net/yetiforceportal2/localized.svg)](https://crowdin.com/project/yetiforceportal2) can be found on the Crowdin platform.
-The code and translations are also available in our [GitHub repository](https://github.com/YetiForceCompany/YetiForceCRM).
+The official translation project of [YetiForce](https://crowdin.com/project/yetiforcecrm) [![Crowdin](https://badges.crowdin.net/yetiforcecrm/localized.svg)](https://crowdin.com/project/yetiforcecrm) and [YetiForcePortal2](https://crowdin.com/project/yetiforceportal2) [![Crowdin](https://badges.crowdin.net/yetiforceportal2/localized.svg)](https://crowdin.com/project/yetiforceportal2) can be found on the Crowdin platform. The code and translations are also available in our [GitHub repository](https://github.com/YetiForceCompany/YetiForceCRM).
 
-> ℹ **You need a Crowdin account to be able to add translations.**
+:::warning
+
+**You need a Crowdin account to be able to add translations.**
+:::
 
 :::tip
 

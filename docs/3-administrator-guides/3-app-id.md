@@ -39,9 +39,9 @@ If your APP ID changes all your purchased addons will be deactivated. Please che
 
 ## Why does the APP ID change?
 
-The APP ID must include unique elements for each server, so that the ID is also unique and not duplicated, which is why it has so many components. If any of the above mentioned parameters change, the APP ID will change as well, which will require the system to be registered once again. 
+The APP ID must include unique elements for each server, so that the ID is also unique and not duplicated, which is why it has so many components. If any of the above mentioned parameters change, the APP ID will change as well, which will require the system to be registered once again.
 
-The APP ID often changes in the Docker environment if it's not properly protected against APP ID changes. The APP ID will also change if you move your system to another server. 
+The APP ID often changes in the Docker environment if it's not properly protected against APP ID changes. The APP ID will also change if you move your system to another server.
 
 Below you can find a short tutorial on how and where to find the APP ID.
 
@@ -75,7 +75,8 @@ Remember to include the PayPal transaction information and the email address you
 
 #### Step 1
 
-Go to system settings by clicking the cogwheel button <i className="fas fa-cog fa-fw"></i> in the upper right corner. 
+Go to system settings by clicking the cogwheel button <i className="fas fa-cog fa-fw"></i> in the upper right corner.
+
 ![App ID](app-id-3.jpg)
 
 #### Step 2
@@ -86,7 +87,7 @@ In the menu panel on the left select [Company](/administrator-guides/company) an
 
 #### Step 3
 
-The APP ID can be found in the popup window. Copy the APP ID and send it to hello@yetiforce.com 
+The APP ID can be found in the popup window. Copy the APP ID and send it to hello@yetiforce.com
 
 Remember to include the PayPal transaction information and the email address you used for the transaction.
 

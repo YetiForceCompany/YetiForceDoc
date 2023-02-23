@@ -12,7 +12,8 @@ tags:
 preview: Eraser-0.jpg
 ---
 
-The `Data Eraser` module is available from version `6.4.146`
+:::tip This functionality is available for YetiForce version `6.4.146` and later
+:::
 
 ![Eraser CLI](Eraser-0.jpg)
 
