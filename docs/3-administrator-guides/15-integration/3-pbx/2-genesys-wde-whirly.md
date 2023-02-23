@@ -19,9 +19,9 @@ PBX integration via Genesys Workspace Desktop Edition.
 
 ![genesys-wde-whirly.jpg](genesys-wde-whirly.jpg)
 
-## Aktywacja
+## Activation
 
-Ze względu na dużą złożoność procesów integracja wymaga wdrożonego rozszerzenia w Genesys od Whirly oraz dedykowanego wdrożenia w systemie YetiForce.
+Due to the high complexity of the processes, the integration requires an extension implemented in Genesys from Whirly, and a dedicated implementation in the YetiForce system.
 
 ## Configuration
 
