@@ -12,7 +12,11 @@ tags:
 preview: bria-softphone-1.png
 ---
 
+:::tip Funkcjonalność dostępna od wersji YetiForce 6.5
+:::
+
 Integracja z centralą telefoniczną za pośrednictwem aplikacji Bria Softphone.
+
 Połączenie z Bria Softphone bazuje na `Bria Desktop API` dzięki której można użytkownik ma w czasie rzeczywistym informacje o połączeniach.
 
 ![bria-softphone-1.png](bria-softphone-1.png)
