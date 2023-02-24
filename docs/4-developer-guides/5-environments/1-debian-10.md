@@ -1,58 +1,58 @@
 ---
-title: Jak skonfigurować serwer z Debian 10 dla systemu YetiForce
-description: Prosta instrukcja instalacji i konfiguracji systemu operacyjnego Debian 10 dla systemu YetiForce
+title: How to install YetiForce on Debian 10
+description: A simple manual on how to install and configure Debian 10 to work with YetiForce
 keywords:
   - Debian
-  - instrukcja
-  - instalacja
-  - konfiguracja
-  - pakiety
+  - manual
+  - installation
+  - configuration
+  - packages
   - YetiForce
 tags:
-  - instalacja
+  - installation
   - Debian
 ---
 
-Instrukcja przedstawia proces instalacji i konfiguracji platformy LEMP dla YetiForce na Debian 10 z serwerem NGINX/PHP-FPM 7.4/MariaDB
+This tutorial presents LEMP installation and configuration for YetiForce on Debian 10 with NGINX/PHP-FPM 7.4/MariaDB server.
 
 :::warning
-W artykule zakładamy, że masz przynajmniej podstawową wiedzę o Linux i wiesz jak korzystać z powłoki shell.
+This article assumes you have at least a basic understanding of Linux, and you know how to use the shell.
 :::
 
-Instalacja jest dość prosta i zakłada, że ​​pracujesz na koncie root, jeśli nie, być może będziesz musiał dodać `sudo` do poleceń, aby uzyskać uprawnienia `root'a`.
+Installation is quite simple and assumes you are working on the root account. If not, you may have to add `sudo` to the commands to gain `root` privileges.
 
 :::tip
-Pełna lista wymagań dla systemu YetiForce jest na stronie: [Wymagania systemu YetiForce](/introduction/requirements/)
+The full list of requirements for the YetiForce system is available here: [YetiForce requirements](/introduction/requirements/)
 :::
 
-## 1. Aktualizacja wszystkich zainstalowanych pakietów do najnowszych dostępnych wersji
+## 1. Update all installed packages to the latest available versions
 
-Instalacja YetiForce CRM jest bardzo prosta. Instalacja odbywa się jak większość aplikacji webowych, za pomocą kreatora przez przeglądarkę.
+The installation is quite simple and uses an installation creator in the browser similarly to other web apps.
 
 ```bash
 apt-get update -y
 apt-get upgrade -y
 ```
 
-## 2. Zainstaluj wymagane pakiety
+## 2.  Install required packages
 
 ```bash
 apt-get install -y --no-install-recommends apt-utils curl openssl wget ca-certificates apt-transport-https lsb-release gnupg zip unzip cron mc htop p7zip-full
 ```
 
-## 3. Dodaj wymagane repozytoria (źródła pakietów)
+## 3. Add required repositories (package sources)
 
-Domyślna wersja PHP używana w danej dystrybucji nie zawsze jest zgodna z wymaganiami, dlatego używamy dodatkowego źródła pakietów.
+The default PHP version used in a given distribution does not always match the requirements, so we use an additional package source.
 
-Zalecamy używanie https://deb.sury.org/ , https://github.com/oerdnj/deb.sury.org zawiera najnowsze wersje oraz częste aktualizacje PHP.
+We recommend using https://deb.sury.org/, https://github.com/oerdnj/deb.sury.org as it has the latest versions and frequent PHP updates.
 
 ```bash
 wget -q -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list
 ```
 
-:::important Opcjonalnie
-Jeśli chcesz mieć najnowszą wersję silnika bazy danych, to możesz dodać dodatkowe repozytorium pakietów od MariaDB
+:::important Optional
+If you want the latest version of the database engine then you can add an additional package repository from MariaDB.
 
 ```bash
 apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
@@ -61,28 +61,28 @@ echo "deb [arch=amd64,arm64,ppc64el] https://ftp.osuosl.org/pub/mariadb/repo/10.
 
 :::
 
-## 4. Aktualizacja nowo dodanych pakietów
+## 4. Update newly added packages
 
 ```bash
 apt-get update -y
 ```
 
-## 5. Instalacja MariaDB
+## 5. Install MariaDB
 
 ```bash
 apt-get install -y --no-install-recommends mariadb-server mariadb-client
 ```
 
-## 6. Instalacja PHP-FPM / NGINX
+## 6. Install PHP-FPM / NGINX
 
 ```bash
 apt-get install -y --no-install-recommends nginx nginx-extras php7.4-fpm php7.4-mysql php7.4-curl php7.4-intl php7.4-gd php7.4-fpm php7.4-bcmath php7.4-soap php7.4-ldap php7.4-imap php7.4-xml php7.4-cli php7.4-zip php7.4-json php7.4-opcache php7.4-mbstring php7.4-imagick php7.4-apcu
 apt-get -y autoclean
 ```
 
-## 7. Tworzenie użytkowników, grup oraz konfiguracja struktury
+## 7. Create users, groups and configure the structure
 
-Ze względów bezpieczeństwa tworzymy oddzielnego użytkownika w OS, dzięki temu ograniczamy uprawniania dla aplikacji.
+For security reasons, create a separate user in the OS, which will limit the permissions for the application.
 
 ```bash
 groupadd yfprod
@@ -94,8 +94,8 @@ mkdir -p /var/log/php/
 passwd yfprod
 ```
 
-:::important Opcjonalnie
-Utworzenie środowiska testowego
+:::important Optional
+Create a test environment
 
 ```bash
 groupadd yftest
@@ -108,7 +108,7 @@ passwd yftest
 
 :::
 
-## 8. Konfiguracja NGINX
+## 8. Configure NGINX
 
 ```bash
 rm /etc/nginx/sites-available/default
@@ -121,12 +121,12 @@ rm /etc/nginx/nginx.conf
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/YetiForceCompany/YetiForceCRM/developer/tests/setup/nginx/nginx.conf"
 ```
 
-:::warning
-Plik [www.conf](https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/nginx/www.conf) z github zawiera przykładowe nazwy domen i należy je zmienić. W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji CRM, która będzie instalowana.
+:::warning Note:
+The [www.conf](https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/nginx/www.conf) GitHub file contains example domain names that should be changed. The example is presented on the development version, we recommend downloading the files for the system version that will be installed.
 :::
 
-:::important Opcjonalnie
-Utworzenie środowiska testowego, wymaga zmiany nazwy domeny
+:::important Optional
+Creating a test environment requires changing the domain name
 
 ```bash
 cp /etc/nginx/sites-available/yfprod.conf /etc/nginx/sites-available/yftest.conf
@@ -135,7 +135,7 @@ ln -s /etc/nginx/sites-available/yftest.conf /etc/nginx/sites-enabled/
 
 :::
 
-## 9. Konfiguracja PHP-FPM
+## 9. Configure PHP-FPM
 
 ```bash
 rm /etc/php/7.4/fpm/pool.d/www.conf
@@ -148,12 +148,12 @@ sed -i 's/output_buffering = "On"/output_buffering = "Off"/g' /etc/php/7.4/cli/c
 ```
 
 :::warning
-W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji CRM, która będzie instalowana np.
-https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
+The example is presented on the development version, we recommend downloading the files for the CRM version that will be installed, e.g. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
+
 :::
 
 :::important Opcjonalnie
-Utworzenie środowiska testowego, wymaga skopiowania pliku i podmiany w zawartości yfprod na yftest
+Creating a test environment requires copying the file and replacing the `yfprod` with `yftest`
 
 ```bash
 cp /etc/php/7.4/fpm/pool.d/yfprod.conf /etc/php/7.4/fpm/pool.d/yftest.conf
@@ -162,7 +162,7 @@ sed -i 's/yfprod/yftest/g' /etc/php/7.4/fpm/pool.d/yftest.conf
 
 :::
 
-## 10. Konfiguracja MariaDB
+## 10. Configure MariaDB
 
 ```bash
 rm /etc/mysql/mariadb.conf.d/50-server.cnf
@@ -170,10 +170,11 @@ wget -O /etc/mysql/mariadb.conf.d/50-server.cnf "https://raw.githubusercontent.c
 ```
 
 :::warning
-W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji CRM, która będzie instalowana np.
+The example is presented on the development version, we recommend downloading the files for the system version that will be installed, e.g.
 https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
 :::
-Domyślnie MariaDB nie jest bezpieczna, ale można ją zabezpieczyć na dwa sposoby:
+
+**MariaDB is not secure by default**. You can secure it in two ways:
 
 ```
 mysql_secure_installation
@@ -199,7 +200,7 @@ All done!  If you've completed all of the above steps, your MariaDB installation
 Thanks for using MariaDB!
 ```
 
-Lub ręcznie wprowadzić zabezpieczenia:
+Or secure it manually:
 
 ```bash
 DB_ROOT_PASS=`openssl rand -base64 15`
@@ -215,7 +216,7 @@ echo "DELETE FROM mysql.db WHERE Db='test' OR Db='test\_%';" | mysql --user=root
 echo "FLUSH PRIVILEGES;" | mysql --user=root -p$DB_ROOT_PASS
 ```
 
-Tworzymy nowego użytkownika i bazę danych dla CRM:
+Create a new user and database for YetiForce:
 
 ```bash
 echo "CREATE DATABASE $DB_AND_USER1_NAME CHARACTER SET utf8 COLLATE utf8_general_ci;" | mysql --user=root -p$DB_ROOT_PASS;
@@ -224,13 +225,13 @@ echo "GRANT ALL PRIVILEGES ON $DB_AND_USER1_NAME.* TO '$DB_AND_USER1_NAME'@'loca
 echo "FLUSH PRIVILEGES;" | mysql --user=root -p$DB_ROOT_PASS
 ```
 
-## 11. Konfiguracja CRON-a
+## 11. Configure CRON-a
 
 ```bash
 wget -O /etc/cron.d/yf_crm "https://raw.githubusercontent.com/YetiForceCompany/YetiForceCRM/developer/tests/setup/crons.conf"
 ```
 
-## 12. Uruchamianie usług
+## 12. Activate services
 
 ```bash
 systemctl restart cron.service
@@ -239,7 +240,7 @@ systemctl restart php7.4-fpm.service
 systemctl restart nginx.service
 ```
 
-## 13. Pobranie instalatora systemu YetiForce
+## 13. Download YetiForce installer
 
 ```bash
 cd /home/yfprod/html/
@@ -251,13 +252,13 @@ rm .user.ini
 rm public_html/.user.ini
 ```
 
-## 14. Instalacja systemu YetiForce
+## 14. Install YetiForce
 
-Pełny opis instalacji systemu YetiForce znajduje się w artykule: [Instalacja systemu YetiForce](/introduction/installation-manual#jak-zainstalować-system-crm-)
+A complete description of the YetiForce installation can be found in the article: [Installation manual](introduction/installation-manual/)
 
-## 15. Uwagi końcowe
+## 15. Final remarks
 
 :::warning
-Po zakończeniu konfiguracji dostęp do SSH powinien zostać ograniczony tylko do zaufanych adresów IP lub VPN.
-Zalecamy również wyłączenie możliwości logowania się na użytkownika root bezpośrednio przez SSH oraz instalację i konfigurację firewall.
+Once setup is complete, SSH access should be restricted to trusted IP or VPN addresses only.
+We also recommend disabling root login directly via SSH and installing and configuring a firewall.
 :::
