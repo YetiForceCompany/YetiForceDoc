@@ -70,8 +70,7 @@ More information: [Outlook add-in requirements](https://learn.microsoft.com/en-u
 
 ### Browser engine
 
-Please check your Outlook version as the add-on is based on the web browser engine.
-The YetiForce system will not work fully properly for old versions that support the "Internet Explorer" engine.
+Please check your Outlook version as the add-on is based on the web browser engine. The YetiForce system will not work fully properly for old versions that support the "Internet Explorer" engine.
 
 For a full description of the requirements, see [Browsers used by Office add-ins](https://learn.microsoft.com/en-us/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins)
 
@@ -109,13 +108,11 @@ Go to `system settings > Integration > Mail integration panel` and click `Downlo
 
 ### Installation of the add-in extension in Outlook
 
-Installation instructions are available at the [official Microsoft website](https://support.microsoft.com/en-us/office/installed-add-ins-a61762b7-7a82-47bd-b14e-bbc15eaeb70f).
-Please follow the instructions from the link above for proper installation.
+Installation instructions are available at the [official Microsoft website](https://support.microsoft.com/en-us/office/installed-add-ins-a61762b7-7a82-47bd-b14e-bbc15eaeb70f). Please follow the instructions from the link above for proper installation.
 
 ### Permission to access cookies (only the web version of Outlook web app)
 
-You must permit cookies from other websites on the Outlook Web App page.
-By default, the browser blocks unwanted scripts from additional websites.
+You must permit cookies from other websites on the Outlook Web App page. By default, the browser blocks unwanted scripts from additional websites.
 
 ![cookies1](cookies1.png)
 
@@ -167,8 +164,7 @@ Standard fields are: Contacts - Primary email, Accounts - Primary email, Leads -
 
 ## Actions
 
-For the `Import email manually` to appear,it is required to configure actions.
-Actions are configured in the Users module in the `Available e-mail scanner actions (Outlook)` field.
+For the `Import email manually` to appear,it is required to configure actions. Actions are configured in the Users module in the `Available e-mail scanner actions (Outlook)` field.
 
 Standard actions:
 

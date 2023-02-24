@@ -49,6 +49,7 @@ import DocCardList from '@theme/DocCardList';
 ## Core server software (LAMP/LEMP)
 
 - **Operating system - Debian, Ubuntu, RedHat, Mint** - works on most Linux distributions. We don't recommend the MS Windows operating system as well as MS Windows Server. Our system works well on Windows servers, however, it's not an optimal environment in terms of web applications.
+
   :::warning
   Ze względów bezpieczeństwa zalecamy aby każda wersja systemu YetiForce (PROD i TEST) została uruchomiona na oddzielnym/dedykowanym użytkowniku systemu operacyjnego (a najlepiej na oddzielnym serwerze) np. yfprod, yftest.
   Nie zalecamy używania jednego użytkownika systemu operacyjnego do kilku aplikacji/stron WWW.
@@ -58,6 +59,7 @@ import DocCardList from '@theme/DocCardList';
 
   - **Nginx `1.23` (recommended)** - works on earlier versions as well, however, the latest stable versions are recommended. You can also use alternative software as long as it is compatible.
   - **Apache `2.4`** - works on earlier versions as well (`2.1, 2.2, 2.3`), however, the latest stable versions are recommended. You can also use alternative software as long as it is compatible.
+
     :::warning
     The system does not work with the ModSecurity web server extension
     :::
@@ -260,14 +262,15 @@ The configuration should allow the uploaded files to have full read and write ac
 ### Issues with SELinux
 
 :::warning
-Permission issues occur frequently if SELinux is installed on the server and the enforcing mode is enabled.
-Note the parameters below:
+Permission issues occur frequently if SELinux is installed on the server and the enforcing mode is enabled. Note the parameters below:
 
 - httpd_unified
 - httpd_can_network_connect
 
 https://www.nginx.com/blog/using-nginx-plus-with-selinux/
+
 https://docs.nextcloud.com/server/latest/admin_manual/installation/selinux_configuration.html
+
 https://www.getpagespeed.com/server-setup/nginx/nginx-selinux-configuration
 
 ```bash
@@ -332,7 +335,7 @@ The configuration below works only if Apache (eg. `httpd.conf`) is set to "Allow
 </IfModule>
 ```
 
-## Addotional configuration using user.ini
+## Additional configuration using user.ini
 
 You can also quickly change the PHP configuration by creating a user.ini file in the main directory `$_SERVER['DOCUMENT_ROOT']`, right now it supports CGI/FastCGI. However, be careful because not all parameters can be configured this way (https://www.php.net/manual/en/configuration.changes.modes.php).
 

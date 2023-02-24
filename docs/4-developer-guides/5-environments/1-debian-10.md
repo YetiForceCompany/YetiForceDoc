@@ -27,8 +27,6 @@ The full list of requirements for the YetiForce system is available here: [YetiF
 
 ## 1. Update all installed packages to the latest available versions
 
-The installation is quite simple and uses an installation creator in the browser similarly to other web apps.
-
 ```bash
 apt-get update -y
 apt-get upgrade -y

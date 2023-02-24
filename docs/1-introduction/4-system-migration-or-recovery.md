@@ -42,13 +42,13 @@ It is best to unpack the files directly on the server, which will preserve the o
 
 :::tip
 
-If you have a separate copy of the storage directory, like in case of [YetiForce Cloud](https://yetiforce.com/pl/marketplace/chmura) you need to unpack the backup copy to `__YETIFORCE_PATH__/storage` so that there is no storage directory in this directory, and only the following data directories instead: https://github.com/YetiForceCompany/YetiForceCRM/tree/developer/storage 
+If you have a separate copy of the storage directory, like in case of [YetiForce Cloud](https://yetiforce.com/pl/marketplace/chmura) you need to unpack the backup copy to `__YETIFORCE_PATH__/storage` so that there is no storage directory in this directory, and only the following data directories instead: https://github.com/YetiForceCompany/YetiForceCRM/tree/developer/storage
 
 :::
 
 ## Upload the database
 
-Upload the database using the CLI console (recommended) or a database client eg. DBeaver,  Database Workbench , SQLyog
+Upload the database using the CLI console (recommended) or a database client eg. DBeaver, Database Workbench , SQLyog
 
 ```sql
 mysql -P 3306 -h 127.0.0.1  -u yetiforce -p yetiforce < dump.sql
@@ -159,7 +159,8 @@ Some addons may need to be reconfigured when changing the location or address of
 
 ### YetiForce Outlook Integration Panel
 
-Requires reinstallation and the installation of a new XML file. 
+Requires reinstallation and the installation of a new XML file.
+
 The old addon installed in Outlook should be removed and the new XML file from the system panel should be downloaded according to the [instructions](/administrator-guides/integration/mail-integration-panel/outlook).
 
 ## Create a test environment
@@ -172,7 +173,7 @@ If you create a test environment, it is worth introducing some important changes
 
 Display a test environment notice on the login page and on the top bar of the system.
 
-From version `6.2`  it is possible to add in the configuration file [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_headerAlertMessage) some additional messages.
+From version `6.2` it is possible to add in the configuration file [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_headerAlertMessage) some additional messages.
 
 ```php
 /** Header alert message */
@@ -195,6 +196,7 @@ public static $loginPageAlertIcon = '';
 ```
 
 ![loginPageAlert](migrating-or-restoring-system-1.png)
+
 ![headerAlert](migrating-or-restoring-system-2.png)
 
 ### Change the sender name in SMTP or disable the CRON task responsible for sending out emails
