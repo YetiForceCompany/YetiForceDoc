@@ -1,14 +1,12 @@
 ---
 title: Tutoriale wideo
 keywords:
-  - filmy
   - wideo
   - tutoriale
 tags:
-  - filmy
   - wideo
   - tutoriale
-description: Zbiór tutoriali wideo pokazujących administrowanie system YetiForce
+description: Zbiór wideo tutoriali prezentujących część administracyjną systemu YetiForce
 ---
 
 ## Aktualizacja systemu
@@ -21,12 +19,12 @@ description: Zbiór tutoriali wideo pokazujących administrowanie system YetiFor
 - [🎬 YouTube](https://www.youtube.com/watch?v=55xh8UaLp7I&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/language-installation-update.mp4)
 
-## Migracja systemu na nowy serwer lub przywrócenie go z kopii zapasowej
+## Migrate the system to a new server or restore it from a backup
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=AAnD_Npa0ZM&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/system-migration.mp4)
 
-## Jak zmienić hasło w systemie
+## Zmiana hasła w systemie
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=0k_ifsofCOc&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/forgot-password.mp4)
@@ -61,7 +59,7 @@ description: Zbiór tutoriali wideo pokazujących administrowanie system YetiFor
 - [🎬 YouTube](https://www.youtube.com/watch?v=0JBckYE9ZuI&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/mail-scanner-configuration-for-ticketing-proces.mp4)
 
-## Instalacja systemu YetiForce Portal
+## Instalacja portalu YetiForce
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=V-2x00bb4CI&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/portal-installation.mp4)
@@ -71,12 +69,12 @@ description: Zbiór tutoriali wideo pokazujących administrowanie system YetiFor
 - [🎬 YouTube](https://www.youtube.com/watch?v=WwgE1yX6akE&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/outlook-integration-panel.mp4)
 
-## Aktywacja panelu integracji Microsoft Outlook
+## Activate Microsoft Outlook integration
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=HTRG81waq54&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/outlook-activation.mp4)
 
-## Konfiguracja CalDav/CarDav na urządzeniu z android za pomocą aplikacji DavDroid
+## Konfiguracja CalDav/CarDav na urządzeniu Android za pomocą aplikacji DavDroid
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=Jg3mDVPz5dg&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/integration-dav-DavDroid.mp4)
@@ -91,22 +89,22 @@ description: Zbiór tutoriali wideo pokazujących administrowanie system YetiFor
 - [🎬 YouTube](https://www.youtube.com/watch?v=XlIXiQpC9ug&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/record-collector.mp4)
 
-## "YetiForce Password Security" - Integracja z bazą wykradzionych haseł
+## Integracja z YetiForce Password Security
 
-### Wersja angielska
+### w języku angielskim
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=x0QnH2YsW8w&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 
-### Wersja polska
+### w języku polskim
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=63bMcyoSS4o&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 
-## Jak włączyć konsolę debugowania (dla programisty)
+## Włącz konsolę debugowania (dla programistów)
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=0yPGyjdm76A&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/debug-console.mp4)
 
-## Administracja systemem z poziomu CLI (dla programisty/administratora OS)
+## Administracja systemem z poziomu CLI (dla programistów/administratorów systemu operacyjnego)
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=P2mg66WotGI&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/CLI.mp4)
@@ -116,7 +114,7 @@ description: Zbiór tutoriali wideo pokazujących administrowanie system YetiFor
 - [🎬 YouTube](https://www.youtube.com/watch?v=FEGoUFOu3mo&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/email-templates-signature.mp4)
 
-## Integracja z centralką BriaSoftphone
+## Integracja z BriaSoftphone
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=sWyz4oqKYwI&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/integration-BriaSoftphone.mp4)

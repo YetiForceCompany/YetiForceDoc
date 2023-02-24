@@ -33,6 +33,7 @@ php cli.php -m System -a update -t patches
 ```
 
 ![System CLI](System-1.png)
+
 Aktualizacja systemu do kolejnej stabilnej wersji
 
 ```bash

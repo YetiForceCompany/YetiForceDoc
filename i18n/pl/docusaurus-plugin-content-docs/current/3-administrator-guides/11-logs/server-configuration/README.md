@@ -16,6 +16,7 @@ description: Panel pokazujący raport konfiguracji serwera, pozwala zweryfikowa�
 ---
 
 Panel konfiguracji serwera to miejsce w którym można zobaczyć raport konfiguracji wszystkich parametrów serwera, na którym zainstalowany został system.
+
 Jest to niezwykle przydatna funkcjonalność, szczególnie jeśli napotykamy się na błędy w systemie - panel w przejrzysty sposób pokaże, które parametry i ustawienia nie spełniają wymagań aplikacji, podświetlając je na czerwono.
 
 ![Raport konfiguracji](main.jpg)

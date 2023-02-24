@@ -1,6 +1,6 @@
 ---
 title: Genesys WDE by Whirly
-description: Integracja z centralą telefoniczną za pośrednictwem aplikacji aplikacji Genesys Workspace Desktop Edition
+description: Integracja z centralą telefoniczną za pośrednictwem aplikacji Genesys Workspace Desktop Edition
 keywords:
   - Integracja
   - PBX
@@ -12,9 +12,16 @@ tags:
 preview: genesys-wde-whirly.jpg
 ---
 
+:::tip This functionality is available for YetiForce version 6.5 and later
+:::
+
 Integracja z centralą telefoniczną za pośrednictwem aplikacji Genesys Workspace Desktop Edition.
 
 ![genesys-wde-whirly.jpg](genesys-wde-whirly.jpg)
+
+## Aktywuj
+
+Due to the high complexity of the processes, the integration requires an extension implemented in Genesys from Whirly, and a dedicated implementation in the YetiForce system.
 
 ## Konfiguracja
 

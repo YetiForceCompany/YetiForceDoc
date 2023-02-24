@@ -1,22 +1,20 @@
 ---
 title: Tutoriale wideo
 keywords:
-  - filmy
   - wideo
   - tutoriale
 tags:
-  - filmy
   - wideo
   - tutoriale
-description: Zbiór tutoriali wideo pokazujące cześć użytkownika system YetiForce
+description: Zbiór wideo tutoriali prezentujących część użytkownika systemu YetiForce
 ---
 
-## Jak zmienić hasło w systemie
+## Zmiana hasła
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=0k_ifsofCOc&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/forgot-password.mp4)
 
-## Konwersja Lead na Kontrahenta
+## Konwersja Leada na Kontrahenta
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=DBv8qJtbUjQ&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/lead-to-account-conversion.mp4)
@@ -57,7 +55,7 @@ description: Zbiór tutoriali wideo pokazujące cześć użytkownika system Yeti
 
 ## Integracja z GUS REGON
 
-Pobieranie danych o polskich przedsiębiorstwach dostarczone przez GUS z bazy internetowej REGON 1(BIR1)
+Pobierz dane o polskich przedsiębiorstwach dostarczone przez Centralny Urząd Statystyczny z internetowej bazy danych REGON 1(BIR1)
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=98Mwj3GwHZw&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 

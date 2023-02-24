@@ -12,11 +12,16 @@ tags:
 preview: bria-softphone-1.png
 ---
 
-Integracja z centralą telefoniczną za pośrednictwem aplikacji Bria Softphone. Połączenie z Bria Softphone bazuje na `Bria Desktop API` dzięki której można użytkownik ma w czasie rzeczywistym informacje o połączeniach.
+:::tip Funkcjonalność dostępna od wersji YetiForce 6.5
+:::
+
+Integracja z centralą telefoniczną za pośrednictwem aplikacji Bria Softphone.
+
+Połączenie z Bria Softphone bazuje na `Bria Desktop API`, dzięki któremu użytkownik w czasie rzeczywistym otrzymuje informacje o połączeniach.
 
 ![bria-softphone-1.png](bria-softphone-1.png)
 
-## Prezentacja wideo
+## Video guide
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -46,7 +51,7 @@ Dodajemy wpis o typie `BRIA Softphone`
 
 ### Wprowadzanie numeru wewnętrznego w użytkownikach
 
-Wprowadzamy wewnętrzny numer telefonu dla użytkowników którzy mają mieć aktywną integrację z Softphone
+Wprowadzamy wewnętrzny numer telefonu dla użytkowników, którzy mają mieć aktywną integrację z Softphone
 
 ![bria-softphone-3.png](bria-softphone-3.png)
 
@@ -60,15 +65,15 @@ Ikona na górnej belce systemu pokazuje aktualny status integracji z aplikacją 
 
 ![bria-softphone-6.png](bria-softphone-6.png) Rozmowa wychodząca lub przychodząca, pokazuje nazwę/numer rozmówcy
 
-## Wybieranie numeru telefonu
+## Dialing
 
-Gdy integracja została aktywowana prawidłowo to wszystkie pola o typie telefon będą miała dodatkową ikonę telefonu. Klikając w numer telefonu lub ikonę zostanie wywołana metoda do utworzenia podłączania z wybranym numerem telefonu.
+Jeśli integracja została aktywowana prawidłowo, to wszystkie pola o typie `telefon` będą miały dodatkową ikonę telefonu. Po kliknięciu numeru lub ikony telefonu zostanie wywołana metoda do utworzenia połączenia z wybranym numerem telefonu.
 
 ![bria-softphone-7.png](bria-softphone-7.png)
 
 ## Połączenia przychodzące
 
-Gdy ktoś do nas dzwoni system informacje o tym innym kolorem i ikoną oraz pokazuje numer telefonu osoby dzwoniącej
+Gdy otrzymujemy połączenie przychodzące system poinformuje o nim innym kolorem i ikoną oraz pokaże numer telefonu osoby dzwoniącej.
 
 ![bria-softphone-8.png](bria-softphone-8.png)
 
@@ -80,7 +85,7 @@ Gdy ktoś do nas dzwoni system informacje o tym innym kolorem i ikoną oraz poka
 
 ## Debugowanie
 
-W celu aktywacji logów w przeglądarce dla integracji należy ustawić w pliku [config/Debug.php](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) parametr [$JS_DEBUG](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) na true.
+W celu aktywacji logów w przeglądarce dla integracji należy ustawić w pliku [config/Debug.php](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) parametr [$JS_DEBUG](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) na `true`.
 
 ```php
 /** Turn on/off error debugging in javascript */

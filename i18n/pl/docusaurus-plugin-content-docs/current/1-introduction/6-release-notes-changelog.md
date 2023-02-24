@@ -3,14 +3,11 @@ title: Informacje o wydaniu | Dziennik zmian
 description: Opis zmian które pokazywały się w kolejnych wersjach systemu YetiForce.
 keywords:
   - zmiany
-  - zmian
   - wydania
-  - dziennik
   - co nowego
 tags:
   - wydania
   - dziennik zmian
-  - co nowego
 ---
 
 Opis zmian które pokazywały się w kolejnych wersjach systemu YetiForce. Zawierają one nie tylko opisy dotyczące nowych funkcjonalności, ale również naprawionych błędów czy też zmian w istniejących funkcjonalnościach.
