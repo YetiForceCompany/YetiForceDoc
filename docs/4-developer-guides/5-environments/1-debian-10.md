@@ -34,7 +34,7 @@ apt-get update -y
 apt-get upgrade -y
 ```
 
-## 2.  Install required packages
+## 2. Install required packages
 
 ```bash
 apt-get install -y --no-install-recommends apt-utils curl openssl wget ca-certificates apt-transport-https lsb-release gnupg zip unzip cron mc htop p7zip-full
