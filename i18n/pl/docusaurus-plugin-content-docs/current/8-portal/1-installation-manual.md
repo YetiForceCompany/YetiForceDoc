@@ -27,17 +27,17 @@ import TabItem from '@theme/TabItem';
 import ReactPlayer from 'react-player';
 
 <Tabs groupId="Language installation and update">
-	<TabItem value="youtube" label="🎬 YouTube">
-		<ReactPlayer
-			url="https://www.youtube.com/watch?v=V-2x00bb4CI"
-			width="100%"
-			height="500px"
-			controls={true}
-		/>
-	</TabItem>
-	<TabItem value="yetiforce" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/portal-installation.mp4" width="100%" height="500px" controls={true} />
-	</TabItem>
+    <TabItem value="youtube" label="🎬 YouTube">
+        <ReactPlayer
+            url="https://www.youtube.com/watch?v=V-2x00bb4CI"
+            width="100%"
+            height="500px"
+            controls={true}
+        />
+    </TabItem>
+    <TabItem value="yetiforce" label="🎥 YetiForce TV">
+        <ReactPlayer url="/video/portal-installation.mp4" width="100%" height="500px" controls={true} />
+    </TabItem>
 </Tabs>
 
 ## Wymagania
@@ -60,7 +60,9 @@ W pierwszej kolejności przygotuj pliki instalacyjne. Pobierz YetiForce i najnow
 
 :::warning
 Zalecamy pobranie wersji oznaczonych jako "complete", na przykład `YetiForcePortal2-6.2-complete.zip`. Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`.
+
 Ważna jest kolejność - najpierw `yarn`, potem `composer`.
+
 Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
 :::
 
@@ -90,6 +92,8 @@ Na ekranie startowym w kreatorze instalacji dostępna jest możliwość konfigur
 
 :::warning
 **Ten krok wymaga aktywnego dostępu do API!!!**
+
 W razie problemów zapoznaj się z dokumentacją oraz informacjami na [github](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
+
 Dane dostępowe można znaleźć w panelu [Konfiguracja systemu > Integracja > Web service - Aplikacje](/administrator-guides/integration/webservice-apps/) w CRM.
 :::

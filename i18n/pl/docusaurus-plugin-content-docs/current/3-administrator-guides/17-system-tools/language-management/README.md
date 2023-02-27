@@ -2,17 +2,13 @@
 title: Języki i tłumaczenia
 keywords:
   - języki
-  - wielojęzyczność
-  - tłumaczenia
   - YetiForce
   - crowdin
 tags:
   - języki
-  - wielojęzyczność
   - tłumaczenie
   - crowdin
-  - filmy
-description: To narzędzie pomaga modyfikować i zarządzać tłumaczeniami języka w systemie.
+description: Narzędzie, które pomaga edytować i zarządzać tłumaczeniami w systemie.
 ---
 
 import Tabs from '@theme/Tabs';
@@ -21,7 +17,7 @@ import ReactPlayer from 'react-player';
 
 ## Opis panelu
 
-To narzędzie pomaga modyfikować i zarządzać tłumaczeniami języka w systemie.
+Narzędzie, które pomaga edytować i zarządzać tłumaczeniami w systemie.
 
 ## Instalacja i aktualizacja języków
 

@@ -7,7 +7,7 @@ keywords:
   - z czego się składa
 tags:
   - App ID
-description: What is YetiForce APP ID, what does it consist of, why does it change and how to find it?
+description: Co to jest YetiForce APP ID, z czego się składa, czemu się zmienia, gdzie je znaleźć?
 preview: app-id.jpg
 ---
 

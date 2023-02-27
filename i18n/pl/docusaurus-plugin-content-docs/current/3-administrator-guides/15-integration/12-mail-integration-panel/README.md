@@ -11,7 +11,7 @@ keywords:
 
 System YetiForce pozwala na integrację, czyli możliwość uruchomienia go w innych aplikacjach.
 
-Dzięki temu możemy pracować w obydwu zintegrowanych aplikacjach na raz, bez konieczności przełączania się miedzy nimi.
+Dzięki temu możesz pracować w obu zintegrowanych aplikacjach jednocześnie, bez konieczności przełączania się między nimi.
 
 import DocCardList from '@theme/DocCardList';
 

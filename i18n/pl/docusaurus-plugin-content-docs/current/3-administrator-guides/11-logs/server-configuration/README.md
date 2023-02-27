@@ -1,31 +1,31 @@
 ---
 title: Serwer - konfiguracja
-preview: main.jpg
+description: Panel wyświetla aktualną konfigurację serwera, używaną do weryfikacji, czy najważniejsze ustawienia serwera są zgodne z zalecanymi.
 keywords:
   - konfiguracja
-  - raport konfiguracji
-  - serwer
+  - weryfikacja
+  - zgłoszenie
+  - server
   - systemu
   - YetiForce
 tags:
-  - konfiguracja
-  - raport konfiguracji
-  - serwer
+  - raport konfiguracyjny
+  - server
   - systemu
-description: Panel pokazujący raport konfiguracji serwera, pozwala zweryfikować czy najważniejsze ustawienia serwera są zgodne z zalecanymi.
+preview: main.jpg
 ---
 
-Panel konfiguracji serwera to miejsce w którym można zobaczyć raport konfiguracji wszystkich parametrów serwera, na którym zainstalowany został system.
+Panel konfiguracji serwera jest miejscem, w którym możesz podglądać ustawienia wszystkich parametrów serwera, w którym znajduje się system.
 
-Jest to niezwykle przydatna funkcjonalność, szczególnie jeśli napotykamy się na błędy w systemie - panel w przejrzysty sposób pokaże, które parametry i ustawienia nie spełniają wymagań aplikacji, podświetlając je na czerwono.
+Funkcja ta może być niezwykle użyteczna, zwłaszcza jeśli wystąpią błędy systemowe - panel konfiguracji serwera wyróżni na czerwono wszystkie parametry i ustawienia, które nie spełniają wymagań YetiForce.
 
-![Raport konfiguracji](main.jpg)
+![raport konfiguracyjny](main.jpg)
 
-Oprócz powyższej funkcjonalności, dla wygody użytkowników, panel został dodatkowo rozbudowany o następujące opcje:
+Oprócz wyżej wymienionych funkcji, ze względu na wygodę naszych użytkowników, panel został rozszerzony o następujące opcje:
 
 ## Pobierz konfigurację
 
-Pozwala pobrać całą konfigurację, włącznie z elementami podświetlonymi na czerwono, jako obraz w formacie .png. Dzięki temu można szybko zapisać zrzut całej konfiguracji i przesłać ją odpowiednim osobom do analizy.
+Pozwala zapisać całą konfigurację wraz z elementami zaznaczonymi na czerwono jako plik .png. Dzięki temu rozwiązaniu możesz szybko pobrać i wysłać plik do odpowiedniego specjalisty do analizy.
 
 ![Pobierz konfigurację](download-config.png)
 
@@ -43,6 +43,6 @@ Wyświetla okno modalne z informacjami na temat serwera, jego procesora, pamięc
 
 ## Informacje o bazie danych
 
-Szczegółowe informacje o bazie danych
+Wyświetla szczegółowe informacje o bazie danych.
 
 ![Informacje o bazie danych](db.jpg)
