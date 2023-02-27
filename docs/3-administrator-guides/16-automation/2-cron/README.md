@@ -1,6 +1,6 @@
 ---
 title: CRON | Scheduler
-description: Deatails on CRON and how to enable it in YetiForce.
+description: Details on CRON and how to enable it in YetiForce.
 keywords:
   - CRON
   - enable
@@ -38,7 +38,7 @@ CRON can be enabled in a few simple steps:
 */2 * * * * cd __YETIFORCE_PATH__; /usr/local/bin/php -f cron.php > __YETIFORCE_PATH__/cache/logs/cron.log 2>&1
 ```
 
-- Change file permissions `__YETIFORCE_PATH__`/cron/cron.sh to 744 (or to other permissions that are compatible with an internal security policy in a company). 
+- Change file permissions `__YETIFORCE_PATH__`/cron/cron.sh to 744 (or to other permissions that are compatible with an internal security policy in a company).
 
 ![cron](cron-2.png)
 
@@ -46,11 +46,11 @@ CRON can be enabled in a few simple steps:
 
   ![cron](cron-3.png)
 
-- Pay attention to the end of line because it should be Unix (LF). If it is Windows on Linux servers, it may cause errors and the system won't be able to run the SH file. 
+- Pay attention to the end of line because it should be Unix (LF). If it is Windows on Linux servers, it may cause errors and the system won't be able to run the SH file.
 
   ![cron](cron-4.png)
 
-### Windows -  it's not recommended to use Windows as a server for the YetiForce system.
+### Windows - it's not recommended to use Windows as a server for the YetiForce system.
 
 ### URL can be used to run CRON, e.g. https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
 
