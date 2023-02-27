@@ -37,7 +37,7 @@ Allows you to check the latest available PHP version directly in YetiForce.
 
 ## Server speed test
 
-Displays a pop up window with information about your server, its CPU, RAM. drive, and database. This summary can also be saved as an image.
+Displays a pop up window with information about your server, its CPU, RAM, drive, and database. This summary can also be saved as an image.
 
 ![Server speed test](server-speed.jpg)
 
