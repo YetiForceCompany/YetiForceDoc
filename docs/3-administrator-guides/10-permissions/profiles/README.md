@@ -1,12 +1,12 @@
 ---
-title: Profile
-description: Nadawaj uprawnienia do funkcjonalności, pól, narzędzi i akcji, z których mogą korzystać użytkownicy podczas codziennej pracy w systemie.
+title: Profiles
+description: Grant permissions to functionalities, fields, tools and actions that users can use during their daily work in the system.
 tags:
-  - uprawnienia
-  - profile
+  - permissions
+  - profiles
 keywords:
-  - uprawnienia
-  - profile
+  - permissions
+  - profiles
 ---
 
-Nadawaj uprawnienia do funkcjonalności, pól, narzędzi i akcji, z których mogą korzystać użytkownicy podczas codziennej pracy w systemie.
+Grant permissions to functionalities, fields, tools and actions that users can use during their daily work in the system.
