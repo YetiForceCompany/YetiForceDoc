@@ -1,33 +1,33 @@
 ---
-title: Cron | Scheduler
-description: Jak prawidłowo przenieść, przywrócić z kopii system YetiForce na inny serwer.
+title: CRON | Scheduler
+description: Deatails on CRON and how to enable it in YetiForce.
 keywords:
-  - przenieść
-  - migracja
-  - przywrócić
-  - kopii
-  - serwer
-  - YetiForce
+  - CRON
+  - enable
+  - automation
+  - CLI
+  - unix
 tags:
-  - migracja
-  - kopia
+  - CRON
+  - CLI
+  - automation
 preview: cron-1.jpg
 ---
 
-Cron to uniksowy demon zajmujący się okresowym wywoływaniem innych programów. Posługuje się on tabelami crontab do przechowywania informacji jakie zadanie ma uruchamiać. Choć mamy tu na myśli Linuksa, ten sam plik możemy dodać do harmonogramu zadań w Windows. W praktyce, dzięki niemu system YetiForce wykonuje automatyczne różne zadania, które są wywoływane w tle.
+CRON is a Unix daemon that triggers other programs periodically. It uses crontabs to save information about cron tasks that will be enabled. It is recommended to use it on Linux, but if the same file will be added to the scheduler on Windows, it will also work. In practice, YetiForce can perform certain tasks automatically with cron and trigger them in the background.
 
 ![cron](cron-1.jpg)
 
-## Jak uruchomić cron-a ?
+## How to enable CRON?
 
-Uruchomienie cron-a sprowadza się do kilku prostych kroków:
+CRON can be enabled in a few simple steps:
 
-### System Linux edycja pliku /etc/crontab , /etc/cron.d/yetiforce lub 'crontab -e':
+### Linux - edit /etc/crontab file, /etc/cron.d/yetiforce file, or 'crontab -e':
 
-- Dodanie wpisu do crontab lub pliku cron-a np. w takiej postaci (`__YETIFORCE_PATH__`to pełna bezwzględna ścieżka do folderu z systemem YetiForce np. /var/www/example)
+- Add an entry to crontab, or a file to CRON, e.g. in such format (`__YETIFORCE_PATH__`is the full full absolute path to the YetiForce system folder e.g. /var/www/example),
 
   :::warning
-  Ważne jest aby skrypt był uruchamiany z takimi samymi uprawnieniami jak właściciel plików CRM-a
+  It is important that the script is run with the same permissions as the owner of the system files.
   :::
 
 ```bash
@@ -38,27 +38,27 @@ Uruchomienie cron-a sprowadza się do kilku prostych kroków:
 */2 * * * * cd __YETIFORCE_PATH__; /usr/local/bin/php -f cron.php > __YETIFORCE_PATH__/cache/logs/cron.log 2>&1
 ```
 
-- Zmiana uprawnień pliku `__YETIFORCE_PATH__`/cron/cron.sh na 744 [lub na inne uprawnienia, które są zgodne z wewnętrzną polityka bezpieczeństwa w firmie]
+- Change file permissions `__YETIFORCE_PATH__`/cron/cron.sh to 744 (or to other permissions that are compatible with an internal security policy in a company). 
 
 ![cron](cron-2.png)
 
-- Ustawienie ścieżki w pliku `__YETIFORCE_PATH__`/cron/cron.sh do PHP: export USE_PHP=/usr/local/php74/bin/php74 [tutaj również trzeba zwrócić szczególną uwagę na plik, ponieważ może on znajdować się na każdym serwerze w innym miejscu a dodatkowo należy zwrócić uwagę na ścieżkę do PHP, która jest różna dla różnych serwerów. Ścieżkę tą może Ci podać administrator serwera lub możesz ją sprawdzić w phpinfo].
+- Set a path in the file `__YETIFORCE_PATH__`/cron/cron.sh do PHP: export USE_PHP=/usr/local/php74/bin/php74 (pay attention to the file, as it can be located differently on each server, and also keep an eye on a path to PHP that is different for various servers. An administrator can provide information about this path, or it can be checked in phpinfo).
 
   ![cron](cron-3.png)
 
-- Trzeba zwrócić uwagę na znak końca linii, aby był ustawiony Unix (LF), jeśli będzie Windows to często na serwerach linuksowych powoduje to błąd i system nie może uruchomić pliku SH.
+- Pay attention to the end of line because it should be Unix (LF). If it is Windows on Linux servers, it may cause errors and the system won't be able to run the SH file. 
 
   ![cron](cron-4.png)
 
-### System Windows - nie zalecamy korzystania z systemu Windows jako serwera dla aplikacji YetiForce.
+### Windows -  it's not recommended to use Windows as a server for the YetiForce system.
 
-### Istnieje możliwość uruchomienia za pomocą adresu URL np. https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
+### URL can be used to run CRON, e.g. https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
 
-Gdzie `app_key` to klucz, który znajduje się w pliku [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key) w zmiennej `$application_unique_key`
+The `app_key` is the key located in the [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key) file in the `$application_unique_key` variable.
 
 ![cron](cron-5.png)
 
-### Jeśli jest problem z wywołaniem cron-a z CLI, to jest pewna alternatywa, jednakże nie jest zalecana:
+### If there is a problem with triggering CRON from CLI, there is an alternative, but it is not recommended:
 
 ```bash
 */2 * * * * /usr/bin/lynx -source https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
