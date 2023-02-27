@@ -1,33 +1,31 @@
 ---
-title: Jak skonfigurować serwer z Debian 10 dla systemu YetiForce
+title: Jak zainstalować YetiForce na Debian 10
 description: Prosta instrukcja instalacji i konfiguracji systemu operacyjnego Debian 10 dla systemu YetiForce
 keywords:
   - Debian
   - instrukcja
-  - instalacja
+  - instalacji
   - konfiguracja
   - pakiety
   - YetiForce
 tags:
-  - instalacja
+  - instalacji
   - Debian
 ---
 
-Instrukcja przedstawia proces instalacji i konfiguracji platformy LEMP dla YetiForce na Debian 10 z serwerem NGINX/PHP-FPM 7.4/MariaDB
+Instrukcja przedstawia proces instalacji i konfiguracji platformy LEMP dla YetiForce na Debian 10 z serwerem NGINX/PHP-FPM 7.4/MariaDB.
 
 :::warning
 W artykule zakładamy, że masz przynajmniej podstawową wiedzę o Linux i wiesz jak korzystać z powłoki shell.
 :::
 
-Instalacja jest dość prosta i zakłada, że ​​pracujesz na koncie root, jeśli nie, być może będziesz musiał dodać `sudo` do poleceń, aby uzyskać uprawnienia `root'a`.
+Instalacja jest całkiem prosta i zakłada, że pracujesz na koncie root. Jeśli nie, może być konieczne dodanie `sudo` poleceń, aby uzyskać uprawnienia `root`.
 
 :::tip
 Pełna lista wymagań dla systemu YetiForce jest na stronie: [Wymagania systemu YetiForce](/introduction/requirements/)
 :::
 
 ## 1. Aktualizacja wszystkich zainstalowanych pakietów do najnowszych dostępnych wersji
-
-Instalacja YetiForce CRM jest bardzo prosta. Instalacja odbywa się jak większość aplikacji webowych, za pomocą kreatora przez przeglądarkę.
 
 ```bash
 apt-get update -y
@@ -44,7 +42,7 @@ apt-get install -y --no-install-recommends apt-utils curl openssl wget ca-certif
 
 Domyślna wersja PHP używana w danej dystrybucji nie zawsze jest zgodna z wymaganiami, dlatego używamy dodatkowego źródła pakietów.
 
-Zalecamy używanie https://deb.sury.org/ , https://github.com/oerdnj/deb.sury.org zawiera najnowsze wersje oraz częste aktualizacje PHP.
+Zalecamy używanie https://deb.sury.org/, https://github.com/oerdnj/deb.sury.org zawiera najnowsze wersje oraz częste aktualizacje PHP.
 
 ```bash
 wget -q -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
@@ -52,7 +50,7 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sou
 ```
 
 :::important Opcjonalnie
-Jeśli chcesz mieć najnowszą wersję silnika bazy danych, to możesz dodać dodatkowe repozytorium pakietów od MariaDB
+Jeśli chcesz mieć najnowszą wersję silnika bazy danych, to możesz dodać dodatkowe repozytorium pakietów od MariaDB.
 
 ```bash
 apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
@@ -149,10 +147,11 @@ sed -i 's/output_buffering = "On"/output_buffering = "Off"/g' /etc/php/7.4/cli/c
 
 :::warning
 W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji CRM, która będzie instalowana np. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
+
 :::
 
-:::important Opcjonalnie
-Utworzenie środowiska testowego, wymaga skopiowania pliku i podmiany w zawartości yfprod na yftest
+::important Opcjonalnie  
+Tworzenie środowiska testowego wymaga skopiowania pliku i zastąpienia `yfprod` `yftest`
 
 ```bash
 cp /etc/php/7.4/fpm/pool.d/yfprod.conf /etc/php/7.4/fpm/pool.d/yftest.conf
@@ -170,8 +169,9 @@ wget -O /etc/mysql/mariadb.conf.d/50-server.cnf "https://raw.githubusercontent.c
 
 :::warning
 W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji CRM, która będzie instalowana np. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
-:::  
-Domyślnie MariaDB nie jest bezpieczna, ale można ją zabezpieczyć na dwa sposoby:
+:::
+
+**MariaDB nie jest domyślnie bezpieczna**. Możesz to zrobić na dwa sposoby:
 
 ```
 mysql_secure_installation
@@ -213,7 +213,7 @@ echo "DELETE FROM mysql.db WHERE Db='test' OR Db='test\_%';" | mysql --user=root
 echo "FLUSH PRIVILEGES;" | mysql --user=root -p$DB_ROOT_PASS
 ```
 
-Tworzymy nowego użytkownika i bazę danych dla CRM:
+Utwórz nowego użytkownika i bazę danych dla YetiForce:
 
 ```bash
 echo "CREATE DATABASE $DB_AND_USER1_NAME CHARACTER SET utf8 COLLATE utf8_general_ci;" | mysql --user=root -p$DB_ROOT_PASS;

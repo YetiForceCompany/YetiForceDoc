@@ -2,7 +2,7 @@
 title: Usuwanie danych
 description: Opis usuwania danych w systemie YetiForce za pomocą CLI
 keywords:
-  - Eraser
+  - Wyczyść
   - CLI
   - YetiForce
 tags:
@@ -12,11 +12,12 @@ tags:
 preview: Eraser-0.jpg
 ---
 
-Moduł `Usuwanie danych` dostępny od wersji `6.4.146`
+::tip Ta funkcja jest dostępna dla YetiForce w wersji `6.4.146` i później  
+:::
 
 ![Eraser CLI](Eraser-0.jpg)
 
-### ModTracker - Delete the history of non-existent entries
+### Śledzenie zmian - Usuń historię nieistniejących wpisów
 
 ```bash
 php cli.php -m Eraser -a mtNonExist
@@ -24,7 +25,7 @@ php cli.php -m Eraser -a mtNonExist
 
 ![Eraser CLI](Eraser-1.jpg)
 
-### ModTracker - Delete all entries
+### Śledzenie zmian - Usuń wszystkie wpisy
 
 ```bash
 php cli.php -m Eraser -a mtAll
@@ -32,7 +33,7 @@ php cli.php -m Eraser -a mtAll
 
 ![Eraser CLI](Eraser-1.jpg)
 
-### User data - Delete all entries
+### Dane użytkownika - Usuń wszystkie wpisy
 
 Mechanizm usuwa dane z wszystkich modułów z pominięciem poniższych:
 

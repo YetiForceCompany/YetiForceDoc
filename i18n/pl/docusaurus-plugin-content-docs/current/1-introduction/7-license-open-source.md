@@ -11,7 +11,6 @@ tags:
   - YetiForce
   - Open Source
   - CLA
-
 description: Poznaj licencję YetiForce oraz jak wygląda open source według YetiForce
 ---
 
@@ -20,7 +19,7 @@ Pisząc licencję YetiForce naszym priorytetem było stworzenie licencji, która
 Treść Licencji oraz wszystkie dotychczasowe wersje Licencji znajdziesz:
 
 - Na naszej stronie w zakładce [Licencja](https://yetiforce.com/pl/yetiforce/licencja)
-- W naszym repozytorium GitHub w pliku ["LICENSE"] (https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/LICENSE)
+- W naszym repozytorium GitHub w pliku \[LICENSE\] (https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/LICENSE)
 - Podczas instalacji systemu.
 
 ## Co to jest licencja?
@@ -225,16 +224,25 @@ Umowa CLA [Contributor License Agreement] czyli umowa licencyjna współautora o
 Poniżej znajduje się najważniejszy wycinek licencji pomiędzy YetiForce a współtwórcami oprogramowania.
 
 1. Udzielenie licencji prawa autorskiego
+
    Wszystko co tworzysz dla YetiForce S.A. jest na najnowszej licencji YetiForce Public License [licencja jest opublikowana na stronie https://yetiforce.com], która upoważnia do dalszego wykorzystywania i rozpowszechniania Twojego wkładu.
+
 2. Udzielenie licencji patentowej
+
    Poprzez każdy Twój wkład w tworzenie systemu YetiForce, udzielasz także licencji patentowej spółce YetiForce S.A., a także odbiorcom oprogramowania. Daje to możliwość dalszego rozwoju, użytkowania i przekazywania Twojego wkładu, a tym samym nie pociąga spółki YetiForce do odpowiedzialności, jeśli jakikolwiek podmiot wytoczy przeciwko Tobie proces sądowy dotyczący patentu.
+
 3. Oświadczasz, że masz prawo do udzielenia powyższej licencji.
+
    W przypadku jeśli Twój pracodawca ma jakiekolwiek prawo do Twojego wkładu, to powinieneś uzyskać jego zgodę na współtworzenie w jego imieniu, a on powinien zrezygnować z prawa do Twojego wkładu na rzecz YetiForce S.A. Podpisując niniejszą umowę oświadczasz, że uzyskałeś takową zgodę od swojego pracodawcy.
+
 4. Oświadczasz, że każdy Twój wkład jest Twojego autorstwa.
+
    Zaświadczasz, że Twój wkład jest wynikiem własnej twórczości i nie narusza praw autorskich innych osób. W przypadku chęci złożenia wkładu, który nie jest Twojego autorstwa, możesz przesłać go do YetiForce S.A. podając źródło, oraz wszelkie informacje dotyczące licencji.
+
 5. Nie jesteś zobowiązany do udzielania wsparcia dla Twojego wkładu, poza zakresem, w jakim chcesz takiego wsparcia udzielać.
-   Twój wkład dostarczany jest na zasadzie „tak jak jest” co oznacza, że nie oferujesz dla niego żadnych gwarancji. Możesz natomiast udzielać dla niego wsparcia darmowego, odpłatnego, lub nie udzielać wsparcia wcale.
-   Zobowiązujesz się powiadomić YetiForce S.A. o wszelkich faktach lub okolicznościach, przez które powyższe oświadczenia mogą stać się niedokładne w jakimkolwiek zakresie.
+
+   Twój wkład dostarczany jest na zasadzie „tak jak jest” co oznacza, że nie oferujesz dla niego żadnych gwarancji. Możesz natomiast udzielać dla niego wsparcia darmowego, odpłatnego, lub nie udzielać wsparcia wcale. Zobowiązujesz się powiadomić YetiForce S.A. o wszelkich faktach lub okolicznościach, przez które powyższe oświadczenia mogą stać się niedokładne w jakimkolwiek zakresie.
+
 6. YetiForce S.A. może zastrzec, że niektóre funkcjonalności nie będą publikowane na licencji YetiForce Public License i zostaną wydane na innej licencji i/lub przekazane zostaną firmie trzeciej, wówczas YetiForce poinformuje o tym fakcie współautora przed realizacją funkcjonalności i przekaże szczegółowe zasady związane z licencją i zasadami przekazywania kodu źródłowego funkcjonalności.
 
 ### Zmiana licencji YetiForce
