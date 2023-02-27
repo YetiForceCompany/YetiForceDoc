@@ -1,5 +1,5 @@
 ---
-title: Uprawnienia
+title: Permissions
 ---
 
 import DocCardList from '@theme/DocCardList';
