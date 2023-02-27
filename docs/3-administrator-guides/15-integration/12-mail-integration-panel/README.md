@@ -1,17 +1,17 @@
 ---
-title: Panel integracji poczty
-description: System YetiForce jako panel integracyjny w zewnętrznym kliencie poczty
+title: Mail integration panel
+description: YetiForce system as an integration panel in an external mail client
 tags:
-  - poczta
-  - panel integracji
+  - mail
+  - integration panel
 keywords:
-  - poczta
-  - panel integracji
+  - mail
+  - integration panel
 ---
 
-System YetiForce pozwala na integrację, czyli możliwość uruchomienia go w innych aplikacjach.
+The YetiForce system allows for integration, that is, the ability to run it in other applications.
 
-Dzięki temu możemy pracować w obydwu zintegrowanych aplikacjach na raz, bez konieczności przełączania się miedzy nimi.
+Thanks to this, you can work in both integrated applications at once, without having to switch between them.
 
 import DocCardList from '@theme/DocCardList';
 
