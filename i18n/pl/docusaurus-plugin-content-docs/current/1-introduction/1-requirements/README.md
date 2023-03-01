@@ -34,11 +34,9 @@ Zawsze aktualna i pełna konfiguracja znajduje się na github i w module [Weryfi
 :::
 
 :::warning
-Wymagania są zależne od wersji systemu, przed rozpoczęciem sprawdź jakie wymagania narzuca wersja systemu, którą instalujesz.
+Wymagania są zależne od wersji systemu YetiForce. Przed rozpoczęciem sprawdź wymagania wersja systemu, którą instalujesz.
 
-Poniżej opisane wymagania dotyczą wersji [![Latest Stable Version](https://poser.pugx.org/yetiforce/yetiforce-crm/v/stable)](https://packagist.org/packages/yetiforce/yetiforce-crm)
-![release date](https://img.shields.io/github/release-date/YetiForceCompany/YetiForceCRM)
-
+Poniższe wymagania mają zastosowanie do następującej wersji: [![Najnowsza stabilna wersja](https://poser.pugx.org/yetiforce/yetiforce-crm/v/stable)](https://packagist.org/packages/yetiforce/yetiforce-crm) ![Data wydania](https://img.shields.io/github/release-date/YetiForceCompany/YetiForceCRM)
 :::
 
 ## Możliwe problemy
@@ -50,17 +48,20 @@ import DocCardList from '@theme/DocCardList';
 ## Oprogramowanie bazowe dla serwera (LAMP/LEMP)
 
 - **System operacyjny - Debian, Ubuntu, RedHat, Mint** - działa na większości dystrybucji linuksowych. Nie zalecamy systemu operacyjnego MS Windows, jak również MS Windows Server. Pomimo, że nasz system dobrze sobie radzi na serwerach Windows, to nie są one optymalne pod kątem działania aplikacji WWW.
+
   :::warning
-  Ze względów bezpieczeństwa zalecamy aby każda wersja systemu YetiForce (PROD i TEST) została uruchomiona na oddzielnym/dedykowanym użytkowniku systemu operacyjnego (a najlepiej na oddzielnym serwerze) np. yfprod, yftest.
-  Nie zalecamy używania jednego użytkownika systemu operacyjnego do kilku aplikacji/stron WWW.
-  :::
+Ze względów bezpieczeństwa zalecamy aby każda wersja systemu YetiForce (PROD i TEST) została uruchomiona na oddzielnym/dedykowanym użytkowniku systemu operacyjnego (a najlepiej na oddzielnym serwerze) np. yfprod, yftest.
+Nie zalecamy używania jednego użytkownika systemu operacyjnego do kilku aplikacji/stron WWW.
+:::
+
 - **Serwer WWW**
 
   - **Nginx `1.23` (rekomendowany)** - poprawnie działa również na wcześniejszych wersjach, jednakże zalecamy najnowsze stabilne wersje oprogramowania. Możesz również używać oprogramowania alternatywnego, ale kompatybilnego z tym oprogramowaniem.
-  - **Apache `2.4`** - poprawnie działa również na wcześniejszych wersjach tj. `2.1, 2.2, 2.3`, jednakże zalecamy najnowsze stabilne wersje oprogramowania. Możesz również używać oprogramowania alternatywnego, ale kompatybilnego z tym oprogramowaniem.
+  - **Apache `2.4`** - działa również na wcześniejszych wersjach (`2.1, 2.2, 2.3`), jednakże zalecamy najnowsze stabilne wersje oprogramowania. Możesz również używać oprogramowania alternatywnego, ale kompatybilnego z tym oprogramowaniem.
+
     :::warning
-    System YetiForce nie działa prawidłowo z rozszerzeniem WWW ModSecurity
-    :::
+System YetiForce nie działa prawidłowo z rozszerzeniem WWW ModSecurity
+:::
 
 - **Baza danych**
 
@@ -71,7 +72,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## Wymagania dla silnika baz danych (MariaDB/MySQL)
 
-Pliki konfiguracyjne np. `/etc/my.cnf`, `/etc/mysql/my.cnf`, `/etc/mysql/conf.d/`, `my.ini`
+Pliki konfiguracyjne, np. Pliki konfiguracyjne np. `/etc/my.cnf`, `/etc/mysql/my.cnf`, `/etc/mysql/conf.d/`, `my.ini`
 
 - `SQL_MODE` nie powinno zawierać `STRICT_TRANS_TABLE` i `ONLY_FULL_GROUP_BY`
 - `ENGINE = InnoDB` powinno być dostępne i domyślnie włączone. (wyłącz --skip-innodb)
@@ -82,45 +83,45 @@ Ze względów bezpieczeństwa zalecamy aby każda baza danych posiadała dedykow
 
 ```ini
 [client]
-default-character-set  			= utf8
+default-character-set           = utf8
 
 [mysql]
-default-character-set  			= utf8
+default-character-set           = utf8
 
 [mysqld]
-default_storage_engine			= InnoDB
-default-character-set  			= utf8
-character-set-server 			= utf8
-collation-server     			= utf8_general_ci
-init-connect 					= 'SET NAMES utf8'
-sql-mode 						= ''
-#sql-mode						= "ONLY_FULL_GROUP_BY,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
-wait_timeout					= 600
-connect_timeout					= 600
-net_read_timeout				= 600
-net_write_timeout				= 600
-interactive_timeout				= 600
-max_allowed_packet				= 128M
-query_cache_size      	  		= 128M
-innodb_default_row_format		= 'dynamic'
-innodb_lock_wait_timeout		= 600
-innodb_large_prefix 			= ON
-innodb_file_per_table 			= ON
-innodb_ft_min_token_size		= 2
-innodb_stats_on_metadata		= OFF
-innodb_open_files				= 1000
-innodb_io_capacity				= 1000
-ft_min_word_len 				= 2
-table_open_cache				= 1000
-table_definition_cache			= 1400
-bulk_insert_buffer_size	= 16M
+default_storage_engine          = InnoDB
+default-character-set           = utf8
+character-set-server            = utf8
+collation-server                = utf8_general_ci
+init-connect                    = 'SET NAMES utf8'
+sql-mode                        = ''
+#sql-mode                       = "ONLY_FULL_GROUP_BY,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+wait_timeout                    = 600
+connect_timeout                 = 600
+net_read_timeout                = 600
+net_write_timeout               = 600
+interactive_timeout             = 600
+max_allowed_packet              = 128M
+query_cache_size                = 128M
+innodb_default_row_format       = 'dynamic'
+innodb_lock_wait_timeout        = 600
+innodb_large_prefix             = ON
+innodb_file_per_table           = ON
+innodb_ft_min_token_size        = 2
+innodb_stats_on_metadata        = OFF
+innodb_open_files               = 1000
+innodb_io_capacity              = 1000
+ft_min_word_len                 = 2
+table_open_cache                = 1000
+table_definition_cache          = 1400
+bulk_insert_buffer_size = 16M
 
-sort_buffer_size				= 4M
-read_buffer_size				= 2M
-read_rnd_buffer_size			= 1M
-join_buffer_size 				= 16M
-max_connections					= 100
-innodb_flush_method				= O_DIRECT
+sort_buffer_size                = 4M
+read_buffer_size                = 2M
+read_rnd_buffer_size            = 1M
+join_buffer_size                = 16M
+max_connections                 = 100
+innodb_flush_method             = O_DIRECT
 ```
 
 :::important
@@ -133,16 +134,11 @@ Przykładowa konfiguracja MariaDB/MySQL:
 
 ## Wymagania dla PHP
 
-Pliki konfiguracyjne np. `/etc/php/8.0/fpm/php.ini`, `/etc/php/8.0/cli/php.ini`
+Pliki konfiguracyjne, np. Pliki konfiguracyjne np. `/etc/php/8.0/fpm/php.ini`, `/etc/php/8.0/cli/php.ini`
 
-<details>
-  <summary>Ostatnia stabilna wersja: github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini</summary>
-
-```ini reference
+```ini reference title="Latest stable version: github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini"
 https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini
 ```
-
-</details>
 
 <details>
   <summary>Wersja deweloperska: github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini</summary>
@@ -265,14 +261,15 @@ Konfiguracja powinna umożliwiać serwerowi WWW na pełne uprawnienia do plików
 ### Problemy z SELinux
 
 :::warning
-Gdy na serwerze jest zainstalowany SELinux w trybie enforcing często występują problemy z uprawnieniami.
-Należy zwrócić uwagę na parametry konfiguracyjne:
+Gdy na serwerze jest zainstalowany SELinux w trybie enforcing często występują problemy z uprawnieniami. Należy zwrócić uwagę na parametry konfiguracyjne:
 
 - httpd_unified
 - httpd_can_network_connect
 
 https://www.nginx.com/blog/using-nginx-plus-with-selinux/
+
 https://docs.nextcloud.com/server/latest/admin_manual/installation/selinux_configuration.html
+
 https://www.getpagespeed.com/server-setup/nginx/nginx-selinux-configuration
 
 ```bash
@@ -301,7 +298,7 @@ Użytkownik powinien mieć zawsze najnowszą wersję przeglądarki, ponieważ ty
 
 ### Dodatkowa konfiguracja z użyciem .htaccess
 
-Część serwerów umożliwia zmianę konfiguracji za pomocą pliku `.htaccess`, poniżej pokazujemy kilka przykładów.
+Część serwerów umożliwia zmianę konfiguracji za pomocą pliku `.htaccess`, poniżej pokazujemy kilka przykładów. Poniżej przedstawiamy kilka przykładów.
 
 #### Apache module
 
@@ -311,35 +308,35 @@ Poniższa konfiguracja działa tylko jak ustawiono w konfiguracji Apache np. `ht
 
 ```apacheconf
 <IfModule mod_php5.c>
-	php_flag	log_errors				On
-	php_flag	display_errors			Off
-	php_value	error_log				cache/logs/phpError.log
-	php_value	memory_limit			512M
-	php_flag	output_buffering		On
-	php_flag	zlib.output_compression	Off
-	php_flag	file_uploads			On
-	php_value	upload_max_filesize		100M
-	php_value	post_max_size			50M
+    php_flag    log_errors              On
+    php_flag    display_errors          Off
+    php_value   error_log               cache/logs/phpError.log
+    php_value   memory_limit            512M
+    php_flag    output_buffering        On
+    php_flag    zlib.output_compression Off
+    php_flag    file_uploads            On
+    php_value   upload_max_filesize     100M
+    php_value   post_max_size           50M
 </IfModule>
 ## FastCGI module
 <IfModule fcgid_module.c>
-	FcgidIOTimeout		600
-	FcgidConnectTimeout	600
-	FcgidBusyTimeout	600
-	FcgidIdleTimeout	600
+    FcgidIOTimeout      600
+    FcgidConnectTimeout 600
+    FcgidBusyTimeout    600
+    FcgidIdleTimeout    600
 </IfModule>
 <IfModule mod_fcgid.c>
-	IdleTimeout			600
-	ProcessLifeTime		600
-	IPCConnectTimeout	600
-	IPCCommTimeout		600
-	BusyTimeout			600
+    IdleTimeout         600
+    ProcessLifeTime     600
+    IPCConnectTimeout   600
+    IPCCommTimeout      600
+    BusyTimeout         600
 </IfModule>
 ```
 
 ## Dodatkowa konfiguracja z użyciem user.ini
 
-Istnieje możliwość szybkiej zmiany konfiguracji PHP przez utworzenie pliku user.ini w głównym katalogu `$_SERVER['DOCUMENT_ROOT']`, aktualnie wspiera to CGI/FastCGI.Jednak należy pamiętać, że nie wszystkie parametry można w ten sposób konfigurować (https://www.php.net/manual/en/configuration.changes.modes.php).
+Istnieje możliwość szybkiej zmiany konfiguracji PHP przez utworzenie pliku user.ini w głównym katalog `$_SERVER['DOCUMENT_ROOT']`, obecnie obsługuje CGI/FastCGI. Należy jednak zachować ostrożność, ponieważ nie wszystkie parametry mogą być skonfigurowane w ten sposób (https://www.php.net/manual/en/configuration.changes.modes.php).
 
 Więcej informacji znajduje się na stronie: https://secure.php.net/manual/en/configuration.file.per-user.php
 
