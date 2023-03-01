@@ -1,11 +1,11 @@
 ---
-title: Dokumentacja programisty
-description: Dokumentacja dla osób które umieją programować i chcą lepiej poznać działanie systemu YetiForce
+title: Developer documentation
+description: Documentation for people with some experience in programming, who want to discover more about YetiForce.
 keywords:
-  - Dokumentacja programisty
+  - Developer documentation
   - YetiForce
 tags:
-  - Dokumentacja programisty
+  - Developer documentation
 ---
 
 import DocCardList from '@theme/DocCardList';
