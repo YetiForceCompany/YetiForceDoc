@@ -1,5 +1,5 @@
 ---
-title: Administrator dokumentation
+title: Administrator documentation
 ---
 
 import DocCardList from '@theme/DocCardList';
