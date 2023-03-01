@@ -1,5 +1,5 @@
 ---
-title: Narzędzia systemowe
+title: System tools
 ---
 
 import DocCardList from '@theme/DocCardList';
