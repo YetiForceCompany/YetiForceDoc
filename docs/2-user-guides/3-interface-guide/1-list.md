@@ -1,3 +1,3 @@
 ---
-title: Widok listy
+title: List view
 ---
