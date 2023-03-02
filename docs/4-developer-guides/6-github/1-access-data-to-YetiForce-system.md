@@ -18,10 +18,12 @@ If you are a YetiForce user and you have a problem that you would like to report
 
 #### 2. YetiForce credentials
 
-<table><tr><td> ℹ Please provide access to a user with administrator permissions. </td></tr></table>
+:::important
+Please provide access to a user with administrator permissions.
+:::
 
-- login 
-- password 
+- login
+- password
 
 #### 3. Access data to FTP or SFTP
 
@@ -47,7 +49,9 @@ Access to the database must be possible for an external client, which means ther
 
 #### 5. VPN - Optional
 
-<table><tr><td> ⚠ Applies only if access to your data requires a VPN </td></tr></table>
+:::warning
+Applies only if access to your data requires a VPN
+:::
 
 Please specify the name of the program that you use to connect to the VPN and data used for its configuration (address, port, login, password and other information required by the program, e.g. certificate).
 
