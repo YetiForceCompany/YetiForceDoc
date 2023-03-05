@@ -95,5 +95,5 @@ Na ekranie startowym w kreatorze instalacji dostępna jest możliwość konfigur
 
 W razie problemów zapoznaj się z dokumentacją oraz informacjami na [github](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
 
-Dane dostępowe można znaleźć w panelu [Konfiguracja systemu > Integracja > Web service - Aplikacje](/administrator-guides/integration/webservice-apps/) w CRM.
+Dane dostępowe można znaleźć w panelu [`Konfiguracja systemu → Integracja → Web service - Aplikacje`](/administrator-guides/integration/webservice-apps/) w CRM.
 :::

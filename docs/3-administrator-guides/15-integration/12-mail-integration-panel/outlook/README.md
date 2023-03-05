@@ -104,7 +104,7 @@ During activation, the system will be configured for integration with Outlook. T
 
 In order to install the add-in you must first download the XML file and import it in Outlook.
 
-Go to `system settings > Integration > Mail integration panel` and click `Download the Outlook add-in installation file`. The XML you downloaded is exclusive for an individual version of YetiForce and includes the APP ID. If [APP ID](/administrator-guides/app-id) changes, you will have to reinstall the plugin. This has been done so that you cannot load the system in any other window.
+Go to `system settings → Integration → Mail integration panel` and click `Download the Outlook add-in installation file`. The XML you downloaded is exclusive for an individual version of YetiForce and includes the APP ID. If [APP ID](/administrator-guides/app-id) changes, you will have to reinstall the plugin. This has been done so that you cannot load the system in any other window.
 
 ### Installation of the add-in extension in Outlook
 
@@ -132,7 +132,7 @@ Users need access to the `Mail integration panel` in order to use the integratio
 
 ## Panel access
 
-Permissions for this panel can be configured in [System settings > Permissions > Profiles](/administrator-guides/permissions/profiles/). Grant the applicable module permissions for appropriate profiles.
+Permissions for this panel can be configured in [System settings → Permissions → Profiles](/administrator-guides/permissions/profiles/). Grant the applicable module permissions for appropriate profiles.
 
 If the user doesn't have access to the module, the following message will appear: `Error!!! Permission denied`.
 

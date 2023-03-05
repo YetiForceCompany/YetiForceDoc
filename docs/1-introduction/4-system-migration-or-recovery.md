@@ -135,7 +135,7 @@ public static $BACKUP_PATH = '';
 
 ## Check if configuration complies with requirements
 
-Whenever the system is migrated, restored from backup, or the LAMP server is updated, it is important to check the system’s configuration in the built-in verification tool ([Administrator documentation > Logs > Server - configuration](/administrator-guides/logs/server-configuration)) or in the article [YetiForce requirements](/introduction/requirements/).
+Whenever the system is migrated, restored from backup, or the LAMP server is updated, it is important to check the system’s configuration in the built-in verification tool ([Administrator documentation → Logs → Server - configuration](/administrator-guides/logs/server-configuration)) or in the article [YetiForce requirements](/introduction/requirements/).
 
 :::warning
 
@@ -155,7 +155,7 @@ Migrating to a new server or restoring it from a backup requires [re-registratio
 
 ## Update addons
 
-Some addons may need to be reconfigured when changing the location or address of the system, eg. [Mail integration panel](/administrator-guides/integration/mail-integration-panel/).
+Some addons may need to be reconfigured when changing the location or address of the system, eg. [`System settings → Integration → Mail integration panel`](/administrator-guides/integration/mail-integration-panel/).
 
 ### YetiForce Outlook Integration Panel
 
@@ -203,13 +203,13 @@ public static $loginPageAlertIcon = '';
 
 Messages sent from the new environment will look the same as the ones sent from the production environment, so it is worth disabling or changing the sender names in SMTP to be able to distinguish between these e-mail messages.
 
-Panel: [System settings > Automation > CRON](/administrator-guides/automation/cron)
+Panel: [System settings → Automation → CRON](/administrator-guides/automation/cron)
 
 ## Change API keys
 
 It is worth changing the API access data to make them different for each environment. So that someone who has access to the test version will not be able to get data from the production version.
 
-Panel: [System settings > Integration > Web service - Applications](/administrator-guides/integration/webservice-apps/)
+Panel: [System settings → Integration → Web service - Applications](/administrator-guides/integration/webservice-apps/)
 
 :::warning
 

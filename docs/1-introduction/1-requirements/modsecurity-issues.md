@@ -49,7 +49,7 @@ The parameter `historyUrl` contains the URL address: "index.php?module=Calendar&
 
 ## We do not recommend that PHP scripts be able to call functions to the OS shell
 
-In [`System settings > Logs > Server - configuration`](/administrator-guides/logs/server-configuration/) you can verify whether any dangerous functions have been enabled (including shell commands):
+In [`System settings → Logs → Server - configuration`](/administrator-guides/logs/server-configuration/) you can verify whether any dangerous functions have been enabled (including shell commands):
 
 ```ini
 disable_functions = pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wifcontinued,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_get_handler,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,pcntl_async_signals,pcntl_unshare,shell_exec,exec,system,passthru,popen
