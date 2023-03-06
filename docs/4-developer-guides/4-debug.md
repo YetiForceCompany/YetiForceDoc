@@ -34,7 +34,7 @@ It is necessary to understand a problem in such a way that helps to find its cau
 - cache/logs/sql - mail logs for sql
 - cache/logs/update.log - error logs for system updater
 
-<table><tr><td>If the files described above do not exist, they will be created after enabling logs (as long as the application has adequate permissions in the file system).</td></tr></table>
+**If the files described above do not exist, they will be created after enabling logs (as long as the application has adequate permissions in the file system).**
 
 ## YetiForce system logs
 
