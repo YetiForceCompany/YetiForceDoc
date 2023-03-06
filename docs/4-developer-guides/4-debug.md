@@ -1,6 +1,6 @@
 ---
 title: Debug
-description: Jak prawidłowo debugować system YetiForce
+description: How to debug YetiForce
 keywords:
   - Debug
   - YetiForce
@@ -9,42 +9,42 @@ tags:
 preview: 4-debug.jpg
 ---
 
-YetiForce to bardzo zaawansowany system, posiada kilkanaście tysięcy plików i setki zależności a codziennie jest tego coraz więcej. Dlatego aby móc analizować problemy w systemie, zostało stworzonych wiele mechanizmów logujących, które w zależności od potrzeb, w odpowiednim miejscu aktywujemy. Istnieją również inne metody analizowania błędów, lecz nie są one tutaj wymienione, ponieważ albo wymagają zaawansowanego poziomu programowania albo są specyficzne dla środowiska i wdrożonych funkcjonalności.
+YetiForce CRM is a very advanced system that has thousands of files and hundreds of dependencies, and the numbers are growing each day. That's why to be able to analyze problems within the system, many logging mechanisms have been created and if there is a need they can be activated in a corresponding place. There are other ways to approach and analyze errors, but they are not listed in this article because they may require an advanced level of programming or are specific for a particular environment and implemented functionalities. 
 
 ![Debug](4-debug.jpg)
 
-## Wstęp
+## Introduction
 
-Należy pamiętać, że debugowanie to nie zera i jedynki, lecz pewnego rodzaju stan umysłu 😀 Należy rozumieć na tyle problem, aby wiedzieć, gdzie zacząć szukać przyczyny, w przeciwnym wypadku możemy stracić wiele cennego czasu. Różne technologie debuguje się w różnych miejscach (np. HTML, CSS, JS, AJAX najlepiej debugować w przeglądarce). Do debugowania należy używać różnych narzędzi: przeglądarka - najlepiej Google Chrome, XDebug, logi serwera, logi aplikacji a czasem trzeba dodać coś niekonwencjonalnego do kodu, aby ten wyświetlił nam błąd w odpowiednim miejscu lub wykonać proste testy sieciowe, by wyeliminować problemy pomiędzy serwerem a przeglądarką użytkownika.
+It is necessary to understand a problem in such a way that helps to find its cause. Otherwise, you can waste a lot of time. Various technologies are debugged in different locations (e.g. HTML, CSS, JS, AJAX -it's best to debug them in the browser). Various tools should be used for debugging, such as XDebug, server logs, application logs. For the browsers, it is recommended to use Google Chrome. Sometimes it is necessary to add something unusual to the code, so it will display an error in a corresponding place. A good idea might be to perform simple network tests to eliminate issues between the server and user's browser. 
 
-## Ścieżki plików z logami
+## Log file paths
 
-- cache/logs/phpError.log - ogólne logi błędów PHP-a. Oczywiście czy logi tam się pojawią zależy od kilku czynników pośrednich np. konfiguracji serwera WWW.
-- cache/logs/errors.log - logi błędów PHP kontrolowane przez system YetiForce
-- cache/logs/system.log - główne logi dla debugowania systemu YetiForce, w zależności od odpowiednio ustawionego poziomu rejestruje informacje
-- cache/logs/davException.log - logi błędów dla integracji dla DAV
-- cache/logs/davDebug.log - logi debugowania dla integracji dla DAV
-- cache/logs/webserviceDebug.log - logi debugowania dla API/webserwis-ów
-- cache/logs/webserviceErrors.log - logi błędów dla API/webserwis-ów
-- cache/logs/viewer-debug.log - logi debugowania dla warstwy wyświetlającej dane czyli Smartów
-- cache/logs/smtp - logi poczty dla smtp
-- cache/logs/ldap - logi poczty dla ldap
-- cache/logs/imap - logi poczty dla imap
-- cache/logs/session - logi poczty dla session
-- cache/logs/sql - logi poczty dla sql
-- cache/logs/update.log - logi błędów dla mechanizmu aktualizacji systemu
+- cache/logs/phpError.log - general PHP error logs. Log visibility is determined by a few indirect factors, e.g. web server configuration
+- cache/logs/errors.log - PHP error logs controlled by the system
+- cache/logs/system.log - primary logs for debugging the CRM system, recorded information depends on the selected level of recording
+- cache/logs/davException.log - error logs for DAV integration
+- cache/logs/davDebug.log - debugging logs for DAV integration 
+- cache/logs/webserviceDebug.log - debugging logs for API/webservice
+- cache/logs/webserviceErrors.log - error logs for API/webservice
+- cache/logs/viewer-debug.log - debugging logs for data displaying layer - Smarts
+- cache/logs/smtp - mail logs for smtp
+- cache/logs/ldap - mail logs for ldap
+- cache/logs/imap - mail logs for imap
+- cache/logs/session - mail logs for session
+- cache/logs/sql - mail logs for sql
+- cache/logs/update.log - error logs for system updater
 
-Gdy pliki opisane powyżej nie istnieją, to po włączeniu logów zostaną one utworzone (o ile aplikacja ma odpowiednie uprawnienia w systemie plików).
+<table><tr><td>If the files described above do not exist, they will be created after enabling logs (as long as the application has adequate permissions in the file system).</td></tr></table>
 
-## Logi systemu YetiForce
+## YetiForce system logs
 
-Aby włączyć rejestrowanie logów do pliku należy w pliku [config/Debug.php](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php) ustawić wartość `true` dla parametru [`LOG_TO_FILE`](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_LOG_TO_FILE), następnie należy ustawić odpowiedni poziom rejestrowania zmian [`LOG_LEVELS`](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_LOG_LEVELS).
+In order to enable log files recording, you need to set the [`LOG_TO_FILE`](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_LOG_TO_FILE) value to `true` in [config/Debug.php](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php); then set the appropriate level of recording changes [`LOG_LEVELS`](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_LOG_LEVELS). 
 
 ```php reference
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php#L20-L27
 ```
 
-Poniżej poziomy debugowania (od najmniej pokazującego do najwięcej):
+**Debugging levels (from least to most showing):**
 
 - error
 - warning
@@ -52,54 +52,54 @@ Poniżej poziomy debugowania (od najmniej pokazującego do najwięcej):
 - trace
 - profile
 
-Możliwe warianty wartości:
+**Possible value variants:**
 
 - ['error']
 - ['error', 'warning', 'info', 'trace', 'profile']
 - 'All'
 - 3
 
-Logi będą rejestrowane w następującym pliku: `cache/logs/system.log`. Katalog `cache/logs/` musi mieć uprawnienia do zapisu dla użytkownika na którym działa serwer WWW.
+Logs will be registered in the following file: `cache/logs/system.log`. The `cache/logs/` directory needs to have write permissions.
 
-## Logi PHP
+## PHP logs
 
-Aby rozpocząć analizę problemów lub błędów występujących w systemie należy włączyć zapis logów i wyświetlanie komunikatów serwera. **Bez tej zmiany system nie będzie w stanie informować nas o występujących problemach** z np. krótkim czasem wykonywania skryptu. W konfiguracji php.ini należy ustawić wartości `log_errors` i `display_errors` na `On`. Jeśli konfiguracja umożliwia nadpisywanie parametrów PHP to za pomocą `.htaccess` [Dodatkowa konfiguracja z użyciem .htaccess](/pl/introduction/requirements/#dodatkowa-konfiguracja-z-użyciem-htaccess). Ważne aby przez rozpoczęciem debugowania sprawdzić w panelu [`Dokumentacja administratora → Logi → Serwer - konfiguracja`](/administrator-guides/logs/server-configuration) opisane parametry są poprawnie ustawione.
+To start analyzing problems or errors in the system, log recording and displaying server messages should be enabled. **Without this change, the system will not be able to inform you about issues** with, e.g., short script execution time. In the php.ini configuration, set the values of `log_errors` and `display_errors` to `On`. If the configuration allows you to override PHP parameters, use `.htaccess` [Additional configuration with .htaccess](/pl/introduction/requirements/#additional-configuration-with-htaccess-use). Before starting debugging, it is important to check in the panel [`Administrator documentation → Logs → Server - configuration`](/administrator-guides/logs/server-configuration) that the described parameters are correctly set.
 
-## Logi MySQL
+## MySQL logs
 
-Błędy w zapytanych SQL są rejestrowane przez [Logi systemu YetiForce](#logi-systemu-yetiforce), o poziomie błędu `error`.
+Errors in SQL queries are logged by [YetiForce system logs](#yetiforce-system-logs), with error level `error`.
 
-## Logi Smarty
+## Smarty logs
 
-Plik konfiguracyjny: [config/Debug.php](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php)
+Configuration file: [config/Debug.php](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php)
 
 ```php reference
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php#L71-L75
 ```
 
-## Debugowanie poczty `Roundcube`
+## `Roundcube` email client debugging
 
-Plik konfiguracyjny: [config/Debug.php](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php)
+Configuration file: [config/Debug.php](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php)
 
-W Roundcube możemy debugować różne elementy:
+Roundcube allows you to debug various elements:
 
 ```php reference
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php#L114-L145
 ```
 
-## Debugowanie integracji DAV
+## DAV integration debugging
 
-Plik konfiguracyjny: [config/Debug.php](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php)
+Configuration file: [config/Debug.php](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php)
 
-Parametr włącza dodatkowy plugin który służy do logowania/zapisywania wszystkich danych otrzymywanych i wysyłanych przez serwer do pliku `cache/logs/davDebug.log`.
+The parameter enables an additional plugin which is used to log/save all data received and sent by the server to the `cache/logs/davDebug.log` file.
 
 ```php reference
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php#L105-L109
 ```
 
-## Podsumowanie
+## Summary
 
-### Logi systemu YetiForce - krytyczne
+### YetiForce system logs - critical
 
 ```php
 public static $LOG_TO_FILE = true;
