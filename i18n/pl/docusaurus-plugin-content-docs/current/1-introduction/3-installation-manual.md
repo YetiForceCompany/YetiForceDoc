@@ -16,21 +16,24 @@ W tym artykule znajdziesz wszystko, co powinieneś wiedzieć o instalacji YetiFo
 
 ## Jak zainstalować system YetiForce?
 
-Instalacja YetiForce odbywa podobnie do instalacji większości aplikacji webowych, czyli za pomocą kreatora przez przeglądarkę.
+Proces instalacji YetiForce jest bardzo prosty. Instalacja YetiForce odbywa podobnie do instalacji większości aplikacji webowych, czyli za pomocą kreatora przez przeglądarkę.
 
 Przed instalacją sprawdź czy twój serwer jest zgodny z wymaganiami: [Wymagania systemu YetiForce](requirements) lub [Jak skonfigurować serwer z Debian 10 dla systemu YetiForce](/developer-guides/environments/debian-10)
 
 :::important
-Osoba instalująca system powinna mieć przynajmniej podstawową wiedzę w zakresie zarządzania serwerem WWW, baz danych czy też uprawnień na serwerze. 99% problemów instalacyjnych wynika z niewystarczającej wiedzy osób, które instalują aplikację. Jeżeli nie jesteś pewien czy sobie poradzisz, poproś kogoś z odpowiednią wiedzą informatyczną. Cała operacja instalacji zajmie maksymalnie 2 - 30 minut. Instalacja YetiForce jest podobna do instalacji takich aplikacji jak: WordPress, Joomla, Drupal. Różnice pomiędzy poszczególnymi narzędziami są niewielkie. Tak więc, jeżeli poradziłeś sobie z instalacją systemu klasy CMS, to poradzisz sobie również z YetiForce.
+
+Osoba instalująca system powinna mieć przynajmniej podstawową wiedzę w zakresie zarządzania serwerem WWW, baz danych czy też uprawnień na serwerze. 99% problemów instalacyjnych wynika z niewystarczającej wiedzy osób, które instalują aplikację. If you are not sure whether you can manage on your own, you can ask somebody with adequate IT expertise. Cała operacja instalacji zajmie maksymalnie 2 - 30 minut. Instalacja YetiForce jest podobna do instalacji takich aplikacji jak: WordPress, Joomla, Drupal. Różnice pomiędzy poszczególnymi narzędziami są niewielkie. Tak więc, jeżeli poradziłeś sobie z instalacją systemu klasy CMS, to poradzisz sobie również z YetiForce.
+
 :::
 
 ## Pobierz i wgraj pliki systemu
 
 W pierwszej kolejności przygotuj pliki instalacyjne. **[Pobierz YetiForce](download) z naszych oficjalnych źródeł.**
+
 :::warning
-Zalecamy pobranie wersji oznaczonych jako "complete", na przykład `YetiForceCRM-6.4.0-complete.zip`. Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`.
-Ważna jest kolejność - najpierw `yarn`, potem `composer`.
-Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
+
+Zalecamy pobranie wersji "complete", na przykład `YetiForceCRM-6.4.0-complete.zip`.  Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`. Ważna jest kolejność - najpierw `yarn`, potem `composer`. Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
+
 :::
 
 - Pobrany plik ZIP rozpakuj, np. za pomocą programu [7-Zip](http://7-zip.org/).
@@ -52,7 +55,7 @@ Uruchom w oknie przeglądarki adres docelowy twojego systemu YetiForce, system p
 
 ![Krok 1](install-1.png)
 
-Na ekranie startowym w kreatorze instalacji dostępna jest możliwość konfiguracji języka instalacji (domyślnie język jest predefiniowany na podstawie języka przeglądarki). Po wybraniu jezyka kliknij przycisk `Instaluj`.
+Na ekranie startowym w kreatorze instalacji dostępna jest możliwość konfiguracji języka instalacji (domyślnie język jest predefiniowany na podstawie języka przeglądarki). Przejdziemy przez kolejne etapy nowej instalacji. **Kliknij `Zainstaluj` i przejdź do następnego kroku.**
 
 ## Krok 2 - Zapoznanie się z warunkami licencji i ich akceptacja
 
@@ -78,7 +81,7 @@ Dla pewności, poproś swojego administratora, aby zapoznał się z tymi [wymaga
 
 ## Krok 5 - Konfiguracja danych dostępowych
 
-Na tym etapie musisz wypełnić podstawowe dane dostępowe do bazy danych i ustawić parametry wyjściowe dla systemu CRM. Na podstawie tych danych system utworzy bazę danych (o ile opcja ta została aktywowana), wgra strukturę bazy danych razem z podstawowymi danymi oraz utworzy podstawowe konto administratora, do którego będziesz mógł się zalogować po instalacji.
+Na tym etapie musisz wypełnić podstawowe dane dostępowe do bazy danych i ustawić parametry wyjściowe dla systemu CRM. Na podstawie tych danych zostanie utworzona baza danych (gdy ta opcja została aktywowana). Na podstawie tych danych system utworzy bazę danych (o ile opcja ta została aktywowana), wgra strukturę bazy danych razem z podstawowymi danymi oraz utworzy podstawowe konto administratora, do którego będziesz mógł się zalogować po instalacji.
 
 Jeżeli wprowadzisz nieprawidłowe dane dostępowe do bazy danych pokaże się błąd.
 

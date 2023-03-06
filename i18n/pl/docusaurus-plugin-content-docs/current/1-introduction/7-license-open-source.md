@@ -182,7 +182,7 @@ Aktualnie w systemie YetiForce jest około 200 różnych bibliotek zależnych. A
 - nazwa licencji
 - treść licencji
 
-Licencje można sprawdzić również na wersji publicznej dostępnej tutaj: https://gitdeveloper.yetiforce.com/ (jest to wersja developerskie i co jakiś czas może nie być dostępna) w zakładce: `Konfiguracja systemu > O aplikacji > Licencje` jak również bezpośrednio pod linkiem https://gitdeveloper.yetiforce.com/index.php?module=Vtiger&view=Credits&parent=Settings dostępnym po zalogowaniu [aby się zalogować, nie trzeba znać danych do logowania, są uzupełniane automatycznie].
+Licencje można sprawdzić również na wersji publicznej dostępnej tutaj: https://gitdeveloper.yetiforce.com/ (jest to wersja developerskie i co jakiś czas może nie być dostępna) w zakładce: `Konfiguracja systemu → O aplikacji → Licencje` jak również bezpośrednio pod linkiem https://gitdeveloper.yetiforce.com/index.php?module=Vtiger&view=Credits&parent=Settings dostępnym po zalogowaniu [aby się zalogować, nie trzeba znać danych do logowania, są uzupełniane automatycznie].
 
 ## Przekazanie autorskich praw majątkowych
 

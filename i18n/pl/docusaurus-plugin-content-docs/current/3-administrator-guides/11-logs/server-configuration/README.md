@@ -5,12 +5,12 @@ keywords:
   - konfiguracja
   - weryfikacja
   - zgłoszenie
-  - server
+  - serwer
   - systemu
   - YetiForce
 tags:
   - raport konfiguracyjny
-  - server
+  - serwer
   - systemu
 preview: main.jpg
 ---

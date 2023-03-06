@@ -5,7 +5,7 @@ keywords:
   - slow
   - connection
   - mail
-  - server
+  - serwer
   - YetiForce
 tags:
   - mail

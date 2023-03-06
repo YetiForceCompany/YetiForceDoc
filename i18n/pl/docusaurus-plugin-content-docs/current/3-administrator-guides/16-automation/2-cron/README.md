@@ -50,7 +50,7 @@ Ważne jest, aby skrypt był uruchamiany z takimi samymi uprawnieniami jak wła�
 
   ![cron](cron-4.png)
 
-### Windows - it's not recommended to use Windows as a server for the YetiForce system.
+### Windows - nie zaleca się używania Windows jako serwera dla systemu YetiForce.
 
 ### Adres URL może być używany do uruchomienia CRON, np. https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
 

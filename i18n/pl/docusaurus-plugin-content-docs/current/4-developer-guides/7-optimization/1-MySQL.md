@@ -23,7 +23,7 @@ These guidelines are not mandatory, they are suggestions that result from many y
 
 ## Server optimization according to the process
 
-problem analysis > consideration > change (only one change a time) > test > implement > begin the process again until you achieve satisfactory / optimal results.
+problem analysis → consideration → change (only one change a time) → test → implement → begin the process again until you achieve satisfactory / optimal results.
 
 ## Hardware
 
