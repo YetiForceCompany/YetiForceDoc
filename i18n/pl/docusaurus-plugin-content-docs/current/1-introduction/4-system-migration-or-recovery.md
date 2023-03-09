@@ -1,5 +1,5 @@
 ---
-title: Migracja systemu na nowy serwer lub przywrócenie z kopii
+title: Migracja lub przywracanie systemu
 description: Jak prawidłowo przenieść, przywrócić z kopii system YetiForce na inny serwer.
 keywords:
   - przenieść
@@ -135,10 +135,12 @@ public static $BACKUP_PATH = '';
 
 ## Zweryfikuj czy konfiguracja zgadza się z wymaganiami
 
-Zawsze po przeniesieniu systemu na nowy serwer, przywróceniu z backupu lub aktualizacji serwera LAMP uruchom weryfikację konfiguracji serwera zgodnie z wymaganiami z wbudowanego narzędzia do weryfikacji konfiguracji ([Dokumentacja administratora > Logi > Serwer - konfiguracja](/administrator-guides/logs/server-configuration)) lub artykułu [Wymagania systemu YetiForce](/introduction/requirements/).
+Zawsze po przeniesieniu systemu na nowy serwer, przywróceniu z backupu lub aktualizacji serwera LAMP uruchom weryfikację konfiguracji serwera zgodnie z wymaganiami z wbudowanego narzędzia do weryfikacji konfiguracji ([Dokumentacja Administratora → Logi → Serwer - konfiguracja](/administrator-guides/logs/server-configuration)) lub w artykule [Wymagania YetiForce](/introduction/requirements/).
 
 :::warning
+
 Jeśli serwer nie spełnia wymogów, nie należy z niego korzystać, ponieważ może to powodować utratę danych. Jeśli jakieś parametry widnieją na żółto lub czerwono, to należy je poprawić.
+
 :::
 
 Ważnym jest również to, aby właścicielem plików był ten sam użytkownik na którym działa serwer www (apache, nginx).
@@ -153,11 +155,12 @@ Przeniesienie na nowy serwer lub przywrócenie z backupu [wymaga ponownej rejest
 
 ## Aktualizacja dodatków
 
-Niektóre dodatki mogą wymagać ponownej konfiguracji podczas zmiany lokalizacji lub adresu systemu YetiForce np. [Panel integracji poczty](/administrator-guides/integration/mai-iIntegration-panel/).
+Niektóre dodatki mogą wymagać ponownej konfiguracji podczas zmiany lokalizacji lub adresu systemu YetiForce np. [`Konfiguracja systemu → Integracja → Panel integracji poczty`](/administrator-guides/integration/mail-integration-panel/).
 
 ### YetiForce Outlook Integration Panel
 
 Wymaga ponownej reinstalacji i zainstalowania nowego pliku XML.
+
 Stary dodatek zainstalowany w Outlook należy usunąć, pobrać nowy plik XML z panelu systemu YetiForce zgodnie z instrukcją [Dodatek typu add-in do programu Outlook](/administrator-guides/integration/mai-iIntegration-panel/outlook).
 
 ## Tworzenie środowiska testowego
@@ -170,7 +173,7 @@ Jeżeli tworzymy środowisko testowe warto jest wprowadzić kilka istotnych zmia
 
 Warto jest dodać komunikat o tym że jest to środowiska testowe, można to zrobić na stronie logowania oraz na górnej belce systemu.
 
-Od wersji `6.2` dostępna jest możliwość aby w pliku konfiguracyjnym [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_headerAlertMessage) ustawić dodatkowe komunikaty informacyjne.
+Od wersji `6.2` można dodać do pliku konfiguracyjnego [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_headerAlertMessage) kilka dodatkowych wiadomości.
 
 ```php
 /** Header alert message */
@@ -193,21 +196,23 @@ public static $loginPageAlertIcon = '';
 ```
 
 ![loginPageAlert](migrating-or-restoring-system-1.png)
+
 ![headerAlert](migrating-or-restoring-system-2.png)
 
 ### Zmienić nazwę nadawcy w SMTP lub wyłączyć zadanie CRON-a wysyłające maile
 
 Wiadomości wysyłane z nowego środowiska będą wyglądały identycznie jak z produkcyjnego, dlatego warto wyłączyć wysyłanie wiadomości mail lub zmienić nazwy nadawców w SMTP aby umieć odróżnić wiadomości mailowe.
 
-Panel: [Konfiguracja systemu > Automatyzacja > CRON](/administrator-guides/automation/cron)
+Panel: [Konfiguracja systemu → Automatyzacja → CRON](/administrator-guides/automation/cron)
 
 ## Zmienić klucze API
 
 Warto zmienić dane dostępowe do API, aby były inne na każdym z środowisk. Aby przypadkiem ktoś mając dostęp do wersji testowej nie próbował uzyskać danych z wersji produkcyjnej.
 
-Panel: [Konfiguracja systemu > Integracja > Web service - Aplikacje](/administrator-guides/integration/webservice-apps/)
+Panel: [Konfiguracja systemu → Integracja → Web service - Aplikacje](/administrator-guides/integration/webservice-apps/)
 
 :::warning
+
 W celu prawidłowego przeniesienia systemu YetiForce na inny serwer należy zrobić pełną kopię systemu (pliki i baza danych). Najlepiej spakować programem do kompresji danych np.
 
 ```bash
