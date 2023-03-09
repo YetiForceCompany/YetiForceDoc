@@ -1,5 +1,5 @@
 ---
-title: Fałszywie pozytywne wyniki analizy YetiForce przez ModSecurity
+title: Fałszywe pozytywne wyniki analizy YetiForce przez ModSecurity
 keywords:
   - serwer
   - wymagania
@@ -45,16 +45,16 @@ KaTeX parse error: Got function '\newline' with no arguments as superscript at p
 
 ## Adres nie zawiera ataku `Remote Command Execution: Unix Command Injection`
 
-parametr `historyUrl` zawiera adres URL: "index.php?module=Calendar&view=CalendarExtended&history=true&viewType=month&start=2021-09-27&end=2021-11-06&user=22&time=current&cvid=undefined&hiddenDays=0,6" a nie polecenie powłoki `Remote Command Execution: Unix Command Injection`.
+Parametr `historyUrl` zawiera adres URL: "index.php?module=Calendar&view=CalendarExtended&history=true&viewType=month&start=2021-09-27&end=2021-11-06&user=22&time=current&cvid=undefined&hiddenDays=0,6", a nie polecenie powłoki `Remote Command Execution: Unix Command Injection`.
 
-## Nie zalecamy aby skrypty PHP mogły wywoływać funkcje do powłoki OS
+## Nie zalecamy aby skrypty PHP były w stanie wywoływać funkcje do powłoki systemu operacyjnego
 
-W [`Konfiguracja systemu > Logi > Serwer - konfiguracja`](/administrator-guides/logs/server-configuration/) można zweryfikować, czy zostały wyłączone niebezpieczne funkcje (między innymi do wykonywania poleceń powłoki systemu):
+W [`Konfiguracja systemu → Logi → Serwer - konfiguracja`](/administrator-guides/logs/server-configuration/) można zweryfikować, czy zostały wyłączone niebezpieczne funkcje (między innymi do wykonywania poleceń powłoki systemu):
 
 ```ini
 disable_functions = pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wifcontinued,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_get_handler,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,pcntl_async_signals,pcntl_unshare,shell_exec,exec,system,passthru,popen
 ```
 
-Więc przy prawidłowo skonfigurowanym serwerze nie ma nawet takiej możliwości.
+Dlatego nie ma ryzyka, jeśli serwer jest poprawnie skonfigurowany.
 
 ## Każde dane wejściowe są odpowiednio weryfikowane pod kątem dozwolonych wartości i znaków

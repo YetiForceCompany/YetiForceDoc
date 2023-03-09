@@ -30,18 +30,18 @@ Artykuł omawia najważniejsze kwestie związane z dodatkiem Outlook do systemu 
 
 ## Prezentacja wideo
 
-<Tabs groupId="Prezentacja wideo Office">
-	<TabItem value="youtube" label="🎬 YouTube">
-		<ReactPlayer
-			url="https://www.youtube.com/watch?v=WwgE1yX6akE"
-			width="100%"
-			height="500px"
-			controls={true}
-		/>
-	</TabItem>
-	<TabItem value="yetiforce" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/outlook-integration-panel.mp4" width="100%" height="500px" controls={true} />
-	</TabItem>
+<Tabs groupId="WwgE1yX6akE">
+    <TabItem value="youtube-WwgE1yX6akE" label="🎬 YouTube">
+        <ReactPlayer
+            url="https://www.youtube.com/watch?v=WwgE1yX6akE"
+            width="100%"
+            height="500px"
+            controls={true}
+        />
+    </TabItem>
+    <TabItem value="yetiforce-WwgE1yX6akE" label="🎥 YetiForce TV">
+        <ReactPlayer url="/video/outlook-integration-panel.mp4" width="100%" height="500px" controls={true} />
+    </TabItem>
 </Tabs>
 
 ## Wymagania
@@ -70,27 +70,21 @@ Więcej informacji na stronie: [Wymagania dotyczące dodatku Outlook](https://le
 
 ### Silnik przeglądarki
 
-Należy sprawdzić wersję Outlook, ponieważ dodatek bazuje na silniku przeglądarki internetowej.
-Stare wersje wspierają silnik „Internet Explorer”, dla którego CRM nie będzie działał w pełni prawidłowo.
+Należy sprawdzić wersję Outlook, ponieważ dodatek bazuje na silniku przeglądarki internetowej. Stare wersje wspierają silnik „Internet Explorer”, dla którego CRM nie będzie działał w pełni prawidłowo.
 
 Pełny opis wymagań znajduje sie na stronie [Przeglądarki używane przez dodatki pakietu Office](https://learn.microsoft.com/en-us/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins)
 
 ## Instalacja/uruchomienie integracji
 
-Po zakupie należy aktywować dodatek, jest to jednorazowa operacja. W Marketplace pojawi się przycisk `Wymaga interwencji`, należy wtedy przejść do zakładki `Integracja`, kliknąć `Aktywuj`, wprowadzić wymagane dane i ściągnąć plik instalacyjny.
+Po zakupie należy aktywować dodatek, jest to jednorazowa operacja. Gdy w Marketplace pojawi się przycisk `Wymaga interwencji`, należy wtedy przejść do zakładki `Integracja`, kliknąć `Aktywuj`, wprowadzić wymagane dane i ściągnąć plik instalacyjny.
 
-![Sklep](marketplace.png)
+![sklep](marketplace.png)
 
 ### Tutorial wideo
 
-<ReactPlayer
-	url="https://www.youtube.com/watch?v=HTRG81waq54"
-	width="100%"
-	height="500px"
-	controls={true}
-/>
+<ReactPlayer url="https://www.youtube.com/watch?v=HTRG81waq54" width="100%" height="500px" controls={true} />
 
-### Aktywacja
+### Aktywuj
 
 W trakcie aktywacji system zostanie skonfigurowany pod kątem integracji z Outlook. Zostaną zmienione następujące parametry:
 
@@ -99,24 +93,21 @@ W trakcie aktywacji system zostanie skonfigurowany pod kątem integracji z Outlo
 - wyłącza HttpOnly w cookie (aby nie logować się za każdym uruchomieniem panelu integracyjnego)
 - zmienia cookie „SameSite” na „None”
 
-![Aktywacja](activation.png)
+![aktywuj](activation.png)
 
 ### Pobranie rozszerzenia add-ins
 
 Aby była możliwa instalacja rozszerzenia konieczne jest pobranie pliku w formacie XML i zaimportowanie go w Outlook.
 
-Aby go pobrać należy przejść do panelu `Konfiguracja systemu > Integracja > Panel integracji poczty` i kliknąć przycisk `Pobierz plik instalacyjny dodatku Outlook`. Pobrany plik XML jest dedykowany tylko dla danej wersji CRM i zawiera w sobie APP ID CRM-a, gdy [APP ID](/administrator-guides/app-id) ulegnie zmianie wymagane jest ponowne zainstalowanie pluginu. Zostało to tak zrobione, aby nie nie można było załadować CRM w dowolnym innym oknie.
+Przejdź do `Konfiguracja systemu → Integracja → Panel integracji poczty` i kliknij `Pobierz plik instalacyjny dodatku Outlook`. Pobrany plik XML jest dedykowany tylko dla danej wersji CRM i zawiera w sobie APP ID CRM-a. Gdy [APP ID](/administrator-guides/app-id) ulegnie zmianie wymagane jest ponowne zainstalowanie pluginu. Zostało to tak zrobione, aby nie nie można było załadować CRM w dowolnym innym oknie.
 
 ### Instalacja w Outlook rozszerzenia add-ins
 
-Instrukcja instalacji znajduje się na oficjalnej stronie microsoft.com: https://support.microsoft.com/en-us/office/installed-add-ins-a61762b7-7a82-47bd-b14e-bbc15eaeb70f
-
-Należy postępować zgodnie z wytycznymi zawartymi w instrukcji, aby prawidłowo zainstalować.
+Instrukcja instalacji znajduje się na oficjalnej stronie microsoft.com: https://support.microsoft.com/en-us/office/installed-add-ins-a61762b7-7a82-47bd-b14e-bbc15eaeb70f Należy postępować zgodnie z wytycznymi zawartymi w instrukcji, aby prawidłowo zainstalować.
 
 ### Zezwolenie na dostęp do cookie (tylko wersja przeglądarkowa Outlook Web App)
 
-Wymagane jest zezwolenie na dostęp do cookie innych stron internetowych na stronie Outlook Web App.
-Domyślnie przeglądarka blokuje niechciane skrypty z dodatkowych stron internetowych.
+Wymagane jest zezwolenie na dostęp do cookie innych stron internetowych na stronie Outlook Web App. Domyślnie przeglądarka blokuje niechciane skrypty z dodatkowych stron internetowych.
 
 ![cookies1](cookies1.png)
 
@@ -136,7 +127,7 @@ Użytkownicy muszą mieć dostęp do modułu `Panel integracji poczty` w celu ko
 
 ## Dostęp do panelu
 
-Uprawnienia do tego modułu konfiguruje się w [Konfiguracja systemu > Uprawnienia > Profile](/administrator-guides/permissions/profiles/). Dla odpowiedniego profilu należy nadać uprawnienia do tego modułu.
+Uprawnienia do tego modułu konfiguruje się w [Konfiguracja systemu → Uprawnienia → Profile](/administrator-guides/permissions/profiles/). Dla odpowiedniego profilu należy nadać uprawnienia do tego modułu.
 
 Jeśli użytkownik nie będzie miał dostępu do modułu, to zobaczy komunikat `Błąd!!! Brak uprawnień`.
 
@@ -144,14 +135,13 @@ Jeśli użytkownik nie będzie miał dostępu do modułu, to zobaczy komunikat `
 
 ## Dostęp do importu maila
 
-Aby pojawił się przycisk importu maila, użytkownik w profilu musi mieć uprawnienia do tworzenia wiadomości mail.
-W tym celu należy zaznaczyć akcję `Tworzenie` dla modułu `Historia maili`.
+Aby pojawił się przycisk importu maila, użytkownik w profilu musi mieć uprawnienia do tworzenia wiadomości mail. W tym celu należy zaznaczyć akcję `Tworzenie` dla modułu `Historia maili`.
 
 ![profiles2](profiles2.png)
 
 ## Powiązywanie danych
 
-Aby było możliwe powiązane danych z wiadomości mailowej z danymi CRM-a należy określić warunki wyszukiwania.
+Aby móc powiązać dane z wiadomości e-mail z danymi systemowymi, konieczne jest określenie, w jaki sposób system może znaleźć dane.
 
 Każdy użytkownik, na którego logujemy się w panelu integracyjnym, powinien w miejscu `Pola relacji rekordów (Outlook)` mieć ustawione pola z dostępnych modułów, w których ma szukać danych do powiązania.
 
@@ -169,9 +159,9 @@ Standardowe pola to: Kontakty - Mail podstawowy, Kontrahenci - Mail podstawowy, 
 
 ## Akcje
 
-Aby pojawił się przycisk `Zaimportuj maila ręcznie` użytkownik musi mieć skonfigurowane akcje.
-Akcje konfigurujemy na użytkowniku w polu `Dostępne akcje skanera poczty e-mail (Outlook)`.
-Standardowe akcje to:
+Aby pojawił się przycisk `Zaimportuj maila ręcznie` użytkownik musi mieć skonfigurowane akcje. Akcje konfigurujemy na użytkowniku w polu `Dostępne akcje skanera poczty e-mail (Outlook)`.
+
+Standardowe akcje:
 
 - Stwórz e-maila - akcja, która tworzy wiadomość e-mail.
 - Tworzenie linków do e-maila - akcja powiązująca wiadomość mailową z rekordami w systemie, w polu `Pola relacji rekordów` określamy po czym ma szukać i pozwiązywać. Jeśli w polu "Pola relacji rekordów" nie wybrano wartości, to powiązanie nie będzie działać.
