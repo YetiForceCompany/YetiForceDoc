@@ -6,11 +6,12 @@ keywords:
   - migracja
   - przywrócić
   - kopii
+  - kopia zapasowa
   - serwer
   - YetiForce
 tags:
   - migracja
-  - kopia
+  - kopia zapasowa
 ---
 
 Migracja lub przywracanie systemu z backupu odbywa się w kilku krokach. By mieć pewność, że wykonujesz ją poprawnie, zapoznaj się z artykułem poniżej.
@@ -21,18 +22,18 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import ReactPlayer from 'react-player';
 
-<Tabs groupId="Prezentacja wideo">
-	<TabItem value="youtube" label="🎬 YouTube">
-		<ReactPlayer
-			url="https://www.youtube.com/watch?v=AAnD_Npa0ZM"
-			width="100%"
-			height="500px"
-			controls={true}
-		/>
-	</TabItem>
-	<TabItem value="yetiforce" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/system-migration.mp4" width="100%" height="500px" controls={true} />
-	</TabItem>
+<Tabs groupId="AAnD_Npa0ZM">
+    <TabItem value="youtube-AAnD_Npa0ZM" label="🎬 YouTube">
+        <ReactPlayer
+            url="https://www.youtube.com/watch?v=AAnD_Npa0ZM"
+            width="100%"
+            height="500px"
+            controls={true}
+        />
+    </TabItem>
+    <TabItem value="yetiforce-AAnD_Npa0ZM" label="🎥 YetiForce TV">
+        <ReactPlayer url="/video/system-migration.mp4" width="100%" height="500px" controls={true} />
+    </TabItem>
 </Tabs>
 
 ## Wgraj pliki do katalogu web root
@@ -40,7 +41,9 @@ import ReactPlayer from 'react-player';
 Najlepiej rozpakować pliki bezpośrednio na serwerze, dzięki temu będą zachowane oryginalne uprawnienia na plikach.
 
 :::tip
+
 Jeżeli masz oddzielną kopię katalogu storage, tak jak w przypadku [Chmury (YetiForce Cloud)](https://yetiforce.com/pl/marketplace/chmura), to należy rozpakować kopię zapasową do katalogu `__YETIFORCE_PATH__/storage` tak, aby w tym katalogu nie było katalogu storage, tylko katalogi z danymi https://github.com/YetiForceCompany/YetiForceCRM/tree/developer/storage
+
 :::
 
 ## Wgraj bazę danych
@@ -95,7 +98,7 @@ public static $generallyAllowedDomains = ['yetiforce.com', 'github.com'];
 public static $purifierAllowedDomains = ['yetiforce.com', 'github.com'];
 ```
 
-Sprawdź czy jest włączone wymuszone HTTPS, jeśli na starym serwerze był HTTPS i włączone przekierowanie a nowy serwer nie ma aktywnego HTTPS, to mogą się pojawić problemy.
+Sprawdź, czy wymuszanie HTTPS jest włączone. Mogą wystąpić problemy, jeśli HTTPS był na starym serwerze i przekierowanie zostało włączone, a nowy serwer nie ma aktywnego HTTPS.
 
 ```php
 /** Force site access to always occur under SSL (https) for selected areas. You will not be able to access selected areas under non-ssl. Note, you must have SSL enabled on your server to utilise this option. */
@@ -215,6 +218,6 @@ zip -r `date +"%Y%m%d_%H%M"`.zip __YETIFORCE_PATH__ -q
 tar -zcvf /var/www/html/`date +"%Y%m%d_%H%M"`.tar.gz /var/www/html/
 ```
 
-Podczas przenoszenia lub przywracania systemu nie może wystąpić żaden błąd, ponieważ później może okazać sie, że baza jest niekompletna.
+**Podczas przenoszenia lub przywracania systemu nie może wystąpić żaden błąd, ponieważ później może okazać sie, że baza jest niekompletna.**
 
 :::
