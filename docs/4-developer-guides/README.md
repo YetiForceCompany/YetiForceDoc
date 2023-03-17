@@ -6,6 +6,7 @@ keywords:
   - YetiForce
 tags:
   - Developer documentation
+hide_table_of_contents: true
 ---
 
 import DocCardList from '@theme/DocCardList';
