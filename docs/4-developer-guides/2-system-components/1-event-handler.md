@@ -1,51 +1,51 @@
 ---
-title: Event handler-y
-description: Event handler-y są potężnym narzędziem dającym możliwość wykonania dodatkowych akcji podczas wykonywania operacji bez konieczności modyfikacji funkcji bazowych.
+title: Event handlers
+description: Event handlers are a powerful tool that allows you to perform additional actions while performing various operations without having to modify base functions.
 keywords:
   - Event
   - handler
   - hook
-  - silnik
+  - engine
   - YetiForce
 tags:
   - event
-  - handlery
+  - handler
   - hook
 ---
 
-## Informacje ogólne
+## Basic information
 
-Event handler-y są potężnym narzędziem dającym możliwość wykonania dodatkowych akcji podczas wykonywania systemowych operacji bez konieczności modyfikacji/ingerencji silnika systemu.
+Event handlers are a powerful tool that allows you to perform additional actions while performing various system operations without having to modify or interfere with the system engine.
 
-## Rejestrowanie handler-a
+## Handler registration
 
-Funkcją odpowiedzialną za ich rejestrację (czyli dodanie do systemu) jest metoda `\App\EventHandler::registerHandler()`
+The `\App\EventHandler::registerHandler()` method is responsible for registering handlers (adding them to the system)
 
 ```php
 App\EventHandler::registerHandler('EntityAfterSave', 'OpenStreetMap_OpenStreetMapHandler_Handler', 'Accounts,Leads,Contacts', '', 3);
 ```
 
-Metoda przyjmuje aż osiem parametrów ale tylko dwa są wymagane:
+The method takes eight parameters, but only two are required:
 
 ```php
 registerHandler(string $eventName, string $className, $includeModules = '', $excludeModules = '', $priority = 5, $isActive = true, $ownerId = 0, $mode = 1): bool
 ```
 
-### Wymagane parametry
+### Required parameters
 
-- `$eventName` - nazwa event-u (pełna lista w punkcie [Typy](#typy))
-- `$className` - klasa, której kod zostanie wywołany przy wykonaniu handler-a
+- `$eventName` - event name (a list can be found in [Types](#types))
+- `$className` - class, whose code will be called when the handler is executed
 
-### Opcjonalne parametry
+### Optional parameters
 
-- `$includeModules` (default: '') - określa, w których modułach ma być aktywny dany EventHandler
-- `$excludeModules` (default: '') - określa, dla których modułów EventHandler ma nie działać
-- `$priority` (default: 5) - priorytet wykonania, używany podczas ustalania kolejności wykonywania
-- `$isActive` (default: true) - określa czy EventHandler jest aktywny
-- `$ownerId` (default: 0) - określa Id modułu właściciela event-u
-- `$mode` (default: 1) - określa czy jest możliwość edycji handler-a (1 - tak, 0 - nie)
+- `$includeModules` (default: '') - specifies in which modules the given EventHandler should be active
+- `$excludeModules` (default: '') - specifies in which modules the given EventHandler should be inactive
+- `$priority` (default: 5) - execution priority, used when determining the order of execution
+- `$isActive` (default: true) - determines if the EventHandler is active
+- `$ownerId` (default: 0) - specifies event owner's module ID
+- `$mode` (default: 1) - determines if the handler is editable (1 - yes, 0 - no)
 
-### Przykład
+### Example
 
 ```php
 \App\EventHandler::registerHandler('EntityBeforeSave', 'Vtiger_FieldsDependency_Handler', implode(',', $modules), '', 5, true, 0, \App\EventHandler::EDITABLE);
@@ -63,160 +63,160 @@ class Vtiger_FieldsDependency_Handler
 }
 ```
 
-## Typy
+## Types
 
-Poniżej znajduje się lista event handler-ów
+Balow you can find a list of event handlers
 
-### Operacje na rekordach
+### Record operations
 
-Lista dla wersji: `6.4.180`
+List for version: `6.4.180`
 
-#### zapis
+#### save
 
 - EntityBeforeSave
 - EntityAfterSave
 - EntityAfterSaveAjax
 
-#### usuwanie
+#### delete
 
 - EntityBeforeDelete
 - EntityAfterDelete
 
-#### zmiana stanu rekordu
+#### state change
 
 - EntityChangeState
 
-#### usuwanie relacji
+#### unlink
 
 - EntityBeforeUnLink
 - EntityAfterUnLink
 
-#### dodawanie relacji
+#### link
 
 - EntityBeforeLink
 - EntityAfterLink
 - EntityAfterLinkForSource
 
-#### transfer relacji
+#### transfer link
 
 - EntityAfterTransferLink
 - EntityBeforeTransferUnLink
 - EntityAfterTransferUnLink
 
-#### konwersja lead-a na kontrahenta
+#### convert lead to account
 
 - EntityBeforeConvertLead
 - EntityAfterConvertLead
 
-#### konwersja rekordów
+#### convert records
 
 - RecordConverterAfterSave
 
-#### aktualizacja stanu magazynowego
+#### stock update
 
 - IStoragesAfterUpdateStock
 
 ### Operacje podczas wyświetlania widoków
 
-#### widok podglądu rekord
+#### record preview
 
 - EntityAfterShowHiddenData
 - DetailViewBefore
 
-#### widok edycji rekord
+#### record edition view
 
 - EditViewBefore
 - EditViewDuplicate
 - InventoryRecordDetails
 
-#### walidacja
+#### validation
 
 - EditViewPreSave - walidacja formularza
 - PreDelete - walidacja usuwania
 - PreStateChange - walidacja zmiany stanu
 
-#### zmiana wartości pola
+#### field value change
 
 - EditViewChangeValue
 
-#### pobieranie informacji o rekordzie
+#### get record data
 
 - RecordGetData
 
-#### wyświetlanie przycisków modułu powiązanego
+#### display related module buttons
 
 - RelationListLinks
 
-#### modal generowania PDF-a
+#### PDF generation popup
 
 - PdfModalBefore
 - PdfModalAfter
 
-#### widok wysyłki wiadomości email
+#### send email view
 
 - MailComposeParamBefore
 - MailComposeParamAfter
 
-### Operacje na grupach
+### Group operations
 
-#### usuwanie grupy
+#### delete group
 
 - GroupBeforeDelete
 
-### Operacje na użytkowniku
+### User operations
 
-#### usuwanie użytkownika
+#### delete user
 
 - UsersBeforeDelete
 - UsersAfterDelete
 
-#### zapis użytkownika
+#### save user
 
 - UserBeforeSave
 - UserAfterSave
 
-#### logowanie użytkownika
+#### login user
 
 - UsersAfterLogin
 
-#### wylogowanie użytkownika
+#### logout user
 
 - UserLogoutBefore
 
-#### reset hasła użytkownika
+#### user password reset
 
 - UsersBeforePasswordChange
 - UsersAfterPasswordChange
 
-### Operacje na polach wyboru
+### Picklist operations
 
-#### zmiana nazwy wartości w słowniku
+#### rename picklist value
 
 - PicklistAfterRename
 
-#### usunięcie wartości w słowniku
+#### delete picklist value
 
 - PicklistAfterDelete
 
-### Operacje na wiadomościach email
+### Email operations
 
-#### dodanie do kolejki wiadomości do wysłania
+#### add to queue
 
 - MailerAddToQueue
 
-#### wysłanie wiadomości
+#### send message
 
 - MailerBeforeSend
 - MailerAfterSend
 
-#### raportowanie o błędach podczas wysyłania wiadomości
+#### report errors related to sent emails
 
 - MailerAddToLogs
 - MailerAfterSendError
 
-### Operacje na szablonach pdf
+### PDF templates operations
 
-#### generowanie szablonów pdf
+#### PDF template generation
 
 - PdfGenerate
 - PdfGenerateInit
