@@ -32,11 +32,11 @@ To create an entry in the Documents module use an API method the allows for reco
 
 https://doc.yetiforce.com/api/#/BaseModule/ea3b9bea091cbde741323b5393901825
 
-The difficult part when adding an attachment is the correct formulation of the query. As a standard, the module fields should be properly completed  in the query, and in this case it will be no different.
+The difficult part when adding an attachment is the correct formulation of the query. As a standard, the module fields should be properly completed in the query, and in this case it will be no different.
 
 Field names are available in the field edition panel in Software configuration → Standard modules → Edit fields
 
-Fields responsible for adding an attachment: 
+Fields responsible for adding an attachment:
 
 - File type [filelocationtype]
 
@@ -112,7 +112,7 @@ $response = curl_exec($ch);
 
 The existence of an unrelated document in the system is pointless, therefore each entry in the Documents module should be related to a record in another module, for example Contact, Account, Ticket, or any other that can be related to a Document.
 
-You don't have to create separate API queries to relate the document, you can do it at the time of creating the document by adding a few additinal variables, such as:
+You don't have to create separate API queries to relate the document, you can do it at the time of creating the document by adding a few additional variables, such as:
 
 - relationOperation (bool) /mandatory
 
@@ -120,11 +120,11 @@ You don't have to create separate API queries to relate the document, you can do
 
 - sourceModule (string) /mandatory
 
-   Name of the module that the document should be related to 
+  Name of the module that the document should be related to
 
 - sourceRecord (int) /mandatory
 
-  ID of the record that  the document should be related to
+  ID of the record that the document should be related to
 
 - relationId (int) /optional
 
