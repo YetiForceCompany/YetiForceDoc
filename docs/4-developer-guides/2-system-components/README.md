@@ -1,14 +1,14 @@
 ---
-title: Komponenty systemowe
-description: Opis komponentów silnika systemu YetiForce
+title: System components
+description: Description of YetiForce engine components
 keywords:
-  - komponenty
-  - silnik
-  - systemowe
+  - components
+  - engine
+  - system
   - YetiForce
 tags:
-  - komponenty
-  - silnik
+  - components
+  - engine
   - Rest API
 hide_table_of_contents: true
 ---
