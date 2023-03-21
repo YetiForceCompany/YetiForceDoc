@@ -65,7 +65,7 @@ class Vtiger_FieldsDependency_Handler
 
 ## Types
 
-Balow you can find a list of event handlers
+Below you can find a list of event handlers
 
 ### Record operations
 
@@ -116,7 +116,7 @@ List for version: `6.4.180`
 
 - IStoragesAfterUpdateStock
 
-### Operacje podczas wyświetlania widoków
+### Operations while displaying views
 
 #### record preview
 
