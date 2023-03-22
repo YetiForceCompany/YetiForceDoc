@@ -198,7 +198,7 @@ module.exports = {
 					{
 						tagName: 'meta',
 						name: 'theme-color',
-						content: 'rgb(240, 169, 8)'
+						content: 'rgb(1, 55, 77)'
 					}
 				]
 			}
