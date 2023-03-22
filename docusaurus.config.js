@@ -56,7 +56,7 @@ module.exports = {
 		},
 		navbar: {
 			title: 'YetiForce Documentation',
-			logo: { alt: 'YetiForce Logo', src: 'img/logo/logo-72x72.png' },
+			logo: { alt: 'YetiForce Logo', src: 'img/logo/72x72.png' },
 			items: [
 				{ to: 'introduction', label: 'Introduction', position: 'left' },
 				{ to: 'user-guides', label: 'User', position: 'left' },
@@ -188,7 +188,7 @@ module.exports = {
 					{
 						tagName: 'link',
 						rel: 'icon',
-						href: '/img/logo/logo-72x72.png'
+						href: '/img/logo/72x72.png'
 					},
 					{
 						tagName: 'link',
