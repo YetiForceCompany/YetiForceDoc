@@ -56,7 +56,7 @@ module.exports = {
 		},
 		navbar: {
 			title: 'YetiForce Documentation',
-			logo: { alt: 'YetiForce Logo', src: 'img/logo80.png' },
+			logo: { alt: 'YetiForce Logo', src: 'img/logo/logo-72x72.png' },
 			items: [
 				{ to: 'introduction', label: 'Introduction', position: 'left' },
 				{ to: 'user-guides', label: 'User', position: 'left' },
@@ -175,6 +175,30 @@ module.exports = {
 					{
 						from: '/apps',
 						to: '/administrator-guides/apps'
+					}
+				]
+			}
+		],
+		[
+			'@docusaurus/plugin-pwa',
+			{
+				debug: false,
+				offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
+				pwaHead: [
+					{
+						tagName: 'link',
+						rel: 'icon',
+						href: '/img/logo/logo-72x72.png'
+					},
+					{
+						tagName: 'link',
+						rel: 'manifest',
+						href: '/manifest.json' // your PWA manifest
+					},
+					{
+						tagName: 'meta',
+						name: 'theme-color',
+						content: 'rgb(240, 169, 8)'
 					}
 				]
 			}
