@@ -2,13 +2,13 @@
 title: QueryGenerator
 description: Mechanizm QueryGenerator, którym można listować dowolne dane z modułów typu entity.
 keywords:
-  - loader
-  - autoloader
+  - QueryGenerator
+  - query
+  - builder
   - engine
   - YetiForce
 tags:
-  - loader
-  - autoloader
+  - QueryGenerator
 ---
 
 :::tip Funkcjonalność dostępna od wersji YetiForce `3.5` i później
