@@ -14,7 +14,7 @@ tags:
 :::tip The fuctionality is available for YetiForce version `3.5` and later
 :::
 
-THe QueryGenerator mechanism can be used to list any data from entity type modules.
+The QueryGenerator mechanism can be used to list any data from entity type modules.
 
 ## Load filter from a specific module
 
