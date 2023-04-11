@@ -1,6 +1,6 @@
 ---
 title: QueryGenerator
-description: Mechanizm QueryGenerator, którym można listować dowolne dane z modułów typu entity.
+description: QueryGenerator mechanism, which can list any data from entity type modules.
 keywords:
   - QueryGenerator
   - query
@@ -11,19 +11,19 @@ tags:
   - QueryGenerator
 ---
 
-:::tip Funkcjonalność dostępna od wersji YetiForce `3.5` i później
+:::tip The fuctionality is available for YetiForce version `3.5` and later
 :::
 
-Mechanizm QueryGenerator, którym można listować dowolne dane z modułów typu entity.
+THe QueryGenerator mechanism can be used to list any data from entity type modules.
 
-## Wczytanie filtru z konkretnego modułu
+## Load filter from a specific module
 
 ```php
 $queryGenerator = new \App\QueryGenerator('Accounts');
 $queryGenerator->initForCustomViewById(106);
 ```
 
-## Dodanie do warunków wymaganych
+## Add to mandatory conditions
 
 ```php
 $queryGenerator->addCondition('accounttype', 'Customer', 'e');
@@ -33,7 +33,7 @@ $queryGenerator->addNativeCondition(['status' => 1, 'type' => 2]);
 $queryGenerator->addNativeCondition(['id' => [4, 8, 15]]);
 ```
 
-## dodawanie do warunków opcjonalnych
+## Add to optional conditions
 
 ```php
 $queryGenerator->addCondition('accounttype', 'Customer', 'e',false);
@@ -42,7 +42,7 @@ $queryGenerator->addNativeCondition(['status' => 1, 'type' => 2],false);
 $queryGenerator->addNativeCondition(['id' => [4, 8, 15]],false);
 ```
 
-## Dodanie join-ów
+## Add joins
 
 http://www.yiiframework.com/doc-2.0/guide-db-query-builder.html#join
 
@@ -50,7 +50,7 @@ http://www.yiiframework.com/doc-2.0/guide-db-query-builder.html#join
 $this->addJoin(['LEFT JOIN', 'vtiger_crmentity', 'vtiger_activity.activityid = vtiger_crmentity.crmid');
 ```
 
-## Lista operatorów
+## Operator list
 
 const STANDARD_OPERATORS
 
@@ -58,7 +58,7 @@ const STANDARD_OPERATORS
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/app/Condition.php#L65-L103
 ```
 
-## Lista operatów pól dat
+## Date fields operators list
 
 const DATE_OPERATORS
 
@@ -66,7 +66,7 @@ const DATE_OPERATORS
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/app/Condition.php#L22-L58
 ```
 
-## Pobranie danych
+## Download data
 
 ```php
 $rows = $queryGenerator->createQuery()->all();
@@ -74,7 +74,7 @@ foreach ($rows as &$row) {
 }
 ```
 
-lub
+or
 
 ```php
 $dataReader = $queryGenerator->createQuery()->createCommand()->query();
@@ -82,7 +82,7 @@ while ($row = $dataReader->read()) {
 }
 ```
 
-## Sortowanie
+## Sort
 
 ```php
 $queryGenerator->setOrder('accountid');
@@ -90,26 +90,26 @@ $queryGenerator->setOrder('accountid', \App\Db::ASC);
 $queryGenerator->setOrder('accountid', \App\Db::DESC);
 ```
 
-## Łączenie wyświetlanych danych
+## Combine displayed data
 
 ```php
 $queryGenerator->setConcatColumn('date_start', "CONCAT(vtiger_activity.date_start, ' ', vtiger_activity.time_start)");
 $queryGenerator->setConcatColumn('due_date', "CONCAT(vtiger_activity.due_date, ' ', vtiger_activity.time_end)");
 ```
 
-## Dodanie kolumn nie będących polami
+## Add non-field columns
 
 ```php
 $queryGenerator->setCustomColumn('u_yf_openstreetmap.lon');
 ```
 
-## Dodanie pól
+## Add fields
 
 ```php
 $queryGenerator->setField(['visibility', 'assigned_user_id', 'activitystatus']);
 ```
 
-## Dodanie pól z modułu powiązanego
+## Add fields from a related module
 
 ```php
 $queryGenerator->addReletedField([
@@ -119,7 +119,7 @@ $queryGenerator->addReletedField([
 ]);
 ```
 
-## Dodanie warunków z modułu powiązanego
+## Add conditions from a related module
 
 ```php
 $queryGenerator->addReletedCondition([
