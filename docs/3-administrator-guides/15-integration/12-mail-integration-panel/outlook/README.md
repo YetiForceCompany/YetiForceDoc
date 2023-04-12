@@ -211,18 +211,18 @@ public static $allowedScriptDomains = ['https://appsforoffice.microsoft.com', 'h
 public static $allowedDomainsLoadInFrame = ['https://appsforoffice.microsoft.com'];
 ```
 
-### Nie importuje wiadomości mail
+### Email import issues
 
 ![issues3](issues3.jpg)
 
-Jeśli użytkownik klika w przycisk importowania a system nie importuje wiadomości oznacza to że nie zostały ustawione akcje jakie mają być wywoływane podczas importu.
+If the user click the import button but the system doesn't import the messages, then actions that are supposed to triggered during import were not configured. 
 
-Opis konfiguracji akcji podczas importuj znajduje sie w punkcie [Akcje](#akcje), konfigurację należy wykonać dla wszystkich użytkowników korzystających z panelu integracyjnego.
+The description of action configuration dring import can be found in the [Actions](#actions) section. The configuration should be done for all the users who utilize the integration panel.
 
-### Brak powiązań
+### No relations
 
 ![issues4](issues4.jpg)
 
-W podglądzie wiadomości panel integracyjny pokazuje powiązania z aktualną wiadomością na podstawie określonych pól w ustawieniach użytkownika. Gdy nie zostaną wybrane pola po których system ma wyszukiwać powiązane informacje to będzie skutkowało brakiem powiązań w panelu oraz po zaimportowaniu wiadomości.
+The integration panel displays relations to the current message in the message preview based on fields specified in user settings. If fields necessary for the system to search related information are not selected, there won't be any relations in the panel and after the import.  
 
-Opis konfiguracji po których polach system ma szukać powiązań znajduje sie w punkcie [Powiązywanie danych](#powiązywanie-danych), konfigurację należy wykonać dla wszystkich użytkowników korzystających z panelu integracyjnego.
+A description of the configuration that specifies which fields should be used for relation search can be found in [Data relations](#data-relations). The configuration should be done for all the users who utilize the integration panel.
