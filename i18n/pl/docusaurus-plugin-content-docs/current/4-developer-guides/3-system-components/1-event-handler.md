@@ -220,3 +220,23 @@ Lista dla wersji: `6.4.180`
 
 - PdfGenerate
 - PdfGenerateInit
+
+## Wyjątki - pomijanie handler-ów i workflow
+
+- disableHandlers - wyłącz wszystkie osoby obsługujące poza obowiązkowymi
+- disableWorkflow - wyłącz tylko handler od worklfow
+- disableHandlerByName - wyłącz jeden konkretny handler
+
+```php
+$recordModel->setHandlerExceptions(['disableHandlers' => true]);
+
+$recordModel->setHandlerExceptions(['disableWorkflow' => true]);
+
+$recordModel->setHandlerExceptions(['disableHandler' => ['ModTracker_ModTrackerHandler_Handler']]);
+```
+
+### Handler-y obowiązkowe
+
+```ini reference
+https://github.com/YetiForceCompany/YetiForceCRM/blob/2c14baaf8dbc7fd82d5c585f2fa0c23528450618/app/EventHandler.php#L23
+```
