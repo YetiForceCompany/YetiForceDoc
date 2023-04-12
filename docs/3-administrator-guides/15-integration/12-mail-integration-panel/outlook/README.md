@@ -130,7 +130,7 @@ If you don't change it, it won't be possible to log into the YetiForce system an
 
 Users need access to the `Mail integration panel` in order to use the integration panel.
 
-## Panel access
+### Panel access
 
 Permissions for this panel can be configured in [System settings → Permissions → Profiles](/administrator-guides/permissions/profiles/). Grant the applicable module permissions for appropriate profiles.
 
@@ -138,7 +138,7 @@ If the user doesn't have access to the module, the following message will appear
 
 ![profiles1](profiles1.png)
 
-## Access to email import
+### Access to email import
 
 In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module.
 
@@ -173,6 +173,14 @@ Standard actions:
 
 ![user2](user2.png)
 
+## Debugging
+
+When the panel is not displayed correctly or data is missing: https://docs.microsoft.com/en-US/outlook/troubleshoot/user-interface/office-add-ins-not-displayed-correctly
+
+Debugging: https://docs.microsoft.com/en-us/office/dev/add-ins/testing/test-debug-office-add-ins
+
+Debugging using Microsoft Edge DevTools: https://docs.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-developer-tools-on-windows-10#debug-using-microsoft-edge-devtools
+
 ## Possible issues
 
 ![issues1](issues1.png)
@@ -181,7 +189,7 @@ Debugging should take place each time there are issues related to the integratio
 
 Below you can find a list of the possible issues we encountered.
 
-## CSP Policy
+### CSP Policy
 
 `Refused to frame 'https://appsforoffice.microsoft.com/' because it violates the following Content Security Policy directive: "frame-src 'self' mailto: tel:".`
 
@@ -203,10 +211,18 @@ public static $allowedScriptDomains = ['https://appsforoffice.microsoft.com', 'h
 public static $allowedDomainsLoadInFrame = ['https://appsforoffice.microsoft.com'];
 ```
 
-## Debugging
+### Nie importuje wiadomości mail
 
-When the panel is not displayed correctly or data is missing: https://docs.microsoft.com/en-US/outlook/troubleshoot/user-interface/office-add-ins-not-displayed-correctly
+![issues3](issues3.jpg)
 
-Debugging: https://docs.microsoft.com/en-us/office/dev/add-ins/testing/test-debug-office-add-ins
+Jeśli użytkownik klika w przycisk importowania a system nie importuje wiadomości oznacza to że nie zostały ustawione akcje jakie mają być wywoływane podczas importu.
 
-Debugging using Microsoft Edge DevTools: https://docs.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-developer-tools-on-windows-10#debug-using-microsoft-edge-devtools
+Opis konfiguracji akcji podczas importuj znajduje sie w punkcie [Akcje](#akcje), konfigurację należy wykonać dla wszystkich użytkowników korzystających z panelu integracyjnego.
+
+### Brak powiązań
+
+![issues4](issues4.jpg)
+
+W podglądzie wiadomości panel integracyjny pokazuje powiązania z aktualną wiadomością na podstawie określonych pól w ustawieniach użytkownika. Gdy nie zostaną wybrane pola po których system ma wyszukiwać powiązane informacje to będzie skutkowało brakiem powiązań w panelu oraz po zaimportowaniu wiadomości.
+
+Opis konfiguracji po których polach system ma szukać powiązań znajduje sie w punkcie [Powiązywanie danych](#powiązywanie-danych), konfigurację należy wykonać dla wszystkich użytkowników korzystających z panelu integracyjnego.
