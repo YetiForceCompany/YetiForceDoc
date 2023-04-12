@@ -215,7 +215,7 @@ public static $allowedDomainsLoadInFrame = ['https://appsforoffice.microsoft.com
 
 ![issues3](issues3.jpg)
 
-If the user click the import button but the system doesn't import the messages, then actions that are supposed to triggered during import were not configured. 
+If the user click the import button but the system doesn't import the messages, then actions that are supposed to triggered during import were not configured.
 
 The description of action configuration dring import can be found in the [Actions](#actions) section. The configuration should be done for all the users who utilize the integration panel.
 
@@ -223,6 +223,6 @@ The description of action configuration dring import can be found in the [Action
 
 ![issues4](issues4.jpg)
 
-The integration panel displays relations to the current message in the message preview based on fields specified in user settings. If fields necessary for the system to search related information are not selected, there won't be any relations in the panel and after the import.  
+The integration panel displays relations to the current message in the message preview based on fields specified in user settings. If fields necessary for the system to search related information are not selected, there won't be any relations in the panel and after the import.
 
-A description of the configuration that specifies which fields should be used for relation search can be found in [Data relations](#data-relations). The configuration should be done for all the users who utilize the integration panel.
+A description of the configuration that specifies which fields should be used for relation search can be found in [Data binding](#data-binding). The configuration should be done for all the users who utilize the integration panel.
