@@ -217,7 +217,7 @@ public static $allowedDomainsLoadInFrame = ['https://appsforoffice.microsoft.com
 
 If the user click the import button but the system doesn't import the messages, then actions that are supposed to triggered during import were not configured.
 
-The description of action configuration dring import can be found in the [Actions](#actions) section. The configuration should be done for all the users who utilize the integration panel.
+The description of action configuration during import can be found in the [Actions](#actions) section. The configuration should be done for all the users who utilize the integration panel.
 
 ### No relations
 
