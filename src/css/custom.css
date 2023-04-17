@@ -42,6 +42,6 @@
 	-moz-box-shadow: 2px 2px 7px 1px rgb(66 68 90);
 	box-shadow: 2px 2px 7px 1px rgb(66 68 90);
 }
-..medium-zoom-image--opened{
-	z-index: 201;
+.medium-zoom-image{
+	z-index: 300;
 }

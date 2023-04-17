@@ -9,7 +9,6 @@ keywords:
   - YetiForce
 tags:
   - Kanban
-  - YetiForce
 preview: kanban-1.jpg
 ---
 
@@ -25,7 +24,7 @@ Tablica Kanban jest dodatkiem płatnym dostępnym w naszym Marketplace - [**Kup 
 
 ## Konfiguracja
 
-Panel konfiguracyjny dodatku YetiForce Kanban Board można znaleźć w Konfiguracja systemu → Moduły standardowe → Kanban
+Panel konfiguracyjny dodatku YetiForce Kanban Board można znaleźć w `Konfiguracja systemu → Moduły standardowe → Kanban`
 
 ![kanban-2](kanban-2.jpg)
 
