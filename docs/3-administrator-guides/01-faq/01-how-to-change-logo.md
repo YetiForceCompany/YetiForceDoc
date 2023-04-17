@@ -4,9 +4,11 @@ description: W systemie YetiForce możemy znaleźć kilka miejsc w których znaj
 keywords:
   - video
   - tutorials
+  - Settings
 tags:
   - video
   - tutorials
+preview: 01-how-to-change-logo-1.jpg
 ---
 
 Personalizacja systemu jest bardzo ważna, ponieważ pozwala na tworzenie bardziej dopasowanego systemu dla jego użytkowników, w szczególności gdy chcemy zmienić podstawowe elementy tj. **logo**. Domyślnie w systemie logo YetiForce jest umieszczone w kilku miejscach, przeczytaj cały artykuł jeżeli chcesz dowiedzieć się jak zmienić logo w aplikacji!
