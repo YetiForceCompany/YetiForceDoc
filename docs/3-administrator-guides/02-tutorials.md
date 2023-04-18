@@ -1,12 +1,12 @@
 ---
 title: Video tutorials
+description: A collection of video tutorials that present the administrative part of the YetiForce system
 keywords:
   - video
   - tutorials
 tags:
   - video
   - tutorials
-description: A collecton of video tutorials that present the administrative part of the YetiForce system
 ---
 
 ## System update

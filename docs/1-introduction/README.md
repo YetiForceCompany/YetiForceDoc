@@ -1,5 +1,13 @@
 ---
 title: Introduction
+description: YetiForce is open source software used to manage customer relationships and support business processes that take place in all companies.
+keywords:
+  - introduction
+  - starts
+  - guides
+  - YetiForce
+tags:
+  - Introduction
 hide_table_of_contents: true
 ---
 
