@@ -14,6 +14,12 @@ tags:
 preview: ass-1.jpg
 ---
 
+:::warning
+
+Auto assign records jest dodatkiem płatnym dostępnym w naszym Marketplace - [**Kup YetiForce YetiForce Automatic Assignment**](https://yetiforce.com/en/yetiforce-automatic-assignment)
+
+:::
+
 ![ass-1.jpg](ass-1.jpg)
 
 ## Configuration
