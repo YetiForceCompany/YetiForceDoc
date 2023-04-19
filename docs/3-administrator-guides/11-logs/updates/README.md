@@ -7,6 +7,7 @@ keywords:
   - report
   - server
   - system
+  - Settings
   - YetiForce
 tags:
   - configuration report

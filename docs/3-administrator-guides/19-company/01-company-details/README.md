@@ -5,6 +5,7 @@ keywords:
   - details
   - Company
   - YetiForce
+  - Settings
 tags:
   - Company details
 preview: OnLine-1.jpg
