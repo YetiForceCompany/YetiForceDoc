@@ -297,7 +297,7 @@ Users should always have the latest version of any browsers they use because onl
 5. Internet Explorer
 6. Other
 
-### Additional configuration using .htaccess
+## Additional configuration using .htaccess
 
 Some servers allow changing the configuration via the `.htaccess` file. We present some of the examples below.
 

@@ -63,7 +63,7 @@ Logs will be registered in the following file: `cache/logs/system.log`. The `cac
 
 ## PHP logs
 
-To start analyzing problems or errors in the system, log recording and displaying server messages should be enabled. **Without this change, the system will not be able to inform you about issues** with, e.g., short script execution time. In the php.ini configuration, set the values of `log_errors` and `display_errors` to `On`. If the configuration allows you to override PHP parameters, use `.htaccess` [Additional configuration with .htaccess](/pl/introduction/requirements/#additional-configuration-with-htaccess-use). Before starting debugging, it is important to check in the panel [`Administrator documentation → Logs → Server - configuration`](/administrator-guides/logs/server-configuration) that the described parameters are correctly set.
+To start analyzing problems or errors in the system, log recording and displaying server messages should be enabled. **Without this change, the system will not be able to inform you about issues** with, e.g., short script execution time. In the php.ini configuration, set the values of `log_errors` and `display_errors` to `On`. If the configuration allows you to override PHP parameters, use `.htaccess` [Additional configuration with .htaccess](/pl/introduction/requirements/#additional-configuration-using-htaccess). Before starting debugging, it is important to check in the panel [`Administrator documentation → Logs → Server - configuration`](/administrator-guides/logs/server-configuration) that the described parameters are correctly set.
 
 ## MySQL logs
 
