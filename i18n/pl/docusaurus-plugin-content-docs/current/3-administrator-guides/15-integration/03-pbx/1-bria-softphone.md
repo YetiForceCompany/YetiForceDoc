@@ -67,7 +67,9 @@ Ikona na górnej belce systemu pokazuje aktualny status integracji z aplikacją 
 
 ## Dialing
 
-Jeśli integracja została aktywowana prawidłowo, to wszystkie pola o typie `telefon` będą miały dodatkową ikonę telefonu. Po kliknięciu numeru lub ikony telefonu zostanie wywołana metoda do utworzenia połączenia z wybranym numerem telefonu.
+Jeśli integracja została aktywowana prawidłowo, to wszystkie pola o typie `telefon` będą miały dodatkową ikonę telefonu.
+
+Po kliknięciu numeru lub ikony telefonu zostanie wywołana metoda do utworzenia połączenia z wybranym numerem telefonu.
 
 ![bria-softphone-7.png](bria-softphone-7.png)
 

@@ -37,11 +37,15 @@ The message is shown only in the case of communication errors, in the case of ot
 
 ## If nothing changes during status check, make sure your server has the correct configuration
 
-To do this, go to [`System configuration → Logs → Server - configuration`](/administrator-guides/logs/server-configuration/) The most common cause of errors in the system and registration is incorrect server configuration. You can find more information about server configuration in [this article](/introduction/requirements/).
+To do this, go to [`System configuration → Logs → Server - configuration`](/administrator-guides/logs/server-configuration/)
+
+The most common cause of errors in the system and registration is incorrect server configuration. You can find more information about server configuration in [this article](/introduction/requirements/).
 
 ## Check logs
 
-If there is any error while checking the registration status, it will definitely be visible in the system or PHP or FPM, or web server logs. Run verbose logs in system as described in the [Debugging article](/developer-guides/debug).
+If there is any error while checking the registration status, it will definitely be visible in the system or PHP or FPM, or web server logs.
+
+Run verbose logs in system as described in the [Debugging article](/developer-guides/debug).
 
 ## Your app id has changed
 

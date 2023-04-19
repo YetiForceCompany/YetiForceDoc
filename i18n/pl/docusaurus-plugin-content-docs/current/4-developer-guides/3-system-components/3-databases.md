@@ -44,11 +44,15 @@ http://www.yiiframework.com/doc-2.0/yii-db-queryinterface.html#where()-detail
 
 ### MySQL
 
-https://github.com/YetiForceCompany/yii2-framework/blob/yetiforce/db/mysql/Schema.php#L42-L75 https://github.com/YetiForceCompany/yii2-framework/blob/yetiforce/db/mysql/QueryBuilder.php#L26-L49
+https://github.com/YetiForceCompany/yii2-framework/blob/yetiforce/db/mysql/Schema.php#L42-L75
+
+https://github.com/YetiForceCompany/yii2-framework/blob/yetiforce/db/mysql/QueryBuilder.php#L26-L49
 
 ### PgSQL
 
-https://github.com/YetiForceCompany/yii2-framework/blob/yetiforce/db/pgsql/Schema.php#L44-L126 https://github.com/YetiForceCompany/yii2-framework/blob/yetiforce/db/pgsql/QueryBuilder.php#L52-L78
+https://github.com/YetiForceCompany/yii2-framework/blob/yetiforce/db/pgsql/Schema.php#L44-L126
+
+https://github.com/YetiForceCompany/yii2-framework/blob/yetiforce/db/pgsql/QueryBuilder.php#L52-L78
 
 ## Database connection without primary database parameter
 
