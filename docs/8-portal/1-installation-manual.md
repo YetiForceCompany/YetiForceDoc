@@ -1,25 +1,27 @@
 ---
-title: Instalacja systemu YetiForce Portal
-description: Jak zainstalować system YetiForce Portal
+title: How to install YetiForce Portal
+description: The article explains how to install the Customer Portal for YetiForce (YetiForcePortal2)
 keywords:
-  - kreator
-  - instalacji
-  - instrukcja
+  - wizard
+  - install
+  - tutorial
   - YetiForce
-  - jak zainstalować
+  - How to install
   - portal
-  - klienta
+  - Customer
+  - YetiForcePortal2
 tags:
-  - instalacja
-  - portal
-preview: install-1.png
-draft: true
+  - Portal
+  - YetiForcePortal2
+preview: install-1.jpg
 ---
 
-W tym artykule pokażemy jak szybko zainstalować [YetiForce Portal 2](https://github.com/YetiForceCompany/YetiForcePortal2). Portal może służyć jako miejsce przeznaczone dla klienta, dostawcy lub partnera. Jest to uniwersalne narzędzie do komunikacji ze wszystkimi osobami z którymi współpracujemy.
+In this article, it will be presented how to quickly install [YetiForce Portal 2](https://github.com/YetiForceCompany/YetiForcePortal2). The portal can be used as a place for a customer, vendor, or partner. It is a universal tool for communicating with all the people we cooperate with.
 
 :::tip
+
 **Koniecznie zapoznaj się ze wszystkimi poniższymi informacjami przed przystąpieniem do instalacji systemu.**
+
 :::
 
 import Tabs from '@theme/Tabs';
@@ -52,18 +54,20 @@ Uproszczona instrukcja instalacji znajduje się na [github YetiForcePortal2](htt
 
 ## Instalacja YetiForcePortal2
 
-Instalacja Portalu odbywa się tak samo jak inatslacja systemu CRM - za pomocą kreatora przez przeglądarkę.
+Instalacja Portalu odbywa się tak samo jak instalacja systemu YetiForce - za pomocą kreatora przez przeglądarkę.
 
 ### Krok 1 - Pobierz i wgraj pliki systemu
 
 W pierwszej kolejności przygotuj pliki instalacyjne. Pobierz YetiForce i najnowszą wersję Portalu z naszych [oficjalnych źródeł](introduction/download).
 
 :::warning
+
 Zalecamy pobranie wersji oznaczonych jako "complete", na przykład `YetiForcePortal2-6.2-complete.zip`. Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`.
 
 Ważna jest kolejność - najpierw `yarn`, potem `composer`.
 
 Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
+
 :::
 
 - Pobrany plik ZIP rozpakuj, np. za pomocą programu 7-Zip.
@@ -84,16 +88,25 @@ chown -R yfprod:yfprod /home/yfprod/html/
 
 Uruchom w oknie przeglądarki adres docelowy Twojego Portalu, system powinien pokazać kreator instalacji. Jeśli nie widzisz kreatora, to może oznaczać, że wystąpiły jakieś problemy. Możesz spróbować uruchomić adres: **SITE_URL**/index.php?module=Install&view=Install np. https://gitdevportal.yetiforce.com/index.php?module=Install&view=Install
 
-![Krok 1](step-1.png)
+![step-1.jpg](step-1.jpg)
 
 Na ekranie startowym w kreatorze instalacji dostępna jest możliwość konfiguracji języka instalacji.
 
-### Krok 3 - Wprowadzanie danych dostępowych
+### Step 3 - Enter access data
 
 :::warning
-**Ten krok wymaga aktywnego dostępu do API!!!**
+
+**This step requires active API access !!!**
 
 W razie problemów zapoznaj się z dokumentacją oraz informacjami na [github](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
 
-Dane dostępowe można znaleźć w panelu [`Konfiguracja systemu → Integracja → Web service - Aplikacje`](/administrator-guides/integration/webservice-apps/) w CRM.
+Dane dostępowe można znaleźć w panelu [`Konfiguracja systemu → Integracja → Web service - Aplikacje`](/administrator-guides/integration/webservice-apps/) w systemie YetiForce.
 :::
+
+![step-3.jpg](step-3.jpg)
+
+### Step 4 - Portal login page
+
+After clicking `Install` the login page will appear. Enter the login data created in the CRM panel [`System configuration > Integration > Web service - Users`](/administrator-guides/integration/webservice-users/)
+
+![step-4.jpg](step-4.jpg)
