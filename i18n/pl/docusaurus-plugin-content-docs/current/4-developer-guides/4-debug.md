@@ -21,7 +21,7 @@ Konieczne jest zrozumienie problemu w taki sposób, aby można było znaleźć j
 
 - cache/logs/phpError.log - general PHP error logs. Widoczność logów jest określona przez kilka czynników pośrednich, np. konfigurację serwera WWW
 - cache/logs/errors.log - logi błędów PHP kontrolowane przez system
-- cache/logs/system.log - główne logi dla debugowania systemu CRM, w zależności od odpowiednio ustawionego poziomu rejestruje informacje
+- cache/logs/system.log - główne logi dla debugowania systemu, w zależności od odpowiednio ustawionego poziomu rejestruje informacje
 - cache/logs/davException.log - logi błędów dla integracji dla DAV
 - cache/logs/davDebug.log - logi debugowania dla integracji DAV
 - cache/logs/webserviceDebug.log - logi debugowania dla API/webservice
@@ -63,7 +63,7 @@ Logi będą rejestrowane w następującym pliku: `cache/logs/system.log`. Katalo
 
 ## Logi PHP
 
-Aby rozpocząć analizowanie problemów lub błędów w systemie, należy włączyć rejestrowanie logów i wyświetlanie komunikatów serwera. **Bez tej zmiany system nie będzie w stanie informować o problemach** z np. krótkim czasem wykonania skryptu. W konfiguracji php.ini ustaw wartości `log_errors` i `display_errors` na `On`. Jeśli konfiguracja pozwala na nadpisanie parametrów PHP, użyj `.htaccess` [Dodatkowa konfiguracja z .htaccess](/pl/introduction/requirements/#additional-configuration-with-htaccess-use). Przed rozpoczęciem debugowania, ważne jest sprawdzenie w panelu [`Dokumentacja Administratora → Logi → Serwer - konfiguracja`](/administrator-guides/logs/server-configuration) czy opisane parametry są poprawnie ustawione.
+Aby rozpocząć analizowanie problemów lub błędów w systemie, należy włączyć rejestrowanie logów i wyświetlanie komunikatów serwera. **Bez tej zmiany system nie będzie w stanie informować o problemach** z np. krótkim czasem wykonania skryptu. W konfiguracji php.ini ustaw wartości `log_errors` i `display_errors` na `On`. Jeśli konfiguracja pozwala na nadpisanie parametrów PHP, użyj `.htaccess` [Dodatkowa konfiguracja .htaccess](/pl/introduction/requirements/#additional-configuration-using-htaccess). Przed rozpoczęciem debugowania, ważne jest sprawdzenie w panelu [`Dokumentacja Administratora → Logi → Serwer - konfiguracja`](/administrator-guides/logs/server-configuration) czy opisane parametry są poprawnie ustawione.
 
 ## Logi MySQL
 

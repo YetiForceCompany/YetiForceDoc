@@ -9,6 +9,8 @@ tags:
 hide_table_of_contents: true
 ---
 
+Dokumentacja dla osób które umieją programować i chcą lepiej poznać działanie systemu YetiForce.
+
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

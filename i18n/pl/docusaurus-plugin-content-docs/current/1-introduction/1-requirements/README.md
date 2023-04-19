@@ -1,6 +1,6 @@
 ---
 title: Wymagania systemu YetiForce
-preview: requirements.jpg
+description: Jakie są wymagania dla systemu YetiForce
 keywords:
   - serwer
   - wymagania
@@ -16,7 +16,7 @@ tags:
   - LAMP
   - LEMP
   - środowisko
-description: Jakie są wymagania dla systemu YetiForce
+preview: requirements.jpg
 ---
 
 ## Wstęp
@@ -218,7 +218,7 @@ Przykładowa konfiguracja FPM:
 
 ### Szyfrowanie HTTPS i HTTP2
 
-Zalecamy aby połączenie z serwerem, na którym znajduje się nasz CRM, było zawsze szyfrowane. Jeśli połączenie z serwerem nie zostało nawiązane za pomocą protokołu HTTPS, komunikacja może zostać podsłuchana lub zmieniona przez osoby postronne.
+Zalecamy aby połączenie z serwerem, na którym znajduje się nasz system, było zawsze szyfrowane. Jeśli połączenie z serwerem nie zostało nawiązane za pomocą protokołu HTTPS, komunikacja może zostać podsłuchana lub zmieniona przez osoby postronne.
 
 ### Uprawnienia do folderów i plików
 
@@ -296,7 +296,7 @@ Użytkownik powinien mieć zawsze najnowszą wersję przeglądarki, ponieważ ty
 5. Internet Explorer
 6. Inne
 
-### Dodatkowa konfiguracja z użyciem .htaccess
+## Dodatkowa konfiguracja z użyciem .htaccess
 
 Część serwerów umożliwia zmianę konfiguracji za pomocą pliku `.htaccess`, poniżej pokazujemy kilka przykładów. Poniżej przedstawiamy kilka przykładów.
 

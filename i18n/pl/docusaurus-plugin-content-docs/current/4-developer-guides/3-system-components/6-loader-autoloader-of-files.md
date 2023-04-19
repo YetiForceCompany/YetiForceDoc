@@ -47,7 +47,7 @@ There is also a `Loader` within the system and it is responsible for the upload 
 :::tip The mechanism described below works from version YetiForce `2.1`
 :::
 
-The Loader allows to overwrite any system file. A folder named 'custom' needs to be added to the main CRM directory and a complete file path provided, e.g. `custom/modules/Accounts/Accounts.php`. The system will load the file Accounts.php instead of the original file. Currently, this solution works only for modules, but in the future the system will allow to change system files globally. A list of directories possible to overwrite:
+The Loader allows to overwrite any system file. A folder named 'custom' needs to be added to the main system directory and a complete file path provided, e.g. `custom/modules/Accounts/Accounts.php`. The system will load the file Accounts.php instead of the original file. Currently, this solution works only for modules, but in the future the system will allow to change system files globally. A list of directories possible to overwrite:
 
 - modules/ModuleName/... >> custom/modules/ModuleName/...
 - languages/... >> custom/languages/...

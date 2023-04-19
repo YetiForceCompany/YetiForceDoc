@@ -1,6 +1,6 @@
 ---
 title: Jak przez Rest Api dodać plik graficzny
-description: Artykuł opisuje jak za pomocą Rest Api dodać plik graficzny w YetiForce CRM.
+description: Niniejszy dokument zawiera informację jak za pomocą Rest Api dodać plik graficzny w polach obsługujących takie pliki w YetiForce CRM.
 keywords:
   - Webservice
   - API
