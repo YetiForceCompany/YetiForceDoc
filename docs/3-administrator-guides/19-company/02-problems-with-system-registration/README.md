@@ -63,8 +63,8 @@ Please click the `check registration status` button **BEFORE SENDING US A MESSAG
 
 If you have a problem with registration and this article did not help you solve the problem, send a message to hello@yetiforce.com with the following information:
 
-- APP ID
-- CRM logs
-- PHP logs
+- [APP ID](/administrator-guides/app-id/)
+- [CRM logs](/developer-guides/debug)
+- [PHP logs](/developer-guides/debug#php-logs)
 - web server logs
 - FPM login (optional)
