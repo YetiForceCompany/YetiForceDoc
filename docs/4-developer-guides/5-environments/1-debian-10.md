@@ -146,7 +146,7 @@ sed -i 's/output_buffering = "On"/output_buffering = "Off"/g' /etc/php/7.4/cli/c
 ```
 
 :::warning
-The example is presented on the development version, we recommend downloading the files for the CRM version that will be installed, e.g. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
+The example is presented on the development version, we recommend downloading the files for the system version that will be installed, e.g. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
 
 :::
 

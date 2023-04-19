@@ -16,7 +16,7 @@ tags:
 
 ## Available languages
 
-Thanks to the efforts of our community, YetiForce CRM has been translated into many languages. After installing the system, you will be able to easily download additional languages by going to: `System Settings → System Tools → Language Management`. You can check all currently available languages on Crowdin. Thanks to Crowdin you can also develop the system by adding new languages, or adding translations to those already available.
+Thanks to the efforts of our community, YetiForce has been translated into many languages. After installing the system, you will be able to easily download additional languages by going to: `System Settings → System Tools → Language Management`. You can check all currently available languages on Crowdin. Thanks to Crowdin you can also develop the system by adding new languages, or adding translations to those already available.
 
 ## Crowdin
 

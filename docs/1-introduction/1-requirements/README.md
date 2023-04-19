@@ -219,7 +219,7 @@ FPM configuration example:
 
 ### HTTPS & HTTP2 encryption
 
-We recommend encrypting the connection to the server where the CRM is located. If the connection to the server is not established via HTTPS, the communication can be intercepted or altered by third parties.
+We recommend encrypting the connection to the server where the system is located. If the connection to the server is not established via HTTPS, the communication can be intercepted or altered by third parties.
 
 ### Permissions to folders and files
 

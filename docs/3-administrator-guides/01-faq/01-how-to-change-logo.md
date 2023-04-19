@@ -15,7 +15,7 @@ Personalizacja systemu jest bardzo ważna, ponieważ pozwala na tworzenie bardzi
 
 ## Zmiana logo na ekranie logowania
 
-Pierwsze miejsce, w którym widać logo YetiForce jest panel logowania do systemu CRM. Jest to bardzo wrażliwe okno, dlatego nie powinno zawierać żadnych nadmiarowych informacji o systemie (dla bezpieczeństwa) a logo powinno jasno określać do kogo należy system.
+Pierwsze miejsce, w którym widać logo YetiForce jest panel logowania do systemu. Jest to bardzo wrażliwe okno, dlatego nie powinno zawierać żadnych nadmiarowych informacji o systemie (dla bezpieczeństwa) a logo powinno jasno określać do kogo należy system.
 
 ![how-to-change-logo-1.jpg](01-how-to-change-logo-1.jpg)
 

@@ -11,7 +11,7 @@ tags:
   - autoloader
 ---
 
-Starting from version 3.3, YetiForce CRM has a new database communication engine built-in, which we continuously develop and improve together with each new release.
+Starting from version 3.3, YetiForce has a new database communication engine built-in, which we continuously develop and improve together with each new release.
 
 This allows YetiForce to communicate with multiple database engines (DBMS) that are compliant with PDO, such as MariaDB, MySQL, PostgreSQL, MSSQL, SQLite, Oracle, and Cubrid.
 

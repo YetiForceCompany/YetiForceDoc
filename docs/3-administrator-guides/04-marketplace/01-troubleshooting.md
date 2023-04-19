@@ -20,7 +20,7 @@ YetiForce must be correctly registered in order for the Marketplace and purchase
 - More information about registration can be found in the [How to register YetiForce?](/administrator-guides/company/company-details/#how-to-register-yetiforce) manual.
 - In case of problems with registration you can find help in the [Problems with registration guide](/administrator-guides/company/problems-with-system-registration/).
 
-## Check if YetiForce CRM is up to date and fully patched.
+## Check if YetiForce is up to date and fully patched.
 
 Updates fix issues reported by the community and our employees that's why it's crucial to keep your system up to date.
 
@@ -39,8 +39,8 @@ More information about server requirements and configuration can be found in the
 
 ## Enable logs
 
-Enable PHP, CRM, and web server logs and make sure the communication with yetiforce.com server is working.
-It's important to enable PHP logs so that the CRM can record error messages.
+Enable PHP, system, and web server logs and make sure the communication with yetiforce.com server is working.
+It's important to enable PHP logs so that the system can record error messages.
 
 :::important
 

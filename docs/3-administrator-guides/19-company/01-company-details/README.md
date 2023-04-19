@@ -16,7 +16,7 @@ The [YetiForce Public License](/introduction/license-open-source) requires YetiF
 
 Below you can find step-by-step instructions on how to register YetiForce using the online registration form built into the system.
 
-If the system you are registering has access to the Internet, please use the online registration method according to the instructions below. If your CRM does not connect to the Internet, the instructions and required information for offline registration can be found in the [license](/introduction/license-open-source).
+If the system you are registering has access to the Internet, please use the online registration method according to the instructions below. If your system does not connect to the Internet, the instructions and required information for offline registration can be found in the [license](/introduction/license-open-source).
 
 :::warning
 

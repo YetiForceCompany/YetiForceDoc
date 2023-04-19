@@ -37,7 +37,7 @@ The mechanism is available in all modules, however it has to be enabled and conf
 
 ## Konfiguracja
 
-Konfiguracja kolektorów dostępna jest w CRM po przejściu do [`Konfiguracja systemu → Integracja → Kolektor rekordów`](/administrator-guides/integration/record-collectors/)
+Konfiguracja kolektorów jest dostępna w panelu [`Konfiguracja systemu → Integracja → Kolektor rekordów`](/administrator-guides/integration/record-collectors/)
 
 ## Available collectors
 

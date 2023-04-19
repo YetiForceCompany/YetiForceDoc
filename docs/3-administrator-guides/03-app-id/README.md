@@ -28,8 +28,8 @@ When you buy some of the products available in our Marketplace, you will need to
 APP ID is a checksum which includes the following components:
 
 - **System ID**, which is randomly generated during the installation and doesn't change ([$application_unique_key z pliku config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key))
-- **System URL** where the CRM is located ([$site_URL z pliku config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_site_URL))
-- **Server Host Name** where the CRM is located
+- **System URL** where the system is located ([$site_URL z pliku config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_site_URL))
+- **Server Host Name** where the system is located
 
 :::warning
 

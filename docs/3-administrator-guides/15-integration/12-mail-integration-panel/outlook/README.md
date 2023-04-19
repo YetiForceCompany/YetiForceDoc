@@ -25,7 +25,7 @@ Thanks to this solution, it's not necessary to make a copy of the entire YetiFor
 The implementation of the add-in allows you to use of all YetiForce functionalities in Outlook.
 
 :::important
-The article presents the most important issues related to the Outlook add-in for YetiForce CRM, so it is important to read it carefully and follow the guidelines for the add-in to work properly.
+The article presents the most important issues related to the Outlook add-in for YetiForce, so it is important to read it carefully and follow the guidelines for the add-in to work properly.
 :::
 
 ## Video presentation

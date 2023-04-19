@@ -12,7 +12,7 @@ tags:
 preview: install-1.png
 ---
 
-In this article, you will find everything you need to know about installing YetiForce CRM - the necessary information, step-by-step installation instructions, as well as the most common errors and problems. **Read all of the following information before proceeding with the installation process.**
+In this article, you will find everything you need to know about installing YetiForce - the necessary information, step-by-step installation instructions, as well as the most common errors and problems. **Read all of the following information before proceeding with the installation process.**
 
 ## How to install YetiForce?
 
@@ -32,7 +32,7 @@ First, prepare the installation files. **[Download YetiForce](download) from our
 
 :::warning
 
-We recommend downloading the "complete" versions, for example `YetiForceCRM-6.4.0-complete.zip`.  If you don't download the "complete" version, you will have to install the libraries using `yarn` and `composer` before installing the system.
+We recommend downloading the "complete" versions, for example `YetiForceCRM-6.4.0-complete.zip`. If you don't download the "complete" version, you will have to install the libraries using `yarn` and `composer` before installing the system.
 The right order is important - first `yarn`, then `composer`.
 A sample installation script can be downloaded from [here](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
 
@@ -53,11 +53,11 @@ chown -R yfprod:yfprod /home/yfprod/html/
 
 ## Step 1 - Run the installation wizard
 
-Run the target address of your CRM in the browser window, the system should show the installation wizard. If it doesn't, there may be some problems, you can try running the address: **SITE_URL**/install/Install.php np. https://gitdeveloper.yetiforce.com/install/Install.php
+Run the target address of your system in the browser window, the system should show the installation wizard. If it doesn't, there may be some problems, you can try running the address: **SITE_URL**/install/Install.php np. https://gitdeveloper.yetiforce.com/install/Install.php
 
 ![Krok 1](install-1.png)
 
-On the start screen there are options that allow you to select a language of the installation (browser language is the default language) and to choose an installation mode (new installation or migration from a different system). We will go through the steps of a new installation. **Click `Install` and proceed to the next step.** 
+On the start screen there are options that allow you to select a language of the installation (browser language is the default language) and to choose an installation mode (new installation or migration from a different system). We will go through the steps of a new installation. **Click `Install` and proceed to the next step.**
 
 ## Step 2 - Read and accept the license
 
@@ -97,7 +97,7 @@ In this case, it is necessary to go back and enter the correct access data. If e
 
 ## Step 7 - Enter registration information
 
-Enter the data of the company that will use the CRM, the data will then be used to register the system. 
+Enter the data of the company that will use the system, the data will then be used to register the system.
 
 According to the license, each system must be registered after the trial period of 14 days.
 

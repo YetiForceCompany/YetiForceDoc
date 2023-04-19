@@ -1,6 +1,6 @@
 ---
 title: How to add an image via Rest API
-description: This article describes how to add images via Rest API in fields that support such files in YetiForce CRM.
+description: This article describes how to add images via Rest API in fields that support such files in YetiForce.
 keywords:
   - Webservice
   - API
@@ -31,7 +31,7 @@ The application has two types of fields that support graphic files, namely:
 
 ## Adding an image
 
-The difficulty with adding a graphic file is the proper preparation of fields in the query. At the beginning, you should prepare a list of fields that should be completed when creating / editing a record via API. 
+The difficulty with adding a graphic file is the proper preparation of fields in the query. At the beginning, you should prepare a list of fields that should be completed when creating / editing a record via API.
 
 Module field structure can be found in the field edition panel in [Software configuration → Standard modules → Edit fields](/administrator-guides/standard-modules/edit-fields/).
 

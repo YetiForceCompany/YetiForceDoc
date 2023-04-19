@@ -213,7 +213,7 @@ Panel: [System settings → Integration → Web service - Applications](/adminis
 
 :::warning
 
-In order to properly transfer the CRM system to another server, you should make a complete copy of the system (files and database). It is best to use compression software, e.g.
+In order to properly transfer the system to another server, you should make a complete copy of the system (files and database). It is best to use compression software, e.g.
 
 ```bash
 zip -r `date +"%Y%m%d_%H%M"`.zip __YETIFORCE_PATH__ -q

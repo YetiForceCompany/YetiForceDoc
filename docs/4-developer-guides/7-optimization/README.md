@@ -12,7 +12,7 @@ tags:
   - optimization
 ---
 
-Articles about the optimization of processes and mechanisms in YetiForce CRM in order to obtain maximum system performance.
+Articles about the optimization of processes and mechanisms in YetiForce in order to obtain maximum system performance.
 
 import DocCardList from '@theme/DocCardList';
 

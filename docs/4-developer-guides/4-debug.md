@@ -9,21 +9,21 @@ tags:
 preview: 4-debug.jpg
 ---
 
-YetiForce CRM is a very advanced system that has thousands of files and hundreds of dependencies, and the numbers are growing each day. That's why to be able to analyze problems within the system, many logging mechanisms have been created and if there is a need they can be activated in a corresponding place. There are other ways to approach and analyze errors, but they are not listed in this article because they may require an advanced level of programming or are specific for a particular environment and implemented functionalities. 
+YetiForce is a very advanced system that has thousands of files and hundreds of dependencies, and the numbers are growing each day. That's why to be able to analyze problems within the system, many logging mechanisms have been created and if there is a need they can be activated in a corresponding place. There are other ways to approach and analyze errors, but they are not listed in this article because they may require an advanced level of programming or are specific for a particular environment and implemented functionalities.
 
 ![Debug](4-debug.jpg)
 
 ## Introduction
 
-It is necessary to understand a problem in such a way that helps to find its cause. Otherwise, you can waste a lot of time. Various technologies are debugged in different locations (e.g. HTML, CSS, JS, AJAX -it's best to debug them in the browser). Various tools should be used for debugging, such as XDebug, server logs, application logs. For the browsers, it is recommended to use Google Chrome. Sometimes it is necessary to add something unusual to the code, so it will display an error in a corresponding place. A good idea might be to perform simple network tests to eliminate issues between the server and user's browser. 
+It is necessary to understand a problem in such a way that helps to find its cause. Otherwise, you can waste a lot of time. Various technologies are debugged in different locations (e.g. HTML, CSS, JS, AJAX -it's best to debug them in the browser). Various tools should be used for debugging, such as XDebug, server logs, application logs. For the browsers, it is recommended to use Google Chrome. Sometimes it is necessary to add something unusual to the code, so it will display an error in a corresponding place. A good idea might be to perform simple network tests to eliminate issues between the server and user's browser.
 
 ## Log file paths
 
 - cache/logs/phpError.log - general PHP error logs. Log visibility is determined by a few indirect factors, e.g. web server configuration
 - cache/logs/errors.log - PHP error logs controlled by the system
-- cache/logs/system.log - primary logs for debugging the CRM system, recorded information depends on the selected level of recording
+- cache/logs/system.log - primary logs for debugging the system, recorded information depends on the selected level of recording
 - cache/logs/davException.log - error logs for DAV integration
-- cache/logs/davDebug.log - debugging logs for DAV integration 
+- cache/logs/davDebug.log - debugging logs for DAV integration
 - cache/logs/webserviceDebug.log - debugging logs for API/webservice
 - cache/logs/webserviceErrors.log - error logs for API/webservice
 - cache/logs/viewer-debug.log - debugging logs for data displaying layer - Smarts
@@ -38,7 +38,7 @@ It is necessary to understand a problem in such a way that helps to find its cau
 
 ## YetiForce system logs
 
-In order to enable log files recording, you need to set the [`LOG_TO_FILE`](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_LOG_TO_FILE) value to `true` in [config/Debug.php](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php); then set the appropriate level of recording changes [`LOG_LEVELS`](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_LOG_LEVELS). 
+In order to enable log files recording, you need to set the [`LOG_TO_FILE`](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_LOG_TO_FILE) value to `true` in [config/Debug.php](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php); then set the appropriate level of recording changes [`LOG_LEVELS`](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_LOG_LEVELS).
 
 ```php reference
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php#L20-L27
