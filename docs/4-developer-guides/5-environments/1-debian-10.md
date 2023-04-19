@@ -168,8 +168,7 @@ wget -O /etc/mysql/mariadb.conf.d/50-server.cnf "https://raw.githubusercontent.c
 ```
 
 :::warning
-The example is presented on the development version, we recommend downloading the files for the system version that will be installed, e.g.
-https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
+The example is presented on the development version, we recommend downloading the files for the system version that will be installed, e.g. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
 :::
 
 **MariaDB is not secure by default**. You can secure it in two ways:
@@ -258,5 +257,6 @@ A complete description of the YetiForce installation can be found in the article
 
 :::warning
 Once setup is complete, SSH access should be restricted to trusted IP or VPN addresses only.
+
 We also recommend disabling root login directly via SSH and installing and configuring a firewall.
 :::

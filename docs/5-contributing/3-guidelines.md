@@ -26,5 +26,4 @@ To add a new article you need to create a new file [here](https://github.com/Yet
 
 ## Translate the YetiForce documentation
 
-Help us translate the YetiForce Documentation website
-https://crowdin.com/project/yetiforcedoc
+Help us translate the YetiForce Documentation website https://crowdin.com/project/yetiforcedoc

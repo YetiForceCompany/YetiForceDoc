@@ -68,6 +68,7 @@ The icon on the top bar shows the current Bria Softphone integration status.
 ## Dialing
 
 If the integration has been activated correctly, all `phone` type field will show an additional phone icon.
+
 When you click on a phone number or icon, a method will be called to create a call to the selected phone number.
 
 ![bria-softphone-7.png](bria-softphone-7.png)

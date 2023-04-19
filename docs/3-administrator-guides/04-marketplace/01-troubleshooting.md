@@ -39,8 +39,7 @@ More information about server requirements and configuration can be found in the
 
 ## Enable logs
 
-Enable PHP, system, and web server logs and make sure the communication with yetiforce.com server is working.
-It's important to enable PHP logs so that the system can record error messages.
+Enable PHP, system, and web server logs and make sure the communication with yetiforce.com server is working. It's important to enable PHP logs so that the system can record error messages.
 
 :::important
 

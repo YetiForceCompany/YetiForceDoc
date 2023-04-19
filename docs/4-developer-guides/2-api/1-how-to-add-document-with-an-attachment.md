@@ -129,6 +129,7 @@ You don't have to create separate API queries to relate the document, you can do
 - relationId (int) /optional
 
   ID of the relation between modules
+
   Mandatory if there are more than one relation between modules
 
 Example:
