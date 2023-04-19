@@ -13,7 +13,7 @@ keywords:
 tags:
   - Portal
   - YetiForcePortal2
-preview: install-1.jpg
+preview: step-1.jpg
 ---
 
 In this article, it will be presented how to quickly install [YetiForce Portal 2](https://github.com/YetiForceCompany/YetiForcePortal2). The portal can be used as a place for a customer, vendor, or partner. It is a universal tool for communicating with all the people we cooperate with.
@@ -107,6 +107,6 @@ Dane dostępowe można znaleźć w panelu [`Konfiguracja systemu → Integracja 
 
 ### Step 4 - Portal login page
 
-After clicking `Install` the login page will appear. Enter the login data created in the CRM panel [`System configuration > Integration > Web service - Users`](/administrator-guides/integration/webservice-users/)
+After clicking `Install` the login page will appear. Enter the login data created in the panel [`System configuration > Integration > Web service - Users`](/administrator-guides/integration/webservice-users/)
 
 ![step-4.jpg](step-4.jpg)

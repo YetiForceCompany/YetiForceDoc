@@ -1,5 +1,5 @@
 ---
-title: Company's organizational structure - basics
+title: Roles - Company's organizational structure
 description: In the system, there is a built-in Roles module that allows for mapping the company's organizational structure.
 keywords:
   - company
