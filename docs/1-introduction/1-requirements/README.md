@@ -1,6 +1,6 @@
 ---
 title: YetiForce requirements
-preview: requirements.jpg
+description: YetiForce webserver requirements
 keywords:
   - serwer
   - requirements
@@ -16,7 +16,7 @@ tags:
   - LAMP
   - LEMP
   - environments
-description: YetiForce webserver requirements
+preview: requirements.jpg
 ---
 
 ## Introduction
