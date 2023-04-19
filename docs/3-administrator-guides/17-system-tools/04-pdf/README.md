@@ -1,33 +1,18 @@
 ---
-title: YetiForce PDF Premium - activation
-description: The article below explains troubleshooting inactive or malfunctioning addons purchased in the Marketplace.
+title: PDF
+description: YetiForce PDF Premium
 keywords:
   - YetiForce
-  - Troubleshooting
-  - addons
-  - inactive
-  - purchased
+  - Settings
+  - PDF
 tags:
-  - Troubleshooting
+  - PDF
+preview: pdf-2.jpg
 ---
 
-:::tip
+## Chromium/Chrome
 
-The Chromium/Chrome engine is necessary in order for this addon to work properly. You can download it [HERE](https://www.chromium.org/getting-involved/download-chromium/)
-
-:::
-
-## Purchasing the addon
-
-It's best to purchase all the addon in the Marketplace in the system in the administrator panel. If you're interested in other payment options you can use our website or get in touch with us directly.
-
-![pdf-1.jpg](pdf-1.jpg)
-
-## Activating the addon by the YetiForce team
-
-We activate the subscription manually. If your addon is not active within 48h in your system, please read the following article: [Troubleshooting inactive and malfunctioning addons](/administrator-guides/marketplace/troubleshooting)
-
-## Configuring the PDF generator path
+### Configuring the PDF generator path
 
 PDF configuration file: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
 
@@ -59,7 +44,7 @@ class Pdf
 }
 ```
 
-### Example `$chromiumBinaryPath` values:
+#### Example `$chromiumBinaryPath` values:
 
 - chromium
 - chromium-browser
@@ -68,7 +53,7 @@ class Pdf
 - c:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 - c:\ungoogled-chromium\chrome.exe
 
-## Select the new engine
+### Select the new engine
 
 When the `$chromiumBinaryPath` path is set correctly and the system has access to the location/command you will see a new engine in the PDF panel.
 
