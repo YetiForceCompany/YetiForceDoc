@@ -1,6 +1,6 @@
 ---
 title: Administrator documentation
-description: Dokumentacja administratora jest zbiorem artykułów i doświadczenia, jakie musi poznać każdy administrator chcący zarządzać systemem YetiForce.
+description: The administrator's documentation is a collection of articles essential for every administrator who wants to manage the YetiForce system.
 keywords:
   - Administrator documentation
   - YetiForce
@@ -9,7 +9,7 @@ tags:
 hide_table_of_contents: true
 ---
 
-Poniżej znajdziesz zestaw artykułów, które opisują panel konfiguracyjny systemu YetiForce. Wiedza zebrana tutaj, pozwala na zrozumienie technicznych i biznesowych możliwości dopasowania aplikacji do bieżących potrzeb organizacji. Zmiany wprowadzane przez administratora, mają bezpośredni wpływ na całą aplikacje, powinny być wprowadzane rozważnie i testowane bez wpływu na środowisko produkcyjne na którym na co dzień pracują użytkownicy.
+Below you will find a set of articles that describe the configuration panel of the YetiForce system. The materials listed here will help you understand the technical and business possibilities of customizing the application to the current needs of the organization. Changes introduced by the administrator have a direct impact on the entire application, and therefore should be implemented carefully and tested without affecting the production environment used by the employees on a daily basis.
 
 import DocCardList from '@theme/DocCardList';
 
