@@ -113,9 +113,3 @@ If you would like to subscribe to our newsletter, please provide your:
 - Name
 - Last name
 - Email
-
-## Check status
-
-Click the `Check status` button, on the right side the time of the last update should change to `a moment ago.`
-
-![status.jpg](status.jpg)
