@@ -28,13 +28,13 @@ To display Kanban Boards in a module where you previously configured the boards,
 
 ![kanban-view-2](09-kanban-view-2.jpg)
 
-IfIf more tables have been configured in a given module, they will be visible as tabs. Switch between tabs to view different boards:
+If more tables have been configured in a given module, they will be visible as tabs. Switch between tabs to view different boards:
 
 ![kanban-view-3](09-kanban-view-3.jpg)
 
 ## Moving elements
 
-To move elements simply drag and drop them by the bottom bar. The mouse cursor will change into <i class='fa-solid fa-up-down-left-right'></i>) and allow you to drag the window:
+To move elements simply drag and drop them by the bottom bar. The mouse cursor will change into <i class='fa-solid fa-up-down-left-right'></i> and allow you to drag the window:
 
 ![kanban-view-4](09-kanban-view-4.jpg)
 
