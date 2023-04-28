@@ -1,6 +1,6 @@
 ---
-title: FAQ / Najczęściej zadawane pytania
-description: Lista najczęściej zadawanych pytać wraz z odpowiedziami
+title: FAQ
+description: FAQ & answers to them
 keywords:
   - FAQ
   - Settings
