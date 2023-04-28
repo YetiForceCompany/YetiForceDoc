@@ -35,29 +35,29 @@ Record collector is used to load data from various sources and enables displayin
 
 The mechanism is available in all modules, however it has to be enabled and configured for each module to work correctly.
 
-## Konfiguracja
+## Configuration
 
-Konfiguracja kolektorów jest dostępna w panelu [`Konfiguracja systemu → Integracja → Kolektor rekordów`](/administrator-guides/integration/record-collectors/)
+Collectors can be configured in the following panel: [`Software configuration → Integration → Record collectors`](/administrator-guides/integration/record-collectors/)
 
 ## Available collectors
 
-Do systemu regularnie dodawane są kolejne rodzaje kolektorów rekordów. Lista wszystkich aktualnie dostępnych kolektorów znajduje się poniżej.
-Darmowe kolektory, dostępne w YetiForce domyślnie, zostały oznaczone gwiazdką ★, pozostałe można zakupić w naszym Marketplace.
+Below is a list of all currently available record collectors. Free collectors available in the system by default are marked with ★, the remaining ones can be purchased from the Marketplace. 
+We regularly add new record collectors to the YetiForce system.
 
-- GUS [PL] - Pobieranie danych o polskich przedsiębiorstwach dostarczone przez GUS z bazy internetowej REGON 1(BIR1)
-- ★ VIES [EU] - Sprawdza, czy podmiot gospodarczy posiada aktualny numer VAT-EU (europejski NIP), dla transakcji wewnątrzwspólnotowej na terenie Unii Europejskiej.
-- KRS [PL] - Pobierz dane polskich firm z Krajowego Rejestru Sądowego w Polsce
-- Receita WS CNPJ [BR] - Pobieranie danych o przedsiębiorstwach brazylijskich dostarczone przez ReceitaWS z bazy Federalnego Urzędu Skarbowego Brazylii (Cadastro Nacional de Pessoas Jurídicas)
-- Swiss Zefix [CH] - Pobieranie danych o przedsiębiorstwach Szwajcarii z bazy szwajcarskiego centralnego indeksu nazw firm (Zentraler Firmenindex)
-- Danish CVR [DK] - Pobieranie danych o duńskich i norweskich firmach przez CVR API z bazy Duńskiego centralnego rejestru przedsiębiorstw (CVR)
-- Data Gouv [FR] - Pobieranie danych o francuskich przedsiębiorstwach z Państwowego Instytutu Statystyki i Badań Gospodarczych (INSEE Institut National de la Statistique et des Études Économiques)
-- Brreg Enhetsregisteret [NO] - Pobieranie danych o norweskich przedsiębiorstwach z centralnej bazy Brønnøysund (The Brønnøysund Register Centre)
-- North Data - Pobieranie danych firm z bazy North Data
-- ★ Orb Intelligence - Pobieranie danych firm dużej części świata z bazy Orb Intelligence udostępnionej przez Dun & Bradstreet
-- CEIDG [PL] - Pobierz dane polskich firmy z Centralnej Ewidencji i Informacji o Działalności Gospodarczej w Polsce
-- VAT [PL] - Usługa umożliwiająca sprawdzenie, czy podmiot jest czynnym, zwolnionym czy też niezarejestrowanym podatnikiem w VAT w Polsce.
-- ★ YouControl [UA] - Pobieranie danych o ukraińskich firm dostarczone przez YouScore API z bazy YouControl
-- Companies House [GB] - Pobieranie danych o firmach z Wielkiej Brytanii z agencji Companies House.
-- VAT [GB] - Usługa umożliwiająca sprawdzenie, czy firma jest zarejestrowana jako płatnik VAT w Wielkiej Brytanii
-- EDGAR [USA] - Pobieranie danych o firmach w USA z U.S. SECURITIES AND EXCHANGE COMMISSION (SEC) z bazy EDGAR
-- VATify.eu - Pobieranie danych firm z bazy VATify.eu, która również zawiera aktualny status płatnika VAT
+- GUS [PL] - Fetches data on Polish companies from the online REGON 1(BIR1) database provided by GUS
+- ★ VIES [EU] - Checks if the business entity has a valid VAT-EU number for intra-community transactions within the European Union
+- KRS [PL] - Fetches data on Polish companies from The National Court Register in Poland (KRS)
+- Receita WS CNPJ [BR] - Fetches data on Brazilian companies from the database of the Federal Tax Office of Brazil (Cadastro Nacional de Pessoas Jurídicas) provided by Receita WS
+- Swiss Zefix [CH] - Fetches data on Swiss companies from the Swiss Central Business Name Index (Zentraler Firmenindex)
+- Danish CVR [DK] - Fetches data on Danish and Norwegian companies via CVR API from the Danish Central Business Register (CVR)
+- Data Gouv [FR] - Fetches data on French companies from the INSEE (Institut National de la Statistique et des Études Économiques)
+- Brreg Enhetsregisteret [NO] - Fetches data on Norwegian companies from the Central Brønnøysund Database (The Brønnøysund Register Centre)
+- North Data - Fetches data about companies North Data's company database
+- ★ Orb Intelligence - Fetches companies data from around the world
+- CEIDG [PL] - Fetches data on Polish companies from the Central Register and Information on Economic Activity in Poland (CEIDG)
+- VAT [PL] - Verifies whether an entity is an active, exempt, or unregistered VAT taxpayer in Poland
+- ★ YouControl [UA] - Fetches data on Ukrainian companies from the YouControl database provided by YouScore API
+- Companies House [GB] - Fetches data on UK companies from the Comapnies House agency
+- VAT [GB] - Verifies whether a company is registered as a VAT taxpayer in the United Kingdom
+- EDGAR [USA] - Fetches data on US companies from the United States Securities and Exchange Commission via EDGAR
+- VATify.eu - Fetches data from VATify.eu database, which also contains the taxpayer's current status
