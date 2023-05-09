@@ -2,7 +2,7 @@
 	"name": "YetiForce Documentation",
 	"short_name": "YetiForce",
 	"theme_color": "#f0a908",
-	"background_color": "#01374d",
+	"background_color": "#f0a908",
 	"display": "standalone",
 	"scope": "./",
 	"start_url": "./index.html",
