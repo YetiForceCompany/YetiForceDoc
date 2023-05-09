@@ -146,7 +146,7 @@ sed -i 's/output_buffering = "On"/output_buffering = "Off"/g' /etc/php/7.4/cli/c
 ```
 
 :::warning
-W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji CRM, która będzie instalowana np. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
+W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji systemu, która będzie instalowana np. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
 
 :::
 
@@ -168,7 +168,7 @@ wget -O /etc/mysql/mariadb.conf.d/50-server.cnf "https://raw.githubusercontent.c
 ```
 
 :::warning
-W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji CRM, która będzie instalowana np. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
+W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji systemu, która będzie instalowana np. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
 :::
 
 **MariaDB nie jest domyślnie bezpieczna**. Możesz to zrobić na dwa sposoby:
@@ -256,5 +256,7 @@ Pełny opis instalacji systemu YetiForce znajduje się w artykule: [Instalacja s
 ## 15. Uwagi końcowe
 
 :::warning
-Po zakończeniu konfiguracji dostęp do SSH powinien zostać ograniczony tylko do zaufanych adresów IP lub VPN. Zalecamy również wyłączenie możliwości logowania się na użytkownika root bezpośrednio przez SSH oraz instalację i konfigurację firewall.
+Po zakończeniu konfiguracji dostęp do SSH powinien zostać ograniczony tylko do zaufanych adresów IP lub VPN.
+
+Zalecamy również wyłączenie możliwości logowania się na użytkownika root bezpośrednio przez SSH oraz instalację i konfigurację firewall.
 :::

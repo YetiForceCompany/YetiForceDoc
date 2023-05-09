@@ -128,9 +128,9 @@ Nie trzeba tworzyć osobnych zapytań do api celem powiązania dokumentu, czynno
 
 - relationId (int) /opcjonalne
 
-  Identyfikator relacji pomiędzy danymi modułami. 
+  Identyfikator relacji między modułami
 
-  Wymagany, jeżeli istnieje więcej niż jedna relacja pomiędzy modułami.
+  Obowiązkowe, jeśli istnieje więcej niż jedna relacja między modułami
 
 Przykładowy plik:
 

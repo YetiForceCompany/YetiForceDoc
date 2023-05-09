@@ -109,7 +109,7 @@ Przykładowa konfiguracja FPM:
 
 ### Szyfrowanie HTTPS i HTTP2
 
-We recommend encrypting the connection to the server where the system is located. Jeśli połączenie z serwerem nie zostało nawiązane za pomocą protokołu HTTPS, komunikacja może zostać podsłuchana lub zmieniona przez osoby postronne.
+Zalecamy aby połączenie z serwerem, na którym znajduje się nasz CRM, było zawsze szyfrowane. Jeśli połączenie z serwerem nie zostało nawiązane za pomocą protokołu HTTPS, komunikacja może zostać podsłuchana lub zmieniona przez osoby postronne.
 
 ### Uprawnienia do folderów i plików
 
