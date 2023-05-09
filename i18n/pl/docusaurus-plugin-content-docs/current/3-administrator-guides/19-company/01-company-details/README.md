@@ -1,121 +1,121 @@
 ---
-title: Company details
-description: Company details panel
+title: Dane firmy
+description: Panel danych firmy
 keywords:
-  - details
-  - Company
+  - szczegóły
+  - Firma
   - YetiForce
-  - Settings
+  - Ustawienia
 tags:
-  - Company details
+  - Dane firmy
 preview: OnLine-1.jpg
 ---
 
-## How to register YetiForce?
+## Jak zarejestrować YetiForce?
 
-The [YetiForce Public License](/introduction/license-open-source) requires YetiForce to be registered. Registration is also necessary if you want to purchase products or services from the Marketplace. There are two ways to properly register your system.
+Licencja [YetiForce Public License](/introduction/license-open-source) nakazuje rejestrację oprogramowania YetiForce. Rejestracja jest również niezbędna, jeśli chcesz dokonać zakupu produktów lub usług w Marketplace. Istnieją dwie metody poprawnej rejestracji Twojego systemu.
 
-Below you can find step-by-step instructions on how to register YetiForce using the online registration form built into the system.
+Poniżej przedstawiamy instrukcję krok po kroku, jak zarejestrować YetiForce, korzystając z wbudowanego w system formularza rejestracji online.
 
-If the system you are registering has access to the Internet, please use the online registration method according to the instructions below. If your system does not connect to the Internet, the instructions and required information for offline registration can be found in the [license](/introduction/license-open-source).
+Jeśli system, który rejestrujesz, ma dostęp do internetu, to zarejestruj go online, według instrukcji poniżej. Jeśli system działa w trybie offline, to w treści [licencji](/introduction/license-open-source) znajdziesz instrukcję oraz wymagane informacje dotyczące rejestracji offline.
 
 :::warning
 
-All keys are generated after verifying the information provided in the registration form. We verify the information manually, therefore the proces may take up to 48 hours. Sending an offline registration request will not speed up online registration.
+Klucze rejestracyjne generowane są po ręcznej weryfikacji danych przesłanych przy rejestracji. Weryfikujemy przesłane informacje ręcznie, dlatego proces może trwać do 48 godzin. **Przesłanie formularza rejestracji offline nie przyspieszy rejestracji online.**
 
 :::
 
-Go to system settings by clicking the cogwheel button in the upper right corner.
+Przejdź do konfiguracji systemu za pomocą kółka zębatego ⚙ widocznego w prawym górnym rogu ekranu.
 
 ![registration-1.jpg](registration-1.jpg)
 
-In the menu panel on the left select `Company` and then `Company details`.
+W menu z lewej strony wybierz `Firma`, a następnie `Dane firmy`.
 
 ![registration-2.jpg](registration-2.jpg)
 
-### OffLine
+### Offline
 
 ![Registration OffLine](offline.jpg)
 
-### OnLine
+### Online
 
 ![OnLine-1.jpg](OnLine-1.jpg)
 
-Read the information at the top of the page and fill in all mandatory fields (marked with a red asterisk) with real details of your company.
+Zapoznaj się z informacją widoczną na górze strony i wypełnij wszystkie obowiązkowe pola (oznaczone czerwoną gwiazdką) prawdziwymi danymi Twojej firmy.
 
-Providing fake information will result in the registration being rejected.
+Podanie fałszywych informacji spowoduje odrzucenie rejestracji.
 
-For a detailed description of the fields, see the section below.
+For a detailed description of the fields, see the [Form fields](administrator-guides/company/company-details/#form-fields) section below.
 
 ![OnLine-2.jpg](OnLine-2.jpg)
 
-### Form fields
-
-#### Type
-
-- End user - an entity that uses the system
-- Provider - an entity that implements a system for another entity that will use it
-- Integrator - an entity that integrates the system
-
-:::tip
-
-If you are a provider/integrator and you want to register the system on behalf of your client, remember that both entities must be registered - you as a vendor/integrator and your client as an end user.
-
-:::
-
-#### Company name or first and last name
-
-Provide the full name of your company. In case of private individuals please enter your first and last name.
-
-#### Entity's unique identifier
-
-- In case of companies, provide unique tax identifier applicable in your country, for example VAT ID.
-- In case of private persons, provide a unique identifier assigned on the day of birth, applicable in your country.
-
-#### Country
-
-The country where your company operates
-
-#### Post code
-
-Provide the post code of the city where your company is located.
-
-#### City/Village
-
-Provide the city where your company is located
-
-#### Address
-
-Provide the address of your company
-
-#### Industry
-
-Select the industry from the list
-
-#### The number of employees employed by the entity
-
-Enter the number of employees in your company. This is the number of all the people employed in the company, not only the employees who have YetiForce accounts.
-
-#### The website of the entity
-
-Enter the entity's website or a personal website.
-
-:::tip
-
-**DO NOT** enter the URL where your YetiForce is installed.
-
-:::
-
-#### Newsletter subscription
-
-If you would like to subscribe to our newsletter, please provide your:
-
-- Name
-- Last name
-- Email
-
 ## Check status
 
-Click the `Check status` button, on the right side the time of the last update should change to `a moment ago.`
+If the registration status has not been updated in your system automatically after a couple of days, you can refresh it manually. In order to do that, click the `Check status` button. The status will be refreshed immediately, and the update time in the upper right corner should change to `a moment ago.` If it doesn't, the [following article](administrator-guides/company/problems-with-system-registration/) will help you troubleshoot registration issues.
 
 ![status.jpg](status.jpg)
+
+### Pola formularza
+
+#### Rodzaj
+
+- Użytkownik końcowy — podmiot używający systemu
+- Dostawca — podmiot, który wdraża system dla innego podmiotu, który będzie z niego korzystał
+- Integrator — podmiot, który integruje system
+
+:::tip
+
+Jeśli jesteś dostawcą/integratorem i chcesz zarejestrować system w imieniu klienta, pamiętaj, że obydwa podmioty muszą być zarejestrowane — Ty jako dostawca / integrator i klient jako użytkownik końcowy.
+
+:::
+
+#### Nazwa firmy lub imię i nazwisko
+
+Podaj pełną nazwę firmy. W przypadku osób prywatnych podaj Twoje imię i nazwisko.
+
+#### Unikalny identyfikator podmiotu
+
+- W przypadku przedsiębiorstw należy podać unikalny identyfikator podatkowy stosowany w danym kraju, na przykład numer VAT.
+- W przypadku osób prywatnych należy podać unikalny identyfikator nadawany w dniu narodzin np. PESEL.
+
+#### Kraj
+
+Kraj, w którym działa Twoja firma
+
+#### Kod pocztowy
+
+Podaj kod pocztowy miasta, w którym znajduje się Twoja firma.
+
+#### Miejscowość
+
+Podaj miasto w którym znajduje się Twoja firma
+
+#### Adres
+
+Podaj adres swojej firmy
+
+#### Branża
+
+Wybierz branżę z listy
+
+#### Liczba pracowników zatrudnionych przez podmiot
+
+Wprowadź liczbę pracowników w firmie. Jest to liczba wszystkich osób zatrudnionych w firmie, nie tylko pracowników posiadających konta w YetiForce.
+
+#### Strona internetowa podmiotu
+
+Wprowadź stronę internetową podmiotu lub osobistą stronę internetową.
+
+:::tip
+
+**NIE WPROWADZAJ ADRESU URL GDZIE ZAINSTALOWANY JEST YETIFORCE!**
+
+:::
+
+#### Subskrypcja newslettera
+
+Jeśli chcesz subskrybować nasz newsletter, podaj:
+
+- Imię
+- Nazwisko
+- Adres email

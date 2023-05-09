@@ -1,10 +1,10 @@
 ---
-title: Kanban board view
-description: Artykuł opisuje funkcjonalność widoku tablicy Kanban
+title: Tablica Kanban
+description: Artykuł opisuje tablicę Kanban i jej funkcje
 keywords:
   - kanban
-  - board
-  - view
+  - tablica
+  - widok
   - YetiForce
 tags:
   - Kanban
@@ -12,32 +12,32 @@ tags:
 preview: 09-kanban-view-1.jpg
 ---
 
-Tablica Kanban to narzędzie używane głównie do zarządzania projektami, jednak w YetiForce widok ten jest dostępny we wszystkich modułach użytkownika, w których przechowywane są dane. Kanban pomaga wizualizować dane grupując je w przeróżny sposób, efektywnie definiować ilość pracy w toku i zwiększać wydajność.
+Tablica Kanban jest narzędziem wykorzystywanym głównie do zarządzania projektami, ale w systemie YetiForce CRM ten widok jest dostępny we wszystkich modułach użytkownika, gdzie przechowywane są dane. Kanban pomaga wizualizować dane, grupując je na różne sposoby, skutecznie definiując liczbę trwających prac i zwiększając wydajność
 
 :::warning
 
-Tablica Kanban jest dodatkiem płatnym dostępnym w naszym Marketplace - [**Kup YetiForce Kanban Board**](https://yetiforce.com/pl/yetiforce-kanban)
+Tablica Kanban jest płatnym dodatkiem dostępnym w Marketplace w Twoim systemie YetiForce.
 
 :::
 
 ![kanban-view-1](09-kanban-view-1.jpg)
 
-## Uruchomienie widoku tablicy
+## Ustawienia widoku Kanban
 
-By przejść do widoku tablicy Kanban w module, w którym skonfigurowane zostały tablice, wybierz ten moduł z listy, a następnie wybierz widok Kanban z listy dostępnych widoków w tym module:
+Aby wyświetlić tablice Kanban w module, w którym wcześniej skonfigurowałeś tablice, wybierz moduł z menu i wybierz widok Kanban z listy wszystkich dostępnych widoków:
 
 ![kanban-view-2](09-kanban-view-2.jpg)
 
-Jeśli w danym module zostało skonfigurowanych więcej tablic, będą one widoczne jako zakładki. By zmienić widoczną tablicę wystarczy kliknąć w odpowiednią zakładkę:
+Jeśli więcej tabel zostało skonfigurowanych w danym module, będą one widoczne jako zakładki. Przełącz między kartami, aby wyświetlić różne tablice:
 
 ![kanban-view-3](09-kanban-view-3.jpg)
 
 ## Przenoszenie elementów
 
-By przenieść element tablicy Kanban miedzy kolumnami wystarczy najechać kursorem na dany blok (kursor myszy zmieni ikoną na <i class='fa-solid fa-up-down-left-right'></i>) i przeciągnąć ją w odpowiednie miejsce:
+Aby przenieść elementy po prostu przeciągnij je i upuść przez dolny pasek. Kursor myszy zmieni się na <i class='fa-solid fa-up-down-left-right'></i> i pozwoli przeciągnąć okno:
 
 ![kanban-view-4](09-kanban-view-4.jpg)
 
 ## Konfiguracja
 
-Opis panelu konfiguracyjnego znajduje się w częścią administratora: [`Konfiguracja systemu → Moduły standardowe → Kanban`](/administrator-guides/standard-modules/kanban/)
+Panel konfiguracyjny tablicy YetiForce Kanban znajduje się w [`Konfiguracja oprogramowania → Standardowe moduły → Kanban`](/administrator-guides/standard-modules/kanban/)

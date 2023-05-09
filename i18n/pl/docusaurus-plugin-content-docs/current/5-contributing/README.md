@@ -22,7 +22,9 @@ One of the many advantages of open source software is the fact that everyone can
 
 ## Meet the contributors
 
-Below you can find all the people who contributed to developing YetiForce and YetiForce Portal by submitting their contributions to our GitHub repository. **Thank you for all your hard work!**
+Below you can find all the people who contributed to developing YetiForce and YetiForce Portal by submitting their contributions to our GitHub repository.
+
+**Thank you for all your hard work!**
 
 ### YetiForceCRM Contributors
 

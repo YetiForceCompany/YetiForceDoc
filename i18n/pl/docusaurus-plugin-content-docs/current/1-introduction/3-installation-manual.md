@@ -22,7 +22,7 @@ Przed instalacją sprawdź czy twój serwer jest zgodny z wymaganiami: [Wymagani
 
 :::important
 
-Osoba instalująca system powinna mieć przynajmniej podstawową wiedzę w zakresie zarządzania serwerem WWW, baz danych czy też uprawnień na serwerze. 99% problemów instalacyjnych wynika z niewystarczającej wiedzy osób, które instalują aplikację. If you are not sure whether you can manage on your own, you can ask somebody with adequate IT expertise. Cała operacja instalacji zajmie maksymalnie 2 - 30 minut. Instalacja YetiForce jest podobna do instalacji takich aplikacji jak: WordPress, Joomla, Drupal. Różnice pomiędzy poszczególnymi narzędziami są niewielkie. Tak więc, jeżeli poradziłeś sobie z instalacją systemu klasy CMS, to poradzisz sobie również z YetiForce.
+Osoba instalująca system powinna mieć przynajmniej podstawową wiedzę w zakresie zarządzania serwerem WWW, baz danych czy też uprawnień na serwerze. 99% problemów instalacyjnych wynika z niewystarczającej wiedzy osób, które instalują aplikację. Jeśli nie jesteś pewien, czy jesteś w stanie samodzielnie przeprowadzić proces instalacji, poproś o pomoc kogoś posiadającego odpowiednią wiedzę z zakresu IT. Cała operacja instalacji zajmie maksymalnie 2 - 30 minut. Instalacja YetiForce jest podobna do instalacji takich aplikacji jak: WordPress, Joomla, Drupal. Różnice pomiędzy poszczególnymi narzędziami są niewielkie. Tak więc, jeżeli poradziłeś sobie z instalacją systemu klasy CMS, to poradzisz sobie również z YetiForce.
 
 :::
 
@@ -32,7 +32,7 @@ W pierwszej kolejności przygotuj pliki instalacyjne. **[Pobierz YetiForce](down
 
 :::warning
 
-Zalecamy pobranie wersji "complete", na przykład `YetiForceCRM-6.4.0-complete.zip`.  Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`. Ważna jest kolejność - najpierw `yarn`, potem `composer`. Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
+Zalecamy pobranie wersji "complete", na przykład `YetiForceCRM-6.4.0-complete.zip`. Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`. Ważna jest kolejność - najpierw `yarn`, potem `composer`. Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
 
 :::
 
@@ -51,7 +51,7 @@ chown -R yfprod:yfprod /home/yfprod/html/
 
 ## Krok 1 - Uruchomienie kreatora instalacji
 
-Uruchom w oknie przeglądarki adres docelowy twojego systemu YetiForce, system powinien pokazać kreator instalacji. Jeśli nie, to może oznaczyć że wystąpiły jakieś problemy, możesz spróbować uruchomić adres: **SITE_URL**/install/Install.php np. https://gitdeveloper.yetiforce.com/install/Install.php
+Uruchom w oknie przeglądarki adres docelowy twojego systemu - powinien pokazać się kreator instalacji. Jeśli nie, to może oznaczyć że wystąpiły jakieś problemy, możesz spróbować uruchomić adres: **SITE_URL**/install/Install.php np. https://gitdeveloper.yetiforce.com/install/Install.php
 
 ![Krok 1](install-1.png)
 
@@ -95,7 +95,7 @@ W takim wypadku musisz cofnąć się do ekranu poprzedniego i prawidłowo wprowa
 
 ## Krok 7 - Wprowadzenie danych rejestracyjnych
 
-Wprowadź dane firmy która będzie korzystała z systemu, te dane będą potem używane do rejestracji systemu.
+Wprowadź dane firmy, która będzie korzystała z systemu. Te dane zostaną potem wykorzystane do rejestracji systemu.
 
 Zgodnie z zapisami licencji każdy system musi być zarejestrowany po okresie próbnym 14 dni.
 

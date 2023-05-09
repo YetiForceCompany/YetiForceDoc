@@ -1,34 +1,35 @@
 ---
-title: Jak zmienić logo YetiForce na własne?
-description: W systemie YetiForce możemy znaleźć kilka miejsc w których znajduje się domyślnie logo YetiForce, w jaki sposób możemy zmieniać loga na własne.
+title: Jak zmienić logo YetiForce na inne?
+description: W systemie CRM YetiForce znajduje się kilka miejsc, gdzie można znaleźć domyślne logo YetiForce. W tym artykule wyjaśnimy, w jaki sposób możemy dostosować logo, które pozwala na zmianę licencji.
 keywords:
   - wideo
-  - tutoriale
-  - Settings
+  - samouczek
+  - Panel konfiguracyjny
 tags:
   - wideo
   - tutoriale
 preview: 01-how-to-change-logo-1.jpg
 ---
 
-Personalizacja systemu jest bardzo ważna, ponieważ pozwala na tworzenie bardziej dopasowanego systemu dla jego użytkowników, w szczególności gdy chcemy zmienić podstawowe elementy tj. **logo**. Domyślnie w systemie logo YetiForce jest umieszczone w kilku miejscach, przeczytaj cały artykuł jeżeli chcesz dowiedzieć się jak zmienić logo w aplikacji!
+Dostosowanie systemu jest niezwykle ważne, ponieważ pozwala na stworzenie systemu, który jest bardziej odpowiedni dla jego użytkowników, zwłaszcza jeśli chcemy zmienić podstawowe elementy, takie jak logo ****. Domyślnie logo YetiForce znajduje się w kilku miejscach w systemie. Jeśli chcesz wiedzieć, jak go dostosować - ten artykuł jest dla ciebie.
 
-## Zmiana logo na ekranie logowania
 
-Pierwsze miejsce, w którym widać logo YetiForce jest panel logowania do systemu. Jest to bardzo wrażliwe okno, dlatego nie powinno zawierać żadnych nadmiarowych informacji o systemie (dla bezpieczeństwa) a logo powinno jasno określać do kogo należy system.
+## Zmień logo ekranu logowania
+
+Pierwszym miejscem, gdzie logo YetiForce jest widoczne, jest ekran logowania. Jest to bardzo wrażliwe okno, dlatego nie powinno ono zawierać żadnych zbędnych informacji (ze względu na bezpieczeństwo), i powinna jasno określać, do kogo należy system.
 
 ![how-to-change-logo-1.jpg](01-how-to-change-logo-1.jpg)
 
-System YetiForce pozwala na dowolną zmianę domyślnego loga na dowolną inną grafikę, aby to zrobić powinniśmy przejść do panelu konfiguracyjnego i ustawić nowe logo. W pierwszej kolejności przejdź do [`Konfiguracja systemu → Uprawnienia → Role`](/administrator-guides/permissions/roles/) i najedź na najwyższy element w strukturze organizacyjnej firmy (u mnie ta rola nazywa się Organizacja).
+System YetiForce pozwala na zmianę domyślnego logo na dowolny inny obraz. Aby to zrobić, przejdź do [Konfiguracja oprogramowania → Uprawnienia → Role](/administrator-guides/permissions/roles/). Po najechaniu kursorem na element na górze zobaczysz ikonę wysyłania obrazu.
 
 ![how-to-change-logo-2.jpg](01-how-to-change-logo-2.jpg)
 
-Po najechaniu pojawi się ikonka obrazka, gdy ją klikniesz pojawi się okno załadowania nowej ikony.
+Po kliknięciu na nią będziesz mógł przesłać nowe logo.
 
 ![how-to-change-logo-3.jpg](01-how-to-change-logo-3.jpg)
 
-## Zmiana logo w menu
+## Zmień logo menu
 
-Logo, które widoczne jest na samej górze menu obok nazwy obecnie zalogowanego użytkownika można zmienić przechodząc do `Firma → Struktura organizacji`. Tam należy wybrać nasz oddział, następnie za pomocą przycisku edycji ✎ w prawym górnym rogu edytować rekord i na samym dole strony najpierw usunąć obecne logo, a następnie dodać nowe. Po zapisaniu zmian nasze nowe logo będzie widoczne w menu.
+Logo, które możesz zobaczyć na górze menu, obok aktualnie zalogowanej nazwy użytkownika można zmienić w `Firma → Działy`. Wszystko, co musisz zrobić, to wybrać dział, następnie edytuj rekord za pomocą przycisku edycji ✎ w prawym górnym rogu - najpierw usuń bieżące logo, a następnie prześlij nowe. Po zapisaniu zmian nowe logo będzie widoczne w menu.
 
 ![how-to-change-logo-4.jpg](01-how-to-change-logo-4.jpg)

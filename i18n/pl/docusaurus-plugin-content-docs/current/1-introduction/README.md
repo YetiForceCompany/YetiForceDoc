@@ -2,9 +2,9 @@
 title: Wprowadzenie
 description: YetiForce to oprogramowanie typu open source, służące do zarządzania relacjami z klientami i obsługi procesów biznesowych zachodzących w każdej firmie.
 keywords:
-  - introduction
-  - starts
-  - guides
+  - wprowadzenie
+  - początek
+  - poradnik
   - YetiForce
 tags:
   - Wprowadzenie

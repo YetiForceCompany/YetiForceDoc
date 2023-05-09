@@ -1,9 +1,9 @@
 ---
-title: FAQ / Najczęściej zadawane pytania
-description: Lista najczęściej zadawanych pytać wraz z odpowiedziami
+title: FAQ
+description: FAQ & odpowiedzi na nie
 keywords:
   - FAQ
-  - Settings
+  - Panel konfiguracyjny
   - YetiForce
 tags:
   - FAQ

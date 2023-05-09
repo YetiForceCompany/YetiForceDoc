@@ -213,7 +213,7 @@ Panel: [Konfiguracja systemu → Integracja → Web service - Aplikacje](/admini
 
 :::warning
 
-W celu prawidłowego przeniesienia systemu YetiForce na inny serwer należy zrobić pełną kopię systemu (pliki i baza danych). Najlepiej spakować programem do kompresji danych np.
+Aby prawidłowo przenieść system na inny serwer, powinieneś wykonać pełną kopię systemu (pliki i baza danych). Najlepiej spakować programem do kompresji danych np.
 
 ```bash
 zip -r `date +"%Y%m%d_%H%M"`.zip __YETIFORCE_PATH__ -q
