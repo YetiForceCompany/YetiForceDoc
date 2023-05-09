@@ -63,7 +63,7 @@ Logi będą rejestrowane w następującym pliku: `cache/logs/system.log`. Katalo
 
 ## Logi PHP
 
-Aby rozpocząć analizowanie problemów lub błędów w systemie, należy włączyć rejestrowanie logów i wyświetlanie komunikatów serwera. **Bez tej zmiany system nie będzie w stanie informować o problemach** z np. krótkim czasem wykonania skryptu. W konfiguracji php.ini ustaw wartości `log_errors` i `display_errors` na `On`. Jeśli konfiguracja pozwala na nadpisanie parametrów PHP, użyj `.htaccess` [Dodatkowa konfiguracja z .htaccess](/introduction/requirements/#additional-configuration-using-htaccess). Przed rozpoczęciem debugowania, ważne jest sprawdzenie w panelu [`Dokumentacja Administratora → Logi → Serwer - konfiguracja`](/administrator-guides/logs/server-configuration) czy opisane parametry są poprawnie ustawione.
+Aby rozpocząć analizowanie problemów lub błędów w systemie, należy włączyć rejestrowanie logów i wyświetlanie komunikatów serwera. **Bez tej zmiany system nie będzie w stanie informować o problemach** z np. krótkim czasem wykonania skryptu. W konfiguracji php.ini ustaw wartości `log_errors` i `display_errors` na `On`. Jeśli konfiguracja pozwala na nadpisanie parametrów PHP, użyj `.htaccess` [Dodatkowa konfiguracja z .htaccess](/introduction/requirements/#dodatkowa-konfiguracja-z-użyciem-htaccess). Przed rozpoczęciem debugowania, ważne jest sprawdzenie w panelu [`Dokumentacja Administratora → Logi → Serwer - konfiguracja`](/administrator-guides/logs/server-configuration) czy opisane parametry są poprawnie ustawione.
 
 ## Logi MySQL
 
