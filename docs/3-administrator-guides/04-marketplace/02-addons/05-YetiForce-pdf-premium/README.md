@@ -27,6 +27,6 @@ It's best to purchase all the addon in the Marketplace in the system in the admi
 
 We activate the subscription manually. If your addon is not active within 48h in your system, please read the following article: [Troubleshooting inactive and malfunctioning addons](/administrator-guides/marketplace/troubleshooting)
 
-## Konfiguracja
+## Configuration
 
-Opis panelu konfiguracyjnego znajduje się w częścią administratora: [`Software configuration → System tools → PDF`](/administrator-guides/system-tools/pdf/#chromiumchrome)
+A description of the configuration panel can be found in the Administrator section: [`Software configuration → System tools → PDF`](/administrator-guides/system-tools/pdf/#chromiumchrome)
