@@ -38,8 +38,8 @@ For the collector to work properly you have to check (☑) the "Record collector
 
 If you can't see the "records collector" action in profiles you should edit the following file: modules/Settings/ModuleManager/models/Module.php and add in the variable the following text (only if it's missing)
 
-## Automatyzacja
+## Automation
 
-Kolektory oferujące możliwość autouzupełniania danych mogą być wykorzystywane w akcjach workflow, w celu automatycznej aktualizacji danych, na przykład podczas importu rekordów do systemu.
+Collectors that have the ability to autocomplete data can be used in workflow actions to automatically update data, for example when importing records to the system.
 
-Wystarczy że ustawimy warunki aby zawsze kolektor rekordów był uruchamiany podczas tworzenia i wybierzemy odpowiednie pola, które mają zostać zaktualizowane, dzięki temu można łatwo zautomatyzować proces importu danych np. leadów.
+All you have to do is set the conditions so that the record collector is always launched during creation and select the appropriate fields to be updated, which will allow you to easily automate the process of importing data, e.g. leads.
