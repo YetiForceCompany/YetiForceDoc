@@ -1,18 +1,20 @@
 ---
 title: Jak zmienić logo YetiForce na inne?
-description: W systemie CRM YetiForce znajduje się kilka miejsc, gdzie można znaleźć domyślne logo YetiForce. W tym artykule wyjaśnimy, w jaki sposób możemy dostosować logo, które pozwala na zmianę licencji.
+description: W systemie CRM YetiForce znajduje się kilka miejsc, gdzie można znaleźć domyślne logo YetiForce
 keywords:
-  - wideo
-  - samouczek
-  - Panel konfiguracyjny
+  - zmienić
+  - logowanie
+  - strona
+  - menu
+  - logo
 tags:
-  - wideo
-  - tutoriale
+  - logo
+  - logowanie
+  - menu
 preview: 01-how-to-change-logo-1.jpg
 ---
 
-Dostosowanie systemu jest niezwykle ważne, ponieważ pozwala na stworzenie systemu, który jest bardziej odpowiedni dla jego użytkowników, zwłaszcza jeśli chcemy zmienić podstawowe elementy, takie jak logo ****. Domyślnie logo YetiForce znajduje się w kilku miejscach w systemie. Jeśli chcesz wiedzieć, jak go dostosować - ten artykuł jest dla ciebie.
-
+Dostosowanie systemu jest niezwykle ważne, ponieważ pozwala na stworzenie systemu, który jest bardziej odpowiedni dla jego użytkowników, zwłaszcza jeśli chcemy zmienić podstawowe elementy, takie jak logo \*\*\*\*. Domyślnie logo YetiForce znajduje się w kilku miejscach w systemie. Jeśli chcesz wiedzieć, jak go dostosować - ten artykuł jest dla ciebie.
 
 ## Zmień logo ekranu logowania
 
