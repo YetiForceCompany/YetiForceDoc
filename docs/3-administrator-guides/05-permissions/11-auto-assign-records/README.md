@@ -16,7 +16,7 @@ preview: ass-1.jpg
 
 :::warning
 
-Auto assign records jest dodatkiem płatnym dostępnym w naszym Marketplace - [**Kup YetiForce YetiForce Automatic Assignment**](https://yetiforce.com/en/yetiforce-automatic-assignment)
+This addon available in our Marketplace - [**Buy YetiForce YetiForce Automatic Assignment**](https://yetiforce.com/en/yetiforce-automatic-assignment)
 
 :::
 
