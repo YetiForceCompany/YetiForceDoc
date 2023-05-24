@@ -1,15 +1,13 @@
 ---
 title: What are the problems with hosting
-description: Redirecting WWW application to another domain
+description: What are the problems with hosting
 keywords:
   - YetiForce
-  - clearing
-  - cache
-  - firefox
-  - chrome
+  - problems
+  - hosting
 tags:
-  - clearing
-  - cache
+  - problems
+  - hosting
 ---
 
 Klienci korzystający z własnych serwerów, lub serwerów innych dostawców usług hostingowych często borykają się z problemami wynikającymi z ograniczeń serwerów. W artykule poniżej przedstawiamy najczęstsze z nich.
