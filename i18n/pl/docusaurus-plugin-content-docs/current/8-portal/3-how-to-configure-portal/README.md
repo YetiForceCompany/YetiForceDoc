@@ -5,7 +5,7 @@ keywords:
   - YetiForce
   - How to configure
   - portal
-  - Customer
+  - Klient
   - YetiForcePortal2
 tags:
   - Portal
@@ -32,7 +32,7 @@ Create a new user with the role you created in the previous step. In order to do
 
 ![users.jpg](users.jpg)
 
-## Web service - Applications
+## Web service - Aplikacje
 
 The next step is adding an application for API in [`Software configuration → Integration → Web service - Applications`](/administrator-guides/integration/webservice-apps/). The application type should be set to `Webservice Premium`. It will allow you to use an API container called Webservice Premium. A complete documentation can be found at https://doc.yetiforce.com/api
 

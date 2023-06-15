@@ -1,11 +1,11 @@
 ---
-title: YetiForce Portal requirements
-description: YetiForce Customer Portal requirements for YetiForce system (YetiForcePortal2)
+title: Wymagania Portalu YetiForce
+description: Wymagania portalu klienta YetiForce dla systemu YetiForce (YetiForcePortal2)
 keywords:
   - Portal
   - serwer
   - wymagania
-  - Customer
+  - Klient
   - YetiForce
   - środowisko
 tags:
@@ -13,20 +13,20 @@ tags:
   - portal
 ---
 
-YetiForce Portal places certain requirements on web servers - their customization is crucial for the proper functioning of the system. Incorrect server configuration is the most common cause of various problems.
+YetiForce Portal stawia pewne wymagania serwerom WWW — dostosowanie serwera jest kluczowe dla prawidłowego działania systemu. Nieprawidłowa konfiguracja serwera jest najczęstszą przyczyną problemów.
 
-The web server requirements for the Portal are very similar to the system ones ([Web server requirements for the system](/introduction/requirements/)) but they include some significant differences, for example, there are no database requirements.
+Konfiguracja serwera dla Portalu jest bardzo podobna do wymagań dla systemu YetiForce ([Web server requirements for the system](/introduction/requirements/)), ale zawiera istotne różnice np. brak wymagań dla bazy danych.
 
-## Resources/Hardware
+## Zasoby/Sprzęt
 
-These requirements depend on the number of active users and amount of data, and therefore they need to be adjusted individually.
+Wymagania dla sprzętu są zależne od liczby aktywnych użytkowników i ilości danych, dlatego wymagają indywidualnego wyliczenia.
 
-Minimal requirements:
+Minimalne wymagania:
 
-- CPU with at least 2 cores
-- 2 GB RAM
-- fast hard drive (preferably SSD)
-- fast network connection to system YetiForce
+- procesor z minimum dwoma rdzeniami,
+- 2 GB pamięci RAM ,
+- szybki dysk twardy (najlepiej SSD),
+- szybkie połączenie sieciowe do systemu YetiForce
 
 ## Oprogramowanie bazowe dla serwera (LAMP/LEMP)
 

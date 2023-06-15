@@ -2,13 +2,13 @@
 title: Dokumentacja użytkownika
 description: Opis modułów i funkcjonalności części użytkownika systemu YetiForce.
 keywords:
-  - user
-  - module
-  - guides
+  - użytkownik
+  - moduł
+  - poradnik
   - YetiForce
 tags:
-  - user
-  - guides
+  - użytkownik
+  - poradnik
 hide_table_of_contents: true
 ---
 

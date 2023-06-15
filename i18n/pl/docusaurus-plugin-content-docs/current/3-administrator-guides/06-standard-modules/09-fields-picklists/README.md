@@ -1,12 +1,12 @@
 ---
-title: Fields – Picklists
-description: Fields – Picklists
+title: Pola - słowniki
+description: Pola - słowniki
 keywords:
   - YetiForce
-  - Picklists
-  - fields
+  - Słowniki
+  - pola
 tags:
-  - Picklists
+  - Słowniki
 preview: picklists.jpg
 ---
 

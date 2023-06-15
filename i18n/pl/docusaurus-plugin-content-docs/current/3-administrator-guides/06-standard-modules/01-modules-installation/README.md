@@ -1,13 +1,13 @@
 ---
-title: Modules – Installation
-description: Updates
+title: Moduły - instalacja
+description: Aktualizacje
 keywords:
-  - modules
+  - moduły
   - instalacji
   - systemu
   - YetiForce
 tags:
-  - modules
+  - moduły
   - instalacji
 preview: modules-1.jpg
 ---

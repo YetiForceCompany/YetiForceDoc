@@ -1,4 +1,4 @@
 ---
-title: Web service - Applications
+title: Web service - Aplikacje
 ---
 

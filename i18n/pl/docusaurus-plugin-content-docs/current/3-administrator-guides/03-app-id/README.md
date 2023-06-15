@@ -28,8 +28,8 @@ Przy zakupie niektórych produktów w naszym Marketplace konieczne będzie przes
 APP ID to suma kontrolna, w której skład wchodzą następujące składowe:
 
 - **ID systemu**, który jest losowo generowany podczas instalacji i nie ulega zmianie ([$application_unique_key z pliku config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key))
-- **System URL** where the system is located ([$site_URL z pliku config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_site_URL))
-- **Server Host Name** where the system is located
+- **URL systemu** gdzie znajduje się system ([$site_URL z pliku config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_site_URL))
+- **Nazwa hosta serwera** gdzie znajduje się system
 
 :::warning
 

@@ -12,11 +12,11 @@ preview: pdf-2.jpg
 
 ## Chromium/Chrome
 
-### Configuring the PDF generator path
+### Konfigurowanie ścieżki generatora PDF
 
-PDF configuration file: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
+Plik konfiguracyjny PDF: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
 
-Set the local path or a command to the PDF generator in the [$chromiumBinaryPath](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html#property_chromiumBinaryPath) parameter
+Ustaw ścieżkę lokalną lub polecenie do generatora PDF w parametrze [$chromiumBinaryPath](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html#property_chromiumBinaryPath)
 
 ```php
 /**
@@ -44,7 +44,7 @@ class Pdf
 }
 ```
 
-#### Example `$chromiumBinaryPath` values:
+#### Przykładowe wartości `$chromiumBinaryPath`:
 
 - chromium
 - chromium-browser
@@ -53,8 +53,8 @@ class Pdf
 - c:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 - c:\ungoogled-chromium\chrome.exe
 
-### Select the new engine
+### Wybierz nowy silnik
 
-When the `$chromiumBinaryPath` path is set correctly and the system has access to the location/command you will see a new engine in the PDF panel.
+Gdy ścieżka `$chromiumBinaryPath` jest poprawnie ustawiona i system ma dostęp do lokalizacji/polecenia, zobaczysz nowy silnik w panelu PDF.
 
 ![pdf-2.jpg](pdf-2.jpg)

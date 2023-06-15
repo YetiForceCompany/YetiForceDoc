@@ -1,44 +1,44 @@
 ---
 title: Społeczność
-description: One of the many advantages of open source software is the fact that everyone can contribute to its development.
+description: Jedną z wielu zalet oprogramowania open source jest to, że każdy może przyczynić się do jego rozwoju.
 keywords:
-  - Contributing
-  - Community
+  - Współtworzenie
+  - Społeczność
   - YetiForce
 tags:
-  - Contributing
-  - Community
+  - Współtworzenie
+  - Społeczność
 ---
 
 import DocCardList from '@theme/DocCardList';
 
-## Opensource & contributions
+## Opensource i współtworzenie
 
-One of the many advantages of open source software is the fact that everyone can contribute to its development. If you don't have any programming experience, but you would like to contribute to the YetiForce system, you can always help us develop our documentation or translate the language files. If you are a developer who would like to contribute to YetiForce, you can send us your comments regarding the code, bug fixes, or even entire functionalities.
+Jedną z wielu zalet oprogramowania open source jest to, że każdy może przyczynić się do jego rozwoju. Jeśli nie masz doświadczenia w programowaniu, a chcesz współtworzyć YetiForce, zawsze możesz pomagać nam rozwijać naszą dokumentację, lub dodawać tłumaczenia do systemu. Jeśli jesteś programistą i chcesz mieć wkład w rozwój YetiForce - prześlij nam swoje uwagi dotyczące kodu, poprawki błędów, a nawet całe funkcjonalności.
 
-## How to contribute
+## Jak współtworzyć YetiForce
 
 <DocCardList />
 
-## Meet the contributors
+## Poznaj współtwórców YetiForce
 
-Below you can find all the people who contributed to developing YetiForce and YetiForce Portal by submitting their contributions to our GitHub repository.
+Below you can find all the people who contributed to developing the YetiForce System, YetiForce Portal, and Yetiforce Documentation by submitting their contributions to our GitHub repository.
 
-**Thank you for all your hard work!**
+**Dziękujemy za Waszą ciężką pracę!**
 
-### YetiForceCRM Contributors
+### YetiForce Contributors
 
 <a class="no-shadow" href="https://github.com/YetiForceCompany/YetiForceCRM/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceCRM"   />
 </a>
 
-### YetiForcePortal2 Contributors
+### Współtwórcy YetiForcePortal2
 
 <a class="no-shadow" href="https://github.com/YetiForceCompany/YetiForcePortal2/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForcePortal2"  />
 </a>
 
-### YetiForce Documentation Contributors
+### Współtwórcy Dokumentacji YetiForce
 
 <a class="no-shadow" href="https://github.com/YetiForceCompany/YetiForceDoc/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceDoc"  />

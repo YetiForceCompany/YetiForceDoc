@@ -1,13 +1,13 @@
 ---
-title: Record collectors
-description: Record collectors
+title: Kolektory rekordów
+description: Kolektory rekordów
 keywords:
-  - Record
-  - collectors
+  - Rekord
+  - kolektory
   - YetiForce
-  - Settings
+  - Ustawienia
 tags:
-  - Record collectors
+  - Kolektory rekordów
 ---
 
 ## Prezentacja wideo
@@ -32,14 +32,14 @@ import ReactPlayer from 'react-player';
 
 ## Uprawnienia
 
-For the collector to work properly you have to check (☑) the "Record collector" field in the profile permission configuration panel (`Software configuration → Permissions → Profiles`) shown below:
+By kolektor działał prawidłowo, w konfiguracji uprawnień poszczególnych profili (`Konfiguracja systemu → Uprawnienia → Profile`) należy zaznaczyć (☑) pole "kolektor rekordów" widoczne na zrzucie ekranu poniżej:
 
 ![record-collector-2](record-collector-2.jpg)
 
-If you can't see the "records collector" action in profiles you should edit the following file: modules/Settings/ModuleManager/models/Module.php and add in the variable the following text (only if it's missing)
+Jeśli w profilach nie widać akcji "kolektor rekordów" należy w pliku: modules/Settings/ModuleManager/models/Module.php w zmiennej dodać tekst (tylko gdy nie istnieje)
 
 ## Automatyzacja
 
-Kolektory oferujące możliwość autouzupełniania danych mogą być wykorzystywane w akcjach workflow, w celu automatycznej aktualizacji danych, na przykład podczas importu rekordów do systemu.
+Kolektory oferujące możliwość autouzupełniania danych, mogą być wykorzystywane w akcjach workflow, w celu automatycznej aktualizacji danych, na przykład podczas importu rekordów do systemu.
 
-Wystarczy że ustawimy warunki aby zawsze kolektor rekordów był uruchamiany podczas tworzenia i wybierzemy odpowiednie pola, które mają zostać zaktualizowane, dzięki temu można łatwo zautomatyzować proces importu danych np. leadów.
+Wystarczy, że ustawisz warunki, aby zawsze kolektor rekordów był uruchamiany podczas tworzenia i wybierzesz odpowiednie pola, które mają zostać zaktualizowane, dzięki temu możesz łatwo zautomatyzować proces importu danych np. leadów.

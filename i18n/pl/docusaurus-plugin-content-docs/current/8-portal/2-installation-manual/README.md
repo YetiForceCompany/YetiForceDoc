@@ -1,14 +1,14 @@
 ---
-title: How to install YetiForce Portal
-description: The article explains how to install the Customer Portal for YetiForce (YetiForcePortal2)
+title: Jak zainstalować portal YetiForce
+description: W artykule wyjaśniono, jak zainstalować portal klienta dla YetiForce (YetiForcePortal2)
 keywords:
-  - wizard
-  - install
+  - kreator
+  - instalacja
   - tutorial
   - YetiForce
-  - How to install
+  - Jak zainstalować
   - portal
-  - Customer
+  - Klient
   - YetiForcePortal2
 tags:
   - Portal
@@ -16,11 +16,11 @@ tags:
 preview: step-1.jpg
 ---
 
-In this article, it will be presented how to quickly install [YetiForce Portal 2](https://github.com/YetiForceCompany/YetiForcePortal2). The portal can be used as a place for a customer, vendor, or partner. It is a universal tool for communicating with all the people we cooperate with.
+W tym artykule zaprezentowano jak szybko zainstalować [YetiForce Portal 2](https://github.com/YetiForceCompany/YetiForcePortal2). Portal może służyć jako miejsce przeznaczone dla klienta, dostawcy lub partnera. Jest to uniwersalne narzędzie do komunikacji z wszystkimi osobami, z którymi współpracujemy.
 
 :::tip
 
-**Koniecznie zapoznaj się ze wszystkimi poniższymi informacjami przed przystąpieniem do instalacji systemu.**
+**Make sure to read all the information below before attempting to install YetiForce Portal2**
 
 :::
 
@@ -92,11 +92,11 @@ Uruchom w oknie przeglądarki adres docelowy Twojego Portalu, system powinien po
 
 Na ekranie startowym w kreatorze instalacji dostępna jest możliwość konfiguracji języka instalacji.
 
-### Step 3 - Enter access data
+### Krok 3 - Wprowadź dane dostępowe
 
 :::warning
 
-**This step requires active API access !!!**
+**Ten krok wymaga aktywnego dostępu API !!!**
 
 W razie problemów zapoznaj się z dokumentacją oraz informacjami na [github](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
 
@@ -105,8 +105,8 @@ Dane dostępowe można znaleźć w panelu [`Konfiguracja systemu → Integracja 
 
 ![step-3.jpg](step-3.jpg)
 
-### Step 4 - Portal login page
+### Krok 4 - Strona logowania portalu
 
-After clicking `Install` the login page will appear. Enter the login data created in the panel [`System configuration > Integration > Web service - Users`](/administrator-guides/integration/webservice-users/)
+Po kliknięciu `Zainstaluj` pojawi się strona logowania. Enter the login data created in the panel [`System configuration > Integration > Web service - Users`](/administrator-guides/integration/webservice-users/)
 
 ![step-4.jpg](step-4.jpg)
