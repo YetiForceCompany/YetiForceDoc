@@ -12,7 +12,7 @@ tags:
 preview: bria-softphone-1.png
 ---
 
-:::tip Funkcjonalność dostępna od wersji YetiForce 6.5
+:::tip Funkcjonalność dostępna od wersji YetiForce 7.0
 :::
 
 Integracja z centralą telefoniczną za pośrednictwem aplikacji Bria Softphone.

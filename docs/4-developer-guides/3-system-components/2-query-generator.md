@@ -11,7 +11,7 @@ tags:
   - QueryGenerator
 ---
 
-:::tip The fuctionality is available for YetiForce version `3.5` and later
+:::tip The functionality is available for YetiForce version `3.5` and later
 :::
 
 The QueryGenerator mechanism can be used to list any data from entity type modules.
