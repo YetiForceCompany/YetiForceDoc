@@ -1,6 +1,6 @@
 ---
 title: List view
-description: Widok listy prezentuje dane w postaci tabeli
+description: List view presents data in the form of a table
 keywords:
   - List
   - view
