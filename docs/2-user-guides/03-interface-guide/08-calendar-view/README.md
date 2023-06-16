@@ -1,13 +1,12 @@
 ---
 title: Calendar view
-description: The article describes the Kanban board and its featues
+description: The article describes the calendar view
 keywords:
-  - kanban
-  - board
+  - calendar
   - view
   - YetiForce
 tags:
-  - Kanban
+  - Calendar
   - YetiForce
 preview: calendar-view-1.jpg
 ---
