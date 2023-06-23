@@ -168,7 +168,7 @@ For the `Import email manually` to appear,it is required to configure actions. A
 
 Standard actions:
 
-- Create email message - action that creates an e-mail
+- Create email message - action that creates an e-mail (does not download attachments and embedded photos)
 - Create links to e-mail message - action binding the e-mail message with records in the system, select fields to bind in the "Record relation fields". If no value is selected in this field, the binding will not work.
 
 ![user2](user2.png)
