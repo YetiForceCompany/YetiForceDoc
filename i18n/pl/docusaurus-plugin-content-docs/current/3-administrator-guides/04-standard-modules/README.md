@@ -1,5 +1,5 @@
 ---
-title: Standard modules
+title: Moduły standardowe
 draft: true
 ---
 

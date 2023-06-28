@@ -1,20 +1,20 @@
 ---
-title: Company's organizational structure - basics
-description: In the system, there is a built-in Roles module that allows for mapping the company's organizational structure.
+title: Struktura organizacyjna firmy - podstawy
+description: W systemie istnieje wbudowany moduł Ról, umożliwiający mapowanie struktury organizacyjnej firmy.
 keywords:
-  - company
-  - organizational
-  - structure
-  - roles
-  - Settings
+  - firma
+  - organizacyjna
+  - struktura
+  - role
+  - Ustawienia
   - YetiForce
 tags:
-  - roles
-  - structure
+  - role
+  - struktura
 ---
 
-In the system, there is a built-in Roles module that allows for mapping the company's organizational structure. The mechanism can reflect even the most complex structure. In order to configure this module, you need to go to "Software configuration" and select "Permissions" and "Roles".
+W systemie istnieje wbudowany moduł Ról, umożliwiający mapowanie struktury organizacyjnej firmy. Mechanizm ten może odzwierciedlać nawet najbardziej złożoną strukturę. Aby skonfigurować ten moduł, musisz przejść do "Konfiguracja systemu" i wybrać "Uprawnienia" i "Role".
 
-To begin with, we will use an example of an organization that has a CEO at the top and a director lower in the hierarchy, then three managers with one employee each. This a simple example of a structure, but in YetiForce there are no limitations as to the number of levels you may add.
+Zacznijmy od przykładu organizacji, gdzie na samej górze mamy prezesa, pod nim dyrektora, pod nim trzech kierowników i każdy ma po jednym pracowniku. Jest to prosty przykład struktury, ale w systemie YetiForce nie ma ograniczeń jeśli chodzi o ilość poziomów, które można dodać.
 
 ![role-1.jpg](role-1.jpg)

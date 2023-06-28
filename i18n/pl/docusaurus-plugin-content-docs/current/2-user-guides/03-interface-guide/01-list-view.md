@@ -1,4 +1,4 @@
 ---
-title: List view
+title: Widok listy
 ---
 

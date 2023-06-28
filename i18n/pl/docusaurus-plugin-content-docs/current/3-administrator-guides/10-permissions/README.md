@@ -1,15 +1,15 @@
 ---
 title: Uprawnienia
-description: In the system, you can manage users, map the organizational structure of the company, define permissions to data and functionalities, create and manage groups.
+description: W YetiForce możesz zarządzać użytkownikami, mapować strukturę organizacyjną firmy, definiować uprawnienia do danych i funkcji, tworzyć i zarządzać grupami.
 keywords:
   - Uprawnienia
-  - Settings
+  - Ustawienia
   - YetiForce
 tags:
   - Uprawnienia
 ---
 
-Advanced tools that empower users to access functionality, actions, and data throughout the application. In the system, you can manage users, map the organizational structure of the company, define permissions to data and functionalities, create and manage groups.
+Zaawansowane narzędzia, które umożliwiają użytkownikom dostęp do funkcjonalności, akcji i danych w całej aplikacji. W YetiForce możesz zarządzać użytkownikami, mapować strukturę organizacyjną firmy, definiować uprawnienia do danych i funkcji, tworzyć i zarządzać grupami.
 
 import DocCardList from '@theme/DocCardList';
 

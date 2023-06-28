@@ -1,37 +1,37 @@
 ---
-title: YetiForce PDF Premium - activation
-description: The article below explains troubleshooting inactive or malfunctioning addons purchased in the Marketplace.
+title: YetiForce PDF Premium - aktywacja
+description: Poniższy artykuł wyjaśnia rozwiązywanie problemów nieaktywnych lub nieprawidłowo działających dodatków zakupionych w Marketplace.
 keywords:
   - YetiForce
-  - Troubleshooting
-  - addons
-  - inactive
-  - purchased
+  - Rozwiązywanie problemów
+  - dodatki
+  - nieaktywne
+  - zakupione
 tags:
-  - Troubleshooting
+  - Rozwiązywanie problemów
 ---
 
 :::tip
 
-The Chromium/Chrome engine is necessary in order for this addon to work properly. You can download it [HERE](https://www.chromium.org/getting-involved/download-chromium/)
+Do prawidłowego działania dodatku wymagany jest silnik Chromium/Chrome. [POBIERZ SILNIK](https://www.chromium.org/getting-involved/download-chromium/)
 
 :::
 
-## Purchasing the addon
+## Zakup dodatku
 
-It's best to purchase all the addon in the Marketplace in the system in the administrator panel. If you're interested in other payment options you can use our website or get in touch with us directly.
+Dodatki najlepiej kupować w Marketplace panelu administracyjnym systemu YetiForce. Jeżeli interesują cię inne formy płatności i rozliczenia to można skorzystać z naszej strony WWW lub skontaktować się z nami za pomocą formularza kontaktowego.
 
 ![pdf-1.jpg](pdf-1.jpg)
 
-## Activating the addon by the YetiForce team
+## Aktywacja dodatku przez zespół YetiForce
 
-We activate the subscription manually. If your addon is not active within 48h in your system, please read the following article: [Troubleshooting inactive and malfunctioning addons](/administrator-guides/marketplace/troubleshooting)
+Obsługa subskrypcji odbywa się ręcznie. Jeśli po 48 godzinach nie zobaczysz aktywnego rozszerzenia, to zapoznaj się z artykułem: [Rozwiązywanie problemów z nieaktywnymi lub niedziałającymi dodatkami](/administrator-guides/marketplace/troubleshooting)
 
-## Configuring the PDF generator path
+## Konfigurowanie ścieżki generatora PDF
 
-PDF configuration file: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
+Plik konfiguracyjny PDF: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
 
-Set the local path or a command to the PDF generator in the [$chromiumBinaryPath](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html#property_chromiumBinaryPath) parameter
+Ustaw ścieżkę lokalną lub polecenie do generatora PDF w parametrze [$chromiumBinaryPath](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html#property_chromiumBinaryPath)
 
 ```php
 /**
@@ -59,7 +59,7 @@ class Pdf
 }
 ```
 
-### Example `$chromiumBinaryPath` values:
+### Przykładowe wartości `$chromiumBinaryPath`:
 
 - chromium
 - chromium-browser
@@ -68,8 +68,8 @@ class Pdf
 - c:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 - c:\ungoogled-chromium\chrome.exe
 
-## Select the new engine
+## Wybierz nowy silnik
 
-When the `$chromiumBinaryPath` path is set correctly and the system has access to the location/command you will see a new engine in the PDF panel.
+Gdy ścieżka `$chromiumBinaryPath` jest poprawnie ustawiona i system ma dostęp do lokalizacji/polecenia, zobaczysz nowy silnik w panelu PDF.
 
 ![pdf-2.jpg](pdf-2.jpg)

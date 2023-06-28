@@ -19,5 +19,40 @@
 	},
 	"Developer Guides": {
 		"message": "Dokumentacja programisty"
+	},
+	"theme.SearchPage.existingResultsTitle": {
+		"message": "Wyniki wyszukiwania dla \"{query}\"",
+		"description": "The search page title for non-empty query"
+	},
+	"theme.SearchPage.emptyResultsTitle": {
+		"message": "Przeszukaj dokumentację",
+		"description": "The search page title for empty query"
+	},
+	"theme.SearchPage.searchContext.everywhere": {
+		"message": "wszędzie"
+	},
+	"theme.SearchPage.documentsFound.plurals": {
+		"message": "Znaleziono 1|Znaleziono {count}",
+		"description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+	},
+	"theme.SearchPage.noResultsText": {
+		"message": "Nie znaleziono żadnych dokumentów",
+		"description": "The paragraph for empty search result"
+	},
+	"theme.SearchBar.noResultsText": {
+		"message": "Brak wyników"
+	},
+	"theme.SearchBar.seeAll": {
+		"message": "Zobacz wszystkie wyniki"
+	},
+	"theme.SearchBar.seeAllOutsideContext": {
+		"message": "Zobacz wyniki poza {context}"
+	},
+	"theme.SearchBar.searchInContext": {
+		"message": "Zobacz wszystkie wyniki w {context}"
+	},
+	"theme.SearchBar.label": {
+		"message": "Szukaj",
+		"description": "The ARIA label and placeholder for search button"
 	}
 }

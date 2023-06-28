@@ -1,22 +1,21 @@
 ---
-title: Calendar view
-description: Artykuł opisuje tablicę Kanban i jej funkcje
+title: Widok kalendarza
+description: The article describes the calendar view
 keywords:
-  - kanban
-  - board
+  - calendar
   - view
   - YetiForce
 tags:
-  - Kanban
+  - Calendar
   - YetiForce
 preview: calendar-view-1.jpg
 ---
 
 ![calendar-view-1](calendar-view-1.jpg)
 
-## Additional data sources
+## Dodatkowe źródła danych
 
-:::tip The functionality is available for YetiForce version `6.4.233` and later
+:::tip Ta funkcja jest dostępna dla YetiForce w wersji `6.4.233` i później
 :::
 
 Dodatkowe źródła danych umożliwiają pokazanie informacji z wszystkich modułów z rekordami które posiadają pole daty lub daty czasu. Blok z konfiguracją jest dostępny w panelu filtrów z prawej strony.
@@ -37,10 +36,10 @@ Typ określa na podstawie ilu i jakich typów pól mają być prezentowane dane,
 
 Do wyboru mamy następujące typy:
 
-- One date field or date time
-- Two fields date and time
-- Time range for one date field or date and time field
-- Time range for two date and time fields
+- Jedno pole daty lub data i czas
+- Dwa pola daty i czasu
+- Zakres czasu dla jednego pola daty lub daty i godziny
+- Zakres czasu dla dwóch pól data i czas
 
 #### Publiczne
 

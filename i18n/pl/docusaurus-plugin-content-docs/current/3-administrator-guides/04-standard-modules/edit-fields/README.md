@@ -1,5 +1,5 @@
 ---
-title: Edit fields
+title: Edycja pola
 draft: true
 ---
 
