@@ -163,7 +163,7 @@ Aby pojawił się przycisk `Zaimportuj maila ręcznie` użytkownik musi mieć sk
 
 Standardowe akcje:
 
-- Stwórz e-maila - akcja, która tworzy wiadomość e-mail (nie pobiera załączników i osadzonych zdjęć)
+- Utwórz wiadomość e-mail - akcja, która tworzy e-mail (nie pobiera załączników ani osadzonych zdjęć)
 - Tworzenie linków do e-maila - akcja powiązująca wiadomość mailową z rekordami w systemie, w polu `Pola relacji rekordów` określamy po czym ma szukać i pozwiązywać. Jeśli w polu "Pola relacji rekordów" nie wybrano wartości, to powiązanie nie będzie działać.
 
 ![user2](user2.png)

@@ -12,7 +12,7 @@ tags:
 preview: genesys-wde-whirly.jpg
 ---
 
-:::tip This functionality is available for YetiForce version 7.0 and later
+:::tip This functionality is available for YetiForce version 6.5 and later
 :::
 
 Integracja z centralą telefoniczną za pośrednictwem aplikacji Genesys Workspace Desktop Edition.
