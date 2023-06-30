@@ -1,46 +1,42 @@
 ---
-title: Reset hasła użytkownika bez dostępu do systemu YetiForce
-description: Jak zresetować hasło użytkownika systemu YetiForce bez dostępu do aplikacji.
+title: How to reset a user's password without access to the YetiForce system
+description: How to reset a user's password without access to the application.
 keywords:
   - reset
-  - hasła
-  - użytkownika
+  - password
+  - user
   - YetiForce
 tags:
   - reset
-  - hasła
-  - użytkownika
+  - password
+  - user
 ---
 
-Jak można szybko zresetować dostęp do dowolnego użytkownika systemu YetiForce bez dostępu przez przeglądarkę?
+This article describes how to quickly reset access to any YetiForce system user without browser access and how to reset all user passwords.
 
-Jak szybko zresetować wszystkie hasła użytkowników?
+## 1. Password reset using a PHP script (available in version `4.3` and later)
 
-Istnieje kilka sposobów na szybki reset hasła, poniżej pokażemy te najprostsze i najszybsze.
+## 1.1 Download the script
 
-## 1. Reset hasła za pomocą skryptu PHP (dostępne od wersji `4.3`)
+**Download the password reset script from the [repository](https://github.com/YetiForceCompany/YetiForceScripts/tree/master/PasswordReset).**
 
-## 1.1 Pobieramy skrypt
-
-Skrypt do resetu hasła pobieramy z repozytorium https://github.com/YetiForceCompany/YetiForceScripts/tree/master/PasswordReset
-
-W zależności od metody wywołania wgrywamy do odpowiedniego katalogu. W poniższym przykładzie katalog główny systemu znajduje się w katalogu `/home/yfprod/html/`
+Depending on the triggering method, upload to the appropriate directory. In the example below, the CRM files are in the directory `/home/yfprod/html/`
 
 ```bash
 wget -O /home/yfprod/html/PasswordReset.php https://raw.githubusercontent.com/YetiForceCompany/YetiForceScripts/master/PasswordReset/PasswordReset.php
 ```
 
-Skrypt musi być na tych samych uprawnianiach (właściciel) co pliki systemu YetiForce, w pokazanym przykładzie to jest `yfprod`.
+The script must have the same privileges (owner) as the YetiForce files, in the example shown it is `yfprod`.
 
 ```bash
 chown yfprod:yfprod /home/yfprod/html/PasswordReset.php
 ```
 
-## 1.2 Wprowadzamy dane użytkownika
+## 1.2 Enter user data
 
-W pliku ustawiamy ID użytkownika lub jego nazwę oraz hasło na jakie ma być zmienione hasło (hasło powinno być zgodne z obowiązującymi wytycznymi).
+In the file, set the user's ID or name and the new password (the password should comply with the applicable guidelines).
 
-Jeśli nie wprowadzimy hasła system wygeneruje je automatycznie.
+If you do not enter the password, the system will generate it automatically.
 
 ```php
 $userId = 1;
@@ -48,19 +44,19 @@ $userName = ''; //Nazwa użytkownika, opcjonalnie
 $password = ''; //Hasło, opcjonalnie
 ```
 
-## 1.3 Uruchamiamy skrypt
+## 1.3 Run the script
 
-Jeśli uruchamiamy skrypt przez przeglądarkę, to plik należy wgrać do katalogu public (jeśli web root jest ustawiony na ten katalog) i uruchomić adres systemu plus nazwa skryptu np. https://gitdeveloper.yetiforce.com/PasswordReset.php
+If you run the script through a browser, upload the file to the public directory (if webroot is set to this directory) and run the CRM address plus the script name, e.g. https://gitdeveloper.yetiforce.com/PasswordReset.php
 
-Jeśli uruchamiamy skrypt z poziomu CLI, to skrypt wgrywamy do katalogu głównego i uruchamiamy plik.
+If you run the script from the CLI level, upload the script to the main directory and run the file.
 
 ```bash
 php /home/yfprod/html/PasswordReset.php
 ```
 
-## 1.4 Podsumowanie
+## 1.4 Summary
 
-Gdy zostanie prawidłowo zmienione hasło skrypt wyświetli dane użytkownika oraz nowe hasło.
+When the password is changed correctly, the script will display the user data and the new password.
 
 ```
 Login: admin27038
@@ -68,7 +64,7 @@ Password: APcbCr4Bef
 Full name: Administrator Yeti
 ```
 
-Gdy wystąpi błąd system pokaże komunikat błędu np.
+If an error occurs, the system will show an error message, e.g.:
 
 ```
 App\Exceptions\Security: Minimum password length 8 characters in /home/yfprod/html/modules/Vtiger/uitypes/Password.php:21
@@ -83,27 +79,27 @@ Password: xxx
 Full name: Administrator Yeti
 ```
 
-## 2. Reset hasła za pomocą YetiForce CLI (dostępne od wersji `6.2`)
+## 2. Password reset using YetiForce CLI (available in version `6.2` and later)
 
-Inną metodą zmiany resetu hasła jest YetiForce CLI.
+YetiForce CLI is an alternative method of resetting passwords in the system.
 
-## 2.1 Generowanie nowego hasła
+## 2.1 Generate a new password
 
-Pełny opis znajduje się w artykule [YetiForce CLI](/developer-guides/cli/Users#reset-user-password)
+A full description can be found in [YetiForce CLI](/developer-guides/cli/Users#reset-user-password)
 
 ```bash
 php cli.php -m Users -a resetPassword -l guest -c
 ```
 
-## 2.2 Hasło jako parametr
+## 2.2 Password as a parameter
 
 ```bash
 php cli.php -m Users -a resetPassword -l guest -p p@ssw0rD
 ```
 
-## 2. Reset hasła wszystkich użytkowników za pomocą YetiForce CLI (dostępne od wersji `6.2`)
+## 2. Reset all users' passwords using YetiForce CLI (available in version `6.2` and later)
 
-Jest możliwość zresetowania danych dostępowych wszystkim użytkownikom i wysłanie nowego hasła na adresy mail użytkowników za pomocą jednego polecenia. Pełny opis znajduje się w artykule [YetiForce CLI](/developer-guides/cli/Users#reset-all-user-passwords)
+It is possible to reset the access data of all users and send a new password to the e-mail addresses of the users with one command. A full description can be found [YetiForce CLI](/developer-guides/cli/Users#reset-all-user-passwords)
 
 ```bash
 php cli.php -m Users -a resetAllPasswords
