@@ -3,7 +3,7 @@ title: Uprawnienia
 description: W YetiForce możesz zarządzać użytkownikami, mapować strukturę organizacyjną firmy, definiować uprawnienia do danych i funkcji, tworzyć i zarządzać grupami.
 keywords:
   - Uprawnienia
-  - Settings
+  - Panel konfiguracyjny
   - YetiForce
 tags:
   - Uprawnienia

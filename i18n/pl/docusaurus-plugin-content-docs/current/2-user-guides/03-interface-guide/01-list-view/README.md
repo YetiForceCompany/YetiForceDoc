@@ -3,7 +3,7 @@ title: Widok listy
 description: List view presents data in the form of a table
 keywords:
   - List
-  - view
+  - widok
   - YetiForce
 tags:
   - List

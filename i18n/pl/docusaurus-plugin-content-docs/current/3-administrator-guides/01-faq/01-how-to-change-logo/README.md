@@ -1,11 +1,11 @@
 ---
 title: Jak zmienić logo YetiForce na inne?
-description: There are several places in the YetiForce CRM system where the default YetiForce logo can be found
+description: W systemie CRM YetiForce znajduje się kilka miejsc, gdzie można znaleźć domyślne logo YetiForce
 keywords:
   - YetiForce
   - change
   - login
-  - page
+  - strona
   - menu
   - logo
 tags:
@@ -33,6 +33,6 @@ Po kliknięciu na nią będziesz mógł przesłać nowe logo.
 
 ## Zmień logo menu
 
-Logo, które możesz zobaczyć na górze menu, obok aktualnie zalogowanej nazwy użytkownika można zmienić w `Firma → Działy`. All you have to do is select your department, then edit the record using the edit button ✎ in the right upper corner - first remove the current logo and then upload a new one. Po zapisaniu zmian nowe logo będzie widoczne w menu.
+Logo, które możesz zobaczyć na górze menu, obok aktualnie zalogowanej nazwy użytkownika można zmienić w `Firma → Działy`. Wszystko, co musisz zrobić, to wybrać dział, następnie edytuj rekord za pomocą przycisku edycji ✎ w prawym górnym rogu - najpierw usuń bieżące logo, a następnie prześlij nowe. Po zapisaniu zmian nowe logo będzie widoczne w menu.
 
 ![how-to-change-logo-4.jpg](01-how-to-change-logo-4.jpg)

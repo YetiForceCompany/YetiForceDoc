@@ -3,7 +3,7 @@ title: PDF
 description: YetiForce PDF Premium
 keywords:
   - YetiForce
-  - Settings
+  - Panel konfiguracyjny
   - PDF
 tags:
   - PDF

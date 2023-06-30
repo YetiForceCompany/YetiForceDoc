@@ -1,4 +1,0 @@
----
-title: Widok listy
----
-

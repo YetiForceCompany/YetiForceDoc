@@ -4,7 +4,7 @@ description: Firma
 keywords:
   - Firma
   - YetiForce
-  - Settings
+  - Panel konfiguracyjny
 hide_table_of_contents: true
 ---
 
