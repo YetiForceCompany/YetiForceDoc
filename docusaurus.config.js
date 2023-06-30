@@ -157,12 +157,13 @@ module.exports = {
 	},
 	plugins: [
 		[
-			require.resolve('@cmfcmf/docusaurus-search-local'),
+			require.resolve('@easyops-cn/docusaurus-search-local'),
 			{
 				language: ['en'],
-				indexDocSidebarParentCategories: 4,
-				indexBlog: false,
-				maxSearchResults: 20
+				docsRouteBasePath: '/',
+				highlightSearchTermsOnTargetPage: true,
+				searchResultLimits: 10,
+				indexBlog: false
 			}
 		],
 		['docusaurus-plugin-matomo', {}],
