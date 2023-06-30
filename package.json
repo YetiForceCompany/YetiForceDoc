@@ -14,12 +14,12 @@
 		"crowdin": "crowdin"
 	},
 	"dependencies": {
-		"@cmfcmf/docusaurus-search-local": "^1",
+		"@easyops-cn/docusaurus-search-local": "*",
 		"@crowdin/cli": "3",
-		"@docusaurus/core": "^2.2",
-		"@docusaurus/plugin-client-redirects": "^2.2",
-		"@docusaurus/plugin-pwa": "^2.3.1",
-		"@docusaurus/preset-classic": "^2.2",
+		"@docusaurus/core": "^2",
+		"@docusaurus/plugin-client-redirects": "^2",
+		"@docusaurus/plugin-pwa": "^2",
+		"@docusaurus/preset-classic": "^2",
 		"@mdx-js/react": "^1.6",
 		"@saucelabs/theme-github-codeblock": "^0",
 		"clsx": "^1.2",
