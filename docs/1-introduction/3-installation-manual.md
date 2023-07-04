@@ -55,7 +55,7 @@ chown -R yfprod:yfprod /home/yfprod/html/
 
 Run the target address of your system in the browser window, the system should show the installation wizard. If it doesn't, there may be some problems, you can try running the address: **SITE_URL**/install/Install.php np. https://gitdeveloper.yetiforce.com/install/Install.php
 
-![Krok 1](install-1.png)
+![step 1](install-1.png)
 
 On the start screen there are options that allow you to select a language of the installation (browser language is the default language) and to choose an installation mode (new installation or migration from a different system). We will go through the steps of a new installation. **Click `Install` and proceed to the next step.**
 
@@ -63,13 +63,13 @@ On the start screen there are options that allow you to select a language of the
 
 It's necessary to agree to the license terms in order to proceed with the installation process. The YetiForce License is very similar to the standard MIT license, it allows modification of the code and to leave information about the initial developer. We recommend reading the license.
 
-![Krok 2](install-2.png)
+![step 2](install-2.png)
 
 ## Step 3 - Choose installation type
 
 Decide where you want to install the system - you can choose your own server or buy our hosting or cloud services. If you'd like to use our services, after clicking the "Buy" button you will be able to make the payment.
 
-![Krok 3](install-3.png)
+![step 3](install-3.png)
 
 ## Step 4 - Server configuration review
 
@@ -79,7 +79,7 @@ Make sure your administrator is familiar with [web server requirements](/introdu
 
 Once you are aware of the risks associated with incorrect web server configuration you can click "OK" and move to the next step.
 
-![Krok 4](install-4.png)
+![step 4](install-4.png)
 
 ## Step 5 - Access data configuration
 
@@ -89,11 +89,11 @@ If incorrect access data is entered into the database, an error message will be 
 
 In this case, it is necessary to go back and enter the correct access data. If everything is set correctly, the screen from Step 7 will appear.
 
-![Krok 5](install-5.png)
+![step 5](install-5.png)
 
 ## Step 6 - Data summary
 
-![Krok 6](install-6.png)
+![step 6](install-6.png)
 
 ## Step 7 - Enter registration information
 
@@ -101,12 +101,54 @@ Enter the data of the company that will use the system, the data will then be us
 
 According to the license, each system must be registered after the trial period of 14 days.
 
-![Krok 7](install-7.png)
+![step 7](install-7.png)
 
 ## Step 8 - Database import and system configuration
 
-![Krok 8](install-8.png)
+![step 8](install-8.png)
 
 When the installation is performed correctly, you will be automatically redirected to the system.
 
-![Krok 9](install-9.png)
+![step 9](install-9.png)
+
+## The installation process has failed
+
+What to do when the system shows the message `Invalid session ID` at the beginning of the installation.
+
+![install-failed-10](install-10.png)
+
+![install-failed-11](install-11.png)
+
+### What does the message `Invalid session ID` mean?
+
+"Sent session ID does not match the one received from the server. We recommend clearing your browser cache, and if that does not fix the problem, we recommend correcting your server configuration."
+
+The error often appears when there are or there were several CRM instances in different CRM versions on one address. Different CRM versions have different cookie configurations and therefore sometimes the session ID cannot be updated during installation.
+
+This can be checked in the browser console:
+
+![install-failed-12](install-12.png)
+
+### How to repair invalid session ID
+
+The repair is simple, it is required to delete the browser cache or delete all cookies for the domain (which the system is running on).
+
+:::warning
+
+Pay attention to delete cookies for HTTP and HTTPS !!!
+
+:::
+
+#### HTTP
+
+![install-failed-13](install-13.png)
+
+#### HTTPS
+
+![install-failed-14](install-14.png)
+
+### How to clear the browser cache for only one domain
+
+You can easily remove all browser cache, but how to do it for one domain only so as not to lose all data?
+
+In the development tools, it is possible to view and delete the cache. Each browser may have removal options elsewhere. More details can be found in the article [How to clear browser cache?](/administrator-guides/faq/how-to-clear-browser-cache/)
