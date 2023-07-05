@@ -22,7 +22,7 @@ Before the installation, check if your server complies with the requirements: [Y
 
 :::important
 
-A person who is going to install the system should have at least basic knowledge of web servers, databases and server permissions. 99% of installation issues come from people with insufficient experience attempting to install the system. If you are not sure whether you can manage on your own, you can ask somebody with adequate IT expertise. The entire installation process will take up to 30 minutes. Installation of YetiForce is similar to the installation of applications such as WordPress, Joomla, Drupal. Differences between particular tools are minor, so if you managed to install a CMS system, you will also be able to install YetiForce.
+A person who is going to install the system should have at least basic knowledge of web servers, databases, and server permissions. 99% of installation issues come from people with insufficient experience attempting to install the system. If you are not sure whether you can manage on your own, you can ask somebody with adequate IT expertise. The entire installation process will take up to 30 minutes. Installation of YetiForce is similar to the installation of applications such as WordPress, Joomla, Drupal. Differences between particular tools are minor, so if you managed to install a CMS system, you will also be able to install YetiForce.
 
 :::
 
@@ -53,7 +53,7 @@ chown -R yfprod:yfprod /home/yfprod/html/
 
 ## Step 1 - Run the installation wizard
 
-Run the target address of your system in the browser window, the system should show the installation wizard. If it doesn't, there may be some problems, you can try running the address: **SITE_URL**/install/Install.php np. https://gitdeveloper.yetiforce.com/install/Install.php
+Run the target address of your system in the browser window, the system should show the installation wizard. If it doesn't, there may be some problems, you can try running the address: **SITE_URL**/install/Install.php eg. https://gitdeveloper.yetiforce.com/install/Install.php
 
 ![step 1](install-1.png)
 
@@ -67,23 +67,23 @@ It's necessary to agree to the license terms in order to proceed with the instal
 
 ## Step 3 - Choose installation type
 
-Decide where you want to install the system - you can choose your own server or buy our hosting or cloud services. If you'd like to use our services, after clicking the "Buy" button you will be able to make the payment.
+Decide where you want to install the system - you can choose your own server or buy our hosting or cloud services. If you'd like to use our services, after clicking the "Buy" button, you will be able to make the payment.
 
 ![step 3](install-3.png)
 
 ## Step 4 - Server configuration review
 
-In the fourth stepyou can find your current web server configuration compared to the requirements of YetiForce (what needs to be changed and to what values to set). It is necessary to remember that this configuration may change according to different requirements applied to the application and a deployment company should take it into consideration. For example, if you generate large reports that have a longer generating time than the maximum time set in `max_execution_time` parameter, then it is necessary to set the parameters in such a way that time of executing a script is always longer than time for generating a report. Otherwise, reports may not be generated successfully.
+In the fourth step, you can find your current web server configuration compared to the requirements of YetiForce (what needs to be changed and to what values to set). It is necessary to remember that this configuration may change according to different requirements applied to the application and a deployment company should take it into consideration. For example, if you generate large reports that have a longer generating time than the maximum time set in the `max_execution_time` parameter, then it is necessary to set the parameters in such a way that the time of executing a script is always longer than the time for generating a report. Otherwise, reports may not be generated successfully.
 
-Make sure your administrator is familiar with [web server requirements](/introduction/requirements/). If all required parameters are not met and you attempt to proceed with the installation, the application will display a warning message.
+Make sure your administrator is familiar with [web server requirements](/introduction/requirements/). If all required parameters are not met, and you attempt to proceed with the installation, the application will display a warning message.
 
-Once you are aware of the risks associated with incorrect web server configuration you can click "OK" and move to the next step.
+Once you are aware of the risks associated with incorrect web server configuration you can click "OK", and move to the next step.
 
 ![step 4](install-4.png)
 
 ## Step 5 - Access data configuration
 
-In this step you need to enter access data to a database as well as set output parameters for the system. A database will be created on the basis of this data (when this option has been activated). The structure of the database will be copied together with basic records and an administrator account will be created, so after completing the installation it will be possible to log on this account.
+In this step, you need to enter access data to a database as well as set output parameters for the system. A database will be created on the basis of this data (when this option has been activated). The structure of the database will be copied together with basic records and an administrator account will be created, so after completing the installation it will be possible to log on this account.
 
 If incorrect access data is entered into the database, an error message will be displayed.
 
@@ -123,7 +123,7 @@ What to do when the system shows the message `Invalid session ID` at the beginni
 
 "Sent session ID does not match the one received from the server. We recommend clearing your browser cache, and if that does not fix the problem, we recommend correcting your server configuration."
 
-The error often appears when there are or there were several CRM instances in different CRM versions on one address. Different CRM versions have different cookie configurations and therefore sometimes the session ID cannot be updated during installation.
+The error often appears when there are (or there were) several instances of different system versions on one address. Different system versions have different cookie configurations, and therefore sometimes the session ID cannot be updated during installation.
 
 This can be checked in the browser console:
 
