@@ -135,7 +135,7 @@ The repair is simple, it is required to delete the browser cache or delete all c
 
 :::warning
 
-Pay attention to delete cookies for HTTP and HTTPS !!!
+Pay attention to delete cookies for HTTP and HTTPS!!!
 
 :::
 
