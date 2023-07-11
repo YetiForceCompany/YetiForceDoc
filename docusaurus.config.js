@@ -108,10 +108,10 @@ module.exports = {
 				{ to: 'administrator-guides', label: 'Administrator', position: 'left' },
 				{ to: 'developer-guides', label: 'Developer', position: 'left' },
 				{ to: 'contributing', label: 'Contributing / Community', position: 'left' },
-				// { to: 'portal', label: 'Portal', position: 'left' },
-				{ type: 'localeDropdown', position: 'right' },
+
 				{ label: 'yetiforce.com', position: 'right', href: 'https://yetiforce.com/' },
-				{ label: 'GitHub', position: 'right', href: 'https://github.com/YetiForceCompany/YetiForceCRM' }
+				{ label: 'GitHub', position: 'right', href: 'https://github.com/YetiForceCompany/YetiForceCRM' },
+				{ type: 'localeDropdown', position: 'right' }
 			]
 		},
 		matomo: {
@@ -133,70 +133,6 @@ module.exports = {
 		},
 		footer: {
 			style: 'dark',
-			/*
-			links: [
-				{
-					title: 'Docs',
-					items: [
-						{
-							label: 'Introduction',
-							to: '/'
-						}
-					]
-				},
-				{
-					title: 'Community',
-					items: [
-						{
-							label: 'Sourceforge',
-							href: 'https://sourceforge.net/projects/yetiforce/'
-						},
-						{
-							label: 'Softaculous',
-							href: 'http://www.softaculous.com/apps/erp/YetiForce'
-						},
-						{
-							label: 'Twitter',
-							href: 'https://twitter.com/yetiforceen'
-						}
-					]
-				},
-				{
-					title: 'Demos',
-					items: [
-						{
-							label: 'GitStable',
-							href: 'https://gitstable.yetiforce.com/'
-						},
-						{
-							label: 'GitDeveloper',
-							href: 'https://gitdeveloper.yetiforce.com/'
-						},
-						{
-							label: 'Customer Portal',
-							href: 'https://gitdeveloper.yetiforce.com/portal/'
-						},
-						{
-							label: 'Partner Portal',
-							href: 'https://gitdevportal.yetiforce.com/'
-						}
-					]
-				},
-				{
-					title: 'More',
-					items: [
-						{
-							label: 'WWW',
-							href: 'https://yetiforce.com/'
-						},
-						{
-							label: 'GitHub',
-							href: 'https://github.com/YetiForceCompany/YetiForceCRM'
-						}
-					]
-				}
-			],
-			*/
 			copyright: `Copyright © ${new Date().getFullYear()} YetiForce S.A.`
 		}
 	},
