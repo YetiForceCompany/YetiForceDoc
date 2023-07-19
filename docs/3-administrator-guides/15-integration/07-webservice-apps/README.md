@@ -21,17 +21,17 @@ preview: webservice-apps-1.jpg
 
 ## Webservice Standard
 
-Dokumentacja dostępnych metod i możliwości API znajduje się w artykule [Developer documentation → API → Webservice standard](/developer-guides/api/WebserviceStandard)
+Documentation of available methods and API capabilities can be found in the following article: [Developer documentation → API → Webservice standard](/developer-guides/api/WebserviceStandard)
 
 ![WebserviceStandard.jpg](WebserviceStandard.jpg)
 
-### Dane dostępowe
+### Credentials
 
-Dostęp do usługi `Webservice Standard` wymaga utworzenia aplikacji z nazwą użytkownika i hasłem, które jest wymagane do komunikacji z API.
+Access to the `Webservice Standard` service requires creating an application with a username and password, necessary to communicate with the API. 
 
 ![WebserviceStandard-login-pass.jpg](WebserviceStandard-login-pass.jpg)
 
-Nazwa i hasło musi być umieszczona w nagłówku uwierzytelniania podstawowego (`Authorization: Basic`) dla całej komunikacji z API.
+The username and password must be placed in the header of the basic authentication (`Authorization: Basic`) for the entire API communication.
 
 ```http
 POST /webservice/WebservicePremium/Users/Login HTTP/1.1
@@ -40,7 +40,7 @@ Authorization: Basic cGFydG5lcjpwYXJ0bmVy
 
 :::tip
 
-Przykład generowania nagłówka `Authorization: Basic`
+Header generation example - `Authorization: Basic`
 
 ```php
  base64_encode($name . ':' . $password)
@@ -48,7 +48,7 @@ Przykład generowania nagłówka `Authorization: Basic`
 
 :::
 
-Kolejnym elementem bezpieczeństwa wymaganym do działa API jest umieszczenie klucza API w nagłówku `X-API-KEY` dla całej komunikacji z API.
+The next security measure required for the API to work is placing the API key in the `X-API-KEY` header for the entire API communication.
 
 ```http
 POST /webservice/WebservicePremium/Users/Login HTTP/1.1
@@ -56,17 +56,17 @@ X-API-KEY: VMUwRByXHSq1bLW485ikfvcC97P6gJs2
 Authorization: Basic cGFydG5lcjpwYXJ0bmVy
 ```
 
-Klucz jest generowany po utworzeniu aplikacji i można go skopiować za pomocą przycisku <span class="fas fa-copy u-cursor-pointer"></span> kopiującego klucz do schowka.
+The key is generated after the application is created, and it can be copied to the clipboard by clicking the <span class="fas fa-copy u-cursor-pointer"></span> button.
 
 ![WebserviceStandard-api-key.jpg](WebserviceStandard-api-key.jpg)
 
 ### Authentication
 
-Powyższe klucze są unikalne dla danej aplikacji która się łączy z systemem YetiForce. Aby było możliwe pobieranie i wysyłane danych trzeba określić poziom uprawnień z jakimi będzie działać API. W tym celu została utworzona metoda [Users/Login](/developer-guides/api/WebserviceStandard#tag/Users/operation/1ac849ff510b6b65243b46ffb9e48a9b) która umożliwia autoryzację i utworzenie sesji. Dzięki temu będzie można wywoływać metody które wymagają odpowiedniego poziomu uprawnień do wykonania danej operacji.
+The keys are unique for each application that connects to the YetiForce system. In order to be able to download and send data, you need to specify the level of permissions for the API. For this purpose, the [Users/Login](/developer-guides/api/WebserviceStandard#tag/Users/operation/1ac849ff510b6b65243b46ffb9e48a9b) method was created, which allows authorization and creation of a session. This allows you to call methods that require a certain level of permissions to perform operations.
 
-Zarządzanie danymi dostępowymi jest opisane w panelu [Administrator documentation → Integration → Web service - Users](/administrator-guides/integration/webservice-users/).
+A description of credential management can be found here: [Administrator documentation → Integration → Web service - Users](/administrator-guides/integration/webservice-users/).
 
-Token autoryzacyjny należy umieścić w nagłówku `X-TOKEN` dla całej komunikacji z API.
+The authorization token should be placed in the `X-TOKEN` header for the entire API communication.
 
 ```http
 POST /webservice/WebservicePremium/Users/Login HTTP/1.1
@@ -77,9 +77,9 @@ Authorization: Basic cGFydG5lcjpwYXJ0bmVy
 
 ### YetiForce RestApi SDK
 
-Zostało utworzone podstawowe SDK dla komunikacji z YetiForce RestApi, kod można znaleźć na github pod adresem https://github.com/YetiForceCompany/YetiForceScripts/tree/master/YetiREST
+Basic SDK has been created for communication with YetiForce RestAPI, the code can be found in our GitHub repository: https://github.com/YetiForceCompany/YetiForceScripts/tree/master/YetiREST
 
-Przykładowy skrypt pokazujący wywołanie kluczowych metod API.
+An example script showing how to call key API methods:
 
 ```php reference
 https://github.com/YetiForceCompany/YetiForceScripts/blob/master/YetiREST/index.php#L34-L68
