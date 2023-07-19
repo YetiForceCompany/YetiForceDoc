@@ -56,7 +56,7 @@ X-API-KEY: VMUwRByXHSq1bLW485ikfvcC97P6gJs2
 Authorization: Basic cGFydG5lcjpwYXJ0bmVy
 ```
 
-The key is generated after the application is created, and it can be copied to the clipboard by clicking the <span class="fas fa-copy u-cursor-pointer"></span> button.
+The key is generated after the application is created, and it can be copied to the clipboard by clicking the <kbd><span class="fas fa-copy u-cursor-pointer"></span></kbd> button.
 
 ![WebserviceStandard-api-key.jpg](WebserviceStandard-api-key.jpg)
 
