@@ -51,8 +51,10 @@ import DocCardList from '@theme/DocCardList';
 - **Operating system - Debian, Ubuntu, RedHat, Mint** - works on most Linux distributions. We don't recommend the MS Windows operating system as well as MS Windows Server. Our system works well on Windows servers, however, it's not an optimal environment in terms of web applications.
 
   :::warning
+  
   Due to security reasons, we recommend running each version of the YetiForce system (PROD and TEST) on a separate/dedicated user of the operating system (preferably on a separate server), e.g. yfprod, yftest.
    We do not recommend using one operating system user for several applications/websites.
+  
   :::
 
 - **Serwer WWW**
@@ -61,7 +63,9 @@ import DocCardList from '@theme/DocCardList';
   - **Apache `2.4`** - works on earlier versions as well (`2.1, 2.2, 2.3`), however, the latest stable versions are recommended. You can also use alternative software as long as it is compatible.
 
     :::warning
+ 
     The system does not work with the ModSecurity web server extension
+    
     :::
 
 - **Databases**
