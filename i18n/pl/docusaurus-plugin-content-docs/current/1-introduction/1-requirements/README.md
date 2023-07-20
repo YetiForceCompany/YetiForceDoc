@@ -50,8 +50,8 @@ import DocCardList from '@theme/DocCardList';
 - **System operacyjny - Debian, Ubuntu, RedHat, Mint** - działa na większości dystrybucji linuksowych. Nie zalecamy systemu operacyjnego MS Windows, jak również MS Windows Server. Pomimo, że nasz system dobrze sobie radzi na serwerach Windows, to nie są one optymalne pod kątem działania aplikacji WWW.
 
   :::warning
-Ze względów bezpieczeństwa zalecamy aby każda wersja systemu YetiForce (PROD i TEST) została uruchomiona na oddzielnym/dedykowanym użytkowniku systemu operacyjnego (a najlepiej na oddzielnym serwerze) np. yfprod, yftest.
-Nie zalecamy używania jednego użytkownika systemu operacyjnego do kilku aplikacji/stron WWW.
+Ze względów bezpieczeństwa, zalecamy uruchomienie każdej wersji systemu YetiForce (PROD i TEST) na osobnym/dedykowanym użytkowniku systemu operacyjnego (najlepiej na oddzielnym serwerze), np. yfprod, yftest.
+ Nie zalecamy używania jednego użytkownika systemu operacyjnego dla kilku aplikacji/stron internetowych.
 :::
 
 - **Serwer WWW**
