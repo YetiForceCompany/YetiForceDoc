@@ -1,75 +1,74 @@
 ---
-title: Kontrola dostępu do funkcjonalności
-description: Jednym z kluczowych elementów bezpieczeństwa systemu YetiForce jest kontrola dostępu do funkcjonalności, narzędzi oraz akcji
+title: Access control to system functionalities
+description: One of the key security elements of YetiForce is access control to functionalities, tools, and actions available in the system.
 keywords:
-  - Kontrola
-  - dostępu
-  - funkcjonalności
+  - control
+  - access
+  - functionality
   - YetiForce
 tags:
-  - kontrola
-  - dostępu
-  - funkcjonalności
+  - control
+  - access
+  - functionality
 ---
 
-Jednym z kluczowych elementów bezpieczeństwa systemu YetiForce jest kontrola dostępu do funkcjonalności , narzędzi oraz akcji na poziomie użytkownika i administratora. Domyślnie dostęp do każdego elementu systemu [moduł, narzędzie, przycisk, akcja] jest sprawdzany.
+One of the key security elements of the YetiForce system is the control of access to functionalities, tools and actions at the user and administrator level. By default, access to all system elements, such as modules, tools, buttons, or actions, is checked.
 
-## Logika dostępu do funkcjonalności zaszyta w YetiForce
+## Functionality access logic
 
-### Podział funkcjonalności
+### Functionality division
 
-System YetiForce ma wiele narzędzi z których może korzystać użytkownik, najważniejszą funkcjonalnością [a zarazem pierwszą, która jest ukazywana] to moduł [np. kontrahenci, faktury, oferty, dashboard]. W każdym module znajduje się wiele elementów wspólnych tj.:
+The YetiForce system offers its users a rich choice of tools, including the most important functionality which is a module (e.g. accounts, invoices, quotes, dashboard). There are many common elements in each module, i.e.:
 
-- Akcje
-- Narzędzia
-- Widoki
-- Filtry
-- Pola / Słowniki
-- Widżety
+- Actions
+- Tools
+- Views
+- Filters
+- Fields / Picklists
+- Widgets
 
-Do każdego elementu systemu, można zdefiniować uprawnienia np. czy pole jest widoczne dla użytkownika lub czy może używać filtru. Dodatkowo w systemie mamy dwa rodzaje słowników, jeden z nich zawiera możliwość określania uprawnień do wartości w ten sposób możemy kontrolować proces zmiany na rekordzie uwzględniając jaka rola może zmieniać jakie statusy np. dział techniczny może zmieniać zgłoszenia i nadać status "do weryfikacji" a dział kontroli może zmienić na status "zweryfikowano do zamknięcia". Jest to jeden ze sposobów realizacji zasady “separation of duties”.
+You can define permissions for each element of the system, e.g. whether the field is visible to the user or whether they can use the filter. In addition, there are two types of picklists in the system. One of them includes the ability to define permissions to values, and therefore allows you to control the process of modifying a record, taking into account what role can change what statuses, e.g. the technical department can change tickets and set the "for verification " status, and the control department can change the status to "verified for closing". This is one of the ways to implement the principle of "separation of duties".
 
-### Dostęp do modułów, akcji, pól
+### Access to modules, actions, fields
 
-Dostęp do modułu, akcji, pola określa się na poziomie profilu, zo oznacza, że użytkownik przypisany do określonej roli, dziedziczy profile, które w roli zostały ustawiony. Przypisanie profilu do użytkownika nie następuje bezpośrednio lecz pośrednio poprzez przypisanie do roli.
+Access to a module, action, or field is defined at the profile level, meaning that a user assigned to a specific role inherits the profiles that have been set in the role. Assigning a profile to a user is not done directly, but indirectly by assigning it to a role.
+You can specify general permissions on the module layer in the profile, i.e.:
 
-Na profilu można określać ogólne uprawnienia na warstwie modułu tj.:
+- Preview
+- Create
+- Edit
+- Delete
 
-- Podgląd
-- Tworzenie
-- Edycja
-- Usuwanie
+If the user is granted permissions to view/edit in the module, it means that they will be able to view and edit these records, but they won't be able to delete them or create new ones. Profiles do not grant permissions to data/records, but only to functionalities, tools and actions.
 
-Jeżeli użytkownik otrzyma uprawnienia do przeglądania/edytowania w module, to oznacza że rekordy do których ma i uprawnienia będzie mógł przeglądać i edytować ale nie będzie mógł ich usuwać czy też tworzyć nowe. Profile nie nadają uprawnień do danych/rekordów lecz tylko do funkcjonalności, narzędzi i akcji.
+In addition, in each module, you can assign permissions to fields by specifying three states - hidden, read only, write - which allows you to limit permissions to the field and operations on it. Some fields, i.e. system or required by default, cannot have their permissions changed without the involvement of a developer, because they have been imposed by the producer.
 
-Dodatkowo w każdy module możemy przydzielać uprawnienia do pól określając trzy stany [ukryte, tylko odczyt, zapis] co pozwala na zmniejsza uprawnień do pola i operacji na tym. Niektóre pola tj. systemowe lub domyślnie wymagane nie mogą mieć zmienianych uprawnień ponieważ zostały one narzucone przez producenta [można to zmienić programistycznie].
+In addition to field permissions, you can assign permissions to tools, such as mass editing, emailing, texting, import/export, etc., which means that you have full control over which tools can be utilized by the end user.
 
-Oprócz uprawnień do pól, możemy przydzielać uprawnienia do narzędzi [masowa edycji, wysyłka maili, wysyłka sms-ów, import/eksport itd.] co oznacza, że mamy pełną kontrolę nad tym z jakich narzędzi może korzystać użytkownik końcowy.
+### Filter access
 
-### Dostęp do filtrów
+Access to filters is defined directly on the filter; each user who creates the filter is its owner. Additionally, the administrator can mark the filter as public and grant access to the filter to particular users. The permissions to create and edit filters result directly from the permissions defined in the profile.
 
-Dostęp do filtrów jest określany bezpośrednio na filtrze każdy użytkownik, który tworzy filtr jest jego właścicielem, dodatkowo administrator może oznaczyć filtr jako publiczny oraz przydzielić poszczególnym osobom dostęp do filtru. Uprawnienia do tworzenia i edycji filtrów wynikają bezpośrednio z uprawnień zdefiniowanych na profilu.
+### View access
 
-### Dostęp do widoków
+Access to views is partly automatic and partly configurable, for global views (e.g. list, preview list, summary, details) permissions are defined globally for the entire organization, while for other views (e.g. creating a record, editing a record, quick creation) permissions result directly from the profile.
 
-Dostęp do widoków jest częściowo automatyczny a częściowo konfigurowalny, dla widoków globalnych [np. lista, lista z podglądem, podsumowanie, szczegóły itd.] uprawnienia definiuje się globalnie dla całej organizacji, natomiast dla pozostałych widoków [np. tworzenie rekordu, edycja rekordu, szybkie tworzenie] uprawnienia wynikają bezpośrednio z profilu.
+### Widget access
 
-### Dostęp do widżetów
+Access to widgets is defined on three layers - dashboard, module, and record, but only on the first two layers you can assign who sees which widgets, and how they can manage them. Widgets on the third layer are automatically controlled by the system and available to anyone who has access to the record, however, the system does not show widgets for modules that the users do not have permissions.
 
-Dostęp do widżetów jest określany na trzech warstwach [pulpit, moduł, rekord] ale tylko na dwóch pierwszych warstwach możemy przypisywać kto jakie widżety widzi i w jaki sposób może nimi zarządzać, natomiast widżety na trzeciej warstwie są automatycznie kontrolowane przez system i dostępne dla każdego która ma dostęp do rekordu [przy czym system nie pokazuje widżetów dla modułów do których nie mamy uprawnień].
+A very important feature of widgets is that they do not show anything that the user does not have the permission to see. Even if we create a widget that shows all the data in the module, each user will only see the data they have access to.
 
-Bardzo ważną cechą widżetów jest to, że nie pokazują one nic, do czego użytkownik nie ma uprawnień. Jeżeli nawet utworzymy widżet, który pokazuje wszystkie dane w module, to inny użytkownik który ma ten sam widżet dostępny, będzie w nim widział tylko te dane do których ma rzeczywiście dostęp.
+## Safety mechanisms
 
-## Mechanizmy zabezpieczające
+### Change permissions
 
-### Zmiana uprawnień
+Changing permissions to any elements of the system is performed in real time and does not require the user to relog for the changes to take effect.
 
-Zmiana uprawnień do dowolnych elementów systemu jest realizowana w czasie rzeczywistym i nie wymaga od użytkownika przelogowania się, aby zmiany zadziałały.
+### Permission inspector
 
-### Inspektor uprawnień
+The permission inspector mechanism, in addition to verifying data permissions, also presents permissions to view, edit, create and delete, which means that you can quickly check at the user's level what permissions they have been granted.
 
-Mechanizm inspektora uprawnień oprócz weryfikacji uprawnień do danych, prezentuje również uprawnienia do przeglądania, edycji, tworzenia i usuwania co oznacza, że można w szybki sposób sprawdzić z poziomu użytkownika jakie uprawnienia ma przydzielone.
+### Central permission supervision system
 
-### Centralny system nadzorujący uprawnienia
-
-YetiForce posiada jeden centralny system, który weryfikuje uprawnienia do każdego elementu. Nie ma znaczenia czy importujesz dane, komunikujesz się przez API czy też próbujesz zmodyfikować coś za pomocą przycisku [np. zmiana statusu], każdorazowo system sprawdza czy na pewno użytkownik ma wszystkie konieczne uprawnienia do wykonania operacji.
+YetiForce has one central system that verifies permissions for each element. It does not matter if you are importing data, communicating via API or trying to modify something with a button (e.g. status change), each time the system checks whether the user has all the necessary permissions to perform the operation.
