@@ -52,8 +52,7 @@ import DocCardList from '@theme/DocCardList';
 
   :::warning
   
-  Due to security reasons, we recommend running each version of the YetiForce system (PROD and TEST) on a separate/dedicated user of the operating system (preferably on a separate server), e.g. yfprod, yftest.
-   We do not recommend using one operating system user for several applications/websites.
+  Due to security reasons, we recommend running each version of the YetiForce system (PROD and TEST) on a separate/dedicated user of the operating system (preferably on a separate server), e.g. yfprod, yftest. We do not recommend using one operating system user for several applications/websites.
   
   :::
 
