@@ -1,9 +1,9 @@
 ---
-title: How to configure Portal
-description: One of the elements of the portal installation is to configure the system so that the portal is ready for use.
+title: Jak skonfigurować portal
+description: Jednym z elementów instalacji portalu jest skonfigurowanie systemu, tak aby portal był gotowy do użycia.
 keywords:
   - YetiForce
-  - How to configure
+  - Jak to skonfigurować
   - portal
   - Klient
   - YetiForcePortal2
@@ -12,32 +12,32 @@ tags:
   - YetiForcePortal2
 ---
 
-One of the elements of the portal installation is to configure the system so that the portal is ready for use. The tutorial shows how to properly configure your system.
+Jednym z elementów instalacji portalu jest skonfigurowanie systemu, tak aby portal był gotowy do użycia. Poniższy tutorial pokazuje jak prawidłowo skonfigurować system.
 
 ## Profile
 
-Create a new profile that will specify what permissions are granted to the portal users. Profile management can be found in [`Software configuration → Permissions → Profiles`](/administrator-guides/permissions/profiles/).
+Utwórz nowy profil, który określi jakie uprawnienia są przyznawane użytkownikom portalu. Profilami zarządzać można w [`Konfiguracja systemu → Uprawnienia → Profile`](/administrator-guides/permissions/profiles/).
 
 ![profiles.jpg](profiles.jpg)
 
-## Roles
+## Role
 
-The profile must be assigned a new role. To do that, go to [`Software configuration → Permissions → Roles`](/administrator-guides/permissions/roles/) and create a new role using the profile you created earlier.
+Profil musi być przypisany do nowej roli. W tym celu przejdź do [`Konfiguracja systemu → Uprawnienia → Role`](/administrator-guides/permissions/roles/) i utwórz nową rolę z wykorzystaniem wcześniej utworzonego profilu.
 
 ![roles.jpg](roles.jpg)
 
-## Users
+## Użytkownicy
 
-Create a new user with the role you created in the previous step. In order to do that go to [`Software configuration → Permissions → Users`](/administrator-guides/permissions/users/). The user will be needed to define permissions and will be the default owner for newly created records.
+Utwórz nowego użytkownika z rolą, którą utworzyłeś w poprzednim kroku. Aby to zrobić, przejdź do [`Konfiguracja systemu → Uprawnienia → Użytkownicy`](/administrator-guides/permissions/users/). Użytkownik będzie potrzebny do zdefiniowania uprawnień i będzie domyślnym właścicielem nowo utworzonych rekordów.
 
 ![users.jpg](users.jpg)
 
 ## Web service - Aplikacje
 
-The next step is adding an application for API in [`Software configuration → Integration → Web service - Applications`](/administrator-guides/integration/webservice-apps/). The application type should be set to `Webservice Premium`. It will allow you to use an API container called Webservice Premium. A complete documentation can be found at https://doc.yetiforce.com/api
+Następnym krokiem jest dodanie aplikacji dla API w [`Konfiguracja systemu → Integracja → Web service - Aplikacje`](/administrator-guides/integration/webservice-apps/). Typ aplikacji powinien być ustawiony na `Webservice Premium`. Pozwoli to na używanie kontenera API o nazwie Webservice Premium. Pełną dokumentację można znaleźć na https://doc.yetiforce.com/api
 
 :::warning
-`Webservice Premium API` is a paid feature, it requires purchasing [YetiForce Webservice Premium](https://yetiforce.com/en/yetiforce-webservice-premium)
+`Webservice Premium API` jest płatną funkcją i wymaga zakupu [YetiForce Webservice Premium](https://yetiforce.com/en/yetiforce-webservice-premium)
 :::
 
 ![wsa-1.jpg](wsa-1.jpg)
@@ -46,64 +46,64 @@ The next step is adding an application for API in [`Software configuration → I
 
 ## Menu
 
-Another element critical for the portal to work properly is the menu. You can find the configuration panel for the menu in [`Software configuration → Standard modules → Menu - Configuration`](/administrator-guides/standard-modules/menu/).
+Innym kluczowym elementem prawidłowego funkcjonowania portalu jest menu. Panel konfiguracyjny menu można znaleźć w [`Konfiguracja systemu → Moduły standardowe → Menu - Konfiguracja`](/administrator-guides/standard-modules/menu/).
 
-Thanks to creating a separate menu accessible exclusively to portal you can limit the number of modules available to portal users.
+Dzięki utworzeniu oddzielnego menu dostępnego wyłącznie dla portalu można ograniczyć liczbę modułów dostępnych dla użytkowników portalu.
 
-:::warning
-For the modules to be visible, you have to grant permissions in profiles, otherwise the modules won't show up in the menu.
+::warning  
+Aby moduły były widoczne, musisz przyznać uprawnienia w profilach, w przeciwnym razie moduły nie pojawią się w menu.
 :::
 
 ![menu.jpg](menu.jpg)
 
-## Record access fields
+## Pola dostępowe do rekordu
 
-:::warning
-This step is only required for webservice users whose type is different than `permissions based on user`.
+::warning  
+Ten krok jest wymagany tylko dla użytkowników webservice, o typie innym niż `Uprawnienia na podstawie użytkownika`.
 :::
 
-When API users are assigned to contacts, it's required to add a field that will allow you to control access to records. Records won't be available in the portal unless this field is configured.
+Gdy użytkownicy API są przypisani do kontaktów, wymagane jest dodanie pola, które pozwoli kontrolować dostęp do rekordów. Rekordy nie będą dostępne w portalu, jeśli to pole nie będzie skonfigurowane.
 
-This solution allows you to have several portals/webservice apps and control record availability for them separately.
+To rozwiązanie pozwala na posiadanie kilku portalów/aplikacji webservice i kontrolowanie dostępności rekordów dla każdego z nich osobno.
 
-:::info
-Each module that should be available in the portal must contain this field.
+::info  
+Każdy moduł, który powinien być dostępny w portalu musi zawierać to pole.
 :::
 
-### Field configuration can be found in [`Software configuration → Standard modules → Edit fields`](/administrator-guides/standard-modules/edit-fields/).
+### Konfiguracja pól znajduje się w [`Konfiguracja systemu→ Moduły standardowe → Moduły-pola`](/administrator-guides/standard-modules/edit-fields/).
 
 ![field.jpg](field.jpg)
 
-### Manage record access in portal
+### Zarządzaj dostępem do rekordów w portalu
 
 ![access.jpg](access.jpg)
 
-## Visibility and enforcing default values only for portal/API
+## Widoczność i wymuszanie wartości domyślnych tylko dla portalu/API
 
-Enabling this option will cause all records created from portal/API to have the same value set by default.
+Włączenie tej opcji spowoduje, że wszystkie rekordy utworzone z portalu/API będą mieć domyślnie tę samą wartość.
 
-Portal field management can be found in [`Software configuration → Standard modules → Edit fields`](/administrator-guides/standard-modules/edit-fields/)
+Zarządzanie polami portalu można znaleźć w [`Konfiguracja systemu → Moduły standardowe → Moduły - pola"`](/administrator-guides/standard-modules/edit-fields/)
 
 ![field-2.jpg](field-2.jpg)
 
 ![field-3.jpg](field-3.jpg)
 
-## Permissions for picklist values
+## Uprawnienia dla wartości pól słownikowych
 
-Available values should also be specified for picklists based on roles. Without this setting, the user won't see the selection list for picklists based on roles when creating or editing records.
+Dostępne wartości powinny być również określone dla pól słownikowych na podstawie ról. Bez tego ustawienia, użytkownik nie będzie widział listy wyboru dla pól słownikowych na podstawie ról podczas tworzenia lub edycji rekordów.
 
-The panel can be found in [`Software configuration → Standard modules → Fields – Picklists`](/administrator-guides/standard-modules/fields-picklists/)
+Panel można znaleźć w [`Konfiguracja systemu → Moduły standardowe → Pola – słowniki`](/administrator-guides/standard-modules/fields-picklists/)
 
 ![picklists.jpg](picklists.jpg)
 
-## Web service - Users
+## Web service - Użytkownicy
 
 :::warning
-For webservice users whose type is different than `permissions based on user` an Account and Contact should be created in advance.
+Dla użytkowników webservice, których typ jest inny niż `na podstawie użytkownika` konto i kontakt powinny zostać utworzone wcześniej.
 :::
 
-The last step is to add portal users, which can be done in [`System configuration > Integration > Web service - Users`](/administrator-guides/integration/webservice-users/).
+Ostatnim krokiem jest dodawanie użytkowników portalu, co można zrobić w [`Konfiguracja systemu → Integracja → Webservice - Użytkownicy`](/administrator-guides/integration/webservice-users/).
 
-The password can only be set from the system while creating a user, the portal only offers an option to change or reset the password.
+Hasło można ustawić tylko z systemu podczas tworzenia użytkownika, portal oferuje tylko możliwość zmiany lub zresetowania hasła.
 
 ![wsu-1.jpg](wsu-1.jpg)
