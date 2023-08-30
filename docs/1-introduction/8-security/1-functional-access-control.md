@@ -32,6 +32,7 @@ You can define permissions for each element of the system, e.g. whether the fiel
 ### Access to modules, actions, fields
 
 Access to a module, action, or field is defined at the profile level, meaning that a user assigned to a specific role inherits the profiles that have been set in the role. Assigning a profile to a user is not done directly, but indirectly by assigning it to a role.
+
 You can specify general permissions on the module layer in the profile, i.e.:
 
 - Preview
