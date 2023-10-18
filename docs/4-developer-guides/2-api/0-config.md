@@ -25,6 +25,18 @@ public static $enabledServices = ['webservice'];
 
 ## Utworzenie aplikacji API
 
+Aby określić jakiego rodzaju usługi będą aktywne nalezy dodać aplikacje o odpowiednim typie.
+
 W panelu administracyjnym [Web service - Applications](administrator-guides/integration/webservice-apps/) nalezy dodać usługi z których chcemy korzystać.
 
 ## Konfiguracja żywotność sesji
+
+[config/Security.php](https://doc.yetiforce.com/code/classes/Config-Security.html#property_apiLifetimeSessionCreate)
+
+```php
+/** Maximum session lifetime from the time it was created (in minutes) */
+public static $apiLifetimeSessionCreate = 1440;
+
+/** Maximum session lifetime since the last modification (in minutes) */
+public static $apiLifetimeSessionUpdate = 240;
+```
