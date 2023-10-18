@@ -16,6 +16,8 @@ tags:
 preview: panel.jpg
 ---
 
+System YetiForce daje użytkownikom wiele udogodnień. Jednym z nim jest możliwość integracji systemu z systemem map Google lub z OpenCage Geocoder, co pozwala później systemowi na "podpowiadanie" użytkownikowi, kiedy ten wpisuje adresy do bazy (np. adres kontrahenta).
+
 ![panel](panel.jpg)
 
 ## Lista dostawców
