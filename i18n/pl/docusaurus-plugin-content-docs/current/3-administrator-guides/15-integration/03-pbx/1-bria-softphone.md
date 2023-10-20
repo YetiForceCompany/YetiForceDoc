@@ -19,6 +19,16 @@ Integracja z centralą telefoniczną za pośrednictwem aplikacji Bria Softphone.
 
 Połączenie z Bria Softphone bazuje na `Bria Desktop API`, dzięki któremu użytkownik w czasie rzeczywistym otrzymuje informacje o połączeniach.
 
+Zalety i możliwości integracji:
+
+- Kompatybilny z wiodącymi na rynku serwerami połączeń lub usługami VoIP (https://www.counterpath.com/international-voip-providers/)
+- Dedykowana aplikacja dla użytkownika
+- możliwość wybierania numeru telefonu z okna systemu YetiForce
+- synchronizacja historii wszystkich połączeń
+- graficzne prezentowanie stanu twojego telefonu
+- Obsługiwane plany: Bria Solo, Bria Teams , Bria Enterprise (https://www.counterpath.com/product-comparison/) nie obsługuje planu "Bria Solo Free"
+- integracja z YetiFOrce za pomocą aktywnego okna przeglądarki
+
 ![bria-softphone-1.png](bria-softphone-1.png)
 
 ## Prezentacja wideo

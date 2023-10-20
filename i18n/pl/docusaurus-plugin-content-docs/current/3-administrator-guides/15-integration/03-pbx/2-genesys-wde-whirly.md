@@ -15,9 +15,29 @@ preview: genesys-wde-whirly.jpg
 :::tip This functionality is available for YetiForce version 7.0 and later
 :::
 
+:::warning Do integracji wykorzystuje dedykowane rozszerzenie od firmy Whirly, które obsługuje funkcjonujące procesy w systemie Genesys.
+:::
+
 Integracja z centralą telefoniczną za pośrednictwem aplikacji Genesys Workspace Desktop Edition.
 
+Integracja z platformą Genesys Contact Center wymaga dedykowanego wdrożenia integracji, ponieważ jest uzależniona od procesów funkcjonujących w danej firmie.
+
+Zalety i możliwości integracji:
+
+- działa niezależnie od zalogowanego użytkownika
+- integruje się z dedykowanym API
+- dynamiczne prezentuje informacje znajdujące się w systemie YetiForce podczas odebrania połączenia
+- obsługa i rejestrowanie zgód RODO zaakceptowanych na IVR
+- obsługa połączeń telefonicznych, wiadomości email, wiadomości messenger, Chat na stronie WWW, kampanii SMS/Mail/telefonicznych
+- obsługuje ankiety IVR
+- wyszukiwanie firm i kontaktów po przekazanych informacjach np. nip + token, numer telefonu, email, login messenger
+- bezpieczna komunikacja za pomocą HMAC signature
+- historia wszystkich interakcji z firmą i kontaktami
+- możliwość automatycznego tworzenia danych
+
 ![genesys-wde-whirly.jpg](genesys-wde-whirly.jpg)
+
+![genesys-crm.jpg](genesys-crm.jpg)
 
 ## Aktywuj
 

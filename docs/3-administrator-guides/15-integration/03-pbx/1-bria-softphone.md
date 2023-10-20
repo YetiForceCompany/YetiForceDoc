@@ -19,6 +19,16 @@ PBX integration via the Bria Softphone application.
 
 The integration with Bria Softphone is based on `Bria Desktop API`, that allows the user to to receive information on calls in real time.
 
+Advantages and capabilities:
+
+- Compatible with market leading call servers or VoIP services (https://www.counterpath.com/international-voip-providers/)
+- Dedicated application for the user
+- ability to dial a phone number from the YetiForce system window
+- synchronization of all call history
+- graphical presentation of your phone's status
+- Supported plans: Bria Solo, Bria Teams, Bria Enterprise (https://www.counterpath.com/product-comparison/) does not support "Bria Solo Free" plan
+- integration with YetiForce via an active browser window
+
 ![bria-softphone-1.png](bria-softphone-1.png)
 
 ## Video guide

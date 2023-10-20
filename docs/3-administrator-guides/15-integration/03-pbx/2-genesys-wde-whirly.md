@@ -15,7 +15,25 @@ preview: genesys-wde-whirly.jpg
 :::tip This functionality is available for YetiForce version 7.0 and later
 :::
 
+:::warning A dedicated extension from Whirly that supports existing processes in the Genesys system is used for the integration.
+:::
+
 PBX integration via Genesys Workspace Desktop Edition.
+
+Integration with the Genesys Contact Center platform requires dedicated integration implementation as it depends on the processes present in each company.
+
+Advantages and capabilities:
+
+- works regardless of the logged in user
+- integrates with a dedicated API
+- dynamically presents information available in the YetiForce system when receiving a call
+- handles and records GDPR consents accepted on IVR
+- handles telephone calls, emails, messenger messages, website chat, SMS/Mail/telephone campaigns
+- supports IVR surveys
+- searching for companies and contacts based on the information provided, e.g., tax identification number + token, telephone number, email, messenger login
+- secure communication using HMAC signature
+- history of all interactions with the company and contacts
+- ability to automatically create data
 
 ![genesys-wde-whirly.jpg](genesys-wde-whirly.jpg)
 
