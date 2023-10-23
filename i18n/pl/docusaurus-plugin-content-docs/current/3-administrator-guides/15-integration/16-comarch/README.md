@@ -1,6 +1,6 @@
 ---
 title: Comarch
-description: Integration with the Comarch ERP system
+description: Integracja z systemem Comarch ERP
 keywords:
   - Integracja
   - Comarch
@@ -12,7 +12,7 @@ tags:
   - Comarch
 ---
 
-The integration between YetiForce and Comarch ERP guarantees fast and convenient two-way data synchronization, which allows for even more effective customer management in CRM.
+Integracja pomiędzy YetiForce i Comarch ERP gwarantuje szybką i wygodną dwustronną synchronizację danych, co pozwala na jeszcze skuteczniejsze zarządzanie klientami w CRM.
 
 ## Comarch ERP XL
 

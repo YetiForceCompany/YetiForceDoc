@@ -53,7 +53,8 @@ import DocCardList from '@theme/DocCardList';
 
   Ze względów bezpieczeństwa, zalecamy uruchomienie każdej wersji systemu YetiForce (PROD i TEST) na osobnym/dedykowanym użytkowniku systemu operacyjnego (najlepiej na oddzielnym serwerze), np. yfprod, yftest. Nie zalecamy używania jednego użytkownika systemu operacyjnego dla kilku aplikacji/stron internetowych.
 
-  :::
+
+:::
 
 - **Serwer WWW**
 
@@ -64,7 +65,8 @@ import DocCardList from '@theme/DocCardList';
 
     System YetiForce nie działa prawidłowo z rozszerzeniem WWW ModSecurity
 
-    :::
+
+:::
 
 - **Baza danych**
 

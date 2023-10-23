@@ -22,11 +22,11 @@ Jedną z wielu zalet oprogramowania open source jest to, że każdy może przycz
 
 ## Poznaj współtwórców YetiForce
 
-Below you can find all the people who contributed to developing the YetiForce System, YetiForce Portal, and Yetiforce Documentation by submitting their contributions to our GitHub repository.
+Poniżej znajdziesz wszystkich, którzy przyczynili się do rozwoju systemu YetiForce, portalu YetiForce, i Dokumentacji YetiForce w naszym repozytorium GitHub.
 
 **Dziękujemy za Waszą ciężką pracę!**
 
-### YetiForce Contributors
+### Współtwórcy YetiForce
 
 <a class="no-shadow" href="https://github.com/YetiForceCompany/YetiForceCRM/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=YetiForceCompany/YetiForceCRM"   />

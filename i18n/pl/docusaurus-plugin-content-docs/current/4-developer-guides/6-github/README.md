@@ -1,18 +1,18 @@
 ---
 title: Github
-description: Najważniejsze informacje dotyczące zgłaszania błędów w funkcjonowaniu YetiForce poprzez platformę GitHub
+description: Informacje o zgłaszaniu błędów w systemie YetiForce za pośrednictwem GitHub.
 keywords:
   - Github
-  - zgłaszanie
+  - zgłoszenie
   - problemów
-  - błędów
+  - błędy
   - YetiForce
 tags:
   - dane dostępowe
   - Github
 ---
 
-Najważniejsze informacje dotyczące zgłaszania błędów w funkcjonowaniu YetiForce poprzez platformę GitHub, oraz informacje dotyczące zarządzania zgłoszeniami i pomysłami na rozwój systemu.
+Najważniejsze informacje o zgłaszaniu błędów napotkanych w YetiForce za pośrednictwem platformy GitHub, a także informacje na temat zarządzania zgłoszeniami i pomysłami na rozwój systemu.
 
 import DocCardList from '@theme/DocCardList';
 

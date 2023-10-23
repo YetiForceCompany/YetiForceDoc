@@ -20,7 +20,7 @@ W tym artykule zaprezentowano jak szybko zainstalować [YetiForce Portal 2](http
 
 :::tip
 
-**Make sure to read all the information below before attempting to install YetiForce Portal2**
+**Koniecznie przeczytaj wszystkie poniższe informacje, zanim przystąpisz do instalacji YetiForce Portal2**
 
 :::
 
@@ -44,25 +44,25 @@ import ReactPlayer from 'react-player';
 
 ## Wymagania
 
-Przed rozpoczęciem instalacji sprawdź czy twój serwer jest zgodny z wymaganiami, YetiForce Portal ma takie same jak [YetiForce](/introduction/requirements/)
+Przed instalacją sprawdź, czy serwer spełnia wszystkie wymagania. Portal ma te same wymagania co [YetiForce system](/introduction/requirements/)
 
 :::important
-Osoba instalująca Portal powinna mieć przynajmniej podstawową wiedzę w zakresie zarządzania serwerem WWW, baz danych, czy też uprawnień na serwerze. 99% problemów instalacyjnych wynika z niewystarczającej wiedzy osób, które instalują aplikację. Jeżeli nie jesteś pewien czy sobie poradzisz, poproś kogoś z odpowiednią wiedzą informatyczną. Cała operacja instalacji zajmie maksymalnie 2 - 10 minut.
+Osoba, która zamierza instalować portal, powinna mieć co najmniej podstawową wiedzę na temat serwerów internetowych, baz danych i uprawnień serwera. 99% problemów instalacyjnych wynika z niewystarczającej wiedzy osób, które instalują aplikację. Jeśli nie jesteś pewien, czy jesteś w stanie samodzielnie przeprowadzić proces instalacji, poproś o pomoc kogoś posiadającego odpowiednią wiedzę z zakresu IT. Cały proces instalacji zajmie od 2 do 10 minut.
 :::
 
-Uproszczona instrukcja instalacji znajduje się na [github YetiForcePortal2](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
+Uproszczona instrukcja instalacji znajduje się na [githubie YetiForcePortal2](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
 
 ## Instalacja YetiForcePortal2
 
-Instalacja Portalu odbywa się tak samo jak instalacja systemu YetiForce - za pomocą kreatora przez przeglądarkę.
+Portal instaluje się tak samo, jak system YetiForce - przy użyciu kreatora w przeglądarce.
 
-### Krok 1 - Pobierz i wgraj pliki systemu
+### Krok 1 - Pobierz i wgraj pliki systemowe
 
-W pierwszej kolejności przygotuj pliki instalacyjne. Pobierz YetiForce i najnowszą wersję Portalu z naszych [oficjalnych źródeł](introduction/download).
+W pierwszej kolejności przygotuj pliki instalacyjne. Portal pobierzesz z naszych [oficjalnych źródeł](introduction/download).
 
 :::warning
 
-Zalecamy pobranie wersji oznaczonych jako "complete", na przykład `YetiForcePortal2-6.2-complete.zip`. Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`.
+Zalecamy pobranie wersji `complete`, np. `YetiForcePortal2-6.2-complete.zip`. Jeśli pobierasz wersję, która nie jest oznaczona jako `complete`, przed zainstalowaniem systemu musisz zainstalować biblioteki za pomocą `yarn` i `composer`.
 
 Ważna jest kolejność - najpierw `yarn`, potem `composer`.
 
@@ -70,9 +70,9 @@ Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/Yeti
 
 :::
 
-- Pobrany plik ZIP rozpakuj, np. za pomocą programu 7-Zip.
-- Katalog z Portalem, który otrzymasz po rozpakowaniu pliku ZIP, skopiuj na serwer WWW, np. za pomocą programu FileZilla, WinSCP.
-- Następnie postępuj zgodnie z kreatorem, którego wywołasz z poziomu WWW tam, gdzie skopiowałeś pliki YetiForce Portal.
+- Rozpakuj plik, używając np. 7-Zip.
+- Skopiuj katalog na serwer, używając np. FileZilla, WinSCP.
+- Uruchom kreatora instalacji z poziomu web (gdzie skopiowałeś pliki portalu YetiForce) i wykonaj podane kroki.
 
 Lub z konsoli bash:
 
@@ -84,13 +84,13 @@ rm YetiForcePortal2.zip
 chown -R yfprod:yfprod /home/yfprod/html/
 ```
 
-### Krok 2 - Uruchomienie kreatora instalacji
+### Krok 2 - Uruchom kreatora instalacji
 
-Uruchom w oknie przeglądarki adres docelowy Twojego Portalu, system powinien pokazać kreator instalacji. Jeśli nie widzisz kreatora, to może oznaczać, że wystąpiły jakieś problemy. Możesz spróbować uruchomić adres: **SITE_URL**/index.php?module=Install&view=Install np. https://gitdevportal.yetiforce.com/index.php?module=Install&view=Install
+Uruchom adres docelowy portalu w oknie przeglądarki, system powinien pokazać kreatora instalacji. Jeśli tego nie zrobi, możliwe, że wystąpiły jakieś problemy. Możesz spróbować przejść do adresu: **SITE_URL**/index.php?module=Install&view=Install np. https://gitdevportal.yetiforce.com/index.php?module=Install&view=Install
 
 ![step-1.jpg](step-1.jpg)
 
-Na ekranie startowym w kreatorze instalacji dostępna jest możliwość konfiguracji języka instalacji.
+Możesz wybrać język instalacji na ekranie początkowym.
 
 ### Krok 3 - Wprowadź dane dostępowe
 
@@ -98,15 +98,15 @@ Na ekranie startowym w kreatorze instalacji dostępna jest możliwość konfigur
 
 **Ten krok wymaga aktywnego dostępu API !!!**
 
-W razie problemów zapoznaj się z dokumentacją oraz informacjami na [github](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
+W przypadku problemów zapoznaj się z dokumentacją i informacjami dostępnymi na[GitHub](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
 
-Dane dostępowe można znaleźć w panelu [`Konfiguracja systemu → Integracja → Web service - Aplikacje`](/administrator-guides/integration/webservice-apps/) w systemie YetiForce.
+Dane dostępowe znajdziesz w [ Konfiguracja systemu → Integracje → Webservice - Aplikacje](/administrator-guides/integration/webservice-apps/) w systemie YetiForce
 :::
 
 ![step-3.jpg](step-3.jpg)
 
 ### Krok 4 - Strona logowania portalu
 
-Po kliknięciu `Zainstaluj` pojawi się strona logowania. Enter the login data created in the panel [`System configuration > Integration > Web service - Users`](/administrator-guides/integration/webservice-users/)
+Po kliknięciu `Zainstaluj` pojawi się strona logowania. Wprowadź dane logowania utworzone w panelu [`Konfiguracja systemu → Integracja → Webservice - Użytkownicy`](/administrator-guides/integration/webservice-users/)
 
 ![step-4.jpg](step-4.jpg)

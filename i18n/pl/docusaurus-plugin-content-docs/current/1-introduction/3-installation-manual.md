@@ -22,7 +22,7 @@ Przed instalacją sprawdź czy twój serwer jest zgodny z wymaganiami: [Wymagani
 
 :::important
 
-A person who is going to install the system should have at least basic knowledge of web servers, databases, and server permissions. 99% problemów instalacyjnych wynika z niewystarczającej wiedzy osób, które instalują aplikację. Jeśli nie jesteś pewien, czy jesteś w stanie samodzielnie przeprowadzić proces instalacji, poproś o pomoc kogoś posiadającego odpowiednią wiedzę z zakresu IT. Cała operacja instalacji zajmie maksymalnie 2 - 30 minut. Instalacja YetiForce jest podobna do instalacji takich aplikacji jak: WordPress, Joomla, Drupal. Różnice pomiędzy poszczególnymi narzędziami są niewielkie. Tak więc, jeżeli poradziłeś sobie z instalacją systemu klasy CMS, to poradzisz sobie również z YetiForce.
+Osoba, która instaluje system, powinna mieć co najmniej podstawową wiedzę na temat serwerów, baz danych i uprawnień serwera. 99% problemów instalacyjnych wynika z niewystarczającej wiedzy osób, które instalują aplikację. Jeśli nie jesteś pewien, czy jesteś w stanie samodzielnie przeprowadzić proces instalacji, poproś o pomoc kogoś posiadającego odpowiednią wiedzę z zakresu IT. Cała operacja instalacji zajmie maksymalnie 2 - 30 minut. Instalacja YetiForce jest podobna do instalacji takich aplikacji jak: WordPress, Joomla, Drupal. Różnice pomiędzy poszczególnymi narzędziami są niewielkie. Tak więc, jeżeli poradziłeś sobie z instalacją systemu klasy CMS, to poradzisz sobie również z YetiForce.
 
 :::
 
@@ -51,7 +51,7 @@ chown -R yfprod:yfprod /home/yfprod/html/
 
 ## Krok 1 - Uruchomienie kreatora instalacji
 
-Uruchom w oknie przeglądarki adres docelowy twojego systemu - powinien pokazać się kreator instalacji. If it doesn't, there may be some problems, you can try running the address: **SITE_URL**/install/Install.php eg. https://gitdeveloper.yetiforce.com/install/Install.php
+Uruchom w oknie przeglądarki adres docelowy twojego systemu - powinien pokazać się kreator instalacji. Jeśli nie pokazał się kreator, to może znaczyć, że wystąpiły jakieś problemy, możesz spróbować uruchomić adres: **SITE_URL**/install/Install.php np. https://gitdeveloper.yetiforce.com/install/Install.php
 
 ![step 1](install-1.png)
 
@@ -65,23 +65,23 @@ W drugim kroku kreator wymaga zaakceptowania licencji. Licencja YetiForce jest b
 
 ## Krok 3 - Wybierz rodzaj instalacji
 
-Zdecyduj, gdzie chcesz zainstalować system - możesz wybrać własny serwer albo dokonać zakupu naszego hostingu lub chmury. If you'd like to use our services, after clicking the "Buy" button, you will be able to make the payment.
+Zdecyduj, gdzie chcesz zainstalować system - możesz wybrać własny serwer albo dokonać zakupu naszego hostingu lub chmury. Jeśli chcesz korzystać z naszych usług, po kliknięciu przycisku "Kup", będziesz mógł dokonać płatności.
 
 ![step 3](install-3.png)
 
 ## Krok 4 - Weryfikacja konfiguracji serwera
 
-In the fourth step, you can find your current web server configuration compared to the requirements of YetiForce (what needs to be changed and to what values to set). Należy pamiętać, że w zależności od wymagań, jakie się stawia aplikacji CRM, konfiguracja ta może ulec zmianom. Firma wdrożeniowa powinna uwzględnić zmiany we własnym zakresie. For example, if you generate large reports that have a longer generating time than the maximum time set in the `max_execution_time` parameter, then it is necessary to set the parameters in such a way that the time of executing a script is always longer than the time for generating a report. W przeciwnym wypadku taki raport może się nie wygenerować.
+W czwartym kroku możesz znaleźć aktualną konfigurację serwera w porównaniu z wymaganiami YetiForce (wraz z informacją co należy zmienić i jakie wartości należy ustawić). Należy pamiętać, że w zależności od wymagań, jakie się stawia aplikacji CRM, konfiguracja ta może ulec zmianom. Firma wdrożeniowa powinna uwzględnić zmiany we własnym zakresie. Na przykład jeśli generujesz duże raporty, które mają dłuższy czas generowania niż maksymalny czas określony w parametrze `max_execution_time`, konieczne jest ustawienie parametrów w taki sposób, aby czas wykonania skryptu był zawsze dłuższy niż czas potrzebny na sporządzenie raportu. W przeciwnym wypadku taki raport może się nie wygenerować.
 
-Dla pewności, poproś swojego administratora, aby zapoznał się z tymi [wymaganiami dla serwerów WWW](/introduction/requirements/). If all required parameters are not met, and you attempt to proceed with the installation, the application will display a warning message.
+Dla pewności, poproś swojego administratora, aby zapoznał się z tymi [wymaganiami dla serwerów WWW](/introduction/requirements/). Jeśli mimo niespełnienia wszystkich wymaganych parametrów zdecydujesz się kontynuować instalację, aplikacja wyświetli komunikat ostrzegawczy.
 
-Once you are aware of the risks associated with incorrect web server configuration you can click "OK", and move to the next step.
+Po zapoznaniu się z ryzykiem związanym z nieprawidłową konfiguracją serwera możesz kliknąć "OK" i przejść do następnego kroku.
 
 ![step 4](install-4.png)
 
 ## Krok 5 - Konfiguracja danych dostępowych
 
-In this step, you need to enter access data to a database as well as set output parameters for the system. Na podstawie tych danych zostanie utworzona baza danych (gdy ta opcja została aktywowana). Na podstawie tych danych system utworzy bazę danych (o ile opcja ta została aktywowana), wgra strukturę bazy danych razem z podstawowymi danymi oraz utworzy podstawowe konto administratora, do którego będziesz mógł się zalogować po instalacji.
+W tym kroku musisz wprowadzić dane dostępowe do bazy danych oraz ustawić parametry wyjściowe dla systemu. Na podstawie tych danych zostanie utworzona baza danych (gdy ta opcja została aktywowana). Na podstawie tych danych system utworzy bazę danych (o ile opcja ta została aktywowana), wgra strukturę bazy danych razem z podstawowymi danymi oraz utworzy podstawowe konto administratora, do którego będziesz mógł się zalogować po instalacji.
 
 Jeżeli wprowadzisz nieprawidłowe dane dostępowe do bazy danych pokaże się błąd.
 
@@ -109,31 +109,31 @@ Jeżeli instalacja zostanie wykonana prawidłowo, zostaniesz automatycznie przen
 
 ![step 9](install-9.png)
 
-## The installation process has failed
+## Proces instalacji nie powiódł się
 
-What to do when the system shows the message `Invalid session ID` at the beginning of the installation.
+Co zrobić, gdy system pokazuje komunikat `Invalid session ID` na początku instalacji.
 
 ![install-failed-10](install-10.png)
 
 ![install-failed-11](install-11.png)
 
-### What does the message `Invalid session ID` mean?
+### Co oznacza wiadomość `Invalid session ID`?
 
-"Sent session ID does not match the one received from the server. We recommend clearing your browser cache, and if that does not fix the problem, we recommend correcting your server configuration."
+"Wysłany ID sesji nie jest zgodny z otrzymanym z serwera. Zalecamy usunięcie pamięci podręcznej przeglądarki, a jeśli to nie naprawi problemu, zalecamy poprawienie konfiguracji serwera."
 
-The error often appears when there are (or there were) several instances of different system versions on one address. Different system versions have different cookie configurations, and therefore sometimes the session ID cannot be updated during installation.
+Błąd pojawia się często, gdy na jednym adresie jest lub było kilka instancji systemu w różnych wersjach. Różne wersje CRM mają różną konfigurację cookie i dlatego czasem podczas instalacji nie można zaktualizować ID sesji.
 
-This can be checked in the browser console:
+Można to sprawdzić w konsoli przeglądarki:
 
 ![install-failed-12](install-12.png)
 
-### How to repair invalid session ID
+### Jak naprawić nieprawidłowy identyfikator sesji
 
-The repair is simple, it is required to delete the browser cache or delete all cookies for the domain (which the system is running on).
+Naprawa jest prosta, wystarczy usunąć pamięć podręczną przeglądarki lub usunąć wszystkie cookies dla domeny (na której jest uruchamiany system).
 
 :::warning
 
-Pay attention to delete cookies for HTTP and HTTPS!!!
+Zwróć uwagę na usunięcie ciasteczek dla HTTP i HTTPS!!!
 
 :::
 
@@ -145,8 +145,8 @@ Pay attention to delete cookies for HTTP and HTTPS!!!
 
 ![install-failed-14](install-14.png)
 
-### How to clear the browser cache for only one domain
+### Jak wyczyścić pamięć podręczną przeglądarki tylko dla jednej domeny
 
-You can easily remove all browser cache, but how to do it for one domain only so as not to lose all data?
+Możesz łatwo usunąć pamięć podręczną przeglądarki, ale jak to zrobić tylko dla jednej domeny, aby nie stracić wszystkich danych?
 
-In the development tools, it is possible to view and delete the cache. Each browser may have removal options elsewhere. More details can be found in the article [How to clear browser cache?](/administrator-guides/faq/how-to-clear-browser-cache/)
+W narzędziach deweloperskich jest możliwość podejrzenia i usunięcia danych podręcznych. Opcje usuwania danych podręcznych znajdują się w różnych modułach konfiguracji przeglądarki, w zależności od rodzaju używanej przeglądarki. Więcej informacji można znaleźć w artykule [Jak wyczyścić pamięć podręczną przeglądarki?](/administrator-guides/faq/how-to-clear-browser-cache/)
