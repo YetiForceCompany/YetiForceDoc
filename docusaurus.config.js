@@ -63,29 +63,29 @@ module.exports = {
 						spec: 'https://gitdeveloper.yetiforce.com/api/ManageConsents.json',
 						url: 'https://gitdeveloper.yetiforce.com/api/ManageConsents.json'
 					},
-					{
-						id: 'PBX',
-						spec: 'https://gitdeveloper.yetiforce.com/api/PBX.yaml',
-						url: 'https://gitdeveloper.yetiforce.com/api/PBX.yaml'
-					},
+					// {
+					// 	id: 'PBX',
+					// 	spec: 'https://gitdeveloper.yetiforce.com/api/PBX.yaml',
+					// 	url: 'https://gitdeveloper.yetiforce.com/api/PBX.yaml'
+					// },
 					{
 						id: 'SMS',
 						spec: 'https://gitdeveloper.yetiforce.com/api/SMS.yaml',
 						url: 'https://gitdeveloper.yetiforce.com/api/SMS.yaml',
 						route: '/api2/SMS/'
-					},
-					{
-						id: 'WooCommerce',
-						spec: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
-						url: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
-						route: '/api2/WooCommerce/'
-					},
-					{
-						id: 'Token',
-						spec: 'https://gitdeveloper.yetiforce.com/api/Token.yaml',
-						url: 'https://gitdeveloper.yetiforce.com/api/Token.yaml',
-						route: '/api2/Token/'
 					}
+					// {
+					// 	id: 'WooCommerce',
+					// 	spec: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
+					// 	url: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
+					// 	route: '/api2/WooCommerce/'
+					// },
+					// {
+					// 	id: 'Token',
+					// 	spec: 'https://gitdeveloper.yetiforce.com/api/Token.yaml',
+					// 	url: 'https://gitdeveloper.yetiforce.com/api/Token.yaml',
+					// 	route: '/api2/Token/'
+					// }
 				]
 			}
 		]
