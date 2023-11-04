@@ -50,7 +50,7 @@ Innym kluczowym elementem prawidłowego funkcjonowania portalu jest menu. Panel 
 
 Dzięki utworzeniu oddzielnego menu dostępnego wyłącznie dla portalu można ograniczyć liczbę modułów dostępnych dla użytkowników portalu.
 
-::warning  
+:::warning
 Aby moduły były widoczne, musisz przyznać uprawnienia w profilach, w przeciwnym razie moduły nie pojawią się w menu.
 :::
 
@@ -58,7 +58,7 @@ Aby moduły były widoczne, musisz przyznać uprawnienia w profilach, w przeciwn
 
 ## Pola dostępowe do rekordu
 
-::warning  
+:::warning
 Ten krok jest wymagany tylko dla użytkowników webservice, o typie innym niż `Uprawnienia na podstawie użytkownika`.
 :::
 
@@ -66,7 +66,7 @@ Gdy użytkownicy API są przypisani do kontaktów, wymagane jest dodanie pola, k
 
 To rozwiązanie pozwala na posiadanie kilku portalów/aplikacji webservice i kontrolowanie dostępności rekordów dla każdego z nich osobno.
 
-::info  
+:::info
 Każdy moduł, który powinien być dostępny w portalu musi zawierać to pole.
 :::
 
