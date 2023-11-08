@@ -15,7 +15,7 @@ Opis zmian które pokazywały się w kolejnych wersjach systemu YetiForce. Zawie
 ## [YetiForce 6.5](https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.4.0_to_6.5.0/Changelog.txt)
 
 <details>
-  <summary>Changelog 6.3 > 6.4</summary>
+  <summary>Changelog 6.4 > 6.5</summary>
 
 ```ini reference title="6.4.0 > 6.5.0"
 https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.4.0_to_6.5.0/Changelog.txt
