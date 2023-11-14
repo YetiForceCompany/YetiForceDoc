@@ -12,6 +12,10 @@ preview: pdf-2.jpg
 
 ## Chromium/Chrome
 
+### Download
+
+- Chromium - https://www.chromium.org/getting-involved/download-chromium/
+
 ### Configuring the PDF generator path
 
 PDF configuration file: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
