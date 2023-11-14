@@ -65,7 +65,13 @@ When the `$chromiumBinaryPath` path is set correctly and the system has access t
 
 ### Simple installation on Linux
 
-A simple script to download the latest version without installation.
+A simple script to download the latest version without installation. 
+
+Requires additional packages to be installed, e.g.:
+
+```bash
+apt-get install -y --no-install-recommends libnss3-tools libatk1.0-0 libatk-bridge2.0-0 libdrm-dev libxkbcommon-dev libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm-dev libasound2
+```
 
 ```bash
 #! /bin/bash
