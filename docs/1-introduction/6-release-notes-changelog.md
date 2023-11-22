@@ -12,6 +12,17 @@ tags:
 
 Below is a list of changes that were included in all the stable YetiForce versions released so far. The changelogs include descriptions of new functionalities, fixed bugs, and modifications of existing functionalities.
 
+## [YetiForce 6.5](https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.4.0_to_6.5.0/Changelog.txt)
+
+<details>
+  <summary>Changelog 6.4 > 6.5</summary>
+
+```ini reference title="6.4.0 > 6.5.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.4.0_to_6.5.0/Changelog.txt
+```
+
+</details>
+
 ## [YetiForce 6.4](https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.3.0_to_6.4.0/Changelog.txt)
 
 <details>
