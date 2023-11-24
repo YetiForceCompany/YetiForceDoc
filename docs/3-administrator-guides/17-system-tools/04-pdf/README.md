@@ -44,7 +44,7 @@ class Pdf
 	 *
 	 * @var array
 	 */
-	public static $chromiumBrowserOptions = ['noSandbox' => true, 'noProxyServer' => true, 'keepAlive' => true];
+	public static $chromiumBrowserOptions = ['noSandbox' => true, 'noProxyServer' => true];
 }
 ```
 
