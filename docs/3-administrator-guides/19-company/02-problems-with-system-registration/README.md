@@ -59,6 +59,7 @@ In this case, re-registration is required; please go the [`System settings → C
 Check if your firewall is not blocking outgoing traffic to the following address:
   - api.yetiforce.com (YetiForce versions <6.5)
   - api.yetiforce.eu (YetiForce versions >=6.5)
+
 These addresses are used for system registration and marketplace purchases.
 
 ## Send a message to us
