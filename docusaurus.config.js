@@ -8,8 +8,8 @@ module.exports = {
 	title: 'YetiForce Documentation',
 	tagline: '👷 Site under construction 👷',
 	url: 'https://doc.yetiforce.com',
-	baseUrl: '/',
-	// baseUrl: '/YetiForceDoc/build/',
+	// baseUrl: '/',
+	baseUrl: '/YetiForceDoc/build/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
@@ -121,6 +121,12 @@ module.exports = {
 			phpLoader: 'matomo.php',
 			jsLoader: 'matomo.js'
 		},
+		codeblock: {
+			showGithubLink: true,
+			githubLinkLabel: 'View on GitHub',
+			showRunmeLink: false,
+			runmeLinkLabel: 'Checkout via Runme'
+		},
 		zoom: {
 			selector: '.markdown :not(em,a) img',
 			config: {
@@ -136,6 +142,7 @@ module.exports = {
 			copyright: `Copyright © ${new Date().getFullYear()} YetiForce S.A.`
 		}
 	},
+	themes: ['docusaurus-theme-github-codeblock'],
 	plugins: [
 		[
 			require.resolve('@easyops-cn/docusaurus-search-local'),
@@ -149,7 +156,7 @@ module.exports = {
 		],
 		['docusaurus-plugin-matomo', {}],
 		[require.resolve('docusaurus-plugin-image-zoom'), {}],
-		[require.resolve('@saucelabs/theme-github-codeblock'), {}],
+		// [require.resolve('@saucelabs/theme-github-codeblock'), {}],
 		[
 			'@docusaurus/plugin-client-redirects',
 			{
