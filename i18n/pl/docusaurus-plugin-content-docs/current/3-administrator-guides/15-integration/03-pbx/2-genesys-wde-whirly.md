@@ -12,7 +12,7 @@ tags:
 preview: genesys-wde-whirly.jpg
 ---
 
-:::tip This functionality is available for YetiForce version 7.0 and later
+:::tip Funkcjonalność dostępna od wersji YetiForce 7.0
 :::
 
 :::warning Do integracji wykorzystuje dedykowane rozszerzenie od firmy Whirly, które obsługuje funkcjonujące procesy w systemie Genesys.
@@ -29,7 +29,7 @@ Zalety i możliwości integracji:
 - dynamiczne prezentuje informacje znajdujące się w systemie YetiForce podczas odebrania połączenia
 - obsługa i rejestrowanie zgód RODO zaakceptowanych na IVR
 - obsługa połączeń telefonicznych, wiadomości email, wiadomości messenger, Chat na stronie WWW, kampanii SMS/Mail/telefonicznych
-- obsługuje ankiety IVR
+- wspiera ankiety IVR
 - wyszukiwanie firm i kontaktów po przekazanych informacjach np. nip + token, numer telefonu, email, login messenger
 - bezpieczna komunikacja za pomocą HMAC signature
 - historia wszystkich interakcji z firmą i kontaktami

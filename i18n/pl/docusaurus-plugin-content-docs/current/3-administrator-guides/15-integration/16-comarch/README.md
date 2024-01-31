@@ -7,7 +7,7 @@ keywords:
   - ERP
   - XL
   - YetiForce
-  - Panelkonfiguracyjny
+  - Panel konfiguracyjny
 tags:
   - Comarch
 ---

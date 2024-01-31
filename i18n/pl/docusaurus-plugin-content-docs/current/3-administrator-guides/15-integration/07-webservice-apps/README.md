@@ -40,7 +40,7 @@ Authorization: Basic cGFydG5lcjpwYXJ0bmVy
 
 :::tip
 
-Przykład generowania nagłówka `Authorization: Basic`
+Przykład generowania nagłówka - `Authorization: Basic`
 
 ```php
  base64_encode($name . ':' . $password)

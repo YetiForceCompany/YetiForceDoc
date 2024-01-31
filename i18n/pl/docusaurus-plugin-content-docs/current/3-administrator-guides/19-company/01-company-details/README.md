@@ -45,13 +45,13 @@ Zapoznaj się z informacją widoczną na górze strony i wypełnij wszystkie obo
 
 Podanie fałszywych informacji spowoduje odrzucenie rejestracji.
 
-For a detailed description of the fields, see the [Form fields](administrator-guides/company/company-details/#form-fields) section below.
+Szczegółowy opis pól znajduje się w sekcji poniżej.
 
 ![OnLine-2.jpg](OnLine-2.jpg)
 
-## Check status
+## Sprawdź status
 
-If the registration status has not been updated in your system automatically after a couple of days, you can refresh it manually. In order to do that, click the `Check status` button. The status will be refreshed immediately, and the update time in the upper right corner should change to `a moment ago.` If it doesn't, the [following article](administrator-guides/company/problems-with-system-registration/) will help you troubleshoot registration issues.
+Jeśli status rejestracji nie został automatycznie zaktualizowany w systemie po kilku dniach, to możesz go odświeżyć ręcznie. Aby to zrobić, kliknij przycisk `Sprawdź status`. Status rejestracji zostanie odświeżony natychmiast, a czas aktualizacji w prawym górnym rogu powinien zmienić się na `przed chwilą.` Jeśli nie, [artykuł](administrator-guides/company/problems-with-system-registration/) pomoże Ci rozwiązać problemy z rejestracją.
 
 ![status.jpg](status.jpg)
 
