@@ -55,12 +55,12 @@ Z tego powodu system nie może pobrać aktualnych informacji, bo ID jest inny od
 
 W tym przypadku wymagana jest ponowna rejestracja; przejdź do [`Konfiguracja systemu ➡ Firma ➡ Dane firmy`](/administrator-guides/company/company-details/#registration)
 
-## Sprawdź zaporę sieciową
-Sprawdź, czy Twoja zapora sieciowa nie blokuje ruchu wychodzącego na następujący adres:
-   - api.yetiforce.com (wersje YetiForce <6.5)
-   - api.yetiforce.eu (wersje YetiForce >=6.5)
+## Check your firewall
+Check if your firewall is not blocking outgoing traffic to the following address:
+  - api.yetiforce.com (YetiForce versions <6.5)
+  - api.yetiforce.eu (YetiForce versions >=6.5)
 
-Adresy te służą do rejestracji w systemie i zakupów w serwisie Marketplace.
+These addresses are used for system registration and marketplace purchases.
 
 ## Jeśli problemy nadal występują - napisz do nas
 
