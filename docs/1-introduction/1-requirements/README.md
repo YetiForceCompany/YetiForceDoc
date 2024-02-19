@@ -36,8 +36,7 @@ The most recent and complete configuration can be found on GitHub and in the mod
 :::warning
 The requirements vary depending on the version of YetiForce. Check the requirements for the version you are installing before you begin.
 
-The requirements listed below are applicable for the following version: [![Latest Stable Version](https://poser.pugx.org/yetiforce/yetiforce-crm/v/stable)](https://packagist.org/packages/yetiforce/yetiforce-crm)
-![release date](https://img.shields.io/github/release-date/YetiForceCompany/YetiForceCRM)
+The requirements listed below are applicable for the following version: [![Latest Stable Version](https://poser.pugx.org/yetiforce/yetiforce-crm/v/stable)](https://packagist.org/packages/yetiforce/yetiforce-crm) ![release date](https://img.shields.io/github/release-date/YetiForceCompany/YetiForceCRM)
 :::
 
 ## Possible issues
