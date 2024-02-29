@@ -37,7 +37,14 @@ module.exports = {
 					},
 					// editUrl: 'https://github.com/YetiForceCompany/YetiForceDoc/edit/main/',
 					showLastUpdateAuthor: false,
-					showLastUpdateTime: true
+					showLastUpdateTime: true,
+					versions: {
+						current: {
+							label: 'Stable',
+							path: ''
+						}
+					},
+					lastVersion: 'current'
 				},
 				theme: {
 					customCss: [require.resolve('./src/css/custom.css')]
@@ -111,7 +118,8 @@ module.exports = {
 
 				{ label: 'yetiforce.com', position: 'right', href: 'https://yetiforce.com/' },
 				{ label: 'GitHub', position: 'right', href: 'https://github.com/YetiForceCompany/YetiForceCRM' },
-				{ type: 'localeDropdown', position: 'right' }
+				{ type: 'localeDropdown', position: 'right' },
+				{ type: 'docsVersionDropdown', position: 'right' }
 			]
 		},
 		matomo: {
