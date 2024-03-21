@@ -14,22 +14,22 @@ tags:
   - Configuration
 ---
 
-## Aktywacja
+## Activation
 
-W pliku [config/Api.php](https://doc.yetiforce.com/code/classes/Config-Api.html#property_enabledServices) należy ustawić aktywne usługi `$enabledServices`
+Set active services `$enabledServices` in the [config/Api.php](https://doc.yetiforce.com/code/classes/Config-Api.html#property_enabledServices) file: 
 
 ```php
 /** List of active services. Available: dav, webservice */
 public static $enabledServices = ['webservice'];
 ```
 
-## Utworzenie aplikacji API
+## Create an API app
 
-Aby określić jakiego rodzaju usługi będą aktywne nalezy dodać aplikacje o odpowiednim typie.
+To determine what kind of services are to be active, add applications of the relevant type.
 
-W panelu administracyjnym [Web service - Applications](administrator-guides/integration/webservice-apps/) nalezy dodać usługi z których chcemy korzystać.
+Add the services you want to use in the [Web service - Applications](administrator-guides/integration/webservice-apps/) admin panel.
 
-## Konfiguracja żywotność sesji
+## Session lifetime configuration
 
 [config/Security.php](https://doc.yetiforce.com/code/classes/Config-Security.html#property_apiLifetimeSessionCreate)
 
