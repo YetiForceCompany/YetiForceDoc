@@ -22,10 +22,13 @@ import ReactPlayer from 'react-player';
 
 The process of system update is simpler than the installation or migration process, so every YetiForce administrator should be able to cope with it. One of the most important things that you need to remember is that before attempting to update the system, you should always make a backup copy and begin the process on the testing environment. Updates performed directly on production are one of the most common mistakes made by young administrators.
 
->[!IMPORTANT]
->If your system is heavily customized, we strognly recommend that the update process be conducted by our experienced specialists. 
->Contact us to receive a quote.
+:::warning IMPORTANT
 
+If your system is heavily customized, we strognly recommend that the update process be conducted by our experienced specialists.
+
+Contact us to receive a quote.
+
+:::
 
 <Tabs groupId="zhh7fxZ293w">
 	<TabItem value="youtube-zhh7fxZ293w" label="🎬 YouTube">
