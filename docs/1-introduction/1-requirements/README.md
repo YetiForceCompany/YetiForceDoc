@@ -71,7 +71,7 @@ import DocCardList from '@theme/DocCardList';
   - **MariaDB `10.6` (recommended)** - we recommend the latest stable versions. We don't recommend versions older than `10.1`.
   - **MySQL `5.7`, `8.0`** - earlier version (`5.6`) works as well, the latest stable versions are recommended. You can also use alternative software as long as it is compatible.
 
-- **PHP `7.4` (recommended), `8.0`**, `8.1` (tests pending). The latest stable versions are recommended (eg. `7.4.x`).
+- **PHP `8.1, 8.2, 8.3` (recommended)**. The latest stable versions are recommended (eg. `8.3.x`).
 
 ## Database engine requirements (MariaDB/MySQL)
 
@@ -143,14 +143,7 @@ Configuration files np. `/etc/php/8.0/fpm/php.ini`, `/etc/php/8.0/cli/php.ini`
 https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini
 ```
 
-<details>
-  <summary>Development version: github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini</summary>
 
-```ini reference
-https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini
-```
-
-</details>
 
 ### External library configuration
 
@@ -190,6 +183,7 @@ https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/
 - apcu - Library that improves system efficiency, recommended when a large number of users is using the system or the system is under heavy load
 - imagick - Library recommended for increasing security, it secures and verifies potentially dangerous image files
 - pdo_sqlsrv - Library required if integration with Wapro ERP or Comarch is active
+- mongodb
 
 #### Forbidden
 
@@ -345,35 +339,24 @@ More information: https://secure.php.net/manual/en/configuration.file.per-user.p
 
 Example:
 
-<details>
-  <summary>https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/.user.ini</summary>
-
-```ini reference
-https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/.user.ini
-```
-
-</details>
 
 ## Requirements for system update
 
 ### MariaDB/MySQL
 
 ```ini
-connect_timeout = 3600
-connect_timeout = 3600
-net_read_timeout = 3600
-net_write_timeout = 3600
-wait_timeout = 3600
-wait_timeout = 3600
-innodb_lock_wait_timeout = 3600
+connect_timeout = 600
+net_write_timeout = 600
+wait_timeout = 600
+innodb_lock_wait_timeout = 600
 ```
 
 ### PHP
 
 ```ini
-max_execution_time = 3600
-max_input_time = 3600
-default_socket_timeout = 3600
+max_execution_time = 600
+max_input_time = 600
+default_socket_timeout = 600
 ```
 
 ### PHP FPM
