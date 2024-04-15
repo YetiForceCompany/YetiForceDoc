@@ -32,7 +32,7 @@ First, prepare the installation files. **[Download YetiForce](download) from our
 
 :::warning
 
-We recommend downloading the "complete" versions, for example `YetiForceCRM-6.4.0-complete.zip`. If you don't download the "complete" version, you will have to install the libraries using `yarn` and `composer` before installing the system.
+We recommend downloading the "complete" versions, for example `YetiForceCRM-7.0.0-complete.zip`. If you don't download the "complete" version, you will have to install the libraries using `yarn` and `composer` before installing the system.
 The right order is important - first `yarn`, then `composer`.
 A sample installation script can be downloaded from [here](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
 
@@ -46,7 +46,7 @@ You can also use the bash console
 
 ```bash
 cd /home/yfprod/html/
-wget -O YetiForceCRM.zip https://github.com/YetiForceCompany/YetiForceCRM/releases/download/6.2.0/YetiForceCRM-6.2.0-complete.zip
+wget -O YetiForceCRM.zip https://github.com/YetiForceCompany/YetiForceCRM/releases/download/7.0.0/YetiForceCRM-7.0.0-complete.zip
 unzip YetiForceCRM.zip
 chown -R yfprod:yfprod /home/yfprod/html/
 ```
@@ -65,13 +65,7 @@ It's necessary to agree to the license terms in order to proceed with the instal
 
 ![step 2](install-2.png)
 
-## Step 3 - Choose installation type
-
-Decide where you want to install the system - you can choose your own server or buy our hosting or cloud services. If you'd like to use our services, after clicking the "Buy" button, you will be able to make the payment.
-
-![step 3](install-3.png)
-
-## Step 4 - Server configuration review
+## Step 3 - Server configuration review
 
 In the fourth step, you can find your current web server configuration compared to the requirements of YetiForce (what needs to be changed and to what values to set). It is necessary to remember that this configuration may change according to different requirements applied to the application and a deployment company should take it into consideration. For example, if you generate large reports that have a longer generating time than the maximum time set in the `max_execution_time` parameter, then it is necessary to set the parameters in such a way that the time of executing a script is always longer than the time for generating a report. Otherwise, reports may not be generated successfully.
 
@@ -79,9 +73,9 @@ Make sure your administrator is familiar with [web server requirements](/introdu
 
 Once you are aware of the risks associated with incorrect web server configuration you can click "OK", and move to the next step.
 
-![step 4](install-4.png)
+![step 3](install-3.png)
 
-## Step 5 - Access data configuration
+## Step 4 - Access data configuration
 
 In this step, you need to enter access data to a database as well as set output parameters for the system. A database will be created on the basis of this data (when this option has been activated). The structure of the database will be copied together with basic records and an administrator account will be created, so after completing the installation it will be possible to log on this account.
 
@@ -89,27 +83,33 @@ If incorrect access data is entered into the database, an error message will be 
 
 In this case, it is necessary to go back and enter the correct access data. If everything is set correctly, the screen from Step 7 will appear.
 
+![step 4](install-4.png)
+
+## Step 5 - Data summary
+
 ![step 5](install-5.png)
 
-## Step 6 - Data summary
+## Step 6 - Database import and system configuration
 
 ![step 6](install-6.png)
 
-## Step 7 - Enter registration information
+## Step 7 -Specify business profile
+
+![step 7](install-7.png)
+
+## Step 8 - Verify email address
+
+![step 8](install-8.png)
+
+## Step 9 - Enter registration information
 
 Enter the data of the company that will use the system, the data will then be used to register the system.
 
 According to the license, each system must be registered after the trial period of 14 days.
 
-![step 7](install-7.png)
-
-## Step 8 - Database import and system configuration
-
-![step 8](install-8.png)
+![step 9](install-9.png)
 
 When the installation is performed correctly, you will be automatically redirected to the system.
-
-![step 9](install-9.png)
 
 ## The installation process has failed
 
