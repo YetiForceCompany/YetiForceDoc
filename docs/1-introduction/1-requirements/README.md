@@ -190,7 +190,7 @@ https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/
 - apcu - Library that improves system efficiency, recommended when a large number of users is using the system or the system is under heavy load
 - imagick - Library recommended for increasing security, it secures and verifies potentially dangerous image files
 - pdo_sqlsrv - Library required if integration with Wapro ERP or Comarch is active
-- mongodb
+- mongoDB - This library is not required and allows using a NoSQL database for storing change history.
 
 #### Forbidden
 

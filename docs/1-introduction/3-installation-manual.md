@@ -67,7 +67,7 @@ It's necessary to agree to the license terms in order to proceed with the instal
 
 ## Step 3 - Server configuration review
 
-In the fourth step, you can find your current web server configuration compared to the requirements of YetiForce (what needs to be changed and to what values to set). It is necessary to remember that this configuration may change according to different requirements applied to the application and a deployment company should take it into consideration. For example, if you generate large reports that have a longer generating time than the maximum time set in the `max_execution_time` parameter, then it is necessary to set the parameters in such a way that the time of executing a script is always longer than the time for generating a report. Otherwise, reports may not be generated successfully.
+In the third step, you can find your current web server configuration compared to the requirements of YetiForce (what needs to be changed and to what values to set). It is necessary to remember that this configuration may change according to different requirements applied to the application and a deployment company should take it into consideration. For example, if you generate large reports that have a longer generating time than the maximum time set in the `max_execution_time` parameter, then it is necessary to set the parameters in such a way that the time of executing a script is always longer than the time for generating a report. Otherwise, reports may not be generated successfully.
 
 Make sure your administrator is familiar with [web server requirements](/introduction/requirements/). If all required parameters are not met, and you attempt to proceed with the installation, the application will display a warning message.
 
@@ -81,7 +81,7 @@ In this step, you need to enter access data to a database as well as set output 
 
 If incorrect access data is entered into the database, an error message will be displayed.
 
-In this case, it is necessary to go back and enter the correct access data. If everything is set correctly, the screen from Step 7 will appear.
+In this case, it is necessary to go back and enter the correct access data. If everything is set correctly, the screen from Step 5 will appear.
 
 ![step 4](install-4.png)
 
