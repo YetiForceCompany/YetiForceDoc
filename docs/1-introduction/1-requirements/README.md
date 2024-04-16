@@ -143,7 +143,14 @@ Configuration files np. `/etc/php/8.0/fpm/php.ini`, `/etc/php/8.0/cli/php.ini`
 https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini
 ```
 
+<details>
+  <summary>Development version: github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini</summary>
 
+```ini reference
+https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini
+```
+
+</details>
 
 ### External library configuration
 
@@ -339,24 +346,32 @@ More information: https://secure.php.net/manual/en/configuration.file.per-user.p
 
 Example:
 
+<details>
+  <summary>https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/.user.ini</summary>
+
+```ini reference
+https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/.user.ini
+```
+
+</details>
 
 ## Requirements for system update
 
 ### MariaDB/MySQL
 
 ```ini
-connect_timeout = 600
-net_write_timeout = 600
-wait_timeout = 600
-innodb_lock_wait_timeout = 600
+connect_timeout = 3600
+net_write_timeout = 3600
+wait_timeout = 3600
+innodb_lock_wait_timeout = 3600
 ```
 
 ### PHP
 
 ```ini
-max_execution_time = 600
-max_input_time = 600
-default_socket_timeout = 600
+max_execution_time = 3600
+max_input_time = 3600
+default_socket_timeout = 3600
 ```
 
 ### PHP FPM

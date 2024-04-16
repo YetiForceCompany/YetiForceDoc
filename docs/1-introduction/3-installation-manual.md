@@ -89,25 +89,21 @@ In this case, it is necessary to go back and enter the correct access data. If e
 
 ![step 5](install-5.png)
 
-## Step 6 - Database import and system configuration
+## Step 6 -Specify business profile
 
 ![step 6](install-6.png)
 
-## Step 7 -Specify business profile
+## Step 7 - Verify email address
 
 ![step 7](install-7.png)
 
-## Step 8 - Verify email address
-
-![step 8](install-8.png)
-
-## Step 9 - Enter registration information
+## Step 8 - Enter registration information
 
 Enter the data of the company that will use the system, the data will then be used to register the system.
 
 According to the license, each system must be registered after the trial period of 14 days.
 
-![step 9](install-9.png)
+![step 8](install-8.png)
 
 When the installation is performed correctly, you will be automatically redirected to the system.
 

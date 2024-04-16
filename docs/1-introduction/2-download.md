@@ -14,6 +14,9 @@ Here you can find links to download the latest stable version of the system.
 ## Where can I find YetiForce?
 
 - ### GitHub: [YetiForce](https://github.com/YetiForceCompany/YetiForceCRM), [YetiForcePortal2](https://github.com/YetiForceCompany/YetiForcePortal2)
+- ### Sourceforge:
+
+[![Download YetiForce](https://a.fsdn.com/con/app/sf-download-button?button_size=2x)](https://sourceforge.net/projects/yetiforce/files/latest/download)
 
 All versions can be downloaded from [GitHub releases](https://github.com/YetiForceCompany/YetiForceCRM/releases)
 
