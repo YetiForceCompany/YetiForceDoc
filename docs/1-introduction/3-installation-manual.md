@@ -46,14 +46,13 @@ You can also use the bash console
 
 ```bash
 cd /home/yfprod/html/
-wget -O YetiForceCRM.zip https://github.com/YetiForceCompany/YetiForceCRM/releases/download/7.0.0/YetiForceCRM-7.0.0-complete.zip
 unzip YetiForceCRM.zip
 chown -R yfprod:yfprod /home/yfprod/html/
 ```
 
 ## Step 1 - Run the installation wizard
 
-Run the target address of your system in the browser window, the system should show the installation wizard. If it doesn't, there may be some problems, you can try running the address: **SITE_URL**/install/Install.php eg. https://gitdeveloper.yetiforce.com/install/Install.php
+Run the target address of your system in the browser window, the system should show the installation wizard. If it doesn't, there may be some problems, you can try running the address: **SITE_URL**/install/Install.php
 
 ![step 1](install-1.png)
 
