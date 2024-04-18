@@ -26,17 +26,10 @@ YetiForce stawia pewne wymagania serwerom WWW - dostosowanie serwera jest kluczo
 Podczas instalacji system weryfikuje aktualną konfigurację serwera i pokazuje elementy, które są niepoprawne i należy im zmienić parametr. Należy pamiętać, że przedstawiane wymagania poniżej nie są idealne dla każdego, a więc w przypadku bardziej wymagających klientów wymagania te powinny zostać zweryfikowane i zoptymalizowane.
 
 :::tip
-Zawsze aktualna i pełna konfiguracja znajduje się na github i w module [Weryfikacja konfiguracji serwera](/administrator-guides/logs/server-configuration/) na wersji stabilnej:
+Zawsze aktualna i pełna konfiguracja znajduje się w module [Weryfikacja konfiguracji serwera](/administrator-guides/logs/server-configuration/) na wersji stabilnej:
 
-- https://gitstable.yetiforce.com/index.php?parent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
-- https://github.com/YetiForceCompany/YetiForceCRM/tree/stable/tests/setup
+- https://demo.yetiforce.com/index.php?parent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
 
-:::
-
-:::warning
-Wymagania są zależne od wersji systemu YetiForce. Przed rozpoczęciem sprawdź wymagania wersja systemu, którą instalujesz.
-
-Poniższe wymagania mają zastosowanie do następującej wersji: [![Najnowsza stabilna wersja](https://poser.pugx.org/yetiforce/yetiforce-crm/v/stable)](https://packagist.org/packages/yetiforce/yetiforce-crm) ![Data wydania](https://img.shields.io/github/release-date/YetiForceCompany/YetiForceCRM)
 :::
 
 ## Możliwe problemy
@@ -69,9 +62,9 @@ import DocCardList from '@theme/DocCardList';
 - **Baza danych**
 
   - **MariaDB `10.6` (rekomendowany)** - zalecamy najnowsze stabilne wersje oprogramowania. Nie zalecamy wersji starszych niż wersja `10.1`.
-  - **MySQL `5.7`, `8.0`** - poprawnie działa również na wcześniejszej wersji tj. `5.6`, jednakże zalecamy najnowsze stabilne wersje oprogramowania. Możesz również używać oprogramowania alternatywnego, ale kompatybilnego z tym oprogramowaniem.
+  - **MySQL `8.0.13`** - lub nowsza wersji. Zalecamy użycie najnowszej stabilnej wersji oprogramowania.
 
-- **PHP `7.4` (rekomendowany), `8.0`**, `8.1` (w trakcie testów). Zalecamy używanie najnowszych stabilnych wersji oprogramowania (np. `7.4.x`).
+- **PHP `8.1, 8.2, 8.3`. Zalecamy używanie najnowszych stabilnych wersji oprogramowania (np. `8.3.x`).
 
 ## Wymagania dla silnika baz danych (MariaDB/MySQL)
 
@@ -84,71 +77,26 @@ Pliki konfiguracyjne, np. Pliki konfiguracyjne np. `/etc/my.cnf`, `/etc/mysql/my
 Ze względów bezpieczeństwa zalecamy aby każda baza danych posiadała dedykowanego użytkownika, nie zalecamy używania użytkownika bazodanowego `root` do komunikacji z bazą danych.
 :::
 
-```ini
-[client]
-default-character-set           = utf8
+import DB_requirements from '../../../static/files/db_requirements.mdx';
 
-[mysql]
-default-character-set           = utf8
-
-[mysqld]
-default_storage_engine          = InnoDB
-default-character-set           = utf8
-character-set-server            = utf8
-collation-server                = utf8_general_ci
-init-connect                    = 'SET NAMES utf8'
-sql-mode                        = ''
-#sql-mode                       = "ONLY_FULL_GROUP_BY,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
-wait_timeout                    = 600
-connect_timeout                 = 600
-net_read_timeout                = 600
-net_write_timeout               = 600
-interactive_timeout             = 600
-max_allowed_packet              = 128M
-query_cache_size                = 128M
-innodb_default_row_format       = 'dynamic'
-innodb_lock_wait_timeout        = 600
-innodb_large_prefix             = ON
-innodb_file_per_table           = ON
-innodb_ft_min_token_size        = 2
-innodb_stats_on_metadata        = OFF
-innodb_open_files               = 1000
-innodb_io_capacity              = 1000
-ft_min_word_len                 = 2
-table_open_cache                = 1000
-table_definition_cache          = 1400
-bulk_insert_buffer_size = 16M
-
-sort_buffer_size                = 4M
-read_buffer_size                = 2M
-read_rnd_buffer_size            = 1M
-join_buffer_size                = 16M
-max_connections                 = 100
-innodb_flush_method             = O_DIRECT
-```
-
-:::important
-Przykładowa konfiguracja MariaDB/MySQL:
-
-- Ostatnia stabilna wersja: https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/db/mysql.cnf
-- Wersja deweloperska: https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/db/mysql.cnf
-
-:::
+<code>
+    <DB_requirements />
+</code>
 
 ## Wymagania dla PHP
 
-Pliki konfiguracyjne, np. Pliki konfiguracyjne np. `/etc/php/8.0/fpm/php.ini`, `/etc/php/8.0/cli/php.ini`
+Pliki konfiguracyjne, np. Pliki konfiguracyjne np. `/etc/php/8.1/fpm/php.ini`, `/etc/php/8.1/cli/php.ini`
 
-```ini reference title="Latest stable version: github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini"
-https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini
-```
+import PHP_requirements from '../../../static/files/php_requirements.mdx';
+import PHP_DEV_requirements from '../../../static/files/php_dev_requirements.mdx';
+
+<code>
+    <PHP_requirements />
+</code>
 
 <details>
-  <summary>Wersja deweloperska: github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini</summary>
-
-```ini reference
-https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini
-```
+  <summary>Wersja Deweloperska</summary>
+    <PHP_DEV_requirements />
 
 </details>
 
@@ -209,15 +157,39 @@ catch_workers_output = yes
 :::important
 Przykładowa konfiguracja FPM:
 
-- Ostatnia stabilna wersja: https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/fpm/www.conf
-- Wersja deweloperska: https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/fpm/www.conf
+import FPM from '../../../static/files/fpm.mdx';
+import FPM_DEV from '../../../static/files/fpm_dev.mdx';
+
+<details>
+  <summary>Ostatnia stabilna wersja</summary>
+        <FPM />
+
+</details>
+
+<details>
+  <summary>Wersja Deweloperska</summary>
+        <FPM_DEV />
+
+</details>
 
 :::
 
 ## Serwer WWW
 
-- Apache: https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/apache/.htaccess
-- Nginx: https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/nginx
+import APACHE from '../../../static/files/apache.mdx';
+
+<details>
+  <summary>Apache</summary>
+    <APACHE />
+
+</details>
+<details>
+  <summary>Nginx</summary>
+
+```ini
+https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/nginx
+```
+</details>
 
 ### Szyfrowanie HTTPS i HTTP2
 
@@ -346,10 +318,39 @@ Więcej informacji znajduje się na stronie: https://secure.php.net/manual/en/co
 Przykładowy plik:
 
 <details>
-  <summary>https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/.user.ini</summary>
+  <summary>.user.ini</summary>
 
-```ini reference
-https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/.user.ini
+```ini
+error_reporting = E_ALL & ~E_NOTICE
+html_errors = On
+log_errors = On
+display_errors = Off
+max_execution_time = 600
+max_input_time = 600
+default_socket_timeout = 600
+output_buffering = "On"
+post_max_size = 50M
+upload_max_filesize = 100M
+max_input_vars = 10000
+memory_limit = 1024M
+short_open_tag = "On"
+default_charset = "UTF-8"
+auto_detect_line_endings = "On"
+zlib.output_compression = "Off"
+session.cookie_httponly = "On"
+session.auto_start = "Off"
+session.gc_maxlifetime = 1440
+session.gc_divisor = 500
+session.gc_probability = 1
+session.use_strict_mode = "On"
+session.use_trans_sid = "Off"
+session.use_only_cookies = "On"
+session.name = "YTSID"
+opcache.validate_timestamps = 1
+opcache.revalidate_freq = 0
+opcache.file_update_protection = 0
+request_order = "GP"
+variables_order = "GPCS"
 ```
 
 </details>
