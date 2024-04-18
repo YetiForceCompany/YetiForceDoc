@@ -26,7 +26,7 @@ YetiForce CRM requires a proper web server configuration. It is a key element fo
 During the installation process, the system verifies the actual server configuration and shows the elements that are incorrect and require a change in parameters. Please note that the requirements presented below are not general and not for each installation, for more complex systems they should be verified and optimized individually.
 
 :::tip
-The most recent and complete configuration can be found in the module [Server Configuration](/administrator-guides/logs/server-configuration/) in the developer version:
+The most recent and complete configuration can be found in the module [Server Configuration](/administrator-guides/logs/server-configuration/) in the demo version:
 
 - https://demo.yetiforce.com/index.php?parent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
 :::
