@@ -32,6 +32,10 @@ Zawsze aktualna i pełna konfiguracja znajduje się w module [Weryfikacja konfig
 
 :::
 
+:::warning
+Wymagania są zależne od wersji systemu YetiForce. Przed rozpoczęciem sprawdź wymagania wersja systemu, którą instalujesz.
+:::
+
 ## Możliwe problemy
 
 import DocCardList from '@theme/DocCardList';
