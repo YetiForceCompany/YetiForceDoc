@@ -31,6 +31,10 @@ The most recent and complete configuration can be found in the module [Server Co
 - https://demo.yetiforce.com/index.php?parent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
 :::
 
+:::warning
+The requirements vary depending on the version of YetiForce. Check the requirements for the version you are installing before you begin.
+:::
+
 ## Possible issues
 
 import DocCardList from '@theme/DocCardList';
