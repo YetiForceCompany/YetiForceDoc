@@ -57,42 +57,42 @@ module.exports = {
 				specs: [
 					{
 						id: 'WebserviceStandard',
-						spec: 'https://gitdeveloper.yetiforce.com/api/WebserviceStandard.json',
-						url: 'https://gitdeveloper.yetiforce.com/api/WebserviceStandard.json'
+						spec: 'https://demo.yetiforce.com/api/WebserviceStandard.json',
+						url: 'https://demo.yetiforce.com/api/WebserviceStandard.json'
 					},
 					{
 						id: 'WebservicePremium',
-						url: 'https://gitdeveloper.yetiforce.com/api/WebservicePremium.json',
-						spec: 'https://gitdeveloper.yetiforce.com/api/WebservicePremium.json'
+						url: 'https://demo.yetiforce.com/api/WebservicePremium.json',
+						spec: 'https://demo.yetiforce.com/api/WebservicePremium.json'
 					},
 					{
 						id: 'ManageConsents',
-						spec: 'https://gitdeveloper.yetiforce.com/api/ManageConsents.json',
-						url: 'https://gitdeveloper.yetiforce.com/api/ManageConsents.json'
+						spec: 'https://demo.yetiforce.com/api/ManageConsents.json',
+						url: 'https://demo.yetiforce.com/api/ManageConsents.json'
 					},
-					// {
-					// 	id: 'PBX',
-					// 	spec: 'https://gitdeveloper.yetiforce.com/api/PBX.yaml',
-					// 	url: 'https://gitdeveloper.yetiforce.com/api/PBX.yaml'
-					// },
+					 {
+					 	id: 'PBX',
+					 	spec: 'https://demo.yetiforce.com/api/PBX.yaml',
+					 	url: 'https://demo.yetiforce.com/api/PBX.yaml'
+					 },
 					{
 						id: 'SMS',
-						spec: 'https://gitdeveloper.yetiforce.com/api/SMS.yaml',
-						url: 'https://gitdeveloper.yetiforce.com/api/SMS.yaml',
+						spec: 'https://demo.yetiforce.com/api/SMS.yaml',
+						url: 'https://demo.yetiforce.com/api/SMS.yaml',
 						route: '/api2/SMS/'
-					}
-					// {
-					// 	id: 'WooCommerce',
-					// 	spec: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
-					// 	url: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
-					// 	route: '/api2/WooCommerce/'
-					// },
-					// {
-					// 	id: 'Token',
-					// 	spec: 'https://gitdeveloper.yetiforce.com/api/Token.yaml',
-					// 	url: 'https://gitdeveloper.yetiforce.com/api/Token.yaml',
-					// 	route: '/api2/Token/'
-					// }
+					},
+				//	{
+				//	 	id: 'WooCommerce',
+				//	 	spec: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
+				//	 	url: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
+				//	 	route: '/api2/WooCommerce/'
+				//	 },
+					 {
+					 	id: 'Token',
+					 	spec: 'https://demo.yetiforce.com/api/Token.yaml',
+					 	url: 'https://demo.yetiforce.com/api/Token.yaml',
+					 	route: '/api2/Token/'
+					 }
 				]
 			}
 		]
