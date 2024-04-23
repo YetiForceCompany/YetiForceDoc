@@ -77,7 +77,7 @@ Pliki konfiguracyjne, np. Pliki konfiguracyjne np. `/etc/my.cnf`, `/etc/mysql/my
 Ze względów bezpieczeństwa zalecamy aby każda baza danych posiadała dedykowanego użytkownika, nie zalecamy używania użytkownika bazodanowego `root` do komunikacji z bazą danych.
 :::
 
-import DB_requirements from '../../../static/files/db_requirements.mdx';
+import DB_requirements from '/static/files/db_requirements.mdx';
 
 <code>
     <DB_requirements />
@@ -87,8 +87,8 @@ import DB_requirements from '../../../static/files/db_requirements.mdx';
 
 Pliki konfiguracyjne, np. Pliki konfiguracyjne np. `/etc/php/8.1/fpm/php.ini`, `/etc/php/8.1/cli/php.ini`
 
-import PHP_requirements from '../../../static/files/php_requirements.mdx';
-import PHP_DEV_requirements from '../../../static/files/php_dev_requirements.mdx';
+import PHP_requirements from '/static/files/php_requirements.mdx';
+import PHP_DEV_requirements from '/static/files/php_dev_requirements.mdx';
 
 <code>
     <PHP_requirements />
@@ -157,7 +157,7 @@ catch_workers_output = yes
 :::important
 Przykładowa konfiguracja FPM:
 
-import FPM from '../../../static/files/fpm.mdx';
+import FPM from '/static/files/fpm.mdx';
 
 <details>
   <summary>Ostatnia stabilna wersja</summary>
@@ -169,7 +169,7 @@ import FPM from '../../../static/files/fpm.mdx';
 
 ## Serwer WWW
 
-import APACHE from '../../../static/files/apache.mdx';
+import APACHE from '/static/files/apache.mdx';
 
 <details>
   <summary>Apache</summary>
@@ -303,7 +303,7 @@ Więcej informacji znajduje się na stronie: https://secure.php.net/manual/en/co
 
 Przykładowy plik:
 
-import USER from '../../../static/files/user.mdx';
+import USER from '/static/files/user.mdx';
 
 <details>
     <summary>.user.ini</summary>

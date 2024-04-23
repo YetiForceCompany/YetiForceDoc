@@ -76,7 +76,7 @@ Configuration files eg. `/etc/my.cnf`, `/etc/mysql/my.cnf`, `/etc/mysql/conf.d/`
 For security reasons, we recommend that each database has a dedicated user; we do not recommend using the `root` database user to communicate with the database.
 :::
 
-import DB_requirements from '../../../static/files/db_requirements.mdx';
+import DB_requirements from '/static/files/db_requirements.mdx';
 
 <code>
     <DB_requirements />
@@ -86,8 +86,8 @@ import DB_requirements from '../../../static/files/db_requirements.mdx';
 
 Configuration files np. `/etc/php/8.1/fpm/php.ini`, `/etc/php/8.1/cli/php.ini`
 
-import PHP_requirements from '../../../static/files/php_requirements.mdx';
-import PHP_DEV_requirements from '../../../static/files/php_dev_requirements.mdx';
+import PHP_requirements from '/static/files/php_requirements.mdx';
+import PHP_DEV_requirements from '/static/files/php_dev_requirements.mdx';
 
 <code>
     <PHP_requirements />
@@ -153,7 +153,7 @@ pm.process_idle_timeout = 600s;
 pm.max_requests = 5000
 catch_workers_output = yes
 ```
-import FPM from '../../../static/files/fpm.mdx';
+import FPM from '/static/files/fpm.mdx';
 
 :::important
 FPM configuration example:
@@ -168,7 +168,7 @@ FPM configuration example:
 
 ## Webserver
 
-import APACHE from '../../../static/files/apache.mdx';
+import APACHE from '/static/files/apache.mdx';
 
 <details>
   <summary>Apache</summary>
@@ -302,7 +302,7 @@ More information: https://secure.php.net/manual/en/configuration.file.per-user.p
 
 Example:
 
-import USER from '../../../static/files/user.mdx';
+import USER from '/static/files/user.mdx';
 
 <details>
     <summary>.user.ini</summary>
