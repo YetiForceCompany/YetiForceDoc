@@ -104,7 +104,7 @@ module.exports = {
 		],
 		image: 'img/logo_horizontal.png',
 		prism: {
-			additionalLanguages: ['ini', 'php', 'javadoclike', 'phpdoc', 'php-extras', 'apacheconf', 'nginx', 'http']
+			additionalLanguages: ['ini', 'php', 'javadoclike', 'phpdoc', 'php-extras', 'apacheconf', 'nginx', 'http', 'apacheconf']
 		},
 		navbar: {
 			title: 'YetiForce Documentation',
