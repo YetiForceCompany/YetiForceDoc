@@ -44,14 +44,13 @@ Lub z konsoli bash
 
 ```bash
 cd /home/yfprod/html/
-wget -O YetiForceCRM.zip https://github.com/YetiForceCompany/YetiForceCRM/releases/download/6.2.0/YetiForceCRM-6.2.0-complete.zip
 unzip YetiForceCRM.zip
 chown -R yfprod:yfprod /home/yfprod/html/
 ```
 
 ## Krok 1 - Uruchomienie kreatora instalacji
 
-Uruchom w oknie przeglądarki adres docelowy twojego systemu - powinien pokazać się kreator instalacji. Jeśli nie pokazał się kreator, to może znaczyć, że wystąpiły jakieś problemy, możesz spróbować uruchomić adres: **SITE_URL**/install/Install.php np. https://gitdeveloper.yetiforce.com/install/Install.php
+Uruchom w oknie przeglądarki adres docelowy twojego systemu - powinien pokazać się kreator instalacji. Jeśli nie pokazał się kreator, to może znaczyć, że wystąpiły jakieś problemy, możesz spróbować uruchomić adres: **SITE_URL**/install/Install.php
 
 ![step 1](install-1.png)
 
@@ -63,23 +62,17 @@ W drugim kroku kreator wymaga zaakceptowania licencji. Licencja YetiForce jest b
 
 ![step 2](install-2.png)
 
-## Krok 3 - Wybierz rodzaj instalacji
+## Krok 3 - Weryfikacja konfiguracji serwera
 
-Zdecyduj, gdzie chcesz zainstalować system - możesz wybrać własny serwer albo dokonać zakupu naszego hostingu lub chmury. Jeśli chcesz korzystać z naszych usług, po kliknięciu przycisku "Kup", będziesz mógł dokonać płatności.
-
-![step 3](install-3.png)
-
-## Krok 4 - Weryfikacja konfiguracji serwera
-
-W czwartym kroku możesz znaleźć aktualną konfigurację serwera w porównaniu z wymaganiami YetiForce (wraz z informacją co należy zmienić i jakie wartości należy ustawić). Należy pamiętać, że w zależności od wymagań, jakie się stawia aplikacji CRM, konfiguracja ta może ulec zmianom. Firma wdrożeniowa powinna uwzględnić zmiany we własnym zakresie. Na przykład jeśli generujesz duże raporty, które mają dłuższy czas generowania niż maksymalny czas określony w parametrze `max_execution_time`, konieczne jest ustawienie parametrów w taki sposób, aby czas wykonania skryptu był zawsze dłuższy niż czas potrzebny na sporządzenie raportu. W przeciwnym wypadku taki raport może się nie wygenerować.
+W trzecim kroku możesz znaleźć aktualną konfigurację serwera w porównaniu z wymaganiami YetiForce (wraz z informacją co należy zmienić i jakie wartości należy ustawić). Należy pamiętać, że w zależności od wymagań, jakie się stawia aplikacji CRM, konfiguracja ta może ulec zmianom. Firma wdrożeniowa powinna uwzględnić zmiany we własnym zakresie. Na przykład jeśli generujesz duże raporty, które mają dłuższy czas generowania niż maksymalny czas określony w parametrze `max_execution_time`, konieczne jest ustawienie parametrów w taki sposób, aby czas wykonania skryptu był zawsze dłuższy niż czas potrzebny na sporządzenie raportu. W przeciwnym wypadku taki raport może się nie wygenerować.
 
 Dla pewności, poproś swojego administratora, aby zapoznał się z tymi [wymaganiami dla serwerów WWW](/introduction/requirements/). Jeśli mimo niespełnienia wszystkich wymaganych parametrów zdecydujesz się kontynuować instalację, aplikacja wyświetli komunikat ostrzegawczy.
 
 Po zapoznaniu się z ryzykiem związanym z nieprawidłową konfiguracją serwera możesz kliknąć "OK" i przejść do następnego kroku.
 
-![step 4](install-4.png)
+![step 3](install-3.png)
 
-## Krok 5 - Konfiguracja danych dostępowych
+## Krok 4 - Konfiguracja danych dostępowych
 
 W tym kroku musisz wprowadzić dane dostępowe do bazy danych oraz ustawić parametry wyjściowe dla systemu. Na podstawie tych danych zostanie utworzona baza danych (gdy ta opcja została aktywowana). Na podstawie tych danych system utworzy bazę danych (o ile opcja ta została aktywowana), wgra strukturę bazy danych razem z podstawowymi danymi oraz utworzy podstawowe konto administratora, do którego będziesz mógł się zalogować po instalacji.
 
@@ -87,27 +80,27 @@ Jeżeli wprowadzisz nieprawidłowe dane dostępowe do bazy danych pokaże się b
 
 W takim wypadku musisz cofnąć się do ekranu poprzedniego i prawidłowo wprowadzić dane dostępowe. Jeżeli wszystko zostanie uzupełnione prawidłowo, zobaczysz ekran podobny do tego, który jest w kroku następnym.
 
+![step 4](install-4.png)
+
+## Krok 5 - Podsumowanie danych
+
 ![step 5](install-5.png)
 
-## Krok 6 - Podsumowanie danych
+## Step 6 -Określ profil działalności
 
 ![step 6](install-6.png)
 
-## Krok 7 - Wprowadzenie danych rejestracyjnych
+## Step 7 - Zweryfikuj adres e-mail
+
+![step 7](install-7.png)
+
+## Krok 8 - Wprowadzenie danych rejestracyjnych
 
 Wprowadź dane firmy, która będzie korzystała z systemu. Te dane zostaną potem wykorzystane do rejestracji systemu.
 
 Zgodnie z zapisami licencji każdy system musi być zarejestrowany po okresie próbnym 14 dni.
 
-![step 7](install-7.png)
-
-## Krok 8 - Import bazy danych oraz konfigurowanie systemu
-
 ![step 8](install-8.png)
-
-Jeżeli instalacja zostanie wykonana prawidłowo, zostaniesz automatycznie przeniesiony do systemu CRM.
-
-![step 9](install-9.png)
 
 ## Proces instalacji nie powiódł się
 
