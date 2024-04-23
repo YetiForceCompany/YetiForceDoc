@@ -1,6 +1,5 @@
 ```apacheconf
 <ifModule mod_headers.c>
-    Header unset X-XSS-Protection
     Header unset Strict-Transport-Security
     Header unset X-Frame-Options
     Header unset X-Content-Type-Options
@@ -11,7 +10,6 @@
     Header unset Server
     Header unset X-Powered-By
 
-    Header always set X-XSS-Protection "1; mode=block"
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
     Header always set X-Frame-Options SAMEORIGIN
     Header always set X-Content-Type-Options nosniff

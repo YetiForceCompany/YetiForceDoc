@@ -26,7 +26,7 @@ YetiForce CRM requires a proper web server configuration. It is a key element fo
 During the installation process, the system verifies the actual server configuration and shows the elements that are incorrect and require a change in parameters. Please note that the requirements presented below are not general and not for each installation, for more complex systems they should be verified and optimized individually.
 
 :::tip
-The most recent and complete configuration can be found in the module [Server Configuration](/administrator-guides/logs/server-configuration/) in the developer version:
+The most recent and complete configuration can be found in the module [Server Configuration](/administrator-guides/logs/server-configuration/) in the stable version:
 
 - https://demo.yetiforce.com/index.php?parent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
   :::
@@ -154,7 +154,6 @@ pm.max_requests = 5000
 catch_workers_output = yes
 ```
 import FPM from '../../../static/files/fpm.mdx';
-import FPM_DEV from '../../../static/files/fpm_dev.mdx';
 
 :::important
 FPM configuration example:
@@ -162,12 +161,6 @@ FPM configuration example:
 <details>
   <summary>Latest stable version</summary>
         <FPM />
-
-</details>
-
-<details>
-  <summary>Development version</summary>
-        <FPM_DEV />
 
 </details>
 
@@ -181,13 +174,6 @@ import APACHE from '../../../static/files/apache.mdx';
   <summary>Apache</summary>
     <APACHE />
 
-</details>
-<details>
-  <summary>Nginx</summary>
-
-```ini
-https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/nginx
-```
 </details>
 
 ### HTTPS & HTTP2 encryption
@@ -316,41 +302,11 @@ More information: https://secure.php.net/manual/en/configuration.file.per-user.p
 
 Example:
 
-<details>
-  <summary>.user.ini</summary>
+import USER from '../../../static/files/user.mdx';
 
-```ini
-error_reporting = E_ALL & ~E_NOTICE
-html_errors = On
-log_errors = On
-display_errors = Off
-max_execution_time = 600
-max_input_time = 600
-default_socket_timeout = 600
-output_buffering = "On"
-post_max_size = 50M
-upload_max_filesize = 100M
-max_input_vars = 10000
-memory_limit = 1024M
-short_open_tag = "On"
-default_charset = "UTF-8"
-auto_detect_line_endings = "On"
-zlib.output_compression = "Off"
-session.cookie_httponly = "On"
-session.auto_start = "Off"
-session.gc_maxlifetime = 1440
-session.gc_divisor = 500
-session.gc_probability = 1
-session.use_strict_mode = "On"
-session.use_trans_sid = "Off"
-session.use_only_cookies = "On"
-session.name = "YTSID"
-opcache.validate_timestamps = 1
-opcache.revalidate_freq = 0
-opcache.file_update_protection = 0
-request_order = "GP"
-variables_order = "GPCS"
-```
+<details>
+    <summary>.user.ini</summary>
+    <USER />
 
 </details>
 
