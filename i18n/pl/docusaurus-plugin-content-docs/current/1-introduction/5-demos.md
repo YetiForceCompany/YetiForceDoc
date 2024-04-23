@@ -15,7 +15,7 @@ keywords:
 
 Jest to najbardziej aktualna deweloperska wersja systemu, która zawiera wszystkie najnowsze poprawki. Z tego powodu może ona również zawierać błędy.
 
-Adres: <a href="https://gitdeveloper.yetiforce.com" target="_blank">gitdeveloper.yetiforce.com</a>
+Adres: <a href="https://gitdeveloper.yetiforce.com" target="_blank">demo.yetiforce.com</a>
 
 - Uprawnienia administratora
 
