@@ -12,31 +12,7 @@ permissions:
   contents: read
 
 jobs:
-  build-16:
-    name: Build - node 16
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'yarn'
-
-      - name: Install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install
-
-      - name: Build bundle
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: build
-
-  build-18:
+  build:
     name: Build - node 18
     runs-on: ubuntu-latest
     steps:
