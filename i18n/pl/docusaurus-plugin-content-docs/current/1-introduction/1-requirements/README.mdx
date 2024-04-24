@@ -78,26 +78,26 @@ Pliki konfiguracyjne, np. Pliki konfiguracyjne np. `/etc/my.cnf`, `/etc/mysql/my
 Ze względów bezpieczeństwa zalecamy aby każda baza danych posiadała dedykowanego użytkownika, nie zalecamy używania użytkownika bazodanowego `root` do komunikacji z bazą danych.
 :::
 
-import DB_requirements from '/static/files/db_requirements.mdx';
+import DB_MYSQL_REQUIREMENTS from '/static/files/db_mysql_requirements.mdx';
 
 <code>
-    <DB_requirements />
+	<DB_MYSQL_REQUIREMENTS />
 </code>
 
 ## Wymagania dla PHP
 
 Pliki konfiguracyjne, np. Pliki konfiguracyjne np. `/etc/php/8.1/fpm/php.ini`, `/etc/php/8.1/cli/php.ini`
 
-import PHP_requirements from '/static/files/php_requirements.mdx';
-import PHP_DEV_requirements from '/static/files/php_dev_requirements.mdx';
+import PHP_PROD_REQUIREMENTS from '/static/files/php_prod_requirements.mdx';
+import PHP_DEV_REQUIREMENTS from '/static/files/php_dev_requirements.mdx';
 
 <code>
-    <PHP_requirements />
+	<PHP_PROD_REQUIREMENTS />
 </code>
 
 <details>
   <summary>Wersja Deweloperska</summary>
-    <PHP_DEV_requirements />
+    <PHP_DEV_REQUIREMENTS />
 
 </details>
 

@@ -65,7 +65,7 @@ When the `$chromiumBinaryPath` path is set correctly and the system has access t
 
 ### Simple installation on Linux
 
-A simple script to download the latest version without installation. 
+A simple script to download the latest version without installation.
 
 Make sure your system has installed all required dependencies.
 Thanks [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)

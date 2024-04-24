@@ -16,7 +16,8 @@ That is the most recent development version of the system that includes all the 
 Address: <a href="https://demo.yetiforce.com" target="_blank">https://demo.yetiforce.com</a>
 
 - Admin permissions
-  - Login: admin  
+
+  - Login: admin
   - Password: admin
 
 - User permissions (basic)

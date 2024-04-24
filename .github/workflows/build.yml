@@ -35,9 +35,3 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: build
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: build
-          path: ${{github.workspace}}/build/

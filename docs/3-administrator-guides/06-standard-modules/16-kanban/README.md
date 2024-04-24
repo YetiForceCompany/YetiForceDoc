@@ -16,7 +16,7 @@ Boards in the Kanban view use cards and columns that can be easily configure
 
 :::warning
 
-The YetiForce Kanban Board is a subscription based addon available in our Marketplace  - [**Buy YetiForce Kanban Board**](https://yetiforce.com/pl/marketplace/dodatki/92-yetiforce-kanban-board.html)
+The YetiForce Kanban Board is a subscription based addon available in our Marketplace - [**Buy YetiForce Kanban Board**](https://yetiforce.com/pl/marketplace/dodatki/92-yetiforce-kanban-board.html)
 
 :::
 
@@ -24,7 +24,7 @@ The YetiForce Kanban Board is a subscription based addon available in our Market
 
 ## Configuration
 
-The configuration panel for  the YetiForce Kanban Board can be found in `Software configuration  → Standard modules → Kanban`
+The configuration panel for the YetiForce Kanban Board can be found in `Software configuration  → Standard modules → Kanban`
 
 ![kanban-2](kanban-2.jpg)
 
@@ -38,13 +38,13 @@ Click <kbd>+ Add board</kbd> and select the field used to create a board in the 
 
 ![kanban-4](kanban-4.jpg)
 
-Once you click <kbd>Add</kbd>  the board will be available in the selected module.
+Once you click <kbd>Add</kbd> the board will be available in the selected module.
 
 ![kanban-5](kanban-5.jpg)
 
 ## Board parameters
 
-- Detail fields - list of fields used to display data from records in the Kanban Board. If the field has an icon, the icon will be visible on the board. All fields from the system are available according to users' permissions. 
+- Detail fields - list of fields used to display data from records in the Kanban Board. If the field has an icon, the icon will be visible on the board. All fields from the system are available according to users' permissions.
 
   ![kanban-6](kanban-6.jpg)
 
