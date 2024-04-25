@@ -4,7 +4,7 @@
  * @author    Mariusz Krzaczkowski <m.krzaczkowski@yetiforce.com>
  */
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
+export default {
 	title: 'YetiForce Documentation',
 	tagline: '👷 Site under construction 👷',
 	url: 'https://doc.yetiforce.com',
@@ -70,29 +70,29 @@ module.exports = {
 						spec: 'https://demo.yetiforce.com/api/ManageConsents.json',
 						url: 'https://demo.yetiforce.com/api/ManageConsents.json'
 					},
-					 {
-					 	id: 'PBX',
-					 	spec: 'https://demo.yetiforce.com/api/PBX.yaml',
-					 	url: 'https://demo.yetiforce.com/api/PBX.yaml'
-					 },
+					{
+						id: 'PBX',
+						spec: 'https://demo.yetiforce.com/api/PBX.yaml',
+						url: 'https://demo.yetiforce.com/api/PBX.yaml'
+					},
 					{
 						id: 'SMS',
 						spec: 'https://demo.yetiforce.com/api/SMS.yaml',
 						url: 'https://demo.yetiforce.com/api/SMS.yaml',
 						route: '/api2/SMS/'
 					},
-				//	{
-				//	 	id: 'WooCommerce',
-				//	 	spec: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
-				//	 	url: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
-				//	 	route: '/api2/WooCommerce/'
-				//	 },
-					 {
-					 	id: 'Token',
-					 	spec: 'https://demo.yetiforce.com/api/Token.yaml',
-					 	url: 'https://demo.yetiforce.com/api/Token.yaml',
-					 	route: '/api2/Token/'
-					 }
+					//	{
+					//	 	id: 'WooCommerce',
+					//	 	spec: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
+					//	 	url: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
+					//	 	route: '/api2/WooCommerce/'
+					//	 },
+					{
+						id: 'Token',
+						spec: 'https://demo.yetiforce.com/api/Token.yaml',
+						url: 'https://demo.yetiforce.com/api/Token.yaml',
+						route: '/api2/Token/'
+					}
 				]
 			}
 		]
@@ -157,7 +157,6 @@ module.exports = {
 		],
 		['docusaurus-plugin-matomo', {}],
 		[require.resolve('docusaurus-plugin-image-zoom'), {}],
-		[require.resolve('@saucelabs/theme-github-codeblock'), {}],
 		[
 			'@docusaurus/plugin-client-redirects',
 			{
