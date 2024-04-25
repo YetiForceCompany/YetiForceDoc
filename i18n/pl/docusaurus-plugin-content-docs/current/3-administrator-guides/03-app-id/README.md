@@ -29,7 +29,6 @@ APP ID to suma kontrolna, w której skład wchodzą następujące składowe:
 
 - **ID systemu**, które jest losowo generowane podczas instalacji i nie zmienia się ([$application_unique_key z pliku config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key))
 - **URL systemu** gdzie znajduje się system ([$site_URL z pliku config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_site_URL))
-- **Nazwa hosta serwera** gdzie znajduje się system
 
 :::warning
 
@@ -70,25 +69,3 @@ APP ID pokaże się w oknie modalnym. Skopiuj identyfikator APP i wyślij go na 
 Pamiętaj, aby dołączyć informacje o transakcji PayPal i adres e-mail, który użyłeś do transakcji.
 
 ![App ID](app-id-0.jpg)
-
-### Dla wersji 5.3 i starszych
-
-#### Krok 1
-
-Przejdź do konfiguracji systemu, klikając przycisk koła zębatego <i className="fas fa-cog fa-fw"></i> w prawym górnym rogu.
-
-![App ID](app-id-3.jpg)
-
-#### Krok 2
-
-W panelu menu po lewej stronie wybierz [Firma](/administrator-guides/company) a następnie [Dane firmy](/administrator-guides/company/company-details/). Następnie kliknij `Rejestracja - Klucz` w górnej części ekranu.
-
-![App ID](app-id-4.jpg)
-
-#### Krok 3
-
-APP ID pokaże się w oknie modalnym. Skopiuj identyfikator APP i wyślij go na hello@yetiforce.com
-
-Pamiętaj, aby dołączyć informacje o transakcji PayPal i adres e-mail, który użyłeś do transakcji.
-
-![App ID](app-id-4.png)
