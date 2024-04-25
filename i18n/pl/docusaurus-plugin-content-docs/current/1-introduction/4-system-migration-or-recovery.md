@@ -46,6 +46,22 @@ Jeżeli masz oddzielną kopię katalogu storage, tak jak w przypadku [Chmury (Ye
 
 :::
 
+:::warning
+
+Aby prawidłowo przenieść system na inny serwer, powinieneś wykonać pełną kopię systemu (pliki i baza danych). Najlepiej spakować programem do kompresji danych np.
+
+```bash
+zip -r `date +"%Y%m%d_%H%M"`.zip __YETIFORCE_PATH__ -q
+```
+
+```bash
+tar -zcvf /var/www/html/`date +"%Y%m%d_%H%M"`.tar.gz /var/www/html/
+```
+
+**Podczas przenoszenia lub przywracania systemu nie może wystąpić żaden błąd, ponieważ później może okazać sie, że baza jest niekompletna.**
+
+:::
+
 ## Wgraj bazę danych
 
 Bazę danych wgrywamy za pomocą konsoli CLI (zalecane) lub klienta bazodanowego np. DBeaver, Database Workbench , SQLyog
@@ -210,19 +226,3 @@ Panel: [Konfiguracja systemu → Automatyzacja → CRON](/administrator-guides/a
 Warto zmienić dane dostępowe do API, aby były inne na każdym z środowisk. Aby przypadkiem ktoś mając dostęp do wersji testowej nie próbował uzyskać danych z wersji produkcyjnej.
 
 Panel: [Konfiguracja systemu → Integracja → Web service - Aplikacje](/administrator-guides/integration/webservice-apps/)
-
-:::warning
-
-Aby prawidłowo przenieść system na inny serwer, powinieneś wykonać pełną kopię systemu (pliki i baza danych). Najlepiej spakować programem do kompresji danych np.
-
-```bash
-zip -r `date +"%Y%m%d_%H%M"`.zip __YETIFORCE_PATH__ -q
-```
-
-```bash
-tar -zcvf /var/www/html/`date +"%Y%m%d_%H%M"`.tar.gz /var/www/html/
-```
-
-**Podczas przenoszenia lub przywracania systemu nie może wystąpić żaden błąd, ponieważ później może okazać sie, że baza jest niekompletna.**
-
-:::
