@@ -27,14 +27,6 @@ Kliknij przycisk "Sprawdź status". Czas ostatniej aktualizacji w prawym górnym
 
 Jeżeli czas nie ulegnie zmianie, proszę przejść do punktu 2.
 
-## Sprawdź komunikat ostatniej weryfikacji statusu
-
-W przypadku problemów z komunikacją z serwerem YetiForce pod ikoną będzie widoczna informacja o błędzie.
-
-UWAGA! Komunikat pojawia się wyłącznie w przypadku błędów związanych z komunikacją. Jeśli występują inne błędy, to nie będą one tu widoczne.
-
-![reg-2.jpg](reg-2.jpg)
-
 ## Jeśli nic się nie zmienia podczas sprawdzania statusu, upewnij się, że Twój serwer ma poprawną konfigurację
 
 W tym celu przejdź do Konfiguracja systemu ➡ Logi ➡ Serwer – konfiguracja.
