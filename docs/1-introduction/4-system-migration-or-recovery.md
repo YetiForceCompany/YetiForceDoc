@@ -46,6 +46,22 @@ If you have a separate copy of the storage directory, like in case of [YetiForce
 
 :::
 
+:::warning
+
+In order to properly transfer the system to another server, you should make a complete copy of the system (files and database). It is best to use compression software, e.g.
+
+```bash
+zip -r `date +"%Y%m%d_%H%M"`.zip __YETIFORCE_PATH__ -q
+```
+
+```bash
+tar -zcvf /var/www/html/`date +"%Y%m%d_%H%M"`.tar.gz /var/www/html/
+```
+
+**No error can occur during the transfer or recovery of the system, as the database may later turn out to be corrupted.**
+
+:::
+
 ## Upload the database
 
 Upload the database using the CLI console (recommended) or a database client eg. DBeaver, Database Workbench , SQLyog
@@ -155,7 +171,7 @@ Migrating to a new server or restoring it from a backup requires [re-registratio
 
 ## Update addons
 
-Some addons may need to be reconfigured when changing the location or address of the system, eg. [`System settings → Integration → Mail integration panel`](/administrator-guides/integration/mail-integration-panel/).
+Some addons may need to be reconfigured when changing the location or address of the system, eg. [`System settings → Integration → Mail integration panel`](/administrator-guides/integration/mail-integration-panel/outlook).
 
 ### YetiForce Outlook Integration Panel
 
@@ -210,19 +226,3 @@ Panel: [System settings → Automation → CRON](/administrator-guides/automatio
 It is worth changing the API access data to make them different for each environment. So that someone who has access to the test version will not be able to get data from the production version.
 
 Panel: [System settings → Integration → Web service - Applications](/administrator-guides/integration/webservice-apps/)
-
-:::warning
-
-In order to properly transfer the system to another server, you should make a complete copy of the system (files and database). It is best to use compression software, e.g.
-
-```bash
-zip -r `date +"%Y%m%d_%H%M"`.zip __YETIFORCE_PATH__ -q
-```
-
-```bash
-tar -zcvf /var/www/html/`date +"%Y%m%d_%H%M"`.tar.gz /var/www/html/
-```
-
-**No error can occur during the transfer or recovery of the system, as the database may later turn out to be corrupted.**
-
-:::
