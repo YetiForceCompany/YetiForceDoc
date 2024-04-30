@@ -22,7 +22,6 @@ export default {
 		[
 			'@docusaurus/preset-classic',
 			{
-				//debug: true,
 				docs: {
 					routeBasePath: '/',
 					sidebarPath: require.resolve('./sidebars.js'),
@@ -36,7 +35,7 @@ export default {
 					showLastUpdateTime: true,
 					versions: {
 						current: {
-							label: 'Stable',
+							label: '7.0.0',
 							path: ''
 						}
 					},
