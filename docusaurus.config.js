@@ -6,7 +6,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 export default {
 	title: 'YetiForce Documentation',
-	tagline: '👷 Site under construction 👷',
+	tagline: 'Official documentation/guide of the YetiForce system',
 	url: 'https://doc.yetiforce.com',
 	baseUrl: '/',
 	// baseUrl: '/YetiForceDoc/build/',
