@@ -26,11 +26,17 @@ YetiForce CRM requires a proper web server configuration. It is a key element fo
 During the installation process, the system verifies the actual server configuration and shows the elements that are incorrect and require a change in parameters. Please note that the requirements presented below are not general and not for each installation, for more complex systems they should be verified and optimized individually.
 
 :::tip
+The most recent and complete configuration can be found on GitHub and in the module [Server Configuration](/administrator-guides/logs/server-configuration/) in the developer version:
 
-The most recent and complete configuration can be found in the module [Server Configuration](/administrator-guides/logs/server-configuration/) in the stable version:
+- https://gitstable.yetiforce.com/index.php?parent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
+- https://github.com/YetiForceCompany/YetiForceCRM/tree/stable/tests/setup
 
-- https://demo.yetiforce.com/index.php?parent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
+:::
 
+:::warning
+The requirements vary depending on the version of YetiForce. Check the requirements for the version you are installing before you begin.
+
+The requirements listed below are applicable for the following version: [![Latest Stable Version](https://poser.pugx.org/yetiforce/yetiforce-crm/v/stable)](https://packagist.org/packages/yetiforce/yetiforce-crm) ![release date](https://img.shields.io/github/release-date/YetiForceCompany/YetiForceCRM)
 :::
 
 ## Possible issues
@@ -44,28 +50,28 @@ import DocCardList from '@theme/DocCardList';
 - **Operating system - Debian, Ubuntu, RedHat, Mint** - works on most Linux distributions. We don't recommend the MS Windows operating system as well as MS Windows Server. Our system works well on Windows servers, however, it's not an optimal environment in terms of web applications.
 
   :::warning
-
+  
   Due to security reasons, we recommend running each version of the YetiForce system (PROD and TEST) on a separate/dedicated user of the operating system (preferably on a separate server), e.g. yfprod, yftest. We do not recommend using one operating system user for several applications/websites.
-
+  
   :::
 
-- **Web server**
+- **Serwer WWW**
 
   - **Nginx `1.23` (recommended)** - works on earlier versions as well, however, the latest stable versions are recommended. You can also use alternative software as long as it is compatible.
   - **Apache `2.4`** - works on earlier versions as well (`2.1, 2.2, 2.3`), however, the latest stable versions are recommended. You can also use alternative software as long as it is compatible.
 
     :::warning
-
+ 
     The system does not work with the ModSecurity web server extension
-
+    
     :::
 
 - **Databases**
 
   - **MariaDB `10.6` (recommended)** - we recommend the latest stable versions. We don't recommend versions older than `10.1`.
-  - **MySQL `8.0.13`** or later. We recommend the latest stable versions.
+  - **MySQL `5.7`, `8.0`** - earlier version (`5.6`) works as well, the latest stable versions are recommended. You can also use alternative software as long as it is compatible.
 
-- **PHP `8.1, 8.2, 8.3` (recommended)**. The latest stable versions are recommended (eg. `8.3.x`).
+- **PHP `7.4` (recommended), `8.0`**, `8.1` (tests pending). The latest stable versions are recommended (eg. `7.4.x`).
 
 ## Database engine requirements (MariaDB/MySQL)
 
@@ -75,29 +81,74 @@ Configuration files eg. `/etc/my.cnf`, `/etc/mysql/my.cnf`, `/etc/mysql/conf.d/`
 - `ENGINE = InnoDB` should be available and enabled by default (disable --skip-innodb)
 
 :::warning
-For security reasons, we recommend that each database has a dedicated user; we do not recommend using the `root` database user to communicate with the database.
+Ze względów bezpieczeństwa zalecamy aby każda baza danych posiadała dedykowanego użytkownika, nie zalecamy używania użytkownika bazodanowego `root` do komunikacji z bazą danych.
 :::
 
-import DB_MYSQL_REQUIREMENTS from '/static/files/db_mysql_requirements.mdx';
+```ini
+[client]
+default-character-set  			= utf8
 
-<code>
-	<DB_MYSQL_REQUIREMENTS />
-</code>
+[mysql]
+default-character-set  			= utf8
+
+[mysqld]
+default_storage_engine			= InnoDB
+default-character-set  			= utf8
+character-set-server 			= utf8
+collation-server     			= utf8_general_ci
+init-connect 					= 'SET NAMES utf8'
+sql-mode 						= ''
+#sql-mode						= "ONLY_FULL_GROUP_BY,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+wait_timeout					= 600
+connect_timeout					= 600
+net_read_timeout				= 600
+net_write_timeout				= 600
+interactive_timeout				= 600
+max_allowed_packet				= 128M
+query_cache_size      	  		= 128M
+innodb_default_row_format		= 'dynamic'
+innodb_lock_wait_timeout		= 600
+innodb_large_prefix 			= ON
+innodb_file_per_table 			= ON
+innodb_ft_min_token_size		= 2
+innodb_stats_on_metadata		= OFF
+innodb_open_files				= 1000
+innodb_io_capacity				= 1000
+ft_min_word_len 				= 2
+table_open_cache				= 1000
+table_definition_cache			= 1400
+bulk_insert_buffer_size	= 16M
+
+sort_buffer_size				= 4M
+read_buffer_size				= 2M
+read_rnd_buffer_size			= 1M
+join_buffer_size 				= 16M
+max_connections					= 100
+innodb_flush_method				= O_DIRECT
+```
+
+:::important
+MariaDB/MySQL configuration example:
+
+- Latest stable version: https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/db/mysql.cnf
+- Development version: https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/db/mysql.cnf
+
+:::
 
 ## PHP requirements
 
-Configuration files np. `/etc/php/8.1/fpm/php.ini`, `/etc/php/8.1/cli/php.ini`
+Configuration files np. `/etc/php/8.0/fpm/php.ini`, `/etc/php/8.0/cli/php.ini`
 
-import PHP_PROD_REQUIREMENTS from '/static/files/php_prod_requirements.mdx';
-import PHP_DEV_REQUIREMENTS from '/static/files/php_dev_requirements.mdx';
-
-<code>
-	<PHP_PROD_REQUIREMENTS />
-</code>
+```ini reference title="Latest stable version: github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini"
+https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/php/prod.ini
+```
 
 <details>
-  <summary>Development version</summary>
-    <PHP_DEV_REQUIREMENTS />
+  <summary>Development version: github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini</summary>
+
+```ini reference
+https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/php/dev.ini
+```
 
 </details>
 
@@ -139,7 +190,6 @@ import PHP_DEV_REQUIREMENTS from '/static/files/php_dev_requirements.mdx';
 - apcu - Library that improves system efficiency, recommended when a large number of users is using the system or the system is under heavy load
 - imagick - Library recommended for increasing security, it secures and verifies potentially dangerous image files
 - pdo_sqlsrv - Library required if integration with Wapro ERP or Comarch is active
-- mongoDB - This library is not required and allows using a NoSQL database for storing change history.
 
 #### Forbidden
 
@@ -156,28 +206,18 @@ pm.max_requests = 5000
 catch_workers_output = yes
 ```
 
-import FPM from '/static/files/fpm.mdx';
-
 :::important
 FPM configuration example:
 
-<details>
-  <summary>Latest stable version</summary>
-        <FPM />
-
-</details>
+- Latest stable version: https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/fpm/www.conf
+- Development version: https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/fpm/www.conf
 
 :::
 
 ## Webserver
 
-import APACHE from '/static/files/apache.mdx';
-
-<details>
-  <summary>Apache</summary>
-    <APACHE />
-
-</details>
+- Apache: https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/apache/.htaccess
+- Nginx: https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/nginx
 
 ### HTTPS & HTTP2 encryption
 
@@ -305,11 +345,12 @@ More information: https://secure.php.net/manual/en/configuration.file.per-user.p
 
 Example:
 
-import USER from '/static/files/user.mdx';
-
 <details>
-    <summary>.user.ini</summary>
-    <USER />
+  <summary>https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/.user.ini</summary>
+
+```ini reference
+https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/.user.ini
+```
 
 </details>
 
@@ -319,7 +360,10 @@ import USER from '/static/files/user.mdx';
 
 ```ini
 connect_timeout = 3600
+connect_timeout = 3600
+net_read_timeout = 3600
 net_write_timeout = 3600
+wait_timeout = 3600
 wait_timeout = 3600
 innodb_lock_wait_timeout = 3600
 ```

@@ -16,7 +16,7 @@ tags:
 
 ## Activation
 
-Set active services `$enabledServices` in the [config/Api.php](https://doc.yetiforce.com/code/classes/Config-Api.html#property_enabledServices) file:
+Set active services `$enabledServices` in the [config/Api.php](https://doc.yetiforce.com/code/classes/Config-Api.html#property_enabledServices) file: 
 
 ```php
 /** List of active services. Available: dav, webservice */

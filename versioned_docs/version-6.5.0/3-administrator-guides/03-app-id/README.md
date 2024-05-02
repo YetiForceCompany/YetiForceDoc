@@ -29,6 +29,7 @@ APP ID is a checksum which includes the following components:
 
 - **System ID**, which is randomly generated during the installation and doesn't change ([$application_unique_key from the config/Main.php file](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key))
 - **System URL** where the system is located ([$site_URL from the config/Main.php file](https://doc.yetiforce.com/code/classes/Config-Main.html#property_site_URL))
+- **Server Host Name** where the system is located
 
 :::warning
 
@@ -69,3 +70,25 @@ The APP ID can be found in the popup window. Copy the APP ID and send it to hell
 Remember to include the PayPal transaction information and the email address you used for the transaction.
 
 ![App ID](app-id-0.jpg)
+
+### For Version 5.3 And Older
+
+#### Step 1
+
+Go to system settings by clicking the cogwheel button <i className="fas fa-cog fa-fw"></i> in the upper right corner.
+
+![App ID](app-id-3.jpg)
+
+#### Step 2
+
+In the menu panel on the left select [Company](/administrator-guides/company) and then [Company details](/administrator-guides/company/company-details/). Then click `Registration - Key` at the top of your screen.
+
+![App ID](app-id-4.jpg)
+
+#### Step 3
+
+The APP ID can be found in the popup window. Copy the APP ID and send it to hello@yetiforce.com
+
+Remember to include the PayPal transaction information and the email address you used for the transaction.
+
+![App ID](app-id-4.png)

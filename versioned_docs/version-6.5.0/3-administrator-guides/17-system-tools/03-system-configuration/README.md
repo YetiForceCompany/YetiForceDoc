@@ -34,7 +34,7 @@ This panel allows you to configure general system settings regarding its appeara
 
 ## Relation
 
-This panel controls the appearance of related record tabs visible in record view.
+This panel controls the appearance of related record tabs visible in record view. 
 
 One of the most prominent advantages of YetiForce is the possibility to customize nearly every single element in the system. This option is also available for related module tabs visible in record view. If you would like to change the appearance of the tabs in your system, the following instruction presents a set of paramenters you can use.
 
@@ -48,13 +48,13 @@ The panel is easy to use, it's enough to select the settings you would like to c
 
 ![related-modules-names-on.jpg](related-modules-names-on.jpg)
 
-☐ - If unchecked, the module names will not be displayed, as shown below:
+☐ - If unchecked, the module names will not be displayed, as shown below: 
 
 ![related-modules-names-off.jpg](related-modules-names-off.jpg)
 
 ### Show related modules icon in tabs
 
-☑ - If checked, the module icons will be displayed on the tabs in record view, as shown below:
+☑ -  If checked, the module icons will be displayed on the tabs in record view, as shown below:
 
 ![related-modules-names-on.jpg](related-modules-names-on.jpg)
 
@@ -74,8 +74,8 @@ The panel is easy to use, it's enough to select the settings you would like to c
 
 ### Maximum length of a comment visible on the related record
 
-Defines the length of comments visible in some relations, for example in the "Products and Services" tab in Account module records.
-Depending on the value set, the comments will appear as shown below:
+Defines the length of comments visible in some relations, for example in the "Products and Services" tab in Account module records. 
+Depending on the value set, the comments will appear as shown below: 
 
 - length 10
 
@@ -93,7 +93,7 @@ Controls the visibility of a button used to change additional data in the `Membe
 
 ![separate-action-on.jpg](separate-action-on.jpg)
 
-☐ - If unchecked, the button will only be visible if you click the settings button <kbd>:wrench:</kbd> on the members list, as shown below:
+☐ -  If unchecked, the button will only be visible if you click the settings button <kbd>:wrench:</kbd> on the members list, as shown below:
 
 ![separate-action-off.jpg](separate-action-off.jpg)
 

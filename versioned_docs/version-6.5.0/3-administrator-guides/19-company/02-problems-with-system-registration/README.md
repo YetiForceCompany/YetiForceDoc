@@ -27,6 +27,14 @@ Click the `Check status` button, on the right side the time of the last update s
 
 If the time does not change, please go to point 2.
 
+## Check the last status check message
+
+An error message will be displayed under the icon if there are problems with communication with the YetiForce server.
+
+The message is shown only in the case of communication errors, in the case of other errors, the message will not be displayed.
+
+![reg-2.jpg](reg-2.jpg)
+
 ## If nothing changes during status check, make sure your server has the correct configuration
 
 To do this, go to [`System configuration → Logs → Server - configuration`](/administrator-guides/logs/server-configuration/)

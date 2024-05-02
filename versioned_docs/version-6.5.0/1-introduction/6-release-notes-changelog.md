@@ -12,50 +12,14 @@ tags:
 
 Below is a list of changes that were included in all the stable YetiForce versions released so far. The changelogs include descriptions of new functionalities, fixed bugs, and modifications of existing functionalities.
 
-import V_70 from '/static/files/changelog/7.0.mdx';
-import V_65 from '/static/files/changelog/6.5.mdx';
-import V_64 from '/static/files/changelog/6.4.mdx';
-import V_63 from '/static/files/changelog/6.3.mdx';
-import V_62 from '/static/files/changelog/6.2.mdx';
-import V_61 from '/static/files/changelog/6.1.mdx';
-import V_60 from '/static/files/changelog/6.0.mdx';
-import V_53 from '/static/files/changelog/5.3.mdx';
-import V_52 from '/static/files/changelog/5.2.mdx';
-import V_51 from '/static/files/changelog/5.1.mdx';
-import V_50 from '/static/files/changelog/5.0.mdx';
-import V_44 from '/static/files/changelog/4.4.mdx';
-import V_43 from '/static/files/changelog/4.3.mdx';
-import V_42 from '/static/files/changelog/4.2.mdx';
-import V_41 from '/static/files/changelog/4.1.mdx';
-import V_40 from '/static/files/changelog/4.0.mdx';
-import V_34 from '/static/files/changelog/3.4.mdx';
-import V_33 from '/static/files/changelog/3.3.mdx';
-import V_32 from '/static/files/changelog/3.2.mdx';
-import V_31 from '/static/files/changelog/3.1.mdx';
-import V_30 from '/static/files/changelog/3.0.mdx';
-import V_23 from '/static/files/changelog/2.3.mdx';
-import V_22 from '/static/files/changelog/2.2.mdx';
-import V_21 from '/static/files/changelog/2.1.mdx';
-import V_20 from '/static/files/changelog/2.0.mdx';
-import V_14 from '/static/files/changelog/1.4.mdx';
-import V_13 from '/static/files/changelog/1.3.mdx';
-import V_12 from '/static/files/changelog/1.2.mdx';
-import V_11 from '/static/files/changelog/1.1.mdx';
-
-## [YetiForce 7.0.0](#changelog_to_70)
-
-<details>
-  <summary>Changelog 6.5 > 7.0</summary>
-	<V_70 />
-</details>
-
-
 ## [YetiForce 6.5](https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.4.0_to_6.5.0/Changelog.txt)
 
 <details>
   <summary>Changelog 6.4 > 6.5</summary>
-    <V_65 />
 
+```ini reference title="6.4.0 > 6.5.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.4.0_to_6.5.0/Changelog.txt
+```
 
 </details>
 
@@ -63,7 +27,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 6.3 > 6.4</summary>
-    <V_64 />
+
+```ini reference title="6.3.0 > 6.4.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.3.0_to_6.4.0/Changelog.txt
+```
 
 </details>
 
@@ -71,7 +38,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 6.2 > 6.3</summary>
-    <V_63 />
+
+```ini reference title="6.2.0 > 6.3.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.2.0_to_6.3.0/Changelog.txt
+```
 
 </details>
 
@@ -79,7 +49,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 6.1 > 6.2</summary>
-    <V_62 />
+
+```ini reference title="6.1.0 > 6.2.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.1.0_to_6.2.0/Changelog.txt
+```
 
 </details>
 
@@ -87,7 +60,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 6.0 > 6.1</summary>
-    <V_61 />
+
+```ini reference title="6.0.0 > 6.1.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.0.0_to_6.1.0/Changelog.txt
+```
 
 </details>
 
@@ -95,7 +71,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 5.3 > 6.0</summary>
-    <V_60 />
+
+```ini reference title="5.3.0 > 6.0.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%205.x.x/5.3.0_to_6.0.0/Changelog.txt
+```
 
 </details>
 
@@ -103,7 +82,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 5.2 > 5.3</summary>
-    <V_53 />
+
+```ini reference title="5.2.0 > 5.3.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%205.x.x/5.2.0_to_5.3.0/Changelog.txt
+```
 
 </details>
 
@@ -111,7 +93,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 5.1 > 5.2</summary>
-    <V_52 />
+
+```ini reference title="5.1.0 > 5.2.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%205.x.x/5.1.0_to_5.2.0/Changelog.txt
+```
 
 </details>
 
@@ -119,7 +104,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 5.0 > 5.1</summary>
-    <V_51 />
+
+```ini reference title="5.0.0 > 5.1.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%205.x.x/5.0.0_to_5.1.0/Changelog.txt
+```
 
 </details>
 
@@ -127,7 +115,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 4.4 > 5.0</summary>
-    <V_50 />
+
+```ini reference title="4.4.0 > 5.0.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%204.x.x/4.4.0_to_5.0.0/Changelog.txt
+```
 
 </details>
 
@@ -135,7 +126,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 4.3 > 4.4</summary>
-    <V_44 />
+
+```ini reference title="4.3.0 > 4.4.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%204.x.x/4.3.0_to_4.4.0/Changelog.txt
+```
 
 </details>
 
@@ -143,7 +137,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 4.2 > 4.3</summary>
-    <V_43 />
+
+```ini reference title="4.2.0 > 4.3.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%204.x.x/4.2.0_to_4.3.0/Changelog.txt
+```
 
 </details>
 
@@ -151,7 +148,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 4.1 > 4.2</summary>
-    <V_42 />
+
+```ini reference title="4.1.0 > 4.2.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%204.x.x/4.1.0_to_4.2.0/Changelog.txt
+```
 
 </details>
 
@@ -159,7 +159,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 4.0 > 4.1</summary>
-    <V_41 />
+
+```ini reference title="4.0.0 > 4.1.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%204.x.x/4.0.0_to_4.1.0/Changelog.txt
+```
 
 </details>
 
@@ -167,7 +170,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 3.4 > 4.0</summary>
-    <V_40 />
+
+```ini reference title="3.4.0 > 4.0.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%203.x.x/3.4.0_to_4.0.0/Changelog.txt
+```
 
 </details>
 
@@ -175,7 +181,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 3.3 > 3.4</summary>
-    <V_34 />
+
+```ini reference title="3.3.0 > 3.4.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%203.x.x/3.3.0_to_3.4.0/Changelog.txt
+```
 
 </details>
 
@@ -183,7 +192,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 3.2 > 3.3</summary>
-    <V_33 />
+
+```ini reference title="3.2.0 > 3.3.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%203.x.x/3.2.0_to_3.3.0/Changelog.txt
+```
 
 </details>
 
@@ -191,7 +203,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 3.1 > 3.2</summary>
-    <V_32 />
+
+```ini reference title="3.1.0 > 3.2.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%203.x.x/3.1.0_to_3.2.0/Changelog.txt
+```
 
 </details>
 
@@ -199,7 +214,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 3.0 > 3.1</summary>
-    <V_31 />
+
+```ini reference title="3.0.0 > 3.1.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%203.x.x/3.0.0_to_3.1.0/Changelog.txt
+```
 
 </details>
 
@@ -207,7 +225,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 2.3 > 3.0</summary>
-    <V_30 />
+
+```ini reference title="2.3.0 > 3.0.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%202.x.x/2.3.0_to_3.0.0/Changelog.txt
+```
 
 </details>
 
@@ -215,7 +236,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 2.2 > 2.3</summary>
-    <V_23 />
+
+```ini reference title="2.2.0 > 2.3.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%202.x.x/2.2.0_to_2.3.0/Changelog.txt
+```
 
 </details>
 
@@ -223,7 +247,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 2.1 > 2.2</summary>
-    <V_22 />
+
+```ini reference title="2.1.0 > 2.2.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%202.x.x/2.1.0_to_2.2.0/Changelog.txt
+```
 
 </details>
 
@@ -231,7 +258,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 2.0 > 2.1</summary>
-    <V_21 />
+
+```ini reference title="2.0.0 > 2.1.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%202.x.x/2.0.0_to_2.1.0/Changelog.txt
+```
 
 </details>
 
@@ -239,7 +269,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 1.4 RC > 2.0</summary>
-    <V_20 />
+
+```ini reference title="1.4.0RC > 2.0.0"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%201.x.x/1.4.0RC_to_2.0.0/Changelog.txt
+```
 
 </details>
 
@@ -247,7 +280,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 1.3 RC > 1.4</summary>
-    <V_14 />
+
+```ini reference title="1.3.0 RC > 1.4.0 RC"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%201.x.x/1.3.0RC_to_1.4.0RC/Changelog.txt
+```
 
 </details>
 
@@ -255,7 +291,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 1.2 RC > 1.3 RC</summary>
-    <V_13 />
+
+```ini reference title="1.2.0 RC > 1.3.0 RC"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%201.x.x/1.2.0RC_to_1.3.0RC/Changelog.txt
+```
 
 </details>
 
@@ -263,7 +302,10 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 1.1 RC > 1.2 RC</summary>
-    <V_12 />
+
+```ini reference title="1.1.0 RC > 1.2.0 RC"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%201.x.x/1.1.0RC_to_1.2.0RC/Changelog.txt
+```
 
 </details>
 
@@ -271,6 +313,9 @@ import V_11 from '/static/files/changelog/1.1.mdx';
 
 <details>
   <summary>Changelog 1.0 RC > 1.1 RC</summary>
-    <V_11 />
+
+```ini reference title="1.0.0 RC > 1.1.0 RC"
+https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%201.x.x/1.0.0RC_to_1.1.0RC/Changelog.txt
+```
 
 </details>
