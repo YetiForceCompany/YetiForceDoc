@@ -46,6 +46,7 @@ You can also use the bash console
 
 ```bash
 cd /home/yfprod/html/
+wget -O YetiForceCRM.zip https://api.yetiforce.eu/download/crm/www/7.0.0-complete
 unzip YetiForceCRM.zip
 chown -R yfprod:yfprod /home/yfprod/html/
 ```
@@ -88,7 +89,7 @@ In this case, it is necessary to go back and enter the correct access data. If e
 
 ![step 5](install-5.png)
 
-## Step 6 -Specify business profile
+## Step 6 - Specify business profile
 
 ![step 6](install-6.png)
 
