@@ -11,7 +11,7 @@ tags:
 preview: OnLine-1.jpg
 ---
 
-Licencja [YetiForce Public License](/introduction/license-open-source) nakazuje rejestrację oprogramowania YetiForce. Rejestracja jest również niezbędna, jeśli chcesz dokonać zakupu produktów lub usług w Marketplace. Istnieją dwie metody poprawnej rejestracji Twojego systemu.
+Licencja [YetiForce Public License](/introduction/license-open-source) nakazuje rejestrację oprogramowania YetiForce. Rejestracja jest również niezbędna, jeśli chcesz dokonać zakupu produktów lub usług w Marketplace.
 
 ## Jak zarejestrować YetiForce?
 
@@ -34,7 +34,6 @@ Należy wypełnić wszystkie obowiązkowe pola (oznaczone czerwoną gwiazdką) p
 #### Unikalny identyfikator podmiotu
 
 - W przypadku przedsiębiorstw należy podać unikalny identyfikator podatkowy stosowany w danym kraju, na przykład numer VAT.
-- W przypadku osób prywatnych należy podać unikalny identyfikator nadawany w dniu narodzin np. PESEL.
 
 #### Kraj
 
@@ -69,7 +68,7 @@ Jeżeli dane podane w formularzu są poprawne, system zostanie zatwierdzony. Wó
 
 ## Sprawdź status
 
-Jeśli status rejestracji nie został automatycznie zaktualizowany w systemie po kilku dniach, to możesz go odświeżyć ręcznie. Aby to zrobić, kliknij przycisk zakręconej strzałki, znajdujący się na formularzu rejestracji w kolumnie ***status rejestracji***
+Jeśli status rejestracji nie został automatycznie zaktualizowany, można odświeżyć go ręcznie za pomocą przycisku ⟳, który znajduje się na formularzu rejestracji w kolumnie ***status rejestracji***
 
 ![status.jpg](status.jpg)
 
@@ -83,3 +82,10 @@ W tym celu, przejdź do konfiguracji systemu za pomocą kółka zębatego ⚙ wi
 W menu z lewej strony wybierz `Firma`, a następnie `Dane firmy`. Popraw dane w formularzu i ponownie go wyślij.
 
 ![registration-5.jpg](registration-5.jpg)
+
+:::warning
+
+Każdorazowa zmiana danych w formularzu, automatycznie zmieni status rejestracji na "***oczekuje na akceptację***" i będzie wymagana ponowna weryfikacja wprowadzonych danych.
+:::
+
+Dane wprowadzone w formularzu rejestracyjnym, zostaną przesłane do nas w celu weryfikacji. Weryfikacja nastąpi w ciągu 2 dni roboczych.
