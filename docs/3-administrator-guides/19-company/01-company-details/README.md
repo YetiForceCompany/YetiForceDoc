@@ -1,91 +1,91 @@
 ---
-title: Dane firmy
-description: Panel danych firmy
+title: Company details
+description: Company details panel
 keywords:
-  - szczegóły
-  - Firma
+  - details
+  - Company
   - YetiForce
-  - Ustawienia
+  - Settings
 tags:
-  - Dane firmy
+  - Company details
 preview: OnLine-1.jpg
 ---
 
-Licencja [YetiForce Public License](/introduction/license-open-source) nakazuje rejestrację oprogramowania YetiForce. Rejestracja jest również niezbędna, jeśli chcesz dokonać zakupu produktów lub usług w Marketplace.
+[The YetiForce License](/introduction/license-open-source) requires the YetiForce system to be registered. Registration is also necessary if you want to purchase products or services from the Marketplace.
 
-## Jak zarejestrować YetiForce?
+## How to register YetiForce?
 
-Proces rejestracji, rozpoczyna się jako ostatni etap instalacji oprogramowania YetiForce, która została opisana w tym artykule [Instalacja systemy YetiForce](/introduction/installation-manual)
+The registration process is the last step of the installation of the YetiForce software that was described in the [YetiForce installation](/introduction/installation-manual) article.
 
-Należy wypełnić wszystkie obowiązkowe pola (oznaczone czerwoną gwiazdką) prawdziwymi danymi firmy. Podanie fałszywych informacji spowoduje odrzucenie rejestracji.
+Fill out the registration form with real and true data relevant to your company; all fields marked with red asterisks are mandatory. Providing fake information will cause the registration to be rejected.
 
 ![registration-1.jpg](registration-1.jpg)
 
-### Pola formularza
+### Form fields
 
-#### Nazwa firmy
+#### Company name
 
-- Podaj pełną nazwę firmy. W przypadku osób prywatnych podaj imię i nazwisko.
+- Provide the full name of your company. In case of private individuals, please enter your first and last name
 
 #### E-mail
 
-- Pole domyślnie wypełnione wartością podaną podczas rejestrcji.
+- Field populated by default with the email provided during registration
 
-#### Unikalny identyfikator podmiotu
+#### Entity's unique identifier
 
-- W przypadku przedsiębiorstw należy podać unikalny identyfikator podatkowy stosowany w danym kraju, na przykład numer VAT.
+- In case of companies, provide unique tax identifier applicable in your country, for example VAT ID.
 
-#### Kraj
+#### Country
 
-- Kraj, w którym działa Twoja firma
+- The country where your company operates
 
-#### Branża
+#### Industry
 
-- Wybierz branżę z listy
+- Select the industry from the list
 
-#### Strona internetowa podmiotu
+#### Website
 
-- Wprowadź stronę internetową podmiotu lub osobistą stronę internetową.
+- Enter the entity's website or a personal website.
 
 :::tip
 
-**NIE WPROWADZAJ ADRESU URL GDZIE ZAINSTALOWANY JEST YETIFORCE!**
+**DO NOT enter the URL where your YetiForce is installed!**
 
 :::
 
-Po wysłaniu formularza rejestracyjnego czekamy na weryfikację systemu.
+Once you send the form, please wait for the system to be registered.
 
 :::warning
 
-Klucze rejestracyjne generowane są automatycznie i wysyłane na adres email podany podczas rejestracji. W przypadku podania nieprawidłowych informacji, rejestracja zostanie odrzucona.
+Registration keys are generated and sent automatically to the email address provided during registration. The registration will be rejected if fake data is provided.
 :::
 
 ![registration-2.jpg](registration-2.jpg)
 
-Jeżeli dane podane w formularzu są poprawne, system zostanie zatwierdzony. Wówczas w polu ***status rejestracji*** pojawi się wartość ***zarejestrowano*** a na górze zniknie czerwony komunikat o braku rejestracji.
+If the data is valid, the registration will be accepted. In this case, the ***registered***  value will be displayed in the ***registration status*** field, and the warning at the top of the screen will be removed.
 
 ![registration-3.jpg](registration-3.jpg)
 
-## Sprawdź status
+## Check status
 
-Jeśli status rejestracji nie został automatycznie zaktualizowany, można odświeżyć go ręcznie za pomocą przycisku ⟳, który znajduje się na formularzu rejestracji w kolumnie ***status rejestracji***
+If the registration status was not updated automatically, you can refresh it manually by clicking the ⟳ button in the registration form in the ***registration status*** column.
 
 ![status.jpg](status.jpg)
 
-## Odrzucenie rejestracji
+## Incorrect registration
 
-W przypadku, gdy w formularzu znajdą się nieprawidłowe dane, rejestracja zostanie odrzucona. W celu ponownej weryfikacji, należy poprawnić formularz i ponownie go wysłać.  
-W tym celu, przejdź do konfiguracji systemu za pomocą kółka zębatego ⚙ widocznego w prawym górnym rogu ekranu.
+If the data provided during registration is incorrect, the registration will be declined. In this case, in order to register your system, you have to correct the data in the form and send it once again.
+To do so, click the cogwheel button ⚙ in the upper right corner.
 
 ![registration-4.jpg](registration-4.jpg)
 
-W menu z lewej strony wybierz `Firma`, a następnie `Dane firmy`. Popraw dane w formularzu i ponownie go wyślij.
+In the menu panel on the left, select `Company` and then `Company details`. Correct the data and send the form once again.
 
 ![registration-5.jpg](registration-5.jpg)
 
 :::warning
 
-Każdorazowa zmiana danych w formularzu, automatycznie zmieni status rejestracji na "***oczekuje na akceptację***" i będzie wymagana ponowna weryfikacja wprowadzonych danych.
+Each time you modify the data in the form, the system will automatically change your registration status to "***pending***", and your updated data will have to be verified.
 :::
 
-Dane wprowadzone w formularzu rejestracyjnym, zostaną przesłane do nas w celu weryfikacji. Weryfikacja nastąpi w ciągu 2 dni roboczych.
+The data entered in the form will be sent to us for verification. The verification may take up to 2 business days.

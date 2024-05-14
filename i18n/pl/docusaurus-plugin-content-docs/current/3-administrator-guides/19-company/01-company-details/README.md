@@ -11,11 +11,11 @@ tags:
 preview: OnLine-1.jpg
 ---
 
-Licencja [YetiForce Public License](/introduction/license-open-source) nakazuje rejestrację oprogramowania YetiForce. Rejestracja jest również niezbędna, jeśli chcesz dokonać zakupu produktów lub usług w Marketplace.
+Licencja [systemu YetiForce](/introduction/license-open-source) nakazuje rejestrację oprogramowania YetiForce. Rejestracja jest również niezbędna, jeśli chcesz dokonać zakupu produktów lub usług w Marketplace.
 
 ## Jak zarejestrować YetiForce?
 
-Proces rejestracji, rozpoczyna się jako ostatni etap instalacji oprogramowania YetiForce, która została opisana w tym artykule [Instalacja systemy YetiForce](/introduction/installation-manual)
+Proces rejestracji, rozpoczyna się jako ostatni etap instalacji oprogramowania YetiForce, która została opisana w tym artykule [Instalacja systemu YetiForce](/introduction/installation-manual)
 
 Należy wypełnić wszystkie obowiązkowe pola (oznaczone czerwoną gwiazdką) prawdziwymi danymi firmy. Podanie fałszywych informacji spowoduje odrzucenie rejestracji.
 
