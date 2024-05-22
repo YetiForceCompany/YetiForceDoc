@@ -11,111 +11,81 @@ tags:
 preview: OnLine-1.jpg
 ---
 
+[The YetiForce License](/introduction/license-open-source) requires the YetiForce system to be registered. Registration is also necessary if you want to purchase products or services from the Marketplace.
+
 ## How to register YetiForce?
 
-The [YetiForce Public License](/introduction/license-open-source) requires YetiForce to be registered. Registration is also necessary if you want to purchase products or services from the Marketplace. There are two ways to properly register your system.
+The registration process is the last step of the installation of the YetiForce software that was described in the [YetiForce installation](/introduction/installation-manual) article.
 
-Below you can find step-by-step instructions on how to register YetiForce using the online registration form built into the system.
-
-If the system you are registering has access to the Internet, please use the online registration method according to the instructions below. If your system does not connect to the Internet, the instructions and required information for offline registration can be found in the [license](/introduction/license-open-source).
-
-:::warning
-
-All keys are generated after verifying the information provided in the registration form. We verify the information manually, therefore the proces may take up to 48 hours. Sending an offline registration request will not speed up online registration.
-
-:::
-
-Go to system settings by clicking the cogwheel button in the upper right corner.
+Fill out the registration form with real and true data relevant to your company; all fields marked with red asterisks are mandatory. Providing fake information will cause the registration to be rejected.
 
 ![registration-1.jpg](registration-1.jpg)
 
-In the menu panel on the left select `Company` and then `Company details`.
-
-![registration-2.jpg](registration-2.jpg)
-
-### OffLine
-
-![Registration OffLine](offline.jpg)
-
-### OnLine
-
-![OnLine-1.jpg](OnLine-1.jpg)
-
-Read the information at the top of the page and fill in all mandatory fields (marked with a red asterisk) with real details of your company.
-
-Providing fake information will result in the registration being rejected.
-
-For a detailed description of the fields, see the [Form fields](administrator-guides/company/company-details/#form-fields) section below.
-
-![OnLine-2.jpg](OnLine-2.jpg)
-
-## Check status
-
-If the registration status has not been updated in your system automatically after a couple of days, you can refresh it manually. In order to do that, click the `Check status` button. The status will be refreshed immediately, and the update time in the upper right corner should change to `a moment ago.` If it doesn't, the [following article](administrator-guides/company/problems-with-system-registration/) will help you troubleshoot registration issues.
-
-![status.jpg](status.jpg)
-
 ### Form fields
 
-#### Type
+#### Company name
 
-- End user - an entity that uses the system
-- Provider - an entity that implements a system for another entity that will use it
-- Integrator - an entity that integrates the system
+- Provide the full name of your company. In case of private individuals, please enter your first and last name
 
-:::tip
+#### E-mail
 
-If you are a provider/integrator and you want to register the system on behalf of your client, remember that both entities must be registered - you as a vendor/integrator and your client as an end user.
-
-:::
-
-#### Company name or first and last name
-
-Provide the full name of your company. In case of private individuals please enter your first and last name.
+- Field populated by default with the email provided during registration
 
 #### Entity's unique identifier
 
 - In case of companies, provide unique tax identifier applicable in your country, for example VAT ID.
-- In case of private persons, provide a unique identifier assigned on the day of birth, applicable in your country.
 
 #### Country
 
-The country where your company operates
-
-#### Post code
-
-Provide the post code of the city where your company is located.
-
-#### City/Village
-
-Provide the city where your company is located
-
-#### Address
-
-Provide the address of your company
+- The country where your company operates
 
 #### Industry
 
-Select the industry from the list
+- Select the industry from the list
 
-#### The number of employees employed by the entity
+#### Website
 
-Enter the number of employees in your company. This is the number of all the people employed in the company, not only the employees who have YetiForce accounts.
-
-#### The website of the entity
-
-Enter the entity's website or a personal website.
+- Enter the entity's website or a personal website.
 
 :::tip
 
-**DO NOT** enter the URL where your YetiForce is installed.
+**DO NOT enter the URL where your YetiForce is installed!**
 
 :::
 
-#### Newsletter subscription
+Once you send the form, please wait for the system to be registered.
 
-If you would like to subscribe to our newsletter, please provide your:
+:::warning
 
-- Name
-- Last name
-- Email
+Registration keys are generated and sent automatically to the email address provided during registration. The registration will be rejected if fake data is provided.
+:::
+
+![registration-2.jpg](registration-2.jpg)
+
+If the data is valid, the registration will be accepted. In this case, the ***registered***  value will be displayed in the ***registration status*** field, and the warning at the top of the screen will be removed.
+
+![registration-3.jpg](registration-3.jpg)
+
+## Check status
+
+If the registration status was not updated automatically, you can refresh it manually by clicking the ⟳ button in the registration form in the ***registration status*** column.
+
+![status.jpg](status.jpg)
+
+## Incorrect registration
+
+If the data provided during registration is incorrect, the registration will be declined. In this case, in order to register your system, you have to correct the data in the form and send it once again.
+To do so, click the cogwheel button ⚙ in the upper right corner.
+
+![registration-4.jpg](registration-4.jpg)
+
+In the menu panel on the left, select `Company` and then `Company details`. Correct the data and send the form once again.
+
+![registration-5.jpg](registration-5.jpg)
+
+:::warning
+
+Each time you modify the data in the form, the system will automatically change your registration status to "***pending***", and your updated data will have to be verified.
+:::
+
+The data entered in the form will be sent to us for verification. The verification may take up to 2 business days.
