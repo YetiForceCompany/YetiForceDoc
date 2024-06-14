@@ -6,10 +6,9 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 export default {
 	title: 'YetiForce Documentation',
-	tagline: '👷 Site under construction 👷',
+	tagline: 'Official documentation/guide of the YetiForce system',
 	url: 'https://doc.yetiforce.com',
 	baseUrl: '/',
-	// baseUrl: '/YetiForceDoc/build/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
@@ -23,24 +22,21 @@ export default {
 		[
 			'@docusaurus/preset-classic',
 			{
-				//debug: true,
+				debug: false,
 				docs: {
 					routeBasePath: '/',
 					sidebarPath: require.resolve('./sidebars.js'),
-					// Please change this to your repo.
 					editUrl: ({ locale, versionDocsDirPath, docPath }) => {
 						if (locale !== 'en') {
-							// return `https://github.com/YetiForceCompany/YetiForceDoc/edit/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
 							return `https://crowdin.com/project/yetiforcedoc/${locale}`;
 						}
 						return `https://github.com/YetiForceCompany/YetiForceDoc/edit/main/docs/${docPath}`;
 					},
-					// editUrl: 'https://github.com/YetiForceCompany/YetiForceDoc/edit/main/',
 					showLastUpdateAuthor: false,
 					showLastUpdateTime: true,
 					versions: {
 						current: {
-							label: 'Stable',
+							label: '7.x',
 							path: ''
 						}
 					},
