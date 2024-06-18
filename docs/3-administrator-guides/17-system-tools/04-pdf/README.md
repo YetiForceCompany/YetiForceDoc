@@ -200,3 +200,12 @@ rm -f ./latest
 find chromium/* -type d -ctime +1 -exec rm -rf {} \;
 ln -s $REVISION/chrome-linux/ ./latest
 ```
+
+### Tips
+
+#### Watermark on the entire page size
+
+```css title="Styles column"
+#watermark-image{position: absolute; left: 0; right: 0; top: 0; bottom: 0;}&#13;
+#header{position: absolute; top: 0; left: 0; right: 0;width: 842px; height: 595px;}
+```
