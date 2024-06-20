@@ -12,10 +12,11 @@ Przed zakupem prosimy dokładnie zapoznać się z opisem funkcji
 :::
 
 Dodatek personalizacji brandingu pozwala na jeszcze większe dostosowanie wyglądu systemu YetiForce.
-Umożliwia dodanie istotnych informacji do generowanych dokumentów, wstawienie danych swojej firmy do stopki lub ustawienie własnych linków do profili w mediach społecznościowych.
+Umożliwia wstawienie danych swojej firmy do stopki lub ustawienie własnych linków do profili w mediach społecznościowych.
 
 ### Funkcje 
 * Dodanie do stopki odnośników z własnymi linkami do mediów społecznościowych
+* Usunięcie informacji o twórcy oprogramowania w stopce strony
 * Usunięcie stopki producenta z maili systemowych
 * Usunięcie stopki producenta z wydruków PDF
 
