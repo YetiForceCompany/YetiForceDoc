@@ -33,7 +33,7 @@ Następnie dla odpowiedniego pulpitu i roli wybierz przycisk **Widget z filtrem*
 
 ![widgets-5.jpg](widgets-5.jpg)
 
-W oknie modalnym, które się pojawi wybierz moduł zgodny z modułem, w którym został utworzony filtr i uzupełnij pozostałem informacje niezbędne do działania widgetu.
+W oknie modalnym, które się pojawi wybierz moduł zgodny z modułem, w którym został utworzony filtr i uzupełnij pozostałe informacje niezbędne do działania widgetu.
 
 ![widgets-6.jpg](widgets-6.jpg)
 

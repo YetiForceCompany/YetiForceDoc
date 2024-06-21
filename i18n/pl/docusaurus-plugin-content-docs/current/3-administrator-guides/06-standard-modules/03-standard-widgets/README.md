@@ -21,7 +21,7 @@ Widgety predefiniowane w YetiForce CRM to gotowe do użytku elementy, które mo�
 
 ## [Widgety z filtrem](/administrator-guides/standard-modules/standard-widgets/widgets-from-filters)
 
-Widgety oparte o filtry stworzone na listach pozwalają na prezentację danych zgodnie z indywidualnie przyjętymi założeniami i ograniczeniami. 
+Widgety oparte o filtry pozwalają na prezentację danych zgodnie z indywidualnie przyjętymi założeniami i ograniczeniami. 
 Pozwala to dostosować widget konkretnie pod dane potrzeby, w momencie kiedy ogólne widgety predefiniowane nie są w stanie tego zrobić.
 
 ## [Wykresy z filtrem](/administrator-guides/standard-modules/standard-widgets/chars)
