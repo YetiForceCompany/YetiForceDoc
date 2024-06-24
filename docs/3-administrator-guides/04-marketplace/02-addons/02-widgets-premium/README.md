@@ -10,7 +10,7 @@ widżet Podgląd PDF i Historia Zmian są dostępne tylko dla użytkowników Yet
 :::
 
 ## Podgląd PDF
-Jest to widżet, który pozwala na podgląd dokumentu PDF wygenerowanego przez system prosto z widoku podsumowania rekordu. Dzięki temu będziesz miał możliwość podglądu faktury, lub innego dokumentu PDF, prosto z rekordu, bez konieczności zapisywania go na dysku. Takie rozwiązanie znacznie ułatwi pracę użytkownikom odpowiedzialnym za wystawianie i przesyłanie dokumentów PDF, oraz pracownikom działu księgowego, którzy nie będą musieli pobierać faktur, by mieć do nich wgląd.
+Jest to widżet, który pozwala na podgląd dokumentu PDF do wygenerowania w czasie rzeczywistym. Dzięki temu będziesz miał możliwość podglądu faktury, lub innego dokumentu PDF, przed jego fizycznym wygenerowaniem. Takie rozwiązanie znacznie ułatwi pracę użytkownikom odpowiedzialnym za wystawianie i przesyłanie dokumentów PDF, oraz pracownikom działu księgowego, gdyż umożliwia weryfikacje dokumentu przed jego wystawieniem.
 
 
 ### Konfiguracja Podglądu PDF
@@ -32,7 +32,7 @@ Widżet **Podgląd PDF** jest już gotowy do użycia. W panelu użytkownika, prz
 ![widgets-2.jpg](widgets-2.jpg)
 
 ## Historia zmian
-Jest to widżet, który umożliwia wgląd w historię aktywności modułów. Pozwoli on na sprawdzenie wszystkich działań wszystkich użytkowników na wszystkich rekordach w danym module. Wyświetla on listę rekordów, które były otwierane lub modyfikowane przez użytkowników, czas operacji, oraz użytkownika, który danej operacji dokonał. widżet zawiera liczne zaawansowane filtry, które pozwolą skrócić czas wyszukiwania poszczególnych aktywności.
+Jest to widżet, który umożliwia wgląd w historię aktywności na rekordach modułów. Pozwala on na weryfikacje konkretnej aktywności dowolnych użytkowników w obrębie wybranego modułu bądź globalnie. Wyświetla on listę rekordów, które były otwierane lub modyfikowane przez użytkowników, czas przeprowadzanej aktywności, oraz użytkownika, który danej operacji dokonał. widżet zawiera liczne zaawansowane filtry, które pozwolą zawęzić wyświetlaną treść do interesujących nas wyników.
 
 ### Konfiguracja Historii Zmian
 
