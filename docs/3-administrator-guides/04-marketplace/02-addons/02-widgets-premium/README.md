@@ -51,4 +51,16 @@ Pamiętaj by przy tworzeniu widżetu wybrać odpowiednią rolę oraz pulpit, na 
 
 Widżet **Historia aktualizacji systemu** jest już gotowy do użycia. W panelu użytkownika przejdź do Zakładki **Pulpit**,  gdzie pojawi się widżet. 
 
+Pierwsza lista rozwijana pozwala nam wybrać moduł systemu, dla którego chcemy śledzić zmiany. Jeżeli z listy wybierzemy pozycję **Podsumowanie**, pojawi nam się historia aktualizacji w wybranym okresie dla całego systemu z podziałem na moduły.
+
 ![widgets-4.jpg](widgets-4.jpg)
+
+Wybierając natomiast z listy konkretny moduł, uzyskamy dodatkowe informacje, takie jak: kto wykonał akcję, na jakim rekordzie czy też z jakich danych na jakie zostały zmienione
+
+![widgets-5.jpg](widgets-5.jpg)
+
+W prawym górnym rogu widżetu znajduje się ikona trybika, pozwalająca ustawić wyświetlane przez niego dane. Możemy wybrać jakie akcje chcemy, żeby zostały wyśwetlone oraz z jakimi użytkownikami mają być one powiązane.
+
+![widgets-6.jpg](widgets-6.jpg)
+
+
