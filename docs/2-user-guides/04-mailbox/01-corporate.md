@@ -5,11 +5,10 @@ title: Skrzynki korporacyjne
 Skrzynki firmowe w systemie YetiForce to funkcjonalność pozwalająca na centralne zarządzanie korespondencją e-mailową w ramach organizacji. Dzięki nim możliwe jest monitorowanie, odbieranie i wysyłanie wiadomości e-mail z różnych kont pocztowych bezpośrednio z poziomu systemu CRM YetiForce.
 
 Skrzynki firmowe są ściśle zintegrowane z innymi modułami YetiForce CRM. Pozwala to na automatyczne przypisywanie e-maili do odpowiednich rekordów w systemie.
-Ponadto mogą one być zintegrowane z workflow systemu, co umożliwia automatyzację wielu procesów biznesowych.
 
 ## Konfiguracja 
 
-By móc skorzystać z tej funkcjonalności konieczne jest skonfigurowanie w panelu administracyjnym ```serwera poczty``` oraz ```skanera poczty```. Natomiast by móc wysyłać wiadomości przez system YetiForce CRM należy dodatkowo ustawić sekcję ```autologowanie```. Poniżej znajduje się opis jak można to zrobić.
+By móc skorzystać z tej funkcjonalności konieczne jest skonfigurowanie w panelu administracyjnym ```Serwera poczty``` oraz ```Skanera poczty```. Natomiast by móc wysyłać wiadomości przez system YetiForce CRM należy dodatkowo ustawić sekcję ```Autologowanie```. Poniżej znajduje się opis jak można to zrobić.
 
 ### Serwer poczty
 
@@ -38,7 +37,7 @@ Przycisk ```Dodaj rekord``` umożliwi stworzenie nowego skanera poczty.
 
 #### Pole formularza tworzenia skanera pocztowego
 - Serwer - serwer pocztowy utworzony w ```Narzędzia pocztowe``` > ```Serwery poczty```
-- Login - login służący do zalogowania się do poczty (opcjonalne przy uwierzytelnianiu OAuth)
+- Login - login służący do zalogowania się do poczty
 - Hasło - hasło umożliwiające zalogowanie się do poczty (opcjonalne przy uwierzytelnianiu OAuth)
 - Akcje skanera poczty
     - Stwórz e-maila - wybranie tej opcji powoduje pobieranie wiadomości email z serwera pocztowego
@@ -46,10 +45,11 @@ Przycisk ```Dodaj rekord``` umożliwi stworzenie nowego skanera poczty.
     - Otwórz zgłoszenie - ustawia odpowiedni status dla zgłoszenia powiązanego z pobraną wiadomością mailową
     - Utwórz zgłoszenie - tworzy nowe zgłoszenie w systemie
 - Pola wyszukiwania - określa kryteria powiązania wiadomości z elementem systemu
-- Użytkownik - określa użytkownika do którego będzie przypisane utworzony elelement systemu
+- Użytkownik - określa użytkownika, do którego będzie przypisane utworzony element systemu
 
 ### Wysyłanie wiadomości pocztowych
 
+Funkcjonalność wysyłania wiadomości pocztowych, ma zastosowanie tylko w zakresie wewnętrznego klienta pocztowego (RoundCube).
 Jeżeli chcemy by system YetiForce CRM nie tylko odbierał pocztę, ale także umożliwiał nam wysyłanie wiadomości pocztowych, należy w panelu administrcyjnym wybrać  ```Narzędzia pocztowe ``` a nastepnie zakładkę ```Poczta - autologowanie```.
 
 ![corporate-5](corporate-5.jpg)
