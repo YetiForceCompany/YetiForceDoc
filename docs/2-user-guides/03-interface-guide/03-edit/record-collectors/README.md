@@ -30,19 +30,36 @@ import ReactPlayer from 'react-player';
 </Tabs>
 
 Record collector is used to load data from various sources and enables displaying and loading data into the YetiForce CRM system.
-
-![record-collector-1](record-collector-1.jpg)
-
 The mechanism is available in all modules, however it has to be enabled and configured for each module to work correctly.
 
 ## Configuration
 
-Collectors can be configured in the following panel: [`Software configuration → Integration → Record collectors`](/administrator-guides/integration/record-collectors/)
+W celu skonfigurowania **kolektora rekordów**, w panelu administracyjnym wybierz [`Integracja → Kolektor rekordów`](/administrator-guides/integration/record-collectors/)
+Po przejściu do tej zakładki wyświetli się lista dostępnych kolektorów.
+
+![record-collector-1](record-collector-2.jpg)
+
+**Najwżniejsze kolumny**
+* **Moduły** - pokazuje miejsca w systemie, dla których dany kolektor jest dostępny
+* **Typ** - określa typ kolektora:
+      - **wyświetl** - wyświetla informację pobraną z kolektora
+      - **pokaż i wypełnij** - pozwala nie tylko wyświetlić dane pobrane z kolektora, ale również wypełnić nimi formularz w systemie
+* **Adres URL dokumentacji** - link do dokumentacji dostawcy usługi, zawierający szczegółowe informacje na temat kolektora. Znajdziesz tam m.in. instrukcje konfiguracji czy też sposób uzyskania danych autoryzacyjnych, jeżeli są one potrzebne
+* **Wyróżniony** - oznacz ten checkbox, aby ikona danego kolektora została wyświetlona obok listy rozwijanej wszystkich uruchomionych kolektorów. Ułatwi to szybki dostęp do najczęściej używanych integratorów
+* **Aktywny** - oznacz ten checkbox, aby dany kolektor był dostępny do wybrania w systemie
+* **Akcje** - kliknij ikonę akcji (trybik), aby rozwinąć okno dialogowe z dodatkowymi opcjami konfiguracyjnymi kolektora
+
 
 ## Available collectors
 
 Below is a list of all currently available record collectors. Free collectors available in the system by default are marked with ★, the remaining ones can be purchased from the Marketplace.
 We regularly add new record collectors to the YetiForce system.
+
+:::warning
+Należy pamiętać, że dostęp do danych z niektórych kolektorów może wymagać odpowiednich danych uwierzytelniających.
+
+**Prosimy o zapoznanie się z dokumentacją danego kolektora, aby uzyskać więcej informacji na temat wymagań dotyczących dostępu.**
+:::
 
 - GUS [PL] - Fetches data on Polish companies from the online REGON 1(BIR1) database provided by GUS
 - ★ VIES [EU] - Checks if the business entity has a valid VAT-EU number for intra-community transactions within the European Union
@@ -61,3 +78,14 @@ We regularly add new record collectors to the YetiForce system.
 - VAT [GB] - Verifies whether a company is registered as a VAT taxpayer in the United Kingdom
 - EDGAR [USA] - Fetches data on US companies from the United States Securities and Exchange Commission via EDGAR
 - VATify.eu - Fetches data from VATify.eu database, which also contains the taxpayer's current status
+
+
+## Wykorzystanie kolektora
+
+W celu skorzystania z kolektora rekordów, przejdź do formularza w module, dla którego jet on dostępny.
+Na jego dole pojawi się lista dostępnych kolektorów. Dla tych, dla których w panelu administracyjnym zaznaczono opcję **Wyróżniony**, zostaną wyświetlone na liście niezależnie.
+Pozostałe aktywne kolektory dostępne są pod przyciskiem **Kolektory rekordów**. Kliknij na to pole, aby rozwinąć listę i wybrać odpowiedni kolektor.
+
+Dostęp do kolektorów również jest możliwy w formularzach typu "Szybkie tworzenie". W oknie modalnym pojawiają się one u góry po prawej stronie, jak to zostało przedstawione na poniższym zrzucie ekranu.
+
+![record-collector-1](record-collector-1.jpg)
