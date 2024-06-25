@@ -88,6 +88,18 @@ Gdy ścieżka `$chromiumBinaryPath` jest poprawnie ustawiona i system ma dostęp
 
 ### Instalacja Chromium na Linuksie przy użyciu skryptu Bash
 
+Upewnij się, że Twój system ma zainstalowane wszystkie wymagane zależności.
+Dziękujemy [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
+❤
+
+Lista wymaganych pakietów może się różnić w zależności od dystrybucji i wersji. [Lista zależności w zależności od wersji](https://source.chromium.org/chromium/chromium/src/+/main:chrome/installer/linux/debian/dist_package_versions.json)
+
+Przykładowa komenda do instalacji zależności dla systemu Debian 12.4 bookworm
+
+```bash
+apt-get install -y --no-install-recommends libnss3-tools libatk1.0-0 libatk-bridge2.0-0 libdrm-dev libxkbcommon-dev libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm-dev libasound2 libcups2 libpango-1.0-0 libcairo2
+```
+
 Jeżeli twój system znajduje się na serwerze opartym o dystrybucję Linux, możesz w prosty sposób pobrać Chrome/Chromium za pomocą skryptu bash.
 
 Wykonaj poniższy skrypt, który pobierze najnowszą wersję Chromium/Chrome i umieści go gotowego do pracy na serwerze w lokalizacji ```./latest```
