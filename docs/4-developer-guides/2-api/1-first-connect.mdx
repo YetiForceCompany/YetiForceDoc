@@ -1,0 +1,69 @@
+---
+title: Pierwsze Połączenie
+description: Jak rozpocząć pierwsze połączenie
+keywords:
+  - Webservice
+  - API
+  - RestAPI
+  - configuration
+  - YetiForce
+tags:
+  - Webservice
+  - API
+  - Rest API
+  - Configuration
+---
+
+Mając już prawidłowo skonfigurowany API Key i dane uwierzytelniające, co zostało opisane w artykule odnośnie [konfiguracji](/developer-guides/api/config), możemy przystapić do nawiązania połączenia.
+Zanim będziemy mogli odpytać serwer o interesujące nas dane, wpierw koniecznym będzie uzyskanie ```tokena```, który będzie uwierzytelniał nasze kolejne requesty.
+W tym celu konieczne będzie zalogowanie się, co możemy uczynić wysyłając reqest zgodnie z poniższą instrukcją.
+
+## Logowanie
+
+W celu zalogowania się, wysyłamy do naszego serwera żądanie pod adres:
+
+![request 1](request-1.jpg)
+
+W ramach testów, możemy do tego wykorzystać program ```Postman```, co będzie wyglądać następująco:
+
+W pierwszej kolejności do nagłówków dodajemy ```X-API-KEY``` i jako wartość wskazujemy klucz dodany w panelu administracyjnym w zakładce ```Web service - aplikacje```.
+
+![api_key](api_key.jpg)
+
+Zamiast wartości ```{{APi-KEY}}``` wpisujemy wartość API Key skopiowaną z panelu.
+
+![request 2](request-2.jpg)
+
+
+Następnie podajemy dane do logowania, zgodnie z poniższym zrzutem ekranu. Zamiast zmiennj ```{{URL}}``` podajemy adres naszej platformy YetiForce. Dane uwierzytelniające ```userName``` i ```password``` wpisujemy zgodnie z wartościami ustalonymi w panelu administracyjnym w zakładce ```Web service - użytkownicy```.
+
+W informacji zwrotonej otrzymamy parametr ```token```, który będziemy przekazywać w kolejnych requestach.
+
+![request 3](request-3.jpg)
+
+##  Kolejne requesty
+Po uzyskaniu wartości ```token```, możemy przejść do odpytywania API o interesujące nas dane. 
+W tym celu do kolejnych requestów dodajemy nagłówek ```x-token``` z wartością uzyskanego tokena.
+
+![request 4](request-4.jpg)
+
+W zależności od tego czy mamy wykupioną usługe ```Web service Premium``` czy też korzystamy z ```Web service Standard```, będziemy mieć do dyspozycji inny zakres dostepnych requestów.
+Gotowe przykłady requestów, dla poszczególnych usług znajdują się poniżej. Można zaimportować do programu ```Postman``` i dowolnie testować.
+
+import STANDARD from '/static/files/api/webservice_standard.mdx';
+import PREMIUM from '/static/files/api/webservice_premium.mdx';
+
+
+### Web service Standard
+
+<details>
+  <summary>WebService standard</summary>
+	<STANDARD />
+</details>
+
+### Web service Premium
+
+<details>
+  <summary>WebService premium</summary>
+	<PREMIUM />
+</details>
