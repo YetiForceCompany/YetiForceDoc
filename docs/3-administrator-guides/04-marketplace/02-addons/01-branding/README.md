@@ -36,6 +36,9 @@ Stopka strony bez wykupionego brandingu
 
 Stopka strony z wykupionym brandingiem
 ![branding-3](branding-3.jpg)
+
+## FAQ
+
 ### Czy usługa Disable Branding pozwala zmienić logo w systemie?
 
 Zmiana logo widocznego między innymi na stronie logowania możliwa jest bez konieczności wykupienia usługi Disable Branding. Szczegółowy opis jak zmienić logo w swoim systemie dostępny jest w naszej dokumentacji: [Jak zmienić logo YetiForce na własne?](https://doc.yetiforce.com/pl/administrator-guides/faq/how-to-change-logo/)
