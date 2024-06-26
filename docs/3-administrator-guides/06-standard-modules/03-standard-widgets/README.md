@@ -1,5 +1,16 @@
 ---
 title: Widżety Standardowe
+description: Opis działania i konfiguracja widgetów w systemie YetiForce
+keywords:
+  - widgety
+  - widgety z filtrów
+  - pulpit nawigacyjny
+  - personalizacja
+tags:
+  - widgety
+  - widgety predefiniowane
+  - produktywność
+preview: widgets-10
 ---
 
 Widżety w YetiForce to interaktywne elementy, które można umieszczać na pulpicie nawigacyjnym systemu. Umożliwiają one szybki dostęp do najważniejszych informacji i funkcji, a także personalizację interfejsu użytkownika zgodnie z indywidualnymi potrzebami.

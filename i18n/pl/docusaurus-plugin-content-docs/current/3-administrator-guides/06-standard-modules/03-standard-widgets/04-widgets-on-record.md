@@ -1,7 +1,7 @@
 ---
 title: Widgety na rekordzie
 ---
-Oprócz widżetów umieszczanych na pulpicie nawigacyjnym, YetiForce CRM oferuje również możliwość dodawania widżetów do szczegółów danych poszczególnych elementów z listy. Funkcja ta pozwala na spersonalizowanie widoku i szybki dostęp do najważniejszych informacji dotyczących danego elementu, bez konieczności przechodzenia do innych modułów.
+Oprócz widgetów umieszczanych na pulpicie nawigacyjnym, YetiForce oferuje również możliwość dodawania widgetów w szczegółach poszczególnych rekordów z listy. Funkcja ta pozwala na spersonalizowanie widoku i szybki dostęp do najważniejszych informacji dotyczących danego elementu, bez konieczności przechodzenia do innych modułów.
 
 ### Konfiguracja 
 
@@ -12,7 +12,7 @@ Oprócz widżetów umieszczanych na pulpicie nawigacyjnym, YetiForce CRM oferuje
 
 #### Wybór modułu i dodawanie widgetu
 
-* Z listy rozwijanej po prawej stronie wybierz moduł, dla którego chcesz dodać widget.
+* Z listy rozwijanej po prawej stronie wybierz moduł, dla którego chcesz dodać widget. (strzałka nr 3 na zrzucie ekranu)
 * Kliknij przycisk **Dodaj Widget**.
 
 ![widgets-12.jpg](widgets-12.jpg)

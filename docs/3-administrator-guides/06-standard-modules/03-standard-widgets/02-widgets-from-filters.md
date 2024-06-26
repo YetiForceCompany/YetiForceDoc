@@ -1,16 +1,28 @@
 ---
 title: Widgety z filtrów
+description: Opis działania i konfiguracja widgetów z filtrów
+keywords:
+    - widgety
+    - widgety z filtrów
+    - pulpit nawigacyjny
+    - personalizacja
+tags:
+    - widgety
+    - widgety z filtrów
+preview: widgets-6
 ---
-Oprócz predefiniowanych widgetów, YetiForce oferuje widgety oparte o filtry stworzone na listach. Pozwalają one na prezentację danych zgodnie z indywidualnie przyjętymi założeniami i ograniczeniami. 
-Pozwala to dostosować widget konkretnie pod dane potrzeby, w momencie kiedy ogólne widgety predefiniowane nie są w stanie tego zrobić.
+
+Oprócz predefiniowanych widgetów, YetiForce oferuje widgety oparte o filtry stworzone na listach. Pozwalają one na prezentację danych zgodnie z indywidualnie przyjętymi założeniami i ograniczeniami.
+Pozwala to dostosować widget konkretnie pod dane potrzeby, ten typ posiada dużo większe możliwości do wyświetlenia danych lecz wymaga wprowadzenia większej ilość parametrów konfiguracyjnych.
 
 ## 1. Tworzenie filtru
+
 W panelu użytkownika przejdź do modułu, z którego chcesz pobrać dane do widgetu. Na przykład, jeśli chcesz utworzyć widget z filtrami dla leadów, przejdź do modułu "Leady".
-Wybierz znajdująca się w centralnej części ekranu sekcję *Filtry* a następnie wybierz przycisk **Stwórz nowy filtr**
+Wybierz znajdująca się w centralnej części ekranu sekcję <kbd>Filtry</kbd> a następnie wybierz przycisk <kbd>Stwórz nowy filtr</kbd>
 
 ![widgets-3.jpg](widgets-3.jpg)
 
-Po kliknięciu przycisku **Stwórz nowy filtr** w widoku listy, pojawia się okno modalne, które oferuje szeroki wachlarz opcji dostosowywania i filtrowania danych.
+Po kliknięciu przycisku <kbd>Stwórz nowy filtr</kbd> w widoku listy, pojawia się okno modalne, które oferuje szeroki wachlarz opcji dostosowywania i filtrowania danych.
 
 ![widgets-4.jpg](widgets-4.jpg)
 
@@ -20,7 +32,7 @@ Po kliknięciu przycisku **Stwórz nowy filtr** w widoku listy, pojawia się okn
 * **Relacyjne dane**: Istnieje możliwość wyświetlania danych powiązanych z innych modułów w systemie. Na przykład, jeśli filtrujesz listę leadów, możesz wyświetlać dane z powiązanych kontaktów lub firm.
 * **Warunki**: Możesz tworzyć złożone filtry stosując operatory AND i OR do łączenia różnych kryteriów. Pozwala to na precyzyjne filtrowanie danych i wyświetlanie tylko tych informacji, które Cię interesują.
 
-By filtr był dostępny w widgetach, należy zaznaczyć opcję **Dostępy w widgetach**. Następnie możemy zapisać utworzony filtr i wykorzystać go w dowolnym widgecie.
+By filtr był dostępny w widgetach, należy zaznaczyć opcję <kbd>Dostępy w widgetach</kbd>. Następnie możemy zapisać utworzony filtr i wykorzystać go w dowolnym widgecie.
 
 ## 2. Tworzenie widgetu
 
@@ -37,7 +49,7 @@ W oknie modalnym, które się pojawi wybierz moduł zgodny z modułem, w którym
 
 ![widgets-6.jpg](widgets-6.jpg)
 
-Następnie należy przejść w Panelu użytkownika do zakładki Pulpit i dodać widget wybierając go z listy, która się pojawi po naciśnięciu przycisku **Predefiniowane widgety** 
+Następnie należy przejść w Panelu użytkownika do zakładki Pulpit i dodać widget wybierając go z listy, która się pojawi po naciśnięciu przycisku <kbd>Predefiniowane widgety</kbd> 
 
 ![widgets-7.jpg](widgets-7.jpg)
 
@@ -45,7 +57,7 @@ Następnie należy przejść w Panelu użytkownika do zakładki Pulpit i dodać 
 ### b) Tworzenie widgetu przez panel użytkownika
 
 Alternatywną metodą stworzenia widgetu z filtrów jest dodanie go z poziomu panelu użytkownika.
-W tym celu przejdź do zakładki **Pulpit** a następnie wybierz przycisk **Dodaj widget z filtru**.
+W tym celu przejdź do zakładki <kbd>Pulpit</kbd> a następnie wybierz przycisk <kbd>Dodaj widget z filtru</kbd>.
 
 ![widgets-8.jpg](widgets-8.jpg)
 

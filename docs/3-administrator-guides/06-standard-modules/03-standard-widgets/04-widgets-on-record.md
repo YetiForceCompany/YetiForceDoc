@@ -1,6 +1,16 @@
 ---
 title: Widgety na rekordzie
+description: Opis działania i konfiguracja widgetów na widoku szczegółów rekordu
+keywords:
+  - widgety
+  - widgety na widoku szczegółów rekordu
+  - pulpit nawigacyjny
+  - personalizacja
+tags:
+  - widgety
+preview: widgets-14
 ---
+
 Oprócz widgetów umieszczanych na pulpicie nawigacyjnym, YetiForce oferuje również możliwość dodawania widgetów w szczegółach poszczególnych rekordów z listy. Funkcja ta pozwala na spersonalizowanie widoku i szybki dostęp do najważniejszych informacji dotyczących danego elementu, bez konieczności przechodzenia do innych modułów.
 
 ### Konfiguracja 
