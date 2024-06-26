@@ -2,15 +2,15 @@
 title: Widżety Premium
 ---
 
-**widżety Premium**  pozwalają na wyświetlenie na pulpicie i w podsumowaniu rekordu dodatkowych informacji, dzięki czemu wszystkie niezbędne szczegóły mogą być dostępne dla użytkownika na wyciągnięcie ręki. W chwili obecnej w zestawie dostępne są 2 widżety - **Podgląd PDF** oraz **Historia zmian**
+**Widżety Premium**  pozwalają na wyświetlenie na pulpicie i w podsumowaniu rekordu dodatkowych informacji, dzięki czemu wszystkie niezbędne szczegóły mogą być dostępne dla użytkownika na wyciągnięcie ręki. W chwili obecnej w zestawie dostępne są 2 widżety - **Podgląd PDF** oraz **Historia zmian**
 
 :::warning
 
-widżet Podgląd PDF i Historia Zmian są dostępne tylko dla użytkowników YetiForce CRM z wykupioną subskrypcją widżety Premium.
+Widżety Premium są dodatkiem płatnym i wymagają wykupienia subskrypcji.
 :::
 
 ## Podgląd PDF
-Jest to widżet, który pozwala na podgląd dokumentu PDF do wygenerowania w czasie rzeczywistym. Dzięki temu będziesz miał możliwość podglądu faktury, lub innego dokumentu PDF, przed jego fizycznym wygenerowaniem. Takie rozwiązanie znacznie ułatwi pracę użytkownikom odpowiedzialnym za wystawianie i przesyłanie dokumentów PDF, oraz pracownikom działu księgowego, gdyż umożliwia weryfikacje dokumentu przed jego wystawieniem.
+Jest to widżet, który pozwala na podgląd dokumentu PDF do wygenerowania w czasie rzeczywistym. Dzięki temu będziesz miał możliwość podglądu faktury lub innego dokumentu PDF przed jego fizycznym wygenerowaniem. Takie rozwiązanie znacznie ułatwi pracę użytkownikom odpowiedzialnym za wystawianie i przesyłanie dokumentów PDF oraz pracownikom działu księgowego, gdyż umożliwia weryfikacje dokumentu przed jego wystawieniem.
 
 
 ### Konfiguracja Podglądu PDF
@@ -18,7 +18,7 @@ Jest to widżet, który pozwala na podgląd dokumentu PDF do wygenerowania w cza
 W pierwszej kolejności należy się upewnić, czy dla danego modułu posiadamy stworzony szablon PDF.
 Następnie możemy przejść do konfiguracji samego widżetu:
 
-1. Przejdź do panelu administracyjnego YetiForce CRM.
+1. Przejdź do panelu administracyjnego YetiForce.
 2. Wybierz z lewego menu  Moduły standardowe ➜ Moduły widżety.
 3. Z pola wyboru, po prawej stronie wybierz moduł, dla którego chcesz dodać widżet **Podgląd PDF**.
 4. Kliknij przycisk Dodaj widżet.
@@ -41,7 +41,7 @@ Jest to widżet, który umożliwia wgląd w historię aktywności na rekordach m
 Pamiętaj by przy tworzeniu widżetu wybrać odpowiednią rolę oraz pulpit, na którym ma się on pojawić.
 :::
 
-1. Przejdź do panelu administracyjnego YetiForce CRM.
+1. Przejdź do panelu administracyjnego YetiForce.
 2. Wybierz z lewego menu  Moduły standardowe ➜ Panel widżety.
 4. Kliknij przycisk Predefiniowane widżety.
 5. Wybierz widżet **Historia aktualizacji systemu** z listy dostępnych widżetów
