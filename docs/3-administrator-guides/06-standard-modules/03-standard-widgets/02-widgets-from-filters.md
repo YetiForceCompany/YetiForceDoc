@@ -1,7 +1,7 @@
 ---
 title: Widgety z filtrów
 ---
-Oprócz predefiniowanych widgetów, YetiForce CRM oferuje widgety oparte o filtry stworzone na listach. Pozwalają one na prezentację danych zgodnie z indywidualnie przyjętymi założeniami i ograniczeniami. 
+Oprócz predefiniowanych widgetów, YetiForce oferuje widgety oparte o filtry stworzone na listach. Pozwalają one na prezentację danych zgodnie z indywidualnie przyjętymi założeniami i ograniczeniami. 
 Pozwala to dostosować widget konkretnie pod dane potrzeby, w momencie kiedy ogólne widgety predefiniowane nie są w stanie tego zrobić.
 
 ## 1. Tworzenie filtru
@@ -10,23 +10,23 @@ Wybierz znajdująca się w centralnej części ekranu sekcję *Filtry* a następ
 
 ![widgets-3.jpg](widgets-3.jpg)
 
-Po kliknięciu przycisku "Stwórz nowy filtr" w widoku listy, pojawia się okno modalne, które oferuje szeroki wachlarz opcji dostosowywania i filtrowania danych.
+Po kliknięciu przycisku **Stwórz nowy filtr** w widoku listy, pojawia się okno modalne, które oferuje szeroki wachlarz opcji dostosowywania i filtrowania danych.
 
 ![widgets-4.jpg](widgets-4.jpg)
 
 ### Najważniejsze pola tworzonego filtru
 
-* Wybór kolumn: Możesz określić, które kolumny z listy mają być wyświetlane w filtrze
-* Relacyjne dane: Istnieje możliwość wyświetlania danych powiązanych z innych modułów w systemie. Na przykład, jeśli filtrujesz listę leadów, możesz wyświetlać dane z powiązanych kontaktów lub firm.
-* Warunki: Możesz tworzyć złożone filtry stosując operatory AND i OR do łączenia różnych kryteriów. Pozwala to na precyzyjne filtrowanie danych i wyświetlanie tylko tych informacji, które Cię interesują.
+* **Wybór kolumn**: Możesz określić, które kolumny z listy mają być wyświetlane w filtrze
+* **Relacyjne dane**: Istnieje możliwość wyświetlania danych powiązanych z innych modułów w systemie. Na przykład, jeśli filtrujesz listę leadów, możesz wyświetlać dane z powiązanych kontaktów lub firm.
+* **Warunki**: Możesz tworzyć złożone filtry stosując operatory AND i OR do łączenia różnych kryteriów. Pozwala to na precyzyjne filtrowanie danych i wyświetlanie tylko tych informacji, które Cię interesują.
 
-By filtr był dostępny w widgetach, należy zaznaczyć opcję "**Dostępy w widgetach**". Następnie możemy zapisać utworzony filtr i wykorzystać go w dowolnym widgecie.
+By filtr był dostępny w widgetach, należy zaznaczyć opcję **Dostępy w widgetach**. Następnie możemy zapisać utworzony filtr i wykorzystać go w dowolnym widgecie.
 
 ## 2. Tworzenie widgetu
 
-Widget z filtru można utworzyć w systemie YetiForce CRM na dwa sposoby. 
+Widget z filtru można utworzyć w systemie YetiForce na dwa sposoby. 
 
-### Tworzenie widgetu przez panel administracyjny 
+### a) Tworzenie widgetu przez panel administracyjny 
 W panelu administracyjnym z lewego menu wybierz **Moduły Podstawowe ➔ Panel - Widżety**.
 
 Następnie dla odpowiedniego pulpitu i roli wybierz przycisk **Widget z filtrem**
@@ -42,7 +42,7 @@ Następnie należy przejść w Panelu użytkownika do zakładki Pulpit i dodać 
 ![widgets-7.jpg](widgets-7.jpg)
 
 
-### Tworzenie widgetu przez panel użytkownika
+### b) Tworzenie widgetu przez panel użytkownika
 
 Alternatywną metodą stworzenia widgetu z filtrów jest dodanie go z poziomu panelu użytkownika.
 W tym celu przejdź do zakładki **Pulpit** a następnie wybierz przycisk **Dodaj widget z filtru**.
