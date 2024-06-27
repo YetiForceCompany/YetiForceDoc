@@ -13,7 +13,7 @@ preview: pdf-2.jpg
 ---
 :::tip
 
-Do prawidłowego działania PDF Premium konieczne jest wykupienie płatnego dodatku **YetiForce PDF Premium**. 
+Do prawidłowego działania PDF Premium konieczne jest wykupienie płatnego dodatku **YetiForce PDF Premium**.
 
 Instrukcję jak to zrobić znajdziesz tutaj: [Instrukcja aktywacji YetiForce PDF Premium](/administrator-guides/marketplace/addons/YetiForce-pdf-premium/)
 
@@ -24,7 +24,7 @@ W celu prawidłowego działania dodatku **YetiForce PDF Premium**, konieczne jes
 
 ### Pobranie silnika Chromium/Chrome
 
-W celu pobrania silnika Chromium odwiedź poniższą stronę. Znajdziesz tam instrukcje i linki do najnowszych wersji przeglądarki Chromium, które można zainstalować na swoim systemie.
+Silnik Chromium należy pobrać z oficjalnej strony projektu, do której link znajduje się poniżej. Mieszczą się tam również pomocne informacje, instrukcje i linki do najnowszych wersji przeglądarki Chromium, które można zainstalować na swoim systemie.
 
 - Chromium - https://www.chromium.org/getting-involved/download-chromium/
 
