@@ -19,12 +19,14 @@ Usunięcie pamięci podręcznej przeglądarki, czyli tak zwane czyszczenie cache
 1. Otwórz YetiForce w Google Chrome
 2. Naciśnij <kbd>F12</kbd> lub przejdź do **do narzędzi deweloperskich.** 
 
-Aby otworzyć narzędzia programisty, wykonaj następujące kroki:
+   Aby otworzyć narzędzia programisty, wykonaj następujące kroki:
 
-![how-to-clear-browser-cache-1.jpg](how-to-clear-browser-cache-1.jpg)
+   ![how-to-clear-browser-cache-1.jpg](how-to-clear-browser-cache-1.jpg)
 
 3. W okienku, które wyskoczyło wybierz zakładkę `Application`
-4. W zakładce `Application` w panelu po lewej stronie wybierz `Clear storage`. Następnie kliknij `Clear site data`
+4. W zakładce `Application` w panelu po lewej stronie wybierz `Clear storage`. 
+
+   Następnie kliknij `Clear site data`
 
 ![how-to-clear-browser-cache-2.jpg](how-to-clear-browser-cache-2.jpg)
 

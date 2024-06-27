@@ -251,7 +251,7 @@ rm public_html/.user.ini
 
 ## 14. Instalacja systemu YetiForce
 
-Pełny opis instalacji systemu YetiForce znajduje się w artykule: [Instalacja systemu YetiForce](/introduction/installation-manual#jak-zainstalować-system-crm-)
+Pełny opis instalacji systemu YetiForce znajduje się w artykule: [Instalacja systemu YetiForce](/introduction/installation-manual#jak-zainstalować-system-yetiforce)
 
 ## 15. Uwagi końcowe
 

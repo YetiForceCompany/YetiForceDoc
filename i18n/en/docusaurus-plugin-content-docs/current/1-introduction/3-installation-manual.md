@@ -32,9 +32,7 @@ First, prepare the installation files. **[Download YetiForce](download) from our
 
 :::warning
 
-We recommend downloading the "complete" versions, for example `YetiForceCRM-7.0.0-complete.zip`. If you don't download the "complete" version, you will have to install the libraries using `yarn` and `composer` before installing the system.
-The right order is important - first `yarn`, then `composer`.
-A sample installation script can be downloaded from [here](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
+We recommend downloading the "complete" versions, for example `YetiForceCRM-7.0.0-complete.zip`. If you don't download the "complete" version, you will have to install the libraries using `yarn` and `composer` before installing the system. The right order is important - first `yarn`, then `composer`. A sample installation script can be downloaded from [here](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
 
 :::
 

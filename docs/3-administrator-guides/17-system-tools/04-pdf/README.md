@@ -67,7 +67,7 @@ Gdy ścieżka `$chromiumBinaryPath` jest poprawnie ustawiona i system ma dostęp
 
 Prosty skrypt do pobrania najnowszej wersji bez instalacji.
 
-Upewnij się, że system ma wszystkie wymagane zależności. Dzięki [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix) ❤️
+Upewnij się, że system ma wszystkie wymagane zależności. [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
 
 The list of required packages may vary depending on the distribution and version. https://source.chromium.org/chromium/chromium/src/+/main:chrome/installer/linux/debian/dist_package_versions.json
 
@@ -113,7 +113,7 @@ lsb-release
 wget
 xdg-utils
 
-Uwaga: Musisz zainstalować również ‘libgbm-dev’ i‘libxshmfence-dev’. This is reported for Ubuntu 20.04.
+Uwaga: Musisz zainstalować również `libgbm-dev` i `libxshmfence-dev`. This is reported for Ubuntu 20.04.
 ```
 
 </details>

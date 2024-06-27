@@ -16,8 +16,9 @@ Profiles allow you to define permissions to many functionalities and views avail
 
 ## Add new profile
 
-By default, there is 1 profile in the system - Administrator. To add a new profile with pre-configured permissions, click the <kbd>+ Add profile</kbd> button in the upper left corner of the screen.
-You will see the new profile page, where you have to choose a name for it and optionally fill its description. Then, in the `Edit permissions for this profile` table, select the permissions to actions in individual modules that you want the newly created profile to have.
+By default, there is 1 profile in the system - Administrator. To add a new profile with pre-configured permissions, click the <kbd>+ Add profile</kbd> button in the upper left corner of the screen. You will see the new profile page, where you have to choose a name for it and optionally fill its description. 
+
+Then, in the `Edit permissions for this profile` table, select the permissions to actions in individual modules that you want the newly created profile to have.
 
 In addition to general permissions to create, view, edit, and delete records in selected modules, you can also configure permissions for fields and tools. In order to modify these permissions, click the down arrow button <kbd>˅</kbd> in the `field and tool privileges` column and configure the additional options:
 

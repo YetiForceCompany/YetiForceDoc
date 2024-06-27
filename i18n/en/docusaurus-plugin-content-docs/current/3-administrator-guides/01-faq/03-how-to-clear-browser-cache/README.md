@@ -18,9 +18,10 @@ Clearing browser cache is a very useful step that should be performed after upda
 
 1. Open your YetiForce in Google Chrome
 2. Press <kbd>F12</kbd> or go to** Developer tools.**
+
    To open Developer tools follow these steps:
 
-![how-to-clear-browser-cache-1.jpg](how-to-clear-browser-cache-1.jpg)
+   ![how-to-clear-browser-cache-1.jpg](how-to-clear-browser-cache-1.jpg)
 
 3. Select the `Application` tab in the popup window
 4. In the `Application` tab in the panel on the left select `Clear storage`

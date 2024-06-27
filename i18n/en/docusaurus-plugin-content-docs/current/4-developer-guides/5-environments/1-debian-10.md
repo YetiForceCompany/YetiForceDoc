@@ -251,7 +251,7 @@ rm public_html/.user.ini
 
 ## 14. Install YetiForce
 
-A complete description of the YetiForce installation can be found in the article: [Installation manual](introduction/installation-manual/)
+A complete description of the YetiForce installation can be found in the article: [Installation manual](/introduction/installation-manual#how-to-install-yetiforce)
 
 ## 15. Final remarks
 
