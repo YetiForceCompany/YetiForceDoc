@@ -1,30 +1,30 @@
 ---
-title: Kontrola dostępu do funkcjonalności
-description: Jednym z kluczowych elementów bezpieczeństwa systemu YetiForce jest kontrola dostępu do funkcjonalności, narzędzi oraz akcji
+title: Kontrola dostępu do funkcji systemu
+description: Jednym z kluczowych elementów bezpieczeństwa YetiForce jest kontrola dostępu do funkcji, narzędzi i działań dostępnych w systemie.
 keywords:
-  - Kontrola
+  - kontrola
   - dostępu
-  - funkcjonalności
+  - funkcjonalność
   - YetiForce
 tags:
   - kontrola
-  - dostępu
-  - funkcjonalności
+  - dostępowe
+  - funkcjonalność
 ---
 
-Jednym z kluczowych elementów bezpieczeństwa systemu YetiForce jest kontrola dostępu do funkcjonalności , narzędzi oraz akcji na poziomie użytkownika i administratora. Domyślnie dostęp do każdego elementu systemu [moduł, narzędzie, przycisk, akcja] jest sprawdzany.
+Jednym z kluczowych elementów bezpieczeństwa systemu YetiForce jest kontrola dostępu do funkcji, narzędzia i działania na poziomie użytkownika i administratora. Domyślnie sprawdzany jest dostęp do wszystkich elementów systemowych, takich jak moduły, narzędzia, przyciski lub akcje.
 
-## Logika dostępu do funkcjonalności zaszyta w YetiForce
+## Logika dostępu do funkcji
 
 ### Podział funkcjonalności
 
-System YetiForce ma wiele narzędzi z których może korzystać użytkownik, najważniejszą funkcjonalnością [a zarazem pierwszą, która jest ukazywana] to moduł [np. kontrahenci, faktury, oferty, dashboard]. W każdym module znajduje się wiele elementów wspólnych tj.:
+System YetiForce oferuje swoim użytkownikom bogaty wybór narzędzi, w tym najważniejsze funkcje, które są modułem (np. konta, faktury, notowania, pulpit nawigacyjny). W każdym module istnieje wiele wspólnych elementów, tj.:
 
 - Akcje
 - Narzędzia
 - Widoki
 - Filtry
-- Pola / Słowniki
+- Pola / słowniki
 - Widżety
 
 Do każdego elementu systemu, można zdefiniować uprawnienia np. czy pole jest widoczne dla użytkownika lub czy może używać filtru. Dodatkowo w systemie mamy dwa rodzaje słowników, jeden z nich zawiera możliwość określania uprawnień do wartości w ten sposób możemy kontrolować proces zmiany na rekordzie uwzględniając jaka rola może zmieniać jakie statusy np. dział techniczny może zmieniać zgłoszenia i nadać status "do weryfikacji" a dział kontroli może zmienić na status "zweryfikowano do zamknięcia". Jest to jeden ze sposobów realizacji zasady “separation of duties”.

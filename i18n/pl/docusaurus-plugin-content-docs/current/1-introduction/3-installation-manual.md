@@ -32,7 +32,7 @@ W pierwszej kolejności przygotuj pliki instalacyjne. **[Pobierz YetiForce](down
 
 :::warning
 
-Zalecamy pobranie wersji "complete", na przykład `YetiForceCRM-6.4.0-complete.zip`. Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`. Ważna jest kolejność - najpierw `yarn`, potem `composer`. Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
+Zalecamy pobranie wersji "complete", na przykład `YetiForceCRM-7.0.0-complete.zip`. Jeśli została pobrana inna wersja niż "complete", to przed instalacją systemu należy zainstalować biblioteki przy użyciu `yarn` i `composer`. Ważna jest kolejność - najpierw `yarn`, potem `composer`. Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
 
 :::
 
@@ -87,7 +87,7 @@ W takim wypadku musisz cofnąć się do ekranu poprzedniego i prawidłowo wprowa
 
 ![step 5](install-5.png)
 
-## Step 6 -Określ profil działalności
+## Krok 6 - Określ profil działalności
 
 ![step 6](install-6.png)
 
@@ -102,6 +102,8 @@ Wprowadź dane firmy, która będzie korzystała z systemu. Te dane zostaną pot
 Zgodnie z zapisami licencji każdy system musi być zarejestrowany po okresie próbnym 14 dni.
 
 ![step 8](install-8.png)
+
+Jeżeli instalacja zostanie wykonana prawidłowo, zostaniesz automatycznie przeniesiony do systemu CRM.
 
 ## Proces instalacji nie powiódł się
 

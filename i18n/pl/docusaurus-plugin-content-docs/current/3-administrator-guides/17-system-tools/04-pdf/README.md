@@ -12,7 +12,7 @@ preview: pdf-2.jpg
 
 ## Chromium/Chrome
 
-### Download
+### Pobierz
 
 - Chromium - https://www.chromium.org/getting-involved/download-chromium/
 
@@ -63,14 +63,16 @@ Gdy ścieżka `$chromiumBinaryPath` jest poprawnie ustawiona i system ma dostęp
 
 ![pdf-2.jpg](pdf-2.jpg)
 
-### Simple installation on Linux
+### Prosta instalacja na Linux
 
-A simple script to download the latest version without installation.
+Prosty skrypt do pobrania najnowszej wersji bez instalacji.
 
-Make sure your system has installed all required dependencies. Thanks [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix) ❤
+Upewnij się, że system ma wszystkie wymagane zależności. Dzięki [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix) ❤️
+
+The list of required packages may vary depending on the distribution and version. https://source.chromium.org/chromium/chromium/src/+/main:chrome/installer/linux/debian/dist_package_versions.json
 
 <details>
-<summary>Debian (e.g. Ubuntu)</summary>
+<summary>Debian (np. Ubuntu)</summary>
 
 ```
 ca-certificates
@@ -111,7 +113,7 @@ lsb-release
 wget
 xdg-utils
 
-Note: You might need to install ‘libgbm-dev’ and ‘libxshmfence-dev’ also. This is reported for Ubuntu 20.04.
+Uwaga: Musisz zainstalować również ‘libgbm-dev’ i‘libxshmfence-dev’. This is reported for Ubuntu 20.04.
 ```
 
 </details>
@@ -142,7 +144,7 @@ xorg-x11-fonts-Type1
 xorg-x11-utils
 ```
 
-After installing dependencies you need to update nss library using this command
+Po zainstalowaniu zależności musisz zaktualizować bibliotekę nss używając tej komendy
 
 ```
 yum update nss -y
@@ -151,7 +153,7 @@ yum update nss -y
 </details>
 
 <details>
-  <summary>Check out discussions</summary>
+  <summary>Sprawdź dyskusje</summary>
 
 - [#290](https://github.com/puppeteer/puppeteer/issues/290) - Debian troubleshooting <br/>
 - [#391](https://github.com/puppeteer/puppeteer/issues/391) - CentOS troubleshooting <br/>
@@ -195,4 +197,13 @@ popd
 rm -f ./latest
 find chromium/* -type d -ctime +1 -exec rm -rf {} \;
 ln -s $REVISION/chrome-linux/ ./latest
+```
+
+### Tips
+
+#### Watermark on the entire page size
+
+```css title="Styles column"
+#watermark-image{position: absolute; left: 0; right: 0; top: 0; bottom: 0;}&#13;
+#header{position: absolute; top: 0; left: 0; right: 0;width: 842px; height: 595px;}
 ```

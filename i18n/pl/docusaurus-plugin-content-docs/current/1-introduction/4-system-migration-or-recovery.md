@@ -171,13 +171,13 @@ Przeniesienie na nowy serwer lub przywrócenie z backupu [wymaga ponownej rejest
 
 ## Aktualizacja dodatków
 
-Niektóre dodatki mogą wymagać ponownej konfiguracji podczas zmiany lokalizacji lub adresu systemu YetiForce np. [`Konfiguracja systemu → Integracja → Panel integracji poczty`](/administrator-guides/integration/mail-integration-panel/).
+Niektóre dodatki mogą wymagać ponownej konfiguracji podczas zmiany lokalizacji lub adresu systemu YetiForce np. [`System settings → Integration → Mail integration panel`](/administrator-guides/integration/mail-integration-panel/outlook).
 
 ### YetiForce Outlook Integration Panel
 
 Wymaga ponownej reinstalacji i zainstalowania nowego pliku XML.
 
-Stary dodatek zainstalowany w Outlook należy usunąć, pobrać nowy plik XML z panelu systemu YetiForce zgodnie z instrukcją [Dodatek typu add-in do programu Outlook](/administrator-guides/integration/mail-integration-panel/outlook).
+Stary dodatek zainstalowany w Outlook należy usunąć, pobrać nowy plik XML z panelu systemu YetiForce zgodnie z instrukcją [Dodatek typu add-in do programu Outlook](/administrator-guides/integration/mail-iIntegration-panel/outlook).
 
 ## Tworzenie środowiska testowego
 

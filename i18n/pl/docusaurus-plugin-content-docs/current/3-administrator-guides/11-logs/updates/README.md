@@ -22,6 +22,14 @@ import ReactPlayer from 'react-player';
 
 Proces aktualizacji systemu jest prostszy niż proces instalacji lub migracji, więc każdy administrator YetiForce powinien sobie z nim poradzić. **Przed próbą aktualizacji systemu należy zawsze wykonać kopię zapasową i rozpocząć proces w środowisku testowym.** Aktualizacje dokonywane bezpośrednio na środowisku produkcyjnym są jednym z najczęstszych błędów popełnianych przez młodych administratorów.
 
+:::warning IMPORTANT
+
+Jeśli Twój system ma wiele niestandardowych modyfikacji, rekomendujemy, by aktualizacja została przeprowadzona przez naszych doświadczonych specjalistów.
+
+Skontaktuj się z nami w celu przedstawienia oferty aktualizacji.
+
+:::
+
 <Tabs groupId="zhh7fxZ293w">
     <TabItem value="youtube-zhh7fxZ293w" label="🎬 YouTube">
         <ReactPlayer
