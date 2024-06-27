@@ -1,6 +1,6 @@
 ---
 title: Widgety na rekordzie
-description: Opis działania i konfiguracja widgetów na widoku szczegółów rekordu
+description: Funkcja ta pozwala na spersonalizowanie widoku i szybki dostęp do najważniejszych informacji dotyczących danego elementu, bez konieczności przechodzenia do innych modułów.
 keywords:
   - widgety
   - widgety na widoku szczegółów rekordu
@@ -17,13 +17,13 @@ Oprócz widgetów umieszczanych na pulpicie nawigacyjnym, YetiForce oferuje rów
 
 #### Dostęp do menu konfiguracji
 
-* W panelu administracyjnym wybierz opcję **Moduły Standardowe** z menu głównego.
+* W sekcji administracyjnej wybierz opcję **Moduły Standardowe** z menu głównego.
 * Następnie kliknij **Moduły - Widżety**
 
 #### Wybór modułu i dodawanie widgetu
 
 * Z listy rozwijanej po prawej stronie wybierz moduł, dla którego chcesz dodać widget. (strzałka nr 3 na zrzucie ekranu)
-* Kliknij przycisk **Dodaj Widget**.
+* Kliknij przycisk <kbd>Dodaj Widget</kbd>.
 
 ![widgets-12.jpg](widgets-12.jpg)
 

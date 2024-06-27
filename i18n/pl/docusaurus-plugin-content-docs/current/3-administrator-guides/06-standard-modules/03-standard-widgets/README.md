@@ -1,5 +1,16 @@
 ---
 title: Widżety Standardowe
+description: Opis działania i konfiguracja widgetów w systemie YetiForce
+keywords:
+  - widgety
+  - widgety z filtrów
+  - pulpit nawigacyjny
+  - personalizacja
+tags:
+  - widgety
+  - widgety predefiniowane
+  - produktywność
+preview: widgets-10
 ---
 
 Widżety w YetiForce to interaktywne elementy, które można umieszczać na pulpicie nawigacyjnym systemu. Umożliwiają one szybki dostęp do najważniejszych informacji i funkcji, a także personalizację interfejsu użytkownika zgodnie z indywidualnymi potrzebami.
@@ -13,19 +24,6 @@ Głównym celem stosowania widżetów w YetiForce jest:
 
 Część widżetów jest predefiniowana i od razu gotowa do użycia. Jeżeli jednak potrzebujemy wyświetlić niestandardowe dane, możemy stworzyć widżet według własnych preferencji.
 
+import DocCardList from '@theme/DocCardList';
 
-## [Widżety Predefiniowane](/administrator-guides/standard-modules/standard-widgets/predefined-widgets)
-
-Widżety predefiniowane w YetiForce to gotowe do użytku elementy, które można umieścić na pulpicie nawigacyjnym systemu. Zostały one zaprojektowane przez zespół YetiForce i oferują szeroki zakres funkcji, które ułatwiają użytkownikom pracę z systemem.
-
-
-## [Widżety z filtrem](/administrator-guides/standard-modules/standard-widgets/widgets-from-filters)
-
-Widżety oparte o filtry pozwalają na prezentację danych zgodnie z indywidualnie przyjętymi założeniami i ograniczeniami. 
-Pozwala to dostosować widżet konkretnie pod dane potrzeby, w momencie kiedy ogólne widżety predefiniowane nie są w stanie tego zrobić.
-
-## [Wykresy z filtrem](/administrator-guides/standard-modules/standard-widgets/chars)
-Oprócz widżetów tekstowych istnieje również możliwość umieszczania wykresów na pulpicie nawigacyjnym. Wykresy te pozwalają na intuicyjną i przejrzystą prezentację danych, ułatwiając analizę trendów i identyfikację kluczowych informacji.
-
-## [Widżety na elemencie](/administrator-guides/standard-modules/standard-widgets/widgets-on-record)
-Funkcja ta pozwala na spersonalizowanie widoku i szybki dostęp do najważniejszych informacji dotyczących danego elementu, bez konieczności przechodzenia do innych modułów.
+<DocCardList />
