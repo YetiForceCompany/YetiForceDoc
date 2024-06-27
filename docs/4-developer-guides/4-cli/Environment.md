@@ -1,8 +1,8 @@
 ---
-title: Environment
+title: Środowisko
 description: Informacje o środowisku/serwerze w systemie YetiForce za pomocą CLI
 keywords:
-  - Environment
+  - Środowisko
   - CLI
   - YetiForce
 tags:
