@@ -1,11 +1,11 @@
 ---
-title: Addons
-description: In Marketplace you can find add-ons to the YetiForce system and a number of services that will allow the organization to customize the system and processes.
+title: Dodatki
+description: W Marketplace możesz znaleźć dodatki do systemu YetiForce oraz szereg usług, które pozwolą dostosować system i procesy.
 keywords:
   - YetiForce
-  - marketplace
-  - add-ons
-  - addon
+  - sklep
+  - dodatki
+  - dodatek
 tags:
   - Marketplace
 hide_table_of_contents: true

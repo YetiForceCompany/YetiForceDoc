@@ -1,5 +1,5 @@
 ---
-title: Environment
+title: Środowisko
 ---
 
 import DocCardList from '@theme/DocCardList';

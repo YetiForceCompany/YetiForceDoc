@@ -3,7 +3,7 @@ title: PDF
 description: YetiForce PDF Premium
 keywords:
   - YetiForce
-  - Settings
+  - Panel konfiguracyjny
   - PDF
 tags:
   - PDF
@@ -16,11 +16,11 @@ preview: pdf-2.jpg
 
 - Chromium - https://www.chromium.org/getting-involved/download-chromium/
 
-### Configuring the PDF generator path
+### Konfigurowanie ścieżki generatora PDF
 
-PDF configuration file: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
+Plik konfiguracyjny PDF: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
 
-Set the local path or a command to the PDF generator in the [$chromiumBinaryPath](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html#property_chromiumBinaryPath) parameter
+Ustaw ścieżkę lokalną lub polecenie do generatora PDF w parametrze [$chromiumBinaryPath](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html#property_chromiumBinaryPath)
 
 ```php
 /**
@@ -28,27 +28,27 @@ Set the local path or a command to the PDF generator in the [$chromiumBinaryPath
  */
 class Pdf
 {
-	/**
-	 * The name or path of the chrome/chromium engine.
-	 *
-	 * @see https://www.chromium.org/getting-involved/download-chromium
-	 *
-	 * @var string
-	 */
-	public static $chromiumBinaryPath = 'chromium';
+    /**
+     * The name or path of the chrome/chromium engine.
+     *
+     * @see https://www.chromium.org/getting-involved/download-chromium
+     *
+     * @var string
+     */
+    public static $chromiumBinaryPath = 'chromium';
 
-	/**
-	 * Chromium browser options available for the browser factory.
-	 *
-	 * @see https://github.com/chrome-php/chrome#available-options
-	 *
-	 * @var array
-	 */
-	public static $chromiumBrowserOptions = ['noSandbox' => true, 'noProxyServer' => true];
+    /**
+     * Chromium browser options available for the browser factory.
+     *
+     * @see https://github.com/chrome-php/chrome#available-options
+     *
+     * @var array
+     */
+    public static $chromiumBrowserOptions = ['noSandbox' => true, 'noProxyServer' => true];
 }
 ```
 
-#### Example `$chromiumBinaryPath` values:
+#### Przykładowe wartości `$chromiumBinaryPath`:
 
 - chromium
 - chromium-browser
@@ -57,19 +57,17 @@ class Pdf
 - c:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 - c:\ungoogled-chromium\chrome.exe
 
-### Select the new engine
+### Wybierz nowy silnik
 
-When the `$chromiumBinaryPath` path is set correctly and the system has access to the location/command you will see a new engine in the PDF panel.
+Gdy ścieżka `$chromiumBinaryPath` jest poprawnie ustawiona i system ma dostęp do lokalizacji/polecenia, zobaczysz nowy silnik w panelu PDF.
 
 ![pdf-2.jpg](pdf-2.jpg)
 
 ### Simple installation on Linux
 
-A simple script to download the latest version without installation. 
+A simple script to download the latest version without installation.
 
-Make sure your system has installed all required dependencies.
-Thanks [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
-❤
+Make sure your system has installed all required dependencies. Thanks [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix) ❤
 
 <details>
 <summary>Debian (e.g. Ubuntu)</summary>

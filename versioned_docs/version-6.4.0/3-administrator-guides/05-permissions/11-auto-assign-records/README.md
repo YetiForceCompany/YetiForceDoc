@@ -1,55 +1,55 @@
 ---
-title: Auto assign records
-description: Auto assign records
+title: Automatyczny przydział rekordów
+description: Automatyczny przydział rekordów
 keywords:
-  - Auto
-  - assign
-  - records
-  - Permissions
-  - Settings
+  - Automatyczne
+  - przypisywanie
+  - rekord
+  - Uprawnienia
+  - Ustawienia
   - YetiForce
 tags:
-  - Permissions
-  - Auto assign
+  - Uprawnienia
+  - Automatyczne przydzielenie
 preview: ass-1.jpg
 ---
 
 :::warning
 
-This addon available in our Marketplace - [**Buy YetiForce YetiForce Automatic Assignment**](https://yetiforce.com/en/yetiforce-automatic-assignment)
+Ten dodatek dostępny w naszym Marketplace - [**Kup YetiForce Automatic Assignment**](https://yetiforce.com/en/yetiforce-automatic-assignment)
 
 :::
 
 ![ass-1.jpg](ass-1.jpg)
 
-## Configuration
+## Konfiguracja
 
-The following settings blocks are available in the panel:
+W panelu automatycznego przypisania rekordów dostępne są następujące bloki ustawień:
 
-- **Basic data** - functionalities, i.e. selecting the module and the place where the functionality is enabled;
-- **Conditions for the record** - setting the conditions that the record must meet in order for it to be automatically assigned;
-- **Users to be assigned** - including the default option when none of the set users meets the availability criteria;
-- **Conditions for user selection** - which constitute the basis for the selection of previously selected users. There are currently two selection methods available: _Load Balanced, Round Robin_.
+- **Podstawowe ustawienia** - funkcjonalności, tj. wybór modułu i miejsca, w którym ma działać;
+- **Kryteria dla rekordów** - a więc ustawienia warunków, które musi spełnić rekord, aby podlegał on automatycznemu przypisaniu;
+- **Użytkowników do przypisania** - w tym element domyślny, gdy żaden z ustawionych użytkowników nie spełnia kryteriów dostępności;
+- **Kryteria wyboru użytkownika** - które stanowią podstawy selekcji wybranych uprzednio użytkowników. Aktualnie do dyspozycji są dwie metody selekcji: _Zrównoważonego obciążenia (Load Balanced), Round Robin_.
 
 :::important
 
-The mechanism works only for users who have automatic record assignment enabled. It does not apply to the default option.
+Uwaga! Mechanizm działa tylko dla użytkowników, którzy w konfiguracji mają włączoną możliwość automatycznego przypisywania rekordów. Nie dotyczy to opcji domyślnej.
 
-:::
+:::  
 ![ass-2.jpg](ass-2.jpg)
 
-## Description
+## Opis
 
-In the first section of the settings there are three places where automatic assignment process can be started.
+W pierwszej sekcji ustawień mamy dostępne trzy miejsca, z których można uruchomić dany proces automatycznego przypisania.
 
-- **AVAILABLE WORKFLOW** Selecting this option will make it available in workflow actions, which will enable e.g. automatic assignment of already existing entries.
+- **DOSTĘPNE W WORKFLOW** Zaznaczenie tej opcji spowoduje, że będzie ona dostępna w akcjach workflow, co umożliwi np. uruchomienie automatycznego przypisywania dla już istniejących wpisów.
 
-- **ACTIVE - BEFORE SAVE** The option activates automatic record assignment only for newly created records, i.e. before their creation.
+- **AKTYWNE - PRZED ZAPISANIEM** Opcja aktywuje automatyczne przypisanie rekordów tylko dla nowo tworzonych rekordów, a więc przed ich utworzeniem.
 
-- **AVAILABLE IN GUI** This option allows you to manually assign a record. If all the conditions are met, i.e. the criteria set for the record and the permission to the automatic assignment action has been granted in the profile of a given user, the manual assignment button will appear on the record preview.
+- **DOSTĘPNE W GUI** Ta opcja umożliwia ręczne przepisanie rekordu. Jeżeli wszystkie warunki zostały spełnione, tzn. ustawione kryteria dla rekordu oraz nadano uprawnienia do akcji automatycznego przypisywania w profilu danego użytkownika, to na podglądzie rekordu pojawi mu się przycisk ręcznego przypisania, a więc przekazania rekordu.
 
 ![ass-3.jpg](ass-3.jpg)
 
-Once you click the button you will see a popup with properly sorted users who can be assigned to the records.
+Po jego kliknięciu ukarze się okno modalne z odpowiednio wyselekcjonowanymi i posortowanymi użytkownikami do przypisania.
 
 ![ass-4.jpg](ass-4.jpg)

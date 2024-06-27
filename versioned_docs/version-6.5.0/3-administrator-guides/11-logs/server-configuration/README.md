@@ -1,48 +1,48 @@
 ---
-title: Server - configuration
-description: Panel displays current server configuration, used for verifying if the most crucial settings are correct.
+title: Serwer - konfiguracja
+description: Panel wyświetla aktualną konfigurację serwera, używaną do weryfikacji, czy najważniejsze ustawienia serwera są zgodne z zalecanymi.
 keywords:
-  - configuration
-  - verification
-  - report
-  - server
-  - system
+  - konfiguracja
+  - weryfikacja
+  - zgłoszenie
+  - serwer
+  - systemu
   - YetiForce
 tags:
-  - configuration report
-  - server
-  - system
+  - raport konfiguracyjny
+  - serwer
+  - systemu
 preview: main.jpg
 ---
 
-The server configuration panel is a place where you can preview the settings of all the parameters of a server where the system is located.
+Panel konfiguracji serwera jest miejscem, w którym możesz podglądać ustawienia wszystkich parametrów serwera, w którym znajduje się system.
 
-The functionality can be extremely useful, especially if you experience system errors – the server configuration panel will highlight in red all the parameters and settings that don’t meet YetiForce’s requirements.
+Funkcja ta może być niezwykle użyteczna, zwłaszcza jeśli wystąpią błędy systemowe - panel konfiguracji serwera wyróżni na czerwono wszystkie parametry i ustawienia, które nie spełniają wymagań YetiForce.
 
-![configuration report](main.jpg)
+![raport konfiguracyjny](main.jpg)
 
-Apart from the functions listed above, for our users’ convenience, the panel has been expanded by the following options:
+Oprócz wyżej wymienionych funkcji, ze względu na wygodę naszych użytkowników, panel został rozszerzony o następujące opcje:
 
-## Download configuration
+## Pobierz konfigurację
 
-Allows you to save the entire configuration together with the items highlighted in red as a .png file. Thanks to this solution you can quickly download and send the file to the appropriate specialist to analyze.
+Pozwala zapisać całą konfigurację wraz z elementami zaznaczonymi na czerwono jako plik .png. Dzięki temu rozwiązaniu możesz szybko pobrać i wysłać plik do odpowiedniego specjalisty do analizy.
 
-![Download configuration](download-config.png)
+![Pobierz konfigurację](download-config.png)
 
-## Check the latest PHP version
+## Sprawdź najnowszą wersję PHP
 
-Allows you to check the latest available PHP version directly in YetiForce.
+Pozwala sprawdzić najnowszą dostępną wersję PHP bezpośrednio w YetiForce.
 
-![Check the latest PHP version](last-php.jpg)
+![Sprawdź najnowszą wersję PHP](last-php.jpg)
 
-## Server speed test
+## Testuj szybkość serwera
 
-Displays a pop up window with information about your server, its CPU, RAM, drive, and database. This summary can also be saved as an image.
+Wyświetla okno modalne z informacjami na temat serwera, jego procesora, pamięci RAM, dysku i bazy danych. Takie podsumowanie również można zapisać jako obraz.
 
-![Server speed test](server-speed.jpg)
+![Testuj szybkość serwera](server-speed.jpg)
 
-## Database information
+## Informacje o bazie danych
 
-Displays detailed database information.
+Wyświetla szczegółowe informacje o bazie danych.
 
-![Database information](db.jpg)
+![Informacje o bazie danych](db.jpg)

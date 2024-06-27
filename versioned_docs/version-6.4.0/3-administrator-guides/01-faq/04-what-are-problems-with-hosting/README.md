@@ -1,20 +1,20 @@
 ---
-title: Potential hosting issues
-description: What potential issues can emerge for hosting based systems?
+title: Potencjalne problemy związane z hostingiem
+description: Jakie potencjalne problemy mogą pojawić się w przypadku systemów pracujących na hostingach?
 keywords:
   - YetiForce
-  - problems
+  - problemów
   - hosting
 tags:
-  - problems
+  - problemy
   - hosting
 ---
 
-Clients who use their own servers or servers of other hosting providers often face problems resulting from server limitations. The article below presents the most common issues affecting these clients.
+Klienci, którzy korzystają z własnych serwerów lub serwerów innych dostawców usług hostingowych, często napotykają problemy wynikające z ograniczeń serwera. Poniższy artykuł przedstawia najczęstsze problemy, z którymi borykają się ci klienci.
 
-Known issues on the most popular hostings:
+Znane problemy dotyczące najpopularniejszych hostingów:
 
-| Hosting | Type          | Short description                             | Details                                                                                                            |
-| ------- | ------------ | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| az.pl   | Configuration | MySQL configuration cannot be modified | The az.pl hosting does not allow you to modify the database configuration.                                                        |
-| home.pl | DAV          | DAV does not work                           | IdeaServer does not support `WebDAV` including `PROPFIND`, you will not run the script on this shared server. |
+| Hosting | Rodzaj       | Krótki opis                                   | Szczegóły                                                                                              |
+| ------- | ------------ | --------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| az.pl   | Konfiguracja | Konfiguracja MySQL nie może być zmodyfikowana | Hosting az.pl nie pozwala na modyfikację konfiguracji bazy danych.                                     |
+| home.pl | DAV          | DAV nie działa                                | IdeaServer nie obsługuje `WebDAV`, w tym `PROPFIND`, nie uruchomisz skryptu na tym dzielonym serwerze. |

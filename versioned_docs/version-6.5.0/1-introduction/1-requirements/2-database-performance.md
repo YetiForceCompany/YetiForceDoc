@@ -2,13 +2,13 @@
 title: Database performance
 description: This article does not describe the configuration procedures, but highlights a few crucial points in optimizing a server environment.
 keywords:
-  - server
+  - serwer
   - database
-  - performance
+  - wydajność
   - YetiForce
 tags:
   - database
-  - performance
+  - wydajność
 hide_table_of_contents: true
 preview: 2-database-performance.jpg
 ---

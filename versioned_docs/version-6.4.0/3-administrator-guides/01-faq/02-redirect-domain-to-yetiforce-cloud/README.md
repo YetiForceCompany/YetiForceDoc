@@ -1,46 +1,46 @@
 ---
-title: How to redirect a domain to YetiForce Cloud
-description: Redirecting WWW application to another domain
+title: Jak przekierować domenę na YetiForce Cloud
+description: Przekierowanie aplikacji WWW na inną domenę
 keywords:
   - YetiForce
-  - redirect
-  - domain
+  - przekierowanie
+  - domena
   - Cloud
   - DNS
   - CNAME
 tags:
-  - redirect
-  - domain
+  - przekierowanie
+  - domena
   - Cloud
 ---
 
-Redirecting a domain (or subdomain) to another www address (domain/subdomain) is very practical in business. Most often it is used when we want the target application to be visible to end-users at a different address. Using redirection is especially useful when we use solutions that aren’t on your server but are at a different address than for example our domain, which is known to our users. A step-by-step instruction can be found below.
+Przekierowanie domeny (lub subdomeny) na inny adres www (domenę/subdomenę) jest bardzo praktyczne biznesowo. Najczęściej stosuje się to wówczas, gdy chcemy, aby docelowa aplikacja była dla użytkowników końcowych widoczna pod innym adresem. Szczególnie warto stosować przekierowanie, gdy korzystamy z rozwiązań, które nie są na naszym serwerze i są pod innym adresem niż na przykład nasza domena, która jest znana naszym użytkownikom. Poniżej znajdziesz instrukcje krok po kroku.
 
 :::warning
-For YetiForce customers the redirecting service is only available for the YetiForce Cloud product.
+Dla klientów YetiForce usługa przekierowywania jest dostępna tylko dla produktu YetiForce Cloud.
 :::
 
-## Problem description
+## Opis problemu
 
-Our application is installed at yourcrm.yetiforce.eu and we want our employees to access it through crm.newaddress.com
+Mamy aplikację pod domeną: crm.staryadres.com, a chcemy, aby nasi pracownicy widzieli ją pod nową domeną np. crm.nowyadres.com
 
-## Solution
+## Rozwiązanie
 
-In order to redirect the system to a new address follow the instruction below:
+Aby przekierować system na nowy adres, postępuj zgodnie z instrukcją poniżej:
 
-1. Redirect the new address (eg. crm.newaddress.com) using CNAME record in DNS to the address where the application currently exists (eg. yourcrm.yetiforce.eu) - thanks to this solution each employee who types in the new address will be redirected in the background to the old address, but the URL will show the new one. Keep in mind that when you add a CNAME entry there must be a full stop at the end, eg. `yourcrm.yetiforce.eu.` - if you are not sure how to do this you can find instructions on Google: https://www.google.com/search?q=domain+cname+example. Remember to set TTL for the record to 3600 seconds.
+1. Przekieruj nowy adres www (np.: crm.nowyadres.com) za pomocą rekordu CNAME w DNS na adres, pod którym obecnie znajduje się aplikacja (np.: crm.staryadres.com) - dzięki takiemu przekierowaniu, każdy pracownik wpisujący nowy adres WWW będzie "w tle" przekierowywany na stary adres, pod którym znajduje się aplikacja, ale w pasku adresu będzie widział nowy adres www. Uwaga: zwróć szczególną uwagę, w jaki sposób dodajesz wpis CNAME, ponieważ najczęściej musisz podać na końcu kropkę np.: `crm.staryadres.com.` - jeżeli nie jesteś pewien jak zrobić to dobrze, przeczytaj o tym w internecie: https://www.google.com/search?q=domain+cname+example. Dodając rekord CNAME pamiętaj o ustawieniu TTL dla rekordu na 3600 sekund.
 
-2. If you have added a CNAME record in DNS, after some time you will be able to use a new www address. In order to make sure everything is alright, you can use the online tools that will allow you to verify the DNS configuration: https://www.google.com/search?q=check+dns+cname. Note that some DNS servers need minutes or even hours to update but usually it doesn’t take more than 15 minutes.
+2. Jeżeli dodałeś poprawnie rekord CNAME w DNS, to po pewnym czasie będziesz mógł posługiwać się nowym adresem WWW. Aby mieć pewność czy wszystko przebiegło pomyślnie, możesz skorzystać z narzędzi online, które pozwolą sprawdzić konfigurację DNS: https://www.google.com/search?q=check+dns+cname. Pamiętaj, że niektóre serwery DNS potrzebują minut, a nawet godzin, aby się uaktualnić, najczęściej jednak nie trwa to dłużej niż 15 minut.
 
-3. Once you successfully redirected the address you should change the configuration on the server and/or the target application (our system stores the address in the config file, it uses the address to protect itself against attackers by not accepting any requests from a different address). Each application and each server require a different configuration, please get in touch with your server administrator and app administrator for further instructions.
-4. The last but very important step is adding HTTPS certificates of the new domain to the servers with the old WWW address. Otherwise, after the redirection users will see a warning about the invalid certificate (because by default the certificate is configured to work properly only at the new WWW address and we need to add the certificate so that after the redirection the old WWW address can also be used correctly). The server admin of the application will need two elements:
-   - SSL certificate private key
-   - Intermediate SSL certificate
+3. Gdy już wykonałeś poprawnie przekierowanie, należy zmienić konfiguracje na serwerze i/lub w aplikacji docelowej (np.: nasz system przechowuje w pliku konfiguracyjnym adres www, pod którym działa aplikacja, wykorzystuje ten adres, aby chronić się przed niepożądanymi atakami — nie pozwalając na przyjmowanie żądań z innego adresu www). Każda aplikacja jak i każdy serwer, na którym znajduje się aplikacja, wymaga innej konfiguracji - zgłoś to do administratora serwera www i administratora aplikacji, oni będą wiedzieć, co robić.
+4. Ostatnim, ale bardzo ważnym krokiem jest dodanie certyfikatów HTTPS nowej domeny do serwera, pod którym jest stary adres WWW. Jeżeli tego nie zrobisz, to po przekierowaniu użytkownicy zobaczą ostrzeżenie o nieważnym certyfikacie (ponieważ domyślnie certyfikat jest skonfigurowany tak, aby działał poprawnie tylko pod nowym adresem WWW, a my musimy dodać certyfikat po to, aby po przekierowaniu stary adres www mógł też poprawnie nim się posługiwać). Aby to było możliwe, musisz przekazać dwa elementy administratorowi serwera, na którym znajduje się aplikacja:
+   - Klucz prywatny certyfikatu SSL
+   - Pośredni certyfikat SSL
 
-## Summary
+## Podsumowanie
 
-Even though the process itself is fairly quick and simple (shouldn’t take more than 15 minutes), it tends to be problematic since several people have to be involved at the same time:
+Chociaż sam proces jest bardzo prosty i bardzo szybki (łącznie nie zajmuje więcej niż 15 minut), to jest problematyczny, ponieważ musimy do tego zaangażować kilka osób w tym samym czasie:
 
-- New domain admin - who redirects and provides a private key and the new domain’s intermediate certificate.
-- Old server admin - who adds the new domain to the server (often it has to be added to vhost) and adds the new certificate.
-- App admin - who changes app address to the new one in app configuration.
+- Administrator nowej domeny, który zrobi przekierowanie i przekaże klucz prywatny i certyfikat pośredni nowej domeny.
+- Administrator serwera na którym jest aplikacja docelowa, który doda do serwera nową domenę (często należy ją dodać na vhost) oraz doda nowy certyfikat.
+- Administrator aplikacji, który zmieni w konfiguracji aplikacji adres na nowy.

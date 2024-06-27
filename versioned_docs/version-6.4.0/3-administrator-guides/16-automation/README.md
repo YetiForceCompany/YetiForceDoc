@@ -1,5 +1,5 @@
 ---
-title: Automation
+title: Automatyzacja
 ---
 
 import DocCardList from '@theme/DocCardList';

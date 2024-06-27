@@ -1,70 +1,70 @@
 ---
-title: Video tutorials
+title: Tutoriale wideo
 keywords:
-  - videos
-  - tutorials
+  - wideo
+  - tutoriale
 tags:
-  - videos
-  - tutorials
-description: A collection of video tutorials that present the user part of the YetiForce system
+  - wideo
+  - tutoriale
+description: Zbiór wideo tutoriali prezentujących część użytkownika systemu YetiForce
 ---
 
-## Change password
+## Zmiana hasła
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=0k_ifsofCOc&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/forgot-password.mp4)
 
-## Lead to Account conversion
+## Konwersja Leada na Kontrahenta
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=DBv8qJtbUjQ&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/lead-to-account-conversion.mp4)
 
-## Find duplicates and merge records
+## Wyszukiwanie duplikatów i scalanie rekordów
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=nIMYXWoliPk&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/find-duplicates-merge.mp4)
 
-## Field dependency
+## Zależność pól
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=_PZl2qRqjh0&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/fields-dependency.mp4)
 
-## Custom view in a related module
+## Filtrowanie w module powiązanym
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=5DOgCpRt35A&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/custom-view-related-module.mp4)
 
-## Switching between users
+## Przełączanie użytkowników
 
 - [🎥 YetiForce TV](/video/switch-users.mp4)
 
-## Product stocktaking import
+## Import inwentaryzacji produktów
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=DKKgpLVjJtQ&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/product-stocktaking-import.mp4)
 
-## Microsoft Outlook integration panel
+## Panel integracji z systemem YetiForce w Microsoft Outlook
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=WwgE1yX6akE&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/outlook-integration-panel.mp4)
 
-## Recorrd collectors
+## Kolektor rekordów
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=XlIXiQpC9ug&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/record-collector.mp4)
 
-## GUS REGON integration
+## Integracja z GUS REGON
 
-Download data on Polish enterprises provided by the Central Statistical Office from the REGON 1(BIR1) internet database
+Pobierz dane o polskich przedsiębiorstwach dostarczone przez Centralny Urząd Statystyczny z internetowej bazy danych REGON 1(BIR1)
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=98Mwj3GwHZw&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 
-## TERYT integration
+## Integracja z bazą TERYT
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=RqY3AnCw80M&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/integration-teryt.mp4)
 
-## E-mail templates & footer
+## Szablony wiadomości e-mail i stopka
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=FEGoUFOu3mo&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/email-templates-signature.mp4)

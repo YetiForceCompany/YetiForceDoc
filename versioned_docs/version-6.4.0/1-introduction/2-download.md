@@ -1,31 +1,31 @@
 ---
-title: Download YetiForce
-description: Where to download YetiForce?
+title: Pobierz YetiForce
+description: Skąd pobrać system YetiForce?
 keywords:
-  - download
-  - find
+  - pobierz
+  - znaleźć
   - YetiForce
 tags:
-  - download
+  - pobierz
 ---
 
-Here you can find links to download the latest stable version of the system.
+Tutaj znajdziesz linki do pobrania najnowszej stabilnej wersji systemu.
 
-## Where can I find YetiForce?
+## Gdzie znaleźć system YetiForce?
 
 - ### GitHub: [YetiForce](https://github.com/YetiForceCompany/YetiForceCRM), [YetiForcePortal2](https://github.com/YetiForceCompany/YetiForcePortal2)
 - ### Sourceforge:
 
-[![Download YetiForce](https://a.fsdn.com/con/app/sf-download-button?button_size=2x)](https://sourceforge.net/projects/yetiforce/files/latest/download)
+[![Pobierz YetiForce](https://a.fsdn.com/con/app/sf-download-button?button_size=2x)](https://sourceforge.net/projects/yetiforce/files/latest/download)
 
-All versions can be downloaded from [GitHub releases](https://github.com/YetiForceCompany/YetiForceCRM/releases)
+Wszystkie wersje są dostępne do pobrania na [GitHub releases](https://github.com/YetiForceCompany/YetiForceCRM/releases)
 
-The development version can be downloaded directly from out website (full package including libraries - ready to use):
+Wersję deweloperską pobierzesz bezpośrednio z naszej strony (pełny pakiet wraz z bibliotekami gotowy do użytku):
 
 - YetiForceCRM https://download.yetiforce.com/crm-developer.zip
 - YetiForcePortal2 https://download.yetiforce.com/portal2-developer.zip
 
-## Where else can I find YetiForce?
+## Pozostałe miejsca gdzie można znaleźć system YetiForce?
 
 - ### [Sourceforge](https://sourceforge.net/projects/yetiforce/)
 
@@ -33,14 +33,14 @@ The development version can be downloaded directly from out website (full packag
 
 - ### [Packagist](https://packagist.org/packages/yetiforce/yetiforce-crm)
 
-- ### [Docker](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/docker.md) (development version)
+- ### [Docker](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/docker.md) (wersja deweloperska)
 
-## YetiForce requirements
+## Wymagania systemu YetiForce
 
 :::important
-Read the server requirements and assess whether your server meets them and is ready to start the installation process before you download the system.
+Przed pobraniem zapoznaj się z wymaganiami dla serwera i oceń czy jest gotowy do rozpoczęcia procesu instalacji.
 :::
 
-Full list of requirements: [YetiForce requirements](/introduction/requirements).
+Pełna lista wymagań: [Wymagania systemu YetiForce](/introduction/requirements).
 
-Step by step installation manual: [YetiForce installation guide](/introduction/installation-manual).
+Instrukcja krok po kroku: [Instrukcja instalacji systemu YetiForce](/introduction/installation-manual).
