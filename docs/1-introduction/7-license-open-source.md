@@ -11,7 +11,6 @@ tags:
   - YetiForce
   - Open Source
   - CLA
-
 description: Poznaj licencję YetiForce oraz jak wygląda open source według YetiForce
 ---
 
@@ -94,7 +93,7 @@ Aby lepiej zrozumieć problem opiszemy to na przykładzie najpopularniejszych li
 Poniżej znajduje się treść licencji, którą stworzyliśmy aby dostarczać otwarte oprogramowanie klasy enterprise dla najbardziej wymagających organizacji:
 
 ```txt reference
-https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/licenses/LicenseEN.txt
+https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/licenses/LicensePL.txt
 ```
 
 ### Różnica pomiędzy `YFPL` a licencją MIT
@@ -242,8 +241,7 @@ Poniżej znajduje się najważniejszy wycinek licencji pomiędzy YetiForce a wsp
 
 5. Nie jesteś zobowiązany do udzielania wsparcia dla Twojego wkładu, poza zakresem, w jakim chcesz takiego wsparcia udzielać.
 
-   Twój wkład dostarczany jest na zasadzie „tak jak jest” co oznacza, że nie oferujesz dla niego żadnych gwarancji. Możesz natomiast udzielać dla niego wsparcia darmowego, odpłatnego, lub nie udzielać wsparcia wcale.
-   Zobowiązujesz się powiadomić YetiForce S.A. o wszelkich faktach lub okolicznościach, przez które powyższe oświadczenia mogą stać się niedokładne w jakimkolwiek zakresie.
+   Twój wkład dostarczany jest na zasadzie „tak jak jest” co oznacza, że nie oferujesz dla niego żadnych gwarancji. Możesz natomiast udzielać dla niego wsparcia darmowego, odpłatnego, lub nie udzielać wsparcia wcale. Zobowiązujesz się powiadomić YetiForce S.A. o wszelkich faktach lub okolicznościach, przez które powyższe oświadczenia mogą stać się niedokładne w jakimkolwiek zakresie.
 
 6. YetiForce S.A. może zastrzec, że niektóre funkcjonalności nie będą publikowane na licencji YetiForce Public License i zostaną wydane na innej licencji i/lub przekazane zostaną firmie trzeciej, wówczas YetiForce poinformuje o tym fakcie współautora przed realizacją funkcjonalności i przekaże szczegółowe zasady związane z licencją i zasadami przekazywania kodu źródłowego funkcjonalności.
 
