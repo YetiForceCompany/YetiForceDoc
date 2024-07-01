@@ -14,6 +14,7 @@ tags:
   - Portal
   - YetiForcePortal2
 preview: step-1.jpg
+draft: true
 ---
 
 W tym artykule zaprezentowano jak szybko zainstalować [YetiForce Portal 2](https://github.com/YetiForceCompany/YetiForcePortal2). Portal może służyć jako miejsce przeznaczone dla klienta, dostawcy lub partnera. Jest to uniwersalne narzędzie do komunikacji z wszystkimi osobami, z którymi współpracujemy.

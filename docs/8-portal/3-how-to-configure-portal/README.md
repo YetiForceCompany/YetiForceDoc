@@ -10,6 +10,7 @@ keywords:
 tags:
   - Portal
   - YetiForcePortal2
+draft: true
 ---
 
 Jednym z elementów instalacji portalu jest skonfigurowanie systemu, tak aby portal był gotowy do użycia. Poniższy tutorial pokazuje jak prawidłowo skonfigurować system.

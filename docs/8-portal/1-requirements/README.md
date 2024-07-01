@@ -11,6 +11,7 @@ keywords:
 tags:
   - wymagania
   - portal
+draft: true
 ---
 
 YetiForce Portal stawia pewne wymagania serwerom WWW — dostosowanie serwera jest kluczowe dla prawidłowego działania systemu. Nieprawidłowa konfiguracja serwera jest najczęstszą przyczyną problemów.
