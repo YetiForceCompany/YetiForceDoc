@@ -23,7 +23,7 @@ This article describes how to add images via Rest API in fields that support suc
 The application has two types of fields that support graphic files, namely:
 
 - Image
-- Image (many)
+- Graficzny (wiele)
 
 ![graphic file](graphic-file.png)
 

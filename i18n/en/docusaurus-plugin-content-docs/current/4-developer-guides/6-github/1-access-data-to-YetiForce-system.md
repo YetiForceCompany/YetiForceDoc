@@ -1,5 +1,5 @@
 ---
-title: Access data to the YetiForce system
+title: YetiForce credentials
 description: If you are a YetiForce user and you have a problem that you would like to report to us as part of SLA.
 keywords:
   - data
@@ -8,7 +8,7 @@ keywords:
   - report
   - YetiForce
 tags:
-  - credentials
+  - dane dostępowe
   - sla
 ---
 
@@ -16,7 +16,7 @@ If you are a YetiForce user and you have a problem that you would like to report
 
 #### 1. Your system's URL
 
-#### 2. YetiForce credentials
+#### 2. Access data to the YetiForce system
 
 :::important
 Please provide access to a user with administrator permissions.
@@ -36,7 +36,7 @@ Access must include permissions to read and write files, namely:
 - encryption method (e.g.: FTP by TLS)
 - path to where the system is located
 
-The server configuration must always comply with the current configuration requirements that can be found [here](/introduction/requirements/). If your server fails to meet the requirements, it can cause system errors and debugging won't work. In order to verify the configuration, you can use the built-in tool, which is available [here](https://gitstable.yetiforce.com/index.phpparent=Settings&module=ConfReport&view=Index&block=14&fieldid=65).
+The server configuration must always comply with the current configuration requirements that can be found [here](/introduction/requirements/). If your server fails to meet the requirements, it can cause system errors and debugging won't work. In order to verify the configuration, you can use the built-in tool, which is available [here](https://gitstable.yetiforce.com/index.phpparent=Settings\&module=ConfReport\&view=Index\&block=14\&fieldid=65).
 
 #### 4. Database access
 
@@ -53,7 +53,7 @@ Access to the database must be possible for an external client, which means ther
 Applies only if access to your data requires a VPN
 :::
 
-Please specify the name of the program that you use to connect to the VPN and data used for its configuration (address, port, login, password and other information required by the program, e.g. certificate).
+Please specify the name of the program that you use to connect to the VPN and data used for its configuration (address, port, login, password and other information required by the program, e.g.
 
 :::tip
 Once we complete all the work, change your access data and deactivate external access in accordance with good security practices.

@@ -1,11 +1,11 @@
 ---
-title: Developer documentation
+title: Developer Guides
 description: Documentation for people with some experience in programming, who want to discover more about YetiForce.
 keywords:
-  - Developer documentation
+  - Developer Guides
   - YetiForce
 tags:
-  - Developer documentation
+  - Developer Guides
 hide_table_of_contents: true
 preview: intro.jpg
 ---

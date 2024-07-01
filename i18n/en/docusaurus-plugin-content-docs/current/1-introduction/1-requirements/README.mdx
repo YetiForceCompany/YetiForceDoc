@@ -2,7 +2,7 @@
 title: YetiForce requirements
 description: YetiForce webserver requirements
 keywords:
-  - serwer
+  - server
   - requirements
   - system
   - YetiForce
@@ -159,7 +159,7 @@ catch_workers_output = yes
 import FPM from '/static/files/fpm.mdx';
 
 :::important
-FPM configuration example:
+Przykładowa konfiguracja FPM:
 
 <details>
   <summary>Latest stable version</summary>
@@ -224,7 +224,7 @@ The configuration should allow the uploaded files to have full read and write ac
 ### Issues with SELinux
 
 :::warning
-Permission issues occur frequently if SELinux is installed on the server and the enforcing mode is enabled. Note the parameters below:
+Gdy na serwerze jest zainstalowany SELinux w trybie enforcing często występują problemy z uprawnieniami. Należy zwrócić uwagę na parametry konfiguracyjne:
 
 - httpd_unified
 - httpd_can_network_connect
@@ -250,7 +250,7 @@ sudo setsebool -P httpd_can_network_connect on
 
 ### Supported browsers
 
-Users should always have the latest version of any browsers they use because only the most recent versions support the newest web technologies. Below is a list of browsers, starting from the one that is the most recommended for YetiForce (Google Chrome) to the least recommended.
+Users should always have the latest version of any browsers they use because only the most recent versions support the newest web technologies. Poniżej umieściliśmy przeglądarki w kolejności w jakiej użytkownik powinien dokonywać wyboru. Oznacza to, że np. przeglądarka Safari jest gorszą przeglądarką dla aplikacji YetiForce niż jest Google Chrome.
 
 1. Google Chrome, Microsoft Edge
 2. Firefox

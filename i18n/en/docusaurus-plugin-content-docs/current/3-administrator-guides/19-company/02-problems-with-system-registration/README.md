@@ -1,6 +1,6 @@
 ---
 title: Problems with system registration
-description: The following article will help you if you have problems with confirming the registration, or your registration status is stuck at "Waiting for acceptance".
+description: The following article will help you if you have problems with confirming the registration, or your registration status is stuck at `Pending approval`.
 keywords:
   - problems
   - registration
@@ -19,9 +19,9 @@ If the status has not changed a few days after registration, please follow the s
 
 ## Update the registration status
 
-Go to [`System settings → Company → Company`](/administrator-guides/company/company-details/#check-status)
+Przejdź do ustawień aplikacji, w panelu menu po lewej stronie wybierz "Firma" a następnie "Dane firmy".
 
-Click the `Check status` button, on the right side the time of the last update should change to `a moment ago`.
+Kliknij przycisk "Sprawdź status". Click the `Check status` button, on the right side the time of the last update should change to `a moment ago`.
 
 ![reg-1.jpg](reg-1.jpg)
 
@@ -56,7 +56,7 @@ Check if your firewall is not blocking outgoing traffic to the following address
 
 These addresses are used for system registration and marketplace purchases.
 
-## Send a message to us
+## Jeśli problemy nadal występują - napisz do nas
 
 :::warning
 

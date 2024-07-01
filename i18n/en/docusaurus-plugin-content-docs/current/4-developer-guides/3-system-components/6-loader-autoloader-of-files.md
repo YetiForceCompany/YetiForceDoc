@@ -18,7 +18,9 @@ Autoloader is a mechanism that improves uploads of files and classes. It has bee
 A few important principles about the `Autoloader`:
 
 1. By default "Autoloader" works only within a module directory, e.g. `modules/MyModule/`.
+
 2. Module, file or directory name cannot contain underscores "\_".
+
 3. In order for the Autoloader to upload a file, a class with an appropriate name has to be triggered:
 
    Example A:

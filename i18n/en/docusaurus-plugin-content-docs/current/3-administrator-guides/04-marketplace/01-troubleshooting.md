@@ -4,7 +4,7 @@ description: The article below explains troubleshooting inactive or malfunctioni
 keywords:
   - YetiForce
   - Troubleshooting
-  - addons
+  - add-ons
   - inactive
   - purchased
 tags:
@@ -13,7 +13,7 @@ tags:
 
 The article below explains troubleshooting inactive or malfunctioning addons purchased in the Marketplace.
 
-## Update registration status
+## Update the registration status
 
 YetiForce must be correctly registered in order for the Marketplace and purchased addons to work properly. If your registration is still pending even though you provided all the necessary information during the registration process you can refresh your registration status by clicking the `Check status` button in [`System settings → Company → Company`](/administrator-guides/company/company-details/#check-status) details.
 
@@ -29,7 +29,7 @@ Updates fix issues reported by the community and our employees that's why it's c
 
 ## Check server configuration.
 
-Misconfiguration of the server impacts the whole system and can lead to a variety of unpredictable problems, including issues with obtaining information about active subscriptions and purchases.
+Błędna konfiguracja serwera ma wpływ na działanie całego systemu. Nieprawidłowości w konfiguracji mogą powodować wiele różnych problemów, między innymi problemy z pobraniem informacji o aktualnych subskrypcjach.
 
 :::important
 
@@ -37,7 +37,7 @@ More information about server requirements and configuration can be found in the
 
 :::
 
-## Enable logs
+## Włącz logi
 
 Enable PHP, system, and web server logs and make sure the communication with yetiforce.com server is working. It's important to enable PHP logs so that the system can record error messages.
 
@@ -59,4 +59,4 @@ If your issues persist you can contact us by sending an email and providing **al
 - screenshot of products purchased from Marketplace
 - screenshot of [installed updates](/administrator-guides/logs/updates/#activities-during-the-update)
 
-We recommend using encryption (PGP/GPG) to send us your credentials. The list of all required information can be found in the [Access data to the YetiForce CRM system article.](/developer-guides/github/access-data-to-YetiForce-system)
+We recommend using encryption (PGP/GPG) to send us your credentials. The list of all required information can be found in the [Access data to the YetiForce CRM system article.](/developer-guides/github/access-data-to-YetiForce-system) ](/developer-guides/github/access-data-to-YetiForce-system)

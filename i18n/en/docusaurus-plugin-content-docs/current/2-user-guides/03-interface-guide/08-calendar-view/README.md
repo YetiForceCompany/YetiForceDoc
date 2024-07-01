@@ -69,7 +69,7 @@ Depending on the selected type, one or four picklists with fields will be availa
 
 ![calendar-view-additional-data-sources-2.jpg](calendar-view-additional-data-sources-2.jpg)
 
-### Permissions
+### Uprawnienia
 
 The functionality of additional data sources is available to a regular user only after granting them the necessary permissions.
 
