@@ -37,8 +37,11 @@ jobs:
         with:
           cmd: build
 
+      - name: Zip artifact
+        run: zip -r build.zip build
+
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: ${{github.workspace}}/build/
+          path: ${{github.workspace}}/build.zip
