@@ -53,40 +53,34 @@ export default {
 				specs: [
 					{
 						id: 'WebserviceStandard',
-						spec: 'https://demo.yetiforce.com/api/WebserviceStandard.json',
-						url: 'https://demo.yetiforce.com/api/WebserviceStandard.json'
+						spec: './api/WebserviceStandard.json',
+						url: '/api/WebserviceStandard.json'
 					},
 					{
 						id: 'WebservicePremium',
-						url: 'https://demo.yetiforce.com/api/WebservicePremium.json',
-						spec: 'https://demo.yetiforce.com/api/WebservicePremium.json'
+						spec: './api/WebservicePremium.json',
+						url: '/api/WebservicePremium.json'
 					},
 					{
 						id: 'ManageConsents',
-						spec: 'https://demo.yetiforce.com/api/ManageConsents.json',
-						url: 'https://demo.yetiforce.com/api/ManageConsents.json'
+						spec: './api/ManageConsents.json',
+						url: '/api/ManageConsents.json'
 					},
 					{
 						id: 'PBX',
-						spec: 'https://demo.yetiforce.com/api/PBX.yaml',
-						url: 'https://demo.yetiforce.com/api/PBX.yaml'
+						spec: './api/PBX.yaml',
+						url: '/api/PBX.yaml'
 					},
 					{
 						id: 'SMS',
-						spec: 'https://demo.yetiforce.com/api/SMS.yaml',
-						url: 'https://demo.yetiforce.com/api/SMS.yaml',
+						spec: './api/SMS.yaml',
+						url: '/api/SMS.yaml',
 						route: '/api2/SMS/'
 					},
-					//	{
-					//	 	id: 'WooCommerce',
-					//	 	spec: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
-					//	 	url: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
-					//	 	route: '/api2/WooCommerce/'
-					//	 },
 					{
 						id: 'Token',
-						spec: 'https://demo.yetiforce.com/api/Token.yaml',
-						url: 'https://demo.yetiforce.com/api/Token.yaml',
+						spec: './api/Token.yaml',
+						url: '/api/Token.yaml',
 						route: '/api2/Token/'
 					}
 				]
