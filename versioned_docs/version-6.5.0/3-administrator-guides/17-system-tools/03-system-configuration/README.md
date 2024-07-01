@@ -1,102 +1,101 @@
 ---
-title: System - Configuration
-description: System - Configuration
+title: System - konfiguracja
+description: System - konfiguracja
 keywords:
   - YetiForce
   - System
-  - Configuration
-  - Relation
+  - Konfiguracja
+  - Relacja
 tags:
-  - Configuration
-  - Relation
+  - Konfiguracja
+  - Relacja
 preview: main.jpg
 ---
 
-## Main configuration
+## Główna konfiguracja
 
-This panel allows you to configure general system settings regarding its appearance and behavior for all users of the system.
+Ten panel pozwala na konfigurację ogólnych ustawień systemu dotyczących jego wyglądu oraz zachowania dla wszystkich użytkowników systemu.
 
 ![main.jpg](main.jpg)
 
-- **Maximum upload size (`upload_max_filesize`: 100 MB)** - this parameter determines the maximum size of files uploaded to the system. This size cannot exceed 100MB.
-- **Default module** - this parameter determines which module the users will see after logging into the system.
-- **Maximum text length the list view** - this parameter determines the maximum length of the text visible in the list view
-- **Maximum entries per page the list view** - this parameter determines the maximum number of records that will be visible in the list view
-- **Layout** - “Default”
-- **Show breadcrumbs menu** - checkbox; if ticked, the breadcrumb menu is shown at the top of the screen
-- **Maximum length of characters for title**- this parameter defines the maximum number of characters that can be entered in the "Title" field
-- **Minimum cron frequency [min]** - this parameter specifies the CRON triggering frequency in minutes.
-- **Maximum number of records in mass edition** - this parameter defines the maximum number of records that can be modified using the mass editing tool.
-- **Enable closing of the modal window by clicking on the background** - checkbox; specifies whether pop-up windows will be closed by clicking on the background or only by the <kbd>🗙</kbd> button in the corner of the window.
-- **Maximum length for href tag**
-- **Show language selection on the login page** - checkbox; allows you to enable or disable the language selection list
-- **Show layout selection on the login page** - checkbox; allows you to specify whether the layout selection list will be available on the login screen.
+- **Maksymalna wielkość uploadu (`upload_max_filesize`: 100 MB)** - ten parametr określa maksymalny rozmiar plików przesyłanych do systemu. Rozmiar ten nie może przekraczać 100MB.
+- **Domyślny moduł** - ten parametr określa, który moduł użytkownicy zobaczą po zalogowaniu się do systemu.
+- **Maksymalna długość tekstu widoku listy** - ten parametr określa maksymalną długość tekstu widocznego w widoku listy
+- **Maksymalna ilość wyświetlanych rekordów na stronę w widoku listy** - ten parametr określa maksymalną liczbę rekordów, które będą widoczne w widoku listy
+- **Układ** - "Domyślny"
+- **Pokazywanie menu okruszkowego** - checkbox; jeśli jest zaznaczony, to menu okruszkowe pojawi się na górze ekranu
+- **Maksymalna długość tytułu**- parametr określający maksymalną ilość znaków, które mogą być wpisane w polu “Tytuł”
+- **Minimalna częstotliwość crona [min]** - ten parametr określa częstotliwość wyzwalania CRON w minutach.
+- **Maksymalna liczba rekordów w masowej edycji ** - ten parametr definiuje maksymalną liczbę rekordów, które mogą być modyfikowane za pomocą narzędzia do masowej edycji.
+- **Włączenie zamykania modalnego okna poprzez kliknięcie na tło** - checkbox określający czy okienka pop up będą zamykane poprzez kliknięcie na tło, czy wyłącznie poprzez przycisk <kbd>🗙</kbd> znajdujący się w rogu okienka.
+- **Maksymalna długość dla tagu href**
+- **Pokaż wybór języka na stronie logowania** - checkbox, który pozwala na włączenie lub wyłączenie listy wyboru języka
+- **Pokaż wybór layoutu na stronie logowania** - checkbox, dzięki któremu można określić czy lista wyboru layoutu będzie dostępna na ekranie logowania.
 
-## Relation
+## Relacja
 
-This panel controls the appearance of related record tabs visible in record view. 
+Ten panel kontroluje wygląd zakładek rekordów powiązanych widocznych w widoku rekordu.
 
-One of the most prominent advantages of YetiForce is the possibility to customize nearly every single element in the system. This option is also available for related module tabs visible in record view. If you would like to change the appearance of the tabs in your system, the following instruction presents a set of paramenters you can use.
+Jedną z najważniejszych zalet YetiForce jest możliwość dostosowania prawie każdego elementu w systemie. Ta opcja jest również dostępna dla zakładek modułów powiązanych widocznych w widoku rekordu. Jeśli chcesz zmienić wygląd zakładek w systemie, poniższa instrukcja zawiera listę i opis parametrów, których możesz użyć.
 
 ![Relation.jpg](Relation.jpg)
 
-The panel is easy to use, it's enough to select the settings you would like to change and press the <kbd>Save</kbd> button at the bottom of the screen. This functionality will help you customize the following elements:
+Panel jest łatwy do użycia, wystarczy wybrać ustawienia, które chcesz zmienić i nacisnąć przycisk <kbd>Zapisz</kbd> na dole ekranu. Ta funkcjonalność pomoże Ci dostosować następujące elementy:
 
-### Show related modules names in tabs
+### Pokaż nazwy modułów powiązanych w zakładkach
 
-☑ - If checked, the module names will be displayed on the tabs in record view, as shown below::
+☑ - Jeśli zaznaczone, nazwy modułów będą wyświetlane na zakładkach w widoku rekordu, jak pokazano poniżej:
 
 ![related-modules-names-on.jpg](related-modules-names-on.jpg)
 
-☐ - If unchecked, the module names will not be displayed, as shown below: 
+☐ - Jeśli nie zaznaczono, nazwy modułów nie będą wyświetlane, jak na obrazku poniżej:
 
 ![related-modules-names-off.jpg](related-modules-names-off.jpg)
 
-### Show related modules icon in tabs
+### Pokaż ikony modułów powiązanych w zakładkach
 
-☑ -  If checked, the module icons will be displayed on the tabs in record view, as shown below:
+☑ - Jeśli zaznaczone, ikony modułów będą wyświetlane na zakładkach w widoku rekordu, jak pokazano poniżej:
 
 ![related-modules-names-on.jpg](related-modules-names-on.jpg)
 
-☐ - If unchecked, the module icons will not be displayed, as shown below:
+☐ - Jeśli nie zaznaczono, ikony modułów nie będą wyświetlane, jak na obrazku poniżej:
 
 ![related-modules-icon-off.jpg](related-modules-icon-off.jpg)
 
-### Show record count in tabs of related modules
+### Pokaż liczbę rekordów w zakładkach powiązanych modułów
 
-☑ - If checked, the number of records in the related modules will be displayed on the tabs in record view, as shown below:
+☑ - Jeśli zaznaczone, to w widoku rekordu na zakładkach zobaczymy ilość rekordów znajdujących się w modułach powiązanych, jak pokazano poniżej:
 
 ![related-modules-names-on.jpg](related-modules-names-on.jpg)
 
-☐ - If unchecked, the number of records in the related modules will not be displayed, as shown below:
+☐ - Jeśli nie zaznaczono, to liczby określające ilość rekordów znajdujących się w modułach powiązanych nie będą widoczne na zakładce, jak pokazano poniżej:
 
 ![related-modules-count-off.jpg](related-modules-count-off.jpg)
 
-### Maximum length of a comment visible on the related record
+### Maksymalna długość komentarza widocznego w powiązanym rekordzie
 
-Defines the length of comments visible in some relations, for example in the "Products and Services" tab in Account module records. 
-Depending on the value set, the comments will appear as shown below: 
+Kontroluje długość komentarza widocznego w niektórych relacjach, na przykład w zakładce "Produkty i Usługi" w rekordach z modułu kontrahenta. W zależności od ustawionej wartości komentarze będą wyglądać w następujący sposób:
 
-- length 10
+- długość 10
 
 ![maximum-length-10.jpg](maximum-length-10.jpg)
 
-- length 50
+- długość 50
 
 ![maximum-length-50.jpg](maximum-length-50.jpg)
 
-### Separate action buttons for changing additional data
+### Oddzielne przyciski akcji do zmiany dodatkowych danych
 
-Controls the visibility of a button used to change additional data in the `Members` tab in the records added to the Occurrences module (`Marketing → Occurrences`)
+Kontroluje widoczność przycisku zmiany dodatkowych danych w zakładce `Uczestnicy` w rekordach dodanych do modułu Wydarzenia (`Marketing → Wydarzenia`)
 
-☑ - If checked, the button will be visible directly in the members list view, as shown below:
+☑ - Jeśli zaznaczone, to przycisk pojawi się bezpośrednio w widoku listy uczestników, jak na obrazku poniżej:
 
 ![separate-action-on.jpg](separate-action-on.jpg)
 
-☐ -  If unchecked, the button will only be visible if you click the settings button <kbd>:wrench:</kbd> on the members list, as shown below:
+☐ - Jeśli nie zaznaczono to przycisk ten pojawi się dopiero po kliknięciu przycisku ustawień <kbd>:wrench:</kbd> na liście uczestników, tak jak na przykładzie poniżej:
 
 ![separate-action-off.jpg](separate-action-off.jpg)
 
-## Performance
+## Wydajność
 
 ![Performance.jpg](Performance.jpg)

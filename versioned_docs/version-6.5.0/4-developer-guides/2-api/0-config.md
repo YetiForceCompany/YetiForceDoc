@@ -1,35 +1,35 @@
 ---
-title: Configuration
+title: Konfiguracja
 description: How to properly configure the API in YetiForce
 keywords:
   - Webservice
   - API
   - RestAPI
-  - configuration
+  - konfiguracja
   - YetiForce
 tags:
   - Webservice
   - API
   - Rest API
-  - Configuration
+  - Konfiguracja
 ---
 
-## Activation
+## Aktywacja
 
-Set active services `$enabledServices` in the [config/Api.php](https://doc.yetiforce.com/code/classes/Config-Api.html#property_enabledServices) file: 
+W pliku [config/Api.php](https://doc.yetiforce.com/code/classes/Config-Api.html#property_enabledServices) należy ustawić aktywne usługi `$enabledServices`
 
 ```php
 /** List of active services. Available: dav, webservice */
 public static $enabledServices = ['webservice'];
 ```
 
-## Create an API app
+## Utworzenie aplikacji API
 
-To determine what kind of services are to be active, add applications of the relevant type.
+Aby określić jakiego rodzaju usługi będą aktywne nalezy dodać aplikacje o odpowiednim typie.
 
-Add the services you want to use in the [Web service - Applications](administrator-guides/integration/webservice-apps/) admin panel.
+W panelu administracyjnym [Web service - Applications](administrator-guides/integration/webservice-apps/) nalezy dodać usługi z których chcemy korzystać.
 
-## Session lifetime configuration
+## Konfiguracja żywotność sesji
 
 [config/Security.php](https://doc.yetiforce.com/code/classes/Config-Security.html#property_apiLifetimeSessionCreate)
 

@@ -3,69 +3,69 @@ title: YetiForce APP ID
 keywords:
   - YetiForce
   - app id
-  - find
-  - consists of
+  - znaleźć
+  - z czego się składa
 tags:
   - App ID
-description: What is YetiForce APP ID, what does it consist of, why does it change and how to find it?
+description: Co to jest YetiForce APP ID, z czego się składa, czemu się zmienia, gdzie je znaleźć?
 preview: app-id.jpg
 ---
 
 ![App ID](app-id.jpg)
 
-## Why was APP ID created?
+## Dlaczego powstał APP ID?
 
-### Registration
+### Rejestracja
 
-The registration mechanism required linking registration data with a specific instance of the YetiForce system, which required creating a unique identifier for a given instance. Otherwise, it would be impossible to identify the system.
+Mechanizm rejestracji wymagał powiązania danych rejestracyjnych z konkretną instancją systemu YetiForce, co wymagało stworzenia unikalnego identyfikatora danej instancji. W przeciwnym razie identyfikacja systemu byłaby niemożliwa.
 
 ### Marketplace
 
-When you buy some of the products available in our Marketplace, you will need to provide us with your APP ID, which will verify which system the add-on has been purchased for. As the system producer, we don't collect any identifying information about the system, therefore, when you purchase services that we need to activate for you, we will have to verify the APP ID.
+Przy zakupie niektórych produktów w naszym Marketplace konieczne będzie przesłanie do nas informacji o APP ID, który identyfikuje system do którego zakupiony został dany dodatek. Jako producent systemu nie zbieramy żadnych identyfikujących informacji o systemie, dlatego przy zakupie usług, które musimy dla Państwa aktywować, konieczna jest weryfikacja APP ID.
 
-## What does YetiForce APP ID consist of?
+## Z czego składa się YetiForce APP ID?
 
-APP ID is a checksum which includes the following components:
+APP ID to suma kontrolna, w której skład wchodzą następujące składowe:
 
-- **System ID**, which is randomly generated during the installation and doesn't change ([$application_unique_key from the config/Main.php file](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key))
-- **System URL** where the system is located ([$site_URL from the config/Main.php file](https://doc.yetiforce.com/code/classes/Config-Main.html#property_site_URL))
+- **ID systemu**, które jest losowo generowane podczas instalacji i nie zmienia się ([$application_unique_key z pliku config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key))
+- **URL systemu** gdzie znajduje się system ([$site_URL z pliku config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_site_URL))
 
 :::warning
 
-If your APP ID changes all your purchased addons will be deactivated. Please check the FAQ at the bottom of the Addons page to find out how to activate them again.
+Wykupione dodatki przestaną działać jeśli APP ID naszego systemu ulegnie zmianie. Przeczytaj FAQ na dole strony z Dodatkami by dowiedzieć się jak je ponownie aktywować.
 
 :::
 
-## Why does the APP ID change?
+## Dlaczego APP ID ulega zmianie?
 
-The APP ID must include unique elements for each server, so that the ID is also unique and not duplicated, which is why it has so many components. If any of the above mentioned parameters change, the APP ID will change as well, which will require the system to be registered once again.
+Identyfikator musi zawierać elementy unikalne dla każdego serwera, aby ID był unikalny i nie powielał się, dlatego posiada kilka składowych. Jeśli któryś z opisanych wyżej części APP ID ulegnie zmianie, system będzie wymagał ponownej rejestracji.
 
-The APP ID often changes in the Docker environment if it's not properly protected against APP ID changes. The APP ID will also change if you move your system to another server.
+Często APP ID zmienia się w środowisku Docker, gdy nie zostało ono odpowiednio zabezpieczone przed zmianami APP ID. W przypadku migracji systemu YetiForce CRM na inny serwer APP ID również ulegnie zmianie.
 
-Below you can find a short tutorial on how and where to find the APP ID.
+Poniżej przedstawiamy krótką instrukcję pokazującą gdzie znaleźć APP ID.
 
-## Where to find APP ID
+## Gdzie znaleźć APP ID
 
-### For version 6.0 and newer
+### Dla wersji 6.0 i nowszych
 
-#### Step 1A - Default YetiForce branding
+#### Krok 1A Domyślny branding YetiForce
 
-This step is for systems that use default YetiForce branding. If you purchased the [Disable YetiForce Branding](https://yetiforce.com/pl/yetiforce-branding) functionality please go to step 1B.
+Ten krok ma zastosowanie w systemach używających domyślnego brandingu YetiForce. Jeśli w Twoim systemie została wykupiona usługa [Disable YetiForce Branding](https://yetiforce.com/pl/yetiforce-branding) przejdź do kroku 1B.
 
-If you are using the default YetiForce branding click the <i className="fas fa-info-circle fa-fw"></i> icon in the bottom right corner.
+Jeżeli używasz domyślnego brandingu kliknij ikonę <i className="fas fa-info-circle fa-fw"></i> w prawym dolnym rogu.
 
 ![App ID](app-id-1.jpg)
 
-#### Step 1B - Custom branding
+#### Krok 1B Niestandardowy branding
 
-If you purchased the [Disable YetiForce Branding](https://yetiforce.com/pl/yetiforce-branding) functionality please click on the cogwheel icon <i className="fas fa-cog fa-fw"></i> in the upper right corner to access System Settings, then click the <i className="fas fa-info-circle fa-fw"></i> icon at the top of your screen.
+Jeśli kupiłeś funkcję [Disable YetiForce Branding](https://yetiforce.com/pl/yetiforce-branding) kliknij ikonę koła zębatego <i className="fas fa-cog fa-fw"></i> w prawym górnym rogu, aby przejść do ustawień, a następnie kliknij ikonę <i className="fas fa-info-circle fa-fw"></i> na górze ekranu.
 
 ![App ID](app-id-2.jpg)
 
-#### Step 2 - Popup with data
+#### Krok 2 Okno modalne z danymi
 
-The APP ID can be found in the popup window. Copy the APP ID and send it to hello@yetiforce.com
+APP ID pokaże się w oknie modalnym. Skopiuj identyfikator APP i wyślij go na hello@yetiforce.com
 
-Remember to include the PayPal transaction information and the email address you used for the transaction.
+Pamiętaj, aby dołączyć informacje o transakcji PayPal i adres e-mail, który użyłeś do transakcji.
 
 ![App ID](app-id-0.jpg)

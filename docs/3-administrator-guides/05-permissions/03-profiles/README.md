@@ -1,54 +1,55 @@
 ---
-title: Profiles
-description: Grant permissions to functionalities, fields, tools, and actions that users can use during their daily work in the system.
+title: Profile
+description: Nadaj uprawnienia do funkcjonalności, pól, narzędzi i działań, wykorzystywanych przez użytkowników systemu podczas codziennej pracy z systemem.
 tags:
-  - permissions
-  - profiles
+  - uprawnienia
+  - profile
 keywords:
-  - permissions
-  - profiles
+  - uprawnienia
+  - profile
 preview: profiles-01.jpg
 ---
 
-Profiles allow you to define permissions to many functionalities and views available in the system
+Profile pozwalają zdefiniować uprawnienia do wielu funkcji i widoków dostępnych w systemie.
 
 ![profiles-01.jpg](profiles-01.jpg)
 
-## Add new profile
+## Dodaj nowy profil
 
-By default, there is 1 profile in the system - Administrator. To add a new profile with pre-configured permissions, click the <kbd>+ Add profile</kbd> button in the upper left corner of the screen.
-You will see the new profile page, where you have to choose a name for it and optionally fill its description. Then, in the `Edit permissions for this profile` table, select the permissions to actions in individual modules that you want the newly created profile to have.
+Domyślnie w systemie znajduje się 1 profil — Administrator. Aby dodać nowy profil z wstępnie skonfigurowanymi uprawnieniami kliknij przycisk <kbd>+ Dodaj profil</kbd> w lewym górnym rogu ekranu. Zobaczysz stronę nowego profilu, na której musisz wybrać nazwę i opcjonalnie dodać jego opis. 
 
-In addition to general permissions to create, view, edit, and delete records in selected modules, you can also configure permissions for fields and tools. In order to modify these permissions, click the down arrow button <kbd>˅</kbd> in the `field and tool privileges` column and configure the additional options:
+Następnie, w tabeli `Edytuj uprawnienia do profilu`, wybierz uprawnienia do akcji w poszczególnych modułach, które nowo utworzony profil powinien posiadać.
+
+Oprócz ogólnych uprawnień do tworzenia, przeglądania, edycji i usuwania rekordów w wybranych modułach, możesz również skonfigurować uprawnienia dla pól i narzędzi. Jeśli chcesz zmienić te uprawnienia, kliknij przycisk strzałki w dół <kbd>˅</kbd> w kolumnie `uprawnienia do pól i narzędzi` i skonfiguruj dodatkowe opcje:
 
 ![profiles-02.jpg](profiles-02.jpg)
 
-The module supports mass selection and deselection of permissions - if you click the checkbox at the top of the "Modules" column, you will deselect / select all options for all modules. If you click on the checkbox next to any name of the action, you will deselect / select the permissions for this action for all modules:
+Moduł wspiera masowe zaznaczanie i odznaczanie uprawnień — jeśli klikniesz checkbox w górnej części kolumny "Moduły", zaznaczysz/odznaczysz wszystkie opcje dla wszystkich modułów. Jeśli klikniesz checkbox obok nazwy akcji, zaznaczysz/odznaczysz uprawnienia dla tej akcji dla wszystkich modułów:
 
-Once you finish configuring the permissions, click <kbd>Save</kbd>.
+Po zakończeniu konfiguracji uprawnień kliknij <kbd>Zapisz</kbd>.
 
-## Edit profile
+## Edytuj Profil
 
-In order to modify permissions granted to an existing profile, click the edit button <kbd>✎</kbd> in the last column of the profiles table. The system will display the current permissions for this profile, which you can freely modify as described above.
+W celu modyfikacji uprawnień przypisanych istniejącemu profilowi kliknij ikonkę edycji <kbd>✎</kbd> widoczną w ostatniej kolumnie tabeli profili. System wyświetli obecne ustawienia wybranego profilu, które można dowolnie zmodyfikować w sposób opisany powyżej.
 
-Once you finish editing the permissions, click <kbd>Save</kbd>.
+Po dostosowaniu uprawnień kliknij przycisk <kbd>Zapisz</kbd>.
 
-## Duplicate profile
+## Duplikuj profil
 
-Duplicating a profile allows you to create a profile with similar permissions, without the need to create it from scratch. To duplicate a profile, click the duplication icon <kbd>⧉</kbd> in the last column. The system will copy permissions from the selected profile to the new one, which you will then be able to modify according to your needs.
+Duplikacja profilu pozwoli na stworzenie profili o podobnych uprawnieniach, bez potrzeby tworzenia go od początku. Aby zduplikować profil, kliknij ikonę <kbd>⧉</kbd> w ostatniej kolumnie. System skopiuje uprawnienia z wybranego profilu do nowego, który będziesz mógł modyfikować według potrzeb.
 
-Once you finish configuring the permissions in the duplicated profile, click <kbd>Save</kbd>.
+Po zakończeniu konfiguracji uprawnień w zduplikowanym profilu kliknij <kbd>Zapisz</kbd>.
 
-## Delete profile
+## Usuń profil
 
-To delete the selected profile, click on the trash can icon <kbd>🗑</kbd> visible in the last column of the profile table. The system will display a pop-up window where you can specify which of the remaining profiles inherits the roles.
+Aby usunąć wybrany profil, kliknij ikonę kosza <kbd>🗑</kbd> widoczną w ostatniej kolumnie tabeli profilu. System wyświetli okienko pop up, w którym sprecyzujesz, do którego z pozostałych profili będą przeniesione role, które są przypisane do usuwanego profilu.
 
-Click <kbd>Save</kbd> to remove the profile and transfer the roles.
+Kliknij <kbd>Zapisz</kbd>, aby usunąć profil i przenieść role.
 
-## Icons
+## Ikony
 
-- ![profiles-action-1](profiles-action-1.jpg) - the permission is active
-- ![profiles-action-2](profiles-action-2.jpg) - the permission is inactive
-- ![profiles-action-3](profiles-action-3.jpg) - the field is invisible for the selected profile
-- ![profiles-action-4](profiles-action-4.jpg) - the selected profile can only view data from this field
-- ![profiles-action-5](profiles-action-5.jpg) - the selected profile can save data in this field
+- ![profiles-action-1](profiles-action-1.jpg) - uprawnienie jest aktywne
+- ![profiles-action-2](profiles-action-2.jpg) - uprawnienie jest nieaktywne
+- ![profiles-action-3](profiles-action-3.jpg) - pole jest niewidoczne dla wybranego profilu
+- ![profiles-action-4](profiles-action-4.jpg) - ten profil ma dostęp tylko do odczytu danych z tego pola
+- ![profiles-action-5](profiles-action-5.jpg) - ten profil ma dostęp do zapisu danych we wskazanym polu

@@ -4,11 +4,11 @@ description: How to report bugs?
 keywords:
   - How to
   - bugs
-  - report
+  - zgłoszenie
   - YetiForce
 tags:
   - bugs
-  - report
+  - zgłoszenie
 preview: 3-how-to-report-bugs.jpg
 ---
 

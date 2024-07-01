@@ -1,19 +1,19 @@
 ---
 title: PBX
-description: PBX integration allows you to make and receive phone calls
+description: Integracja PBX pozwala na wykonywanie i odbieranie połączeń telefonicznych
 keywords:
-  - Integration
+  - Integracja
   - PBX
-  - start call
-  - pick up call
-  - calls
-  - phone
+  - rozpocznij połączenie
+  - odbierz
+  - połączenia
+  - telefon
   - YetiForce
 tags:
   - PBX
 ---
 
-The PBX integration allows you to make and receive phone calls in YetiForce.
+Integracja PBX pozwala na wykonywanie i odbieranie połączeń telefonicznych w YetiForce.
 
 import DocCardList from '@theme/DocCardList';
 

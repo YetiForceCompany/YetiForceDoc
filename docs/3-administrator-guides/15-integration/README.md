@@ -1,5 +1,5 @@
 ---
-title: Integration
+title: Integracja
 ---
 
 import DocCardList from '@theme/DocCardList';

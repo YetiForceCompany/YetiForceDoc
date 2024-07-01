@@ -1,63 +1,63 @@
 ---
-title: System access control
-description: Limiting access to data is crucial for the organization
+title: Kontrola dostępu do systemu
+description: Ograniczenie dostępu do danych jest kluczowe z perspektywy organizacji
 keywords:
-  - control
-  - access
-  - records
+  - kontrola
+  - dostępu
+  - rekordów
   - YetiForce
 tags:
-  - control
-  - access
-  - records
+  - kontrola
+  - dostępu
+  - rekordów
 ---
 
-In the YetiForce system, organizations most often store sensitive and confidential data about customers and about their own organization. Secure access to the application is a priority, and this article illustrates how we tackled this issue.
+W systemie YetiForce organizację najczęściej przechowują wrażliwe i poufne dane dotyczące klientów oraz dotyczące własnej organizacji. Bezpieczny dostęp do aplikacji jest kluczowy z perspektywy bezpieczeństwa, dlatego sprawdź w jaki sposób zadbaliśmy o bezpieczeństwo.
 
-## System access logic
+## Logika bezpieczeństwa dostępu do systemu
 
-### Standard authentication
+### Uwierzytelnianie standardowe
 
-Standard authentication requires the user to enter their login and password in order for the system to check whether the user should be authenticated. If the data is correct, they will be logged into the system.
+Uwierzytelnianie standardowe polega na wprowadzeniu przez użytkownika loginu [identyfikacja] i hasła, w celu upewnienia się przez system, czy użytkownik o podanym loginie i haśle powinien zostać uwierzytelniony. Jeżeli dane są poprawne, zostanie zalogowany do systemu .
 
-### 2FA authentication
+### Uwierzytelnienie 2FA
 
-If the user has the 2FA authentication activated, then, after the standard authentication and before logging into the system, a second window will appear and ask the user to enter the generated code from a 2FA application or device. Failure to enter the code will result in the user not being logged in correctly.
+Jeżeli użytkownik ma aktywowane uwierzytelnienie 2FA, wówczas po uwierzytelnieniu standardowym a przed zalogowaniem się do systemu pojawi się drugie okno, w którym należy wprowadzić wygenerowany kod z aplikacji lub urządzenia 2FA. Nieprowadzenie kodu spowoduje, że użytkownik nie zostanie poprawnie zalogowany.
 
-### LDAP Authentication
+### Uwierzytelnianie LDAP
 
-Users can log in using the LDAP service, in this case the authentication does not take place in the YetiForce system, but in the external LDAP service, which returns a true/false authentication result. If the user is properly authenticated and their login matches the login in the YetiForce system, they will also be authenticated in the application.
+Użytkownik może mieć określone logowanie za pomocą usługi LDAP, wówczas uwierzytelnianie nie odbywa się w systemie YetiForce lecz w usłudze zewnętrznej LDAP, która zwraca wynik uwierzytelnienia w postaci true/false. Jeżeli użytkownik zostanie poprawnie uwierzytelniony a jego login zgadza się z loginem w systemie YetiForce [identyfikacja], wówczas zostanie on również uwierzytelniony w aplikacji.
 
-### Custom authentication
+### Uwierzytelnienia niestandardowe
 
-The system allows the use of other methods of standard or additional authentication, e.g. in the form of Yubikey physical devices. Unfortunately, some mechanisms require integration with the company's infrastructure, such as sending text messages or an internal application for one-time codes, therefore these options are priced individually.
+System pozwala na wykorzystanie innych metod uwierzytelnienia standardowego lub dodatkowego np. w postaci urządzeń fizycznych Yubikey. Niestety niektóre mechanizmy wymagają integracji z infrastrukturą firmy [np. wysyłanie sms-ów, wewnętrzna aplikacja do kodów jednorazowych] a więc są to opcje dodatkowo płatne.
 
-### Authentication
+### Autoryzacja
 
-After correct identification and authentication, the system automatically verifies the functionalities and data the user has permissions for. Depending on the authentication, each user can see different system functionalities - each element of the system can be defined for the user, e.g. each user can see different menus, other functionalities and other data.
+Po poprawnej identyfikacji oraz uwierzytelnieniu, system automatycznie weryfikuje funkcjonalności i dane do których ma uprawnienia uwierzytelniony użytkownik. W zależności od uprawnień każdy uwierzytelniony użytkownik może widzieć inne funkcjonalności systemu [każdy element systemu może być określony dla użytkownika np. każdy użytkownik może widzieć inne menu, inne funkcjonalności oraz inne dane].
 
-## Security mechanisms
+## Mechanizmy zabezpieczające
 
-### Unique identifiers
+### Unikalność identyfikatorów
 
-In the YetiForce system, there are two identifiers in the user table, the first identifier is `id`, which is a unique numerical identifier that creates a unique value for each user, and once a value is assigned, it cannot be assigned to another user in the future. The second unique identifier is the login used by the user to log in. The system has a security feature that will not allow you to assign a pre-existing login to a new user.
+W systemie YetiForce w tablicy z użytkownikami są dwa identyfikatory, pierwszym identyfikatorem jest `id` czyli unikalny identyfikator numeryczny, który dla każdego użytkownika tworzy unikalną wartość a już raz przydzielona wartość nie może zostać w przyszłości przydzielona do innego użytkownika. Drugim unikalnym identyfikatorem jest login, którym posługuje się użytkownik do logowania. System posiada zabezpieczenie, które nie pozwoli na przydzielenie wcześniej istniejącego loginu nowemu użytkownikowi.
 
-The uniqueness of identifiers allows you to verify the activities of individual users even when they have been removed from the system, and prevents identification errors.
+Unikalność identyfikatorów pozwala na weryfikację działań poszczególnych użytkowników nawet wówczas, gdy zostali oni usunięci z systemu i przeciwdziała pomyłkom identyfikacyjnym.
 
-### Independence of the identifier from the permissions in the application
+### Niezależność identyfikatoru od uprawnień w aplikacji
 
-The identifier does not in any way determine permissions in the application, as they are granted independently. Even if a user has the word "administrator" in their name or has been assigned to the "administrator" role, this does not grant them any administrative privileges.
+Identyfikator w żaden sposób nie określa uprawnień w aplikacji, ponieważ są one nadawane niezależnie. Nawet jeżeli użytkownik posiada w nazwie słowo "administrator" albo został przydzielony do roli "administrator" nie oznacza to jakichkolwiek uprawnień administracyjnych.
 
-### Blocking and removing users
+### Blokowanie i usuwanie użytkownika
 
-The system allows you to quickly block a user by changing the user's status from active to inactive. In addition, deleting a user from the system will cause the user to cease to exist in the user database, but his system identifier `id` and login will remain in the system and cannot be used for new users.
+System pozwala na szybkie blokowanie użytkownika poprzez zmianę statusu na użytkowniku z aktywnego na nieaktywny. Dodatkowo usunięcie użytkownika w systemie powoduje, że użytkownik przestanie istnieć w bazie użytkowników, ale jego identyfikator systemowy `id` oraz login pozostaną w systemie i nie będą mógłby zostać użyte dla nowych użytkowników.
 
-If there is a limited profile in the system that reduces what the user has access to, then you can quickly change the role, assign the user limited access to data and functionalities.
+Jeżeli w systemie istnieje profil ograniczony [który zmniejsza to do czego użytkownik ma dostęp] wówczas można w szybki sposób zmieniając rolę, przypisać użytkownikowi inny [ograniczony] dostęp do danych i funkcjonalności.
 
-### Multiple failed logins
+### Wielokrotne nieudane logowanie
 
-The system has a tool that allows you to detect failed user logins and block them for a specified period of time if they exceed the prohibited logins field. Additionally, if e-mail notifications are defined in the application, the administrator will receive a notification about each block. By default, the system blocks the IP for 15 minutes after 10 unsuccessful attempts. These parameters can be modified in the administration panel.
+W systemie jest dostępne narzędzie, które pozwala na wykrywanie nieudanych logowań użytkowników oraz ich blokowanie na określony czas, jeżeli przekroczą póle niedozwolonych logowań. Dodatkowo jeżeli w aplikacji zdefiniowano powiadomienia mailowe, wówczas administrator otrzyma powiadomienie o każdej blokadzie. Domyślnie system blokuje IP na 15 minut po wykoniu 10 nieudanych próbach. Parametry te można modyfikować w panelu administracyjnym.
 
-### Hiding non-existing users
+### Ukrywanie nieistniejących użytkowników
 
-The system has been designed so that when logging in to a user who exists in the application and a user who does not exist, the response time is the same. Thanks to this security solution, it is not possible to detect whether the user login is used in the system.
+System został tak zaprojektowany, aby w przypadku logowania na użytkownika który istnieje w aplikacji oraz użytkownika który nie istnieje czas odpowiedzi był taki sam. Dzięki takiemu zabezpieczeniu, nie jest możliwe wykrycie, czy login użytkownik jest używany w systemie.

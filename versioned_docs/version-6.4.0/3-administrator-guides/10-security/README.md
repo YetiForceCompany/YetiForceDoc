@@ -1,16 +1,16 @@
 ---
-title: Security
-description: Security
+title: Bezpieczeństwo
+description: Bezpieczeństwo
 keywords:
-  - Security
-  - Settings
+  - Bezpieczeństwo
+  - Ustawienia
   - YetiForce
 tags:
-  - Security
+  - Bezpieczeństwo
 hide_table_of_contents: true
 ---
 
-Configure key policies, rules, and parameters for sensitive data to increase the overall level of security.
+Skonfiguruj kluczowe polityki, zasady i parametry dla danych wrażliwych, aby zwiększyć ogólny poziom bezpieczeństwa.
 
 import DocCardList from '@theme/DocCardList';
 

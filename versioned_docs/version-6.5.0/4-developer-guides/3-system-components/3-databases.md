@@ -4,7 +4,7 @@ description: Mechanizm QueryGenerator, którym można listować dowolne dane z m
 keywords:
   - loader
   - autoloader
-  - engine
+  - silnik
   - YetiForce
 tags:
   - loader
@@ -69,11 +69,11 @@ http://www.yiiframework.com/doc-2.0/guide-db-query-builder.html
 
 ```php
 $query = (new \App\Db\Query())
-	->select(['id', 'user_name'])
-	->from('vtiger_users')
-	->where(['status' => 'Active'])
-	->limit(10)
-	->andWhere(['between', 'holidaydate', $date[0], $date[1]]);
+    ->select(['id', 'user_name'])
+    ->from('vtiger_users')
+    ->where(['status' => 'Active'])
+    ->limit(10)
+    ->andWhere(['between', 'holidaydate', $date[0], $date[1]]);
 ```
 
 ## Shortcuts

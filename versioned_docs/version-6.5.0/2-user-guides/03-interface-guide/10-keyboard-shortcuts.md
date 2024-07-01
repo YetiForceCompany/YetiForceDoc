@@ -1,35 +1,35 @@
 ---
-title: Keyboard shortcuts
-description: A set of keyboard shortcuts available in YetiForce.
+title: Skróty klawiszowe
+description: Zestaw skrótów klawiaturowych dostępnych w YetiForce.
 keywords:
-  - Keyboard
-  - shortcuts
+  - Klawiatura
+  - skrót
   - YetiForce
 tags:
-  - Keyboard
-  - shortcuts
+  - Klawiatura
+  - skrót
   - YetiForce
 ---
 
-A set of keyboard shortcuts available in YetiForce and Portal.
+Zestaw skrótów klawiaturowych dostępnych w YetiForce i Portalu.
 
-The following keyboard shortcuts are available in the listed views in the YetiForce system and Portal:
+Następujące skróty klawiaturowe są dostępne w poniższych widokach w systemie YetiForce i Portalu:
 
-## All Views
+## Wszystkie widoki
 
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>X</kbd> - list view in the current module
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>Q</kbd> - quick create in the current module
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>X</kbd> - widok listy w obecnym module
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>Q</kbd> - szybkie tworzenie w obecnym module
 
-## List view
+## Widok listy
 
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>A</kbd> - add a new record in the current module (full form)
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>A</kbd> - dodaj nowy rekord w obecnym module (pełny formularz dodawania rekordu)
 
-## Detail view
+## Widok szczegółowy
 
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>E</kbd> - edit (full form)
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>W</kbd> - quick edit (modal window)
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>D</kbd> - duplicate
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>E</kbd> - edycja (pełny formularz)
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>W</kbd> - szybka edycja (uproszczony formularz w oknie modalnym)
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>D</kbd> - duplikuj rekord
 
-## Edition view
+## Widok edycji
 
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>S</kbd> - save
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>S</kbd> - zapis

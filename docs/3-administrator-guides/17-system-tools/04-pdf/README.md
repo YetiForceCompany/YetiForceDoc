@@ -3,7 +3,7 @@ title: PDF
 description: YetiForce PDF Premium
 keywords:
   - YetiForce
-  - Settings
+  - Panel konfiguracyjny
   - PDF
 tags:
   - PDF
@@ -12,15 +12,15 @@ preview: pdf-2.jpg
 
 ## Chromium/Chrome
 
-### Download
+### Pobierz
 
 - Chromium - https://www.chromium.org/getting-involved/download-chromium/
 
-### Configuring the PDF generator path
+### Konfigurowanie ścieżki generatora PDF
 
-PDF configuration file: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
+Plik konfiguracyjny PDF: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
 
-Set the local path or a command to the PDF generator in the [$chromiumBinaryPath](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html#property_chromiumBinaryPath) parameter
+Ustaw ścieżkę lokalną lub polecenie do generatora PDF w parametrze [$chromiumBinaryPath](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html#property_chromiumBinaryPath)
 
 ```php
 /**
@@ -28,27 +28,27 @@ Set the local path or a command to the PDF generator in the [$chromiumBinaryPath
  */
 class Pdf
 {
-	/**
-	 * The name or path of the chrome/chromium engine.
-	 *
-	 * @see https://www.chromium.org/getting-involved/download-chromium
-	 *
-	 * @var string
-	 */
-	public static $chromiumBinaryPath = 'chromium';
+    /**
+     * The name or path of the chrome/chromium engine.
+     *
+     * @see https://www.chromium.org/getting-involved/download-chromium
+     *
+     * @var string
+     */
+    public static $chromiumBinaryPath = 'chromium';
 
-	/**
-	 * Chromium browser options available for the browser factory.
-	 *
-	 * @see https://github.com/chrome-php/chrome#available-options
-	 *
-	 * @var array
-	 */
-	public static $chromiumBrowserOptions = ['noSandbox' => true, 'noProxyServer' => true];
+    /**
+     * Chromium browser options available for the browser factory.
+     *
+     * @see https://github.com/chrome-php/chrome#available-options
+     *
+     * @var array
+     */
+    public static $chromiumBrowserOptions = ['noSandbox' => true, 'noProxyServer' => true];
 }
 ```
 
-#### Example `$chromiumBinaryPath` values:
+#### Przykładowe wartości `$chromiumBinaryPath`:
 
 - chromium
 - chromium-browser
@@ -57,24 +57,22 @@ class Pdf
 - c:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 - c:\ungoogled-chromium\chrome.exe
 
-### Select the new engine
+### Wybierz nowy silnik
 
-When the `$chromiumBinaryPath` path is set correctly and the system has access to the location/command you will see a new engine in the PDF panel.
+Gdy ścieżka `$chromiumBinaryPath` jest poprawnie ustawiona i system ma dostęp do lokalizacji/polecenia, zobaczysz nowy silnik w panelu PDF.
 
 ![pdf-2.jpg](pdf-2.jpg)
 
-### Simple installation on Linux
+### Prosta instalacja na Linux
 
-A simple script to download the latest version without installation.
+Prosty skrypt do pobrania najnowszej wersji bez instalacji.
 
-Make sure your system has installed all required dependencies.
-Thanks [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
-❤
+Upewnij się, że system ma wszystkie wymagane zależności. [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
 
 The list of required packages may vary depending on the distribution and version. https://source.chromium.org/chromium/chromium/src/+/main:chrome/installer/linux/debian/dist_package_versions.json
 
 <details>
-<summary>Debian (e.g. Ubuntu)</summary>
+<summary>Debian (np. Ubuntu)</summary>
 
 ```
 ca-certificates
@@ -115,7 +113,7 @@ lsb-release
 wget
 xdg-utils
 
-Note: You might need to install ‘libgbm-dev’ and ‘libxshmfence-dev’ also. This is reported for Ubuntu 20.04.
+Uwaga: Musisz zainstalować również `libgbm-dev` i `libxshmfence-dev`. This is reported for Ubuntu 20.04.
 ```
 
 </details>
@@ -146,7 +144,7 @@ xorg-x11-fonts-Type1
 xorg-x11-utils
 ```
 
-After installing dependencies you need to update nss library using this command
+Po zainstalowaniu zależności musisz zaktualizować bibliotekę nss używając tej komendy
 
 ```
 yum update nss -y
@@ -155,7 +153,7 @@ yum update nss -y
 </details>
 
 <details>
-  <summary>Check out discussions</summary>
+  <summary>Sprawdź dyskusje</summary>
 
 - [#290](https://github.com/puppeteer/puppeteer/issues/290) - Debian troubleshooting <br/>
 - [#391](https://github.com/puppeteer/puppeteer/issues/391) - CentOS troubleshooting <br/>

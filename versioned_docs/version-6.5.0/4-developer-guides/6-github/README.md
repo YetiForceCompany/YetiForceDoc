@@ -1,18 +1,18 @@
 ---
 title: Github
-description: Information on reporting bugs in the YetiForce system via GitHub.
+description: Informacje o zgłaszaniu błędów w systemie YetiForce za pośrednictwem GitHub.
 keywords:
   - Github
-  - report
-  - problems
-  - errors
+  - zgłoszenie
+  - problemów
+  - błędy
   - YetiForce
 tags:
-  - credentials
+  - dane dostępowe
   - Github
 ---
 
-The most important information on reporting bugs found in YetiForce via the GitHub platform, as well as information on managing tickets and ideas for system development.
+Najważniejsze informacje o zgłaszaniu błędów napotkanych w YetiForce za pośrednictwem platformy GitHub, a także informacje na temat zarządzania zgłoszeniami i pomysłami na rozwój systemu.
 
 import DocCardList from '@theme/DocCardList';
 

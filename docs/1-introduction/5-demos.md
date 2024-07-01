@@ -1,27 +1,27 @@
 ---
-title: Test versions
-description: YetiForce and YetiForce Portal public test versions
+title: Testuj
+description: Publiczna wersja testowa systemu YetiForce oraz Portalu klienta
 tags:
   - demo
-  - test version
+  - wersja testowa
 keywords:
   - demo
-  - test version
+  - wersja testowa
 ---
 
-## YetiForce demo
+## Wersja demonstracyjna systemu YetiForce
 
-That is the most recent development version of the system that includes all the latest fixes. Due to that, it's also likely to include some bugs and errors.
+Jest to najbardziej aktualna deweloperska wersja systemu, która zawiera wszystkie najnowsze poprawki. Z tego powodu może ona również zawierać błędy.
 
-Address: <a href="https://demo.yetiforce.com" target="_blank">https://demo.yetiforce.com</a>
+Adres: <a href="https://demo.yetiforce.com" target="_blank">demo.yetiforce.com</a>
 
-- Admin permissions
+- Uprawnienia administratora
 
   - Login: admin
-  - Password: admin
+  - Hasło: admin
 
-- User permissions (basic)
+- Uprawnienia użytkownika (podstawowy)
   - Login: demo
-  - Password: demo
+  - Hasło: demo
 
-Application resets at: ~7, ~12, ~15, ~22 CET
+Odświeżanie aplikacji w godzinach: 7, 12, 15, 22 CET

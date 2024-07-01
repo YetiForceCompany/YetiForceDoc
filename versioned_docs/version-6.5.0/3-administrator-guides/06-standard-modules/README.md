@@ -1,5 +1,5 @@
 ---
-title: Standard modules
+title: Moduły standardowe
 hide_table_of_contents: true
 ---
 

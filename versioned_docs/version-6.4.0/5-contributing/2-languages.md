@@ -1,20 +1,20 @@
 ---
-title: Translations
+title: Tłumaczenia
 description: You can submit your translations via Crowdin - a platform that allows the Community to translate software into any language.
 keywords:
-  - languages
-  - translations
+  - języki
+  - tłumaczenia
   - YetiForce
   - crowdin
 tags:
-  - languages
-  - translation
+  - języki
+  - tłumaczenie
   - crowdin
 ---
 
 ![crowdin Localization Management Platform](https://support.crowdin.com/assets/logos/crowdin-logo-small-black.svg)
 
-## Available languages
+## Dostępne języki
 
 Thanks to the efforts of our community, YetiForce has been translated into many languages. After installing the system, you will be able to easily download additional languages by going to: `System Settings → System Tools → Language Management`. You can check all currently available languages on Crowdin. Thanks to Crowdin you can also develop the system by adding new languages, or adding translations to those already available.
 
@@ -29,12 +29,12 @@ The official translation project of [YetiForce](https://crowdin.com/project/yeti
 
 :::tip
 
-Guide: [Translation Process](https://support.crowdin.com/crowdin-intro/#translation-process)
+Poradnik: [Translation Process](https://support.crowdin.com/crowdin-intro/#translation-process)
 
 :::
 
 If you want to add translations in a language that is not currently available in YetiForce, please send an email to 📧 crowdin@yetiforce.com.
 
-## Supported languages
+## Obsługiwane języki
 
-The list of currently supported languages can be found [here](https://crowdin.com/project/yetiforcecrm).
+Lista aktualnie obsługiwanych języków znajduje się [tutaj](https://crowdin.com/project/yetiforcecrm).

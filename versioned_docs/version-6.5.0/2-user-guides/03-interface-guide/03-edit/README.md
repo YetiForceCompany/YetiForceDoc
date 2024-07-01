@@ -1,11 +1,11 @@
 ---
-title: Edit
-description: Edit
+title: Edycja
+description: Edycja
 keywords:
-  - Edit
+  - Edycja
   - YetiForce
 tags:
-  - Edit
+  - Edycja
 ---
 
 import DocCardList from '@theme/DocCardList';

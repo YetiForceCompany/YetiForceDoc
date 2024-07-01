@@ -1,11 +1,11 @@
 ---
-title: YetiForce PDF Premium - activation
+title: YetiForce PDF Premium - aktywacja
 description: YetiForce PDF Premium
 keywords:
   - YetiForce
   - PDF
   - Premium
-  - activation
+  - aktywuj
 tags:
   - PDF
 preview: pdf-1.jpg
@@ -13,20 +13,20 @@ preview: pdf-1.jpg
 
 :::tip
 
-The Chromium/Chrome engine is necessary in order for this addon to work properly. You can download it [HERE](https://www.chromium.org/getting-involved/download-chromium/)
+Do prawidłowego działania dodatku wymagany jest silnik Chromium/Chrome. [POBIERZ SILNIK](https://www.chromium.org/getting-involved/download-chromium/)
 
 :::
 
-## Purchasing the addon
+## Zakup dodatku
 
-It's best to purchase all the addon in the Marketplace in the system in the administrator panel. If you're interested in other payment options you can use our website or get in touch with us directly.
+Dodatki najlepiej kupować w Marketplace panelu administracyjnym systemu YetiForce. Jeżeli interesują cię inne formy płatności i rozliczenia to można skorzystać z naszej strony WWW lub skontaktować się z nami za pomocą formularza kontaktowego.
 
 ![pdf-1.jpg](pdf-1.jpg)
 
-## Activating the addon by the YetiForce team
+## Aktywacja dodatku przez zespół YetiForce
 
-We activate the subscription manually. If your addon is not active within 48h in your system, please read the following article: [Troubleshooting inactive and malfunctioning addons](/administrator-guides/marketplace/troubleshooting)
+Obsługa subskrypcji odbywa się ręcznie. Jeśli po 48 godzinach nie zobaczysz aktywnego rozszerzenia, to zapoznaj się z artykułem: [Rozwiązywanie problemów z nieaktywnymi lub niedziałającymi dodatkami](/administrator-guides/marketplace/troubleshooting)
 
-## Configuration
+## Konfiguracja
 
-A description of the configuration panel can be found in the Administrator section: [`Software configuration → System tools → PDF`](/administrator-guides/system-tools/pdf/#chromiumchrome)
+Opis panelu konfiguracyjnego można znaleźć w sekcji administratora [`Konfiguracja systemu → Narzędzia systemowe → PDF`](/administrator-guides/system-tools/pdf/#chromiumchrome)

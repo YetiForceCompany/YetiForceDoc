@@ -1,17 +1,17 @@
 ---
-title: Configuration
+title: Konfiguracja
 description: How to properly configure the API in YetiForce
 keywords:
   - Webservice
   - API
   - RestAPI
-  - configuration
+  - konfiguracja
   - YetiForce
 tags:
   - Webservice
   - API
   - Rest API
-  - Configuration
+  - Konfiguracja
 ---
 
 ## Aktywacja
