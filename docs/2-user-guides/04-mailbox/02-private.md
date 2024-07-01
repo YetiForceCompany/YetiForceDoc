@@ -7,11 +7,11 @@ Dostęp do niej może mieć tylko jeden użytkownik.
 
 ## Konfiguracja
 
-W celu skonfigurowania skrzynki prywatnej, wybierz ikonę użytkownika znajdującą się w prawym górnym rogu a następnie z menu, które się pojawi wybierz ```Moje ustawienia```
+W celu skonfigurowania skrzynki prywatnej, wybierz ikonę użytkownika znajdującą się w prawym górnym rogu a następnie z menu, które się pojawi wybierz <kbd>Moje ustawienia</kbd>
 
 ![private-1](private-1.jpg)
 
-Przejdź do edycji ustawień konta, wybierając znak edycji znajdujący się koło zakładki ```Moje ustawienia```
+Przejdź do edycji ustawień konta, wybierając znak edycji znajdujący się koło zakładki <kbd>Moje ustawienia</kbd>
 
 ![private-2](private-2.jpg)
 
@@ -44,7 +44,7 @@ W widoku skrzynki pocztowej, możemy skonfigurować połączenie z usługa poczt
 
 ### Uruchomienie modułu 
 
-W celu uruchomienia skrzynki prywatnej, upewnij się, masz uruchomiony moduł ```Moja poczta```. W tym celu w Konfiguracji systemu, w lewym menu wybierz ```Moduy standardowe``` a następnie ```Moduły - instalacja```. 
+W celu uruchomienia skrzynki prywatnej, upewnij się, masz uruchomiony moduł ```Moja poczta```. W tym celu w Konfiguracji systemu, w lewym menu wybierz ```Moduy standardowe ➞ Moduły - instalacja```. 
 Checkbox przy module ```Moja poczta``` musi być zaznaczony.
 
 ![private-6](private-6.jpg)

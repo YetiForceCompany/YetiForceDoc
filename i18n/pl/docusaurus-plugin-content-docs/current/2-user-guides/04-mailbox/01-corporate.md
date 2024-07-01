@@ -80,7 +80,7 @@ Zostaniemy wówczas przeniesieni do klienta pocztowego.
 
 Do klienta pocztowego możemy również się dostać z poziomu panelu użytkownika. Należy w tym celu wybrac z lewego menu ```Wirtualne biurko``` a następnie ```Moja poczta```
 
-![corporate-10](corporate-10.jpg)
+![corporate-10](../../../../../../docs/2-user-guides/04-mailbox/corporate-10.jpg)
 
 ### Logi skanera poczty
 
