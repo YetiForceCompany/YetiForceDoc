@@ -1,25 +1,27 @@
 ---
 title: Konfiguracja
-description: How to properly configure the API in YetiForce
+description: Jak prawidłowo skonfigurować API w YetiForce
 keywords:
   - Webservice
   - API
   - RestAPI
   - konfiguracja
-  - YetiForce
 tags:
   - Webservice
   - API
   - Rest API
   - Konfiguracja
+preview: configuration-1.jpg
 ---
 
 
 ## Konfiguracja
 
-### API Key
+W celu skonfigurowania połączenie API, należy najpierw wygenerować klucz API oraz utworzyć użytkownika do autoryzacji.
 
-Pierwszym krokiem w celu podłączenia się do API, jest wygenerowanie API Key. W tym celu, w panelu administracyjnym przechodzimy w lewym menu do ```Integracja``` a następnie wybieramy ```Web service - Alikacje```.
+### Generowanie API Key
+
+Pierwszym krokiem w celu podłączenia się do API, jest wygenerowanie `API Key`. W tym celu, w sekcji administracyjnej należy wybrać w lewym menu ```Integracja``` a następnie ```Web service - Alikacje```.
 
 ![step 1](configuration-1.jpg)
 
@@ -52,9 +54,9 @@ Pojawi nam się okno dodawania nowego API Key:
 - Adres URL będzie używany do wysyłania powiadomień mailowych gdzie w treści będzie można używać adresu URL np. reset hasła w Portalu Klienta, link do podglądu rekordu w Portalu Klienta
 
 
-### Użytkownik
+### Utworzenie użytkownika
 
-Kolejnym krokiem jest utworzenie danych walidacyjnych do API. W tym celu w panelu administracyjnym przechodzimy w lewym menu do ```Integracja``` a następnie wybieramy ```Web service - Użytkownicy```.
+Kolejnym krokiem jest utworzenie danych walidacyjnych do API. W tym celu w sekcji administracyjnej z lewym menu wybieramy ```Integracja ➞ Web service - Użytkownicy```.
 
 ![step 4](configuration-4.jpg)
 
@@ -62,7 +64,7 @@ Użytkownika będziemy dodawać dla konkretnego rodzaju usługi, dlatego w pierw
 
 ![step 5](configuration-5.jpg)
 
-W celu dodania nowego użytkownika, wybieramy przycisk ```Dodaj rekord```. Pojawi się nam okno modalne, w którym będziemy mogli skonfigurować dostępy.
+W celu dodania nowego użytkownika, wybieramy przycisk <kbd>Dodaj rekord</kbd>. Pojawi się nam wówczas okno modalne, w którym będziemy mogli skonfigurować dostępy.
 
 ![step 6](configuration-6.jpg)
 
@@ -89,31 +91,4 @@ W celu dodania nowego użytkownika, wybieramy przycisk ```Dodaj rekord```. Pojaw
 #### Metoda uwierzytelniania i Metoda uwierzytelniania 2FA
 - określa szczegóły odnośnie uwierzytelniania użytkownika
 
-
-## Konfiguracja w systemie
-
-
-Set active services `$enabledServices` in the [config/Api.php](https://doc.yetiforce.com/code/classes/Config-Api.html#property_enabledServices) file:
-
-```php
-/** List of active services. Available: dav, webservice */
-public static $enabledServices = ['webservice'];
-```
-
-### Create an API app
-
-To determine what kind of services are to be active, add applications of the relevant type.
-
-Add the services you want to use in the [Web service - Applications](administrator-guides/integration/webservice-apps/) admin panel.
-
-### Session lifetime configuration
-
-[config/Security.php](https://doc.yetiforce.com/code/classes/Config-Security.html#property_apiLifetimeSessionCreate)
-
-```php
-/** Maximum session lifetime from the time it was created (in minutes) */
-public static $apiLifetimeSessionCreate = 1440;
-
-/** Maximum session lifetime since the last modification (in minutes) */
-public static $apiLifetimeSessionUpdate = 240;
-```
+Po utworzeniu API Key i użytkownika, możemy przystąpić do nawiązania połączenia przez API. Jak to zrobić zostało opisane w tym artykule: [Pierwsze połączenie API](/developer-guides/api/first-connect)
