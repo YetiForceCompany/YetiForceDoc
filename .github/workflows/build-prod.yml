@@ -1,15 +1,13 @@
-name: Test build
+name: PROD - Test build
 
 on:
   push:
     branches:
       - main
-      - release
 
   pull_request:
     branches:
       - main
-      - release
 
 permissions:
   contents: read
