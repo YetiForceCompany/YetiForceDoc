@@ -1,18 +1,18 @@
 ---
 title: Comarch
-description: Integration with the Comarch ERP system
+description: Integracja z systemem Comarch ERP
 keywords:
-  - Integration
+  - Integracja
   - Comarch
   - ERP
   - XL
   - YetiForce
-  - Settings
+  - Panel konfiguracyjny
 tags:
   - Comarch
 ---
 
-The integration between YetiForce and Comarch ERP guarantees fast and convenient two-way data synchronization, which allows for even more effective customer management in CRM.
+Integracja pomiędzy YetiForce i Comarch ERP gwarantuje szybką i wygodną dwustronną synchronizację danych, co pozwala na jeszcze skuteczniejsze zarządzanie klientami w CRM.
 
 ## Comarch ERP XL
 
@@ -47,7 +47,7 @@ Aby faktura została wysłana do Comarch wymagane jest odpowiednie ustawienie wa
 
 ![crm-xl-fv-1.jpg](crm-xl-fv-1.jpg)
 
-## Logs
+## Logi
 
 Pełne logi błędów i synchronizacji są dostepne w panelu logów.
 

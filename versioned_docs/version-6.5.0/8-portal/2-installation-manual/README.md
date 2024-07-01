@@ -1,14 +1,14 @@
 ---
-title: How to install YetiForce Portal
-description: The article explains how to install the Customer Portal for YetiForce (YetiForcePortal2)
+title: Jak zainstalować portal YetiForce
+description: W artykule wyjaśniono, jak zainstalować portal klienta dla YetiForce (YetiForcePortal2)
 keywords:
-  - wizard
-  - install
+  - kreator
+  - instalacja
   - tutorial
   - YetiForce
-  - How to install
+  - Jak zainstalować
   - portal
-  - Customer
+  - Klient
   - YetiForcePortal2
 tags:
   - Portal
@@ -16,11 +16,11 @@ tags:
 preview: step-1.jpg
 ---
 
-In this article, it will be presented how to quickly install [YetiForce Portal 2](https://github.com/YetiForceCompany/YetiForcePortal2). The portal can be used as a place for a customer, vendor, or partner. It is a universal tool for communicating with all the people we cooperate with.
+W tym artykule zaprezentowano jak szybko zainstalować [YetiForce Portal 2](https://github.com/YetiForceCompany/YetiForcePortal2). Portal może służyć jako miejsce przeznaczone dla klienta, dostawcy lub partnera. Jest to uniwersalne narzędzie do komunikacji z wszystkimi osobami, z którymi współpracujemy.
 
 :::tip
 
-**Make sure to read all the information below before attempting to install YetiForce Portal2**
+**Koniecznie przeczytaj wszystkie poniższe informacje, zanim przystąpisz do instalacji YetiForce Portal2**
 
 :::
 
@@ -29,52 +29,52 @@ import TabItem from '@theme/TabItem';
 import ReactPlayer from 'react-player';
 
 <Tabs groupId="Language installation and update">
-	<TabItem value="youtube" label="🎬 YouTube">
-		<ReactPlayer
-			url="https://www.youtube.com/watch?v=V-2x00bb4CI"
-			width="100%"
-			height="500px"
-			controls={true}
-		/>
-	</TabItem>
-	<TabItem value="yetiforce" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/portal-installation.mp4" width="100%" height="500px" controls={true} />
-	</TabItem>
+    <TabItem value="youtube" label="🎬 YouTube">
+        <ReactPlayer
+            url="https://www.youtube.com/watch?v=V-2x00bb4CI"
+            width="100%"
+            height="500px"
+            controls={true}
+        />
+    </TabItem>
+    <TabItem value="yetiforce" label="🎥 YetiForce TV">
+        <ReactPlayer url="/video/portal-installation.mp4" width="100%" height="500px" controls={true} />
+    </TabItem>
 </Tabs>
 
-## Requirements
+## Wymagania
 
-Before the installation, check if your server complies with all the requirements. The portal has the same requirements as the [YetiForce system](/introduction/requirements/)
+Przed instalacją sprawdź, czy serwer spełnia wszystkie wymagania. Portal ma te same wymagania co [YetiForce system](/introduction/requirements/)
 
 :::important
-A person who is going to install the Portal system should have at least basic knowledge of web servers, databases and server privileges. 99% of installation issues come from people with insufficient experience attempting to install the system. If you are not sure whether you manage on your own, you can ask somebody with adequate IT expertise. The entire installation process will take up from 2 to 10 minutes.
+Osoba, która zamierza instalować portal, powinna mieć co najmniej podstawową wiedzę na temat serwerów internetowych, baz danych i uprawnień serwera. 99% problemów instalacyjnych wynika z niewystarczającej wiedzy osób, które instalują aplikację. Jeśli nie jesteś pewien, czy jesteś w stanie samodzielnie przeprowadzić proces instalacji, poproś o pomoc kogoś posiadającego odpowiednią wiedzę z zakresu IT. Cały proces instalacji zajmie od 2 do 10 minut.
 :::
 
-A simplified installation manual can be found at [github YetiForcePortal2](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
+Uproszczona instrukcja instalacji znajduje się na [githubie YetiForcePortal2](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
 
-## YetiForcePortal2 installation
+## Instalacja YetiForcePortal2
 
-The portal is installed in the same way as the YetiForce system - using the wizard in the browser.
+Portal instaluje się tak samo, jak system YetiForce - przy użyciu kreatora w przeglądarce.
 
-### Step 1 - Download and upload system files
+### Krok 1 - Pobierz i wgraj pliki systemowe
 
-First, prepare the installation files. You can download the portal from our [official download sources](introduction/download).
+W pierwszej kolejności przygotuj pliki instalacyjne. Portal pobierzesz z naszych [oficjalnych źródeł](introduction/download).
 
 :::warning
 
-We recommend downloading the `complete` versions, e.g. `YetiForcePortal2-6.2-complete.zip`. If you download a version that is not marked as `complete`, you will have to install the libraries using `yarn` and `composer` before installing the system.
+Zalecamy pobranie wersji `complete`, np. `YetiForcePortal2-6.2-complete.zip`. Jeśli pobierasz wersję, która nie jest oznaczona jako `complete`, przed zainstalowaniem systemu musisz zainstalować biblioteki za pomocą `yarn` i `composer`.
 
-The right order is important - first `yarn`, then `composer`.
+Ważna jest kolejność - najpierw `yarn`, potem `composer`.
 
-A sample installation script can be downloaded from [here](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
+Przykładowy skrypt instalacyjny możesz pobrać [stąd](https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/tests/setup/dependency.sh).
 
 :::
 
-- Unzip the file, with e.g 7-Zip.
-- Copy the directory to a web server, using e.g. FileZilla, WinSCP.
-- Start the installation wizard from the web level (where you copied the YetiForce Portal files) and follow the steps provided.
+- Rozpakuj plik, używając np. 7-Zip.
+- Skopiuj katalog na serwer, używając np. FileZilla, WinSCP.
+- Uruchom kreatora instalacji z poziomu web (gdzie skopiowałeś pliki portalu YetiForce) i wykonaj podane kroki.
 
-Or from the bash console:
+Lub z konsoli bash:
 
 ```bash
 cd /home/yfprod/html/
@@ -84,29 +84,29 @@ rm YetiForcePortal2.zip
 chown -R yfprod:yfprod /home/yfprod/html/
 ```
 
-### Step 2 - Run the installation wizard
+### Krok 2 - Uruchom kreatora instalacji
 
-Run the target address of your Portal in the browser window, the system should show the installation wizard. If not, there may be some problems, you can try running the address:**SITE_URL**/index.php?module=Install&view=Install np. https://gitdevportal.yetiforce.com/index.php?module=Install&view=Install
+Uruchom adres docelowy portalu w oknie przeglądarki, system powinien pokazać kreatora instalacji. Jeśli tego nie zrobi, możliwe, że wystąpiły jakieś problemy. Możesz spróbować przejść do adresu: **SITE_URL**/index.php?module=Install&view=Install np. https://gitdevportal.yetiforce.com/index.php?module=Install&view=Install
 
 ![step-1.jpg](step-1.jpg)
 
-You can select the language of the installation on the start screen.
+Możesz wybrać język instalacji na ekranie początkowym.
 
-### Step 3 - Enter access data
+### Krok 3 - Wprowadź dane dostępowe
 
 :::warning
 
-**This step requires active API access !!!**
+**Ten krok wymaga aktywnego dostępu API !!!**
 
-In case of problems, please refer to the documentation and information on [github](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
+W przypadku problemów zapoznaj się z dokumentacją i informacjami dostępnymi na[GitHub](https://github.com/YetiForceCompany/YetiForcePortal2#-installation)
 
-Access data can be found in [System configuration > Integration > Web service - Applications](/administrator-guides/integration/webservice-apps/) in the YetiForce system
+Dane dostępowe znajdziesz w [ Konfiguracja systemu → Integracje → Webservice - Aplikacje](/administrator-guides/integration/webservice-apps/) w systemie YetiForce
 :::
 
 ![step-3.jpg](step-3.jpg)
 
-### Step 4 - Portal login page
+### Krok 4 - Strona logowania portalu
 
-After clicking `Install` the login page will appear. Enter the login data created in the panel [`System configuration > Integration > Web service - Users`](/administrator-guides/integration/webservice-users/)
+Po kliknięciu `Zainstaluj` pojawi się strona logowania. Wprowadź dane logowania utworzone w panelu [`Konfiguracja systemu → Integracja → Webservice - Użytkownicy`](/administrator-guides/integration/webservice-users/)
 
 ![step-4.jpg](step-4.jpg)

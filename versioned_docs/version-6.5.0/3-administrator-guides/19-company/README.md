@@ -1,10 +1,10 @@
 ---
-title: Company
-description: Company
+title: Firma
+description: Firma
 keywords:
-  - Company
+  - Firma
   - YetiForce
-  - Settings
+  - Panel konfiguracyjny
 hide_table_of_contents: true
 ---
 

@@ -1,16 +1,16 @@
 ---
-title: Release notes | Changelog
-description: List of changes included in released YetiForce versions.
+title: Informacje o wydaniu | Dziennik zmian
+description: Opis zmian które pokazywały się w kolejnych wersjach systemu YetiForce.
 keywords:
-  - changes
-  - release
-  - what's new
+  - zmiany
+  - wydania
+  - co nowego
 tags:
-  - release
-  - changes
+  - wydania
+  - dziennik zmian
 ---
 
-Below is a list of changes that were included in all the stable YetiForce versions released so far. The changelogs include descriptions of new functionalities, fixed bugs, and modifications of existing functionalities.
+Opis zmian które pokazywały się w kolejnych wersjach systemu YetiForce. Zawierają one nie tylko opisy dotyczące nowych funkcjonalności, ale również naprawionych błędów czy też zmian w istniejących funkcjonalnościach.
 
 ## [YetiForce 6.5](https://github.com/YetiForceCompany/UpdatePackages/blob/developer/YetiForce%20CRM%206.x.x/6.4.0_to_6.5.0/Changelog.txt)
 

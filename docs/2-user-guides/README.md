@@ -1,18 +1,18 @@
 ---
-title: User guides
-description: Descriptions of modules and functionalities in the YetiForce user panel
+title: Dokumentacja użytkownika
+description: Opis modułów i funkcji w panelu użytkownika YetiForce
 keywords:
-  - user
-  - module
-  - guides
+  - użytkownik
+  - moduł
+  - poradnik
   - YetiForce
 tags:
-  - user
-  - guides
+  - użytkownik
+  - poradnik
 hide_table_of_contents: true
 ---
 
-A set of articles that describe the YetiForce user panel. Descriptions of modules and functionalities to help understand how the system works, and how to unleash its full potential.
+Zestaw artykułów opisujący panel użytkownika YetiForce. Opisy modułów i funkcjonalności, które pomagają zrozumieć, jak działa system i jak uwolnić jego pełny potencjał.
 
 import DocCardList from '@theme/DocCardList';
 

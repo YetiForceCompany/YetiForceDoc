@@ -1,17 +1,17 @@
 ---
 title: Marketplace
-description: In Marketplace you can find add-ons to the YetiForce system and a number of services that will allow the organization to customize the system and processes.
+description: W Marketplace możesz znaleźć dodatki do systemu YetiForce oraz szereg usług, które pozwolą dostosować system i procesy.
 keywords:
   - YetiForce
-  - marketplace
-  - add-ons
-  - addon
+  - sklep
+  - dodatki
+  - dodatek
 tags:
   - Marketplace
 hide_table_of_contents: true
 ---
 
-In Marketplace you can find add-ons to the YetiForce system and a number of services that will allow the organization to customize the system and processes. Here you can find not only solutions created by the producer, but also verified business partners who create dedicated solutions for companies. Here you will find everything you need to have an even more powerful system.
+W Marketplace możesz znaleźć dodatki do systemu YetiForce oraz szereg usług, które pozwolą dostosować system i procesy. Znajdziesz tu nie tylko rozwiązania stworzone przez producenta, ale także zweryfikowanych partnerów, którzy tworzą dedykowane rozwiązania dla firm. W Marketplace znajdziesz wszystko, czego potrzebujesz, aby rozbudować możliwości Twojego systemu.
 
 import DocCardList from '@theme/DocCardList';
 

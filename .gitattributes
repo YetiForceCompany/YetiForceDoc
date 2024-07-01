@@ -8,6 +8,7 @@
 *.properties text eol=lf
 *.txt text eol=lf
 *.md text eol=lf
+*.mdx text eol=lf
 *.htaccess text eol=lf
 *.service text eol=lf
 *.html text eol=lf

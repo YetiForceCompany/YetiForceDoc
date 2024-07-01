@@ -1,12 +1,12 @@
 ---
-title: List view
-description: List view presents data in the form of a table
+title: Widok listy
+description: Widok listy przedstawia dane w formie tabeli
 keywords:
-  - List
-  - view
+  - Lista
+  - widok
   - YetiForce
 tags:
-  - List
+  - Lista
   - YetiForce
 preview: list-view-1.jpg
 ---

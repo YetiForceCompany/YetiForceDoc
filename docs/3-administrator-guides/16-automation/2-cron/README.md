@@ -1,33 +1,33 @@
 ---
-title: CRON | Scheduler
+title: CRON | Harmonogram
 description: Details on CRON and how to enable it in YetiForce.
 keywords:
   - CRON
-  - enable
-  - automation
+  - włącz
+  - automatyzacja
   - CLI
   - unix
 tags:
   - CRON
   - CLI
-  - automation
+  - automatyzacja
 preview: cron-1.jpg
 ---
 
-CRON is a Unix daemon that triggers other programs periodically. It uses crontabs to save information about cron tasks that will be enabled. It is recommended to use it on Linux, but if the same file will be added to the scheduler on Windows, it will also work. In practice, YetiForce can perform certain tasks automatically with cron and trigger them in the background.
+Cron to uniksowy demon zajmujący się okresowym wywoływaniem innych programów. Posługuje się on tabelami crontab do przechowywania informacji jakie zadanie ma uruchamiać. Zalecane jest używanie go na Linuksie, ale jeśli ten sam plik zostanie dodany do harmonogramu na Windowsie, to również zadziała. W praktyce, dzięki niemu system YetiForce wykonuje automatyczne różne zadania, które są wywoływane w tle.
 
 ![cron](cron-1.jpg)
 
-## How to enable CRON?
+## Jak uruchomić cron-a?
 
-CRON can be enabled in a few simple steps:
+CRON można włączyć w kilku prostych krokach:
 
-### Linux - edit /etc/crontab file, /etc/cron.d/yetiforce file, or 'crontab -e':
+### Linux - edytuj plik /etc/crontab, /etc/cron.d/yetiforce lub 'crontab -e':
 
-- Add an entry to crontab, or a file to CRON, e.g. in such format (`__YETIFORCE_PATH__`is the full full absolute path to the YetiForce system folder e.g. /var/www/example),
+- Dodaj wpis do crontab, lub plik do CRON, np. w takim formacie (`__YETIFORCE_PATH__`jest pełną ścieżką bezwzględną do folderu systemu YetiForce, np. /var/www/example),
 
   :::warning
-  It is important that the script is run with the same permissions as the owner of the system files.
+  Ważne jest, aby skrypt był uruchamiany z takimi samymi uprawnieniami jak właściciel plików systemowych.
   :::
 
 ```bash
@@ -38,27 +38,27 @@ CRON can be enabled in a few simple steps:
 */2 * * * * cd __YETIFORCE_PATH__; /usr/local/bin/php -f cron.php > __YETIFORCE_PATH__/cache/logs/cron.log 2>&1
 ```
 
-- Change file permissions `__YETIFORCE_PATH__`/cron/cron.sh to 744 (or to other permissions that are compatible with an internal security policy in a company).
+- Zmień uprawnienia pliku `__YETIFORCE_PATH__`/cron/cron.sh na 744 (lub inne uprawnienia kompatybilne z wewnętrzną polityką bezpieczeństwa w firmie).
 
 ![cron](cron-2.png)
 
-- Set a path in the file `__YETIFORCE_PATH__`/cron/cron.sh do PHP: export USE_PHP=/usr/local/php74/bin/php74 (pay attention to the file, as it can be located differently on each server, and also keep an eye on a path to PHP that is different for various servers. An administrator can provide information about this path, or it can be checked in phpinfo).
+- Ustaw ścieżkę w pliku `__YETIFORCE_PATH__`/cron/cron.sh do PHP: export USE_PHP=/usr/local/php74/bin/php74 (zwróć uwagę na plik, ponieważ może znajdować się w innej lokalizacji na każdym serwerze, zwrócić uwagę na ścieżkę do PHP, która jest inna dla różnych serwerów. Ścieżkę tą może Ci podać administrator serwera lub możesz ją sprawdzić w phpinfo).
 
   ![cron](cron-3.png)
 
-- Pay attention to the end of line because it should be Unix (LF). If it is Windows on Linux servers, it may cause errors and the system won't be able to run the SH file.
+- Zwróć uwagę na koniec linii, ponieważ powinna to być Unix (LF). Jeśli jest to Windows na serwerach Linux, może to spowodować błędy, a system nie będzie w stanie uruchomić pliku SH.
 
   ![cron](cron-4.png)
 
-### Windows - it's not recommended to use Windows as a server for the YetiForce system.
+### Windows - nie zaleca się używania Windows jako serwera dla systemu YetiForce.
 
-### URL can be used to run CRON, e.g. https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
+### Adres URL może być używany do uruchomienia CRON, np. https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
 
-The `app_key` is the key located in the [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key) file in the `$application_unique_key` variable.
+`app_key` to klucz znajdujący się w pliku [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key) w zmiennej `$application_unique_key`.
 
 ![cron](cron-5.png)
 
-### If there is a problem with triggering CRON from CLI, there is an alternative, but it is not recommended:
+### W przypadku problemów z wyzwalaniem CRON z CLI, istnieje alternatywa, ale nie zaleca się:
 
 ```bash
 */2 * * * * /usr/bin/lynx -source https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx

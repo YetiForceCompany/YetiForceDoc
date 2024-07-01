@@ -1,63 +1,63 @@
 ---
-title: Kanban board
-description: The article describes the YetiForce Kanban Board addon configuration
+title: Tablica Kanban
+description: Artykuł opisuje konfigurację dodatku YetiForce Kanban Board
 keywords:
   - kanban
-  - board
-  - view
-  - Settings
+  - tablica
+  - widok
+  - Ustawienia
   - YetiForce
 tags:
   - Kanban
 preview: kanban-1.jpg
 ---
 
-Boards in the Kanban view use cards and columns that can be easily configured in the panel according to the needs of your company. Moreover, in the YetiForce system, you can create multiple tables for one module that will present the data grouped in various ways.
+Tablice w widoku Kanban wykorzystują karty i kolumny, które można łatwo konfigurować w panelu według potrzeb firmy. Ponadto, w systemie YetiForce można stworzyć wiele tablic dla jednego modułu, które przedstawią dane pogrupowane na różne sposoby.
 
 :::warning
 
-The YetiForce Kanban Board is a subscription based addon available in our Marketplace  - [**Buy YetiForce Kanban Board**](https://yetiforce.com/pl/marketplace/dodatki/92-yetiforce-kanban-board.html)
+Dodatek YetiForce Kanban Board można zasubskrybować w naszym Marketplace  - [**Kup YetiForce Kanban Board**](https://yetiforce.com/pl/marketplace/dodatki/92-yetiforce-kanban-board.html)
 
 :::
 
 ![kanban-1](kanban-1.jpg)
 
-## Configuration
+## Konfiguracja
 
-The configuration panel for  the YetiForce Kanban Board can be found in `Software configuration  → Standard modules → Kanban`
+Panel konfiguracyjny YetiForce Kanban Borard znajduje się w `Konfiguracja oprogramowania → Standardowe moduły → Kanban`
 
 ![kanban-2](kanban-2.jpg)
 
-From the list of available modules in the upper right corner of the screen, select the module where the Kanban board should be available:
+Z listy dostępnych modułów, widocznej w prawym górnym rogu ekranu, należy wybrać moduł, w którym powinny być dostępne tablice Kanban:
 
 ![kanban-3](kanban-3.jpg)
 
-## Create boards
+## Tworzenie tablic
 
-Click <kbd>+ Add board</kbd> and select the field used to create a board in the module selected in the previous step:
+Kliknij przycisk <kbd>"+ Dodaj tablicę"</kbd> i wybierz pole, które zostanie użyte do stworzenia tablicy w wybranym w poprzednim kroku module:
 
 ![kanban-4](kanban-4.jpg)
 
-Once you click <kbd>Add</kbd>  the board will be available in the selected module.
+Po kliknięciu przycisku <kbd>"Dodaj"</kbd> tablica będzie dostępna w wybranym module.
 
 ![kanban-5](kanban-5.jpg)
 
-## Board parameters
+## Parametry tablicy
 
-- Detail fields - list of fields used to display data from records in the Kanban Board. If the field has an icon, the icon will be visible on the board. All fields from the system are available according to users' permissions. 
+- Pola szczegółowe - lista pól z których mają się pojawić dane z rekordu. Jeśli pole ma ustawioną ikonę, to będzie ona widoczna na tablicy Kanban. Dostępne są wszystkie pola z systemu z uwzględnieniem uprawnień użytkownika.
 
   ![kanban-6](kanban-6.jpg)
 
-- Summation fields -list of fields to be summed for a given value (Kanban column) where Kanban is displayed. Only numeric fields are available where summation operations can be performed.
+- Pola sumowania - lista pól które mają być sumowane dla danej wartości (słupka kanbana), dla której jest wyświetlany kanban. Dostępne są tylko pola liczbowe, na których można wykonać operacje sumowania.
 
   ![kanban-7](kanban-7.jpg)
 
-The data in the pick list is saved automatically upon each change.
+Dane na liście wyboru są zapisane automatycznie podczas każdej zmiany.
 
-## Permissions
+## Uprawnienia
 
-Users need permissions for the Kanban board in order to be able to use it.
+Aby użytkownik mógł korzystać z widoku Kanban, należy nadać mu odpowiednie uprawnienia w profilach.
 
-To grant the permissions, go to [`Software configuration → Permissions → Profiles`](/administrator-guides/permissions/profiles/), select a profile and enable the "Kanban" option.
+W tym celu należy przejść do [`Konfiguracja systemu → Uprawnienia → Profile`](/administrator-guides/permissions/profiles/) wybrać odpowiedni profil, i dla właściwego modułu zaznaczyć opcje "Kanban".
 
 ![kanban-8](kanban-8.jpg)

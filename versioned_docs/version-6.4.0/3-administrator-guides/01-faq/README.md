@@ -1,9 +1,9 @@
 ---
 title: FAQ
-description: FAQ & answers to them
+description: FAQ & odpowiedzi na nie
 keywords:
   - FAQ
-  - Settings
+  - Panel konfiguracyjny
   - YetiForce
 tags:
   - FAQ

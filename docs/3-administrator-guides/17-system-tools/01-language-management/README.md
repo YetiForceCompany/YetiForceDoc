@@ -1,36 +1,36 @@
 ---
-title: Languages & translations
+title: Języki i tłumaczenia
 keywords:
-  - languages
+  - języki
   - YetiForce
   - crowdin
 tags:
-  - languages
-  - translation
+  - języki
+  - tłumaczenie
   - crowdin
-description: Tool that helps edit and manage translations in the system.
+description: Narzędzie, które pomaga edytować i zarządzać tłumaczeniami w systemie.
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import ReactPlayer from 'react-player';
 
-## Panel description
+## Opis panelu
 
-Tool that helps edit and manage languages and translations in the system.
+Narzędzie, które pomaga edytować i zarządzać tłumaczeniami w systemie.
 
-## Install and update languages
+## Instalacja i aktualizacja języków
 
 <Tabs groupId="Language installation and update">
-	<TabItem value="youtube" label="🎬 YouTube">
-		<ReactPlayer
-			url="https://www.youtube.com/watch?v=55xh8UaLp7I"
-			width="100%"
-			height="500px"
-			controls={true}
-		/>
-	</TabItem>
-	<TabItem value="yetiforce" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/language-installation-update.mp4" width="100%" height="500px" controls={true} />
-	</TabItem>
+    <TabItem value="youtube" label="🎬 YouTube">
+        <ReactPlayer
+            url="https://www.youtube.com/watch?v=55xh8UaLp7I"
+            width="100%"
+            height="500px"
+            controls={true}
+        />
+    </TabItem>
+    <TabItem value="yetiforce" label="🎥 YetiForce TV">
+        <ReactPlayer url="/video/language-installation-update.mp4" width="100%" height="500px" controls={true} />
+    </TabItem>
 </Tabs>

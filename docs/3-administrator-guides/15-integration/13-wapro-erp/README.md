@@ -4,14 +4,14 @@ description: Integration with the Asseco Wapro ERP system
 keywords:
   - Wapro
   - ERP
-  - Integration
+  - Integracja
   - YetiForce
-  - Settings
+  - Panel konfiguracyjny
 tags:
   - Wapro
   - ERP
-  - Integration
-  - Settings
+  - Integracja
+  - Panel konfiguracyjny
 preview: wapro-erp.jpg
 ---
 

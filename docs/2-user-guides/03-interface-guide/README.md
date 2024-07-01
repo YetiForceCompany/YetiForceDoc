@@ -1,15 +1,15 @@
 ---
-title: Interface Guide / Features
-description: Interface Guide / Features
+title: Przewodnik po interfejsie
+description: Przewodnik po interfejsie
 keywords:
-  - Interface
-  - Features
-  - Guide
+  - Interfejs
+  - Funkcje
+  - Przewodnik
   - YetiForce
 tags:
-  - Interface
-  - Features
-  - Guide
+  - Interfejs
+  - Funkcje
+  - Przewodnik
 ---
 
 import DocCardList from '@theme/DocCardList';
