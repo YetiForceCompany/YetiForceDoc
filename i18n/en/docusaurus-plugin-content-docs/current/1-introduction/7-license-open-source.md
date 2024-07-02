@@ -11,7 +11,6 @@ tags:
   - YetiForce
   - Open Source
   - CLA
-
 description: Poznaj licencję YetiForce oraz jak wygląda open source według YetiForce
 ---
 

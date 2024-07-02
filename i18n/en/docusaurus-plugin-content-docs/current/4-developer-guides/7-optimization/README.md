@@ -2,14 +2,14 @@
 title: Optimization
 description: Articles about the optimization of processes and mechanisms in YetiForce in order to obtain maximum system performance.
 keywords:
-  - optimization
+  - optymalizacja
   - processes
   - mechanisms
   - performance
   - maximum
 tags:
   - performance
-  - optimization
+  - optymalizacja
 ---
 
 Articles about the optimization of processes and mechanisms in YetiForce in order to obtain maximum system performance.

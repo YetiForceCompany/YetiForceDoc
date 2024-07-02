@@ -3,10 +3,10 @@ title: Profiles
 description: Grant permissions to functionalities, fields, tools, and actions that users can use during their daily work in the system.
 tags:
   - permissions
-  - profiles
+  - profile
 keywords:
   - permissions
-  - profiles
+  - profile
 preview: profiles-01.jpg
 ---
 
@@ -16,7 +16,7 @@ Profiles allow you to define permissions to many functionalities and views avail
 
 ## Add new profile
 
-By default, there is 1 profile in the system - Administrator. To add a new profile with pre-configured permissions, click the <kbd>+ Add profile</kbd> button in the upper left corner of the screen. You will see the new profile page, where you have to choose a name for it and optionally fill its description. 
+By default, there is 1 profile in the system - Administrator. To add a new profile with pre-configured permissions, click the <kbd>+ Add profile</kbd> button in the upper left corner of the screen. You will see the new profile page, where you have to choose a name for it and optionally fill its description.
 
 Then, in the `Edit permissions for this profile` table, select the permissions to actions in individual modules that you want the newly created profile to have.
 

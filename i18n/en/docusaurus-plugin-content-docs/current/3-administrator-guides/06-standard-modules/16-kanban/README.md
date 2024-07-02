@@ -54,7 +54,7 @@ Once you click <kbd>Add</kbd> the board will be available in the selected module
 
 The data in the pick list is saved automatically upon each change.
 
-## Permissions
+## Uprawnienia
 
 Users need permissions for the Kanban board in order to be able to use it.
 

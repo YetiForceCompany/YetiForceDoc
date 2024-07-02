@@ -5,7 +5,7 @@ keywords:
   - Integration
   - PBX
   - start call
-  - pick up call
+  - odbierz
   - calls
   - phone
   - YetiForce

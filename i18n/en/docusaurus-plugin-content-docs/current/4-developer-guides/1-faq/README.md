@@ -4,7 +4,7 @@ description: Lista najczęstszych pytań/problemów i ich rozwiązań.
 keywords:
   - faq
   - pytania
-  - problemy
+  - problems
   - rozwiązania
   - developer documentation
   - YetiForce

@@ -3,11 +3,11 @@ title: MySQL
 description: A proper configuration of the database server is an important element within the system implementation process.
 keywords:
   - MySQL
-  - optimization
+  - optymalizacja
   - YetiForce
 tags:
   - MySQL
-  - optimization
+  - optymalizacja
 preview: MySQL.jpg
 ---
 

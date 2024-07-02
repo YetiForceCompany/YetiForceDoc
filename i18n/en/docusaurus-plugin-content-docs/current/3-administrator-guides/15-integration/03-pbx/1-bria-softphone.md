@@ -31,24 +31,22 @@ Advantages and capabilities:
 
 ![bria-softphone-1.png](bria-softphone-1.png)
 
-## Video guide
+## Video presentation
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import ReactPlayer from 'react-player';
 
 <Tabs groupId="sWyz4oqKYwI">
-	<TabItem value="youtube-sWyz4oqKYwI" label="🎬 YouTube">
-		<ReactPlayer
-			url="https://www.youtube.com/watch?v=sWyz4oqKYwI"
-			width="100%"
-			height="500px"
-			controls={true}
-		/>
-	</TabItem>
-	<TabItem value="yetiforce-sWyz4oqKYwI" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/integration-BriaSoftphone.mp4" width="100%" height="500px" controls={true} />
-	</TabItem>
+    <TabItem value="youtube-sWyz4oqKYwI" label="🎬 YouTube">
+        <ReactPlayer
+            url="https://www.youtube.com/watch?v=sWyz4oqKYwI"
+            width="100%"
+            height="500px"
+            controls={true}
+        /></TabItem>
+    <TabItem value="yetiforce-sWyz4oqKYwI" label="🎥 YetiForce TV">
+        <ReactPlayer url="/video/integration-BriaSoftphone.mp4" width="100%" height="500px" controls={true} /></TabItem>
 </Tabs>
 
 ## Configuration

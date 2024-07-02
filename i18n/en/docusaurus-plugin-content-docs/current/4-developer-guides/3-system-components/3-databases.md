@@ -1,6 +1,6 @@
 ---
 title: Database communication engine
-description: Mechanizm QueryGenerator, którym można listować dowolne dane z modułów typu entity.
+description: QueryGenerator mechanism, which can list any data from entity type modules.
 keywords:
   - loader
   - autoloader

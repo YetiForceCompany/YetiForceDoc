@@ -1,9 +1,9 @@
 ---
-title: Test versions
+title: test version
 description: YetiForce and YetiForce Portal public test versions
 tags:
   - demo
-  - test version
+  - Test versions
 keywords:
   - demo
   - test version

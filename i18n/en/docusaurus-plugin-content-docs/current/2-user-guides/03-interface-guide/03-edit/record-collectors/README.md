@@ -9,24 +9,22 @@ tags:
   - Record collectors
 ---
 
-## Video guide
+## Video presentation
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import ReactPlayer from 'react-player';
 
 <Tabs groupId="XlIXiQpC9ug">
-	<TabItem value="youtube-XlIXiQpC9ug" label="🎬 YouTube">
-		<ReactPlayer
-			url="https://www.youtube.com/watch?v=XlIXiQpC9ug"
-			width="100%"
-			height="500px"
-			controls={true}
-		/>
-	</TabItem>
-	<TabItem value="yetiforce-XlIXiQpC9ug" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/record-collector.mp4" width="100%" height="500px" controls={true} />
-	</TabItem>
+    <TabItem value="youtube-XlIXiQpC9ug" label="🎬 YouTube">
+        <ReactPlayer
+            url="https://www.youtube.com/watch?v=XlIXiQpC9ug"
+            width="100%"
+            height="500px"
+            controls={true}
+        /></TabItem>
+    <TabItem value="yetiforce-XlIXiQpC9ug" label="🎥 YetiForce TV">
+        <ReactPlayer url="/video/record-collector.mp4" width="100%" height="500px" controls={true} /></TabItem>
 </Tabs>
 
 Record collector is used to load data from various sources and enables displaying and loading data into the YetiForce CRM system.
@@ -42,6 +40,7 @@ Collectors can be configured in the following panel: [`Software configuration �
 ## Available collectors
 
 Below is a list of all currently available record collectors. Free collectors available in the system by default are marked with ★, the remaining ones can be purchased from the Marketplace.
+
 We regularly add new record collectors to the YetiForce system.
 
 - GUS [PL] - Fetches data on Polish companies from the online REGON 1(BIR1) database provided by GUS
@@ -59,5 +58,5 @@ We regularly add new record collectors to the YetiForce system.
 - ★ YouControl [UA] - Fetches data on Ukrainian companies from the YouControl database provided by YouScore API
 - Companies House [GB] - Fetches data on UK companies from the Comapnies House agency
 - VAT [GB] - Verifies whether a company is registered as a VAT taxpayer in the United Kingdom
-- EDGAR [USA] - Fetches data on US companies from the United States Securities and Exchange Commission via EDGAR
+- EDGAR [USA] - Fetches data on US companies from the United States Securities and Exchange Commission via EDGAR Securities andExchange Commission (SEC) z bazy EDGAR
 - VATify.eu - Fetches data from VATify.eu database, which also contains the taxpayer's current status

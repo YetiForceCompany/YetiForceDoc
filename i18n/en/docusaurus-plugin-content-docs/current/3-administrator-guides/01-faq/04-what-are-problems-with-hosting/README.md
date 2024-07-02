@@ -14,7 +14,7 @@ Clients who use their own servers or servers of other hosting providers often fa
 
 Known issues on the most popular hostings:
 
-| Hosting | Type          | Short description                      | Details                                                                                                       |
-| ------- | ------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| az.pl   | Configuration | MySQL configuration cannot be modified | The az.pl hosting does not allow you to modify the database configuration.                                    |
+| Hosting                 | Type          | Short description                      | Details                                                                                                                       |
+| ----------------------- | ------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| az.pl   | Configuration | MySQL configuration cannot be modified | The az.pl hosting does not allow you to modify the database configuration.                    |
 | home.pl | DAV           | DAV does not work                      | IdeaServer does not support `WebDAV` including `PROPFIND`, you will not run the script on this shared server. |

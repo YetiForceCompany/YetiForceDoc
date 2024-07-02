@@ -14,7 +14,7 @@ tags:
   - Configuration
 ---
 
-## Activation
+## Aktywacja
 
 Set active services `$enabledServices` in the [config/Api.php](https://doc.yetiforce.com/code/classes/Config-Api.html#property_enabledServices) file:
 

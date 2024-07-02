@@ -8,7 +8,7 @@ keywords:
 tags:
   - YFCLI
   - CLI
-  - Console
+  - Konsola
 preview: Eraser-0.jpg
 ---
 

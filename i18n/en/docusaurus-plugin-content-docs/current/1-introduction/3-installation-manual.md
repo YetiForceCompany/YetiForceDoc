@@ -22,7 +22,7 @@ Before the installation, check if your server complies with the requirements: [Y
 
 :::important
 
-A person who is going to install the system should have at least basic knowledge of web servers, databases, and server permissions. 99% of installation issues come from people with insufficient experience attempting to install the system. If you are not sure whether you can manage on your own, you can ask somebody with adequate IT expertise. The entire installation process will take up to 30 minutes. Installation of YetiForce is similar to the installation of applications such as WordPress, Joomla, Drupal. Differences between particular tools are minor, so if you managed to install a CMS system, you will also be able to install YetiForce.
+A person who is going to install the system should have at least basic knowledge of web servers, databases, and server permissions. 99% of installation issues come from people with insufficient experience attempting to install the system. If you are not sure whether you can manage on your own, you can ask somebody with adequate IT expertise. The entire installation process will take up to 30 minutes. Installation of YetiForce is similar to the installation of applications such as WordPress, Joomla, Drupal. Różnice pomiędzy poszczególnymi narzędziami są niewielkie. Differences between particular tools are minor, so if you managed to install a CMS system, you will also be able to install YetiForce.
 
 :::
 
@@ -37,8 +37,8 @@ We recommend downloading the "complete" versions, for example `YetiForceCRM-7.0.
 :::
 
 - Unzip the file, with e.g [7-Zip](http://7-zip.org/).
-- Copy the directory to the web server, using e.g. [WinSCP](https://winscp.net/).
-- Start the installation wizard from the web level (where you copied the files) and follow the steps provided.
+- Katalog z systemem CRM, który otrzymasz po rozpakowaniu pliku ZIP, skopiuj na serwer WWW, np. za pomocą programu [WinSCP](https://winscp.net/).
+- Następnie postępuj zgodnie z kreatorem, którego wywołasz z poziomu WWW tam, gdzie skopiowałeś pliki YetiForce CRM.
 
 You can also use the bash console
 
@@ -59,13 +59,13 @@ On the start screen there are options that allow you to select a language of the
 
 ## Step 2 - Read and accept the license
 
-It's necessary to agree to the license terms in order to proceed with the installation process. The YetiForce License is very similar to the standard MIT license, it allows modification of the code and to leave information about the initial developer. We recommend reading the license.
+W drugim kroku kreator wymaga zaakceptowania licencji. The YetiForce License is very similar to the standard MIT license, it allows modification of the code and to leave information about the initial developer. Przeczytaj w pełni informacje o licencji, ponieważ z perspektywy firmy, dla której wdrażasz oprogramowanie, zapisy i warunki licencji są istotne.
 
 ![step 2](install-2.png)
 
 ## Step 3 - Server configuration review
 
-In the third step, you can find your current web server configuration compared to the requirements of YetiForce (what needs to be changed and to what values to set). It is necessary to remember that this configuration may change according to different requirements applied to the application and a deployment company should take it into consideration. For example, if you generate large reports that have a longer generating time than the maximum time set in the `max_execution_time` parameter, then it is necessary to set the parameters in such a way that the time of executing a script is always longer than the time for generating a report. Otherwise, reports may not be generated successfully.
+In the third step, you can find your current web server configuration compared to the requirements of YetiForce (what needs to be changed and to what values to set). It is necessary to remember that this configuration may change according to different requirements applied to the application and a deployment company should take it into consideration. Firma wdrożeniowa powinna uwzględnić zmiany we własnym zakresie. For example, if you generate large reports that have a longer generating time than the maximum time set in the `max_execution_time` parameter, then it is necessary to set the parameters in such a way that the time of executing a script is always longer than the time for generating a report. Otherwise, reports may not be generated successfully.
 
 Make sure your administrator is familiar with [web server requirements](/introduction/requirements/). If all required parameters are not met, and you attempt to proceed with the installation, the application will display a warning message.
 
@@ -97,7 +97,7 @@ In this case, it is necessary to go back and enter the correct access data. If e
 
 ## Step 8 - Enter registration information
 
-Enter the data of the company that will use the system, the data will then be used to register the system.
+Enter the data of the company that will use the system, the data will then be used to register the system. Copy the directory to the web server, using e.g.
 
 According to the license, each system must be registered after the trial period of 14 days.
 
@@ -145,4 +145,4 @@ Pay attention to delete cookies for HTTP and HTTPS!!!
 
 You can easily remove all browser cache, but how to do it for one domain only so as not to lose all data?
 
-In the development tools, it is possible to view and delete the cache. Each browser may have removal options elsewhere. More details can be found in the article [How to clear browser cache?](/administrator-guides/faq/how-to-clear-browser-cache/)
+In the development tools, it is possible to view and delete the cache. Opcje usuwania danych podręcznych znajdują się w różnych modułach konfiguracji przeglądarki, w zależności od rodzaju używanej przeglądarki. More details can be found in the article [How to clear browser cache?](/administrator-guides/faq/how-to-clear-browser-cache/)

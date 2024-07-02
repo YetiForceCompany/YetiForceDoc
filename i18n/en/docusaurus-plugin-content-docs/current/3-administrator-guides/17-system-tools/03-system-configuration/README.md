@@ -74,8 +74,7 @@ The panel is easy to use, it's enough to select the settings you would like to c
 
 ### Maximum length of a comment visible on the related record
 
-Defines the length of comments visible in some relations, for example in the "Products and Services" tab in Account module records.
-Depending on the value set, the comments will appear as shown below:
+Defines the length of comments visible in some relations, for example in the "Products and Services" tab in Account module records. Depending on the value set, the comments will appear as shown below:
 
 - length 10
 

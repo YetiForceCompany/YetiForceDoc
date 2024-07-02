@@ -39,7 +39,7 @@ Fill out the registration form with real and true data relevant to your company;
 
 - The country where your company operates
 
-#### Industry
+#### Branża
 
 - Select the industry from the list
 
@@ -62,20 +62,20 @@ Registration keys are generated and sent automatically to the email address prov
 
 ![registration-2.jpg](registration-2.jpg)
 
-If the data is valid, the registration will be accepted. In this case, the ***registered***  value will be displayed in the ***registration status*** field, and the warning at the top of the screen will be removed.
+If the data is valid, the registration will be accepted. In this case, the _**registered**_  value will be displayed in the _**registration status**_ field, and the warning at the top of the screen will be removed.
 
 ![registration-3.jpg](registration-3.jpg)
 
 ## Check status
 
-If the registration status was not updated automatically, you can refresh it manually by clicking the ⟳ button in the registration form in the ***registration status*** column.
+If the registration status was not updated automatically, you can refresh it manually by clicking the ⟳ button in the registration form in the _**registration status**_ column.
 
 ![status.jpg](status.jpg)
 
 ## Incorrect registration
 
-If the data provided during registration is incorrect, the registration will be declined. In this case, in order to register your system, you have to correct the data in the form and send it once again.
-To do so, click the cogwheel button ⚙ in the upper right corner.
+If the data provided during registration is incorrect, the registration will be declined. In this case, in order to register your system, you have to correct the data in the form and send it once again.\
+W tym celu, przejdź do konfiguracji systemu za pomocą kółka zębatego ⚙ widocznego w prawym górnym rogu ekranu.
 
 ![registration-4.jpg](registration-4.jpg)
 
@@ -85,7 +85,7 @@ In the menu panel on the left, select `Company` and then `Company details`. Corr
 
 :::warning
 
-Each time you modify the data in the form, the system will automatically change your registration status to "***pending***", and your updated data will have to be verified.
+Each time you modify the data in the form, the system will automatically change your registration status to "_**pending**_", and your updated data will have to be verified.
 :::
 
 The data entered in the form will be sent to us for verification. The verification may take up to 2 business days.
