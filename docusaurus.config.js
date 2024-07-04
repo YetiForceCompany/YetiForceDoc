@@ -52,46 +52,82 @@ export default {
 			{
 				specs: [
 					{
-						id: 'WebserviceStandard',
-						spec: 'https://demo.yetiforce.com/api/WebserviceStandard.json',
-						url: 'https://demo.yetiforce.com/api/WebserviceStandard.json',
+						id: 'WebserviceStandard_7x',
+						spec: './api/7x/WebserviceStandard.json',
+						url: '/api/7x/WebserviceStandard.json'
 					},
 					{
-						id: 'WebservicePremium',
-						url: 'https://demo.yetiforce.com/api/WebservicePremium.json',
-						spec: 'https://demo.yetiforce.com/api/WebservicePremium.json',
+						id: 'WebserviceStandard_65',
+						spec: './api/65/WebserviceStandard.json',
+						url: '/api/65/WebserviceStandard.json'
 					},
 					{
-						id: 'ManageConsents',
-						spec: 'https://demo.yetiforce.com/api/ManageConsents.json',
-						url: 'https://demo.yetiforce.com/api/ManageConsents.json',
+						id: 'WebserviceStandard_64',
+						spec: './api/64/WebserviceStandard.json',
+						url: '/api/64/WebserviceStandard.json'
 					},
 					{
-						id: 'PBX',
-						spec: 'https://demo.yetiforce.com/api/PBX.yaml',
-						url: 'https://demo.yetiforce.com/api/PBX.yaml',
+						id: 'WebservicePremium_7x',
+						spec: './api/7x/WebservicePremium.json',
+						url: '/api/7x/WebservicePremium.json'
 					},
 					{
-						id: 'SMS',
-						spec: 'https://demo.yetiforce.com/api/SMS.yaml',
-						url: 'https://demo.yetiforce.com/api/SMS.yaml',
-						route: '/api2/SMS/',
+						id: 'WebservicePremium_65',
+						spec: './api/65/WebservicePremium.json',
+						url: '/api/65/WebservicePremium.json'
 					},
-					//	{
-					//	 	id: 'WooCommerce',
-					//	 	spec: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
-					//	 	url: 'https://gitdeveloper.yetiforce.com/api/WooCommerce.yaml',
-					//	 	route: '/api2/WooCommerce/'
-					//	 },
 					{
-						id: 'Token',
-						spec: 'https://demo.yetiforce.com/api/Token.yaml',
-						url: 'https://demo.yetiforce.com/api/Token.yaml',
-						route: '/api2/Token/',
+						id: 'WebservicePremium_64',
+						spec: './api/64/WebservicePremium.json',
+						url: '/api/64/WebservicePremium.json'
 					},
-				],
-			},
-		],
+					{
+						id: 'ManageConsents_7x',
+						spec: './api/7x/ManageConsents.json',
+						url: '/api/7x/ManageConsents.json'
+					},
+					{
+						id: 'ManageConsents_65',
+						spec: './api/65/ManageConsents.json',
+						url: '/api/65/ManageConsents.json'
+					},
+					{
+						id: 'ManageConsents_64',
+						spec: './api/64/ManageConsents.json',
+						url: '/api/64/ManageConsents.json'
+					},
+					{
+						id: 'SMS_7x',
+						spec: './api/7x/SMS.yaml',
+						url: '/api/7x/SMS.yaml',
+						route: '/api2/7x/SMS/'
+					},
+					{
+						id: 'SMS_65',
+						spec: './api/65/SMS.yaml',
+						url: '/api/65/SMS.yaml',
+						route: '/api2/65/SMS/'
+					},
+					{
+						id: 'SMS_64',
+						spec: './api/64/SMS.yaml',
+						url: '/api/64/SMS.yaml',
+						route: '/api2/64/SMS/'
+					},
+					{
+						id: 'Token_7x',
+						spec: './api/7x/Token.yaml',
+						url: '/api/7x/Token.yaml',
+						route: '/api2/7x/Token/'
+					},
+					{
+						id: 'PBX_7x',
+						spec: './api/7x/PBX.yaml',
+						url: '/api/7x/PBX.yaml'
+					},
+				]
+			}
+		]
 	],
 	themeConfig: {
 		metadata: [
