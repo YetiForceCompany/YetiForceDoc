@@ -36,7 +36,7 @@ By filtr był dostępny w widgetach, należy zaznaczyć opcję <kbd>Dostępy w w
 
 Widget z filtru można utworzyć w systemie YetiForce na dwa sposoby. 
 
-### a) Tworzenie widgetu w sekcji administracyjnej
+### a) Tworzenie widgetu przez sekcji administracyjnej
 
 W sekcji administracyjnej z lewego menu wybierz **Moduły Podstawowe ➔ Panel - Widżety**.
 

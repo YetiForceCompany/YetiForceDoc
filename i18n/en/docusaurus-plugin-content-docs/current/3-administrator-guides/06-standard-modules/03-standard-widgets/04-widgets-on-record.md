@@ -11,7 +11,7 @@ tags:
 preview: widgets-14
 ---
 
-Oprócz widgetów umieszczanych na pulpicie nawigacyjnym, YetiForce oferuje również możliwość dodawania widgetów w szczegółach poszczególnych rekordów z listy. Funkcja ta pozwala na spersonalizowanie widoku i szybki dostęp do najważniejszych informacji dotyczących danego elementu, bez konieczności przechodzenia do innych modułów.
+Oprócz widgetów umieszczanych na pulpicie nawigacyjnym, YetiForce oferuje również możliwość dodawania widgetów w szczegółach poszczególnych rekordów. Funkcja ta pozwala na spersonalizowanie widoku i szybki dostęp do najważniejszych informacji dotyczących danego elementu, bez konieczności przechodzenia do innych modułów.
 
 ### Konfiguracja 
 
