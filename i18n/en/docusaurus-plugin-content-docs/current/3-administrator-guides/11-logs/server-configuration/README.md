@@ -5,13 +5,13 @@ keywords:
   - configuration
   - verification
   - report
-  - serwer
-  - systemu
+  - server
+  - system
   - YetiForce
 tags:
   - configuration report
-  - serwer
-  - systemu
+  - server
+  - system
 preview: main.jpg
 ---
 

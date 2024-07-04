@@ -4,7 +4,7 @@ description: Updates
 keywords:
   - modules
   - installation
-  - systemu
+  - system
   - YetiForce
 tags:
   - modules

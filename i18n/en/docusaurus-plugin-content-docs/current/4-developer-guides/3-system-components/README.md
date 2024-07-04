@@ -4,7 +4,7 @@ description: Description of YetiForce engine components
 keywords:
   - components
   - engine
-  - systemu
+  - system
   - YetiForce
 tags:
   - components

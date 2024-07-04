@@ -24,10 +24,10 @@ The YetiForce system offers its users a rich choice of tools, including the most
 - Tools
 - Views
 - Filters
-- Pola / słowniki
+- Fields / Picklists
 - Widgets
 
-whether the field is visible to the user or whether they can use the filter. One of them includes the ability to define permissions to values, and therefore allows you to control the process of modifying a record, taking into account what role can change what statuses, e.g. This is one of the ways to implement the principle of "separation of duties".
+whether the field is visible to the user or whether they can use the filter. Additionally, there are two types of picklists. One of them includes the ability to define permissions to values, and therefore allows you to control the process of modifying a record, taking into account what role can change what statuses, e.g.the technical department can modify the tickets and set their status to "for verification", while the control department can change their status to "verified, to be closed". This is one of the ways to implement the principle of "separation of duties".
 
 ### Access to modules, actions, fields
 
