@@ -1,18 +1,18 @@
 ---
-title: Optimization
-description: Articles about the optimization of processes and mechanisms in YetiForce in order to obtain maximum system performance.
+title: Optymalizacja
+description: Artykuły dotyczące optymalizacji procesów i mechanizmów w YetiForce w celu uzyskania maksymalnej wydajności systemu.
 keywords:
-  - optimization
-  - processes
-  - mechanisms
-  - performance
-  - maximum
+  - optymalizacja
+  - procesy
+  - mechanizmy
+  - wydajność
+  - maksymalna
 tags:
-  - performance
-  - optimization
+  - wydajność
+  - optymalizacja
 ---
 
-Articles about the optimization of processes and mechanisms in YetiForce in order to obtain maximum system performance.
+Artykuły dotyczące optymalizacji procesów i mechanizmów w YetiForce w celu uzyskania maksymalnej wydajności systemu.
 
 import DocCardList from '@theme/DocCardList';
 

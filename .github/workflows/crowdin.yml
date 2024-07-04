@@ -3,7 +3,7 @@ name: Crowdin upload
 on:
   push:
     branches:
-      - main
+      - release
 
 permissions:
   contents: read

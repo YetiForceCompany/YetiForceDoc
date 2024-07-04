@@ -4,7 +4,7 @@ description: Autoloader is a mechanism that improves uploads of files and classe
 keywords:
   - loader
   - autoloader
-  - engine
+  - silnik
   - YetiForce
 tags:
   - loader
@@ -33,7 +33,7 @@ A few important principles about the `Autoloader`:
 
 4. Directory names (of directories with files to which you refer) have to end with "s" in order for the "Autoloader" to work whereas class names have to be without "s".
 
-   Example:
+   Przykładowy plik:
 
    - modules/ModuleName/actions/ComponentName.php - ModuleName_ComponentName_Action
    - modules/ModuleName/models/ComponentName.php - ModuleName_ComponentName_Model

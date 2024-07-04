@@ -1,6 +1,6 @@
 ---
-title: Web service - Applications
-description: Web service - Applications
+title: Webservice - Aplikacje
+description: Webservice - Aplikacje
 keywords:
   - YetiForce
   - System
@@ -21,17 +21,17 @@ preview: webservice-apps-1.jpg
 
 ## Webservice Standard
 
-Documentation of available methods and API capabilities can be found in the following article: [Developer documentation → API → Webservice standard](/developer-guides/api/WebserviceStandard)
+Dokumentacja dostępnych metod i możliwości API można znaleźć w następującym artykule: [Dokumentacja programisty→ API → Webservice standard](/developer-guides/api/WebserviceStandard)
 
 ![WebserviceStandard.jpg](WebserviceStandard.jpg)
 
-### Credentials
+### Dane dostępowe
 
-Access to the `Webservice Standard` service requires creating an application with a username and password, necessary to communicate with the API.
+Dostęp do usługi `Webservice Standard` wymaga utworzenia aplikacji z nazwą użytkownika i hasłem, niezbędnych do komunikacji z API.
 
 ![WebserviceStandard-login-pass.jpg](WebserviceStandard-login-pass.jpg)
 
-The username and password must be placed in the header of the basic authentication (`Authorization: Basic`) for the entire API communication.
+Nazwa użytkownika i hasło muszą być umieszczone w nagłówku podstawowego uwierzytelniania (`Authorization: Basic`) dla całej komunikacji API.
 
 ```http
 POST /webservice/WebservicePremium/Users/Login HTTP/1.1
@@ -40,7 +40,7 @@ Authorization: Basic cGFydG5lcjpwYXJ0bmVy
 
 :::tip
 
-Header generation example - `Authorization: Basic`
+Przykład generowania nagłówka - `Authorization: Basic`
 
 ```php
  base64_encode($name . ':' . $password)
@@ -48,7 +48,7 @@ Header generation example - `Authorization: Basic`
 
 :::
 
-The next security measure required for the API to work is placing the API key in the `X-API-KEY` header for the entire API communication.
+Następnym zabezpieczeniem wymaganym do prawidłowego działania API jest umieszczenie klucza API w nagłówku `X-API-KEY` dla całej komunikacji API.
 
 ```http
 POST /webservice/WebservicePremium/Users/Login HTTP/1.1
@@ -56,17 +56,17 @@ X-API-KEY: VMUwRByXHSq1bLW485ikfvcC97P6gJs2
 Authorization: Basic cGFydG5lcjpwYXJ0bmVy
 ```
 
-The key is generated after the application is created, and it can be copied to the clipboard by clicking the <kbd><span class="fas fa-copy u-cursor-pointer"></span></kbd> button.
+Klucz generowany jest po utworzeniu aplikacji i można go skopiować do schowka klikając przycisk <kbd><span class="fas fa-copy u-cursor-pointer"></span></kbd>.
 
 ![WebserviceStandard-api-key.jpg](WebserviceStandard-api-key.jpg)
 
-### Authentication
+### Uwierzytelnianie
 
-The keys are unique for each application that connects to the YetiForce system. In order to be able to download and send data, you need to specify the level of permissions for the API. For this purpose, the [Users/Login](/developer-guides/api/WebserviceStandard#tag/Users/operation/1ac849ff510b6b65243b46ffb9e48a9b) method was created, which allows authorization and creation of a session. This allows you to call methods that require a certain level of permissions to perform operations.
+Klucze są unikalne dla każdej aplikacji, która łączy się z systemem YetiForce. Aby móc pobierać i wysyłać dane, musisz określić poziom uprawnień dla API. W tym celu utworzono metodę [Users/Login](/developer-guides/api/WebserviceStandard#tag/Users/operation/1ac849ff510b6b65243b46ffb9e48a9b), która pozwala na autoryzację i tworzenie sesji. Umożliwia to wywoływanie metod, które wymagają określonego poziomu uprawnień do wykonywania operacji.
 
-A description of credential management can be found here: [Administrator documentation → Integration → Web service - Users](/administrator-guides/integration/webservice-users/).
+Opis zarządzania danymi dostępowymi znajduje się tutaj: [Dokumentacja Administratora → Integracja → Webservice - Użytkownicy](/administrator-guides/integration/webservice-users/).
 
-The authorization token should be placed in the `X-TOKEN` header for the entire API communication.
+Token autoryzacji powinien być umieszczony w nagłówku `X-TOKEN` dla całej komunikacji API.
 
 ```http
 POST /webservice/WebservicePremium/Users/Login HTTP/1.1
@@ -77,9 +77,9 @@ Authorization: Basic cGFydG5lcjpwYXJ0bmVy
 
 ### YetiForce RestApi SDK
 
-Basic SDK has been created for communication with YetiForce RestAPI, the code can be found in our GitHub repository: https://github.com/YetiForceCompany/YetiForceScripts/tree/master/YetiREST
+Podstawowy SDK został utworzony do komunikacji z YetiForce RestAPI, kod można znaleźć w naszym repozytorium GitHub: https://github.com/YetiForceCompany/YetiForceScripts/tree/master/YetiREST
 
-An example script showing how to call key API methods:
+Przykładowy skrypt pokazujący sposób wywoływania kluczowych metod API:
 
 ```php reference
 https://github.com/YetiForceCompany/YetiForceScripts/blob/master/YetiREST/index.php#L34-L68

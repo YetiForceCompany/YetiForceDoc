@@ -1,12 +1,12 @@
 ---
-title: Logs
-description: Logs
+title: Logi
+description: Logi
 keywords:
   - YetiForce
-  - Logs
-  - Settings
+  - Logi
+  - Ustawienia
 tags:
-  - Logs
+  - Logi
 hide_table_of_contents: true
 ---
 

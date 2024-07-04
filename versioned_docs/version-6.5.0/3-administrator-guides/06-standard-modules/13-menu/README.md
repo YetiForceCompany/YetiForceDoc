@@ -1,10 +1,10 @@
 ---
 title: Menu
-description: Menu - Configuration
+description: Menu - konfiguracja
 keywords:
   - Menu
-  - Configuration
-  - Settings
+  - Konfiguracja
+  - Ustawienia
   - YetiForce
 tags:
   - Menu

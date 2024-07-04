@@ -1,81 +1,81 @@
 ---
-title: Problems with system registration
-description: The following article will help you if you have problems with confirming the registration, or your registration status is stuck at "Waiting for acceptance".
+title: Problemy z rejestracją systemu
+description: Poniższy artykuł pomoże Ci w przypadku problemów z zatwierdzeniem rejestracji lub jeśli status Twojej rejestracji po 24 godzinach od zarejestrowania nadal wyświetla informację o oczekiwaniu na akceptację.
 keywords:
-  - problems
-  - registration
-  - Company
+  - problemy
+  - rejestracja
+  - Firma
   - system
   - YetiForce
 tags:
-  - Company
-  - Registration
+  - Firma
+  - Rejestracja
 preview: reg-1.jpg
 ---
 
-The following article will help you if you have problems with confirming the registration, or your registration status is stuck at `Pending approval`.
+Poniższy artykuł pomoże Ci w przypadku problemów z zatwierdzeniem rejestracji lub jeśli status Twojej rejestracji po 24 godzinach od zarejestrowania nadal wyświetla informację o oczekiwaniu na akceptację.
 
-If the status has not changed a few days after registration, please follow the steps below:
+Jeśli minęło już kilka dni od czasu przesłania formularza rejestracji online, a status rejestracji nadal wyświetla informację o oczekiwaniu na akceptację, możesz wykonać poniższe kroki:
 
-## Update the registration status
+## Zaktualizuj status rejestracji
 
-Go to [`System settings → Company → Company`](/administrator-guides/company/company-details/#check-status)
+Przejdź do ustawień aplikacji, w panelu menu po lewej stronie wybierz "Firma" a następnie "Dane firmy".
 
-Click the `Check status` button, on the right side the time of the last update should change to `a moment ago`.
+Kliknij przycisk "Sprawdź status". Czas ostatniej aktualizacji w prawym górnym rogu powinien zmienić się na "Przed chwilą".
 
 ![reg-1.jpg](reg-1.jpg)
 
-If the time does not change, please go to point 2.
+Jeżeli czas nie ulegnie zmianie, proszę przejść do punktu 2.
 
-## Check the last status check message
+## Sprawdź komunikat ostatniej weryfikacji statusu
 
-An error message will be displayed under the icon if there are problems with communication with the YetiForce server.
+W przypadku problemów z komunikacją z serwerem YetiForce pod ikoną będzie widoczna informacja o błędzie.
 
-The message is shown only in the case of communication errors, in the case of other errors, the message will not be displayed.
+UWAGA! Komunikat pojawia się wyłącznie w przypadku błędów związanych z komunikacją. Jeśli występują inne błędy, to nie będą one tu widoczne.
 
 ![reg-2.jpg](reg-2.jpg)
 
-## If nothing changes during status check, make sure your server has the correct configuration
+## Jeśli nic się nie zmienia podczas sprawdzania statusu, upewnij się, że Twój serwer ma poprawną konfigurację
 
-To do this, go to [`System configuration → Logs → Server - configuration`](/administrator-guides/logs/server-configuration/)
+W tym celu przejdź do Konfiguracja systemu ➡ Logi ➡ Serwer – konfiguracja.
 
-The most common cause of errors in the system and registration is incorrect server configuration. You can find more information about server configuration in [this article](/introduction/requirements/).
+Najczęstszą przyczyną błędów w systemie i rejestracji jest nieprawidłowa konfiguracja serwera. Więcej informacji o konfiguracji serwera znajdziesz w [tym artykule](https://doc.yetiforce.com/pl/introduction/requirements/).
 
-## Check logs
+## Sprawdź logi
 
-If there is any error while checking the registration status, it will definitely be visible in the system or PHP or FPM, or web server logs.
+Jeśli występuje jakiś błąd podczas sprawdzenia statusu rejestracji, to na pewno będzie on zarejestrowany w logach CRM, PHP, FPM, lub serwera WWW.
 
-Run verbose logs in system as described in the [Debugging article](/developer-guides/debug).
+Uruchom logi w systemie jak opisano w [artykule debugowania](/developer-guides/debug).
 
-## Your app id has changed
+## Twoje APP ID uległo zmianie
 
-Sometimes changes are made on the server after registration, which changes the [APP ID](/administrator-guides/app-id/) of the system.
+Czasem po rejestracji są wprowadzane zmiany na serwerze, przez co zostaje zmieniony [APP ID](/administrator-guides/app-id/) systemu.
 
-For this reason, the system cannot retrieve up-to-date information, because the ID is different from the one that was provided during registration and the new ID does not exist in the database.
+Z tego powodu system nie może pobrać aktualnych informacji, bo ID jest inny od tego, jaki był podczas rejestracji, a nowy nie istnieje w bazie.
 
-In this case, re-registration is required; please go the [`System settings → Company → Company`](/administrator-guides/company/company-details/#registration)
+W tym przypadku wymagana jest ponowna rejestracja; przejdź do [`Konfiguracja systemu ➡ Firma ➡ Dane firmy`](/administrator-guides/company/company-details/#registration)
 
-## Check your firewall
+## Sprawdź zaporę sieciową
 
-Check if your firewall is not blocking outgoing traffic to the following address:
+Sprawdź, czy Twoja zapora sieciowa nie blokuje ruchu wychodzącego na następujący adres:
 
-- api.yetiforce.com (YetiForce versions < 6.5)
-- api.yetiforce.eu (YetiForce versions >= 6.5)
+- api.yetiforce.com (wersje YetiForce < 6.5)
+- api.yetiforce.eu (wersje YetiForce >= 6.5)
 
-These addresses are used for system registration and marketplace purchases.
+Adresy te służą do rejestracji w systemie i zakupów w serwisie Marketplace.
 
-## Send a message to us
+## Jeśli problemy nadal występują - napisz do nas
 
 :::warning
 
-Please click the `check registration status` button **BEFORE SENDING US A MESSAGE** because all registrations are verified manually.
+Kliknij przycisk `sprawdź status rejestracji` **PRZED WYSŁANIEM WIADOMOŚCI**, ponieważ wszystkie rejestracje są sprawdzane ręcznie.
 
 :::
 
-If you have a problem with registration and this article did not help you solve the problem, send a message to hello@yetiforce.com with the following information:
+Jeśli masz problem z rejestracją i ten artykuł nie pomógł Ci rozwiązać problemu, wyślij wiadomość na hello@yetiforce.com i prześlij nam następujące informacje:
 
 - [APP ID](/administrator-guides/app-id/)
-- [CRM logs](/developer-guides/debug)
-- [PHP logs](/developer-guides/debug#php-logs)
-- web server logs
-- FPM login (optional)
+- [Logi CRM](/developer-guides/debug)
+- [Logi PHP](/developer-guides/debug#php-logs)
+- Logi serwera
+- Login FPM (opcjonalnie)

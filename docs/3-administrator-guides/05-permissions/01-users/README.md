@@ -3,8 +3,9 @@ title: Users
 description: Users
 keywords:
   - Users
-  - Settings
+  - Panel konfiguracyjny
   - YetiForce
 tags:
   - Users
 ---
+
