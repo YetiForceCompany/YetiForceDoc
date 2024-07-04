@@ -1,5 +1,5 @@
 ---
-title: Kanban board view
+title: Kanban board
 description: The article describes the Kanban board and its featues
 keywords:
   - kanban

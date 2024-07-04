@@ -49,8 +49,7 @@ wget -q -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list
 ```
 
-:::important Optional
-If you want the latest version of the database engine then you can add an additional package repository from MariaDB.
+:::important Opcjonalnie
 
 ```bash
 apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
@@ -92,8 +91,7 @@ mkdir -p /var/log/php/
 passwd yfprod
 ```
 
-:::important Optional
-Create a test environment
+:::important Opcjonalnie
 
 ```bash
 groupadd yftest
@@ -119,12 +117,11 @@ rm /etc/nginx/nginx.conf
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/YetiForceCompany/YetiForceCRM/developer/tests/setup/nginx/nginx.conf"
 ```
 
-:::warning Note:
+:::warning
 The [www.conf](https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/nginx/www.conf) GitHub file contains example domain names that should be changed. The example is presented on the development version, we recommend downloading the files for the system version that will be installed.
 :::
 
-:::important Optional
-Creating a test environment requires changing the domain name
+:::important Opcjonalnie
 
 ```bash
 cp /etc/nginx/sites-available/yfprod.conf /etc/nginx/sites-available/yftest.conf
@@ -146,12 +143,11 @@ sed -i 's/output_buffering = "On"/output_buffering = "Off"/g' /etc/php/7.4/cli/c
 ```
 
 :::warning
-The example is presented on the development version, we recommend downloading the files for the system version that will be installed, e.g. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
+W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji systemu, która będzie instalowana np. [https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf](https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf)
 
 :::
 
 :::important Opcjonalnie
-Creating a test environment requires copying the file and replacing the `yfprod` with `yftest`
 
 ```bash
 cp /etc/php/7.4/fpm/pool.d/yfprod.conf /etc/php/7.4/fpm/pool.d/yftest.conf
@@ -168,7 +164,7 @@ wget -O /etc/mysql/mariadb.conf.d/50-server.cnf "https://raw.githubusercontent.c
 ```
 
 :::warning
-The example is presented on the development version, we recommend downloading the files for the system version that will be installed, e.g. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
+https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
 :::
 
 **MariaDB is not secure by default**. You can secure it in two ways:
@@ -256,7 +252,7 @@ A complete description of the YetiForce installation can be found in the article
 ## 15. Final remarks
 
 :::warning
-Once setup is complete, SSH access should be restricted to trusted IP or VPN addresses only.
+Po zakończeniu konfiguracji dostęp do SSH powinien zostać ograniczony tylko do zaufanych adresów IP lub VPN.
 
 We also recommend disabling root login directly via SSH and installing and configuring a firewall.
 :::

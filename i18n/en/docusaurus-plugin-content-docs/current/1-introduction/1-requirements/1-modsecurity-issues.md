@@ -1,22 +1,22 @@
 ---
 title: Fałszywe pozytywne wyniki analizy YetiForce przez ModSecurity
 keywords:
-  - serwer
-  - wymagania
-  - systemu
+  - server
+  - requirements
+  - system
   - YetiForce
   - ModSecurity
 tags:
-  - serwer
-  - wymagania
-  - systemu
+  - server
+  - requirements
+  - system
   - ModSecurity
-description: Jakie występują problemy w działaniu systemu YetiForce z ModSecurity
+description: What are the problems with the operation of the YetiForce system with ModSecurity
 ---
 
-W domyślnej konfiguracji ModSecurity nie działa prawidłowo z systemem YetiForce, co skutkuje wykryciem fałszywie pozytywnych wyników, czyli znalezieniem podatności, które faktycznie nie istnieją.
+In the default configuration, ModSecurity does not work properly with the YetiForce system, which results in the detection of false positive results, i.e., finding vulnerabilities that do not actually exist.
 
-## Przykłady błędów
+## Examples of errors
 
 ### KaTeX parse error: Can't use function '$' in math mode at position
 
@@ -43,18 +43,18 @@ KaTeX parse error: Got function '\newline' with no arguments as superscript at p
 [Tue Oct 19 12:46:31.425742 2021] [:error] [pid 3665031] [client 10.0.1.2:53070] [client 10.0.1.2] ModSecurity: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/usr/share/modsecurity-crs/rules/RESPONSE-980-CORRELATION.conf"] [line "86"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 5 - SQLI=0,XSS=0,RFI=0,LFI=0,RCE=5,PHPI=0,HTTP=0,SESS=0): individual paranoia level scores: 5, 0, 0, 0"] [tag "event-correlation"] [hostname "yetiforce.example.com"] [uri "/index.php"] [unique_id "YW6iB-TmEYx0Wwg3C6b1hwAAAAk"]
 ```
 
-## Adres nie zawiera ataku `Remote Command Execution: Unix Command Injection`
+## Address doesn't contain the Remote Command Execution: Unix Command Injection attack\`
 
-Parametr `historyUrl` zawiera adres URL: "index.php?module=Calendar&view=CalendarExtended&history=true&viewType=month&start=2021-09-27&end=2021-11-06&user=22&time=current&cvid=undefined&hiddenDays=0,6", a nie polecenie powłoki `Remote Command Execution: Unix Command Injection`.
+The `historyUrl` parameter contains the following URL: "index.php?module=Calendar&view=CalendarExtended&history=true&viewType=month&start=2021-09-27&end=2021-11-06&user=22&time=current&cvid=undefined&hiddenDays=0,6", not the following shell command: `Remote Command Execution: Unix Command Injection`.
 
-## Nie zalecamy aby skrypty PHP były w stanie wywoływać funkcje do powłoki systemu operacyjnego
+## We do not recommend that PHP scripts be able to call functions to the OS shell
 
-W [`Konfiguracja systemu → Logi → Serwer - konfiguracja`](/administrator-guides/logs/server-configuration/) można zweryfikować, czy zostały wyłączone niebezpieczne funkcje (między innymi do wykonywania poleceń powłoki systemu):
+In [System settings → Logs → Server - configuration](/administrator-guides/logs/server-configuration/) you can verify whether any dangerous functions have been enabled (including shell commands):
 
 ```ini
 disable_functions = pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wifcontinued,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_get_handler,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,pcntl_async_signals,pcntl_unshare,shell_exec,exec,system,passthru,popen
 ```
 
-Dlatego nie ma ryzyka, jeśli serwer jest poprawnie skonfigurowany.
+Therefore, there is no risk, if your server is properly configured.
 
-## Każde dane wejściowe są odpowiednio weryfikowane pod kątem dozwolonych wartości i znaków
+## Each input is properly validated for allowed values and characters

@@ -7,13 +7,13 @@ keywords:
   - Integration
   - Synchronization
   - YetiForce
-  - Settings
+  - Panel konfiguracyjny
 tags:
   - Magento
   - eCommerce
   - Integration
   - Synchronization
-  - Settings
+  - Panel konfiguracyjny
 preview: magento.jpg
 ---
 

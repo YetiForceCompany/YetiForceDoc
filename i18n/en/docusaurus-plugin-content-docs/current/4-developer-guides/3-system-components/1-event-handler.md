@@ -91,7 +91,7 @@ List for version: `6.4.180`
 - EntityBeforeUnLink
 - EntityAfterUnLink
 
-#### link
+#### tworzenie powiązania
 
 - EntityBeforeLink
 - EntityAfterLink
@@ -129,7 +129,7 @@ List for version: `6.4.180`
 - EditViewDuplicate
 - InventoryRecordDetails
 
-#### validation
+#### walidacja
 
 - EditViewPreSave - walidacja formularza
 - PreDelete - walidacja usuwania

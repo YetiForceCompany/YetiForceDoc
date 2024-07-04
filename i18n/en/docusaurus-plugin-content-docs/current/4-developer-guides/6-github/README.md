@@ -8,7 +8,7 @@ keywords:
   - errors
   - YetiForce
 tags:
-  - credentials
+  - dane dostępowe
   - Github
 ---
 
