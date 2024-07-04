@@ -11,7 +11,7 @@ tags:
 
 ## Help icons
 
-Help icons are a simple mechanism that allows to add detailed information to every field within the system. We recommend using this kind of supporting information for business fields, e.g. statuses, stages, fields that are automatically updated, etc. Each help icon might be translated individually to every language.
+Help icons are a simple mechanism that allows to add detailed information to every field within the system. statuses, stages, fields that are automatically updated, etc. Each help icon might be translated individually to every language.
 
 Only an administrator can use this tool. When you enter Translations Management and go to the Help Icons, you will see that there are a few functionalities available. Primarily, you should select languages in which you would like to modify descriptions for icons. Then select a module and a list of available fields will be displayed. There is also an option to have a list narrowed down to fields without any description or an option to search for a specific field.
 
@@ -35,12 +35,12 @@ If a field already exists in a given module, it won't be available in the field 
 
 The following fields can be added:
 
-- Assigned to
+- Właściciel rekordu
 - Created by
 - Last modified by
 - Created (time)
 - Modified (time)
-- Share with
+- Osoby współdzielące
 - Private
 - Web service application
 

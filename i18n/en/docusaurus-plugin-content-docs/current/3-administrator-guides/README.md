@@ -1,11 +1,11 @@
 ---
-title: Administrator documentation
+title: Administrator guides
 description: The administrator's documentation is a collection of articles essential for every administrator who wants to manage the YetiForce system.
 keywords:
-  - Administrator documentation
+  - Administrator guides
   - YetiForce
 tags:
-  - Administrator documentation
+  - Administrator guides
 hide_table_of_contents: true
 ---
 

@@ -4,12 +4,12 @@ description: Redirecting WWW application to another domain
 keywords:
   - YetiForce
   - clearing
-  - cache
+  - pamięć podręczna
   - firefox
   - chrome
 tags:
   - clearing
-  - cache
+  - pamięć podręczna
 ---
 
 Clearing browser cache is a very useful step that should be performed after updating the system in order to make sure that the pages are displayed correctly and that the old cache files don't cause problems.
@@ -17,15 +17,19 @@ Clearing browser cache is a very useful step that should be performed after upda
 ## Clearing cache in `Google Chrome`
 
 1. Open your YetiForce in Google Chrome
-2. Press <kbd>F12</kbd> or go to** Developer tools.**
+
+2. Press <kbd>F12</kbd> or go to\*\* Developer tools.\*\*
 
    To open Developer tools follow these steps:
 
    ![how-to-clear-browser-cache-1.jpg](how-to-clear-browser-cache-1.jpg)
 
 3. Select the `Application` tab in the popup window
+
 4. In the `Application` tab in the panel on the left select `Clear storage`
    Click `Clear site data`
+
+   Następnie kliknij `Clear site data`
 
 ![how-to-clear-browser-cache-2.jpg](how-to-clear-browser-cache-2.jpg)
 
