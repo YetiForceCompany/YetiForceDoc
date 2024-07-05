@@ -2,14 +2,14 @@
 title: Tablica Kanban
 description: Artykuł opisuje konfigurację dodatku YetiForce Kanban Board
 keywords:
-	- kanban
-	- tablica
-	- widok
-	- ustawienia
-	- YetiForce
+  - kanban
+  - tablica
+  - widok
+  - ustawienia
+  - YetiForce
 tags:
-	- Kanban
-	- Tablica
+  - Kanban
+  - Tablica
 preview: kanban-1.png
 ---
 
@@ -19,7 +19,7 @@ kolumnami. Dzięki temu w łatwy sposób możemy śledzić postęp prac, identyf
 innymi modułami YetiForce, co wspiera zarządzanie zadaniami w kontekście działań sprzedażowych, projektowych, serwisowych i innych.
 
 :::warning
-Dodatek YetiForce Kanban Board jest dostępny do subskrypcji w naszym Marketplace.  - [**Więcej informacji**](https://yetiforce.com/pl/tablica-kanban.html)
+  Dodatek YetiForce Kanban Board jest dostępny do subskrypcji w naszym Marketplace. - [**Więcej informacji**](https://yetiforce.com/pl/tablica-kanban.html)
 :::
 
 ![Widok ekranu konfiguracji](kanban-1.png)
@@ -78,6 +78,6 @@ po czym wybrać odpowiedni moduł, w którym, opcja Kanban powinna być dostępn
 
 ![Wybór modułu](kanban-8-2.png)
 
-finalnie, dostosować opcje uprawnień
+finalnie, dostosować opcje uprawnień.
 
 ![Zmiana uprawnień do akcji i widoków](kanban-8-3.png)
