@@ -16,7 +16,7 @@ tags:
 preview: mailbox-integration-1.jpg
 ---
 
-Ten artykuł stanowi uzupełnienie instrukcji [integracji YetiForce z klientami poczty](/administrator-guides/integration/mailbox). Skupia się on na tym by pokazać jak wygenerować Client ID i Client Secret w Outlook. Te dane są niezbędne do uwierzytelnienia połączenia między YetiForce a Twoim kontem Outlook.
+Ten artykuł stanowi uzupełnienie instrukcji [integracji YetiForce z klientami poczty](/administrator-guides/integration/mailbox). Skupia się on na tym by pokazać jak wygenerować Client ID i Client Secret w portalu Azure AD. Te dane są niezbędne do uwierzytelnienia połączenia między YetiForce a Twoim kontem Outlook.
 
 ### Krok 1: Utwórz projekt w Portalu Azure
 
@@ -42,7 +42,7 @@ Ten artykuł stanowi uzupełnienie instrukcji [integracji YetiForce z klientami 
 
 Powróć do procesu tworzenia serwera pocztowego, który został opisany w [tym artykule](/administrator-guides/integration/mailbox/#dodanie-serwera-pocztowego). Upewnij się, że w polu ```Przekieruj URI```, znajduje się nazwa aplikacji, którą utworzyłeś do integracji z pocztą. Następnie skopiuj wartość URI przekierowania naciskając przycisk <kbd><i class="fa-solid fa-copy"></i></kbd>.
 
-![gmail-11](gmail-11.jpg)
+![outlook-10](outlook-10.jpg)
 
 ### Krok 3: Kontynuacja tworzenia aplikacji Azure
 

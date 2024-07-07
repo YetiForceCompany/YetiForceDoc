@@ -36,11 +36,13 @@ Ten artykuł stanowi uzupełnienie instrukcji [integracji YetiForce z klientami 
 
 ![gmail-3](gmail-3.jpg)
 
-* Na kolejnym widoku wybieramy opcję ```External```.
+* Następnie należy określić typ integracji:
+	* ```Internal``` - Integracja przeznaczona do użytku produkcyjnego.
+    *  ```External``` - Integracja tworzona w celach testowych.
 
 ![gmail-4](gmail-4.jpg)
 
-* Wypełnij formularz podając dowolną nazwę aplikacji oraz adres mailowy Gmail, który chcesz zintegrować z YetiForce.
+* Wypełnij formularz, podając dowolną nazwę aplikacji oraz adres mailowy Gmail, który chcesz zintegrować z YetiForce.
 * Na dole formularza podaj adres mailowy dewelopera i wybierz przycisk <kbd>ZAPISZ I KONTYNUUJ</kbd>.
 
 ![gmail-5](gmail-5.jpg)
@@ -49,7 +51,7 @@ Ten artykuł stanowi uzupełnienie instrukcji [integracji YetiForce z klientami 
 
 ![gmail-6](gmail-6.jpg)
 
-* w sekcji ```Test users``` dodaj adres synchronizowanej poczty i przejdź dalej.
+* W przypadku integracji testowej w sekcji ```Test users``` dodaj adres synchronizowanej poczty i przejdź dalej.
 
 ![gmail-7](gmail-7.jpg)
 
