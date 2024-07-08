@@ -35,8 +35,7 @@ Widżet umożliwiający podgląd dokumentów PDF przed ich wygenerowaniem! Ten d
 
 ### Konfiguracja Podglądu PDF
 
-W pierwszej kolejności należy się upewnić, czy dla danego modułu posiadamy stworzony szablon PDF.
-Następnie możemy przejść do konfiguracji samego widżetu:
+W pierwszej kolejności należy się upewnić, czy dla danego modułu posiadamy stworzony szablon PDF. Następnie możemy przejść do konfiguracji samego widżetu:
 
 1. Przejdź do sekcji administracyjnej YetiForce.
 2. Wybierz z lewego menu ```Moduły standardowe ➜ Moduły widżety```.
@@ -79,7 +78,6 @@ Dodatek **Historia Zmian** w systemie YetiForce zapewnia kompleksowy wgląd w ak
 :::warning
 
 Pamiętaj, by przy tworzeniu widżetu wybrać odpowiednią rolę oraz pulpit, na którym ma się on pojawić.
-
 :::
 
 1. Przejdź do sekcji administracyjnej YetiForce.
