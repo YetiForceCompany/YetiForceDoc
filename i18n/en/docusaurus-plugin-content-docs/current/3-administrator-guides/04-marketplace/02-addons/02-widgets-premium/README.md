@@ -2,13 +2,15 @@
 title: Widżety Premium
 description: Konfiguracja Widgetu PDF Premium
 keywords:
-  - PDF
-  - Marketplace
-  - Dodatki
-  - Widżety
+	- Marketplace
+	- Dodatki
+	- Widżety
+	- PDF
+	- Historia Zmian
 tags:
-  - PDF
-  - Marketplace
+	- Widżety
+	- PDF
+	- Historia Zmian
 preview: widgets-1.jpg
 ---
 
@@ -58,7 +60,7 @@ Dodatek **Historia Zmian** w systemie YetiForce zapewnia kompleksowy wgląd w ak
 * Śledź modyfikacje w wybranym module lub w całym systemie.
 * Zobacz listę otwieranych i modyfikowanych rekordów.
 * Poznaj czas przeprowadzonych akcji.
-* Zidentyfikuj użytkowników odpowiedzialnych za każdą operację. 
+* Zidentyfikuj użytkowników odpowiedzialnych za każdą operację.
 
 **Wykorzystaj zaawansowane filtry, aby:**
 
@@ -88,7 +90,7 @@ Pamiętaj, by przy tworzeniu widżetu wybrać odpowiednią rolę oraz pulpit, na
 
 ![widgets-3.jpg](widgets-3.jpg)
 
-Widżet **Historia aktualizacji systemu** jest już gotowy do użycia. W sekcji użytkownika przejdź do Zakładki **Pulpit**, gdzie pojawi się widżet. 
+Widżet **Historia aktualizacji systemu** jest już gotowy do użycia. W sekcji użytkownika przejdź do Zakładki **Pulpit**, gdzie pojawi się widżet.
 
 Pierwsza lista rozwijana pozwala nam wybrać moduł systemu, dla którego chcemy śledzić zmiany. Jeżeli z listy wybierzemy pozycję **Podsumowanie**, pojawi nam się historia aktualizacji w wybranym okresie dla całego systemu z podziałem na moduły.
 
@@ -101,5 +103,3 @@ Wybierając natomiast z listy konkretny moduł, uzyskamy dodatkowe informacje, t
 W prawym górnym rogu widżetu znajduje się ikona trybika, pozwalająca ustawić wyświetlane przez niego dane. Możemy wybrać jakie akcje chcemy, żeby zostały wyświetlone oraz z jakimi użytkownikami mają być one powiązane.
 
 ![widgets-6.jpg](widgets-6.jpg)
-
-

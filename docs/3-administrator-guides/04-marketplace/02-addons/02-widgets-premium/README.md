@@ -2,13 +2,15 @@
 title: Widżety Premium
 description: Konfiguracja Widgetu PDF Premium
 keywords:
-  - PDF
   - Marketplace
   - Dodatki
   - Widżety
-tags:
   - PDF
-  - Marketplace
+  - Historia Zmian
+tags:
+  - Widżety
+  - PDF
+  - Historia Zmian
 preview: widgets-1.jpg
 ---
 
