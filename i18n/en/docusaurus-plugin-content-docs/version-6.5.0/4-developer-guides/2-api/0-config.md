@@ -16,7 +16,7 @@ tags:
 
 ## Activation
 
-Set active services `$enabledServices` in the [config/Api.php](https://doc.yetiforce.com/code/classes/Config-Api.html#property_enabledServices) file: 
+Set active services `$enabledServices` in the [config/Api.php](https://doc.yetiforce.com/code/classes/Config-Api.html#property_enabledServices) file:
 
 ```php
 /** List of active services. Available: dav, webservice */
@@ -27,7 +27,7 @@ public static $enabledServices = ['webservice'];
 
 To determine what kind of services are to be active, add applications of the relevant type.
 
-Add the services you want to use in the [Web service - Applications](administrator-guides/integration/webservice-apps/) admin panel.
+Add the services you want to use in the [Web service - Applications](/6.5.0/administrator-guides/integration/webservice-apps/) admin panel.
 
 ## Session lifetime configuration
 

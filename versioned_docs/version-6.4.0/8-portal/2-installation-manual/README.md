@@ -58,7 +58,7 @@ Portal instaluje się tak samo, jak system YetiForce - przy użyciu kreatora w p
 
 ### Krok 1 - Pobierz i wgraj pliki systemowe
 
-W pierwszej kolejności przygotuj pliki instalacyjne. Portal pobierzesz z naszych [oficjalnych źródeł](introduction/download).
+W pierwszej kolejności przygotuj pliki instalacyjne. Portal pobierzesz z naszych [oficjalnych źródeł](/6.4.0/introduction/download).
 
 :::warning
 

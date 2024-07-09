@@ -53,7 +53,7 @@ Sometimes changes are made on the server after registration, which changes the [
 
 For this reason, the system cannot retrieve up-to-date information, because the ID is different from the one that was provided during registration and the new ID does not exist in the database.
 
-In this case, re-registration is required; please go the [`System settings → Company → Company`](/administrator-guides/company/company-details/#registration)
+In this case, re-registration is required; please go the [`System settings → Company → Company`](/6.4.0/administrator-guides/company/company-details)
 
 ## Check your firewall
 
@@ -76,6 +76,6 @@ If you have a problem with registration and this article did not help you solve 
 
 - [APP ID](/administrator-guides/app-id/)
 - [CRM logs](/developer-guides/debug)
-- [PHP logs](/developer-guides/debug#php-logs)
+- [PHP logs](/6.4.0/developer-guides/debug)
 - web server logs
 - FPM login (optional)

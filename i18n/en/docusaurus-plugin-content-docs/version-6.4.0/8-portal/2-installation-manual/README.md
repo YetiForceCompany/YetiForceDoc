@@ -58,7 +58,7 @@ The portal is installed in the same way as the YetiForce system - using the wiza
 
 ### Step 1 - Download and upload system files
 
-First, prepare the installation files. You can download the portal from our [official download sources](introduction/download).
+First, prepare the installation files. You can download the portal from our [official download sources](/6.4.0/introduction/download).
 
 :::warning
 

@@ -55,7 +55,6 @@ If your issues persist you can contact us by sending an email and providing **al
 - system version
 - full logs according to the [Debugging](/developer-guides/debug) article
 - attach [server configuration report](/administrator-guides/logs/server-configuration/#download-configuration)
-- screenshot of [system registration](/administrator-guides/company/company-details/#offline)
 - screenshot of products purchased from Marketplace
 - screenshot of [installed updates](/administrator-guides/logs/updates/#activities-during-the-update)
 
