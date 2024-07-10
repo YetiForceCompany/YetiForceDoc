@@ -51,7 +51,7 @@ For a detailed description of the fields, see the [Form fields](administrator-gu
 
 ## Check status
 
-If the registration status has not been updated in your system automatically after a couple of days, you can refresh it manually. In order to do that, click the `Check status` button. The status will be refreshed immediately, and the update time in the upper right corner should change to `a moment ago.` If it doesn't, the [following article](administrator-guides/company/problems-with-system-registration/) will help you troubleshoot registration issues.
+If the registration status has not been updated in your system automatically after a couple of days, you can refresh it manually. In order to do that, click the `Check status` button. The status will be refreshed immediately, and the update time in the upper right corner should change to `a moment ago.` If it doesn't, the [following article](/6.4.0/administrator-guides/company/problems-with-system-registration/) will help you troubleshoot registration issues.
 
 ![status.jpg](status.jpg)
 

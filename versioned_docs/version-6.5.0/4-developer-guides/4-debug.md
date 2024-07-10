@@ -67,7 +67,7 @@ Aby rozpocząć analizowanie problemów lub błędów w systemie, należy włąc
 
 ## Logi MySQL
 
-Błędy w zapytaniach SQL są rejestrowane przez [logi systemu YetiForce](#yetiforce-system-logs), z poziomem błędu `error`.
+Błędy w zapytaniach SQL są rejestrowane przez [logi systemu YetiForce](#logi-systemu-yetiforce), z poziomem błędu `error`.
 
 ## Logi Smarty
 
