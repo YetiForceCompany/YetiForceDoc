@@ -16,7 +16,7 @@ export default {
 	projectName: 'YetiForceCRM',
 	i18n: {
 		defaultLocale: 'pl',
-		locales: ['pl'],
+		locales: ['en','pl'],
 	},
 	presets: [
 		[
