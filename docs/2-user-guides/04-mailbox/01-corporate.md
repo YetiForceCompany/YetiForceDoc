@@ -6,7 +6,7 @@ Skrzynki firmowe w systemie YetiForce to funkcjonalność pozwalająca na centra
 
 Skrzynki firmowe są ściśle zintegrowane z innymi modułami YetiForce CRM. Pozwala to na automatyczne przypisywanie e-maili do odpowiednich rekordów w systemie.
 
-## Konfiguracja 
+## Konfiguracja
 
 By móc skorzystać z tej funkcjonalności konieczne jest skonfigurowanie w panelu administracyjnym ```Serwera poczty``` oraz ```Skanera poczty```. Natomiast by móc wysyłać wiadomości przez system YetiForce CRM należy dodatkowo ustawić sekcję ```Autologowanie```. Poniżej znajduje się opis jak można to zrobić.
 
@@ -26,7 +26,7 @@ Konfiguracja imap umożliwi prawidłowe odbieranie wiadomości pocztowych a nato
 ### Skaner poczty
 
 Kolejnym krokiem jest skonfigurowanie skanera poczty. Służy on do pobierania wiadomości mailowych z serwera pocztowego a następnie umożliwia, by w oparciu o nie wykonać odpowiednie operacje w systemie YetiForce.
-W celu jego konfiguracji z lewego menu należy wybrać ```Narzędzia pocztowe``` a następnie ```Poczta - skaner```. 
+W celu jego konfiguracji z lewego menu należy wybrać ```Narzędzia pocztowe``` a następnie ```Poczta - skaner```.
 
 ![corporate-3](corporate-3.jpg)
 
@@ -72,7 +72,7 @@ Zakładka ```Poczta - konfiguracja``` pozwala nam ustawić parametry odnośnie p
 
 ### Klient poczty
 
-Po wykonaniu powyższych kroków, system YetiForce będzie w stanie pobierać wiadomości z serwera pocztowego i odpowiednio je obsłużyć. 
+Po wykonaniu powyższych kroków, system YetiForce będzie w stanie pobierać wiadomości z serwera pocztowego i odpowiednio je obsłużyć.
 Żeby przejrzeć pobrane wiadomości lub wysłać wiadomość mailową, wybieramy nazwę poczty, która znajduje się w górnym menu po prawej stronie.
 Zostaniemy wówczas przeniesieni do klienta pocztowego.
 
@@ -80,7 +80,7 @@ Zostaniemy wówczas przeniesieni do klienta pocztowego.
 
 Do klienta pocztowego możemy również się dostać z poziomu panelu użytkownika. Należy w tym celu wybrac z lewego menu ```Wirtualne biurko``` a następnie ```Moja poczta```
 
-![corporate-10](../../../../../../docs/2-user-guides/04-mailbox/corporate-10.jpg)
+![corporate-10](corporate-10.jpg)
 
 ### Logi skanera poczty
 
