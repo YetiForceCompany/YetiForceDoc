@@ -51,7 +51,7 @@ Aktualizacja systemu może być podzielona na 3 rodzaje działań, które obejmu
 - Wykonaj pełną kopię zapasową całego systemu (wszystkie pliki/foldery)
 - Wykonaj kopię zapasową bazy danych
 - Wyłącz Cron - można go wyłączyć w panelu administracyjnym (zalecane jest wyłączenie wszystkich zadań). Możesz również wyłączyć Cron zmieniając nazwę pliku cron.php
-- Włącz logi([Debug](/developer-guides/debug#summary))
+- Włącz logi([Debug](/developer-guides/debug#podsumowanie))
 - Utwórz kopię zapasową systemu i wykonaj aktualizację testową
 
 ## Czynności podczas aktualizacji
@@ -114,7 +114,7 @@ Prawidłowa instalacja zakończy się pokazaniem okna podsumowania lub przekiero
 ### Weryfikacja aktualizacji
 
 - Najpierw sprawdź logi i szukaj wszelkich błędów lub ostrzeżeń. Pliki dziennika mogą czasami zawierać 20 tysięcy linii kodu, więc zalecane jest użycie słów kluczowych, np. error, warning.
-- Wyłącz dzienniki po kilku dniach używania systemu w celu sprawdzenia, czy występują błędy ([Debug](/developer-guides/debug#summary))
+- Wyłącz dzienniki po kilku dniach używania systemu w celu sprawdzenia, czy występują błędy ([Debug](/developer-guides/debug#podsumowanie))
 - Aktualizuj języki w systemie.
 - Zaktualizuj bibliotekę lib_roundcube do wersji odpowiadającej systemowi.
 - W panelu administratora, w [`Konfiguracja systemu → Standardowe moduły → Moduły - instalacja`](/administrator-guides/standard-modules/modules-installation/)możesz sprawdzić, czy wcześniej zainstalowana biblioteka wymaga aktualizacji.

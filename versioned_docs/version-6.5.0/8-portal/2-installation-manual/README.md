@@ -44,7 +44,7 @@ import ReactPlayer from 'react-player';
 
 ## Wymagania
 
-Przed instalacją sprawdź, czy serwer spełnia wszystkie wymagania. Portal ma te same wymagania co [YetiForce system](/introduction/requirements/)
+Przed instalacją sprawdź, czy serwer spełnia wszystkie wymagania. Portal ma te same wymagania co [YetiForce system](/6.5.0/introduction/requirements/)
 
 :::important
 Osoba, która zamierza instalować portal, powinna mieć co najmniej podstawową wiedzę na temat serwerów internetowych, baz danych i uprawnień serwera. 99% problemów instalacyjnych wynika z niewystarczającej wiedzy osób, które instalują aplikację. Jeśli nie jesteś pewien, czy jesteś w stanie samodzielnie przeprowadzić proces instalacji, poproś o pomoc kogoś posiadającego odpowiednią wiedzę z zakresu IT. Cały proces instalacji zajmie od 2 do 10 minut.
@@ -58,7 +58,7 @@ Portal instaluje się tak samo, jak system YetiForce - przy użyciu kreatora w p
 
 ### Krok 1 - Pobierz i wgraj pliki systemowe
 
-W pierwszej kolejności przygotuj pliki instalacyjne. Portal pobierzesz z naszych [oficjalnych źródeł](introduction/download).
+W pierwszej kolejności przygotuj pliki instalacyjne. Portal pobierzesz z naszych [oficjalnych źródeł](/6.5.0/introduction/download).
 
 :::warning
 
