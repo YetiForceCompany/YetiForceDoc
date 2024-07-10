@@ -62,7 +62,7 @@ Klucz generowany jest po utworzeniu aplikacji i można go skopiować do schowka 
 
 ### Uwierzytelnianie
 
-Klucze są unikalne dla każdej aplikacji, która łączy się z systemem YetiForce. Aby móc pobierać i wysyłać dane, musisz określić poziom uprawnień dla API. W tym celu utworzono metodę [Users/Login](/developer-guides/api/WebserviceStandard#tag/Users/operation/1ac849ff510b6b65243b46ffb9e48a9b), która pozwala na autoryzację i tworzenie sesji. Umożliwia to wywoływanie metod, które wymagają określonego poziomu uprawnień do wykonywania operacji.
+Klucze są unikalne dla każdej aplikacji, która łączy się z systemem YetiForce. Aby móc pobierać i wysyłać dane, musisz określić poziom uprawnień dla API. W tym celu utworzono metodę [Users/Login](/6.4.0/developer-guides/api/WebserviceStandard#tag/Users/operation/1ac849ff510b6b65243b46ffb9e48a9b), która pozwala na autoryzację i tworzenie sesji. Umożliwia to wywoływanie metod, które wymagają określonego poziomu uprawnień do wykonywania operacji.
 
 Opis zarządzania danymi dostępowymi znajduje się tutaj: [Dokumentacja Administratora → Integracja → Webservice - Użytkownicy](/administrator-guides/integration/webservice-users/).
 
