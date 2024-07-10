@@ -151,7 +151,7 @@ Uruchom i zweryfikuj działanie [CRON-a](/administrator-guides/automation/cron)
 
 ## Zarejestruj ponownie system
 
-Przeniesienie na nowy serwer lub przywrócenie z backupu [wymaga ponownej rejestracji systemu](/administrator-guides/app-id#dlaczego-app-id-ulega-zmianie).
+Przeniesienie na nowy serwer lub przywrócenie z backupu [wymaga ponownej rejestracji systemu](/6.4.0/administrator-guides/app-id#dlaczego-app-id-ulega-zmianie).
 
 ## Aktualizacja dodatków
 

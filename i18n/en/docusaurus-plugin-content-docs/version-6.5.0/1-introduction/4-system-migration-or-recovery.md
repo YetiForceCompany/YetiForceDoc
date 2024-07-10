@@ -161,7 +161,7 @@ Some addons may need to be reconfigured when changing the location or address of
 
 Requires reinstallation and the installation of a new XML file.
 
-The old addon installed in Outlook should be removed and the new XML file from the system panel should be downloaded according to the [instructions](/administrator-guides/integration/mail-integration-panel/outlook).
+The old addon installed in Outlook should be removed and the new XML file from the system panel should be downloaded according to the [instructions](/6.5.0/administrator-guides/integration/mail-integration-panel/outlook).
 
 ## Create a test environment
 

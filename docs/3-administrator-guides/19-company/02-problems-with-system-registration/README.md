@@ -45,7 +45,7 @@ Czasem po rejestracji są wprowadzane zmiany na serwerze, przez co zostaje zmien
 
 Z tego powodu system nie może pobrać aktualnych informacji, bo ID jest inny od tego, jaki był podczas rejestracji, a nowy nie istnieje w bazie.
 
-W tym przypadku wymagana jest ponowna rejestracja; przejdź do [`Konfiguracja systemu ➡ Firma ➡ Dane firmy`](/administrator-guides/company/company-details/#registration)
+W tym przypadku wymagana jest ponowna rejestracja; przejdź do [`Konfiguracja systemu ➡ Firma ➡ Dane firmy`](/administrator-guides/company/company-details/#jak-zarejestrować-yetiforce)
 
 ## Sprawdź zaporę sieciową
 
@@ -68,6 +68,6 @@ Jeśli masz problem z rejestracją i ten artykuł nie pomógł Ci rozwiązać pr
 
 - [APP ID](/administrator-guides/app-id/)
 - [Logi CRM](/developer-guides/debug)
-- [Logi PHP](/developer-guides/debug#php-logs)
+- [Logi PHP](/developer-guides/debug#logi-php)
 - Logi serwera
 - Login FPM (opcjonalnie)

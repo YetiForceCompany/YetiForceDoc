@@ -27,7 +27,7 @@ public static $enabledServices = ['webservice'];
 
 Aby określić jakiego rodzaju usługi będą aktywne nalezy dodać aplikacje o odpowiednim typie.
 
-W panelu administracyjnym [Web service - Applications](administrator-guides/integration/webservice-apps/) nalezy dodać usługi z których chcemy korzystać.
+W panelu administracyjnym [Web service - Applications](/6.4.0/administrator-guides/integration/webservice-apps/) nalezy dodać usługi z których chcemy korzystać.
 
 ## Konfiguracja żywotność sesji
 

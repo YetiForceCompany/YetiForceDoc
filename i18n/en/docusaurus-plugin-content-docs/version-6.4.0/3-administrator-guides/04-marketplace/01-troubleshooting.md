@@ -15,16 +15,16 @@ The article below explains troubleshooting inactive or malfunctioning addons pur
 
 ## Update registration status
 
-YetiForce must be correctly registered in order for the Marketplace and purchased addons to work properly. If your registration is still pending even though you provided all the necessary information during the registration process you can refresh your registration status by clicking the `Check status` button in [`System settings → Company → Company`](/administrator-guides/company/company-details/#check-status) details.
+YetiForce must be correctly registered in order for the Marketplace and purchased addons to work properly. If your registration is still pending even though you provided all the necessary information during the registration process you can refresh your registration status by clicking the `Check status` button in [`System settings → Company → Company`](/6.4.0/administrator-guides/company/company-details#check-status) details.
 
-- More information about registration can be found in the [How to register YetiForce?](/administrator-guides/company/company-details/#how-to-register-yetiforce) manual.
-- In case of problems with registration you can find help in the [Problems with registration guide](/administrator-guides/company/problems-with-system-registration/).
+- More information about registration can be found in the [How to register YetiForce?](/6.4.0/administrator-guides/company/company-details/#how-to-register-yetiforce) manual.
+- In case of problems with registration you can find help in the [Problems with registration guide](/6.4.0/administrator-guides/company/problems-with-system-registration/).
 
 ## Check if YetiForce is up to date and fully patched.
 
 Updates fix issues reported by the community and our employees that's why it's crucial to keep your system up to date.
 
-- More information about the update process can be found in the [System update](/administrator-guides/logs/updates/) article.
+- More information about the update process can be found in the [System update](/6.4.0/administrator-guides/logs/updates/) article.
 - A complete list of patches can be found in the [Releases](https://github.com/YetiForceCompany/YetiForceCRM/releases) tab in our GitHub repository.
 
 ## Check server configuration.
@@ -33,7 +33,7 @@ Misconfiguration of the server impacts the whole system and can lead to a variet
 
 :::important
 
-More information about server requirements and configuration can be found in the following articles: [YetiForce requirements](/introduction/requirements/) and [Server - configuration](/administrator-guides/logs/server-configuration).
+More information about server requirements and configuration can be found in the following articles: [YetiForce requirements](/6.4.0/introduction/requirements/) and [Server - configuration](/6.4.0/administrator-guides/logs/server-configuration).
 
 :::
 
@@ -43,7 +43,7 @@ Enable PHP, system, and web server logs and make sure the communication with yet
 
 :::important
 
-More information can be found in the [Debugging](/developer-guides/debug) guide.
+More information can be found in the [Debugging](/6.4.0/developer-guides/debug) guide.
 
 :::
 
@@ -51,12 +51,12 @@ More information can be found in the [Debugging](/developer-guides/debug) guide.
 
 If your issues persist you can contact us by sending an email and providing **all the information below**:
 
-- [APP ID](/administrator-guides/app-id/)
+- [APP ID](/6.4.0/administrator-guides/app-id/)
 - system version
-- full logs according to the [Debugging](/developer-guides/debug) article
-- attach [server configuration report](/administrator-guides/logs/server-configuration/#download-configuration)
-- screenshot of [system registration](/administrator-guides/company/company-details/#offline)
+- full logs according to the [Debugging](/6.4.0/developer-guides/debug) article
+- attach [server configuration report](/6.4.0/administrator-guides/logs/server-configuration/#download-configuration)
+- screenshot of [system registration](/6.4.0/administrator-guides/company/company-details/#offline)
 - screenshot of products purchased from Marketplace
-- screenshot of [installed updates](/administrator-guides/logs/updates/#activities-during-the-update)
+- screenshot of [installed updates](/6.4.0/administrator-guides/logs/updates/#activities-during-the-update)
 
-We recommend using encryption (PGP/GPG) to send us your credentials. The list of all required information can be found in the [Access data to the YetiForce CRM system article.](/developer-guides/github/access-data-to-YetiForce-system)
+We recommend using encryption (PGP/GPG) to send us your credentials. The list of all required information can be found in the [Access data to the YetiForce CRM system article.](/6.4.0/developer-guides/github/access-data-to-YetiForce-system)

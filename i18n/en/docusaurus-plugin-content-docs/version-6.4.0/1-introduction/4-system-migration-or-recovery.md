@@ -151,7 +151,7 @@ Run [CRON](/administrator-guides/automation/cron) and verify its operation.
 
 ## Re-register your system
 
-Migrating to a new server or restoring it from a backup requires [re-registration](/administrator-guides/app-id#why-does-the-app-id-change) of the system.
+Migrating to a new server or restoring it from a backup requires [re-registration](/6.4.0/administrator-guides/app-id#why-does-the-app-id-change) of the system.
 
 ## Update addons
 
