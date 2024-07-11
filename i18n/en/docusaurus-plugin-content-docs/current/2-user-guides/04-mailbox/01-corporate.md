@@ -16,13 +16,13 @@ Skrzynki korporacyjne w systemie YetiForce to funkcjonalność pozwalająca na c
 
 Skrzynki firmowe są ściśle zintegrowane z innymi modułami YetiForce. Pozwala to na automatyczne przypisywanie e-maili do odpowiednich rekordów w systemie.
 
-## Konfiguracja 
+## Konfiguracja
 
-By móc skorzystać z funkcjonalności skrzynki korporacyjnej konieczne jest skonfigurowanie w sekcji administracyjnej ```Serwera poczty``` oraz ```Skanera poczty```. Natomiast by móc wysyłać wiadomości przez system YetiForce należy dodatkowo ustawić sekcję ```Autologowanie```. Poniżej znajduje się opis jak można to zrobić.
+By móc skorzystać z funkcjonalności skrzynki korporacyjnej konieczne jest skonfigurowanie w sekcji administracyjnej ```Serwera poczty``` oraz ```Skanera poczty```. Natomiast by móc wysyłać wiadomości przez system YetiForce należy dodatkowo ustawić sekcję ```Autologowanie```. Poniżej znajduje się opis, jak można to zrobić.
 
 ### Konfiguracja Serwera poczty
 
-W celu rozpoczęcia korzystania ze skrzynki korporacyjnej, niezbędnym będzie skonfigurowanie serwera pocztowego. Żeby to zrobić, należy wybrać w sekcji administracyjnej w menu po lewej stronie ```Narzędzia pocztowe ➞ Serwery poczty```. W tym miejscu możemy dodać nowe konfiguracje za pomocą przycisku <kbd>Dodaj rekord</kbd> lub edytować aktualnie istniejące.
+W celu rozpoczęcia korzystania ze skrzynki korporacyjnej niezbędnym będzie skonfigurowanie serwera pocztowego. Żeby to zrobić, należy wybrać w sekcji administracyjnej w menu po lewej stronie ```Narzędzia pocztowe ➞ Serwery poczty```. W tym miejscu możemy dodać nowe konfiguracje za pomocą przycisku <kbd>Dodaj rekord</kbd> lub edytować aktualnie istniejące.
 
 ![corporate-1](corporate-1.jpg)
 
@@ -32,7 +32,7 @@ Po naciśnięciu przycisku <kbd>Dodaj rekord</kbd>, będziemy mieć możliwość
 
 ### Konfiguracja Skanera poczty
 
-Kolejnym krokiem jest skonfigurowanie skanera poczty. Jego zadaniem jest pobieranie wiadomości e-mail z serwera pocztowego, a następnie inicjowanie na ich podstawie odpowiednich akcji w systemie YetiForce. W celu jego konfiguracji z lewego menu należy wybrać ```Narzędzia pocztowe ➞ Poczta - skaner```. 
+Kolejnym krokiem jest skonfigurowanie skanera poczty. Jego zadaniem jest pobieranie wiadomości e-mail z serwera pocztowego, a następnie inicjowanie na ich podstawie odpowiednich akcji w systemie YetiForce. W celu jego konfiguracji z lewego menu należy wybrać ```Narzędzia pocztowe ➞ Poczta - skaner```.
 
 ![corporate-3](corporate-3.jpg)
 
@@ -66,9 +66,9 @@ Dla każdego utworzonego konta pocztowego wybieramy użytkownika z systemu YetiF
 
 ### Konfiguracja poczty
 
-Zakładka ```Poczta - konfiguracja``` pozwala nam ustawić parametry funkcji pobierającej wiadomości z serwera pocztowego, takie jak: 
+Zakładka ```Poczta - konfiguracja``` pozwala nam ustawić parametry funkcji pobierającej wiadomości z serwera pocztowego, takie jak:
 * częstotliwość sprawdzania czy pojawiły się nowe wiadomości
-* limit maksymalnej liczby wiadomości, które można pobrać jednorazowo 
+* limit maksymalnej liczby wiadomości, które można pobrać jednorazowo
 * filtry pozwalające określić jakie wiadomości skaner poczty ma pomijać.
 
 ![corporate-7](corporate-7.jpg)

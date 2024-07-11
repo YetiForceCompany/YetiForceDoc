@@ -1,13 +1,17 @@
 ---
-title: Skrzynki Pocztowe
-description: Rodzaje i konfiguracja skrzynek pocztowych w systemie YetiForce
+title: Skrzynki pocztowe
+description: Konfiguracja skrzynek pocztowych w systemie YetiForce
 keywords:
-  - skrzynka pocztowa
-  - mail
+	- skrzynka prywatna
+	- skrzynka korporacyjna
+	- skrzynka pocztowa
+	- mail
 tags:
-  - skrzynka pocztowa
-  - mail
-preview: corporate-9.jpg
+	- skrzynka prywatna
+	- skrzynka korporacyjna
+	- skrzynka pocztowa
+	- mail
+preview: private-1.jpg
 ---
 
 ### Rodzaje Skrzynek Pocztowych w Systemie YetiForce
