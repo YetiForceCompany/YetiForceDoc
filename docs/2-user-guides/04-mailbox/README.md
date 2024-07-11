@@ -2,15 +2,15 @@
 title: Skrzynki pocztowe
 description: Konfiguracja skrzynek pocztowych w systemie YetiForce
 keywords:
-	- skrzynka prywatna
-	- skrzynka korporacyjna
-	- skrzynka pocztowa
-	- mail
+  - skrzynka prywatna
+  - skrzynka korporacyjna
+  - skrzynka pocztowa
+  - mail
 tags:
-	- skrzynka prywatna
-	- skrzynka korporacyjna
-	- skrzynka pocztowa
-	- mail
+  - skrzynka prywatna
+  - skrzynka korporacyjna
+  - skrzynka pocztowa
+  - mail
 preview: private-1.jpg
 ---
 
