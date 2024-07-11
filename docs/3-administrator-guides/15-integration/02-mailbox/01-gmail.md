@@ -102,7 +102,7 @@ Po uzyskaniu ```Client ID``` oraz ```Client Secret``` wypełniamy resztę formul
 * **Klucz tajny klienta**: wartość skopiowana z Google - ```Tajny klucz klienta```
 * **Przekieruj URI**: wybieramy aplikację utworzoną do integracji z usługą pocztową.
 
-Dane do konfiguracji IMAP i SMTP możemy podejrzeć najeżdżając na ikonę pomocy przy polu ```Host```. Dla Google należy formularz uzupełnić jak na poniższym zrzucie ekranu.
+Pozostało uzupełnienie konfiguracji IMAP i SMTP zgodnie z zaleceniami dostawcy poczty e-mail.
 
 ![gmail-14](gmail-14.jpg)
 
