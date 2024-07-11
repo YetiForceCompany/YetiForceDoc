@@ -103,7 +103,7 @@ Po uzyskaniu ```Client ID``` oraz ```Client Secret``` wypełniamy resztę formul
 * **Klucz tajny klienta**: wartość pobrana w kroku 7.
 * **Przekieruj URI**: wybieramy aplikację utworzoną do integracji z usługą pocztową.
 
-Dane do konfiguracji IMAP i SMTP możemy podejrzeć najeżdżając na ikonę pomocy przy polu ```Host```. Dla Outlook należy formularz uzupełnić jak na poniższym zrzucie ekranu.
+Pozostało uzupełnienie konfiguracji IMAP i SMTP zgodnie z zaleceniami dostawcy poczty e-mail.
 
 ![outlook-9](outlook-9.jpg)
 
