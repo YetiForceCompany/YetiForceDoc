@@ -2,13 +2,13 @@
 title: Skrzynki korporacyjne
 description: Konfiguracja korporacyjnych skrzynek pocztowych w systemie YetiForce
 keywords:
-	- skrzynka korporacyjna
-	- skrzynka pocztowa
-	- mail
+  - skrzynka korporacyjna
+  - skrzynka pocztowa
+  - mail
 tags:
-	- skrzynka korporacyjna
-	- skrzynka pocztowa
-	- mail
+  - skrzynka korporacyjna
+  - skrzynka pocztowa
+  - mail
 preview: corporate-9.jpg
 ---
 
