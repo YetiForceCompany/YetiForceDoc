@@ -45,7 +45,7 @@ Read the information at the top of the page and fill in all mandatory fields (ma
 
 Providing fake information will result in the registration being rejected.
 
-For a detailed description of the fields, see the [Form fields](administrator-guides/company/company-details/#form-fields) section below.
+For a detailed description of the fields, see the [Form fields](/administrator-guides/company/company-details/#form-fields) section below.
 
 ![OnLine-2.jpg](OnLine-2.jpg)
 
