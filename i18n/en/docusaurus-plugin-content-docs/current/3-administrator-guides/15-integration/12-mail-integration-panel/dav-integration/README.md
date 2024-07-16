@@ -2,11 +2,17 @@
 title: Integracja Poczty z YetiForce
 description: System YetiForce jako panel integracyjny w zewnętrznym kliencie poczty
 tags:
-  - poczta
-  - panel integracji
+	- poczta
+	- DAV
+	- CardDAV
+	- CalDAV
+	- panel integracji
 keywords:
-  - poczta
-  - panel integracji
+	- poczta
+	- DAV
+	- CardDAV
+	- CalDAV
+	- panel integracji
 ---
 
 System YetiForce umożliwia integrację z innymi aplikacjami, co pozwala na płynne działanie we współpracujących programach jednocześnie, bez potrzeby ciągłego przełączania się między nimi. Wykorzystywane są do tego protokoły **CalDAV** i **CardDAV** służące do synchronizacji odpowiednio kalendarza i kontaktów między różnymi urządzeniami i aplikacjami. Pozwala na integrację YetiForce z klientami poczty, kalendarzami i aplikacjami kontaktowymi.
@@ -77,7 +83,7 @@ Gdy system YetiForce jest odpowiednio przygotowany, należy wygenerować klucz, 
   * CardDav: Synchronizacja kontaktów.
   * WebDAV: Synchronizacja plików.
 
-![dav-4](dav-4.jpg)
+![dav-3](dav-3.jpg)
 
 ---
 

@@ -3,9 +3,15 @@ title: Integracja Poczty z YetiForce
 description: System YetiForce jako panel integracyjny w zewnętrznym kliencie poczty
 tags:
   - poczta
+  - DAV
+  - CardDAV
+  - CalDAV
   - panel integracji
 keywords:
   - poczta
+  - DAV
+  - CardDAV
+  - CalDAV
   - panel integracji
 ---
 
@@ -75,7 +81,6 @@ Gdy system YetiForce jest odpowiednio przygotowany, należy wygenerować klucz, 
 * W oknie modalnym, które się pojawi, wybierz użytkownika, dla którego chcesz wygenerować klucz, a następnie określ typ synchronizacji:
   * CalDav: Synchronizacja kalendarzy.
   * CardDav: Synchronizacja kontaktów.
-  * WebDAV: Synchronizacja plików.
 
 ![dav-3](dav-3.jpg)
 
