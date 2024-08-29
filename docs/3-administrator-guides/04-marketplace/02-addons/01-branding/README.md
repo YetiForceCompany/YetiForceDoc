@@ -2,7 +2,7 @@
 title: Personalizacja Brandingu
 description: Personalizacja Brandingu
 keywords:
-  - Marketplace
+  - marketplace
   - personalizacja
   - branding
 tags:
