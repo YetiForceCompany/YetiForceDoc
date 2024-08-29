@@ -6,7 +6,7 @@ keywords:
   - personalizacja
   - branding
 tags:
-  - Marketplace
+  - marketplace
   - personalizacja
   - branding
 preview: branding-1.jpg
