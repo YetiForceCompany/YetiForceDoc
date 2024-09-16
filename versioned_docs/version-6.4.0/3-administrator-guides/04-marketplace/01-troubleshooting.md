@@ -15,16 +15,16 @@ Poniższy artykuł opisuje proces rozwiązywania problemów w przypadku, gdy zak
 
 ## Zaktualizuj status rejestracji
 
-Do prawidłowego działania sklepu oraz zakupionych w nim dodatków konieczne jest poprawne zarejestrowanie systemu YetiForce CRM. Jeśli mimo prawidłowej rejestracji Twój system nadal oczekuje na akceptację, możesz odświeżyć jej status klikając na przycisk `Sprawdź status` w panelu [`Konfiguracja systemu → Firma → Dane firmy`](/administrator-guides/company/company-details/#check-status).
+Do prawidłowego działania sklepu oraz zakupionych w nim dodatków konieczne jest poprawne zarejestrowanie systemu YetiForce CRM. Jeśli mimo prawidłowej rejestracji Twój system nadal oczekuje na akceptację, możesz odświeżyć jej status klikając na przycisk `Sprawdź status` w panelu [`Konfiguracja systemu → Firma → Dane firmy`](/6.4.0/administrator-guides/company/company-details/#sprawdź-status).
 
-- Więcej informacji o rejestracji systemu znajdziesz w poradniku: [ Jak zarejestrować YetiForce](/administrator-guides/company/company-details/#how-to-register-yetiforce).
-- W przypadku problemów z rejestracją pomoc znajdziesz w poradniku: [ Problem z rejestracją systemu](/administrator-guides/company/problems-with-system-registration/).
+- Więcej informacji o rejestracji systemu znajdziesz w poradniku: [ Jak zarejestrować YetiForce](/6.4.0/administrator-guides/company/company-details/#jak-zarejestrować-yetiforce).
+- W przypadku problemów z rejestracją pomoc znajdziesz w poradniku: [ Problem z rejestracją systemu](/6.4.0/administrator-guides/company/problems-with-system-registration/).
 
 ## Sprawdź, czy masz najnowszą wersję YetiForce oraz wszystkie poprawki
 
 Aktualizacje naprawiają błędy zgłoszone przez naszą społeczność oraz naszych pracowników, dlatego ważne jest aktualizowanie systemu na bieżąco.
 
-- Więcej informacji o procesie aktualizacji YetiForce znajdziesz w artykule [Aktualizacja systemu](/administrator-guides/logs/updates/).
+- Więcej informacji o procesie aktualizacji YetiForce znajdziesz w artykule [Aktualizacja systemu](/6.4.0/administrator-guides/logs/updates/).
 - Listę poprawek możesz znaleźć na naszym repozytorium GitHub w zakładce [Releases](https://github.com/YetiForceCompany/YetiForceCRM/releases).
 
 ## Sprawdź konfigurację serwera.
@@ -33,7 +33,7 @@ Błędna konfiguracja serwera ma wpływ na działanie całego systemu. Nieprawid
 
 :::important
 
-Więcej informacji o konfiguracji serwera znajdziesz w artykułach: [Wymagania YetiForce dla serwera](/introduction/requirements/) i [Logi - serwer - konfiguracja](/administrator-guides/logs/server-configuration).
+Więcej informacji o konfiguracji serwera znajdziesz w artykułach: [Wymagania YetiForce dla serwera](/introduction/requirements/) i [Logi - serwer - konfiguracja](/6.4.0/administrator-guides/logs/server-configuration).
 
 :::
 
@@ -43,7 +43,7 @@ Uruchom logi PHP, systemu YetiForce, oraz serwera i sprawdź, czy działa komuni
 
 :::important
 
-Więcej informacji o logach znajdziesz w artykule [Debugowanie](/developer-guides/debug).
+Więcej informacji o logach znajdziesz w artykule [Debugowanie](/6.4.0/developer-guides/debug).
 
 :::
 
@@ -53,10 +53,10 @@ Jeśli mimo wykonania powyższych kroków nadal występują problemy z dodatkami
 
 - [APP ID](/administrator-guides/app-id/)
 - wersja systemu
-- pełne logi, zgodnie z artykułem [Debugowanie](/developer-guides/debug)
-- załącz [raport konfiguracji serwera](/administrator-guides/logs/server-configuration/#download-configuration)
-- załącz zrzut ekranu [rejestracji systemu](/administrator-guides/company/company-details/#offline)
+- pełne logi, zgodnie z artykułem [Debugowanie](/6.4.0/developer-guides/debug)
+- załącz [raport konfiguracji serwera](/6.4.0/administrator-guides/logs/server-configuration/#pobierz-konfigurację)
+- załącz zrzut ekranu [rejestracji systemu](/6.4.0/administrator-guides/company/company-details/#offline)
 - załącz zrzut ekranu produktów zakupionych w Marketplace
-- załącz zrzut ekranu [wgranych aktualizacji](/administrator-guides/logs/updates/#activities-during-the-update)
+- załącz zrzut ekranu [wgranych aktualizacji](/6.4.0/administrator-guides/logs/updates/#czynności-podczas-aktualizacji)
 
-Zalecamy, aby dane dostępowe przesyłać szyfrowaną pocztą (PGP/GPG). Lista wymaganych danych znajduje się w artykule [Dane dostępowe do systemu YetiForce. ](/developer-guides/github/access-data-to-YetiForce-system)
+Zalecamy, aby dane dostępowe przesyłać szyfrowaną pocztą (PGP/GPG). Lista wymaganych danych znajduje się w artykule [Dane dostępowe do systemu YetiForce. ](/6.4.0/developer-guides/github/access-data-to-YetiForce-system)

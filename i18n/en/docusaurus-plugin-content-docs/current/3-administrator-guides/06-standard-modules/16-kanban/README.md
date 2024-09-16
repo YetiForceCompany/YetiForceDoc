@@ -1,63 +1,83 @@
 ---
-title: Kanban board
-description: The article describes the YetiForce Kanban Board addon configuration
+title: Tablica Kanban
+description: Artykuł opisuje konfigurację dodatku YetiForce Kanban Board
 keywords:
   - kanban
-  - board
-  - view
-  - Settings
+  - tablica
+  - widok
+  - ustawienia
   - YetiForce
 tags:
   - Kanban
-preview: kanban-1.jpg
+  - Tablica
+preview: kanban-1.png
 ---
 
-Boards in the Kanban view use cards and columns that can be easily configured in the panel according to the needs of your company. Moreover, in the YetiForce system, you can create multiple tables for one module that will present the data grouped in various ways.
+Tablice Kanban w systemie YetiForce to wizualne narzędzie do zarządzania procesami i projektami. Pozwalają one na organizację pracy poprzez podział na
+kolumny reprezentujące etapy procesu (np. "Do zrobienia", "W trakcie", "Zakończone") oraz karty symbolizujące konkretne zadania, które można przeciągać między
+kolumnami. Dzięki temu w łatwy sposób możemy śledzić postęp prac, identyfikować wąskie gardła i optymalizować przepływ zadań. Tablice Kanban są zintegrowane z
+innymi modułami YetiForce, co wspiera zarządzanie zadaniami w kontekście działań sprzedażowych, projektowych, serwisowych i innych.
 
 :::warning
-
-The YetiForce Kanban Board is a subscription based addon available in our Marketplace - [**Buy YetiForce Kanban Board**](https://yetiforce.com/pl/marketplace/dodatki/92-yetiforce-kanban-board.html)
-
+  Dodatek YetiForce Kanban Board jest dostępny do subskrypcji w naszym Marketplace. - [**Więcej informacji**](https://yetiforce.com/pl/tablica-kanban.html)
 :::
 
-![kanban-1](kanban-1.jpg)
+![Widok ekranu konfiguracji](kanban-1.png)
 
-## Configuration
 
-The configuration panel for the YetiForce Kanban Board can be found in `Software configuration  → Standard modules → Kanban`
 
-![kanban-2](kanban-2.jpg)
+## Konfiguracja
 
-From the list of available modules in the upper right corner of the screen, select the module where the Kanban board should be available:
+Panel konfiguracyjny YetiForce Kanban Board znajduje się w  <kbd>Konfiguracja oprogramowania → Standardowe moduły → Kanban</kbd>.
 
-![kanban-3](kanban-3.jpg)
+![Otwieranie widoku modułu kanban - otwarcie listy modułów](kanban-2-1.png)
+![Otwieranie widoku modułu kanban - wybór modułu](kanban-2-2.png)
 
-## Create boards
+Z listy dostępnych modułów, widocznej w prawym górnym rogu ekranu (1), należy wybrać moduł (2), w którym powinny być dostępne tablice Kanban:
 
-Click <kbd>+ Add board</kbd> and select the field used to create a board in the module selected in the previous step:
+![Wybór modułu systemowego](kanban-3.png)
 
-![kanban-4](kanban-4.jpg)
 
-Once you click <kbd>Add</kbd> the board will be available in the selected module.
 
-![kanban-5](kanban-5.jpg)
+## Tworzenie tablic
 
-## Board parameters
+Kliknij przycisk <kbd>+ Dodaj tablicę</kbd> i wybierz pole, które zostanie użyte do stworzenia tablicy w wybranym w poprzednim kroku module:
 
-- Detail fields - list of fields used to display data from records in the Kanban Board. If the field has an icon, the icon will be visible on the board. All fields from the system are available according to users' permissions.
+![Wybór pól z modułu](kanban-4.png)
 
-  ![kanban-6](kanban-6.jpg)
+Po kliknięciu przycisku <kbd>Dodaj</kbd>, tablica będzie dostępna w wybranym module.
 
-- Summation fields -list of fields to be summed for a given value (Kanban column) where Kanban is displayed. Only numeric fields are available where summation operations can be performed.
+![Widok wyboru pola](kanban-5.png)
 
-  ![kanban-7](kanban-7.jpg)
 
-The data in the pick list is saved automatically upon each change.
+
+## Parametry tablicy
+
+- Pola szczegółowe - lista pól w których mają się pojawić dane rekordu. Jeśli dane pole ma ustawioną ikonę, to będzie ona widoczna. Dostępne są wszystkie pola z systemu z uwzględnieniem uprawnień użytkownika.
+
+  ![Widok pól szczegółowych](kanban-6.png)
+
+- Pola sumowania - lista pól które mają być poddane sumowaniu dla danej wartości (słupka kanbana), dla której jest wyświetlany kanban. Dostępne są tylko pola liczbowe, na których można wykonać operacje sumowania.
+
+  ![Widok sumowania](kanban-7.png)
+
+Dane na liście wyboru są zapisane automatycznie podczas każdej zmiany.
+
+
 
 ## Uprawnienia
 
-Users need permissions for the Kanban board in order to be able to use it.
+Aby użytkownik mógł korzystać z widoku Kanban, musi posiadać on odpowiedni poziom uprawnień.
 
-To grant the permissions, go to [`Software configuration → Permissions → Profiles`](/administrator-guides/permissions/profiles/), select a profile and enable the "Kanban" option.
+W tym celu należy przejść do <kbd>[`Konfiguracja systemu → Uprawnienia → Profile`](/administrator-guides/permissions/profiles/)</kbd>, a następnie
+wybrać odpowiedni profil:
 
-![kanban-8](kanban-8.jpg)
+![Wybór profilu](kanban-8-1.png)
+
+po czym wybrać odpowiedni moduł, w którym, opcja Kanban powinna być dostępna
+
+![Wybór modułu](kanban-8-2.png)
+
+finalnie, dostosować opcje uprawnień.
+
+![Zmiana uprawnień do akcji i widoków](kanban-8-3.png)

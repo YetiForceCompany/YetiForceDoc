@@ -7,6 +7,7 @@ keywords:
   - YetiForce
 tags:
   - Kolektory rekordów
+preview: record-collector-2.jpg
 ---
 
 ## Prezentacja wideo
@@ -30,20 +31,35 @@ import ReactPlayer from 'react-player';
 </Tabs>
 
 Kolektor rekordów jest używany do ładowania danych z różnych źródeł i umożliwia wyświetlanie i wczytywanie danych do systemu YetiForce CRM.
-
-![record-collector-1](record-collector-1.jpg)
-
 Mechanizm jest dostępny we wszystkich modułach, jednak musi być włączony i skonfigurowany dla każdego modułu do poprawnego działania.
 
 ## Konfiguracja
 
-Kolekcjonerzy mogą być skonfigurowane w następującym panelu: [`Konfiguracja oprogramowania → Integracja → Kolekcjonerzy`](/administrator-guides/integration/record-collectors/)
+Konfigurując **kolektor rekordów** w pierwszej kolejności należy nadać odpowiednie uprawienia dla odpowiednich ról w systemie. Szczegółowe informacje na ten temat znajdują się w artykule: [Uprawnienia do kolektora rekordów](/administrator-guides/integration/record-collectors/).
+
+Następnie przejdź do sekcji administracyjnej i wybierz ```Integracja → Kolektor rekordów```. Po otwarciu zakładki wyświetli się lista dostępnych kolektorów.
+
+![record-collector-2](record-collector-2.jpg)
+
+**Najważniejsze kolumny**
+* **Moduły** - pokazuje miejsca w systemie, dla których dany kolektor jest dostępny
+* **Typ** - określa typ kolektora:
+  - **wyświetl** - wyświetla informację pobraną z kolektora
+  - **pokaż i wypełnij** - pozwala nie tylko wyświetlić dane pobrane z kolektora, ale również wypełnić nimi formularz w systemie
+* **Adres URL dokumentacji** - link do dokumentacji dostawcy usługi, zawierający szczegółowe informacje na temat kolektora. Znajdziesz tam m.in. instrukcje konfiguracji czy też sposób uzyskania danych autoryzacyjnych, jeżeli są one potrzebne
+* **Wyróżniony** - oznacz ten checkbox, aby ikona danego kolektora została wyświetlona obok listy rozwijanej wszystkich uruchomionych kolektorów. Ułatwi to szybki dostęp do najczęściej używanych integratorów
+* **Aktywny** - oznacz ten checkbox, aby dany kolektor był dostępny do wybrania w systemie
+* **Akcje** - kliknij ikonę akcji (<kbd><i className="fas fa-cog"></i></kbd>), aby rozwinąć okno dialogowe z dodatkowymi opcjami konfiguracyjnymi kolektora
 
 ## Dostępne kolektory
 
-Poniżej znajduje się lista wszystkich aktualnie dostępnych kolektorów rekordów. Darmowe kolekcjonerskie dostępne w systemie są domyślnie oznaczone tagiem, pozostałe mogą być zakupione w Marketplace. 
+Poniżej znajduje się lista wszystkich aktualnie dostępnych kolektorów rekordów. Darmowe kolekcjonerskie dostępne w systemie są domyślnie oznaczone tagiem, pozostałe mogą być zakupione w Marketplace. Regularnie dodajemy do systemu YetiForce nowe kolektory rekordów.
 
-Regularnie dodajemy do systemu YetiForce nowe kolektory rekordów.
+:::warning
+Należy pamiętać, że dostęp do danych z niektórych kolektorów może wymagać odpowiednich danych uwierzytelniających.
+
+**Prosimy o zapoznanie się z dokumentacją danego kolektora, aby uzyskać więcej informacji na temat wymagań dotyczących dostępu.**
+:::
 
 - GUS [PL] - Pobiera dane o polskich firmach z bazy danych REGON 1(BIR1) dostarczonej przez GUS
 - ★ VIES [EU] - Sprawdza, czy podmiot gospodarczy posiada ważny numer VAT-UE dla transakcji wewnątrzwspólnotowych w Unii Europejskiej
@@ -62,3 +78,12 @@ Regularnie dodajemy do systemu YetiForce nowe kolektory rekordów.
 - VAT [GB] - Sprawdza czy firma jest zarejestrowana jako podatnik VAT w Wielkiej Brytanii
 - EDGAR [USA] - Pobieranie danych o firmach w USA z U.S. Securities andExchange Commission (SEC) z bazy EDGAR
 - VATify.eu - Pobieranie danych firm z bazy VATify.eu, która również zawiera aktualny status płatnika VAT
+
+
+## Wykorzystanie kolektora
+
+W celu skorzystania z kolektora rekordów, przejdź do formularza w module, dla którego jest on dostępny. Na dole pojawi się wówczas lista dostępnych kolektorów. Te, które zostały oznaczone w sekcji administracyjnej jako **Wyróżnione** zostaną wyświetlone na liście niezależnie. Pozostałe aktywne kolektory dostępne są pod przyciskiem <kbd>Kolektory rekordów</kbd>. Po kliknięciu to pole, rozwinie się lista aktywnych kolektorów.
+
+Dostęp do kolektorów również jest możliwy w formularzach typu "Szybkie tworzenie". W oknie modalnym pojawiają się one u góry po prawej stronie, jak to zostało przedstawione na poniższym zrzucie ekranu.
+
+![record-collector-1](record-collector-1.jpg)
