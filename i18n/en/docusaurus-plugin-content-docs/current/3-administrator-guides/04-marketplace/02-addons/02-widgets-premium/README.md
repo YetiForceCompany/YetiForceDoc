@@ -2,15 +2,15 @@
 title: Widżety Premium
 description: Konfiguracja Widgetu PDF Premium
 keywords:
-	- Marketplace
-	- Dodatki
-	- Widżety
-	- PDF
-	- Historia Zmian
+  - Marketplace
+  - Dodatki
+  - Widżety
+  - PDF
+  - Historia Zmian
 tags:
-	- Widżety
-	- PDF
-	- Historia Zmian
+  - Widżety
+  - PDF
+  - Historia Zmian
 preview: widgets-1.jpg
 ---
 
@@ -19,6 +19,7 @@ preview: widgets-1.jpg
 :::warning
 
 Widżety Premium są dodatkiem płatnym i wymagają wykupienia subskrypcji.
+
 :::
 
 ## Podgląd PDF
@@ -35,7 +36,8 @@ Widżet umożliwiający podgląd dokumentów PDF przed ich wygenerowaniem! Ten d
 
 ### Konfiguracja Podglądu PDF
 
-W pierwszej kolejności należy się upewnić, czy dla danego modułu posiadamy stworzony szablon PDF. Następnie możemy przejść do konfiguracji samego widżetu:
+W pierwszej kolejności należy się upewnić, czy dla danego modułu posiadamy stworzony szablon PDF.
+Następnie możemy przejść do konfiguracji samego widżetu:
 
 1. Przejdź do sekcji administracyjnej YetiForce.
 2. Wybierz z lewego menu ```Moduły standardowe ➜ Moduły widżety```.
@@ -78,13 +80,14 @@ Dodatek **Historia Zmian** w systemie YetiForce zapewnia kompleksowy wgląd w ak
 :::warning
 
 Pamiętaj, by przy tworzeniu widżetu wybrać odpowiednią rolę oraz pulpit, na którym ma się on pojawić.
+
 :::
 
 1. Przejdź do sekcji administracyjnej YetiForce.
 2. Wybierz z lewego menu ```Moduły standardowe ➜ Panel widżety```.
-4. Kliknij przycisk <kbd>Predefiniowane widżety</kbd>.
-5. Wybierz widżet **Historia aktualizacji systemu** z listy dostępnych widżetów.
-6. Wprowadź parametry widżetu i zapisz zmiany.
+3. Kliknij przycisk <kbd>Predefiniowane widżety</kbd>.
+4. Wybierz widżet **Historia aktualizacji systemu** z listy dostępnych widżetów.
+5. Wprowadź parametry widżetu i zapisz zmiany.
 
 ![widgets-3.jpg](widgets-3.jpg)
 
