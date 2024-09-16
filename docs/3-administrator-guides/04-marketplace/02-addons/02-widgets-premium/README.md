@@ -19,6 +19,7 @@ preview: widgets-1.jpg
 :::warning
 
 Widżety Premium są dodatkiem płatnym i wymagają wykupienia subskrypcji.
+
 :::
 
 ## Podgląd PDF
@@ -84,9 +85,9 @@ Pamiętaj, by przy tworzeniu widżetu wybrać odpowiednią rolę oraz pulpit, na
 
 1. Przejdź do sekcji administracyjnej YetiForce.
 2. Wybierz z lewego menu ```Moduły standardowe ➜ Panel widżety```.
-4. Kliknij przycisk <kbd>Predefiniowane widżety</kbd>.
-5. Wybierz widżet **Historia aktualizacji systemu** z listy dostępnych widżetów.
-6. Wprowadź parametry widżetu i zapisz zmiany.
+3. Kliknij przycisk <kbd>Predefiniowane widżety</kbd>.
+4. Wybierz widżet **Historia aktualizacji systemu** z listy dostępnych widżetów.
+5. Wprowadź parametry widżetu i zapisz zmiany.
 
 ![widgets-3.jpg](widgets-3.jpg)
 

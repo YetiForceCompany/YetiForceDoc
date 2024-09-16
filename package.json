@@ -31,5 +31,9 @@
 		"react-player": "^2",
 		"redocusaurus": "^2",
 		"url": "^0"
+	},
+	"volta": {
+		"node": "18.20.4",
+		"yarn": "1.22.22"
 	}
 }
