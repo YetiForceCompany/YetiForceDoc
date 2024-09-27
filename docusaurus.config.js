@@ -16,7 +16,7 @@ export default {
 	projectName: 'YetiForceCRM',
 	i18n: {
 		defaultLocale: 'pl',
-		locales: ['en','pl'],
+		locales: ['pl', 'en'],
 	},
 	presets: [
 		[
@@ -54,80 +54,80 @@ export default {
 					{
 						id: 'WebserviceStandard_7x',
 						spec: './api/7x/WebserviceStandard.json',
-						url: '/api/7x/WebserviceStandard.json'
+						url: '/api/7x/WebserviceStandard.json',
 					},
 					{
 						id: 'WebserviceStandard_65',
 						spec: './api/65/WebserviceStandard.json',
-						url: '/api/65/WebserviceStandard.json'
+						url: '/api/65/WebserviceStandard.json',
 					},
 					{
 						id: 'WebserviceStandard_64',
 						spec: './api/64/WebserviceStandard.json',
-						url: '/api/64/WebserviceStandard.json'
+						url: '/api/64/WebserviceStandard.json',
 					},
 					{
 						id: 'WebservicePremium_7x',
 						spec: './api/7x/WebservicePremium.json',
-						url: '/api/7x/WebservicePremium.json'
+						url: '/api/7x/WebservicePremium.json',
 					},
 					{
 						id: 'WebservicePremium_65',
 						spec: './api/65/WebservicePremium.json',
-						url: '/api/65/WebservicePremium.json'
+						url: '/api/65/WebservicePremium.json',
 					},
 					{
 						id: 'WebservicePremium_64',
 						spec: './api/64/WebservicePremium.json',
-						url: '/api/64/WebservicePremium.json'
+						url: '/api/64/WebservicePremium.json',
 					},
 					{
 						id: 'ManageConsents_7x',
 						spec: './api/7x/ManageConsents.json',
-						url: '/api/7x/ManageConsents.json'
+						url: '/api/7x/ManageConsents.json',
 					},
 					{
 						id: 'ManageConsents_65',
 						spec: './api/65/ManageConsents.json',
-						url: '/api/65/ManageConsents.json'
+						url: '/api/65/ManageConsents.json',
 					},
 					{
 						id: 'ManageConsents_64',
 						spec: './api/64/ManageConsents.json',
-						url: '/api/64/ManageConsents.json'
+						url: '/api/64/ManageConsents.json',
 					},
 					{
 						id: 'SMS_7x',
 						spec: './api/7x/SMS.yaml',
 						url: '/api/7x/SMS.yaml',
-						route: '/api2/7x/SMS/'
+						route: '/api2/7x/SMS/',
 					},
 					{
 						id: 'SMS_65',
 						spec: './api/65/SMS.yaml',
 						url: '/api/65/SMS.yaml',
-						route: '/api2/65/SMS/'
+						route: '/api2/65/SMS/',
 					},
 					{
 						id: 'SMS_64',
 						spec: './api/64/SMS.yaml',
 						url: '/api/64/SMS.yaml',
-						route: '/api2/64/SMS/'
+						route: '/api2/64/SMS/',
 					},
 					{
 						id: 'Token_7x',
 						spec: './api/7x/Token.yaml',
 						url: '/api/7x/Token.yaml',
-						route: '/api2/7x/Token/'
+						route: '/api2/7x/Token/',
 					},
 					{
 						id: 'PBX_7x',
 						spec: './api/7x/PBX.yaml',
-						url: '/api/7x/PBX.yaml'
+						url: '/api/7x/PBX.yaml',
 					},
-				]
-			}
-		]
+				],
+			},
+		],
 	],
 	themeConfig: {
 		metadata: [
