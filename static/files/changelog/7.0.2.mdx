@@ -1,0 +1,79 @@
+```
+# YetiForce Change Log
+
+## 7.0.2 2024.09.13
+
+- Enh: Ability to configure where summaries are displayed in advanced blocks
+- Enh: Extended filtering and sorting capabilities in the workflow action list
+- Enh: Added ability to autocomplete geographic coordinates for the Coordinates field directly from the map view (Locations module)
+- Enh: Added userPrincipalName for SSO verification (Microsoft Entra)
+- Enh: Extended IMAP connection class to move emails to another folder (backend only)
+
+- Fix: Default modern interface: Advanced block, widgets, etc.
+- Fix: Displaying a multipicklist value in record list view
+- Fix: (PDF) Page numbering for the chromium engine
+- Fix: (Mail Scanner) Eliminates the image download error for outdated URLs
+- Fix: (Mail Scanner) Error scanning empty mailbox folders
+- Fix: DebugBar
+- Fix: Display error messages for Record Collector
+- Fix: Data update for MultiReference fields. The case of non-existent entries.
+- Fix: Link for the Coordinates field in the records list view
+- Fix: Creating a duplicate when completing data based on a RecordCollector from a workflow action
+- Fix: Automatic change of currency symbol in currency fields, based on the settings of the currency picklist field (module: Payments In, Payments Out)
+- Fix: Value for a double type field is no longer rounded when displayed.
+- Fix: Support for php8 in workflow conditions
+- Fix: Hierarchy in the sales opportunity module including archived records
+- Fix: Possibility to change the login password after authenticating with another method, e.g. SSO
+- Fix: YetiForce CLI methods when there is no migration (Doctrine)
+- Fix: Record preview: Listing fields on widgets
+- Fix: Content Sensitive help in Layout Editor hangs (#17505)
+- Fix: Sum fields in related list view (#17482)
+- Fix: Dav authentication (php8 support)
+- Fix: Logger for Dav integration
+- Fix: Permission type to generate mapped field records
+- Fix: Comment display (edit/preview)
+- Fix: Conflict of interests panel (DataTable)
+- Fix: Quick edit of the MultipicklistTags field
+- Fix: Displaying users who have been permanently removed from the system
+- Fix: Calculating progress on service contracts with inactive date fields
+- Fix: Displaying buttons in the calendar creation view
+- Fix: PDFViewer widget (support php8.3)
+- Fix: Exporting advanced module data
+- Fix: Displaying buttons in popover for multiImage fields
+- Fix: Displaying badges element in record link popover
+- Fix: Communication via imap in smtp settings
+- Fix: Autocomplete values from deleted records
+- Fix: Data Summary widget responsiveness
+- Fix: Calculating amounts in the tax modal window (advanced block)
+- Fix: Deleting advanced block elements when creating new entries for default rows (advanced block)
+- Fix: Related list paginate total records amount
+- Fix: Timeline widget layout for better responsiveness
+- Fix: Viewing currency rates when no source bank is specified (admin panel)
+- Fix: Display columns in report template
+- Fix: Added some missing translations
+- Fix: Events for Additional data sources in Calendar view filters
+- Fix: Import data
+- Fix: Incorrect message when removing shared permissions (Module access panel)
+- Fix: Displaying content in the workflow action list (double encoding #16590)
+- Fix: Displaying data from other modules on the calendar (Calendar extra data sources)
+- Fix: Negative values ​​in the geographic coordinates field (Locations module)
+- Fix: Unused buttons from pointer map modal window (Locations module)
+- Fix: Adjusting action buttons in tile view (css)
+- Fix: Updated dependent libraries (composer)
+- Fix: Validation of access keys in the map providers configuration
+- Fix: Reset password from CLI (incorrect variable typing in dependent library)
+- Fix: Widget type "Chart from filter". Improved chart links and data for Tabular widgets
+- Fix: Minor fixes (typing, variable declaration, etc. | PHP8.3)
+- Fix: Identification of scanned email type (Internal, Sent, Received)
+
+- Chg: Roundcube email client update (#99 Upgrade imports button style)
+- Chg: Record status marking restored in record list view
+- Chg: Error messages from collector record elements
+- Chg: Improved ConfReport (panel with basic configuration of server parameters)
+- Chg: Error handling for imap connections (SMTP)
+- Chg: Mandatory pdf template in Send pdf action in workflow
+- Chg: Default timeout for http requests from 10 to 60 seconds
+- Chg: The "Short Name" field in the Account module can now be deactivated
+
+- Rem: Removed WebDAV configurations. Code cleanup as this functionality was never implemented.
+```
