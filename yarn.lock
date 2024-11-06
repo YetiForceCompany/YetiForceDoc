@@ -2065,10 +2065,10 @@
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
-"@crowdin/cli@3":
-  version "3.19.2"
-  resolved "https://registry.yarnpkg.com/@crowdin/cli/-/cli-3.19.2.tgz#d81d85c78d7235c6c273bae72c93631dc0aedab6"
-  integrity sha512-eO/BFcLl2m96dRlEth3hsbbPJNsiTZaLqsAkot27eE4DS5+IpkV0NbcBgMsja+t0ugPAPYQ7Crc+AruO5ywvmg==
+"@crowdin/cli@4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@crowdin/cli/-/cli-4.3.0.tgz#0a61f1c13fecb94111e6f20702dbceb3cf63da7e"
+  integrity sha512-k1Mtf5U43WDpXvl4b3KNXGQJyf0eKX+ZJDOCDR9P7dW0L6CeuWRkJ9Yhu7LanWPG7Cu3FOqRIKGgmOiLQnxgzw==
   dependencies:
     command-exists-promise "^2.0.2"
     node-fetch "2.7.0"
@@ -6883,11 +6883,11 @@ is-ci@^3.0.1:
     ci-info "^3.2.0"
 
 is-core-module@^2.13.0:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.13.1.tgz#ad0d7532c6fea9da1ebdc82742d74525c6273384"
-  integrity sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.15.1.tgz#a7363a25bee942fefab0de13bf6aa372c82dcc37"
+  integrity sha512-z0vtXSwucUJtANQWldhbtbt7BnL0vxiFjIdDLAatwhDYty2bad6s+rijD6Ri4YuYJubLzIJLUidCh09e1djEVQ==
   dependencies:
-    hasown "^2.0.0"
+    hasown "^2.0.2"
 
 is-data-view@^1.0.1:
   version "1.0.1"
@@ -11753,9 +11753,9 @@ yargs@^17.0.1:
     yargs-parser "^21.1.1"
 
 yauzl@^3.1.0:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/yauzl/-/yauzl-3.1.3.tgz#f61c17ad1a09403bc7adb01dfb302a9e74bf4a50"
-  integrity sha512-JCCdmlJJWv7L0q/KylOekyRaUrdEoUxWkWVcgorosTROCFWiS9p2NNPE9Yb91ak7b1N5SxAZEliWpspbZccivw==
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/yauzl/-/yauzl-3.2.0.tgz#7b6cb548f09a48a6177ea0be8ece48deb7da45c0"
+  integrity sha512-Ow9nuGZE+qp1u4JIPvg+uCiUr7xGQWdff7JQSk5VGYTAZMDe2q8lxJ10ygv10qmSj031Ty/6FNJpLO4o1Sgc+w==
   dependencies:
     buffer-crc32 "~0.2.3"
     pend "~1.2.0"

@@ -14,7 +14,7 @@
 		"crowdin": "crowdin"
 	},
 	"dependencies": {
-		"@crowdin/cli": "3",
+		"@crowdin/cli": "4.3.0",
 		"@docusaurus/core": "^3.5.2",
 		"@docusaurus/plugin-client-redirects": "^3.5.2",
 		"@docusaurus/plugin-content-docs": "^3.5.2",
@@ -31,6 +31,14 @@
 		"react-player": "^2",
 		"redocusaurus": "^2",
 		"url": "^0"
+	},
+	"browserslist": [
+		"last 2 version",
+		"> 1%"
+	],
+	"engines": {
+		"node": "18.20",
+		"yarn": "1.22"
 	},
 	"volta": {
 		"node": "18.20.4",
