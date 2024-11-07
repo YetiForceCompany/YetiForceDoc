@@ -27,6 +27,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Run Link Checker
-        uses: mr8lu/link-validator@v1.0.0
+        uses: mr8lu/link-validator@v1.0.1
         with:
           directory: 'docs, versioned_docs' # Adjust the directory as needed
