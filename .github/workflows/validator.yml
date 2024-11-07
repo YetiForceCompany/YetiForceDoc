@@ -19,6 +19,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
+          use-quiet-mode: 'yes'
           folder-path: 'docs, versioned_docs'
           file-extension: '.md, .mdx'
 
