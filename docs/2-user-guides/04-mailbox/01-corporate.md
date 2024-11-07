@@ -18,11 +18,11 @@ Skrzynki firmowe są ściśle zintegrowane z innymi modułami YetiForce. Pozwala
 
 ## Konfiguracja
 
-By móc skorzystać z funkcjonalności skrzynki korporacyjnej konieczne jest skonfigurowanie w sekcji administracyjnej ```Serwera poczty``` oraz ```Skanera poczty```. Natomiast by móc wysyłać wiadomości przez system YetiForce należy dodatkowo ustawić sekcję ```Autologowanie```. Poniżej znajduje się opis, jak można to zrobić.
+By móc skorzystać z funkcjonalności skrzynki korporacyjnej konieczne jest skonfigurowanie w sekcji administracyjnej `Serwera poczty` oraz `Skanera poczty`. Natomiast by móc wysyłać wiadomości przez system YetiForce należy dodatkowo ustawić sekcję `Autologowanie`. Poniżej znajduje się opis, jak można to zrobić.
 
 ### Konfiguracja Serwera poczty
 
-W celu rozpoczęcia korzystania ze skrzynki korporacyjnej niezbędnym będzie skonfigurowanie serwera pocztowego. Żeby to zrobić, należy wybrać w sekcji administracyjnej w menu po lewej stronie ```Narzędzia pocztowe ➞ Serwery poczty```. W tym miejscu możemy dodać nowe konfiguracje za pomocą przycisku <kbd>Dodaj rekord</kbd> lub edytować aktualnie istniejące.
+W celu rozpoczęcia korzystania ze skrzynki korporacyjnej niezbędnym będzie skonfigurowanie serwera pocztowego. Żeby to zrobić, należy wybrać w sekcji administracyjnej w menu po lewej stronie `Narzędzia pocztowe ➞ Serwery poczty`. W tym miejscu możemy dodać nowe konfiguracje za pomocą przycisku <kbd>Dodaj rekord</kbd> lub edytować aktualnie istniejące.
 
 ![corporate-1](corporate-1.jpg)
 
@@ -32,7 +32,7 @@ Po naciśnięciu przycisku <kbd>Dodaj rekord</kbd>, będziemy mieć możliwość
 
 ### Konfiguracja Skanera poczty
 
-Kolejnym krokiem jest skonfigurowanie skanera poczty. Jego zadaniem jest pobieranie wiadomości e-mail z serwera pocztowego, a następnie inicjowanie na ich podstawie odpowiednich akcji w systemie YetiForce. W celu jego konfiguracji z lewego menu należy wybrać ```Narzędzia pocztowe ➞ Poczta - skaner```.
+Kolejnym krokiem jest skonfigurowanie skanera poczty. Jego zadaniem jest pobieranie wiadomości e-mail z serwera pocztowego, a następnie inicjowanie na ich podstawie odpowiednich akcji w systemie YetiForce. W celu jego konfiguracji z lewego menu należy wybrać `Narzędzia pocztowe ➞ Poczta - skaner`.
 
 ![corporate-3](corporate-3.jpg)
 
@@ -41,20 +41,21 @@ Przycisk <kbd>Dodaj rekord</kbd> umożliwi stworzenie nowego skanera poczty.
 ![corporate-4](corporate-4.jpg)
 
 #### Pole formularza tworzenia skanera pocztowego
-- Serwer - serwer pocztowy utworzony w ```Narzędzia pocztowe ➔ Serwery poczty```
+
+- Serwer - serwer pocztowy utworzony w `Narzędzia pocztowe ➔ Serwery poczty`
 - Login - login służący do zalogowania się do poczty
 - Hasło - hasło umożliwiające zalogowanie się do poczty (opcjonalne przy uwierzytelnianiu OAuth)
 - Akcje skanera poczty
-	- Stwórz e-maila - wybranie tej opcji powoduje pobieranie wiadomości email z serwera pocztowego
-	- Powiąż wiadomość e-mail - pozwala połączyć wiadomość z użytkownikiem lub innym zasobem systemu na podstawie kryteriów określonych w ```Pole wyszukiwania```
-	- Otwórz zgłoszenie - ustawia odpowiedni status dla zgłoszenia powiązanego z pobraną wiadomością mailową
-	- Utwórz zgłoszenie - tworzy nowe zgłoszenie w systemie
+  - Stwórz e-maila - wybranie tej opcji powoduje pobieranie wiadomości email z serwera pocztowego
+  - Powiąż wiadomość e-mail - pozwala połączyć wiadomość z użytkownikiem lub innym zasobem systemu na podstawie kryteriów określonych w `Pole wyszukiwania`
+  - Otwórz zgłoszenie - ustawia odpowiedni status dla zgłoszenia powiązanego z pobraną wiadomością mailową
+  - Utwórz zgłoszenie - tworzy nowe zgłoszenie w systemie
 - Pola wyszukiwania - określa kryteria powiązania wiadomości z elementem systemu
 - Użytkownik - określa użytkownika, do którego będzie przypisane utworzony element systemu
 
 ### Wysyłanie wiadomości pocztowych
 
-Funkcjonalność wysyłania wiadomości pocztowych ma zastosowanie tylko w zakresie wewnętrznego klienta pocztowego (RoundCube). Jeżeli chcemy by system YetiForce nie tylko odbierał pocztę, ale także umożliwiał nam wysyłanie wiadomości pocztowych, należy w sekcji administracyjnej wybrać  ```Narzędzia pocztowe ➔ Poczta - autologowanie```.
+Funkcjonalność wysyłania wiadomości pocztowych ma zastosowanie tylko w zakresie wewnętrznego klienta pocztowego (RoundCube). Jeżeli chcemy by system YetiForce nie tylko odbierał pocztę, ale także umożliwiał nam wysyłanie wiadomości pocztowych, należy w sekcji administracyjnej wybrać `Narzędzia pocztowe ➔ Poczta - autologowanie`.
 
 ![corporate-5](corporate-5.jpg)
 
@@ -62,14 +63,13 @@ Dla każdego utworzonego konta pocztowego wybieramy użytkownika z systemu YetiF
 
 ![corporate-6](corporate-6.jpg)
 
-
-
 ### Konfiguracja poczty
 
-Zakładka ```Poczta - konfiguracja``` pozwala nam ustawić parametry funkcji pobierającej wiadomości z serwera pocztowego, takie jak:
-* częstotliwość sprawdzania czy pojawiły się nowe wiadomości
-* limit maksymalnej liczby wiadomości, które można pobrać jednorazowo
-* filtry pozwalające określić jakie wiadomości skaner poczty ma pomijać.
+Zakładka `Poczta - konfiguracja` pozwala nam ustawić parametry funkcji pobierającej wiadomości z serwera pocztowego, takie jak:
+
+- częstotliwość sprawdzania czy pojawiły się nowe wiadomości
+- limit maksymalnej liczby wiadomości, które można pobrać jednorazowo
+- filtry pozwalające określić jakie wiadomości skaner poczty ma pomijać.
 
 ![corporate-7](corporate-7.jpg)
 
@@ -81,13 +81,13 @@ Po wykonaniu powyższych kroków, system YetiForce będzie w stanie pobierać wi
 
 ![corporate-9](corporate-9.jpg)
 
-Do klienta pocztowego możemy również się dostać z poziomu sekcji użytkownika. Należy w tym celu wybrać z lewego menu ```Wirtualne biurko ➔ Moja poczta```
+Do klienta pocztowego możemy również się dostać z poziomu sekcji użytkownika. Należy w tym celu wybrać z lewego menu `Wirtualne biurko ➔ Moja poczta`
 
 ![corporate-10](corporate-10.jpg)
 
 ### Logi skanera poczty
 
 System YetiForce pozwala przejrzeć pracę skanera poczty na podstawie logów zawierających czas pracy skanera i liczbę pobranych wiadomości.
-By to sprawdzić należy w sekcji administracyjnej wybrać z lewego menu ```Logi ➔ Maile - historia pobrań```
+By to sprawdzić należy w sekcji administracyjnej wybrać z lewego menu `Logi ➔ Maile - historia pobrań`
 
 ![corporate-11](corporate-11.jpg)

@@ -2,13 +2,13 @@
 title: Widgety z filtrów
 description: Pozwalają na prezentację danych zgodnie z indywidualnie przyjętymi założeniami i ograniczeniami.
 keywords:
-    - widgety
-    - widgety z filtrów
-    - pulpit nawigacyjny
-    - personalizacja
+  - widgety
+  - widgety z filtrów
+  - pulpit nawigacyjny
+  - personalizacja
 tags:
-    - widgety
-    - widgety z filtrów
+  - widgety
+  - widgety z filtrów
 preview: widgets-6
 ---
 
@@ -26,15 +26,15 @@ Po kliknięciu przycisku <kbd>Stwórz nowy filtr</kbd> w widoku listy, pojawia s
 
 ### Najważniejsze pola tworzonego filtru
 
-* **Wybór kolumn**: Możesz określić, które kolumny z listy mają być wyświetlane w filtrze
-* **Relacyjne dane**: Istnieje możliwość wyświetlania danych powiązanych z innych modułów w systemie. Na przykład, jeśli filtrujesz listę leadów, możesz wyświetlać dane z powiązanych kontaktów lub firm.
-* **Warunki**: Możesz tworzyć złożone filtry stosując operatory AND i OR do łączenia różnych kryteriów. Pozwala to na precyzyjne filtrowanie danych i wyświetlanie tylko tych informacji, które Cię interesują.
+- **Wybór kolumn**: Możesz określić, które kolumny z listy mają być wyświetlane w filtrze
+- **Relacyjne dane**: Istnieje możliwość wyświetlania danych powiązanych z innych modułów w systemie. Na przykład, jeśli filtrujesz listę leadów, możesz wyświetlać dane z powiązanych kontaktów lub firm.
+- **Warunki**: Możesz tworzyć złożone filtry stosując operatory AND i OR do łączenia różnych kryteriów. Pozwala to na precyzyjne filtrowanie danych i wyświetlanie tylko tych informacji, które Cię interesują.
 
 By filtr był dostępny w widgetach, należy zaznaczyć opcję <kbd>Dostępy w widgetach</kbd>. Następnie możemy zapisać utworzony filtr i wykorzystać go w dowolnym widgecie.
 
 ## 2. Tworzenie widgetu
 
-Widget z filtru można utworzyć w systemie YetiForce na dwa sposoby. 
+Widget z filtru można utworzyć w systemie YetiForce na dwa sposoby.
 
 ### a) Tworzenie widgetu przez sekcji administracyjnej
 
@@ -48,10 +48,9 @@ W oknie modalnym, które się pojawi wybierz moduł zgodny z modułem, w którym
 
 ![widgets-6.jpg](widgets-6.jpg)
 
-Następnie należy przejść w sekcji użytkownika do zakładki Pulpit i dodać widget wybierając go z listy, która się pojawi po naciśnięciu przycisku <kbd>Predefiniowane widgety</kbd> 
+Następnie należy przejść w sekcji użytkownika do zakładki Pulpit i dodać widget wybierając go z listy, która się pojawi po naciśnięciu przycisku <kbd>Predefiniowane widgety</kbd>
 
 ![widgets-7.jpg](widgets-7.jpg)
-
 
 ### b) Tworzenie widgetu przez sekcję użytkownika
 

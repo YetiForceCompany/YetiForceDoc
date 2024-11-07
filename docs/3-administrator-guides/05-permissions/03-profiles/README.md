@@ -16,7 +16,7 @@ Profile pozwalają zdefiniować uprawnienia do wielu funkcji i widoków dostępn
 
 ## Dodaj nowy profil
 
-Domyślnie w systemie znajduje się 1 profil — Administrator. Aby dodać nowy profil z wstępnie skonfigurowanymi uprawnieniami kliknij przycisk <kbd>+ Dodaj profil</kbd> w lewym górnym rogu ekranu. Zobaczysz stronę nowego profilu, na której musisz wybrać nazwę i opcjonalnie dodać jego opis. 
+Domyślnie w systemie znajduje się 1 profil — Administrator. Aby dodać nowy profil z wstępnie skonfigurowanymi uprawnieniami kliknij przycisk <kbd>+ Dodaj profil</kbd> w lewym górnym rogu ekranu. Zobaczysz stronę nowego profilu, na której musisz wybrać nazwę i opcjonalnie dodać jego opis.
 
 Następnie, w tabeli `Edytuj uprawnienia do profilu`, wybierz uprawnienia do akcji w poszczególnych modułach, które nowo utworzony profil powinien posiadać.
 
