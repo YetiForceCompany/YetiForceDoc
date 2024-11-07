@@ -21,4 +21,4 @@ jobs:
         with:
           use-quiet-mode: 'yes'
           folder-path: 'docs'
-          file-extension: '.md,.mdx'
+          file-extension: '.md .mdx'
