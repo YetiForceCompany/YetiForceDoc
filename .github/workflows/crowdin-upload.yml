@@ -2,8 +2,9 @@ name: Crowdin upload
 
 on:
   push:
-    branches:
-      - release
+    branches: [release]
+    paths:
+      - 'docs/**'
 
 permissions:
   contents: read
