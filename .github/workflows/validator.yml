@@ -16,18 +16,13 @@ jobs:
   markdown-link-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-
-      - name: check mdx
-        uses: gaurav-nelson/github-action-markdown-link-check@1.0.15
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
-          use-quiet-mode: 'yes'
-          folder-path: 'docs'
-          file-extension: '.mdx'
+          # super-linter needs the full git history to get the
+          # list of files that changed across commits
+          fetch-depth: 0
 
-      - name: check md
-        uses: gaurav-nelson/github-action-markdown-link-check@1.0.15
+      - uses: DavidAnson/markdownlint-cli2-action@v17
         with:
-          use-quiet-mode: 'yes'
-          folder-path: 'docs'
-          file-extension: '.md'
+          globs: 'docs/**/*.{md,mdx,markdown}'
