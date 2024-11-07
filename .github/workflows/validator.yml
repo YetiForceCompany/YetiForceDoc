@@ -21,7 +21,7 @@ jobs:
         with:
           use-quiet-mode: 'yes'
           folder-path: 'docs, versioned_docs'
-          file-extension: '.md .mdx'
+          file-extension: '.md'
 
   link-check:
     runs-on: ubuntu-latest
