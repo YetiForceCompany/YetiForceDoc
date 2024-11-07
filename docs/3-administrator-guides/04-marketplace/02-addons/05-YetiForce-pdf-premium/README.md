@@ -11,32 +11,31 @@ tags:
 preview: pdf-1.jpg
 ---
 
-YetiForce oferuje szeroki wachlarz funkcji, w skład, których wchodzi generowanie raportów PDF. W systemie istnieją dwa główne silniki do generowania dokumentów PDF: 
+YetiForce oferuje szeroki wachlarz funkcji, w skład, których wchodzi generowanie raportów PDF. W systemie istnieją dwa główne silniki do generowania dokumentów PDF:
 
-* darmowy, wbudowany silnik YetiForce 
-* płatny ***YetiForce PDF Premium*** oparty o **Chromium**.
+- darmowy, wbudowany silnik YetiForce
+- płatny **YetiForce PDF Premium** oparty o **Chromium**.
 
 System umożliwia połączenie danych z YetiForce z szablonami PDF, co pozwala na automatyczne generowanie spersonalizowanych dokumentów. Dzięki temu można dynamicznie wstawiać informacje z rekordów kontaktów, firm, ofert, faktur i innych modułów, co znacznie oszczędza czas i eliminuje błędy związane z ręcznym wprowadzaniem danych.
 
-Podstawowa wersja funkcjonalności PDF jest dostępna za darmo w systemie YetiForce, natomiast **PDF Premium** to rozszerzenie, które umożliwia tworzenie bardziej zaawansowanych i profesjonalnych dokumentów PDF, niż standardowy silnik dostępny w systemie YetiForce.  Wykorzystuje ono przeglądarkę Chromium do renderowania i generowania dokumentów PDF.
+Podstawowa wersja funkcjonalności PDF jest dostępna za darmo w systemie YetiForce, natomiast **PDF Premium** to rozszerzenie, które umożliwia tworzenie bardziej zaawansowanych i profesjonalnych dokumentów PDF, niż standardowy silnik dostępny w systemie YetiForce. Wykorzystuje ono przeglądarkę Chromium do renderowania i generowania dokumentów PDF.
 
 #### Co wyróżnia YetiForce PDF Premium
 
-* kompatybilność z CSS3 i HTML 5
-* kompatybilność ze wszystkimi technologiami obsługiwanymi przez przeglądarkę
-* w pełni obsługiwane znaki specjalne i czcionki
-* jedynym ograniczeniem są możliwości przeglądarki
-* wsparcie systemu operacyjnego: Linux, macOS, Windows
+- kompatybilność z CSS3 i HTML 5
+- kompatybilność ze wszystkimi technologiami obsługiwanymi przez przeglądarkę
+- w pełni obsługiwane znaki specjalne i czcionki
+- jedynym ograniczeniem są możliwości przeglądarki
+- wsparcie systemu operacyjnego: Linux, macOS, Windows
 
 W tym artykule znajdziesz instrukcje, jak zainstalować i korzystać z tego modułu.
 
 :::tip
 
-Do prawidłowego działania dodatku wymagany jest silnik Chromium/Chrome. 
+Do prawidłowego działania dodatku wymagany jest silnik Chromium/Chrome.
 Informacje jak go skonfigurować znajdziesz w [tym artykule](/administrator-guides/system-tools/pdf)
 
 :::
-
 
 ## Zakup dodatku
 

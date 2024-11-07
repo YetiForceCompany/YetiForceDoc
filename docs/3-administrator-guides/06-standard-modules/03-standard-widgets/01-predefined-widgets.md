@@ -14,9 +14,9 @@ tags:
 preview: widgets-1
 ---
 
-Widgety predefiniowane w YetiForce to gotowe do użycia elementy, które można umieścić na pulpicie nawigacyjnym systemu. Zostały one zaprojektowane przez zespół YetiForce i oferują szeroki zakres funkcji, które ułatwiają użytkownikom pracę z systemem.  W celu dodania nowego widgetu do pulpitu, należy wykonać następujące kroki:
+Widgety predefiniowane w YetiForce to gotowe do użycia elementy, które można umieścić na pulpicie nawigacyjnym systemu. Zostały one zaprojektowane przez zespół YetiForce i oferują szeroki zakres funkcji, które ułatwiają użytkownikom pracę z systemem. W celu dodania nowego widgetu do pulpitu, należy wykonać następujące kroki:
 
-### Konfiguracja 
+### Konfiguracja
 
 W sekcji administracyjnej, z lewego menu wybierz **Moduły Podstawowe ➔ Panel - Widżety**
 
@@ -24,7 +24,7 @@ W sekcji administracyjnej, z lewego menu wybierz **Moduły Podstawowe ➔ Panel 
 
 ### 1. Wybranie Pulpitu nawigacyjnego
 
-Oprócz możliwości dostosowywania wyglądu i układu widgetów, YetiForce oferuje również funkcję tworzenia niezależnych pulpitów nawigacyjnych. Pozwala to na pogrupowanie widgetów tematycznie lub według własnych potrzeb, co ułatwia nawigację i dostęp do informacji. Aby utworzyć nową zakładkę, należy kliknąć ikonę <kbd>+</kbd> a następnie nadać pulpitowi nazwę. 
+Oprócz możliwości dostosowywania wyglądu i układu widgetów, YetiForce oferuje również funkcję tworzenia niezależnych pulpitów nawigacyjnych. Pozwala to na pogrupowanie widgetów tematycznie lub według własnych potrzeb, co ułatwia nawigację i dostęp do informacji. Aby utworzyć nową zakładkę, należy kliknąć ikonę <kbd>+</kbd> a następnie nadać pulpitowi nazwę.
 
 ### 2. Wybranie Roli
 

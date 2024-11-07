@@ -37,19 +37,20 @@ Mechanizm jest dostępny we wszystkich modułach, jednak musi być włączony i 
 
 Konfigurując **kolektor rekordów** w pierwszej kolejności należy nadać odpowiednie uprawienia dla odpowiednich ról w systemie. Szczegółowe informacje na ten temat znajdują się w artykule: [Uprawnienia do kolektora rekordów](/administrator-guides/integration/record-collectors/).
 
-Następnie przejdź do sekcji administracyjnej i wybierz ```Integracja → Kolektor rekordów```. Po otwarciu zakładki wyświetli się lista dostępnych kolektorów.
+Następnie przejdź do sekcji administracyjnej i wybierz `Integracja → Kolektor rekordów`. Po otwarciu zakładki wyświetli się lista dostępnych kolektorów.
 
 ![record-collector-2](record-collector-2.jpg)
 
 **Najważniejsze kolumny**
-* **Moduły** - pokazuje miejsca w systemie, dla których dany kolektor jest dostępny
-* **Typ** - określa typ kolektora:
+
+- **Moduły** - pokazuje miejsca w systemie, dla których dany kolektor jest dostępny
+- **Typ** - określa typ kolektora:
   - **wyświetl** - wyświetla informację pobraną z kolektora
   - **pokaż i wypełnij** - pozwala nie tylko wyświetlić dane pobrane z kolektora, ale również wypełnić nimi formularz w systemie
-* **Adres URL dokumentacji** - link do dokumentacji dostawcy usługi, zawierający szczegółowe informacje na temat kolektora. Znajdziesz tam m.in. instrukcje konfiguracji czy też sposób uzyskania danych autoryzacyjnych, jeżeli są one potrzebne
-* **Wyróżniony** - oznacz ten checkbox, aby ikona danego kolektora została wyświetlona obok listy rozwijanej wszystkich uruchomionych kolektorów. Ułatwi to szybki dostęp do najczęściej używanych integratorów
-* **Aktywny** - oznacz ten checkbox, aby dany kolektor był dostępny do wybrania w systemie
-* **Akcje** - kliknij ikonę akcji (<kbd><i className="fas fa-cog"></i></kbd>), aby rozwinąć okno dialogowe z dodatkowymi opcjami konfiguracyjnymi kolektora
+- **Adres URL dokumentacji** - link do dokumentacji dostawcy usługi, zawierający szczegółowe informacje na temat kolektora. Znajdziesz tam m.in. instrukcje konfiguracji czy też sposób uzyskania danych autoryzacyjnych, jeżeli są one potrzebne
+- **Wyróżniony** - oznacz ten checkbox, aby ikona danego kolektora została wyświetlona obok listy rozwijanej wszystkich uruchomionych kolektorów. Ułatwi to szybki dostęp do najczęściej używanych integratorów
+- **Aktywny** - oznacz ten checkbox, aby dany kolektor był dostępny do wybrania w systemie
+- **Akcje** - kliknij ikonę akcji (<kbd><i className="fas fa-cog"></i></kbd>), aby rozwinąć okno dialogowe z dodatkowymi opcjami konfiguracyjnymi kolektora
 
 ## Dostępne kolektory
 
@@ -78,7 +79,6 @@ Należy pamiętać, że dostęp do danych z niektórych kolektorów może wymaga
 - VAT [GB] - Sprawdza czy firma jest zarejestrowana jako podatnik VAT w Wielkiej Brytanii
 - EDGAR [USA] - Pobieranie danych o firmach w USA z U.S. Securities andExchange Commission (SEC) z bazy EDGAR
 - VATify.eu - Pobieranie danych firm z bazy VATify.eu, która również zawiera aktualny status płatnika VAT
-
 
 ## Wykorzystanie kolektora
 

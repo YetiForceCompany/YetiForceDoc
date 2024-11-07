@@ -35,7 +35,7 @@ W panelu automatycznego przypisania rekordów dostępne są następujące bloki 
 
 Uwaga! Mechanizm działa tylko dla użytkowników, którzy w konfiguracji mają włączoną możliwość automatycznego przypisywania rekordów. Nie dotyczy to opcji domyślnej.
 
-:::  
+:::
 ![ass-2.jpg](ass-2.jpg)
 
 ## Opis
