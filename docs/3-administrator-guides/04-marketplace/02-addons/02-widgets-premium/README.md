@@ -28,11 +28,11 @@ Widżet umożliwiający podgląd dokumentów PDF przed ich wygenerowaniem! Ten d
 
 **Korzyści:**
 
-* **Szybki podgląd**: Bądź na bieżąco z zawartością faktury lub innego dokumentu PDF na każdym etapie generowania.
-* **Lepsza kontrola**: Dokonuj korekt i zatwierdzaj dokumenty przed ich finalnym wygenerowaniem.
-* **Oszczędność czasu**: Unikaj błędów i konieczności ponownego generowania dokumentów.
-* **Wygoda dla użytkowników**: Ułatw pracę osobom odpowiedzialnym za wystawianie i wysyłanie dokumentów PDF.
-* **Zwiększona efektywność działu księgowego**: Weryfikuj dokumenty przed ich zatwierdzeniem, usprawniając procesy księgowe.
+- **Szybki podgląd**: Bądź na bieżąco z zawartością faktury lub innego dokumentu PDF na każdym etapie generowania.
+- **Lepsza kontrola**: Dokonuj korekt i zatwierdzaj dokumenty przed ich finalnym wygenerowaniem.
+- **Oszczędność czasu**: Unikaj błędów i konieczności ponownego generowania dokumentów.
+- **Wygoda dla użytkowników**: Ułatw pracę osobom odpowiedzialnym za wystawianie i wysyłanie dokumentów PDF.
+- **Zwiększona efektywność działu księgowego**: Weryfikuj dokumenty przed ich zatwierdzeniem, usprawniając procesy księgowe.
 
 ### Konfiguracja Podglądu PDF
 
@@ -40,7 +40,7 @@ W pierwszej kolejności należy się upewnić, czy dla danego modułu posiadamy 
 Następnie możemy przejść do konfiguracji samego widżetu:
 
 1. Przejdź do sekcji administracyjnej YetiForce.
-2. Wybierz z lewego menu ```Moduły standardowe ➜ Moduły widżety```.
+2. Wybierz z lewego menu `Moduły standardowe ➜ Moduły widżety`.
 3. Z pola wyboru, po prawej stronie wybierz moduł, dla którego chcesz dodać widżet **Podgląd PDF**.
 4. Kliknij przycisk <kbd>Dodaj widżet</kbd>.
 5. Wybierz widżet **Podgląd PDF** z listy dostępnych widżetów.
@@ -58,22 +58,22 @@ Dodatek **Historia Zmian** w systemie YetiForce zapewnia kompleksowy wgląd w ak
 
 **Uzyskaj szczegółowy wgląd w zmiany wprowadzane przez użytkowników:**
 
-* Śledź modyfikacje w wybranym module lub w całym systemie.
-* Zobacz listę otwieranych i modyfikowanych rekordów.
-* Poznaj czas przeprowadzonych akcji.
-* Zidentyfikuj użytkowników odpowiedzialnych za każdą operację.
+- Śledź modyfikacje w wybranym module lub w całym systemie.
+- Zobacz listę otwieranych i modyfikowanych rekordów.
+- Poznaj czas przeprowadzonych akcji.
+- Zidentyfikuj użytkowników odpowiedzialnych za każdą operację.
 
 **Wykorzystaj zaawansowane filtry, aby:**
 
-* Skupić się na konkretnych rekordach lub użytkownikach.
-* Zlokalizować zmiany wprowadzone w określonym czasie.
-* Szybko odnaleźć interesujące Cię informacje.
+- Skupić się na konkretnych rekordach lub użytkownikach.
+- Zlokalizować zmiany wprowadzone w określonym czasie.
+- Szybko odnaleźć interesujące Cię informacje.
 
 **Korzyści ze stosowania dodatku Historia Zmian:**
 
-* **Zwiększona przejrzystość**: Zyskaj pełną widoczność aktywności użytkowników i wprowadzanych zmian, co ułatwia audyt i kontrolę nad systemem.
-* **Poprawa odpowiedzialności**: Jasno identyfikuj użytkowników odpowiedzialnych za modyfikacje, zapewniając rozliczalność i zapobiegając nieupoważnionym zmianom.
-* **Usprawnienie współpracy**: Ułatwiaj współpracę zespołową, udostępniając historię zmian i zapewniając kontekst dla wprowadzonych modyfikacji.
+- **Zwiększona przejrzystość**: Zyskaj pełną widoczność aktywności użytkowników i wprowadzanych zmian, co ułatwia audyt i kontrolę nad systemem.
+- **Poprawa odpowiedzialności**: Jasno identyfikuj użytkowników odpowiedzialnych za modyfikacje, zapewniając rozliczalność i zapobiegając nieupoważnionym zmianom.
+- **Usprawnienie współpracy**: Ułatwiaj współpracę zespołową, udostępniając historię zmian i zapewniając kontekst dla wprowadzonych modyfikacji.
 
 ### Konfiguracja Historii Zmian
 
@@ -84,7 +84,7 @@ Pamiętaj, by przy tworzeniu widżetu wybrać odpowiednią rolę oraz pulpit, na
 :::
 
 1. Przejdź do sekcji administracyjnej YetiForce.
-2. Wybierz z lewego menu ```Moduły standardowe ➜ Panel widżety```.
+2. Wybierz z lewego menu `Moduły standardowe ➜ Panel widżety`.
 3. Kliknij przycisk <kbd>Predefiniowane widżety</kbd>.
 4. Wybierz widżet **Historia aktualizacji systemu** z listy dostępnych widżetów.
 5. Wprowadź parametry widżetu i zapisz zmiany.

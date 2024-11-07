@@ -17,10 +17,10 @@ Widżety w YetiForce to interaktywne elementy, które można umieszczać na pulp
 
 Głównym celem stosowania widżetów w YetiForce jest:
 
-* **Zwiększenie produktywności**: Widżety pozwalają użytkownikom na szybki dostęp do kluczowych informacji i funkcji bez konieczności przechodzenia przez rozbudowane menu.
-* **Personalizacja interfejsu**: Użytkownicy mogą wybierać i układać widżety na pulpicie nawigacyjnym tak, aby odpowiadało to ich preferencjom i sposobowi pracy.
-* **Dostęp do danych w czasie rzeczywistym**: Wiele widżetów wyświetla aktualne dane, takie jak liczba leadów, stan zadań itp.
-* **Ułatwienie nawigacji**: Widżety mogą służyć jako skróty do często używanych modułów lub funkcji systemu.
+- **Zwiększenie produktywności**: Widżety pozwalają użytkownikom na szybki dostęp do kluczowych informacji i funkcji bez konieczności przechodzenia przez rozbudowane menu.
+- **Personalizacja interfejsu**: Użytkownicy mogą wybierać i układać widżety na pulpicie nawigacyjnym tak, aby odpowiadało to ich preferencjom i sposobowi pracy.
+- **Dostęp do danych w czasie rzeczywistym**: Wiele widżetów wyświetla aktualne dane, takie jak liczba leadów, stan zadań itp.
+- **Ułatwienie nawigacji**: Widżety mogą służyć jako skróty do często używanych modułów lub funkcji systemu.
 
 Część widżetów jest predefiniowana i od razu gotowa do użycia. Jeżeli jednak potrzebujemy wyświetlić niestandardowe dane, możemy stworzyć widżet według własnych preferencji.
 

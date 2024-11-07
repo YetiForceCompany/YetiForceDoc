@@ -3,11 +3,13 @@
  * @license   YetiForce Public License 5.0 (licenses/LicenseEN.txt or yetiforce.com)
  * @author    Mariusz Krzaczkowski <m.krzaczkowski@yetiforce.com>
  */
-@import url('https://doc.yetiforce.com/custom/fontawesome-free/css/all.css');
-@import url('https://doc.yetiforce.com//custom/icons/additionalIcons.css');
-@import url('https://doc.yetiforce.com//custom/icons/adminIcon.css');
-@import url('https://doc.yetiforce.com//custom/icons/yfi.css');
-@import url('https://doc.yetiforce.com//custom/icons/yfm.css');
+@import url('https://public.yetiforce.com/crm-icons/fontawesome-free/css/all.css');
+@import url('https://public.yetiforce.com/crm-icons/tabler-icons/tabler-icons.css');
+@import url('https://public.yetiforce.com/crm-icons/crm/additionalIcons.css');
+@import url('https://public.yetiforce.com/crm-icons/crm/adminIcon.css');
+@import url('https://public.yetiforce.com/crm-icons/crm/modern_yfi.css');
+@import url('https://public.yetiforce.com/crm-icons/crm/yfi.css');
+@import url('https://public.yetiforce.com/crm-icons/crm/yfm.css');
 
 :root {
   --ifm-color-primary: #25c2a0;

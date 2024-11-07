@@ -19,16 +19,14 @@ kolumnami. Dzięki temu w łatwy sposób możemy śledzić postęp prac, identyf
 innymi modułami YetiForce, co wspiera zarządzanie zadaniami w kontekście działań sprzedażowych, projektowych, serwisowych i innych.
 
 :::warning
-  Dodatek YetiForce Kanban Board jest dostępny do subskrypcji w naszym Marketplace. - [**Więcej informacji**](https://yetiforce.com/pl/tablica-kanban.html)
+Dodatek YetiForce Kanban Board jest dostępny do subskrypcji w naszym Marketplace. - [**Więcej informacji**](https://yetiforce.com/pl/tablica-kanban.html)
 :::
 
 ![Widok ekranu konfiguracji](kanban-1.png)
 
-
-
 ## Konfiguracja
 
-Panel konfiguracyjny YetiForce Kanban Board znajduje się w  <kbd>Konfiguracja oprogramowania → Standardowe moduły → Kanban</kbd>.
+Panel konfiguracyjny YetiForce Kanban Board znajduje się w <kbd>Konfiguracja oprogramowania → Standardowe moduły → Kanban</kbd>.
 
 ![Otwieranie widoku modułu kanban - otwarcie listy modułów](kanban-2-1.png)
 ![Otwieranie widoku modułu kanban - wybór modułu](kanban-2-2.png)
@@ -36,8 +34,6 @@ Panel konfiguracyjny YetiForce Kanban Board znajduje się w  <kbd>Konfiguracja o
 Z listy dostępnych modułów, widocznej w prawym górnym rogu ekranu (1), należy wybrać moduł (2), w którym powinny być dostępne tablice Kanban:
 
 ![Wybór modułu systemowego](kanban-3.png)
-
-
 
 ## Tworzenie tablic
 
@@ -48,8 +44,6 @@ Kliknij przycisk <kbd>+ Dodaj tablicę</kbd> i wybierz pole, które zostanie uż
 Po kliknięciu przycisku <kbd>Dodaj</kbd>, tablica będzie dostępna w wybranym module.
 
 ![Widok wyboru pola](kanban-5.png)
-
-
 
 ## Parametry tablicy
 
@@ -62,8 +56,6 @@ Po kliknięciu przycisku <kbd>Dodaj</kbd>, tablica będzie dostępna w wybranym 
   ![Widok sumowania](kanban-7.png)
 
 Dane na liście wyboru są zapisane automatycznie podczas każdej zmiany.
-
-
 
 ## Uprawnienia
 
