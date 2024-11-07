@@ -17,12 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: check md
-        uses: gaurav-nelson/github-action-markdown-link-check@v1
-        with:
-          use-quiet-mode: 'yes'
-          folder-path: 'docs'
-          file-extension: '.md'
 
       - name: check mdx
         uses: gaurav-nelson/github-action-markdown-link-check@v1
@@ -30,3 +24,10 @@ jobs:
           use-quiet-mode: 'yes'
           folder-path: 'docs'
           file-extension: '.mdx'
+
+      - name: check md
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: 'yes'
+          folder-path: 'docs'
+          file-extension: '.md'
