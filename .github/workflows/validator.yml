@@ -1,0 +1,32 @@
+name: Markdown validator
+
+on:
+  push:
+    branches:
+      - release
+
+  pull_request:
+    branches:
+      - release
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          folder-path: 'docs, versioned_docs'
+
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run Link Checker
+        uses: mr8lu/link-validator@v1.0.0
+        with:
+          directory: 'docs, versioned_docs' # Adjust the directory as needed
