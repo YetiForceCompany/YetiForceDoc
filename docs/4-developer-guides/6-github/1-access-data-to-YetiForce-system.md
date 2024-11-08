@@ -36,7 +36,7 @@ Dostęp musi zawierać uprawnienia do odczytu i zapisu plików, a mianowicie:
 - sposób szyfrowania danych (np.: FTP przez TLS)
 - ścieżka pod którą znajduje się system
 
-Konfiguracja serwera zawsze musi być zgodna z aktualnymi wymogami konfiguracyjnymi opisanymi na [stronie](/introduction/requirements/). Niezgodność może powodować błędy w funkcjonowaniu systemu, dodatkowo nie będą działać mechanizmy debugowania. Do weryfikacji konfiguracji można wykorzystać narzędzie wbudowane w systemie i dostępne pod adresem https://gitstable.yetiforce.com/index.phpparent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
+Konfiguracja serwera zawsze musi być zgodna z aktualnymi wymogami konfiguracyjnymi opisanymi na [stronie](/introduction/requirements/). Niezgodność może powodować błędy w funkcjonowaniu systemu, dodatkowo nie będą działać mechanizmy debugowania. Do weryfikacji konfiguracji można wykorzystać narzędzie wbudowane w systemie i dostępne pod adresem https://demo.yetiforce.com/index.phpparent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
 
 #### 4. Dostęp do bazy danych
 
