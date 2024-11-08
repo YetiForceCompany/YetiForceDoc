@@ -78,7 +78,7 @@ Należy pamiętać, że dostęp do danych z niektórych kolektorów może wymaga
 - ★ YouControl [UA] - Pobieranie danych o ukraińskich firm dostarczone przez YouScore API z bazy YouControl
 - Comapnies House [GB] - Pobiera dane z brytyjskich firm z agencji Comapnies House
 - VAT [GB] - Sprawdza czy firma jest zarejestrowana jako podatnik VAT w Wielkiej Brytanii
-- EDGAR [USA] - Pobieranie danych o firmach w USA z "U.S. Securities andExchange Commission (SEC)" z bazy EDGAR
+- EDGAR [USA] - Pobieranie danych o firmach w USA z `U.S. Securities andExchange Commission (SEC)` z bazy EDGAR
 - VATify.eu - Pobieranie danych firm z bazy VATify.eu, która również zawiera aktualny status płatnika VAT
 
 ## Wykorzystanie kolektora
