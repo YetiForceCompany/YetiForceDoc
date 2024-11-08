@@ -12,7 +12,7 @@ tags:
 preview: Eraser-0.jpg
 ---
 
-::tip
+:::tip
 Ta funkcja jest dostępna dla YetiForce w wersji `6.4.146` i później
 :::
 
