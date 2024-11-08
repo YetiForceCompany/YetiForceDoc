@@ -15,9 +15,9 @@ The article below explains troubleshooting inactive or malfunctioning addons pur
 
 ## Update the registration status
 
-YetiForce must be correctly registered in order for the Marketplace and purchased addons to work properly. If your registration is still pending even though you provided all the necessary information during the registration process you can refresh your registration status by clicking the `Check status` button in [`System settings → Company → Company`](/administrator-guides/company/company-details/#check-status) details.
+YetiForce must be correctly registered in order for the Marketplace and purchased addons to work properly. Jeśli mimo prawidłowej rejestracji Twój system nadal oczekuje na akceptację, możesz odświeżyć jej status klikając na przycisk `Sprawdź status` w panelu [`Konfiguracja systemu → Firma → Dane firmy`](/administrator-guides/company/company-details/#sprawdź-status).
 
-- More information about registration can be found in the [How to register YetiForce?](/administrator-guides/company/company-details/#how-to-register-yetiforce) manual.
+- Więcej informacji o rejestracji systemu znajdziesz w poradniku: [ Jak zarejestrować YetiForce](/administrator-guides/company/company-details/#jak-zarejestrować-yetiforce).
 - In case of problems with registration you can find help in the [Problems with registration guide](/administrator-guides/company/problems-with-system-registration/).
 
 ## Check if YetiForce is up to date and fully patched.
@@ -54,8 +54,8 @@ If your issues persist you can contact us by sending an email and providing **al
 - [APP ID](/administrator-guides/app-id/)
 - system version
 - full logs according to the [Debugging](/developer-guides/debug) article
-- attach [server configuration report](/administrator-guides/logs/server-configuration/#download-configuration)
+- załącz [raport konfiguracji serwera](/administrator-guides/logs/server-configuration/#pobierz-konfigurację)
 - screenshot of products purchased from Marketplace
-- screenshot of [installed updates](/administrator-guides/logs/updates/#activities-during-the-update)
+- załącz zrzut ekranu [wgranych aktualizacji](/administrator-guides/logs/updates/#czynności-podczas-aktualizacji)
 
-We recommend using encryption (PGP/GPG) to send us your credentials. The list of all required information can be found in the [Access data to the YetiForce CRM system article.](/developer-guides/github/access-data-to-YetiForce-system) ](/developer-guides/github/access-data-to-YetiForce-system)
+We recommend using encryption (PGP/GPG) to send us your credentials. The list of all required information can be found in the [Access data to the YetiForce CRM system article.](/developer-guides/github/access-data-to-YetiForce-system) ](/developer-guides/github/access-data-to-YetiForce-system) ](/developer-guides/github/access-data-to-YetiForce-system)

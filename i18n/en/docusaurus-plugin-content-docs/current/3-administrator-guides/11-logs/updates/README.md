@@ -64,7 +64,7 @@ In the selected window, there are two options to choose between:
 
 In this type of installation, it is important to download the appropriate package.
 
-Paczkę aktualizacyjną można pobrać z kilku miejsc, jednakże zalecanym miejscem jest nasze repozytorium GitHub: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. There are update packages for all versions. Select a package that will be appropriate for your version. Updates should be performed in a certain sequence. Jeżeli masz wersje. If you have `1.1`. version and would like to update the system to `2.0`, you should download the following update packages:
+Paczkę aktualizacyjną można pobrać z kilku miejsc, jednakże zalecanym miejscem jest nasze repozytorium GitHub: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. There are update packages for all versions. Select a package that will be appropriate for your version. Updates should be performed in a certain sequence. Jeżeli masz wersje `1.1`. version and would like to update the system to `2.0`, you should download the following update packages:
 
 - 1.1.0RC_to_1.2.0RC
 - 1.2.0RC_to_1.3.0RC
@@ -112,7 +112,7 @@ The properly performed installation will complete by displaying the summary wind
 ### Verify update
 
 - First check logs and search for any errors or warnings. Log files can sometimes contain 20 thousand lines of code so it is recommended to use keywords, e.g.
-- Disable logs after using the system for several days to verify if there are any errors ([Debug](/developer-guides/debug#summary))
+- Wyłącz dzienniki po kilku dniach używania systemu w celu sprawdzenia, czy występują błędy ([Debug](/developer-guides/debug#podsumowanie))
 - Update the languages in the system.
 - Update lib_roundcube library to the version corresponding to your system.
 - In the admin panel, in the [`Software configuration → Standard modules → Modules - installation`](/administrator-guides/standard-modules/modules-installation/)you can see whether a previously installed library requires updating.

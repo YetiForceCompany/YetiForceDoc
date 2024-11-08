@@ -36,7 +36,7 @@ Access must include permissions to read and write files, namely:
 - encryption method (e.g.: FTP by TLS)
 - path to where the system is located
 
-The server configuration must always comply with the current configuration requirements that can be found [here](/introduction/requirements/). If your server fails to meet the requirements, it can cause system errors and debugging won't work. In order to verify the configuration, you can use the built-in tool, which is available [here](https://gitstable.yetiforce.com/index.phpparent=Settings\&module=ConfReport\&view=Index\&block=14\&fieldid=65).
+The server configuration must always comply with the current configuration requirements that can be found [here](/introduction/requirements/). If your server fails to meet the requirements, it can cause system errors and debugging won't work. To verify the configuration, you can use the tool built into the system and available at https://gitstable.yetiforce.com/index.phpparent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
 
 #### 4. Database access
 

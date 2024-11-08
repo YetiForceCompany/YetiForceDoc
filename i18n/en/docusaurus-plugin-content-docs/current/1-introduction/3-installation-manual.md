@@ -22,7 +22,7 @@ Before the installation, check if your server complies with the requirements: [Y
 
 :::important
 
-A person who is going to install the system should have at least basic knowledge of web servers, databases, and server permissions. 99% of installation issues come from people with insufficient experience attempting to install the system. If you are not sure whether you can manage on your own, you can ask somebody with adequate IT expertise. The entire installation process will take up to 30 minutes. Installation of YetiForce is similar to the installation of applications such as WordPress, Joomla, Drupal. Różnice pomiędzy poszczególnymi narzędziami są niewielkie. Differences between particular tools are minor, so if you managed to install a CMS system, you will also be able to install YetiForce.
+A person who is going to install the system should have at least basic knowledge of web servers, databases, and server permissions. 99% of installation issues come from people with insufficient experience attempting to install the system. If you are not sure whether you can manage on your own, you can ask somebody with adequate IT expertise. The entire installation process will take up to 30 minutes. Installation of YetiForce is similar to the installation of applications such as WordPress, Joomla, Drupal. Różnice pomiędzy poszczególnymi narzędziami są niewielkie.
 
 :::
 

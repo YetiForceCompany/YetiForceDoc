@@ -175,7 +175,7 @@ Migrating to a new server or restoring it from a backup requires [re-registratio
 
 Requires reinstallation and the installation of a new XML file.
 
-The old addon installed in Outlook should be removed and the new XML file from the system panel should be downloaded according to the [instructions](/administrator-guides/integration/mail-integration-panel/outlook).
+Stary dodatek zainstalowany w Outlook należy usunąć, pobrać nowy plik XML z panelu systemu YetiForce zgodnie z instrukcją [Dodatek typu add-in do programu Outlook](/administrator-guides/integration/mail-integration-panel/outlook).
 
 ## Create a test environment
 

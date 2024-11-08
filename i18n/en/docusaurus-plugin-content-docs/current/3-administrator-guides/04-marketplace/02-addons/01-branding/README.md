@@ -2,11 +2,11 @@
 title: Personalizacja Brandingu
 description: Personalizacja Brandingu
 keywords:
-  - Marketplace
+  - marketplace
   - personalizacja
   - branding
 tags:
-  - Marketplace
+  - marketplace
   - personalizacja
   - branding
 preview: branding-1.jpg
@@ -20,18 +20,18 @@ Usługa Personalizacji Brandingu nie usuwa całkowicie systemowego brandingu Yet
 
 Dodatek personalizacji brandingu pozwala na pełniejsze dostosowanie wyglądu systemu YetiForce. Umożliwia wstawienie danych swojej firmy do stopki oraz ustawienie własnych linków do profili w mediach społecznościowych.
 
-### Funkcje 
+### Features
 
-* Dodanie do stopki odnośników z własnymi linkami do mediów społecznościowych
-* Usunięcie informacji o twórcy oprogramowania w stopce strony
-* Usunięcie stopki producenta z maili systemowych
-* Usunięcie stopki producenta z wydruków PDF
+- Dodanie do stopki odnośników z własnymi linkami do mediów społecznościowych
+- Usunięcie informacji o twórcy oprogramowania w stopce strony
+- Usunięcie stopki producenta z maili systemowych
+- Usunięcie stopki producenta z wydruków PDF
 
-Należy pamiętać, że usługa personalizacji nie jest zamiennikiem tzw. “white labellingu” i nie usunie z systemu całkowicie wszystkich informacji o producencie systemu. 
+Należy pamiętać, że usługa personalizacji nie jest zamiennikiem tzw. “white labellingu” i nie usunie z systemu całkowicie wszystkich informacji o producencie systemu.
 
 ### Personalizacja informacji widocznych w stopce strony
 
-Dane o brandingu firmy ustawia się wybierając w sekcji administracyjnej z lewego menu *Narzędzia systemowe → System - konfiguracja*. Następnie należy wybrać zakładkę *Dane brandingu*. W tym miejscu będziemy mogli ustawić wartości jakie mają sie pojawić w stopce strony. Ikony mediów społecznościowych nie pokażą się w stopce jeśli odnośniki nie zostały uzupełnione w konfiguracji.
+Dane o brandingu firmy ustawia się wybierając w sekcji administracyjnej z lewego menu `Narzędzia systemowe → System - konfiguracja`. Następnie należy wybrać zakładkę **Dane brandingu**. W tym miejscu będziemy mogli ustawić wartości jakie mają sie pojawić w stopce strony. Ikony mediów społecznościowych nie pokażą się w stopce jeśli odnośniki nie zostały uzupełnione w konfiguracji.
 
 ![branding-1](branding-1.jpg)
 
