@@ -46,7 +46,7 @@ $password = ''; //Hasło, opcjonalnie
 
 ## 1.3 Uruchom skrypt
 
-Jeśli uruchomisz skrypt przez przeglądarkę, wgraj plik do katalogu publicznego (jeśli webroot jest ustawiony na ten katalog) i uruchom adres CRM oraz nazwę skryptu, np. https://gitdeveloper.yetiforce.com/PasswordReset.php
+Jeśli uruchomisz skrypt przez przeglądarkę, wgraj plik do katalogu publicznego (jeśli webroot jest ustawiony na ten katalog) i uruchom adres CRM oraz nazwę skryptu, np. https://demo.yetiforce.com/PasswordReset.php
 
 Jeśli uruchomisz skrypt z poziomu CLI, wgraj skrypt do katalogu głównego i uruchom plik.
 
