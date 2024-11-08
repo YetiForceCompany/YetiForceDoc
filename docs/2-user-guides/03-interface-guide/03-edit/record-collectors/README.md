@@ -31,6 +31,7 @@ import ReactPlayer from 'react-player';
 </Tabs>
 
 Kolektor rekordów jest używany do ładowania danych z różnych źródeł i umożliwia wyświetlanie i wczytywanie danych do systemu YetiForce CRM.
+
 Mechanizm jest dostępny we wszystkich modułach, jednak musi być włączony i skonfigurowany dla każdego modułu do poprawnego działania.
 
 ## Konfiguracja
@@ -77,7 +78,7 @@ Należy pamiętać, że dostęp do danych z niektórych kolektorów może wymaga
 - ★ YouControl [UA] - Pobieranie danych o ukraińskich firm dostarczone przez YouScore API z bazy YouControl
 - Comapnies House [GB] - Pobiera dane z brytyjskich firm z agencji Comapnies House
 - VAT [GB] - Sprawdza czy firma jest zarejestrowana jako podatnik VAT w Wielkiej Brytanii
-- EDGAR [USA] - Pobieranie danych o firmach w USA z U.S. Securities andExchange Commission (SEC) z bazy EDGAR
+- EDGAR [USA] - Pobieranie danych o firmach w USA z "U.S. Securities andExchange Commission (SEC)" z bazy EDGAR
 - VATify.eu - Pobieranie danych firm z bazy VATify.eu, która również zawiera aktualny status płatnika VAT
 
 ## Wykorzystanie kolektora

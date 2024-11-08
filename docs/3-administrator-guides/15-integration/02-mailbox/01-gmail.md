@@ -37,8 +37,8 @@ Ten artykuł stanowi uzupełnienie instrukcji [integracji YetiForce z klientami 
 ![gmail-3](gmail-3.jpg)
 
 - Następnie należy określić typ integracji:
-  - `Internal` - Integracja przeznaczona do użytku produkcyjnego.
-  - `External` - Integracja tworzona w celach testowych.
+  - **Internal** - Integracja przeznaczona do użytku produkcyjnego.
+  - **External** - Integracja tworzona w celach testowych.
 
 ![gmail-4](gmail-4.jpg)
 

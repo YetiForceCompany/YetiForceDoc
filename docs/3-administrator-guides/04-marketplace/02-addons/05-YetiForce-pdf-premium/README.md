@@ -32,8 +32,7 @@ W tym artykule znajdziesz instrukcje, jak zainstalować i korzystać z tego modu
 
 :::tip
 
-Do prawidłowego działania dodatku wymagany jest silnik Chromium/Chrome.
-Informacje jak go skonfigurować znajdziesz w [tym artykule](/administrator-guides/system-tools/pdf)
+Do prawidłowego działania dodatku wymagany jest silnik Chromium/Chrome. Informacje jak go skonfigurować znajdziesz w [tym artykule](/administrator-guides/system-tools/pdf)
 
 :::
 

@@ -67,14 +67,14 @@ Jeżeli dane podane w formularzu są poprawne, system zostanie zatwierdzony. Wó
 
 ## Sprawdź status
 
-Jeśli status rejestracji nie został automatycznie zaktualizowany, można odświeżyć go ręcznie za pomocą przycisku <kbd>⟳</kbd>, który znajduje się na formularzu rejestracji w kolumnie **status rejestracji**
+Jeśli status rejestracji nie został automatycznie zaktualizowany, można odświeżyć go ręcznie za pomocą przycisku <kbd><i className="fas fa-refresh"></i></kbd>, który znajduje się na formularzu rejestracji w kolumnie **status rejestracji**
 
 ![status.jpg](status.jpg)
 
 ## Odrzucenie rejestracji
 
 W przypadku, gdy w formularzu znajdą się nieprawidłowe dane, rejestracja zostanie odrzucona. W celu ponownej weryfikacji, należy poprawnić formularz i ponownie go wysłać.
-W tym celu, przejdź do konfiguracji systemu za pomocą kółka zębatego <kbd>⚙</kbd> widocznego w prawym górnym rogu ekranu.
+W tym celu, przejdź do konfiguracji systemu za pomocą kółka zębatego <kbd><i className="ti ti-settings"></i></kbd> widocznego w prawym górnym rogu ekranu.
 
 ![registration-4.jpg](registration-4.jpg)
 
