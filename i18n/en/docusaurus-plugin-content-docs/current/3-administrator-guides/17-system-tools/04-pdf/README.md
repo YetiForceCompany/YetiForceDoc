@@ -11,6 +11,7 @@ tags:
   - Marketplace
 preview: pdf-2.jpg
 ---
+
 :::tip
 
 Do prawidłowego działania PDF Premium konieczne jest wykupienie płatnego dodatku **YetiForce PDF Premium**.
@@ -18,7 +19,6 @@ Do prawidłowego działania PDF Premium konieczne jest wykupienie płatnego doda
 Instrukcję jak to zrobić znajdziesz tutaj: [Instrukcja aktywacji YetiForce PDF Premium](/administrator-guides/marketplace/addons/YetiForce-pdf-premium/)
 
 :::
-
 
 W celu prawidłowego działania dodatku **YetiForce PDF Premium**, konieczne jest pobranie i zainstalowanie silnika Chromium/Chrome. Silnik ten umożliwia zaawansowane renderowanie PDF-ów, zapewniając wysoką jakość dokumentów i pełną zgodność z funkcjami systemu.
 
@@ -28,7 +28,7 @@ Silnik Chromium należy pobrać z oficjalnej strony projektu, do której link zn
 
 - Chromium - https://www.chromium.org/getting-involved/download-chromium/
 
-### Konfigurowanie ścieżki generatora PDF
+### Configuring the PDF generator path
 
 By zapewnić prawidłowe generowanie dokumentów PDF w YetiForce, konieczne jest skonfigurowanie ścieżki do generatora PDF. Proces ten obejmuje modyfikację pliku konfiguracyjnego i ustawienie odpowiedniej ścieżki do silnika Chromium/Chrome. Poniżej znajduje się szczegółowa instrukcja dotycząca tej konfiguracji.
 
@@ -36,12 +36,11 @@ By zapewnić prawidłowe generowanie dokumentów PDF w YetiForce, konieczne jest
 
 Plik konfiguracyjny odpowiedzialny za ustawienia generatora PDF znajduje się w katalogu **config/Components/** i nosi nazwę **Pdf.php**.
 
-Plik konfiguracyjny PDF: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
+PDF configuration file: [config/Components/Pdf.php](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html)
 
 #### Ustawienie ścieżki do generatora PDF
 
 W pliku **Pdf.php** należy znaleźć parametr **[$chromiumBinaryPath](https://doc.yetiforce.com/code/classes/Config-Components-Pdf.html#property_chromiumBinaryPath)** i ustawić jako jego wartość ścieżkę lokalną do zainstalowanego silnika Chromium/Chrome lub określić polecenie, które uruchamia ten silnik.
-
 
 ```php
 /**
@@ -49,27 +48,27 @@ W pliku **Pdf.php** należy znaleźć parametr **[$chromiumBinaryPath](https://d
  */
 class Pdf
 {
-    /**
-     * The name or path of the chrome/chromium engine.
-     *
-     * @see https://www.chromium.org/getting-involved/download-chromium
-     *
-     * @var string
-     */
-    public static $chromiumBinaryPath = 'chromium';
+	/**
+	 * The name or path of the chrome/chromium engine.
+	 *
+	 * @see https://www.chromium.org/getting-involved/download-chromium
+	 *
+	 * @var string
+	 */
+	public static $chromiumBinaryPath = 'chromium';
 
-    /**
-     * Chromium browser options available for the browser factory.
-     *
-     * @see https://github.com/chrome-php/chrome#available-options
-     *
-     * @var array
-     */
-    public static $chromiumBrowserOptions = ['noSandbox' => true, 'noProxyServer' => true];
+	/**
+	 * Chromium browser options available for the browser factory.
+	 *
+	 * @see https://github.com/chrome-php/chrome#available-options
+	 *
+	 * @var array
+	 */
+	public static $chromiumBrowserOptions = ['noSandbox' => true, 'noProxyServer' => true];
 }
 ```
 
-#### Przykładowe wartości `$chromiumBinaryPath`:
+#### Example `$chromiumBinaryPath` values:
 
 - chromium
 - chromium-browser
@@ -80,11 +79,11 @@ class Pdf
 
 ### Wybranie nowego silnika
 
-W sekcji administracyjnej przejdź w lewym menu do zakładki  ```Narzędzia systemowe``` a następnie ```PDF```. W celu weryfikacji czy poprawnie skonfigurowano silnik Chromium/Chrome, wybierz przycisk <kbd>Nowy szablon PDF</kbd>.
+W sekcji administracyjnej przejdź w lewym menu do zakładki `Narzędzia systemowe` a następnie `PDF`. W celu weryfikacji czy poprawnie skonfigurowano silnik Chromium/Chrome, wybierz przycisk <kbd>Nowy szablon PDF</kbd>.
 
 ![pdf-1.jpg](pdf-1.jpg)
 
-Gdy ścieżka `$chromiumBinaryPath` zostanie poprawnie ustawiona i system będzie miał dostęp do lokalizacji/polecenia, pojawi się nowy silnik w polu ```Silnik generujący```.
+Gdy ścieżka `$chromiumBinaryPath` zostanie poprawnie ustawiona i system będzie miał dostęp do lokalizacji/polecenia, pojawi się nowy silnik w polu `Silnik generujący`.
 
 ![pdf-2.jpg](pdf-2.jpg)
 
@@ -94,7 +93,7 @@ W pierwszej kolejności, należy upewnić się czy system ma zainstalowane wszys
 
 Lista wymaganych pakietów może się różnić w zależności od dystrybucji i wersji systemu. Dlatego konieczne jest zweryfikowanie potrzebnych zależności pod kątem własnego systemu, w czym może pomóc ta lista: [Lista zależności w zależności od wersji](https://source.chromium.org/chromium/chromium/src/+/main:chrome/installer/linux/debian/dist_package_versions.json)
 
-Przykładowa komenda do instalacji zależności dla systemu ```Debian 12.4 bookworm```
+Przykładowa komenda do instalacji zależności dla systemu `Debian 12.4 bookworm`
 
 ```bash
 apt-get install -y --no-install-recommends libnss3-tools libatk1.0-0 libatk-bridge2.0-0 libdrm-dev libxkbcommon-dev libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm-dev libasound2 libcups2 libpango-1.0-0 libcairo2
@@ -102,7 +101,7 @@ apt-get install -y --no-install-recommends libnss3-tools libatk1.0-0 libatk-brid
 
 Jeżeli twój system znajduje się na serwerze opartym o dystrybucję Linux, możesz w prosty sposób pobrać Chrome/Chromium za pomocą skryptu bash.
 
-Wykonaj poniższy skrypt, który pobierze najnowszą wersję Chromium/Chrome i umieści go gotowego do pracy na serwerze w lokalizacji ```./latest```
+Wykonaj poniższy skrypt, który pobierze najnowszą wersję Chromium/Chrome i umieści go gotowego do pracy na serwerze w lokalizacji `./latest`
 
 ```bash
 #! /bin/bash

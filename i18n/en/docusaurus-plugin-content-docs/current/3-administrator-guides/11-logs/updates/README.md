@@ -49,7 +49,7 @@ System update can be divided into 3 types of activities, which involve quite imp
 - Make a full backup of the entire system (all files/folders)
 - Backup the database
 - Disable Cron - it can be disabled in the administration panel (it is recommended to disable all tasks). You can also disable Cron by renaming the cron.php file
-- Enable logs ([Debug](/developer-guides/debug#summary))
+- Włącz logi([Debug](/developer-guides/debug#podsumowanie))
 - Backup the system and perform test update
 
 ## Activities during the update
@@ -112,7 +112,7 @@ The properly performed installation will complete by displaying the summary wind
 ### Verify update
 
 - First check logs and search for any errors or warnings. Log files can sometimes contain 20 thousand lines of code so it is recommended to use keywords, e.g.
-- Disable logs after using the system for several days to verify if there are any errors ([Debug](/developer-guides/debug#summary))
+- Wyłącz dzienniki po kilku dniach używania systemu w celu sprawdzenia, czy występują błędy ([Debug](/developer-guides/debug#podsumowanie))
 - Update the languages in the system.
 - Update lib_roundcube library to the version corresponding to your system.
 - In the admin panel, in the [`Software configuration → Standard modules → Modules - installation`](/administrator-guides/standard-modules/modules-installation/)you can see whether a previously installed library requires updating.

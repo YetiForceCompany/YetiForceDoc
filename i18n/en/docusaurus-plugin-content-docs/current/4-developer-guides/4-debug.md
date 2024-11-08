@@ -67,7 +67,7 @@ To start analyzing problems or errors in the system, log recording and displayin
 
 ## MySQL logs
 
-Errors in SQL queries are logged by [YetiForce system logs](#yetiforce-system-logs), with error level `error`.
+Errors in SQL queries are logged by [YetiForce system logs](#yetiforce-system-logs), with an error level of `error`.
 
 ## Smarty logs
 

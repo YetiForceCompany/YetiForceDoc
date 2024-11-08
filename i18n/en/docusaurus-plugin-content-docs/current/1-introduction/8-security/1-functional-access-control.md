@@ -52,11 +52,11 @@ Additionally, the administrator can mark the filter as public and grant access t
 
 ### View access
 
-list, preview list, summary, details) permissions are defined globally for the entire organization, while for other views (e.g.
+Dostęp do widoków jest częściowo automatyczny a częściowo konfigurowalny, dla widoków globalnych [np. lista, lista z podglądem, podsumowanie, szczegóły itd.] uprawnienia definiuje się globalnie dla całej organizacji, natomiast dla pozostałych widoków [np. tworzenie rekordu, edycja rekordu, szybkie tworzenie] uprawnienia wynikają bezpośrednio z profilu.
 
 ### Widget access
 
-Widgets on the third layer are automatically controlled by the system and available to anyone who has access to the record, however, the system does not show widgets for modules that the users do not have permissions.
+Dostęp do widżetów jest określany na trzech warstwach [pulpit, moduł, rekord] ale tylko na dwóch pierwszych warstwach możemy przypisywać kto jakie widżety widzi i w jaki sposób może nimi zarządzać, natomiast widżety na trzeciej warstwie są automatycznie kontrolowane przez system i dostępne dla każdego która ma dostęp do rekordu [przy czym system nie pokazuje widżetów dla modułów do których nie mamy uprawnień].
 
 A very important feature of widgets is that they do not show anything that the user does not have the permission to see. Even if we create a widget that shows all the data in the module, each user will only see the data they have access to.
 
@@ -72,4 +72,4 @@ The permission inspector mechanism, in addition to verifying data permissions, a
 
 ### Central permission supervision system
 
-YetiForce has one central system that verifies permissions for each element. It does not matter if you are importing data, communicating via API or trying to modify something with a button (e.g.
+YetiForce has one central system that verifies permissions for each element. Nie ma znaczenia czy importujesz dane, komunikujesz się przez API czy też próbujesz zmodyfikować coś za pomocą przycisku [np. zmiana statusu], każdorazowo system sprawdza czy na pewno użytkownik ma wszystkie konieczne uprawnienia do wykonania operacji.

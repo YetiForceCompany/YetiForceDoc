@@ -133,7 +133,7 @@ If the user doesn't have access to the module, the following message will appear
 
 ### Access to email import
 
-Permissions In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module.
+Permissions In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module. In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module.
 
 ![profiles2](profiles2.png)
 
