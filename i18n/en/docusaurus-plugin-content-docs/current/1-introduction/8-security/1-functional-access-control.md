@@ -52,11 +52,11 @@ Additionally, the administrator can mark the filter as public and grant access t
 
 ### View access
 
-list, preview list, summary, details) permissions are defined globally for the entire organization, while for other views (e.g.
+Access to views is partly automatic and partly configurable, for global views [e.g. list, list with preview, summary, details, etc.] permissions are defined globally for the entire organization, while for other views [e.g. create record, edit record, quick create] permissions result directly from the profile.
 
 ### Widget access
 
-Widgets on the third layer are automatically controlled by the system and available to anyone who has access to the record, however, the system does not show widgets for modules that the users do not have permissions.
+Access to widgets is defined on three layers [desktop, module, record] but only on the first two layers can we assign who can see which widgets and how they can be managed, while widgets on the third layer are automatically controlled by the system and available to anyone who has access to the record [however, the system does not show widgets for modules to which we do not have permissions].
 
 A very important feature of widgets is that they do not show anything that the user does not have the permission to see. Even if we create a widget that shows all the data in the module, each user will only see the data they have access to.
 
@@ -72,4 +72,4 @@ The permission inspector mechanism, in addition to verifying data permissions, a
 
 ### Central permission supervision system
 
-YetiForce has one central system that verifies permissions for each element. It does not matter if you are importing data, communicating via API or trying to modify something with a button (e.g.
+YetiForce has one central system that verifies permissions for each element. It does not matter whether you are importing data, communicating via API or trying to modify something using the button [e.g. change status], the system always checks whether the user has all the necessary permissions to perform the operation.

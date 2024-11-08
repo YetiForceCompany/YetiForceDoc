@@ -15,7 +15,8 @@ preview: calendar-view-1.jpg
 
 ## Additional data sources
 
-:::tip The functionality is available for YetiForce version `7.0` and later
+:::tip
+This feature is available for YetiForce version `7.0` and later
 :::
 
 Additional data sources allow you to show information from all record modules that have a date or time and date field. The configuration block is available in the filter panel on the right.
@@ -69,7 +70,7 @@ Depending on the selected type, one or four picklists with fields will be availa
 
 ![calendar-view-additional-data-sources-2.jpg](calendar-view-additional-data-sources-2.jpg)
 
-### Uprawnienia
+### Privileges
 
 The functionality of additional data sources is available to a regular user only after granting them the necessary permissions.
 
