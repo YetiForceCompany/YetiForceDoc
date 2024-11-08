@@ -15,7 +15,8 @@ tags:
 preview: Cli.jpg
 ---
 
-:::tip Funkcjonalność dostępna od wersji YetiForce `6.2.0` i później
+:::tip
+Funkcjonalność dostępna od wersji YetiForce `6.2.0` i później
 :::
 
 Opis interfejsu CLI (Command Line Interface) do obsługi niestandardowych operacji systemu YetiForce.
