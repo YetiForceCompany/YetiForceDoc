@@ -12,7 +12,8 @@ tags:
 preview: bria-softphone-1.png
 ---
 
-:::tip This functionality is available for YetiForce version 7.0 and later
+:::tip
+Funkcjonalność dostępna od wersji YetiForce 7.0
 :::
 
 PBX integration via the Bria Softphone application.

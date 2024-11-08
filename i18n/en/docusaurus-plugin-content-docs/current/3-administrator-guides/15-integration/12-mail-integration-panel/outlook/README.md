@@ -119,7 +119,7 @@ If you don't change it, it won't be possible to log into the YetiForce system an
 
 ![cookies5](cookies5.png)
 
-## Uprawnienia
+## Privileges
 
 Users need access to the `Mail integration panel` in order to use the integration panel.
 
@@ -133,7 +133,7 @@ If the user doesn't have access to the module, the following message will appear
 
 ### Access to email import
 
-Permissions In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module.
+Permissions In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module. In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module.
 
 ![profiles2](profiles2.png)
 

@@ -12,8 +12,8 @@ tags:
 preview: genesys-wde-whirly.jpg
 ---
 
-:::tip This functionality is available for YetiForce version 7.0 and later
-::::::warning A dedicated extension from Whirly that supports existing processes in the Genesys system is used for the integration.
+:::tip
+Funkcjonalność dostępna od wersji YetiForce 7.0
 :::
 
 :::warning A dedicated extension from Whirly that supports existing processes in the Genesys system is used for the integration.

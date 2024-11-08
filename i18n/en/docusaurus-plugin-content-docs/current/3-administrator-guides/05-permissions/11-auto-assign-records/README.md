@@ -5,11 +5,11 @@ keywords:
   - Auto
   - assign
   - records
-  - Uprawnienia
+  - Privileges
   - Settings
   - YetiForce
 tags:
-  - Uprawnienia
+  - Privileges
   - Auto assign
 preview: ass-1.jpg
 ---

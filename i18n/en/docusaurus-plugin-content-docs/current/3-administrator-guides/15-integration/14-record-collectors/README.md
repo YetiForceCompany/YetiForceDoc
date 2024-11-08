@@ -28,7 +28,7 @@ import ReactPlayer from 'react-player';
         <ReactPlayer url="/video/record-collector.mp4" width="100%" height="500px" controls={true} /></TabItem>
 </Tabs>
 
-## Uprawnienia
+## Privileges
 
 For the collector to work properly you have to check (☑) the "Record collector" field in the profile permission configuration panel (`Software configuration → Permissions → Profiles`) shown below:
 
