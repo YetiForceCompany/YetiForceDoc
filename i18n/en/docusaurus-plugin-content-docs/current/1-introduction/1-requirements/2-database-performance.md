@@ -2,7 +2,7 @@
 title: Database performance
 description: This article does not describe the configuration procedures, but highlights a few crucial points in optimizing a server environment.
 keywords:
-  - serwer
+  - server
   - database
   - performance
   - YetiForce
