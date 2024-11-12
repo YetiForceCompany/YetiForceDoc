@@ -35,7 +35,7 @@ We always try to trigger the error on the developer version of YetiForce, which 
 
 ## 3. The issue was not tested on our server
 
-The issue wasn't tested on https://gitdeveloper.yetiforce.com/ It's extremely important for the issue to be tested on our servers. If you skip that step, we might close it and label as ignored. It's due to the fact that we take care of hundreds of issues every month, and we can't guess the error's behavior on our servers. We don't want to waste our time trying to find the cause, especially if it turns out that everything is working just fine on our server, and the users are experiencing problems due to their server's incorrect configuration. If you add all the details on testing the error on our server, and the error still occurs, you can submit a new issue or request reopening the existing one.
+The issue wasn't tested on https://demo.yetiforce.com/ It's extremely important for the issue to be tested on our servers. If you skip that step, we might close it and label as ignored. It's due to the fact that we take care of hundreds of issues every month, and we can't guess the error's behavior on our servers. We don't want to waste our time trying to find the cause, especially if it turns out that everything is working just fine on our server, and the users are experiencing problems due to their server's incorrect configuration. If you add all the details on testing the error on our server, and the error still occurs, you can submit a new issue or request reopening the existing one.
 
 ## 4. The issue is related to specific environment
 

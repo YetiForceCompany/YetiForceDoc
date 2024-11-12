@@ -19,7 +19,9 @@ kolumnami. Dzięki temu w łatwy sposób możemy śledzić postęp prac, identyf
 innymi modułami YetiForce, co wspiera zarządzanie zadaniami w kontekście działań sprzedażowych, projektowych, serwisowych i innych.
 
 :::warning
+
 Dodatek YetiForce Kanban Board jest dostępny do subskrypcji w naszym Marketplace. - [**Więcej informacji**](https://yetiforce.com/pl/tablica-kanban.html)
+
 :::
 
 ![Widok ekranu konfiguracji](kanban-1.png)
@@ -35,9 +37,9 @@ Z listy dostępnych modułów, widocznej w prawym górnym rogu ekranu (1), nale�
 
 ![Wybór modułu systemowego](kanban-3.png)
 
-## Create boards
+## Tworzenie tablic
 
-Click <kbd>+ Add board</kbd> and select the field used to create a board in the module selected in the previous step:
+Kliknij przycisk <kbd>+ Dodaj tablicę</kbd> i wybierz pole, które zostanie użyte do stworzenia tablicy w wybranym w poprzednim kroku module:
 
 ![Wybór pól z modułu](kanban-4.png)
 
@@ -45,17 +47,17 @@ Po kliknięciu przycisku <kbd>Dodaj</kbd>, tablica będzie dostępna w wybranym 
 
 ![Widok wyboru pola](kanban-5.png)
 
-## Board parameters
+## Parametry tablicy
 
-- Pola szczegółowe - lista pól w których mają się pojawić dane rekordu. Jeśli dane pole ma ustawioną ikonę, to będzie ona widoczna. All fields from the system are available according to users' permissions.
+- Pola szczegółowe - lista pól w których mają się pojawić dane rekordu. Jeśli dane pole ma ustawioną ikonę, to będzie ona widoczna. Dostępne są wszystkie pola z systemu z uwzględnieniem uprawnień użytkownika.
 
   ![Widok pól szczegółowych](kanban-6.png)
 
-- Pola sumowania - lista pól które mają być poddane sumowaniu dla danej wartości (słupka kanbana), dla której jest wyświetlany kanban. Only numeric fields are available where summation operations can be performed.
+- Pola sumowania - lista pól które mają być poddane sumowaniu dla danej wartości (słupka kanbana), dla której jest wyświetlany kanban. Dostępne są tylko pola liczbowe, na których można wykonać operacje sumowania.
 
   ![Widok sumowania](kanban-7.png)
 
-The data in the pick list is saved automatically upon each change.
+Dane na liście wyboru są zapisane automatycznie podczas każdej zmiany.
 
 ## Privileges
 

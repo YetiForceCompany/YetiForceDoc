@@ -25,16 +25,17 @@ The official translation project of [YetiForce](https://crowdin.com/project/yeti
 :::warning
 
 **You need a Crowdin account to be able to add translations.**
+
 :::
 
 :::tip
 
-Guide: [Translation Process](https://support.crowdin.com/crowdin-intro/#translation-process)
+Poradnik: [Translation Process](https://support.crowdin.com/crowdin-intro/#translation-process)
 
 :::
 
 If you want to add translations in a language that is not currently available in YetiForce, please send an email to 📧 crowdin@yetiforce.com.
 
-## Supported languages
+## Obsługiwane języki
 
-The list of currently supported languages can be found [here](https://crowdin.com/project/yetiforcecrm).
+Lista aktualnie obsługiwanych języków znajduje się [tutaj](https://crowdin.com/project/yetiforcecrm).

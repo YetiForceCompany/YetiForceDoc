@@ -16,33 +16,37 @@ tags:
 This tutorial presents LEMP installation and configuration for YetiForce on Debian 10 with NGINX/PHP-FPM 7.4/MariaDB server.
 
 :::warning
-This article assumes you have at least a basic understanding of Linux, and you know how to use the shell.
+
+W artykule zakładamy, że masz przynajmniej podstawową wiedzę o Linux i wiesz jak korzystać z powłoki shell.
+
 :::
 
-Installation is quite simple and assumes you are working on the root account. If not, you may have to add `sudo` to the commands to gain `root` privileges.
+Instalacja jest całkiem prosta i zakłada, że pracujesz na koncie root. Jeśli nie, może być konieczne dodanie `sudo` poleceń, aby uzyskać uprawnienia `root`.
 
 :::tip
-The full list of requirements for the YetiForce system is available here: [YetiForce requirements](/introduction/requirements/)
+
+Pełna lista wymagań dla systemu YetiForce jest na stronie: [Wymagania systemu YetiForce](/introduction/requirements/)
+
 :::
 
-## 1. Update all installed packages to the latest available versions
+## 1. Aktualizacja wszystkich zainstalowanych pakietów do najnowszych dostępnych wersji
 
 ```bash
 apt-get update -y
 apt-get upgrade -y
 ```
 
-## 2. Install required packages
+## 2. Zainstaluj wymagane pakiety
 
 ```bash
 apt-get install -y --no-install-recommends apt-utils curl openssl wget ca-certificates apt-transport-https lsb-release gnupg zip unzip cron mc htop p7zip-full
 ```
 
-## 3. Add required repositories (package sources)
+## 3. Dodaj wymagane repozytoria (źródła pakietów)
 
-The default PHP version used in a given distribution does not always match the requirements, so we use an additional package source.
+Domyślna wersja PHP używana w danej dystrybucji nie zawsze jest zgodna z wymaganiami, dlatego używamy dodatkowego źródła pakietów.
 
-We recommend using https://deb.sury.org/, https://github.com/oerdnj/deb.sury.org as it has the latest versions and frequent PHP updates.
+Zalecamy używanie https://deb.sury.org/, https://github.com/oerdnj/deb.sury.org zawiera najnowsze wersje oraz częste aktualizacje PHP.
 
 ```bash
 wget -q -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
@@ -50,6 +54,8 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sou
 ```
 
 :::important Opcjonalnie
+
+Jeśli chcesz mieć najnowszą wersję silnika bazy danych, to możesz dodać dodatkowe repozytorium pakietów od MariaDB.
 
 ```bash
 apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
@@ -93,6 +99,8 @@ passwd yfprod
 
 :::important Opcjonalnie
 
+Utworzenie środowiska testowego
+
 ```bash
 groupadd yftest
 useradd -g yftest yftest
@@ -118,10 +126,14 @@ wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/YetiForceCompan
 ```
 
 :::warning
+
 The [www.conf](https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/nginx/www.conf) GitHub file contains example domain names that should be changed. The example is presented on the development version, we recommend downloading the files for the system version that will be installed.
+
 :::
 
 :::important Opcjonalnie
+
+Utworzenie środowiska testowego, wymaga zmiany nazwy domeny
 
 ```bash
 cp /etc/nginx/sites-available/yfprod.conf /etc/nginx/sites-available/yftest.conf
@@ -143,11 +155,14 @@ sed -i 's/output_buffering = "On"/output_buffering = "Off"/g' /etc/php/7.4/cli/c
 ```
 
 :::warning
-W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji systemu, która będzie instalowana np. [https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf](https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf)
+
+W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji systemu, która będzie instalowana np. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
 
 :::
 
 :::important Opcjonalnie
+
+Tworzenie środowiska testowego wymaga skopiowania pliku i zastąpienia `yfprod` `yftest`
 
 ```bash
 cp /etc/php/7.4/fpm/pool.d/yfprod.conf /etc/php/7.4/fpm/pool.d/yftest.conf
@@ -164,7 +179,9 @@ wget -O /etc/mysql/mariadb.conf.d/50-server.cnf "https://raw.githubusercontent.c
 ```
 
 :::warning
+
 https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
+
 :::
 
 **MariaDB is not secure by default**. You can secure it in two ways:
@@ -252,7 +269,9 @@ A complete description of the YetiForce installation can be found in the article
 ## 15. Final remarks
 
 :::warning
+
 Po zakończeniu konfiguracji dostęp do SSH powinien zostać ograniczony tylko do zaufanych adresów IP lub VPN.
 
 We also recommend disabling root login directly via SSH and installing and configuring a firewall.
+
 :::
