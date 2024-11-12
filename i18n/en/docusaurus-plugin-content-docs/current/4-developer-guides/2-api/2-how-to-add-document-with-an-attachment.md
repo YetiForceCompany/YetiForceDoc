@@ -18,7 +18,9 @@ tags:
 ---
 
 :::tip
+
 This functionality is available for YetiForce version `6.2.0` and later
+
 :::
 
 The article describes how to add a new entry with an attachment in the Documents module via Rest API.

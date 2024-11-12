@@ -6,7 +6,7 @@ keywords:
   - Edit
   - fields
 tags:
-  - Fields
+  - Pola
 ---
 
 ## Help icons
@@ -45,5 +45,7 @@ The following fields can be added:
 - Web service application
 
 :::info
-💻 Demo: https://gitdeveloper.yetiforce.com/index.php?module=LayoutEditor&parent=Settings&view=Index
+
+💻 Demo: https://demo.yetiforce.com/index.php?module=LayoutEditor&parent=Settings&view=Index
+
 :::

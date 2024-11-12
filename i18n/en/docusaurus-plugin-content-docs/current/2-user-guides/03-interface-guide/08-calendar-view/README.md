@@ -16,67 +16,69 @@ preview: calendar-view-1.jpg
 ## Additional data sources
 
 :::tip
+
 This feature is available for YetiForce version `7.0` and later
+
 :::
 
-Additional data sources allow you to show information from all record modules that have a date or time and date field. The configuration block is available in the filter panel on the right.
+Dodatkowe źródła danych umożliwiają wyświetlanie informacji ze wszystkich modułów z rekordami, które mają pole daty lub czasu i daty. Blok konfiguracyjny jest dostępny w panelu filtrów po prawej stronie.
 
 ![calendar-view-additional-data-sources-0.jpg](calendar-view-additional-data-sources-0.jpg)
 
-### Fields
+### Pola
 
 ![calendar-view-additional-data-sources-1.jpg](calendar-view-additional-data-sources-1.jpg)
 
-#### Title
+#### Tytuł
 
-The name that will be displayed in the list of data sources
+Nazwa, która będzie wyświetlana na liście źródeł danych
 
-#### Type
+#### Rodzaj
 
-The type determines on the basis of how many and what types of fields the data is to be presented. Thanks to this solution, the system gives you the option of showing data from a range or based on two date and time fields as one value.
+Typ określa na podstawie ilu i jakich pól mają być prezentowane dane. Dzięki temu rozwiązaniu, system daje możliwość wyświetlania danych z zakresu lub w oparciu o dwa pola daty i czasu jako jedną wartość.
 
-You can choose the following types:
+Możesz wybrać następujące typy:
 
-- One date field or date time
-- Two fields date and time
-- Time range for one date field or date and time field
-- Time range for two date and time fields
+- Jedno pole daty lub data i czas
+- Dwa pola daty i czasu
+- Zakres czasu dla jednego pola daty lub daty i godziny
+- Zakres czasu dla dwóch pól data i czas
 
-#### Public
+#### Publiczny
 
-The parameter determines whether a given data source will be visible to other users. By default, everyone can only see their own data sources, and this option makes it possible to share them. Only available to system administrators.
+Parametr określa, czy dane źródło danych będzie widoczne dla innych użytkowników. Domyślnie każdy widzi tylko własne źródła danych, a ta opcja umożliwia ich udostępnianie. Dostępne tylko dla administratorów systemu.
 
-#### Include filters
+#### Uwzględnij filtry
 
-Selecting this option will narrow down the results to selected users and groups. Leaving this option unchecked will show all entries, regardless of the selected users and groups.
+Wybranie tej opcji zawęzi wyniki do wybranych użytkowników i grup. Pozostawienie tej opcji odznaczonej pokaże wszystkie wpisy, niezależnie od wybranych użytkowników i grup.
 
-#### Module
+#### Moduł
 
-Specifies from which module the data will be displayed.
+Określa, z którego modułu będą wyświetlane dane.
 
-#### Custom view
+#### Widok niestandardowy
 
-List with filters for the selected module, it gives the possibility of additional filtering of the displayed data based on the conditions from the filters. More information can be found in the [Filter conditions](/user-guides/interface-guide/list-view/filter#conditions) article.
+Lista z filtrami dla wybranego modułu, daje możliwość dodatkowego filtrowania wyświetlanych danych w oparciu o warunki z filtrów. Więcej informacji w artykule [Warunki filtrów](/user-guides/interface-guide/list-view/filter#conditions).
 
-#### Label field
+#### Pole etykiety
 
-The selection list allows you to change the default record label to the selected field that you want to show in the calendar.
+Lista wyboru pozwala zmienić domyślną etykietę rekordu na wybrane pole, które chcesz wyświetlić w kalendarzu.
 
 ![calendar-view-field-label.jpg](calendar-view-field-label.jpg)
 
-#### Field-based data
+#### Dane oparte na polach
 
-Depending on the selected type, one or four picklists with fields will be available for the selected module. The calendar display data will be shown based on the selected fields.
+W zależności od wybranego typu dla wybranego modułu będzie dostępna jedna lub cztery listy rozwijane z polami. Dane wyświetlania kalendarza zostaną pokazane na podstawie wybranych pól.
 
 ![calendar-view-additional-data-sources-2.jpg](calendar-view-additional-data-sources-2.jpg)
 
 ### Privileges
 
-The functionality of additional data sources is available to a regular user only after granting them the necessary permissions.
+Funkcjonalność dodatkowych źródeł danych jest dostępna dla zwykłych użytkowników dopiero po przyznaniu im niezbędnych uprawnień.
 
-You can manage permissions in [System configuration → Permissions → Profiles](/administrator-guides/permissions/profiles/)
+Możesz zarządzać uprawnieniami w [Konfiguracja systemu → Uprawnienia → Profile](/administrator-guides/permissions/profiles/)
 
-Permissions are divided into two options:
+Uprawnienia są podzielone na dwie opcje:
 
-- **Calendar - Additional data sources** - grants access to the entire block and data display
-- **Calendar - Create additional data sources** - allows the user to create their own data sources
+- **Kalendarz - Dodatkowe źródła danych** - daje dostęp do całego bloku i wyświetlania danych
+- **Kalendarz - Utwórz dodatkowe źródła danych** - pozwala użytkownikowi na tworzenie własnych źródeł danych

@@ -38,16 +38,18 @@ Clearing browser cache is a very useful step that should be performed after upda
 Another option is to clear your browsing data. A description of this process can be found in the following article: [Clear cache & cookies](https://support.google.com/accounts/answer/32050).
 
 :::warning
-It's important to select all items to be removed and the time range
+
+Wybierz wszystkie elementy, które chcesz usunąć i zakres czasowy
+
 :::
 
 ![how-to-clear-browser-cache-3.jpg](how-to-clear-browser-cache-3.jpg)
 
-## Clearing cache in `Firefox`
+## Czyszczenie cache w `Firefox`
 
-1. Open your YetiForce CRM in Firefox
-2. Press <kbd>F12</kbd>
-3. Select the `Storage` tab in the window that showed up after pressing <kbd>F12</kbd>
-4. In the `Storage` tab in the panel on the left side right-click your YetiForce's URL and select `Delete All`
+1. Otwórz YetiForce w Firefox
+2. Naciśnij <kbd>F12</kbd>
+3. Wybierz zakładkę `Storage` w oknie, które pojawi się po naciśnięciu <kbd>F12</kbd>
+4. W zakładce`Storage` w panelu po lewej stronie kliknij prawym przyciskiem myszy na adres URL YetiForce i wybierz `Delete All`
 
 ![how-to-clear-browser-cache-4.jpg](how-to-clear-browser-cache-4.jpg)
