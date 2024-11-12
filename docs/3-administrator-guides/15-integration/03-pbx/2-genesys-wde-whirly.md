@@ -13,10 +13,15 @@ preview: genesys-wde-whirly.jpg
 ---
 
 :::tip
+
 Funkcjonalność dostępna od wersji YetiForce 7.0
+
 :::
 
-:::warning Do integracji wykorzystuje dedykowane rozszerzenie od firmy Whirly, które obsługuje funkcjonujące procesy w systemie Genesys.
+:::warning
+
+Do integracji wykorzystuje dedykowane rozszerzenie od firmy Whirly, które obsługuje funkcjonujące procesy w systemie Genesys.
+
 :::
 
 Integracja z centralą telefoniczną za pośrednictwem aplikacji Genesys Workspace Desktop Edition.

@@ -19,7 +19,9 @@ kolumnami. Dzięki temu w łatwy sposób możemy śledzić postęp prac, identyf
 innymi modułami YetiForce, co wspiera zarządzanie zadaniami w kontekście działań sprzedażowych, projektowych, serwisowych i innych.
 
 :::warning
+
 Dodatek YetiForce Kanban Board jest dostępny do subskrypcji w naszym Marketplace. - [**Więcej informacji**](https://yetiforce.com/pl/tablica-kanban.html)
+
 :::
 
 ![Widok ekranu konfiguracji](kanban-1.png)

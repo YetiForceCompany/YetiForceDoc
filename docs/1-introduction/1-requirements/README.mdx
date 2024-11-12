@@ -75,7 +75,9 @@ Pliki konfiguracyjne np. `/etc/my.cnf`, `/etc/mysql/my.cnf`, `/etc/mysql/conf.d/
 - `ENGINE = InnoDB` powinno być dostępne i domyślnie włączone. (wyłącz --skip-innodb)
 
 :::warning
+
 Ze względów bezpieczeństwa zalecamy aby każda baza danych posiadała dedykowanego użytkownika, nie zalecamy używania użytkownika bazodanowego `root` do komunikacji z bazą danych.
+
 :::
 
 import DB_MYSQL_REQUIREMENTS from '/static/files/db_mysql_requirements.mdx';
@@ -159,6 +161,7 @@ catch_workers_output = yes
 import FPM from '/static/files/fpm.mdx';
 
 :::important
+
 Przykładowa konfiguracja FPM:
 
 <details>
@@ -224,6 +227,7 @@ Konfiguracja powinna umożliwiać serwerowi WWW na pełne uprawnienia do plików
 ### Problemy z SELinux
 
 :::warning
+
 Gdy na serwerze jest zainstalowany SELinux w trybie enforcing często występują problemy z uprawnieniami. Należy zwrócić uwagę na parametry konfiguracyjne:
 
 - httpd_unified
@@ -266,7 +270,9 @@ Część serwerów umożliwia zmianę konfiguracji za pomocą pliku `.htaccess`,
 #### Apache module
 
 :::warning
+
 Poniższa konfiguracja działa tylko jak ustawiono w konfiguracji Apache np. `httpd.conf` "AllowOverride Options" lub "AllowOverride All"
+
 :::
 
 ```apacheconf

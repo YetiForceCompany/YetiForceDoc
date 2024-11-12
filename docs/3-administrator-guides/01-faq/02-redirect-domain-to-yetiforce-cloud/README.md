@@ -17,7 +17,9 @@ tags:
 Przekierowanie domeny (lub subdomeny) na inny adres www (domenę/subdomenę) jest bardzo praktyczne biznesowo. Najczęściej stosuje się to wówczas, gdy chcemy, aby docelowa aplikacja była dla użytkowników końcowych widoczna pod innym adresem. Szczególnie warto stosować przekierowanie, gdy korzystamy z rozwiązań, które nie są na naszym serwerze i są pod innym adresem niż na przykład nasza domena, która jest znana naszym użytkownikom. Poniżej znajdziesz instrukcje krok po kroku.
 
 :::warning
+
 Dla klientów YetiForce usługa przekierowywania jest dostępna tylko dla produktu YetiForce Cloud.
+
 :::
 
 ## Opis problemu
