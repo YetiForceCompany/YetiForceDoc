@@ -51,5 +51,29 @@
 	"theme.SearchBar.label": {
 		"message": "Szukaj",
 		"description": "The ARIA label and placeholder for search button"
+	},
+	"theme.admonition.caution": {
+		"message": "uwaga",
+		"description": "The default label used for the Caution admonition (:::caution)"
+	},
+	"theme.admonition.danger": {
+		"message": "ważne",
+		"description": "The default label used for the Danger admonition (:::danger)"
+	},
+	"theme.admonition.info": {
+		"message": "informacja",
+		"description": "The default label used for the Info admonition (:::info)"
+	},
+	"theme.admonition.note": {
+		"message": "notatka",
+		"description": "The default label used for the Note admonition (:::note)"
+	},
+	"theme.admonition.tip": {
+		"message": "wskazówka",
+		"description": "The default label used for the Tip admonition (:::tip)"
+	},
+	"theme.admonition.warning": {
+		"message": "ostrzeżenie",
+		"description": "The default label used for the Warning admonition (:::warning)"
 	}
 }
