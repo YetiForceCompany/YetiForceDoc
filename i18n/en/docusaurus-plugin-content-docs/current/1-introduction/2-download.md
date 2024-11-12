@@ -19,9 +19,11 @@ Here you can find links to download the latest stable version of the system.
 ## YetiForce requirements
 
 :::important
-Read the server requirements and assess whether your server meets them and is ready to start the installation process before you download the system.
+
+Przed pobraniem zapoznaj się z wymaganiami dla serwera i oceń czy jest gotowy do rozpoczęcia procesu instalacji.
+
 :::
 
-Full list of requirements: [YetiForce requirements](/introduction/requirements).
+Pełna lista wymagań: [Wymagania systemu YetiForce](/introduction/requirements).
 
-Step by step installation manual: [YetiForce installation guide](/introduction/installation-manual).
+Instrukcja krok po kroku: [Instrukcja instalacji systemu YetiForce](/introduction/installation-manual).

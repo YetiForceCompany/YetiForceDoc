@@ -75,7 +75,9 @@ Configuration files eg. `/etc/my.cnf`, `/etc/mysql/my.cnf`, `/etc/mysql/conf.d/`
 - `ENGINE = InnoDB` should be available and enabled by default (disable --skip-innodb)
 
 :::warning
-For security reasons, we recommend that each database has a dedicated user; we do not recommend using the `root` database user to communicate with the database.
+
+Ze względów bezpieczeństwa zalecamy aby każda baza danych posiadała dedykowanego użytkownika, nie zalecamy używania użytkownika bazodanowego `root` do komunikacji z bazą danych.
+
 :::
 
 import DB_MYSQL_REQUIREMENTS from '/static/files/db_mysql_requirements.mdx';
@@ -84,9 +86,9 @@ import DB_MYSQL_REQUIREMENTS from '/static/files/db_mysql_requirements.mdx';
 	<DB_MYSQL_REQUIREMENTS />
 </code>
 
-## PHP requirements
+## Wymagania dla PHP
 
-Configuration files np. `/etc/php/8.1/fpm/php.ini`, `/etc/php/8.1/cli/php.ini`
+Pliki konfiguracyjne np. `/etc/php/8.1/fpm/php.ini`, `/etc/php/8.1/cli/php.ini`
 
 import PHP_PROD_REQUIREMENTS from '/static/files/php_prod_requirements.mdx';
 import PHP_DEV_REQUIREMENTS from '/static/files/php_dev_requirements.mdx';
@@ -96,14 +98,14 @@ import PHP_DEV_REQUIREMENTS from '/static/files/php_dev_requirements.mdx';
 </code>
 
 <details>
-  <summary>Development version</summary>
+  <summary>Wersja Deweloperska</summary>
     <PHP_DEV_REQUIREMENTS />
 
 </details>
 
-### External library configuration
+### Konfiguracja bibliotek zewnętrznych
 
-#### Mandatory
+#### Obowiązkowe
 
 - imap
 - PDO
@@ -131,19 +133,19 @@ import PHP_DEV_REQUIREMENTS from '/static/files/php_dev_requirements.mdx';
 - ctype
 - hash
 
-#### Optional
+#### Opcjonalne
 
-- exif - Library recommended for increasing security, allows you to work with image metadata
-- ldap - Library required if LDAP/AD login is active
-- OPcache - Improves PHP performance by storing compiled bytecode in shared memory
-- apcu - Library that improves system efficiency, recommended when a large number of users is using the system or the system is under heavy load
-- imagick - Library recommended for increasing security, it secures and verifies potentially dangerous image files
-- pdo_sqlsrv - Library required if integration with Wapro ERP or Comarch is active
-- mongoDB - This library is not required and allows using a NoSQL database for storing change history.
+- exif - Biblioteka zalecana do zwiększenia bezpieczeństwa, umożliwia pracę z metadanymi obrazów
+- ldap - Biblioteka wymagana podczas aktywnego logowania za pomocą LDAP/AD
+- OPcache - Poprawia wydajność PHP poprzez przechowywanie skompilowanego kodu bajtowego w pamięci współdzielonej
+- apcu - Biblioteka przyspieszająca wydajność systemu, zalecana podczas pracy większej ilości użytkowników lub większego obciążenia systemu
+- imagick - Biblioteka zalecana do zwiększenia bezpieczeństwa, zabezpiecza i weryfikuje potencjalnie niebezpieczne pliki graficzne
+- pdo_sqlsrv - Biblioteka wymagana podczas aktywnej integracji z Wapro ERP lub Comarch
+- mongoDB - Biblioteka ta nie jest wymagana i umożliwia wykorzystanie bazy danych NoSQL do przechowywania historii zmian.
 
-#### Forbidden
+#### Zabronione
 
-- uopz - Causes the system to freeze
+- uopz - rozszerzenie powoduje zawieszanie i blokowanie systemu
 
 ### FPM
 
@@ -159,6 +161,7 @@ catch_workers_output = yes
 import FPM from '/static/files/fpm.mdx';
 
 :::important
+
 Przykładowa konfiguracja FPM:
 
 <details>
@@ -224,6 +227,7 @@ The configuration should allow the uploaded files to have full read and write ac
 ### Issues with SELinux
 
 :::warning
+
 Gdy na serwerze jest zainstalowany SELinux w trybie enforcing często występują problemy z uprawnieniami. Należy zwrócić uwagę na parametry konfiguracyjne:
 
 - httpd_unified
@@ -266,7 +270,9 @@ Some servers allow changing the configuration via the `.htaccess` file. We prese
 #### Apache module
 
 :::warning
+
 The configuration below works only if Apache (eg. `httpd.conf`) is set to "AllowOverride Options" or "AllowOverride All"
+
 :::
 
 ```apacheconf
