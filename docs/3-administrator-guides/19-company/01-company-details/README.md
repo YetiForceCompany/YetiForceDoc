@@ -56,7 +56,9 @@ Należy wypełnić wszystkie obowiązkowe pola (oznaczone czerwoną gwiazdką) p
 Po wysłaniu formularza rejestracyjnego czekamy na weryfikację systemu.
 
 :::warning
+
 Klucze rejestracyjne generowane są automatycznie i wysyłane na adres email podany podczas rejestracji. W przypadku podania nieprawidłowych informacji, rejestracja zostanie odrzucona.
+
 :::
 
 ![registration-2.jpg](registration-2.jpg)
@@ -83,7 +85,9 @@ W menu z lewej strony wybierz `Firma`, a następnie `Dane firmy`. Popraw dane w 
 ![registration-5.jpg](registration-5.jpg)
 
 :::warning
+
 Każdorazowa zmiana danych w formularzu, automatycznie zmieni status rejestracji na "**oczekuje na akceptację**" i będzie wymagana ponowna weryfikacja wprowadzonych danych.
+
 :::
 
 Dane wprowadzone w formularzu rejestracyjnym, zostaną przesłane do nas w celu weryfikacji. Weryfikacja nastąpi w ciągu 2 dni roboczych.

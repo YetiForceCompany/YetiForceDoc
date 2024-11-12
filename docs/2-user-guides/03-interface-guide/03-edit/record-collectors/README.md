@@ -58,9 +58,11 @@ Następnie przejdź do sekcji administracyjnej i wybierz `Integracja → Kolekto
 Poniżej znajduje się lista wszystkich aktualnie dostępnych kolektorów rekordów. Darmowe kolekcjonerskie dostępne w systemie są domyślnie oznaczone tagiem, pozostałe mogą być zakupione w Marketplace. Regularnie dodajemy do systemu YetiForce nowe kolektory rekordów.
 
 :::warning
+
 Należy pamiętać, że dostęp do danych z niektórych kolektorów może wymagać odpowiednich danych uwierzytelniających.
 
 **Prosimy o zapoznanie się z dokumentacją danego kolektora, aby uzyskać więcej informacji na temat wymagań dotyczących dostępu.**
+
 :::
 
 - GUS [PL] - Pobiera dane o polskich firmach z bazy danych **REGON 1(BIR1)** dostarczonej przez GUS

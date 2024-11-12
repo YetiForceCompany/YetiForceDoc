@@ -19,7 +19,9 @@ Jeśli jesteście użytkownikami systemu YetiForce i macie problem, które chcec
 #### 2. Dane dostępowe do system YetiForce
 
 :::important
+
 Użytkownik musi mieć uprawnienia administratora.
+
 :::
 
 - login
@@ -50,11 +52,15 @@ Dostęp do bazy danych musi być możliwy przez klienta zewnętrznego, czyli mus
 #### 5. VPN - Opcjonalny
 
 :::warning
+
 Dotyczy tylko jeśli dostęp do Twoich danych wymaga VPN
+
 :::
 
 Prosimy dodatkowo o podanie nazwy programu potrzebnego do połączenia z VPN oraz dane do konfiguracji tego programu (adres, port, login, hasło, oraz inne informacje wymagane przez konkretny program, jak np. certyfikat).
 
 :::tip
+
 Po realizacji przez nas zlecenia dane dostępowe należy zmienić a dostęp z zewnątrz należy wyłączyć zgodnie z dobrymi praktykami bezpieczeństwa.
+
 :::

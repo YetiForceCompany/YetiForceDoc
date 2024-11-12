@@ -25,7 +25,9 @@ Dzięki takiemu rozwiązaniu nie jest konieczne wykonywanie kopii całego system
 Implementacja umożliwia korzystanie ze wszystkich funkcjonalności YetiForce w Outlook.
 
 :::important
+
 Artykuł omawia najważniejsze kwestie związane z dodatkiem Outlook do systemu YetiForce. Przeczytaj go w całości i zwróć szczególną uwagę na wytyczne aby dodatek działał prawidłowo.
+
 :::
 
 ## Prezentacja wideo
@@ -63,9 +65,11 @@ Dodatek Outlook do systemu YetiForce działa z następującymi typami aplikacji 
 - Outlook.com
 
 :::warning
+
 Klient poczty musi być połączony z serwerem Exchange lub Microsoft 365 (dawniej Office 365) przy użyciu połączenia bezpośredniego. Podczas konfigurowania klienta użytkownik musi wybrać typ konta Exchange, Office lub Outlook.com. Dodatki nie zostaną załadowane jeśli klient poczty jest skonfigurowany do łączenia się przez POP3 lub IMAP.
 
 Więcej informacji na stronie: [Wymagania dotyczące dodatku Outlook](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/add-in-requirements)
+
 :::
 
 ### Silnik przeglądarki
