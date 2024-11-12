@@ -27,7 +27,9 @@ CRON można włączyć w kilku prostych krokach:
 - Dodaj wpis do crontab, lub plik do CRON, np. w takim formacie (`__YETIFORCE_PATH__`jest pełną ścieżką bezwzględną do folderu systemu YetiForce, np. /var/www/example),
 
   :::warning
+
   Ważne jest, aby skrypt był uruchamiany z takimi samymi uprawnieniami jak właściciel plików systemowych.
+
   :::
 
 ```bash

@@ -25,6 +25,7 @@ System YetiForce umożliwia integrację z innymi aplikacjami, co pozwala na pły
 :::warning
 
 **Uwaga!** Aby móc zintegrować YetiForce z Dav, potrzebujesz płatnego dodatku **Outlook Integration Panel & DAV**, dostępnego w Marketplace YetiForce.
+
 :::
 
 Poniżej znajduje się instrukcja, która krok po korku pokaże jak skonfigurować integrację DAV w systemie YetiForce.

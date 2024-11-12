@@ -16,7 +16,9 @@ preview: Cli.jpg
 ---
 
 :::tip
+
 Funkcjonalność dostępna od wersji YetiForce `6.2.0` i później
+
 :::
 
 Opis interfejsu CLI (Command Line Interface) do obsługi niestandardowych operacji systemu YetiForce.
@@ -28,7 +30,9 @@ Opis interfejsu CLI (Command Line Interface) do obsługi niestandardowych operac
 Konsolę zawsze uruchamiany z głównego katalogu systemu YetiForce, czyli tam gdzie znajduje sie plik cli.php.
 
 :::tip
+
 YetiForce CLI musi być zawsze uruchamiany na użytkowniku systemu operacyjnego, który jest właścicielem plików systemu YetiForce.
+
 :::
 
 Możliwe polecenia w zależności od środowiska:

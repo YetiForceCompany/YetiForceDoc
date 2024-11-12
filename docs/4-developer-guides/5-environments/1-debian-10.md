@@ -16,13 +16,17 @@ tags:
 Instrukcja przedstawia proces instalacji i konfiguracji platformy LEMP dla YetiForce na Debian 10 z serwerem NGINX/PHP-FPM 7.4/MariaDB.
 
 :::warning
+
 W artykule zakładamy, że masz przynajmniej podstawową wiedzę o Linux i wiesz jak korzystać z powłoki shell.
+
 :::
 
 Instalacja jest całkiem prosta i zakłada, że pracujesz na koncie root. Jeśli nie, może być konieczne dodanie `sudo` poleceń, aby uzyskać uprawnienia `root`.
 
 :::tip
+
 Pełna lista wymagań dla systemu YetiForce jest na stronie: [Wymagania systemu YetiForce](/introduction/requirements/)
+
 :::
 
 ## 1. Aktualizacja wszystkich zainstalowanych pakietów do najnowszych dostępnych wersji
@@ -50,6 +54,7 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sou
 ```
 
 :::important Opcjonalnie
+
 Jeśli chcesz mieć najnowszą wersję silnika bazy danych, to możesz dodać dodatkowe repozytorium pakietów od MariaDB.
 
 ```bash
@@ -93,6 +98,7 @@ passwd yfprod
 ```
 
 :::important Opcjonalnie
+
 Utworzenie środowiska testowego
 
 ```bash
@@ -120,10 +126,13 @@ wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/YetiForceCompan
 ```
 
 :::warning
+
 Plik [www.conf](https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/nginx/www.conf) z github zawiera przykładowe nazwy domen i należy je zmienić. W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji CRM, która będzie instalowana.
+
 :::
 
 :::important Opcjonalnie
+
 Utworzenie środowiska testowego, wymaga zmiany nazwy domeny
 
 ```bash
@@ -146,11 +155,13 @@ sed -i 's/output_buffering = "On"/output_buffering = "Off"/g' /etc/php/7.4/cli/c
 ```
 
 :::warning
+
 W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji systemu, która będzie instalowana np. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
 
 :::
 
 :::important Opcjonalnie
+
 Tworzenie środowiska testowego wymaga skopiowania pliku i zastąpienia `yfprod` `yftest`
 
 ```bash
@@ -168,7 +179,9 @@ wget -O /etc/mysql/mariadb.conf.d/50-server.cnf "https://raw.githubusercontent.c
 ```
 
 :::warning
+
 W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji systemu, która będzie instalowana np. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
+
 :::
 
 **MariaDB nie jest domyślnie bezpieczna**. Możesz to zrobić na dwa sposoby:
@@ -256,7 +269,9 @@ Pełny opis instalacji systemu YetiForce znajduje się w artykule: [Instalacja s
 ## 15. Uwagi końcowe
 
 :::warning
+
 Po zakończeniu konfiguracji dostęp do SSH powinien zostać ograniczony tylko do zaufanych adresów IP lub VPN.
 
 Zalecamy również wyłączenie możliwości logowania się na użytkownika root bezpośrednio przez SSH oraz instalację i konfigurację firewall.
+
 :::

@@ -17,6 +17,7 @@ You can test our [development version](https://demo.yetiforce.com) and report al
 Remember that system testing and bug reporting is also considered contribution to the development of the system, because if we don't know that there is a bug, we can't fix it.
 
 :::warning
+
 Przed rozpoczęciem zapoznaj się z artykułami:
 
 - [How to report bugs?](/developer-guides/github/how-to-report-bugs)
