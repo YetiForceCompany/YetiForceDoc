@@ -43,7 +43,7 @@ Each record in the system can be assigned to a group, in this case the access to
 
 ### System administrator's data permissions
 
-System pozwala na tworzenie użytkowników będących administratorami [oraz super-administratorami], którzy nie powinni pracować na systemie, ale mają dostęp do wszystkich danych widocznych dla użytkowników standardowych [super-administrator może ograniczań dostęp do niektórych funkcjonalności, ale dotyczy to panelu administracyjnego a nie dostępu do danych].
+The system allows you to create users who are administrators (and super-administrators) who shouldn't use the system, but have access to all data visible to regular users (a super-administrator can limit access to some functionalities, but this applies to the administration panel and not access to data).
 
 ### Restricting access to `private` records
 
@@ -53,17 +53,17 @@ In organizations where access to data should be general and restrictions are onl
 
 ### Access exceptions
 
-Ze względu na zróżnicowanie obowiązków wewnątrz organizacji, często zachodzi potrzeba przydzielania uprawnień, które nie wynikają bezpośrednio ze struktury organizacyjnej [np. dostęp do danych oddziału A ma mieć pracownik w oddziale B], wówczas można skorzystać z narzędzia dostępnego w narzędziu "Dostęp do modułów" w którym możemy tworzyć wyjątki dla każdej funkcjonalności niezależnie. Wyjątki dostępu pozwalają na określanie dodatkowych uprawnień do przeglądu oraz edycji danych [wyjątki dostępu nie pozwalają na zmniejszanie uprawnień czy też nadawanie uprawnień do usuwania].
+Due to the variety of responsibilities in the organization, there is often a need to grant permissions that don't result directly from the organizational structure (e.g., an employee in branch B needs access to the data of branch A). To achieve that, you can use the tool available in "Access to modules", where you can create exceptions for each functionality independently. Access exceptions allow you to define additional permissions to view and edit data (access exceptions do not allow you to reduce permissions or grant permissions to delete).
 
-### Uprawnienia wynikające z hierarchii [w dół]
+### Permissions resulting from the hierarchy (downwards)
 
-One of the most important mechanisms is the ability to activate permissions granted due to access to the parent record, e.g. This functionality is especially useful in companies that limit access on one level, i.e.
+One of the most important features is the ability to activate permissions granted due to access to the parent record, e.g., if you have access to an Account record, you can see all data (e.g., comments, calendar, service contracts, quotes, etc.). This functionality is particularly useful in companies that limit access on a single level (i.e. it grants access to the Account and all of their data).
 
 If we open a related record, such as an invoice on the Account, then the system verifies whether the user has the permissions to the parent record; if so, the system will allow you to open the record. At the same time, the record you opened from the Account level (e.g. an invoice) will not be available to the user in other views, e.g. in the list of all invoices.
 
-### Uprawnienia wynikające z hierarchii [w górę]
+### Permissions resulting from the hierarchy (upwards)
 
-Innym mechanizmem umożliwiającym dostęp do danych jest hierarchia działająca "w górę zależności" np. mając dostęp do faktury klienta, otrzymamy również dostęp do kontrahenta ponieważ kontrahent jest elementem nadrzędnym. Mechanizm ten nie działa "w locie" lecz wymaga aktywowania panelu i włączenia specjalnych skryptów przeliczających w CRON. Przeliczenie uprawnień spowoduje, że otrzymamy dostęp do kontrahenta nie dlatego, że jesteśmy jego właścicielem, lecz dlatego, że mamy dostęp do elementu podrzędnego dla tego kontrahenta i będzie to widoczne na liście rekordów [np. na liście kontrahentów zobaczymy kontrahenta którego nie jesteśmy właścicielem].
+Another mechanism that enables access to data is a hierarchy operating "upwards of dependencies", e.g., if you have access to a customer's invoice, you will also get access to the Account record because the Account is a superior element. This mechanism does not work "on the fly" but requires enabling it in the panel and enabling special conversion scripts in CRON. Recalculating permissions will result in granting access to the Account not because you are its owner, but because you have access to the subordinate element for this contractor, and it will be visible in the record list (e.g., in the list of Accounts you will see an Account record that you don't own).
 
 Hierarchical permissions are disabled by default and must be manually activated. Each case requires an analysis to determine whether this mechanism could potentially grant excessive access to data that the user should not see.
 
@@ -73,20 +73,20 @@ The advanced permissions mechanism is a panel that allows you to create access r
 
 ## Permission verification
 
-### Inspekcja uprawnień
+### Permission inspector
 
-With such advanced permission tools, access administration may turn out to be difficult, which is why a tool that allows verification of permissions and access directly from the user's side has been implemented in the system. Inspektor uprawnień działa na dwóch warstwach [dla każdego modułu niezależnie], pierwszą warstwą jest lista rekordów [wówczas system weryfikuje kto ma dostęp i w jakim zakresie do danych na liście] a drugą warstwą jest weryfikacja uprawnień do konkretnego rekordu [wchodzą w rekord, możemy sprawdzić kto jeszcze ma dostęp do tego rekordu].
+With such advanced permission tools, access administration may turn out to be difficult, which is why a tool that allows verification of permissions and access directly from the user's side has been implemented in the system. The permission inspector works on two layers (separately for each module). The first layer is the list of records (the system verifies who has access to the data on the list and to what extent), and the second layer is the verification of permissions to a specific record (you can check who else has access to a record by opening it).
 
-Co najważniejsze, narzędzie pokazuje nie tylko kto ma dostęp, ale również z czego ten dostęp wynika [czyli w którym panelu konfiguracyjnym zostały nadane uprawnienia] a więc w szybki sposób możemy znaleźć narzędzi w którym należy zmniejszyć uprawnienia dla użytkownika.
+Most importantly, the tool shows not only who has access, but also why the access was granted (for example, in which configuration panel the permissions were granted), so you can quickly find the right place if you need to reduce the permissions for the user.
 
 ### Separation of duties
 
-W celu poprawnego spełnienia rozdzielenia obowiązków ["Separation of duties - https://en.wikipedia.org/wiki/Separation_of_duties"], system pozwala na określanie uprawnień do wartości słownikowych [np. można określić jaki pracownik może zmieniać status rekordu] oraz w samym systemie są wbudowane zaawansowane mechanizmy procesów, które kontrolują jakie dane i przez kogo powinny być wypełniane na którym etapie procesu.
+In order to properly comply with [separation of duties](https://en.wikipedia.org/wiki/Separation_of_duties), the system allows you to specify the permissions to picklist values (e.g., you can specify which employee can change the status of a record), and the system itself has advanced process mechanisms that control what data and by whom should be filled in at which stage of the process.
 
 ### Conflict of interest
 
-W organizacjach w których dostęp do danych może stwarzać konflikt interesów można zastosować wbudowany mechanizm, który pozwala na weryfikację czy danych użytkownik nie wchodzi w konflikt z danymi nad którymi pracuje, jeżeli tak się stanie, zostaną uruchomione mechanizmy zabezpieczające a rekord zostanie przepisany na innego użytkownika.
+In organizations where access to data may create a conflict of interest, a built-in mechanism can be used to verify that a user conflicts with the data they are working on. If this happens, security mechanisms will be activated and the record will be reassigned to another user.
 
 ### Permission inspection
 
-Wszystkie uprawnienia działają w czasie rzeczywistym [wyjątek stanowią uprawnienia zaawansowane, które domyślnie są wyłączone i są przeliczane z opóźnieniem], oznacza to, że zmiana roli, profilu czy też zmiana danych do których użytkownik ma dostęp są realizowane natychmiast i nie wymagają ponownego przelogowania użytkownika.
+All permissions work in real time, except for advanced permissions, which are disabled by default and are recalculated with a delay. This means that changing the role, profile, or the data the user can access is modified immediately and does not require relogging.
