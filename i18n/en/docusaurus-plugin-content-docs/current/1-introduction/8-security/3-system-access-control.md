@@ -32,7 +32,7 @@ Users can log in using the LDAP service, in this case the authentication does no
 
 The system allows the use of other methods of standard or additional authentication, e.g. Unfortunately, some mechanisms require integration with the company's infrastructure, such as sending text messages or an internal application for one-time codes, therefore these options are priced individually.
 
-### Autoryzacja
+### Authentication
 
 After correct identification and authentication, the system automatically verifies the functionalities and data the user has permissions for. Depending on the authentication, each user can see different system functionalities - each element of the system can be defined for the user, e.g.
 
