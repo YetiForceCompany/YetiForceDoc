@@ -5,6 +5,8 @@ on:
     branches: [release]
     paths:
       - 'docs/**'
+      - 'i18n/**'
+      - '!i18n/en/docusaurus-plugin-content-docs/**'
 
 permissions:
   contents: read
