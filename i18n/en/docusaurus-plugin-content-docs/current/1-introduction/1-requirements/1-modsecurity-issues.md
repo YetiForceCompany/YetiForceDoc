@@ -1,5 +1,5 @@
 ---
-title: Fałszywe pozytywne wyniki analizy YetiForce przez ModSecurity
+title: False positive results of YetiForce analysis by ModSecurity
 keywords:
   - server
   - requirements
@@ -43,7 +43,7 @@ KaTeX parse error: Got function '\newline' with no arguments as superscript at p
 [Tue Oct 19 12:46:31.425742 2021] [:error] [pid 3665031] [client 10.0.1.2:53070] [client 10.0.1.2] ModSecurity: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/usr/share/modsecurity-crs/rules/RESPONSE-980-CORRELATION.conf"] [line "86"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 5 - SQLI=0,XSS=0,RFI=0,LFI=0,RCE=5,PHPI=0,HTTP=0,SESS=0): individual paranoia level scores: 5, 0, 0, 0"] [tag "event-correlation"] [hostname "yetiforce.example.com"] [uri "/index.php"] [unique_id "YW6iB-TmEYx0Wwg3C6b1hwAAAAk"]
 ```
 
-## Adres nie zawiera ataku "Remote Command Execution: Unix Command Injection"
+## Address doesn't contain the "Remote Command Execution: Unix Command Injection" attack
 
 The `historyUrl` parameter contains the following URL: "index.php?module=Calendar&view=CalendarExtended&history=true&viewType=month&start=2021-09-27&end=2021-11-06&user=22&time=current&cvid=undefined&hiddenDays=0,6", not the following shell command: `Remote Command Execution: Unix Command Injection`.
 
