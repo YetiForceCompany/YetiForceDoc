@@ -53,7 +53,7 @@ In this view, you can configure the mail service connection and the mail scanner
 - Search fields - defines the criteria for relating an email to another element in the system
 - Email exceptions - the email scanner will omit messages received from addresses listed in this field
 
-### Uruchomienie modułu
+### Enabling private mailbox
 
 To enable a private mailbox, make sure your `My mailbox` module is active. To do this, in the System Configuration, in the left menu, select `Standard modules ➞ Modules - installation`. The checkbox next to the `My mailbox` module must be checked.
 

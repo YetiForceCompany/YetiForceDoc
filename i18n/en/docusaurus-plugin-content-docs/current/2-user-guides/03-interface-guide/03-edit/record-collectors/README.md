@@ -53,7 +53,7 @@ Main sections
 
 ## Available collectors
 
-Poniżej znajduje się lista wszystkich aktualnie dostępnych kolektorów rekordów. Darmowe kolektory dostępne w systemie są domyślnie oznaczone tagiem, pozostałe mogą być zakupione w Marketplace. Regularnie dodajemy do systemu YetiForce nowe kolektory rekordów.
+Below is a list of all currently available record collectors. Free record collectors available in the system are tagged by default, the rest can be purchased in the Marketplace.
 
 :::warning
 
@@ -85,6 +85,6 @@ Keep in mind that access to data from some of the available record collectors ma
 
 To use the record collector, go to the record create/edit form in the module where the collector is available. A list of available collectors will appear at the bottom, next to the Save and Cancel buttons. Collectors marked in the administration section as **Featured** will be displayed as separate icons next to the list. Other active collectors are available under the <kbd>Record collectors</kbd> button. After clicking this button, a list of active, non-featured collectors will be displayed.
 
-Dostęp do kolektorów również jest możliwy w formularzach typu "Szybkie tworzenie". W oknie modalnym pojawiają się one u góry po prawej stronie, jak to zostało przedstawione na poniższym zrzucie ekranu.
+Collectors can also be accessed from "Quick Create" forms. They appear at the top right in popup windows, as shown in the screenshot below.
 
 ![record-collector-1](record-collector-1.jpg)

@@ -1,22 +1,23 @@
 ---
-title: Konfiguracja Gmail
-description: Wygenerowanie Client ID i Client Secret w Gmail
+title: Gmail configuration
+description: Generating Client ID & Client Secret in Gmail
 keywords:
-  - Poczta
-  - Skrzynka prywatna
-  - Skrzynka Korporacyjna
+  - Mail
+  - Private mailbox
+  - Corporate mailbox
   - Gmail
 tags:
-  - Poczta
-  - Skrzynka prywatna
-  - Skrzynka Korporacyjna
+  - Mail
+  - Private mailbox
+  - Corporate mailbox
   - Gmail
 preview: mailbox-integration-1.jpg
 ---
 
-Ten artykuł stanowi uzupełnienie instrukcji [integracji YetiForce z klientami poczty](/administrator-guides/integration/mailbox). Skupia się on na tym by pokazać jak wygenerować Client ID i Client Secret w Gmailu. Te dane są niezbędne do uwierzytelnienia połączenia między YetiForce a Twoim kontem Gmail.
+This article is a supplement to the [YetiForce integration with mail clients](/administrator-guides/integration/mailbox) guide.
+It focuses on showing how to generate a Client ID and Client Secret in Gmail. These details are necessary to authenticate the connection between YetiForce and your Gmail account.
 
-### Krok 1: Utwórz projekt w Konsoli Google Cloud Platform
+### Step 1: Create a project in the Google Cloud Platform Console
 
 - Przejdź do Konsoli [Google Cloud Platform](https://console.cloud.google.com/).
 - Zaloguj się przy użyciu swojego konta Gmail.
