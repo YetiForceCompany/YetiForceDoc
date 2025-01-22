@@ -2,15 +2,15 @@
 title: Integracja Poczty
 description: Integracja poczty z Gmail/outlook
 keywords:
-  - Poczta
-  - Skrzynka prywatna
-  - Skrzynka Korporacyjna
+  - Email
+  - Private mailbox
+  - Corporate mailbox
   - Gmail
   - Outlook
 tags:
-  - Poczta
-  - Skrzynka prywatna
-  - Skrzynka Korporacyjna
+  - Email
+  - Private mailbox
+  - Corporate mailbox
   - Gmail
   - Outlook
 preview: mailbox-integration-1.jpg

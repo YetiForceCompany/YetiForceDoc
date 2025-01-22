@@ -1,24 +1,25 @@
 ---
-title: Konfiguracja Outlook
-description: Wygenerowanie Client ID i Client Secret w Outlook
+title: Outlook configuration
+description: Generate Client ID & Client Secret in Outlook
 keywords:
-  - Poczta
-  - Skrzynka prywatna
-  - Skrzynka Korporacyjna
+  - Email
+  - Private mailbox
+  - Corporate mailbox
   - Gmail
   - Outlook
 tags:
-  - Poczta
-  - Skrzynka prywatna
-  - Skrzynka Korporacyjna
+  - Email
+  - Private mailbox
+  - Corporate mailbox
   - Gmail
   - Outlook
 preview: mailbox-integration-1.jpg
 ---
 
-Ten artykuł stanowi uzupełnienie instrukcji [integracji YetiForce z klientami poczty](/administrator-guides/integration/mailbox). Skupia się on na tym by pokazać jak wygenerować Client ID i Client Secret w portalu Azure AD. Te dane są niezbędne do uwierzytelnienia połączenia między YetiForce a Twoim kontem Outlook.
+This article is a supplement to the [YetiForce integration with mail clients](/administrator-guides/integration/mailbox) guide.
+It focuses on showing how to generate a Client ID and Client Secret in Azure AD. These details are necessary to authenticate the connection between YetiForce and your Outlook account.
 
-### Krok 1: Utwórz projekt w Portalu Microsoft Azure
+### Step 1: Create a project in the Microsoft Azure Portal
 
 - Przejdź do [Portal Azure](https://portal.azure.com/).
 - Zaloguj się przy użyciu swojego konta Microsoft.
