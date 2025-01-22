@@ -7,13 +7,13 @@ keywords:
   - Integration
   - Synchronization
   - YetiForce
-  - Settings
+  - Panel konfiguracyjny
 tags:
   - Magento
   - eCommerce
   - Integration
   - Synchronization
-  - Settings
+  - Panel konfiguracyjny
 preview: magento.jpg
 ---
 
@@ -39,12 +39,7 @@ Synchronization requires a user with administrator privileges for all elements t
 
 By default, both systems have the same list of supported currencies. Adding a currency in Magento requires verification if the new currency is also properly supported in the other system. If a currency is enabled in the Magento store, which is not included in YetiForce, then the integration adds a new currency to the list of supported currencies [this can only be done when the new currency is on the list of currencies supported by the system, which can be checked in the system configuration panel].
 
-<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/3-administrator-guides/15-integration/10-magento/README.md
-**If the currency is removed on the Magento side, then nothing will change in the YetiForce system.
-**
-========
 **If the currency is removed on the Magento side, then nothing will change in the YetiForce system.**
->>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/3-administrator-guides/15-integration/10-magento/README.md
 
 #### Categories
 

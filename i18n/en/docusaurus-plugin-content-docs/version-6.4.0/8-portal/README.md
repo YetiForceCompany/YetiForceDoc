@@ -1,9 +1,9 @@
 ---
-title: Portal Klienta
-description: Portal Klienta
+title: Customer Portal
+description: Customer Portal
 keywords:
   - YetiForce
-  - Klient
+  - Customer
   - Portal
 tags:
   - Portal

@@ -43,15 +43,6 @@ KaTeX parse error: Got function '\newline' with no arguments as superscript at p
 [Tue Oct 19 12:46:31.425742 2021] [:error] [pid 3665031] [client 10.0.1.2:53070] [client 10.0.1.2] ModSecurity: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/usr/share/modsecurity-crs/rules/RESPONSE-980-CORRELATION.conf"] [line "86"] [id "980130"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 5 - SQLI=0,XSS=0,RFI=0,LFI=0,RCE=5,PHPI=0,HTTP=0,SESS=0): individual paranoia level scores: 5, 0, 0, 0"] [tag "event-correlation"] [hostname "yetiforce.example.com"] [uri "/index.php"] [unique_id "YW6iB-TmEYx0Wwg3C6b1hwAAAAk"]
 ```
 
-<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/1-introduction/1-requirements/1-modsecurity-issues.md
-## Address doesn't contain the `Remote Command Execution: Unix Command Injection` attack
-
-The parameter `historyUrl` contains the URL address: "index.php?module=Calendar&view=CalendarExtended&history=true&viewType=month&start=2021-09-27&end=2021-11-06&user=22&time=current&cvid=undefined&hiddenDays=0,6", and not the `Remote Command Execution: Unix Command Injection` shell command.
-
-## We do not recommend that PHP scripts be able to call functions to the OS shell
-
-In [`System settings → Logs → Server - configuration`](/administrator-guides/logs/server-configuration/) you can verify whether any dangerous functions have been enabled (including shell commands):
-========
 ## Address doesn't contain the "Remote Command Execution: Unix Command Injection" attack
 
 The `historyUrl` parameter contains the following URL: "index.php?module=Calendar&view=CalendarExtended&history=true&viewType=month&start=2021-09-27&end=2021-11-06&user=22&time=current&cvid=undefined&hiddenDays=0,6", not the following shell command: `Remote Command Execution: Unix Command Injection`.
@@ -59,7 +50,6 @@ The `historyUrl` parameter contains the following URL: "index.php?module=Calenda
 ## We do not recommend that PHP scripts be able to call functions to the OS shell
 
 In [System settings → Logs → Server - configuration](/administrator-guides/logs/server-configuration/) you can verify whether any dangerous functions have been enabled (including shell commands):
->>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/1-introduction/1-requirements/1-modsecurity-issues.md
 
 ```ini
 disable_functions = pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wifcontinued,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_get_handler,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority,pcntl_async_signals,pcntl_unshare,shell_exec,exec,system,passthru,popen

@@ -251,11 +251,7 @@ rm public_html/.user.ini
 
 ## 14. Install YetiForce
 
-<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.4.0/4-developer-guides/5-environments/1-debian-10.md
-A complete description of the YetiForce installation can be found in the article: [Installation manual](introduction/installation-manual/)
-========
 A complete description of the YetiForce installation can be found in the article: [Installation manual](/introduction/installation-manual/)
->>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/4-developer-guides/5-environments/1-debian-10.md
 
 ## 15. Final remarks
 

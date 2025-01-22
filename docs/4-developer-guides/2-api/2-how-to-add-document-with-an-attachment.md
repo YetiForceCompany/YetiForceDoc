@@ -17,14 +17,10 @@ tags:
   - Document with an attachment
 ---
 
-<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.4.0/4-developer-guides/2-api/1-how-to-add-document-with-an-attachment.md
-:::tip This functionality is available for YetiForce version `6.2.0` and later
-========
 :::tip
 
 This functionality is available for YetiForce version `6.2.0` and later
 
->>>>>>>> release:docs/4-developer-guides/2-api/2-how-to-add-document-with-an-attachment.md
 :::
 
 The article describes how to add a new entry with an attachment in the Documents module via Rest API.

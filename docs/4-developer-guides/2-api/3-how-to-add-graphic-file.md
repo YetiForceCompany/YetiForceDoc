@@ -1,15 +1,15 @@
 ---
-title: Jak przez Rest Api dodać plik graficzny
-description: Niniejszy dokument zawiera informację jak za pomocą Rest Api dodać plik graficzny w polach obsługujących takie pliki w YetiForce CRM.
+title: How to add an image via Rest API
+description: This article describes how to add images via Rest API in fields that support such files in YetiForce.
 keywords:
   - Webservice
   - API
   - RestAPI
-  - dodać
-  - plik
-  - załącznik
-  - graficzny
-  - pole
+  - add
+  - file
+  - attachment
+  - image
+  - field
   - YetiForce
 tags:
   - Webservice
@@ -18,39 +18,39 @@ tags:
   - Image
 ---
 
-Niniejszy dokument zawiera informację jak za pomocą Rest Api dodać plik graficzny w polach obsługujących takie pliki w YetiForce CRM.
+This article describes how to add images via Rest API in fields that support such files in YetiForce.
 
-Aplikacja posiada dwa typu pól obsługujących pliki graficzne, są to:
+The application has two types of fields that support graphic files, namely:
 
 - Image
-- Graficzny (wiele)
+- Image (many)
 
 ![graphic file](graphic-file.png)
 
-**Przed przejściem dalej należy zapoznać się z dostępnymi metodami i sposobem komunikacji z api opisanymi tutaj: https://doc.yetiforce.com/api/**
+**Before continuing, please research the methods and ways of communication described here: https://doc.yetiforce.com/api/**
 
-## Dodawanie pliku graficznego
+## Adding an image
 
-Cała trudność z dodaniem pliku graficznego polega na odpowiednim przygotowaniu pól w wysyłanym zapytaniu. Na wstępie należy przygotować listę pól, które należy uzupełnić w trakcie tworzenia/edycji rekordu przez api.
+The difficulty with adding a graphic file is the proper preparation of fields in the query. At the beginning, you should prepare a list of fields that should be completed when creating / editing a record via API.
 
-Struktura pól danego modułu dostępna jest w panelu edycji pól w konfiguracji systemu: [`Konfiguracja systemu -> Moduły standardowe -> Moduły - pola`](/administrator-guides/standard-modules/edit-fields/)
+Module field structure can be found in the field edition panel in [Software configuration → Standard modules → Edit fields](/administrator-guides/standard-modules/edit-fields/).
 
-Po zapoznaniu się ze strukturą możesz przejść do konstruowania zapytań.
+Once you're familiar with the structure you can move on to constructing the queries.
 
-Każdy plik graficzny tworzony z poziomu api wymaga trzech zmiennych:
+Each graphic file created at the API level requires three variables:
 
 - **name**
 
-  Nazwa pliku
+  File name
 
 - **key**
 
-  Losowy ciąg znaków, niepowtarzalny w obrębie plików graficznych danego pola.
+  Random of characters string, unique within the pool of graphic files of a given field
 
 - **baseContent**
 
-  Plik graficzny przekonwertowany na base64
+  Graphic file converted to base64
 
-Poniżej przykład dodania pliku graficznego do kontaktu za pomocą narzędzia Postman.
+Below you can find an example of an image added to a Contact using Postman:
 
 ![graphic file postman](graphic-file-postman.png)

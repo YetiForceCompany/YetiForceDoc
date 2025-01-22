@@ -19,14 +19,14 @@ Funkcjonalność dostępna od wersji YetiForce `3.5`
 
 The QueryGenerator mechanism can be used to list any data from entity type modules.
 
-## Load filter from a specific module
+## Wczytanie filtru z konkretnego modułu
 
 ```php
 $queryGenerator = new \App\QueryGenerator('Accounts');
 $queryGenerator->initForCustomViewById(106);
 ```
 
-## Add to mandatory conditions
+## Dodanie do warunków wymaganych
 
 ```php
 $queryGenerator->addCondition('accounttype', 'Customer', 'e');
@@ -36,7 +36,7 @@ $queryGenerator->addNativeCondition(['status' => 1, 'type' => 2]);
 $queryGenerator->addNativeCondition(['id' => [4, 8, 15]]);
 ```
 
-## Add to optional conditions
+## Dodawanie do warunków opcjonalnych
 
 ```php
 $queryGenerator->addCondition('accounttype', 'Customer', 'e',false);
@@ -45,7 +45,7 @@ $queryGenerator->addNativeCondition(['status' => 1, 'type' => 2],false);
 $queryGenerator->addNativeCondition(['id' => [4, 8, 15]],false);
 ```
 
-## Add joins
+## Dodanie join-ów
 
 http://www.yiiframework.com/doc-2.0/guide-db-query-builder.html#join
 
@@ -53,7 +53,7 @@ http://www.yiiframework.com/doc-2.0/guide-db-query-builder.html#join
 $this->addJoin(['LEFT JOIN', 'vtiger_crmentity', 'vtiger_activity.activityid = vtiger_crmentity.crmid');
 ```
 
-## Operator list
+## Lista operatorów
 
 const STANDARD_OPERATORS
 
@@ -61,7 +61,7 @@ const STANDARD_OPERATORS
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/app/Condition.php#L65-L103
 ```
 
-## Date fields operators list
+## Lista operatów pól dat
 
 const DATE_OPERATORS
 
@@ -69,7 +69,7 @@ const DATE_OPERATORS
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/app/Condition.php#L22-L58
 ```
 
-## Download data
+## Pobranie danych
 
 ```php
 $rows = $queryGenerator->createQuery()->all();
@@ -77,7 +77,7 @@ foreach ($rows as &$row) {
 }
 ```
 
-or
+lub
 
 ```php
 $dataReader = $queryGenerator->createQuery()->createCommand()->query();
@@ -85,7 +85,7 @@ while ($row = $dataReader->read()) {
 }
 ```
 
-## Sort
+## Sortowanie
 
 ```php
 $queryGenerator->setOrder('accountid');
@@ -93,26 +93,26 @@ $queryGenerator->setOrder('accountid', \App\Db::ASC);
 $queryGenerator->setOrder('accountid', \App\Db::DESC);
 ```
 
-## Combine displayed data
+## Łączenie wyświetlanych danych
 
 ```php
 $queryGenerator->setConcatColumn('date_start', "CONCAT(vtiger_activity.date_start, ' ', vtiger_activity.time_start)");
 $queryGenerator->setConcatColumn('due_date', "CONCAT(vtiger_activity.due_date, ' ', vtiger_activity.time_end)");
 ```
 
-## Add non-field columns
+## Dodanie kolumn niebędących polami
 
 ```php
 $queryGenerator->setCustomColumn('u_yf_openstreetmap.lon');
 ```
 
-## Add fields
+## Dodanie pól
 
 ```php
 $queryGenerator->setField(['visibility', 'assigned_user_id', 'activitystatus']);
 ```
 
-## Add fields from a related module
+## Dodanie pól z modułu powiązanego
 
 ```php
 $queryGenerator->addReletedField([
@@ -122,7 +122,7 @@ $queryGenerator->addReletedField([
 ]);
 ```
 
-## Add conditions from a related module
+## Dodanie warunków z modułu powiązanego
 
 ```php
 $queryGenerator->addReletedCondition([
