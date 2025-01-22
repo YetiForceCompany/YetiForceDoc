@@ -18,7 +18,7 @@ preview: mailbox-integration-1.jpg
 
 Ten artykuł stanowi uzupełnienie instrukcji [integracji YetiForce z klientami poczty](/administrator-guides/integration/mailbox). Skupia się on na tym by pokazać jak wygenerować Client ID i Client Secret w portalu Azure AD. Te dane są niezbędne do uwierzytelnienia połączenia między YetiForce a Twoim kontem Outlook.
 
-### Krok 1: Utwórz projekt w Portalu Azure
+### Krok 1: Utwórz projekt w Portalu Microsoft Azure
 
 - Przejdź do [Portal Azure](https://portal.azure.com/).
 - Zaloguj się przy użyciu swojego konta Microsoft.
@@ -34,19 +34,19 @@ Ten artykuł stanowi uzupełnienie instrukcji [integracji YetiForce z klientami 
 
 ![outlook-3](outlook-3.jpg)
 
-- **Nazwa**: Unikalna nazwa, która posłuży do jego identyfikacji aplikacji.
+- **Nazwa**: Unikalna nazwa, która posłuży do identyfikacji aplikacji.
 - **Obsługiwane typy kont**: Wybierz opcję `Konta w dowolnym katalogu organizacyjnym`.
 - **Identyfikator URI przekierowania**: W pierwszym polu, z listy wybierz `Internet`. Wartość dla drugiego pola należy pobrać z YetiForce. Jak to zrobić zostało opisane poniżej.
 
 ### Krok 2: Pobieranie identyfikatora URI przekierowania
 
-Powróć do procesu tworzenia serwera pocztowego, który został opisany w [tym artykule](/administrator-guides/integration/mailbox/#dodanie-serwera-pocztowego). Upewnij się, że w polu `Przekieruj URI`, znajduje się nazwa aplikacji, którą utworzyłeś do integracji z pocztą. Następnie skopiuj wartość URI przekierowania naciskając przycisk <kbd><i class="fa-solid fa-copy"></i></kbd>.
+Powróć do procesu tworzenia serwera pocztowego, który został opisany w [tym artykule](/administrator-guides/integration/mailbox/#dodanie-serwera-pocztowego). Upewnij się, że w polu `Przekieruj URI`, znajduje się nazwa aplikacji, którą utworzyłeś do integracji z pocztą. Następnie skopiuj wartość URI przekierowania naciskając przycisk wyróżniony na poniższym zrzucie ekranu.
 
 ![outlook-10](outlook-10.jpg)
 
-### Krok 3: Kontynuacja tworzenia aplikacji Azure
+### Krok 3: Kontynuacja rejestracji aplikacji w portalu Microsoft Azure
 
-Skopiowaną wartość `URI Przekierowania` wklej w formularzu Azure do pola `Identyfikator URI przekierowania`. Następnie wybierz przycisk <kbd>Rejestruj</kbd>.
+Skopiowaną wartość `URI Przekierowania` z systemu YetiForce wklej do pola `Identyfikator URI przekierowania` formularza rejestracyjnego aplikacji w portalu Microsoft Azure. Następnie kliknij przycisk <kbd>Rejestruj</kbd>.
 
 ### Krok 4: Nadawanie uprawnień aplikacji
 
@@ -54,7 +54,7 @@ Po utworzeniu aplikacji konieczne jest nadanie jej odpowiednich uprawnień.
 
 - Z lewego menu wybierz `Uprawnienia interfejsu API`.
 - Naciśnij przycisk <kbd>+ Dodaj uprawnienie</kbd>.
-- W oknie, które się pojawiło wybierz `Microsoft Graph`.
+- W oknie które się pojawiło wybierz `Microsoft Graph`.
 
 ![outlook-4](outlook-4.jpg)
 
@@ -72,7 +72,7 @@ Po utworzeniu aplikacji konieczne jest nadanie jej odpowiednich uprawnień.
 ### Krok 5: Dodanie klucza
 
 - Przejdź w lewym menu do zakładki `Certyfikaty i klucze tajne` a następnie wybierz przycisk <kbd>+ Nowy klucz tajny klienta</kbd>.
-- W oknie, które się pojawiło, wpisz opis klucza oraz czas jego ważności.
+- Na prawym panelu podaj dowolną nazwę klucza oraz
 - Zatwierdź dodanie klucza przyciskiem <kbd>Dodaj</kbd>
 
 ![outlook-6](outlook-6.jpg)
@@ -98,8 +98,8 @@ Po uzyskaniu `Client ID` oraz `Client Secret` wypełniamy resztę formularza, kt
 - **Temat**: Unikalna nazwa, która posłuży do jego identyfikacji.
 - **Metoda autoryzacji**: `OAuth2`.
 - **Dostawca uwierzytelniania OAuth**: wybieramy `Azure AD - Outlook.com (Office 365)`.
-- **ID Klienta**: wartość pobrana w kroku 8.
-- **Klucz tajny klienta**: wartość pobrana w kroku 7.
+- **ID Klienta**: wartość pobrana w kroku 7.
+- **Klucz tajny klienta**: wartość pobrana w kroku 6.
 - **Przekieruj URI**: wybieramy aplikację utworzoną do integracji z usługą pocztową.
 
 Pozostało uzupełnienie konfiguracji IMAP i SMTP zgodnie z zaleceniami dostawcy poczty e-mail.
