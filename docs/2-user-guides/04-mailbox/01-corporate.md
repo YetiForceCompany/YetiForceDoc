@@ -87,7 +87,6 @@ Do klienta pocztowego możemy również się dostać z poziomu sekcji użytkowni
 
 ### Logi skanera poczty
 
-System YetiForce pozwala przejrzeć pracę skanera poczty na podstawie logów zawierających czas pracy skanera i liczbę pobranych wiadomości.
-By to sprawdzić należy w sekcji administracyjnej wybrać z lewego menu `Logi ➔ Maile - historia pobrań`
+System YetiForce pozwala przejrzeć pracę skanera poczty na podstawie logów zawierających czas pracy skanera i liczbę pobranych wiadomości. By to sprawdzić należy w sekcji administracyjnej wybrać z lewego menu `Logi ➔ Maile - historia pobrań`
 
 ![corporate-11](corporate-11.jpg)
