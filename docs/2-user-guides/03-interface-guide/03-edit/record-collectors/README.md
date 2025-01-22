@@ -55,7 +55,7 @@ Następnie przejdź do sekcji administracyjnej i wybierz `Integracja → Kolekto
 
 ## Dostępne kolektory
 
-Poniżej znajduje się lista wszystkich aktualnie dostępnych kolektorów rekordów. Darmowe kolekcjonerskie dostępne w systemie są domyślnie oznaczone tagiem, pozostałe mogą być zakupione w Marketplace. Regularnie dodajemy do systemu YetiForce nowe kolektory rekordów.
+Poniżej znajduje się lista wszystkich aktualnie dostępnych kolektorów rekordów. Darmowe kolektory dostępne w systemie są domyślnie oznaczone tagiem, pozostałe mogą być zakupione w Marketplace. Regularnie dodajemy do systemu YetiForce nowe kolektory rekordów.
 
 :::warning
 
