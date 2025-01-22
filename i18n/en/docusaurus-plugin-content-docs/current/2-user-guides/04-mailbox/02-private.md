@@ -1,61 +1,60 @@
 ---
-title: Skrzynki prywatne
-description: Konfiguracja prywatnych skrzynek pocztowych w systemie YetiForce
+title: Private mailboxes
+description: Private mailboxes - configuration in the YetiForce system
 keywords:
-  - skrzynka prywatna
-  - skrzynka pocztowa
+  - private mailbox
+  - mailbox
   - mail
 tags:
-  - skrzynka prywatna
-  - skrzynka pocztowa
+  - private mailbox
+  - mailbox
   - mail
 preview: private-1.jpg
 ---
 
-Skrzynki prywatne to indywidualne konta pocztowe użytkowników, które służą do osobistej korespondencji e-mailowej.
-Dostęp do niej może mieć tylko jeden użytkownik.
+Private mailboxes are individual user email accounts that are used for personal email correspondence. Only one user can have access to it.
 
 ## Configuration
 
-W celu skonfigurowania skrzynki prywatnej wybierz ikonę użytkownika znajdującą się w prawym górnym rogu a następnie z menu, które się pojawi wybierz <kbd>Moje ustawienia</kbd>
+To configure your private mailbox, select the user icon in the upper right corner and then select <kbd>My preferences</kbd> from the menu that appears
 
 ![private-1](private-1.jpg)
 
-Przejdź do edycji ustawień konta, wybierając znak edycji znajdujący się koło zakładki <kbd>Moje ustawienia</kbd>
+Edit your account settings by selecting the edit icon next to the <kbd>My preferences</kbd> tab
 
 ![private-2](private-2.jpg)
 
-W widoku edycji, znajdź sekcję `Integracja z pocztą e-mail` i odpowiednio ją skonfiguruj.
+In the edit view, find the `Email Integration` section and configure it accordingly.
 
 ![private-3](private-3.jpg)
 
-Następnie przechodzimy do zakładki `Skrzynka pocztowa`.
+Go to the `Mailbox` tab.
 
 ![private-4](private-4.jpg)
 
-W widoku skrzynki pocztowej, możemy skonfigurować połączenie z usługa pocztową oraz ustawić skaner poczty.
+In this view, you can configure the mail service connection and the mail scanner.
 
 ![private-5](private-5.jpg)
 
-#### Informacje podstawowe
+#### General information
 
-- Nazwa - nazwa pod jaką będzie widnieć skrzynka pocztowa
-- Serwer - serwer pocztowy utworzony w konfiguracji systemu w `Narzędzia pocztowe` > `Serwery poczty`
-- Logowanie - login służący do zalogowania się do poczty (opcjonalne przy uwierzytelnianiu OAuth)
-- Hasło - hasło umożliwiające zalogowanie się do poczty (opcjonalne przy uwierzytelnianiu OAuth)
+- Name - the display name of the mailbox
+- Server - mail server created in `Mail Tools ➔ Mail Servers`
+- Login - login used to log in to email (optional for OAuth authentication)
+- Password - password to log in to the email (optional for OAuth authentication)
 
-#### Skaner poczty
+#### Mail scanner
 
-- Akcje skanera poczty
-  - Stwórz e-maila - wybranie tej opcji powoduje pobieranie wiadomości email z serwera pocztowego
-  - Powiąż wiadomość e-mail - pozwala połączyć wiadomość z użytkownikiem lub innym zasobem systemu na podstawie kryteriów określonych w `Pole wyszukiwania`
-  - Otwórz zgłoszenie - ustawia odpowiedni status dla zgłoszenia powiązanego z pobraną wiadomością mailową
-  - Utwórz zgłoszenie - tworzy nowe zgłoszenie w systemie
-- Pola wyszukiwania - określa kryteria powiązania wiadomości z elementem systemu
-- wyjątki e-mail - określa adresy mailowe, z których wysłane wiadomości mają być pomijane przez skaner poczty
+- Mail scanner actions
+  - Create email - selecting this option downloads emails from the mail server
+  - Bind email message - allows you to relate an email with a user or other system resource based on the criteria specified in the `Search box`
+  - Open a ticket - sets the appropriate status for the ticket related with the downloaded email message
+  - Create a ticket - creates a new ticket in the system
+- Search fields - defines the criteria for relating an email to another element in the system
+- Email exceptions - the email scanner will omit messages received from addresses listed in this field
 
 ### Uruchomienie modułu
 
-W celu uruchomienia skrzynki prywatnej, upewnij się, masz uruchomiony moduł `Moja poczta`. W tym celu w Konfiguracji systemu, w lewym menu wybierz `Moduy standardowe ➞ Moduły - instalacja`. Checkbox przy module `Moja poczta` musi być zaznaczony.
+To enable a private mailbox, make sure your `My mailbox` module is active. To do this, in the System Configuration, in the left menu, select `Standard modules ➞ Modules - installation`. The checkbox next to the `My mailbox` module must be checked.
 
 ![private-6](private-6.jpg)

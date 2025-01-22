@@ -1,22 +1,22 @@
 ---
-title: Skrzynki pocztowe
-description: Konfiguracja skrzynek pocztowych w systemie YetiForce
+title: Mailboxes
+description: Mailbox configuration in the YetiForce system
 keywords:
-  - skrzynka prywatna
-  - skrzynka korporacyjna
-  - skrzynka pocztowa
+  - private mailbox
+  - corporate mailbox
+  - mailbox
   - mail
 tags:
-  - skrzynka prywatna
-  - skrzynka korporacyjna
-  - skrzynka pocztowa
+  - private mailbox
+  - corporate mailbox
+  - mailbox
   - mail
 preview: private-1.jpg
 ---
 
-### Rodzaje Skrzynek Pocztowych w Systemie YetiForce
+### Types of mailboxes in the YetiForce system
 
-W systemie YetiForce wyróżniamy dwa rodzaje skrzynek pocztowych, które służą do zarządzania komunikacją e-mailową:
+There are two types of mailboxes in the system used for managing email communication:
 
 import DocCardList from '@theme/DocCardList';
 

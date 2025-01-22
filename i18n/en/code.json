@@ -23,7 +23,7 @@
 	},
 	"theme.SearchPage.emptyResultsTitle": {
 		"message": "Search the documentation",
-		"description": "The search page title for empty query"
+		"description": "Tytuł strony wyszukiwania dla pustego zapytania"
 	},
 	"theme.SearchPage.searchContext.everywhere": {
 		"message": "everywhere"
