@@ -41,7 +41,7 @@ Kolekcjonerzy mogą być skonfigurowane w następującym panelu: [`Konfiguracja 
 
 ## Dostępne kolektory
 
-Poniżej znajduje się lista wszystkich aktualnie dostępnych kolektorów rekordów. Darmowe kolekcjonerskie dostępne w systemie są domyślnie oznaczone tagiem, pozostałe mogą być zakupione w Marketplace. Regularnie dodajemy do systemu YetiForce nowe kolektory rekordów.
+Poniżej znajduje się lista wszystkich aktualnie dostępnych kolektorów rekordów. Darmowe kolektory dostępne w systemie są domyślnie oznaczone tagiem, pozostałe mogą być zakupione w Marketplace. Regularnie dodajemy do systemu YetiForce nowe kolektory rekordów.
 
 - GUS [PL] - Pobiera dane o polskich firmach z bazy danych REGON 1(BIR1) dostarczonej przez GUS
 - ★ VIES [EU] - Sprawdza, czy podmiot gospodarczy posiada ważny numer VAT-UE dla transakcji wewnątrzwspólnotowych w Unii Europejskiej

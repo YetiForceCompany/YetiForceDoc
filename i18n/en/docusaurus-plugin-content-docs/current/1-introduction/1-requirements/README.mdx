@@ -2,26 +2,26 @@
 title: YetiForce requirements
 description: YetiForce webserver requirements
 keywords:
-  - serwer
+  - server
   - requirements
   - system
   - YetiForce
   - LAMP
   - LEMP
-  - environments
+  - environment
 tags:
   - server
   - requirements
   - system
   - LAMP
   - LEMP
-  - environments
+  - environment
 preview: requirements.jpg
 ---
 
 ## Introduction
 
-YetiForce CRM requires a proper web server configuration. It is a key element for the process of installation as well as for the system to be stable. Most professional web servers meet the requirements presented below. However, in case your server does not meet all the requirements, ask your administrator to adjust the configuration and send him a link to this article. If your administrator cannot change the configuration, it might be time to consider upgrading your server.
+YetiForce CRM requires a proper web server configuration - it is a key element for the installation process to finish successfully as well as for the system to be stable. Incorrect server configuration is the most common cause of various problems present in YetiForce. Most professional web servers meet the requirements presented below. However, in case your server does not meet all the requirements, ask your administrator to adjust the configuration and send him a link to this article. If your administrator cannot change the configuration, it might be time to consider upgrading your server.
 
 During the installation process, the system verifies the actual server configuration and shows the elements that are incorrect and require a change in parameters. Please note that the requirements presented below are not general and not for each installation, for more complex systems they should be verified and optimized individually.
 
@@ -65,7 +65,7 @@ import DocCardList from '@theme/DocCardList';
   - **MariaDB `10.6` (recommended)** - we recommend the latest stable versions. We don't recommend versions older than `10.1`.
   - **MySQL `8.0.13`** or later. We recommend the latest stable versions.
 
-- **PHP `8.1, 8.2, 8.3` (recommended)**. The latest stable versions are recommended (eg. `8.3.x`).
+- **PHP `8.1, 8.2, 8.3`** The latest stable versions are recommended (`8.3.x`).
 
 ## Database engine requirements (MariaDB/MySQL)
 
@@ -75,7 +75,9 @@ Configuration files eg. `/etc/my.cnf`, `/etc/mysql/my.cnf`, `/etc/mysql/conf.d/`
 - `ENGINE = InnoDB` should be available and enabled by default (disable --skip-innodb)
 
 :::warning
+
 For security reasons, we recommend that each database has a dedicated user; we do not recommend using the `root` database user to communicate with the database.
+
 :::
 
 import DB_MYSQL_REQUIREMENTS from '/static/files/db_mysql_requirements.mdx';
@@ -86,7 +88,7 @@ import DB_MYSQL_REQUIREMENTS from '/static/files/db_mysql_requirements.mdx';
 
 ## PHP requirements
 
-Configuration files np. `/etc/php/8.1/fpm/php.ini`, `/etc/php/8.1/cli/php.ini`
+Configuration files e.g., `/etc/php/8.1/fpm/php.ini`, `/etc/php/8.1/cli/php.ini`
 
 import PHP_PROD_REQUIREMENTS from '/static/files/php_prod_requirements.mdx';
 import PHP_DEV_REQUIREMENTS from '/static/files/php_dev_requirements.mdx';
@@ -96,7 +98,7 @@ import PHP_DEV_REQUIREMENTS from '/static/files/php_dev_requirements.mdx';
 </code>
 
 <details>
-  <summary>Development version</summary>
+  <summary>Wersja Deweloperska</summary>
     <PHP_DEV_REQUIREMENTS />
 
 </details>
@@ -159,7 +161,8 @@ catch_workers_output = yes
 import FPM from '/static/files/fpm.mdx';
 
 :::important
-FPM configuration example:
+
+Example FPM configuration:
 
 <details>
   <summary>Latest stable version</summary>
@@ -224,7 +227,8 @@ The configuration should allow the uploaded files to have full read and write ac
 ### Issues with SELinux
 
 :::warning
-Permission issues occur frequently if SELinux is installed on the server and the enforcing mode is enabled. Note the parameters below:
+
+Permission problems often occur if SELinux is installed on the server in enforcing mode. Pay attention to the configuration parameters:
 
 - httpd_unified
 - httpd_can_network_connect
@@ -250,7 +254,7 @@ sudo setsebool -P httpd_can_network_connect on
 
 ### Supported browsers
 
-Users should always have the latest version of any browsers they use because only the most recent versions support the newest web technologies. Below is a list of browsers, starting from the one that is the most recommended for YetiForce (Google Chrome) to the least recommended.
+Users should always have the latest version of any browsers they use because only the most recent versions support the newest web technologies. Poniżej umieściliśmy przeglądarki w kolejności w jakiej użytkownik powinien dokonywać wyboru. Oznacza to, że np. przeglądarka Safari jest gorszą przeglądarką dla aplikacji YetiForce niż jest Google Chrome.
 
 1. Google Chrome, Microsoft Edge
 2. Firefox
@@ -266,7 +270,9 @@ Some servers allow changing the configuration via the `.htaccess` file. We prese
 #### Apache module
 
 :::warning
+
 The configuration below works only if Apache (eg. `httpd.conf`) is set to "AllowOverride Options" or "AllowOverride All"
+
 :::
 
 ```apacheconf

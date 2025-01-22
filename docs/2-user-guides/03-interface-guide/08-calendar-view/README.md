@@ -15,7 +15,10 @@ preview: calendar-view-1.jpg
 
 ## Dodatkowe źródła danych
 
-:::tip Ta funkcja jest dostępna dla YetiForce w wersji `7.0` i później
+:::tip
+
+Ta funkcja jest dostępna dla YetiForce w wersji `7.0` i później
+
 :::
 
 Dodatkowe źródła danych umożliwiają wyświetlanie informacji ze wszystkich modułów z rekordami, które mają pole daty lub czasu i daty. Blok konfiguracyjny jest dostępny w panelu filtrów po prawej stronie.

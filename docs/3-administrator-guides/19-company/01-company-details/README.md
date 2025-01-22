@@ -58,24 +58,25 @@ Po wysłaniu formularza rejestracyjnego czekamy na weryfikację systemu.
 :::warning
 
 Klucze rejestracyjne generowane są automatycznie i wysyłane na adres email podany podczas rejestracji. W przypadku podania nieprawidłowych informacji, rejestracja zostanie odrzucona.
+
 :::
 
 ![registration-2.jpg](registration-2.jpg)
 
-Jeżeli dane podane w formularzu są poprawne, system zostanie zatwierdzony. Wówczas w polu ***status rejestracji*** pojawi się wartość ***zarejestrowano*** a na górze zniknie czerwony komunikat o braku rejestracji.
+Jeżeli dane podane w formularzu są poprawne, system zostanie zatwierdzony. Wówczas w polu **status rejestracji** pojawi się wartość **zarejestrowano** a na górze zniknie czerwony komunikat o braku rejestracji.
 
 ![registration-3.jpg](registration-3.jpg)
 
 ## Sprawdź status
 
-Jeśli status rejestracji nie został automatycznie zaktualizowany, można odświeżyć go ręcznie za pomocą przycisku ⟳, który znajduje się na formularzu rejestracji w kolumnie ***status rejestracji***
+Jeśli status rejestracji nie został automatycznie zaktualizowany, można odświeżyć go ręcznie za pomocą przycisku <kbd><i className="fas fa-refresh"></i></kbd>, który znajduje się na formularzu rejestracji w kolumnie **status rejestracji**
 
 ![status.jpg](status.jpg)
 
 ## Odrzucenie rejestracji
 
-W przypadku, gdy w formularzu znajdą się nieprawidłowe dane, rejestracja zostanie odrzucona. W celu ponownej weryfikacji, należy poprawnić formularz i ponownie go wysłać.  
-W tym celu, przejdź do konfiguracji systemu za pomocą kółka zębatego ⚙ widocznego w prawym górnym rogu ekranu.
+W przypadku, gdy w formularzu znajdą się nieprawidłowe dane, rejestracja zostanie odrzucona. W celu ponownej weryfikacji, należy poprawnić formularz i ponownie go wysłać.
+W tym celu, przejdź do konfiguracji systemu za pomocą kółka zębatego <kbd><i className="ti ti-settings"></i></kbd> widocznego w prawym górnym rogu ekranu.
 
 ![registration-4.jpg](registration-4.jpg)
 
@@ -85,7 +86,8 @@ W menu z lewej strony wybierz `Firma`, a następnie `Dane firmy`. Popraw dane w 
 
 :::warning
 
-Każdorazowa zmiana danych w formularzu, automatycznie zmieni status rejestracji na "***oczekuje na akceptację***" i będzie wymagana ponowna weryfikacja wprowadzonych danych.
+Każdorazowa zmiana danych w formularzu, automatycznie zmieni status rejestracji na "**oczekuje na akceptację**" i będzie wymagana ponowna weryfikacja wprowadzonych danych.
+
 :::
 
 Dane wprowadzone w formularzu rejestracyjnym, zostaną przesłane do nas w celu weryfikacji. Weryfikacja nastąpi w ciągu 2 dni roboczych.

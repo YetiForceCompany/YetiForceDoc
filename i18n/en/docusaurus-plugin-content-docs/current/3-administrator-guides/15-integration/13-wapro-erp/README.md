@@ -6,12 +6,12 @@ keywords:
   - ERP
   - Integration
   - YetiForce
-  - Settings
+  - Panel konfiguracyjny
 tags:
   - Wapro
   - ERP
   - Integration
-  - Settings
+  - Panel konfiguracyjny
 preview: wapro-erp.jpg
 ---
 
@@ -23,7 +23,7 @@ preview: wapro-erp.jpg
 
 Jeśli widzisz poniższy komunikat to znaczy że nie masz zainstalowanego rozszerzenia `PDO Microsoft SQL Server Driver for PHP`
 
-![Wapro_active_2.png](wapro-erp.jpg)
+![Wapro-active-2.png](wapro-erp.jpg)
 
 Rozszerzenie jest wymagane na potrzeby integracji z Wapro ERP, dzięki temu jest możliwa komunikacja z bazą danych Microsoft SQL Server.
 
@@ -41,7 +41,7 @@ https://github.com/microsoft/msphpsql/issues/1021
 
 ### Aktywacja
 
-![Wapro_active_3.png](Wapro_active_3.png)
+![Wapro-active-3.png](Wapro_active_3.png)
 
 Powyższy komunikat pokazuje się gdy nie została wgrana konfiguracja wymagana dla integracji lub została wyłączona/zmieniona.
 

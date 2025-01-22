@@ -45,5 +45,7 @@ Następujące pola mogą być dodane:
 - Aplikacja Web service
 
 :::info
-💻 Demo: https://gitdeveloper.yetiforce.com/index.php?module=LayoutEditor&parent=Settings&view=Index
+
+💻 Demo: https://demo.yetiforce.com/index.php?module=LayoutEditor&parent=Settings&view=Index
+
 :::

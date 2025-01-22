@@ -12,84 +12,85 @@ tags:
 preview: bria-softphone-1.png
 ---
 
-:::tip This functionality is available for YetiForce version 7.0 and later
+:::tip
+
+Funkcjonalność dostępna od wersji YetiForce 7.0
+
 :::
 
-PBX integration via the Bria Softphone application.
+Integracja z centralą telefoniczną za pośrednictwem aplikacji Bria Softphone.
 
-The integration with Bria Softphone is based on `Bria Desktop API`, that allows the user to to receive information on calls in real time.
+Połączenie z Bria Softphone bazuje na `Bria Desktop API`, dzięki któremu użytkownik w czasie rzeczywistym otrzymuje informacje o połączeniach.
 
-Advantages and capabilities:
+Zalety i możliwości integracji:
 
-- Compatible with market leading call servers or VoIP services (https://www.counterpath.com/international-voip-providers/)
-- Dedicated application for the user
-- ability to dial a phone number from the YetiForce system window
-- synchronization of all call history
-- graphical presentation of your phone's status
-- Supported plans: Bria Solo, Bria Teams, Bria Enterprise (https://www.counterpath.com/product-comparison/) does not support "Bria Solo Free" plan
-- integration with YetiForce via an active browser window
+- Zgodność z wiodącymi na rynku serwerami połączeń lub usługami VoIP (https://www.counterpath.com/international-voip-providers/)
+- Dedykowana aplikacja dla użytkownika
+- możliwość wybierania numeru telefonu z okna systemu YetiForce
+- synchronizacja całej historii połączeń
+- graficzna prezentacja statusu Twojego telefonu
+- Obsługiwane plany: Bria Solo, Bria Teams , Bria Enterprise (https://www.counterpath.com/product-comparison/) nie obsługuje planu "Bria Solo Free"
+- integracja z YetiForce za pomocą aktywnego okna przeglądarki
 
 ![bria-softphone-1.png](bria-softphone-1.png)
 
-## Video guide
+## Prezentacja wideo
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import ReactPlayer from 'react-player';
 
 <Tabs groupId="sWyz4oqKYwI">
-	<TabItem value="youtube-sWyz4oqKYwI" label="🎬 YouTube">
-		<ReactPlayer
-			url="https://www.youtube.com/watch?v=sWyz4oqKYwI"
-			width="100%"
-			height="500px"
-			controls={true}
-		/>
-	</TabItem>
-	<TabItem value="yetiforce-sWyz4oqKYwI" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/integration-BriaSoftphone.mp4" width="100%" height="500px" controls={true} />
-	</TabItem>
+    <TabItem value="youtube-sWyz4oqKYwI" label="🎬 YouTube">
+        <ReactPlayer
+            url="https://www.youtube.com/watch?v=sWyz4oqKYwI"
+            width="100%"
+            height="500px"
+            controls={true}
+        /></TabItem>
+    <TabItem value="yetiforce-sWyz4oqKYwI" label="🎥 YetiForce TV">
+        <ReactPlayer url="/video/integration-BriaSoftphone.mp4" width="100%" height="500px" controls={true} /></TabItem>
 </Tabs>
 
 ## Configuration
 
-### Add configuration to PBX
+### Dodanie konfiguracji do PBX
 
-Add a `BRIA Softphone` type entry
+Dodajemy wpis o typie `BRIA Softphone`
 
 ![bria-softphone-2.png](bria-softphone-2.png)
 
-### Enter internal number in users
+### Wprowadzanie numeru wewnętrznego w użytkownikach
 
-Enter the internal number for users whose Bria Softphone integration you want to activate.
+Wprowadzamy wewnętrzny numer telefonu dla użytkowników, którzy mają mieć aktywną integrację z Softphone
 
 ![bria-softphone-3.png](bria-softphone-3.png)
 
-## Bria Softphone connection status
+## Status połączania z Softphone
 
-The icon on the top bar shows the current Bria Softphone integration status.
+Ikona na górnej belce systemu pokazuje aktualny status integracji z aplikacją Bria Softphone.
 
-![bria-softphone-4.png](bria-softphone-4.png) No connection with the phone
+![bria-softphone-4.png](bria-softphone-4.png) Brak połączenia z telefonem
 
-![bria-softphone-5.png](bria-softphone-5.png) Connection with the phone is active; shows the current Bria Softphone user's number/name
+![bria-softphone-5.png](bria-softphone-5.png) Aktywne połączenie z telefonem, widać numer/nazwę aktualnie zalogowanego użytkownika w Softphone
 
-![bria-softphone-6.png](bria-softphone-6.png) Incoming or outgoing call; shows the caller's name/number
+![bria-softphone-6.png](bria-softphone-6.png) Rozmowa wychodząca lub przychodząca, pokazuje nazwę/numer rozmówcy
 
 ## Dialing
 
-If the integration has been activated correctly, all `phone` type field will show an additional phone icon.
+Jeśli integracja została aktywowana prawidłowo, to wszystkie pola o typie `telefon` będą miały dodatkową ikonę telefonu.
 
-When you click on a phone number or icon, a method will be called to create a call to the selected phone number.
+Po kliknięciu numeru lub ikony telefonu zostanie wywołana metoda do utworzenia połączenia z wybranym numerem telefonu.
 
 ![bria-softphone-7.png](bria-softphone-7.png)
 
-## Incoming calls
+## Połączenia przychodzące
 
-When you receive an incoming call the system will inform you about it using a different icon and color, and will display the caller's number.
+Gdy otrzymujemy połączenie przychodzące system poinformuje o nim innym kolorem i ikoną oraz pokaże numer telefonu osoby dzwoniącej.
 
 ![bria-softphone-8.png](bria-softphone-8.png)
 
-## External links
+## Odnośniki zewnętrzne
 
 - https://www.counterpath.com/softphone-clients/
 - https://www.counterpath.com/teams-pricing/
@@ -97,7 +98,7 @@ When you receive an incoming call the system will inform you about it using a di
 
 ## Debugging
 
-In order to enable logs in the browser for the Bria Softphone integration set the [$JS_DEBUG](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) to `true` in the [config/Debug.php](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) file.
+W celu aktywacji logów w przeglądarce dla integracji należy ustawić w pliku [config/Debug.php](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) parametr [$JS_DEBUG](https://doc.yetiforce.com/code/classes/Config-Debug.html#property_JS_DEBUG) na `true`.
 
 ```php
 /** Turn on/off error debugging in javascript */

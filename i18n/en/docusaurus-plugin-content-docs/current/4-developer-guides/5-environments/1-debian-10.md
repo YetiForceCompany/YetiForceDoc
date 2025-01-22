@@ -16,13 +16,25 @@ tags:
 This tutorial presents LEMP installation and configuration for YetiForce on Debian 10 with NGINX/PHP-FPM 7.4/MariaDB server.
 
 :::warning
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/4-developer-guides/5-environments/1-debian-10.md
 This article assumes you have at least a basic understanding of Linux, and you know how to use the shell.
+========
+
+W artykule zakładamy, że masz przynajmniej podstawową wiedzę o Linux i wiesz jak korzystać z powłoki shell.
+
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/4-developer-guides/5-environments/1-debian-10.md
 :::
 
 Installation is quite simple and assumes you are working on the root account. If not, you may have to add `sudo` to the commands to gain `root` privileges.
 
 :::tip
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/4-developer-guides/5-environments/1-debian-10.md
 The full list of requirements for the YetiForce system is available here: [YetiForce requirements](/introduction/requirements/)
+========
+
+Pełna lista wymagań dla systemu YetiForce jest na stronie: [Wymagania systemu YetiForce](/introduction/requirements/)
+
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/4-developer-guides/5-environments/1-debian-10.md
 :::
 
 ## 1. Update all installed packages to the latest available versions
@@ -49,8 +61,14 @@ wget -q -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list
 ```
 
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/4-developer-guides/5-environments/1-debian-10.md
 :::important Optional
 If you want the latest version of the database engine then you can add an additional package repository from MariaDB.
+========
+:::important Opcjonalnie
+
+Jeśli chcesz mieć najnowszą wersję silnika bazy danych, to możesz dodać dodatkowe repozytorium pakietów od MariaDB.
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/4-developer-guides/5-environments/1-debian-10.md
 
 ```bash
 apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
@@ -92,8 +110,14 @@ mkdir -p /var/log/php/
 passwd yfprod
 ```
 
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/4-developer-guides/5-environments/1-debian-10.md
 :::important Optional
 Create a test environment
+========
+:::important Opcjonalnie
+
+Utworzenie środowiska testowego
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/4-developer-guides/5-environments/1-debian-10.md
 
 ```bash
 groupadd yftest
@@ -119,12 +143,24 @@ rm /etc/nginx/nginx.conf
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/YetiForceCompany/YetiForceCRM/developer/tests/setup/nginx/nginx.conf"
 ```
 
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/4-developer-guides/5-environments/1-debian-10.md
 :::warning Note:
 The [www.conf](https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/nginx/www.conf) GitHub file contains example domain names that should be changed. The example is presented on the development version, we recommend downloading the files for the system version that will be installed.
 :::
 
 :::important Optional
 Creating a test environment requires changing the domain name
+========
+:::warning
+
+The [www.conf](https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/tests/setup/nginx/www.conf) GitHub file contains example domain names that should be changed. The example is presented on the development version, we recommend downloading the files for the system version that will be installed.
+
+:::
+
+:::important Opcjonalnie
+
+Utworzenie środowiska testowego, wymaga zmiany nazwy domeny
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/4-developer-guides/5-environments/1-debian-10.md
 
 ```bash
 cp /etc/nginx/sites-available/yfprod.conf /etc/nginx/sites-available/yftest.conf
@@ -146,12 +182,22 @@ sed -i 's/output_buffering = "On"/output_buffering = "Off"/g' /etc/php/7.4/cli/c
 ```
 
 :::warning
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/4-developer-guides/5-environments/1-debian-10.md
 The example is presented on the development version, we recommend downloading the files for the system version that will be installed, e.g. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
+========
+
+W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji systemu, która będzie instalowana np. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/4-developer-guides/5-environments/1-debian-10.md
 
 :::
 
 :::important Opcjonalnie
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/4-developer-guides/5-environments/1-debian-10.md
 Creating a test environment requires copying the file and replacing the `yfprod` with `yftest`
+========
+
+Tworzenie środowiska testowego wymaga skopiowania pliku i zastąpienia `yfprod` `yftest`
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/4-developer-guides/5-environments/1-debian-10.md
 
 ```bash
 cp /etc/php/7.4/fpm/pool.d/yfprod.conf /etc/php/7.4/fpm/pool.d/yftest.conf
@@ -168,7 +214,13 @@ wget -O /etc/mysql/mariadb.conf.d/50-server.cnf "https://raw.githubusercontent.c
 ```
 
 :::warning
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/4-developer-guides/5-environments/1-debian-10.md
 The example is presented on the development version, we recommend downloading the files for the system version that will be installed, e.g. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
+========
+
+https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/db/mysql.cnf
+
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/4-developer-guides/5-environments/1-debian-10.md
 :::
 
 **MariaDB is not secure by default**. You can secure it in two ways:
@@ -251,12 +303,24 @@ rm public_html/.user.ini
 
 ## 14. Install YetiForce
 
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/4-developer-guides/5-environments/1-debian-10.md
+A complete description of the YetiForce installation can be found in the article: [Installation manual](introduction/installation-manual/)
+========
 A complete description of the YetiForce installation can be found in the article: [Installation manual](/introduction/installation-manual#how-to-install-yetiforce)
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/4-developer-guides/5-environments/1-debian-10.md
 
 ## 15. Final remarks
 
 :::warning
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/4-developer-guides/5-environments/1-debian-10.md
 Once setup is complete, SSH access should be restricted to trusted IP or VPN addresses only.
 
 We also recommend disabling root login directly via SSH and installing and configuring a firewall.
+========
+
+Po zakończeniu konfiguracji dostęp do SSH powinien zostać ograniczony tylko do zaufanych adresów IP lub VPN.
+
+We also recommend disabling root login directly via SSH and installing and configuring a firewall.
+
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/current/4-developer-guides/5-environments/1-debian-10.md
 :::

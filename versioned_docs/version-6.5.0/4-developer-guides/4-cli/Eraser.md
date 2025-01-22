@@ -12,7 +12,8 @@ tags:
 preview: Eraser-0.jpg
 ---
 
-::tip Ta funkcja jest dostępna dla YetiForce w wersji `6.4.146` i później  
+:::tip
+Ta funkcja jest dostępna dla YetiForce w wersji `6.4.146` i później
 :::
 
 ![Eraser CLI](Eraser-0.jpg)

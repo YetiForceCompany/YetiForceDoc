@@ -1,0 +1,71 @@
+```
+# YetiForce Change Log
+
+## 7.0.3 2024.01.22
+
+- Fix: Dav integration when debugging is enabled.
+- Fix: Downloading emails using the Outlook Integration Panel
+- Fix: Search operators in quick filters (use of <> etc. GitHub #24)
+- Fix: Reports module - related module field use in condition
+- Fix: Update related record workflow task (case of a reference field working for several modules)
+- Fix: Excluded SharedOwner field type from Additional data sources in calendar view
+- Fix: PDF filter conditions for multitree field type (template settings)
+- Fix: Redundant cleaning of document source content in wysiwyg fields (PDF template | Twig)
+- Fix: Merging records
+- Fix: Decode session data (warning when running cron job GitHub #7)
+       `session.serialize_handler` - add `php_serialize` and drop `php_binary`
+- Fix: Permissions for creating system notifications from workflow
+- Fix: Permissions to send email notifications from workflow
+- Fix: Minor fixes to element placement in the report template edit view
+- Fix: Displaying inventory fields in reports (advanced block)
+- Fix: YetiForce CLI methods when there is no migrations directory (Doctrine)
+- Fix: Selection of modules in the basic field of the advanced block. Limit increased. (Setting)
+- Fix: Extended auto formatting period in advanced block fields
+- Fix: Rename/delete picklist value for multipicklist field (Settings)
+- Fix: Record numbering, taking into account values from other fields (advanced record numbering)
+- Fix: Deprecated messages for project hierarchy. Case when there is no data in the hierarchy
+- Fix: Calendar - showing a list of days (tabs) with the number of events in the day view with the timeline turned off (`dayGridDay` mode)
+- Fix: Query generation in special cases: document widget, data encryption (GitHub #67)
+- Fix: TextParser function RelatedRecordsData available in PDF templates
+- Fix: Mass download of documents from the list of related records. Added additional validators and messages. Improved deletion of generated temporary files.
+- Fix: Removing workflow actions
+- Fix: Allow to display system templates on workflow email templates list
+- Fix: Data formatting when automatically completing fields from Products/Services in advanced blocks.
+- Fix: Error messages when mandatory reference fields are added to an advanced block.
+- Fix: Verification of shared permissions in cron processes.
+- Fix: Minor improvements to the progress field update on projects and milestones.
+- Fix: Removing a record label from temporary cache when the record does not exist.
+- Fix: Sorting in the function that lists related records in PDF (GitHub #65)
+- Fix: Completing comments when mass adding products/services with a description (GitHub #63)
+- Fix: Advanced block: improved marking of the icon indicating having a comment when adding a Product/Service
+- Fix: Workflow - "does not contain" operator with empty value (GitHub #61)
+- Fix: Deleting the lib_roundcube.zip file after installing the library (GitHub #59)
+- Fix: Improved completion of reference fields from the ChangeValueHandler event
+- Fix: Incorrect display of all-day events on the graphical calendar (GitHub #48)
+- Fix: Mail scanner: by default, emails without an addressee, i.e. with a hidden `to` section, are skipped.
+- Fix: Mail Scanner: Email receipt date now takes into account time zone differences. (GitHub #6)
+- Fix: Create an all-day calendar entry assigned to a group. (GitHub #11)
+- Fix: Displaying special characters in the graphical calendar view. (GitHub #12)
+- Fix: SLA Policy tab in Service Contract doesn't show values correctly for `Templates` option (GitHub #13)
+- Fix: Handling records with removed links in advanced blocks (GitHub #73)
+- Fix: Generating a record using the mapping functionality in the advanced block scope
+- Fix: Displaying a calendar for the datetime field on record summary widgets
+- Fix: Minor correction of default value for "Is Converted From Lead" field from 'no' to 0.
+- Fix: Handling empty folders or moved emails from scanned mailboxes
+
+- Enh: Add ability to set filters order in menu configuration
+- Enh: Add ability to filter by user role in workflow
+- Enh: Support for ">= <= < >" characters in quick record list filters for currency fields (GitHub #24)
+- Enh: Add ability to filter by Total time field in workflow
+- Enh: Verification before deleting records used in advanced blocks (Products/Services)
+- Enh: Add row summary for "Chart from filter" widget, tabular mode
+
+- Chg: Action button placements (PDF template - edit view)
+- Chg: Improving the process of calculating user permissions. Optimized the process and disabled permissions recalculation for inactive users.
+- Chg: Auto-population of reference fields from base record in record edit view (quick create).  This functionality was removed in YF6.5 and is now restored.
+- Chg: Unification of the way of previewing content from description fields in modal windows. In some places, the modal window was narrow and a scroll appeared, which made viewing the content difficult.
+- Chg: Upgrade Roundcube Webmail dependency to version 1.6.9. This library needs to be updated manually in admin panel.
+- Chg: Updated dependent libraries.
+
+- Rem: Removed system notifications related to RBL
+```

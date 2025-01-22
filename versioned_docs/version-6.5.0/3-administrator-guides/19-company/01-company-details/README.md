@@ -51,7 +51,7 @@ Szczegółowy opis pól znajduje się w sekcji poniżej.
 
 ## Sprawdź status
 
-Jeśli status rejestracji nie został automatycznie zaktualizowany w systemie po kilku dniach, to możesz go odświeżyć ręcznie. Aby to zrobić, kliknij przycisk `Sprawdź status`. Status rejestracji zostanie odświeżony natychmiast, a czas aktualizacji w prawym górnym rogu powinien zmienić się na `przed chwilą.` Jeśli nie, [artykuł](administrator-guides/company/problems-with-system-registration/) pomoże Ci rozwiązać problemy z rejestracją.
+Jeśli status rejestracji nie został automatycznie zaktualizowany w systemie po kilku dniach, to możesz go odświeżyć ręcznie. Aby to zrobić, kliknij przycisk `Sprawdź status`. Status rejestracji zostanie odświeżony natychmiast, a czas aktualizacji w prawym górnym rogu powinien zmienić się na `przed chwilą.` Jeśli nie, [artykuł](/6.5.0/administrator-guides/company/problems-with-system-registration/) pomoże Ci rozwiązać problemy z rejestracją.
 
 ![status.jpg](status.jpg)
 

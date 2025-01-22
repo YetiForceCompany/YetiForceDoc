@@ -161,7 +161,7 @@ Niektóre dodatki mogą wymagać ponownej konfiguracji podczas zmiany lokalizacj
 
 Wymaga ponownej reinstalacji i zainstalowania nowego pliku XML.
 
-Stary dodatek zainstalowany w Outlook należy usunąć, pobrać nowy plik XML z panelu systemu YetiForce zgodnie z instrukcją [Dodatek typu add-in do programu Outlook](/administrator-guides/integration/mail-iIntegration-panel/outlook).
+Stary dodatek zainstalowany w Outlook należy usunąć, pobrać nowy plik XML z panelu systemu YetiForce zgodnie z instrukcją [Dodatek typu add-in do programu Outlook](/6.5.0/administrator-guides/integration/mail-integration-panel/outlook).
 
 ## Tworzenie środowiska testowego
 

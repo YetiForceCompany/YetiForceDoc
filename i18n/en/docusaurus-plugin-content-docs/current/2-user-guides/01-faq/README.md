@@ -1,6 +1,6 @@
 ---
-title: FAQ / Najczęściej zadawane pytania
+title: FAQ
 draft: true
 ---
 
-## jak konwertować leada na kontrahenta
+## How to covert Leads to Accounts

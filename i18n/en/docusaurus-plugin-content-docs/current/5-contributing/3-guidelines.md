@@ -20,6 +20,7 @@ You can help us develop our documentation by adding new articles or fixing any e
 You need a [Github user account](https://github.com/join) to edit pages on the YetiForce Documentation Site.
 
 [How to Contribute to an Open Source Project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
+
 :::
 
 To add a new article you need to create a new file [here](https://github.com/YetiForceCompany/YetiForceDoc/tree/main/docs), and to fix an existing one simply scroll down to the end of the article and click `Edit`.

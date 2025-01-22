@@ -18,16 +18,18 @@ CRON is a Unix daemon that triggers other programs periodically. It uses crontab
 
 ![cron](cron-1.jpg)
 
-## How to enable CRON?
+## Jak uruchomić cron-a?
 
 CRON can be enabled in a few simple steps:
 
 ### Linux - edit /etc/crontab file, /etc/cron.d/yetiforce file, or 'crontab -e':
 
-- Add an entry to crontab, or a file to CRON, e.g. in such format (`__YETIFORCE_PATH__`is the full full absolute path to the YetiForce system folder e.g. /var/www/example),
+- Add an entry to crontab, or a file to CRON, e.g.
 
   :::warning
-  It is important that the script is run with the same permissions as the owner of the system files.
+
+  Ważne jest, aby skrypt był uruchamiany z takimi samymi uprawnieniami jak właściciel plików systemowych.
+
   :::
 
 ```bash
@@ -52,7 +54,7 @@ CRON can be enabled in a few simple steps:
 
 ### Windows - it's not recommended to use Windows as a server for the YetiForce system.
 
-### URL can be used to run CRON, e.g. https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
+### Adres URL może być używany do uruchomienia CRON, np. https://demo.yetiforce.com/cron.php?app_key=xxxx
 
 The `app_key` is the key located in the [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key) file in the `$application_unique_key` variable.
 
@@ -61,7 +63,7 @@ The `app_key` is the key located in the [config/Main.php](https://doc.yetiforce.
 ### If there is a problem with triggering CRON from CLI, there is an alternative, but it is not recommended:
 
 ```bash
-*/2 * * * * /usr/bin/lynx -source https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
-*/2 * * * * /usr/bin/wget -O - -q -t 1 https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
-*/2 * * * * curl -s https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
+*/2 * * * * /usr/bin/lynx -source https://demo.yetiforce.com/cron.php?app_key=xxxx
+*/2 * * * * /usr/bin/wget -O - -q -t 1 https://demo.yetiforce.com/cron.php?app_key=xxxx
+*/2 * * * * curl -s https://demo.yetiforce.com/cron.php?app_key=xxxx
 ```

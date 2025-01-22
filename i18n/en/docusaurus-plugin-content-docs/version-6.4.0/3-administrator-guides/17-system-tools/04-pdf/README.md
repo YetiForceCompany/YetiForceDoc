@@ -67,9 +67,15 @@ When the `$chromiumBinaryPath` path is set correctly and the system has access t
 
 A simple script to download the latest version without installation. 
 
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/current/3-administrator-guides/17-system-tools/04-pdf/README.md
+Make sure your system has installed all required dependencies. [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
+
+The list of required packages may vary depending on the distribution and version. https://source.chromium.org/chromium/chromium/src/+/main:chrome/installer/linux/debian/dist_package_versions.json
+========
 Make sure your system has installed all required dependencies.
 Thanks [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
 ❤
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/version-6.4.0/3-administrator-guides/17-system-tools/04-pdf/README.md
 
 <details>
 <summary>Debian (e.g. Ubuntu)</summary>
@@ -113,7 +119,7 @@ lsb-release
 wget
 xdg-utils
 
-Note: You might need to install ‘libgbm-dev’ and ‘libxshmfence-dev’ also. This is reported for Ubuntu 20.04.
+Note: You might need to install `libgbm-dev` and `libxshmfence-dev` also. This is reported for Ubuntu 20.04.
 ```
 
 </details>
@@ -197,4 +203,13 @@ popd
 rm -f ./latest
 find chromium/* -type d -ctime +1 -exec rm -rf {} \;
 ln -s $REVISION/chrome-linux/ ./latest
+```
+
+### Tips
+
+#### Watermark on the entire page size
+
+```css title="Styles column"
+#watermark-image{position: absolute; left: 0; right: 0; top: 0; bottom: 0;}&#13;
+#header{position: absolute; top: 0; left: 0; right: 0;width: 842px; height: 595px;}
 ```

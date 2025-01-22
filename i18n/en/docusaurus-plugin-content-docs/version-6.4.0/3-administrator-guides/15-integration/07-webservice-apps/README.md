@@ -27,7 +27,7 @@ Documentation of available methods and API capabilities can be found in the foll
 
 ### Credentials
 
-Access to the `Webservice Standard` service requires creating an application with a username and password, necessary to communicate with the API. 
+Access to the `Webservice Standard` service requires creating an application with a username and password, necessary to communicate with the API.
 
 ![WebserviceStandard-login-pass.jpg](WebserviceStandard-login-pass.jpg)
 
@@ -62,7 +62,7 @@ The key is generated after the application is created, and it can be copied to t
 
 ### Authentication
 
-The keys are unique for each application that connects to the YetiForce system. In order to be able to download and send data, you need to specify the level of permissions for the API. For this purpose, the [Users/Login](/developer-guides/api/WebserviceStandard#tag/Users/operation/1ac849ff510b6b65243b46ffb9e48a9b) method was created, which allows authorization and creation of a session. This allows you to call methods that require a certain level of permissions to perform operations.
+The keys are unique for each application that connects to the YetiForce system. In order to be able to download and send data, you need to specify the level of permissions for the API. For this purpose, the [Users/Login](/6.4.0/developer-guides/api/WebserviceStandard#tag/Users/operation/1ac849ff510b6b65243b46ffb9e48a9b) method was created, which allows authorization and creation of a session. This allows you to call methods that require a certain level of permissions to perform operations.
 
 A description of credential management can be found here: [Administrator documentation → Integration → Web service - Users](/administrator-guides/integration/webservice-users/).
 

@@ -30,17 +30,17 @@ Users can log in using the LDAP service, in this case the authentication does no
 
 ### Custom authentication
 
-The system allows the use of other methods of standard or additional authentication, e.g. in the form of Yubikey physical devices. Unfortunately, some mechanisms require integration with the company's infrastructure, such as sending text messages or an internal application for one-time codes, therefore these options are priced individually.
+The system allows the use of other methods of standard or additional authentication, e.g. Unfortunately, some mechanisms require integration with the company's infrastructure, such as sending text messages or an internal application for one-time codes, therefore these options are priced individually.
 
 ### Authentication
 
-After correct identification and authentication, the system automatically verifies the functionalities and data the user has permissions for. Depending on the authentication, each user can see different system functionalities - each element of the system can be defined for the user, e.g. each user can see different menus, other functionalities and other data.
+After correct identification and authentication, the system automatically verifies the functionalities and data the user has permissions for. Depending on the authentication, each user can see different system functionalities - each element of the system can be defined for the user, e.g.
 
 ## Security mechanisms
 
 ### Unique identifiers
 
-In the YetiForce system, there are two identifiers in the user table, the first identifier is `id`, which is a unique numerical identifier that creates a unique value for each user, and once a value is assigned, it cannot be assigned to another user in the future. The second unique identifier is the login used by the user to log in. The system has a security feature that will not allow you to assign a pre-existing login to a new user.
+In the YetiForce system, there are two identifiers in the user table, the first identifier is `id`, which is a unique numerical identifier that creates a unique value for each user, and once a value is assigned, it cannot be assigned to another user in the future. Authentication The second unique identifier is the login used by the user to log in. The system has a security feature that will not allow you to assign a pre-existing login to a new user.
 
 The uniqueness of identifiers allows you to verify the activities of individual users even when they have been removed from the system, and prevents identification errors.
 

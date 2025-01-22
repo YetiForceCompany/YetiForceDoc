@@ -31,17 +31,15 @@ Contact us to receive a quote.
 :::
 
 <Tabs groupId="zhh7fxZ293w">
-	<TabItem value="youtube-zhh7fxZ293w" label="🎬 YouTube">
-		<ReactPlayer
-			url="https://www.youtube.com/watch?v=zhh7fxZ293w"
-			width="100%"
-			height="500px"
-			controls={true}
-		/>
-	</TabItem>
-	<TabItem value="yetiforce-zhh7fxZ293w" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/system-update.mp4" width="100%" height="500px" controls={true} />
-	</TabItem>
+    <TabItem value="youtube-zhh7fxZ293w" label="🎬 YouTube">
+        <ReactPlayer
+            url="https://www.youtube.com/watch?v=zhh7fxZ293w"
+            width="100%"
+            height="500px"
+            controls={true}
+        /></TabItem>
+    <TabItem value="yetiforce-zhh7fxZ293w" label="🎥 YetiForce TV">
+        <ReactPlayer url="/video/system-update.mp4" width="100%" height="500px" controls={true} /></TabItem>
 </Tabs>
 
 System update can be divided into 3 types of activities, which involve quite important processes:
@@ -66,22 +64,22 @@ In the selected window, there are two options to choose between:
 
 In this type of installation, it is important to download the appropriate package.
 
-It can be downloaded from various locations but it is recommended to download it from here. There are update packages for all versions. Select a package that will be appropriate for your version. Updates should be performed in a certain sequence. If you have `1.1`. version and would like to update the system to `2.0`, you should download the following update packages:
+Paczkę aktualizacyjną można pobrać z kilku miejsc, jednakże zalecanym miejscem jest nasze repozytorium GitHub: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. There are update packages for all versions. Select a package that will be appropriate for your version. Updates should be performed in a certain sequence. Jeżeli masz wersje `1.1`. version and would like to update the system to `2.0`, you should download the following update packages:
 
 - 1.1.0RC_to_1.2.0RC
 - 1.2.0RC_to_1.3.0RC
 - 1.3.0RC_to_1.4.0RC
 - 1.4.0RC_to_2.0.0
 
-There are built-in mechanisms that do not allow to upload incorrect packs, but they can be omitted. Although it is obviously not recommended, some might be tempted by the fact that it can save time. Default packages allow to update only from stable versions [e.g. `1.2.0`, `1.4.0`] and it's impossible to update the system with versions that are in between [called minor versions, e.g. `1.2.54`, `1.4.11`]. This can happen in the following cases:
+There are built-in mechanisms that do not allow to upload incorrect packs, but they can be omitted. Although it is obviously not recommended, some might be tempted by the fact that it can save time. `1.2.0`, `1.4.0`] and it's impossible to update the system with versions that are in between [called minor versions, e.g. `1.2.54`, `1.4.11`]. This can happen in the following cases:
 
-1. Unstable version has been downloaded [e.g. directly from the main GitHub folder]. It should be downloaded from here: https://github.com/YetiForceCompany/YetiForceCRM/releases
+1. directly from the main GitHub folder]. It should be downloaded from here: https://github.com/YetiForceCompany/YetiForceCRM/releases
 2. Update package for a minor version has been uploaded. It might be downloaded from the developer tree: https://github.com/YetiForceCompany/UpdatePackages/tree/developer/YetiForce%20CRM%201.x.x
 
 Regardless of the reason, it's important to remember to:
 
 1. Open this file: https://github.com/YetiForceCompany/YetiForceCRM/blob/master/config/version.php on the server where your system is located;
-2. Change version number to the number of a stable version, e.g. from `1.4.55` version to `1.4.0` [always reduce the number].
+2. from `1.4.55` version to `1.4.0` [always reduce the number].
 
 After selecting a proper version of the update package, you can proceed to the manual method of uploading it by clicking the `Upload update` button.
 
@@ -113,8 +111,8 @@ The properly performed installation will complete by displaying the summary wind
 
 ### Verify update
 
-- First check logs and search for any errors or warnings. Log files can sometimes contain 20 thousand lines of code so it is recommended to use keywords, e.g. error, warning.
-- Disable logs after using the system for several days to verify if there are any errors ([Debug](/developer-guides/debug#summary))
+- First check logs and search for any errors or warnings. Log files can sometimes contain 20 thousand lines of code so it is recommended to use keywords, e.g.
+- Wyłącz dzienniki po kilku dniach używania systemu w celu sprawdzenia, czy występują błędy ([Debug](/developer-guides/debug#podsumowanie))
 - Update the languages in the system.
 - Update lib_roundcube library to the version corresponding to your system.
 - In the admin panel, in the [`Software configuration → Standard modules → Modules - installation`](/administrator-guides/standard-modules/modules-installation/)you can see whether a previously installed library requires updating.
@@ -130,7 +128,7 @@ After installing the update, you can go to the `Software Configuration → Logs 
 
 - Test the system by clicking to see if all views are working [if you can edit, modify, delete records]. Perform changes primarily as an unprivileged user.
 - Perform the necessary tests, for example, sending e-mails, generating PDF documents, editing roles or access rules
-- Check communication with external systems, e.g. integrating via API.
+- Check communication with external systems, e.g.
 
 ## How to cope with problems
 

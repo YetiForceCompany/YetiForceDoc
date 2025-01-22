@@ -25,6 +25,7 @@ The official translation project of [YetiForce](https://crowdin.com/project/yeti
 :::warning
 
 **You need a Crowdin account to be able to add translations.**
+
 :::
 
 :::tip

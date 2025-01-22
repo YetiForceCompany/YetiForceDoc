@@ -1,6 +1,6 @@
 ---
 title: Problems with system registration
-description: The following article will help you if you have problems with confirming the registration, or your registration status is stuck at "Waiting for acceptance".
+description: The following article will help you if you have problems with confirming the registration, or your registration status is stuck at `Pending approval`.
 keywords:
   - problems
   - registration
@@ -19,9 +19,9 @@ If the status has not changed a few days after registration, please follow the s
 
 ## Update the registration status
 
-Go to [`System settings → Company → Company`](/administrator-guides/company/company-details/#check-status)
+Przejdź do ustawień aplikacji, w panelu menu po lewej stronie wybierz "Firma" a następnie "Dane firmy".
 
-Click the `Check status` button, on the right side the time of the last update should change to `a moment ago`.
+Kliknij przycisk "Sprawdź status". Click the `Check status` button, on the right side the time of the last update should change to `a moment ago`.
 
 ![reg-1.jpg](reg-1.jpg)
 
@@ -45,7 +45,7 @@ Sometimes changes are made on the server after registration, which changes the [
 
 For this reason, the system cannot retrieve up-to-date information, because the ID is different from the one that was provided during registration and the new ID does not exist in the database.
 
-In this case, re-registration is required; please go the [`System settings → Company → Company`](/administrator-guides/company/company-details/#registration)
+W tym przypadku wymagana jest ponowna rejestracja; przejdź do [`Konfiguracja systemu ➡ Firma ➡ Dane firmy`](/administrator-guides/company/company-details/#jak-zarejestrować-yetiforce)
 
 ## Check your firewall
 
@@ -56,7 +56,7 @@ Check if your firewall is not blocking outgoing traffic to the following address
 
 These addresses are used for system registration and marketplace purchases.
 
-## Send a message to us
+## Jeśli problemy nadal występują - napisz do nas
 
 :::warning
 
@@ -68,6 +68,6 @@ If you have a problem with registration and this article did not help you solve 
 
 - [APP ID](/administrator-guides/app-id/)
 - [CRM logs](/developer-guides/debug)
-- [PHP logs](/developer-guides/debug#php-logs)
+- [Logi PHP](/developer-guides/debug#logi-php)
 - web server logs
 - FPM login (optional)

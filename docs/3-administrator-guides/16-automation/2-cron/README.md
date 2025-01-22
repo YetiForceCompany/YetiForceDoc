@@ -27,7 +27,9 @@ CRON można włączyć w kilku prostych krokach:
 - Dodaj wpis do crontab, lub plik do CRON, np. w takim formacie (`__YETIFORCE_PATH__`jest pełną ścieżką bezwzględną do folderu systemu YetiForce, np. /var/www/example),
 
   :::warning
+
   Ważne jest, aby skrypt był uruchamiany z takimi samymi uprawnieniami jak właściciel plików systemowych.
+
   :::
 
 ```bash
@@ -52,7 +54,7 @@ CRON można włączyć w kilku prostych krokach:
 
 ### Windows - nie zaleca się używania Windows jako serwera dla systemu YetiForce.
 
-### Adres URL może być używany do uruchomienia CRON, np. https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
+### Adres URL może być używany do uruchomienia CRON, np. https://demo.yetiforce.com/cron.php?app_key=xxxx
 
 `app_key` to klucz znajdujący się w pliku [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key) w zmiennej `$application_unique_key`.
 
@@ -61,7 +63,7 @@ CRON można włączyć w kilku prostych krokach:
 ### W przypadku problemów z wyzwalaniem CRON z CLI, istnieje alternatywa, ale nie zaleca się:
 
 ```bash
-*/2 * * * * /usr/bin/lynx -source https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
-*/2 * * * * /usr/bin/wget -O - -q -t 1 https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
-*/2 * * * * curl -s https://gitdeveloper.yetiforce.com/cron.php?app_key=xxxx
+*/2 * * * * /usr/bin/lynx -source https://demo.yetiforce.com/cron.php?app_key=xxxx
+*/2 * * * * /usr/bin/wget -O - -q -t 1 https://demo.yetiforce.com/cron.php?app_key=xxxx
+*/2 * * * * curl -s https://demo.yetiforce.com/cron.php?app_key=xxxx
 ```

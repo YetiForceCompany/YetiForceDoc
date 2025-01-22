@@ -2,11 +2,11 @@
 title: Outlook Add-in
 description: The integration enables the YetiForce system to work or be displayed in an external Outlook e-mail client.
 tags:
-  - email
+  - mail
   - outlook add-in
   - integration panel
 keywords:
-  - email
+  - mail
   - outlook add-in
   - integration panel
 preview: preview.png
@@ -25,47 +25,49 @@ Thanks to this solution, it's not necessary to make a copy of the entire YetiFor
 The implementation of the add-in allows you to use of all YetiForce functionalities in Outlook.
 
 :::important
-The article presents the most important issues related to the Outlook add-in for YetiForce, so it is important to read it carefully and follow the guidelines for the add-in to work properly.
+
+Artykuł omawia najważniejsze kwestie związane z dodatkiem Outlook do systemu YetiForce. Przeczytaj go w całości i zwróć szczególną uwagę na wytyczne aby dodatek działał prawidłowo.
+
 :::
 
-## Video presentation
+## Prezentacja wideo
 
 <Tabs groupId="WwgE1yX6akE">
-	<TabItem value="youtube-WwgE1yX6akE" label="🎬 YouTube">
-		<ReactPlayer
-			url="https://www.youtube.com/watch?v=WwgE1yX6akE"
-			width="100%"
-			height="500px"
-			controls={true}
-		/>
-	</TabItem>
-	<TabItem value="yetiforce-WwgE1yX6akE" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/outlook-integration-panel.mp4" width="100%" height="500px" controls={true} />
-	</TabItem>
+    <TabItem value="youtube-WwgE1yX6akE" label="🎬 YouTube">
+        <ReactPlayer
+            url="https://www.youtube.com/watch?v=WwgE1yX6akE"
+            width="100%"
+            height="500px"
+            controls={true}
+        /></TabItem>
+    <TabItem value="yetiforce-WwgE1yX6akE" label="🎥 YetiForce TV">
+        <ReactPlayer url="/video/outlook-integration-panel.mp4" width="100%" height="500px" controls={true} /></TabItem>
 </Tabs>
 
-## Requirements
+## Wymagania
 
 ### SSL/HTTPS
 
-The add-in requires the system to work with a valid SSL certificate. `Self signed certificates are not accepted`
+Dodatek wymaga aby system YetiForce działał z ważnym certyfikatem SSL. Nieakceptowane są `self signed certificate`.
 
-### Compatibility
+### Kompatybilność
 
-The add-in supports the following Outlook application types:
+Dodatek Outlook do systemu YetiForce działa z następującymi typami aplikacji Outlook:
 
-- Outlook 2013 or later on Windows
-- Outlook 2016 or later on Mac
-- Outlook on iOS
-- Outlook on Android
-- Outlook on the web for Exchange 2016 or later
-- Outlook on the web for Exchange 2013
+- Outlook 2013 lub nowszy w systemie Windows
+- Outlook 2016 lub nowszy na komputerze Mac
+- Outlook na iOS
+- Outlook na Androida
+- Outlook w sieci Web dla programu Exchange 2016 lub nowszego
+- Outlook w sieci Web dla programu Exchange 2013
 - Outlook.com
 
 :::warning
-The client must be connected to an Exchange server or Microsoft 365 (formerly known as Office 365) using a direct connection. When configuring the client, the user must choose an Exchange, Office, or Outlook.com account type. Add-ons will not load if your mail client is configured to connect via POP3 or IMAP.
 
-More information: [Outlook add-in requirements](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/add-in-requirements)
+Klient poczty musi być połączony z serwerem Exchange lub Microsoft 365 (dawniej Office 365) przy użyciu połączenia bezpośredniego. Podczas konfigurowania klienta użytkownik musi wybrać typ konta Exchange, Office lub Outlook.com. Dodatki nie zostaną załadowane jeśli klient poczty jest skonfigurowany do łączenia się przez POP3 lub IMAP.
+
+Więcej informacji na stronie: [Wymagania dotyczące dodatku Outlook](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/add-in-requirements)
+
 :::
 
 ### Browser engine
@@ -76,18 +78,13 @@ For a full description of the requirements, see [Browsers used by Office add-ins
 
 ## Install / enable the integration
 
-After the purchase, you need to activate the add-in. When the `Requires intervention` button appears in the Marketplace, go to the `Integration` tab, click `Activate`, enter the required data, and download the installation file.
+Po zakupie należy aktywować dodatek, jest to jednorazowa operacja. After the purchase, you need to activate the add-in. When the `Requires intervention` button appears in the Marketplace, go to the `Integration` tab, click `Activate`, enter the required data, and download the installation file.
 
 ![marketplace](marketplace.png)
 
 ### Video tutorial
 
-<ReactPlayer
-	url="https://www.youtube.com/watch?v=HTRG81waq54"
-	width="100%"
-	height="500px"
-	controls={true}
-/>
+<ReactPlayer url="https://www.youtube.com/watch?v=HTRG81waq54" width="100%" height="500px" controls={true} />
 
 ### Activation
 
@@ -104,11 +101,11 @@ During activation, the system will be configured for integration with Outlook. T
 
 In order to install the add-in you must first download the XML file and import it in Outlook.
 
-Go to `system settings → Integration → Mail integration panel` and click `Download the Outlook add-in installation file`. The XML you downloaded is exclusive for an individual version of YetiForce and includes the APP ID. If [APP ID](/administrator-guides/app-id) changes, you will have to reinstall the plugin. This has been done so that you cannot load the system in any other window.
+Go to `system settings → Integration → Mail integration panel` and click `Download the Outlook add-in installation file`. Pobrany plik XML jest dedykowany tylko dla danej wersji CRM i zawiera w sobie APP ID CRM-a. If [APP ID](/administrator-guides/app-id) changes, you will have to reinstall the plugin. This has been done so that you cannot load the system in any other window.
 
 ### Installation of the add-in extension in Outlook
 
-Installation instructions are available at the [official Microsoft website](https://support.microsoft.com/en-us/office/installed-add-ins-a61762b7-7a82-47bd-b14e-bbc15eaeb70f). Please follow the instructions from the link above for proper installation.
+Installation instructions are available at the [official Microsoft website](https://support.microsoft.com/en-us/office/installed-add-ins-a61762b7-7a82-47bd-b14e-bbc15eaeb70f).
 
 ### Permission to access cookies (only the web version of Outlook web app)
 
@@ -126,7 +123,7 @@ If you don't change it, it won't be possible to log into the YetiForce system an
 
 ![cookies5](cookies5.png)
 
-## Permissions
+## Privileges
 
 Users need access to the `Mail integration panel` in order to use the integration panel.
 
@@ -140,7 +137,7 @@ If the user doesn't have access to the module, the following message will appear
 
 ### Access to email import
 
-In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module.
+Permissions In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module. In order for the email import button to appear, the user must have the `create` option ticked for the `Email history` module.
 
 ![profiles2](profiles2.png)
 

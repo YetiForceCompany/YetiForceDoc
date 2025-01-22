@@ -3,18 +3,18 @@ title: System migration or recovery
 description: How to properly migrate or restore a backup copy of YetiForce
 keywords:
   - move
-  - migrate
+  - migration
   - restore
   - copy
   - backup
   - server
   - YetiForce
 tags:
-  - migration
+  - migrate
   - backup
 ---
 
-Migrating or restoring the system from backup takes place in a few steps. Please read the information below to avoid any errors and mistakes.
+Migrating or restoring the system from backup takes place in a few steps. By mieć pewność, że wykonujesz ją poprawnie, zapoznaj się z artykułem poniżej.
 
 ## Video guide
 
@@ -23,17 +23,15 @@ import TabItem from '@theme/TabItem';
 import ReactPlayer from 'react-player';
 
 <Tabs groupId="AAnD_Npa0ZM">
-	<TabItem value="youtube-AAnD_Npa0ZM" label="🎬 YouTube">
-		<ReactPlayer
-			url="https://www.youtube.com/watch?v=AAnD_Npa0ZM"
-			width="100%"
-			height="500px"
-			controls={true}
-		/>
-	</TabItem>
-	<TabItem value="yetiforce-AAnD_Npa0ZM" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/system-migration.mp4" width="100%" height="500px" controls={true} />
-	</TabItem>
+    <TabItem value="youtube-AAnD_Npa0ZM" label="🎬 YouTube">
+        <ReactPlayer
+            url="https://www.youtube.com/watch?v=AAnD_Npa0ZM"
+            width="100%"
+            height="500px"
+            controls={true}
+        /></TabItem>
+    <TabItem value="yetiforce-AAnD_Npa0ZM" label="🎥 YetiForce TV">
+        <ReactPlayer url="/video/system-migration.mp4" width="100%" height="500px" controls={true} /></TabItem>
 </Tabs>
 
 ## Upload files to the web root directory
@@ -64,7 +62,7 @@ tar -zcvf /var/www/html/`date +"%Y%m%d_%H%M"`.tar.gz /var/www/html/
 
 ## Upload the database
 
-Upload the database using the CLI console (recommended) or a database client eg. DBeaver, Database Workbench , SQLyog
+Upload the database using the CLI console (recommended) or a database client eg.
 
 ```sql
 mysql -P 3306 -h 127.0.0.1  -u yetiforce -p yetiforce < dump.sql
@@ -171,13 +169,13 @@ Migrating to a new server or restoring it from a backup requires [re-registratio
 
 ## Update addons
 
-Some addons may need to be reconfigured when changing the location or address of the system, eg. [`System settings → Integration → Mail integration panel`](/administrator-guides/integration/mail-integration-panel/outlook).
+[`System settings → Integration → Mail integration panel`](/administrator-guides/integration/mail-integration-panel/outlook).
 
 ### YetiForce Outlook Integration Panel
 
 Requires reinstallation and the installation of a new XML file.
 
-The old addon installed in Outlook should be removed and the new XML file from the system panel should be downloaded according to the [instructions](/administrator-guides/integration/mail-integration-panel/outlook).
+Stary dodatek zainstalowany w Outlook należy usunąć, pobrać nowy plik XML z panelu systemu YetiForce zgodnie z instrukcją [Dodatek typu add-in do programu Outlook](/administrator-guides/integration/mail-integration-panel/outlook).
 
 ## Create a test environment
 
@@ -185,7 +183,7 @@ If you create a test environment, it is worth introducing some important changes
 
 ### Change user passowrds
 
-### Add visuals
+### Wizualne odróżnienie środowisk
 
 Display a test environment notice on the login page and on the top bar of the system.
 

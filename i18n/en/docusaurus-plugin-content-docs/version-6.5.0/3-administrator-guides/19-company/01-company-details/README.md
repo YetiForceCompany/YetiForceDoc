@@ -45,13 +45,13 @@ Read the information at the top of the page and fill in all mandatory fields (ma
 
 Providing fake information will result in the registration being rejected.
 
-For a detailed description of the fields, see the [Form fields](administrator-guides/company/company-details/#form-fields) section below.
+For a detailed description of the fields, see the [Form fields](/administrator-guides/company/company-details/#form-fields) section below.
 
 ![OnLine-2.jpg](OnLine-2.jpg)
 
 ## Check status
 
-If the registration status has not been updated in your system automatically after a couple of days, you can refresh it manually. In order to do that, click the `Check status` button. The status will be refreshed immediately, and the update time in the upper right corner should change to `a moment ago.` If it doesn't, the [following article](administrator-guides/company/problems-with-system-registration/) will help you troubleshoot registration issues.
+If the registration status has not been updated in your system automatically after a couple of days, you can refresh it manually. In order to do that, click the `Check status` button. The status will be refreshed immediately, and the update time in the upper right corner should change to `a moment ago.` If it doesn't, the [following article](/6.5.0/administrator-guides/company/problems-with-system-registration/) will help you troubleshoot registration issues.
 
 ![status.jpg](status.jpg)
 

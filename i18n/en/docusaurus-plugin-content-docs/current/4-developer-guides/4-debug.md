@@ -1,5 +1,5 @@
 ---
-title: Debug
+title: Debugging
 description: How to debug YetiForce
 keywords:
   - Debug
@@ -15,7 +15,7 @@ YetiForce is a very advanced system that has thousands of files and hundreds of 
 
 ## Introduction
 
-It is necessary to understand a problem in such a way that helps to find its cause. Otherwise, you can waste a lot of time. Various technologies are debugged in different locations (e.g. HTML, CSS, JS, AJAX -it's best to debug them in the browser). Various tools should be used for debugging, such as XDebug, server logs, application logs. For the browsers, it is recommended to use Google Chrome. Sometimes it is necessary to add something unusual to the code, so it will display an error in a corresponding place. A good idea might be to perform simple network tests to eliminate issues between the server and user's browser.
+It is necessary to understand a problem in such a way that helps to find its cause. Otherwise, you can waste a lot of time. HTML, CSS, JS, AJAX -it's best to debug them in the browser). Various tools should be used for debugging, such as XDebug, server logs, application logs. For the browsers, it is recommended to use Google Chrome. Sometimes it is necessary to add something unusual to the code, so it will display an error in a corresponding place. A good idea might be to perform simple network tests to eliminate issues between the server and user's browser.
 
 ## Log file paths
 
@@ -67,7 +67,7 @@ To start analyzing problems or errors in the system, log recording and displayin
 
 ## MySQL logs
 
-Errors in SQL queries are logged by [YetiForce system logs](#yetiforce-system-logs), with error level `error`.
+Errors in SQL queries are logged by [YetiForce system logs](#yetiforce-system-logs), with an error level of `error`.
 
 ## Smarty logs
 
@@ -97,7 +97,7 @@ The parameter enables an additional plugin which is used to log/save all data re
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php#L105-L109
 ```
 
-## Summary
+## Podsumowanie
 
 ### YetiForce system logs - critical
 

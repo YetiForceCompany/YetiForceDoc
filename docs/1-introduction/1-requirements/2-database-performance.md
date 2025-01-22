@@ -18,8 +18,11 @@ preview: 2-database-performance.jpg
 A proper configuration of the database server is an important element within the system implementation process. This article does not describe the configuration procedures, but highlights a few crucial points in optimizing a server environment. These guidelines are not mandatory, they are suggestions that result from many years of experience within the IT environment:
 
 1. Your friends are: vmstat / dstat, iostat, top, ps and any graphical history of values.
+
 2. Define the bottleneck (read/write, memory, CPU, network). How? Refer to point 1.
+
 3. Server optimization according to the process: problem analysis > consideration > change (only one change a time) > test > implement > begin the process again until you achieve satisfactory / optimal results.
+
 4. Hardware
 
    - Recommended to use RAID 10 (RAID 5 may not be sufficient).

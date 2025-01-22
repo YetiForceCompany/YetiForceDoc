@@ -70,8 +70,11 @@ A simple script to download the latest version without installation.
 Make sure your system has installed all required dependencies.
 Thanks [Puppeteer](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#chrome-headless-doesnt-launch-on-unix)
 ❤
+<<<<<<<< HEAD:i18n/en/docusaurus-plugin-content-docs/version-6.4.0/3-administrator-guides/17-system-tools/04-pdf/README.md
+========
 
 The list of required packages may vary depending on the distribution and version. https://source.chromium.org/chromium/chromium/src/+/main:chrome/installer/linux/debian/dist_package_versions.json
+>>>>>>>> release:i18n/en/docusaurus-plugin-content-docs/version-6.5.0/3-administrator-guides/17-system-tools/04-pdf/README.md
 
 <details>
 <summary>Debian (e.g. Ubuntu)</summary>
