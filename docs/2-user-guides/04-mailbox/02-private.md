@@ -12,8 +12,7 @@ tags:
 preview: private-1.jpg
 ---
 
-Skrzynki prywatne to indywidualne konta pocztowe użytkowników, które służą do osobistej korespondencji e-mailowej.
-Dostęp do niej może mieć tylko jeden użytkownik.
+Skrzynki prywatne to indywidualne konta pocztowe użytkowników, które służą do osobistej korespondencji e-mailowej. Dostęp do niej może mieć tylko jeden użytkownik.
 
 ## Konfiguracja
 
