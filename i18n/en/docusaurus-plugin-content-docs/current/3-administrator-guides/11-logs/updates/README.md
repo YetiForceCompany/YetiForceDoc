@@ -64,7 +64,7 @@ In the selected window, there are two options to choose between:
 
 In this type of installation, it is important to download the appropriate package.
 
-Paczkę aktualizacyjną można pobrać z kilku miejsc, jednakże zalecanym miejscem jest nasze repozytorium GitHub: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. There are update packages for all versions. Select a package that will be appropriate for your version. Updates should be performed in a certain sequence. Jeżeli masz wersje `1.1`. version and would like to update the system to `2.0`, you should download the following update packages:
+Paczkę aktualizacyjną można pobrać z kilku miejsc, jednakże zalecanym miejscem jest nasze repozytorium GitHub: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. Znajdują się tam paczki aktualizacyjne do wszystkich wersji. Należy wybrać tę paczkę, która odpowiada obecnej wersji systemu. Aktualizacja wymaga zachowania odpowiedniej kolejności paczek. Jeżeli masz wersje `1.1`. a chciałbyś uaktualnić system do wersji `2.0`, powinieneś pobrać następujące paczki aktualizacyjne:
 
 - 1.1.0RC_to_1.2.0RC
 - 1.2.0RC_to_1.3.0RC

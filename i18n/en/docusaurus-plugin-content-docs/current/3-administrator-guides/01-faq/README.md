@@ -3,7 +3,7 @@ title: FAQ
 description: FAQ & answers to them
 keywords:
   - FAQ
-  - Panel konfiguracyjny
+  - Settings
   - YetiForce
 tags:
   - FAQ
