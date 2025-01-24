@@ -1,15 +1,15 @@
 ---
 title: How to clear browser cache?
-description: Redirecting WWW application to another domain
+description: Redirecting a web application to another domain
 keywords:
   - YetiForce
   - clearing
-  - pamięć podręczna
+  - cache
   - firefox
   - chrome
 tags:
   - clearing
-  - pamięć podręczna
+  - cache
 ---
 
 Clearing browser cache is a very useful step that should be performed after updating the system in order to make sure that the pages are displayed correctly and that the old cache files don't cause problems.
@@ -29,7 +29,7 @@ Clearing browser cache is a very useful step that should be performed after upda
 4. In the `Application` tab in the panel on the left select `Clear storage`
    Click `Clear site data`
 
-   Następnie kliknij `Clear site data`
+   Then click `Clear site data`
 
 ![how-to-clear-browser-cache-2.jpg](how-to-clear-browser-cache-2.jpg)
 
@@ -39,17 +39,17 @@ Another option is to clear your browsing data. A description of this process can
 
 :::warning
 
-Wybierz wszystkie elementy, które chcesz usunąć i zakres czasowy
+Select all the items you want to remove and the time range
 
 :::
 
 ![how-to-clear-browser-cache-3.jpg](how-to-clear-browser-cache-3.jpg)
 
-## Czyszczenie cache w `Firefox`
+## Clearing cache in `Firefox`
 
-1. Otwórz YetiForce w Firefox
-2. Naciśnij <kbd>F12</kbd>
-3. Wybierz zakładkę `Storage` w oknie, które pojawi się po naciśnięciu <kbd>F12</kbd>
-4. W zakładce`Storage` w panelu po lewej stronie kliknij prawym przyciskiem myszy na adres URL YetiForce i wybierz `Delete All`
+1. Open your YetiForce system in the Firefox browser
+2. Press <kbd>F12</kbd>
+3. Select the `Storage` tab in the window that showed up after pressing <kbd>F12</kbd>
+4. In the `Storage` tab in the panel on the left side right-click your YetiForce's URL and select `Delete All`
 
 ![how-to-clear-browser-cache-4.jpg](how-to-clear-browser-cache-4.jpg)

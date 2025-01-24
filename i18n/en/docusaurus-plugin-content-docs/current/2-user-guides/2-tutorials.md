@@ -14,7 +14,7 @@ description: A collection of video tutorials that present the user part of the Y
 - [🎬 YouTube](https://www.youtube.com/watch?v=0k_ifsofCOc\&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/forgot-password.mp4)
 
-## Konwersja Leada na Kontrahenta
+## Lead to Account conversion
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=DBv8qJtbUjQ\&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/lead-to-account-conversion.mp4)
@@ -29,7 +29,7 @@ description: A collection of video tutorials that present the user part of the Y
 - [🎬 YouTube](https://www.youtube.com/watch?v=_PZl2qRqjh0\&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/fields-dependency.mp4)
 
-## Filtrowanie w module powiązanym
+## Custom view in a related module
 
 - [🎬 YouTube](https://www.youtube.com/watch?v=5DOgCpRt35A\&list=PLX0lktP3Kukg_Da-TaEBys-aON68Yy2vh)
 - [🎥 YetiForce TV](/video/custom-view-related-module.mp4)

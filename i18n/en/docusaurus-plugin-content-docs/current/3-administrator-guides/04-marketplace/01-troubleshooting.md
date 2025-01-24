@@ -17,7 +17,7 @@ The article below explains troubleshooting inactive or malfunctioning addons pur
 
 YetiForce must be correctly registered in order for the Marketplace and purchased addons to work properly. Jeśli mimo prawidłowej rejestracji Twój system nadal oczekuje na akceptację, możesz odświeżyć jej status klikając na przycisk `Sprawdź status` w panelu [`Konfiguracja systemu → Firma → Dane firmy`](/administrator-guides/company/company-details/#sprawdź-status).
 
-- Więcej informacji o rejestracji systemu znajdziesz w poradniku: [ Jak zarejestrować YetiForce](/administrator-guides/company/company-details/#jak-zarejestrować-yetiforce).
+- More information about registration can be found in the [How to register YetiForce?](/administrator-guides/company/company-details/#how-to-register-yetiforce) manual.
 - In case of problems with registration you can find help in the [Problems with registration guide](/administrator-guides/company/problems-with-system-registration/).
 
 ## Check if YetiForce is up to date and fully patched.
@@ -29,7 +29,7 @@ Updates fix issues reported by the community and our employees that's why it's c
 
 ## Check server configuration.
 
-Błędna konfiguracja serwera ma wpływ na działanie całego systemu. Nieprawidłowości w konfiguracji mogą powodować wiele różnych problemów, między innymi problemy z pobraniem informacji o aktualnych subskrypcjach.
+Misconfiguration of the server impacts the whole system and can lead to a variety of unpredictable problems, including issues with obtaining information about active subscriptions and purchases.
 
 :::important
 
@@ -37,7 +37,7 @@ More information about server requirements and configuration can be found in the
 
 :::
 
-## Włącz logi
+## Enable logs
 
 Enable PHP, system, and web server logs and make sure the communication with yetiforce.com server is working. It's important to enable PHP logs so that the system can record error messages.
 
@@ -54,8 +54,8 @@ If your issues persist you can contact us by sending an email and providing **al
 - [APP ID](/administrator-guides/app-id/)
 - system version
 - full logs according to the [Debugging](/developer-guides/debug) article
-- załącz [raport konfiguracji serwera](/administrator-guides/logs/server-configuration/#pobierz-konfigurację)
+- attach [server configuration report](/administrator-guides/logs/server-configuration/#download-configuration)
 - screenshot of products purchased from Marketplace
-- załącz zrzut ekranu [wgranych aktualizacji](/administrator-guides/logs/updates/#czynności-podczas-aktualizacji)
+- screenshot of [installed updates](/administrator-guides/logs/updates/#activities-during-the-update)
 
 We recommend using encryption (PGP/GPG) to send us your credentials. The list of all required information can be found in the [Access data to the YetiForce CRM system article.](/developer-guides/github/access-data-to-YetiForce-system) ](/developer-guides/github/access-data-to-YetiForce-system) ](/developer-guides/github/access-data-to-YetiForce-system)

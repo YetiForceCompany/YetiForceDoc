@@ -5,7 +5,7 @@ keywords:
   - YetiForce
   - marketplace
   - add-ons
-  - dodatek
+  - addon
 tags:
   - Marketplace
 hide_table_of_contents: true

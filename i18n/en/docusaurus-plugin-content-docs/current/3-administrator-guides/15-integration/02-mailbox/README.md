@@ -1,6 +1,6 @@
 ---
-title: Integracja Poczty
-description: Integracja poczty z Gmail/outlook
+title: Mail integration
+description: Mail integration with Gmail/Outlook
 keywords:
   - Email
   - Private mailbox
@@ -16,95 +16,95 @@ tags:
 preview: mailbox-integration-1.jpg
 ---
 
-Jedną z istotnych funkcjonalności YetiForce jest możliwość integracji z popularnymi platformami pocztowymi, takimi jak Gmail i Outlook. Pozwala na automatyzację wielu zadań, które zwykle pochłaniają czas, takimi jak np. automatyczne tworzenie leadów czy też wiązanie wiadomości z kontrahentami.
+One of YetiForce's key features is its ability to integrate with popular email platforms, such as Gmail and Outlook. It allows for the automation of many tasks that are usually time-consuming, for example automatic Lead generation or linking messages to Accounts.
 
 ## Integration
 
 :::info
 
-W celu powiązania YetiForce z zewnętrzną usługą pocztową, konieczne będzie wykonanie konfiguracji zarówno po stroni CRM, jak i dostawcy usługi.
+In order to integrate YetiForce with an external email service, you will need to perform configuration on both - the YetiForce system side, and the service provider side.
 
 :::
 
-### Krok 1: Dodanie Klucza
+### Step 1: Add key
 
-Powiązanie z usługą zewnętrzną należy rozpocząć od wygenerowania klucza integracyjnego. Można to zrobić w sekcji administracyjnej, przechodząc do zakładki `Integracja ➔ Web service - Aplikacje` a następnie wybierając przycisk <kbd>+ Dodaj klucz</kbd>.
+The connection with an external service starts with generating an integration key. This can be done in the administration section in the `Integration ➔ Web service - Applications` tab. Click the <kbd>+ Add key</kbd> button.
 
 ![mailbox integration 1](mailbox-integration-1.jpg)
 
-Pojawi nam się wówczas okno modalne, w którym możemy skonfigurować tworzony klucz.
+A popup window will appear where you can configure the key.
 
 ![mailbox integration 2](mailbox-integration-2.jpg)
 
-- **Nazwa**: Unikalna nazwa klucza, która posłuży do jego identyfikacji. Nazwa powinna być opisowa i łatwa do zapamiętania.
-- **Status**: Określa, czy klucz integracyjny jest aktywny, czy nieaktywny. Aktywne klucze mogą być używane do uwierzytelniania żądań zewnętrznych aplikacji. Nieaktywne klucze zostaną zablokowane i nie będą mogły być używane.
-- **Typ**: Jako typ autoryzacji, należy wybrać "OAuth".
-- **Dozwolone adresy IP**: Opcjonalnie możesz ograniczyć dostęp do klucza integracyjnego do określonych adresów IP. Wprowadź listę adresów IP, oddzielając je przecinkami. Jeśli nie wprowadzisz żadnych adresów IP, dostęp do klucza będzie dozwolony z dowolnego adresu.
+- **Name**: A unique name for the key that will be used to identify it. The name should be descriptive and easy to remember.
+- **Status**: Specifies whether the integration key is active or inactive. Active keys can be used to authenticate requests from external applications. Inactive keys will be blocked and will not be able to be used.
+- **Type**: select "OAuth".
+- **Allowed IP addresses**: Optionally, you can limit access to the integration key to specific IP addresses. Enter a list of IP addresses, separated by commas. If you don't enter any IP addresses, access to the key will be allowed from any address.
 
-### Krok 2: Dodanie Serwera Pocztowego
+### Step 2: Add mail server
 
-Kolejnym krokiem jest dodanie serwera pocztowego. W tym celu w sekcji administracyjnej należy wybrać z lewego menu `Narzędzia pocztowe ➔ Serwery poczty` a następnie nacisnąć przycisk <kbd>+ Dodaj rekord</kbd>.
+The next step is to add a mail server. To do this, in the administration section, select `Mail Tools ➔ Mail Servers` from the left menu and then click the <kbd>+ Add record</kbd> button.
 
 ![mailbox integration 3](mailbox-integration-3.jpg)
 
-Pojawi nam się formularz dodawania serwera pocztowego. Uzupełniamy go następująco:
+Fill the form according to the list below:
 
-- **Metoda autoryzacji**: OAuth
-- **Przekieruj URI**: wybierz wcześniej utworzoną integrację w zakładce `Integracja ➔ Web service - Aplikacje`
+- **Authorization method**: \`OAuth
+- **Redirect URI**: select previously created integration in the `Integration ➔ Web service - Applications` tab
 
 ![mailbox integration 4](mailbox-integration-4.jpg)
 
-Po zmianie wartości pola `Metoda autoryzacji` na OAuth, pojawią się nowe pola w formularzu: Client ID oraz Client secret. Wartości dla tych pól należy pobrać od dostawcy usługi pocztowej. Proces ten będzie wyglądał inaczej w zależności czy chcemy zintegrować YetiForce z Gmail, czy też z Outlook. Poniżej znajdują się instrukcje jak to zrobić dla obu przypadków.
+After changing the value of the `Authorization method` field to OAuth, new fields will appear in the form: Client ID and Client secret. The values ​​for these fields should be obtained from the email service provider. This process will look different depending on whether you want to integrate YetiForce with Gmail or Outlook. Below are instructions on how to do it for both cases.
 
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-### Krok 3: Powiązanie Serwera Pocztowego z kontami użytkowników
+### Step 3: Link mail server to user accounts
 
-Kolejnym krokiem po utworzeniu serwera pocztowego jest powiązanie go z użytkownikami systemu YetiForce. Możemy przypisać do jednego konta użytkownika jako mail indywidualny albo jako mail ogólny, do którego może mieć dostęp kilka użytkowników. Poniżej przedstawiono instrukcję dla obu przypadków.
+The next step after creating a mail server is to link it to YetiForce system users. You can assign it to one user account as an individual email, or as a general email that can be accessed by several users. Below are instructions for both cases.
 
-#### A) Powiązanie z mailem indywidualnym
+#### A) Linking to private email
 
-W celu skonfigurowania skrzynki prywatnej wybierz ikonę użytkownika znajdującą się w prawym górnym rogu, a następnie z menu, które się pojawi, wybierz <kbd>Moje ustawienia</kbd>
+To configure your private mailbox, select the user icon in the upper right corner and then select <kbd>My preferences</kbd> from the menu
 
 ![mailbox integration 5](mailbox-integration-5.jpg)
 
-Wybierz zakładkę `Skrzynka pocztowa` i uzupełnij pola formularza następująco:
+Select the `Mailbox` tab and fill the form fields as follows:
 
-- **Nazwa**: Unikalna nazwa, która posłuży do identyfikacji skrzynki.
-- **Serwer**: Serwer pocztowy utworzony do połączenia z usługą pocztową.
+- **Name**: A unique name that will be used to identify the mailbox.
+- **Server**: The mail server created to connect to the mail service.
 
 ![mailbox integration 6](mailbox-integration-6.jpg)
 
-Po naciśnięciu przycisku <kbd>Zapisz</kbd> zostaniemy przekierowani do potwierdzenia połączenia konta z wybraną usługą pocztową. Po przejściu wszystkich kroków weryfikacyjnych zostaniemy przeniesieni z powrotem do strony YetiForce. W celu sprawdzenia poprawności połączenia możemy nacisnąć przycisk <kbd>Uruchom test</kbd>. Pojawi się wówczas komunikat z informacją czy udało się prawidłowo zintegrować usługę pocztową.
+After pressing the <kbd>Save</kbd> button, you will be redirected to confirm the connection of the account with the selected email service. After passing all the verification steps, you will be transferred back to the YetiForce page. To make sure the connection is working properly, press the <kbd>Run test</kbd> button. A message will then appear indicating whether the email service was successfully integrated.
 
-#### B) Powiązanie ze skrzynką korporacyjną
+#### B) Linking to corporate mailbox
 
-W sekcji administracyjnej z lewego menu wybierz `Narzędzia pocztowe  ➔ Poczta - skaner` a następnie kliknij przycisk <kbd>+ Dodaj rekord</kbd>.
+In the administration section, from the left menu, select `Mail Tools ➔ Mail - Scanner` and then click the <kbd>+ Add record</kbd> button.
 
 ![mailbox integration 7](mailbox-integration-7.jpg)
 
-Uzupełnij formularz, który pojawi się w oknie modalnym.
+Fill in the form that shows up in the popup window.
 
 ![mailbox integration 8](mailbox-integration-8.jpg)
 
-- **Nazwa**: Unikalna nazwa, która posłuży do identyfikacji skrzynki.
-- **Serwer**: Serwer pocztowy utworzony do integracji z pocztą.
-- **Login**: Adres skrzynki.
-- **Hasło**: Pole może pozostać puste.
-- **Status**: Aktywna.
+- **Name**: A unique name that will be used to identify the mailbox.
+- **Server**: Mail server created for integration with email.
+- **Login**: Mailbox address.
+- **Password**: This field can be left blank.
+- **Status**: Active.
 
-Akcje skanera, pola wyszukiwania i użytkownika wybieramy według własnych preferencji. Po zapisaniu formularza nowy skaner poczty pojawi się na liście.
+Select acanner actions, search fields, and user according to your preferences. After saving the form, the new mail scanner will appear in the list.
 
-Następnie musimy przejść przez autoryzację poczty. W tym celu naciśnij na czerwony przycisk Google/Outlook znajdujący się przy utworzonym skanerze i przejdź kolejne kroki autoryzacji na stronie dostawcy usługi pocztowej.
+Then go through email authorization. To do this, press the red Google/Outlook button next to the created scanner and go through the authorization steps on the email service provider's website.
 
 ![mailbox integration 9](mailbox-integration-9.jpg)
 
-Po przejściu autoryzacji ikona powinna zmienić kolor na zielony.
+Once authorization has been completed, the icon should turn green.
 
 ![mailbox integration 10](mailbox-integration-10.jpg)
 
-By móc zalogować się do maila należy jeszcze ustawić odpowiedni wpis w zakładce `Narzędzia pocztowe  ➔ Poczta - skaner`. Do utworzonego konta pocztowego dodajemy użytkowników, którzy mają mieć do niego dostęp.
+To be able to log in to the email, you also need to set the appropriate entry in the `Email Tools ➔ Mail - Scanner` tab. Add users who should have access to the created email account.
 
 ![mailbox integration 11](mailbox-integration-11.jpg)

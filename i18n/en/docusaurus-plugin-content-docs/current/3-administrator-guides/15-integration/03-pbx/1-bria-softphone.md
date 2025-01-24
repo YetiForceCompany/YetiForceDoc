@@ -34,7 +34,7 @@ Zalety i możliwości integracji:
 
 ![bria-softphone-1.png](bria-softphone-1.png)
 
-## Prezentacja wideo
+## Video presentation
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
