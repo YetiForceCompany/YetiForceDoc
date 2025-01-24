@@ -1,63 +1,63 @@
 ---
-title: Widgety z filtrów
-description: Pozwalają na prezentację danych zgodnie z indywidualnie przyjętymi założeniami i ograniczeniami.
+title: Widget with filter
+description: These widgets allow you to display data according to individually selected assumptions and restrictions.
 keywords:
-  - widgety
-  - widgety z filtrów
-  - pulpit nawigacyjny
-  - personalizacja
+  - widgets
+  - widget with filter
+  - dashboard
+  - customisation
 tags:
-  - widgety
-  - widgety z filtrów
+  - widgets
+  - widget with filter
 preview: widgets-6
 ---
 
-Oprócz predefiniowanych widgetów, YetiForce oferuje widgety oparte o filtry stworzone na listach. Pozwalają one na prezentację danych zgodnie z indywidualnie przyjętymi założeniami i ograniczeniami. Pozwala to dostosować widget konkretnie pod dane potrzeby, ten typ posiada dużo większe możliwości do wyświetlenia danych lecz wymaga wprowadzenia większej ilość parametrów konfiguracyjnych.
+In addition to predefined widgets, YetiForce can create widgets based on filters created on record lists. They allow you to display data according to individually imposed assumptions and restrictions. This allows you to customize the widget specifically to your needs; this type offers much greater possibilities for displaying data but requires more extensive configuration.
 
-## 1. Tworzenie filtru
+## 1. Create filter
 
-W sekcji użytkownika przejdź do modułu, z którego chcesz pobrać dane do widgetu. Na przykład, jeśli chcesz utworzyć widget z filtrami dla leadów, przejdź do modułu "Leady". Wybierz znajdująca się w centralnej części ekranu sekcję <kbd>Filtry</kbd> a następnie wybierz przycisk <kbd>Stwórz nowy filtr</kbd>
+In the user section, go to your target module. For example, if you want to create a widget with filters for Leads, go to the "Leads" module. Select the <kbd>Filters</kbd> section located in the center of the screen and then click the <kbd>Create new filter</kbd> button
 
 ![widgets-3.jpg](widgets-3.jpg)
 
-Po kliknięciu przycisku <kbd>Stwórz nowy filtr</kbd> w widoku listy, pojawia się okno modalne, które oferuje szeroki wachlarz opcji dostosowywania i filtrowania danych.
+When you click the <kbd>Create new filter</kbd> button in the list view, a popup window appears that offers a wide range of options for customizing and filtering data.
 
 ![widgets-4.jpg](widgets-4.jpg)
 
-### Najważniejsze pola tworzonego filtru
+### Filter creation - form fields
 
-- **Wybór kolumn**: Możesz określić, które kolumny z listy mają być wyświetlane w filtrze
-- **Relacyjne dane**: Istnieje możliwość wyświetlania danych powiązanych z innych modułów w systemie. Na przykład, jeśli filtrujesz listę leadów, możesz wyświetlać dane z powiązanych kontaktów lub firm.
-- **Warunki**: Możesz tworzyć złożone filtry stosując operatory AND i OR do łączenia różnych kryteriów. Pozwala to na precyzyjne filtrowanie danych i wyświetlanie tylko tych informacji, które Cię interesują.
+- **Choose columns and order**: Define which columns from the list will be visible in the filter
+- **Relationship as a custom column**: It is possible to display data related to other modules in the system. For example, if you filter a list of leads, you can display data from related contacts or companies.
+- **Filter conditions**: You can create complex filters using the `AND` and `OR` operators to combine different criteria. This allows you to precisely filter your data and display only the information you need.
 
-By filtr był dostępny w widgetach, należy zaznaczyć opcję <kbd>Dostępy w widgetach</kbd>. Następnie możemy zapisać utworzony filtr i wykorzystać go w dowolnym widgecie.
+To make the filter available in widgets, you must select the <kbd>List in metrics</kbd> option. Then you can save the created filter and use it in any widget in this module.
 
-## 2. Tworzenie widgetu
+## 2. Create widget
 
-Widget z filtru można utworzyć w systemie YetiForce na dwa sposoby.
+There are two ways to create a widget with filter in the YetiForce system.
 
-### a) Tworzenie widgetu przez sekcji administracyjnej
+### a) Create widget in the administrator panel
 
-W sekcji administracyjnej z lewego menu wybierz **Moduły Podstawowe ➔ Panel - Widżety**.
+In the administration section, from the left menu, select **Standard Modules ➔ Dashboard - Widgets**.
 
-Następnie dla odpowiedniego pulpitu i roli wybierz przycisk <kbd>Widget z filtrem</kbd>
+Then, for the relevant dashboard and role, select the <kbd>Widget with filter</kbd> button
 
 ![widgets-5.jpg](widgets-5.jpg)
 
-W oknie modalnym, które się pojawi wybierz moduł zgodny z modułem, w którym został utworzony filtr i uzupełnij pozostałe informacje niezbędne do działania widgetu.
+In the popup window that appears, select the module where you created the filter, and fill in the remaining information necessary for the widget to work.
 
 ![widgets-6.jpg](widgets-6.jpg)
 
-Następnie należy przejść w sekcji użytkownika do zakładki Pulpit i dodać widget wybierając go z listy, która się pojawi po naciśnięciu przycisku <kbd>Predefiniowane widgety</kbd>
+Then go to the Dashboard tab in the user section and add a widget by selecting it from the list that appears after clicking the <kbd>Predefined widgets</kbd> button.
 
 ![widgets-7.jpg](widgets-7.jpg)
 
-### b) Tworzenie widgetu przez sekcję użytkownika
+### b) Create widget in the user panel
 
-Alternatywną metodą stworzenia widgetu z filtrów jest dodanie go z poziomu sekcji użytkownika. W tym celu przejdź do zakładki <kbd>Pulpit</kbd> a następnie wybierz przycisk <kbd>Dodaj widget z filtru</kbd>.
+An alternative method of creating a widget with filter is to add it from the user section. To do this, go to the <kbd>Dashboard</kbd> tab and then click the <kbd>Add widget from filter </kbd> button.
 
 ![widgets-8.jpg](widgets-8.jpg)
 
-Podobnie jak to miało miejsce w podczas tworzenia widgetu przez sekcję administracyjną, pojawi nam się okno modalne, w którym możemy ustalić szczegóły tworzonego widgetu.
+Similarly to creating the widget in the administrator panel, a popup window will appear where you can specify the details of the new widget.
 
 ![widgets-9.jpg](widgets-9.jpg)

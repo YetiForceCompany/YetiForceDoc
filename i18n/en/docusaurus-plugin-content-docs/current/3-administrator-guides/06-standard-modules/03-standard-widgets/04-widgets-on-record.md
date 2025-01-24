@@ -1,36 +1,36 @@
 ---
-title: Widgety na rekordzie
+title: Widgets in record view
 description: Funkcja ta pozwala na spersonalizowanie widoku i szybki dostęp do najważniejszych informacji dotyczących danego elementu, bez konieczności przechodzenia do innych modułów.
 keywords:
-  - widgety
-  - widgety na widoku szczegółów rekordu
-  - pulpit nawigacyjny
-  - personalizacja
+  - widgets
+  - widgets in record detail view
+  - dashboard
+  - customisation
 tags:
-  - widgety
+  - widgets
 preview: widgets-14
 ---
 
-Oprócz widgetów umieszczanych na pulpicie nawigacyjnym, YetiForce oferuje również możliwość dodawania widgetów w szczegółach poszczególnych rekordów z listy. Funkcja ta pozwala na spersonalizowanie widoku i szybki dostęp do najważniejszych informacji dotyczących danego elementu, bez konieczności przechodzenia do innych modułów.
+In addition to the widgets placed on the dashboard, YetiForce also offers the ability to add widgets in the detail view of individual records. This feature allows you to personalize the view and quickly access the most important information about a given element, without having to navigate to other modules.
 
 ### Configuration
 
-#### Dostęp do menu konfiguracji
+#### Access to configuration menu
 
-- W sekcji administracyjnej wybierz opcję **Moduły Standardowe** z menu głównego.
-- Następnie kliknij **Moduły - Widżety**
+- In the administration section, select **Standard Modules** from the main menu.
+- Click **Modules - Widgets**
 
-#### Wybór modułu i dodawanie widgetu
+#### Module selection and adding a widget
 
-- Z listy rozwijanej po prawej stronie wybierz moduł, dla którego chcesz dodać widget. (strzałka nr 3 na zrzucie ekranu)
-- Kliknij przycisk <kbd>Dodaj Widget</kbd>.
+- From the drop-down list on the right, select the module where you want to add a widget. (arrow #3 in the screenshot)
+- Click the <kbd>Add Widget</kbd> button.
 
 ![widgets-12.jpg](widgets-12.jpg)
 
-W oknie modalnym ustal wszystkie szczegóły odnośnie tworzonego widgetu.
+Customize all the options for the new widget in the popup window.
 
 ![widgets-13.jpg](widgets-13.jpg)
 
-Dodany widget będzie widoczny w szczegółach rekordów wybranego modułu.
+The newly created widget will be visible in the detail view of all records from the selected module.
 
 ![widgets-14.jpg](widgets-14.jpg)
