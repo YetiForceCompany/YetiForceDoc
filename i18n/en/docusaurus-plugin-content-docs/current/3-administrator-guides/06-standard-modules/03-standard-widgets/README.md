@@ -2,13 +2,13 @@
 title: Widżety Standardowe
 description: Opis działania i konfiguracja widgetów w systemie YetiForce
 keywords:
-  - widgety
-  - widgety z filtrów
-  - pulpit nawigacyjny
-  - personalizacja
+  - widgets
+  - widget with filter
+  - dashboard
+  - customisation
 tags:
-  - widgety
-  - widgety predefiniowane
+  - widgets
+  - predefined widgets
   - produktywność
 preview: widgets-10
 ---

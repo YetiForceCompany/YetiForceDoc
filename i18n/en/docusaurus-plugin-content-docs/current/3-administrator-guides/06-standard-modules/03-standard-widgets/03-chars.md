@@ -1,19 +1,19 @@
 ---
-title: Wykresy z filtrów
-description: Wykresy pozwalają na intuicyjną i przejrzystą prezentację danych, ułatwiając analizę trendów i identyfikację kluczowych informacji.
+title: Chart from filter
+description: Charts ofer intuitive and clear presentation of data, making it easier to analyze trends and identify key information.
 keywords:
-  - widgety
-  - wykresy
-  - wykresy z filtrów
-  - pulpit nawigacyjny
-  - personalizacja
+  - widgets
+  - charts
+  - chart from filter
+  - dashboard
+  - customisation
 tags:
-  - widgety
-  - widgety predefiniowane
+  - widgets
+  - predefined widgets
 preview: widgets-10
 ---
 
-Oprócz widgetów tekstowych, YetiForce oferuje również możliwość umieszczania wykresów na pulpicie nawigacyjnym. Wykresy te pozwalają na intuicyjną i przejrzystą prezentację danych, ułatwiając analizę trendów i identyfikację kluczowych informacji. W celu utworzenia wykresu z filtru przejdź do zakładki **Pulpit** a następnie wybierz przycisk <kbd>Dodaj wykres z filtru</kbd>. Pojawi nam się wówczas okno modalne, w którym możemy ustalić szczegóły tworzonego wykresu.
+In addition to text-based widgets, YetiForce also offers the ability to add charts to the dashboard. These charts allow for an intuitive and clear presentation of data, making it easier to analyze trends and identify key information. To create a chart from a filter, go to the **Dashboard** tab and then select the <kbd>Add chart from filter</kbd> button. A popup window will then appear, where you can customize the details of the new chart.
 
 ![widgets-10.jpg](widgets-10.jpg)
 
