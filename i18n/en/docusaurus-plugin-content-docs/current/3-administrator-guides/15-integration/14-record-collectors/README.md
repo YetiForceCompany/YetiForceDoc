@@ -10,7 +10,7 @@ tags:
   - Record collectors
 ---
 
-## Prezentacja wideo
+## Video presentation
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

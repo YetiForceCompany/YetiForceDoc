@@ -26,11 +26,11 @@ The implementation of the add-in allows you to use of all YetiForce functionalit
 
 :::important
 
-Artykuł omawia najważniejsze kwestie związane z dodatkiem Outlook do systemu YetiForce. Przeczytaj go w całości i zwróć szczególną uwagę na wytyczne aby dodatek działał prawidłowo.
+The article presents the most important issues related to the Outlook add-in for YetiForce, so it is important to read it carefully and follow the guidelines for the add-on to work properly.
 
 :::
 
-## Prezentacja wideo
+## Video presentation
 
 <Tabs groupId="WwgE1yX6akE">
     <TabItem value="youtube-WwgE1yX6akE" label="🎬 YouTube">
@@ -44,29 +44,29 @@ Artykuł omawia najważniejsze kwestie związane z dodatkiem Outlook do systemu 
         <ReactPlayer url="/video/outlook-integration-panel.mp4" width="100%" height="500px" controls={true} /></TabItem>
 </Tabs>
 
-## Wymagania
+## Requirements
 
 ### SSL/HTTPS
 
-Dodatek wymaga aby system YetiForce działał z ważnym certyfikatem SSL. Nieakceptowane są `self signed certificate`.
+The add-on requires the YetiForce system to run with a valid SSL certificate. `self signed certificate` is not accepted.
 
-### Kompatybilność
+### Compatibility
 
-Dodatek Outlook do systemu YetiForce działa z następującymi typami aplikacji Outlook:
+The add-on supports the following Outlook application types:
 
-- Outlook 2013 lub nowszy w systemie Windows
-- Outlook 2016 lub nowszy na komputerze Mac
-- Outlook na iOS
-- Outlook na Androida
-- Outlook w sieci Web dla programu Exchange 2016 lub nowszego
-- Outlook w sieci Web dla programu Exchange 2013
+- Outlook 2013 or later on Windows
+- Outlook 2016 or later on Mac
+- Outlook on iOS
+- Outlook on Android
+- Outlook on the web for Exchange 2016 or later
+- Outlook on the web for Exchange 2013
 - Outlook.com
 
 :::warning
 
-Klient poczty musi być połączony z serwerem Exchange lub Microsoft 365 (dawniej Office 365) przy użyciu połączenia bezpośredniego. Podczas konfigurowania klienta użytkownik musi wybrać typ konta Exchange, Office lub Outlook.com. Dodatki nie zostaną załadowane jeśli klient poczty jest skonfigurowany do łączenia się przez POP3 lub IMAP.
+The mail client must be connected to an Exchange or Microsoft 365 (formerly Office 365) server using a direct connection. When configuring the client, the user must select the Exchange, Office, or Outlook.com account type. Add-ons will not load if the mail client is configured to connect via POP3 or IMAP.
 
-Więcej informacji na stronie: [Wymagania dotyczące dodatku Outlook](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/add-in-requirements)
+More information: [Outlook add-in requirements](https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/add-in-requirements)
 
 :::
 
