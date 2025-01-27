@@ -3,11 +3,11 @@ title: Personalizacja Brandingu
 description: Personalizacja Brandingu
 keywords:
   - marketplace
-  - personalizacja
+  - customisation
   - branding
 tags:
   - marketplace
-  - personalizacja
+  - customisation
   - branding
 preview: branding-1.jpg
 ---
