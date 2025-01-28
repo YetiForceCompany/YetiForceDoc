@@ -34,7 +34,7 @@ Pojawi nam się okno dodawania nowego API Key:
 
 #### Nazwa
 
-- dowolna nazwa, upraszczajaca identyfikację tworzonego wpisu
+- dowolna nazwa, upraszczająca identyfikację tworzonego wpisu
 
 #### Hasło
 
