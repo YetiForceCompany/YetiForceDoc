@@ -34,7 +34,7 @@ Pojawi nam się okno dodawania nowego API Key:
 
 #### Nazwa
 
-- dowolna nazwa, pozwlająca nam zidentyfikować dodany API Key
+- dowolna nazwa, upraszczajaca identyfikację tworzonego wpisu
 
 #### Hasło
 
@@ -42,7 +42,7 @@ Pojawi nam się okno dodawania nowego API Key:
 
 #### Status
 
-- odznaczenie checkboxa, spowoduje, że API Key nie będzie aktywne
+- odznaczenie checkboxa spowoduje, że API Key nie będzie aktywne
 
 #### Typ
 
