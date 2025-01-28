@@ -1,6 +1,6 @@
 ---
-title: Pierwsze Połączenie
-description: Jak rozpocząć pierwsze połączenie
+title: First connection
+description: How to establish the first connection
 keywords:
   - Webservice
   - API
@@ -15,39 +15,39 @@ tags:
 preview: request-3.jpg
 ---
 
-Posiadając już prawidłowo skonfigurowany klucz API i dane uwierzytelniające (zgodnie z instrukcją [konfiguracji](/developer-guides/api/config)), możemy nawiązać połączenie. By pobrać dane z serwera, należy najpierw uzyskać token uwierzytelniający. Poniższa instrukcja wyjaśnia, jak to zrobić.
+Once you have the API key and credentials properly configured (according to the [configuration](/developer-guides/api/config) instructions), you can establish a connection. To retrieve data from the server, you must first obtain an authentication token. The instructions below explain how to do this.
 
-## Uzyskiwanie Tokenu uwierzytelniającego
+## Obtain an Authentication Token
 
-W celu uzyskania tokenu, wysyłamy do naszego serwera żądanie pod adres:
+To obtain a token, send a request to your server at the following address:
 
 ![request 1](request-1.jpg)
 
-Do testowania tego procesu można użyć programu `Postman`. Na kolejnych zrzutach ekranu będzie przedstawione krok po kroku, jak to zrobić.
+You can use `Postman` to test this process. The following screenshots will guide you step by step how to do it.
 
-W pierwszej kolejności będzie potrzebna wartość `API Key`. By ją pobrać, w sekcji administracyjnej wybierz z lewego menu `Integracja ➞ Web service - aplikacje` a następnie przy interesującym cię kluczu naciśnij przycisk <kbd><i class="fa-solid fa-copy"></i></kbd> by skopiować jego wartość.
+First, you will need the `API Key` value. To download it, in the administration section, select `Integration ➞ Web service - applications` from the left menu, select the relevant key, and click the <kbd><i class="fa-solid fa-copy"></i></kbd> button to copy its value.
 
 ![api_key](api_key.jpg)
 
-W programie `Postman` dodajemy nagłówek `X-API-KEY`. Zamiast wartości `{{APi-KEY}}` wpisujemy wartość API Key skopiowaną z systemu YetiForce.
+In `Postman` add the `X-API-KEY` header. Instead of the `{{APi-KEY}}` value enter the API Key value copied from the YetiForce system.
 
 ![request 2](request-2.jpg)
 
-Następnie podajemy dane do logowania, zgodnie z poniższym zrzutem ekranu. Zamiast zmiennej `{{URL}}` podajemy adres naszej platformy YetiForce. Dane uwierzytelniające `userName` i `password` wpisujemy zgodnie z wartościami ustalonymi w sekcji administracyjnej w zakładce `Integracja ➞ Web service - użytkownicy`.
+Then enter the credentials, according to the screenshot below. Instead of the `{{URL}}` variable, provide the address of your YetiForce platform. Enter the `userName` and `password` credentials according to the values ​​set in the administration section in the `Integration ➞ Web service - users` tab.
 
-W informacji zwrotnej otrzymamy parametr `token`, który będziemy przekazywać w kolejnych requestach.
+You will receive the `token` parameter as feedback, which you will pass in subsequent requests.
 
 ![request 3](request-3.jpg)
 
-## Kolejne requesty
+## Next requests
 
-Po uzyskaniu wartości `token`, możemy przejść do odpytywania API o interesujące nas dane. W tym celu do kolejnych requestów dodajemy nagłówek `x-token` z wartością uzyskanego tokena.
+Once you get the `token` value, you can proceed to query the API for the relevant data. To do this, add the `x-token` header with the value of the obtained token to subsequent requests.
 
 ![request 4](request-4.jpg)
 
-W zależności od tego, czy mamy wykupioną usługę `WebService Premium` czy też korzystamy z `WebService Standard`, będziemy mieć do dyspozycji inny zakres dostępnych endpointów.
+Depending on whether you have purchased the `WebService Premium` service or use `WebService Standard`, you will have a different range of available endpoints at your disposal.
 
-### Lista Endpointów dla poszczególnych usług
+### List of Endpoints for services
 
 - [Webservice Standard](/developer-guides/api/WebserviceStandard)
 - [Webservice Premium](/developer-guides/api/WebservicePremium)
