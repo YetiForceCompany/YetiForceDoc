@@ -64,7 +64,7 @@ Po utworzeniu aplikacji konieczne jest nadanie jej odpowiednich uprawnień.
   - IMAP AccessAsUser.All
   - offline_access
   - profile
-  - SMT Send
+  - SMTP Send
   - User.Read
 
 ![outlook-5](outlook-5.jpg)

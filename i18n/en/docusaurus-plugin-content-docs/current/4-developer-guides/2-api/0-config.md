@@ -1,6 +1,6 @@
 ---
 title: Configuration
-description: Jak prawidłowo skonfigurować API w YetiForce
+description: How to properly configure API in YetiForce
 keywords:
   - Webservice
   - API
@@ -16,90 +16,90 @@ preview: configuration-1.jpg
 
 ## Configuration
 
-W celu skonfigurowania połączenie API, należy najpierw wygenerować klucz API oraz utworzyć użytkownika do autoryzacji.
+To configure an API connection, you must first generate an API key and create a user for authorization.
 
-### Generowanie API Key
+### Generate API Key
 
-Pierwszym krokiem w celu podłączenia się do API, jest wygenerowanie `API Key`. W tym celu, w sekcji administracyjnej należy wybrać w lewym menu `Integracja` a następnie `Web service - Alikacje`.
+The first step to connect to the API is to generate an `API Key`. To do this, in the administration section, select `Integration` in the left menu and then `Web service - Applications`.
 
 ![step 1](configuration-1.jpg)
 
-W celu dodania nowego API Key, wybieramy `Dodaj klucz` z prawej górnej strony.
+To add a new API Key, select `Add Key` from the top right.
 
 ![step 2](configuration-2.jpg)
 
-Pojawi nam się okno dodawania nowego API Key:
+A popup window will appear where you can add a new API Key:
 
 ![step 3](configuration-3.jpg)
 
-#### Nazwa
+#### Name
 
-- dowolna nazwa, pozwlająca nam zidentyfikować dodany API Key
+- any name that will help you identify the new entry
 
-#### Hasło
+#### Password
 
-- ciąg znaków wykorzystywany do uwierzytelniania
+- string of characters used for authentication
 
 #### Status
 
-- odznaczenie checkboxa, spowoduje, że API Key nie będzie aktywne
+- leaving this checkbox unticked will cause the API Key to be inactive
 
-#### Typ
+#### Type
 
-- określa jakich funkcjonalności będzie dotyczył API Key
+- determines what functionalities the API Key will cover
 
-#### Dozwolone adresy IP
+#### Allowed IPs
 
-- Pusta wartość - dostęp ze wszystkich serwerów.
-  Jeśli adresy IP zostaną wprowadzone (po przecinku), to dostęp do API będzie dozwolony tylko z tych adresów IP.
-  Przykład: x.x.x.x , y.y.y.y
+- Empty value - access from all servers.
+  If IP addresses are entered (after a comma), then API access will be allowed only from these IP addresses.
+  Example: x.x.x.x , y.y.y.y
 
-#### Publiczny adres URL
+#### Public URL address
 
-- Adres URL będzie używany do wysyłania powiadomień mailowych gdzie w treści będzie można używać adresu URL np. reset hasła w Portalu Klienta, link do podglądu rekordu w Portalu Klienta
+- The URL will be used to send email notifications where the URL address can be used in the content, e.g., password reset in the Customer Portal, link to view the record in the Customer Portal
 
-### Utworzenie użytkownika
+### Create user
 
-Kolejnym krokiem jest utworzenie danych walidacyjnych do API. W tym celu w sekcji administracyjnej z lewym menu wybieramy `Integracja ➞ Web service - Użytkownicy`.
+The next step is to create validation data for the API. To do this, in the administration section from the left menu, select `Integration ➞ Web service - Users`.
 
 ![step 4](configuration-4.jpg)
 
-Użytkownika będziemy dodawać dla konkretnego rodzaju usługi, dlatego w pierwszej kolejności wybieramy odpowiednią zakładkę.
+The user will be added for a specific type of service, so first select the relevant tab.
 
 ![step 5](configuration-5.jpg)
 
-W celu dodania nowego użytkownika, wybieramy przycisk <kbd>Dodaj rekord</kbd>. Pojawi się nam wówczas okno modalne, w którym będziemy mogli skonfigurować dostępy.
+To add a new user, select the <kbd>Add record</kbd> button. A popup window will then appear, where you can configure credentials.
 
 ![step 6](configuration-6.jpg)
 
 ![step 7](configuration-7.jpg)
 
-#### Serwer
+#### Server
 
-- wybieramy, API Key, który będzie powiązany z tworzonym użytkownikiem
+- choose the API Key that will be associated with the new user
 
 #### Status
 
-- określamy, czy dany użytkownik jest aktywny
+- defines if the user is active
 
-#### Hasło
+#### Password
 
-- ciąg znaków wykorzystywany do autoryzacji
+- string of characters used for authentication
 
-#### Typ
+#### Type
 
-- podstawa uprawień do rekordów
+- basis for record permissions
 
-#### Kontakt
+#### Contact
 
-- opcjonalny w zależności od wybranego `Typu` uprawień do rekordów
+- optional depending on the selected `Type` of record permissions
 
-#### Profil uprawnień
+#### Permission profile
 
-- użytkownik, na którym bazują uprawnienia do akcji i danych
+- permissions for actions and data are based on the selected user
 
-#### Metoda uwierzytelniania i Metoda uwierzytelniania 2FA
+#### Authentication Method and 2FA Authentication Method
 
-- określa szczegóły odnośnie uwierzytelniania użytkownika
+- specifies the details for user authentication
 
-Po utworzeniu API Key i użytkownika, możemy przystąpić do nawiązania połączenia przez API. Jak to zrobić zostało opisane w tym artykule: [Pierwsze połączenie API](/developer-guides/api/first-connect)
+After creating the API Key and user, you can start connecting via API. How to do that is described in this article: [First API Connection](/developer-guides/api/first-connect)

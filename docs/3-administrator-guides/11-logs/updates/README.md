@@ -66,24 +66,14 @@ W wybranym oknie pojawią się dwie opcje do wyboru:
 
 W instalacji manualnej ważne jest, aby wcześniej pobrać odpowiednią paczkę dla danego systemu.
 
-Paczkę aktualizacyjną można pobrać z kilku miejsc, jednakże zalecanym miejscem jest nasze repozytorium GitHub: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. Znajdują się tam paczki aktualizacyjne do wszystkich wersji. Należy wybrać tę paczkę, która odpowiada obecnej wersji systemu. Aktualizacja wymaga zachowania odpowiedniej kolejności paczek. Jeżeli masz wersje `1.1`. a chciałbyś uaktualnić system do wersji `2.0`, powinieneś pobrać następujące paczki aktualizacyjne:
+Paczki aktualizacyjne do wersji 6.5 dostęþne są w repozytorium GitHub: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. Aktualizacja wymaga zachowania odpowiedniej kolejności paczek. Jeżeli masz wersje `1.1`. a chciałbyś uaktualnić system do wersji `2.0`, powinieneś pobrać następujące paczki aktualizacyjne:
 
 - 1.1.0RC_to_1.2.0RC
 - 1.2.0RC_to_1.3.0RC
 - 1.3.0RC_to_1.4.0RC
 - 1.4.0RC_to_2.0.0
 
-Co prawda są wbudowane mechanizmy, które nie pozwolą wgrać niepoprawnej paczki, ale można je pominąć. Chociaż oczywiście nie jest to zalecane, niektóre osoby dokonujące aktualizacji mogą próbować zaoszczędzić czas. Domyślne paczki pozwalają aktualizować tylko ze stabilnych wersji [np. `1.2.0`, `1.4.`] i niemożliwa jest aktualizacja systemu z wersjami pośrednimi [zwanymi wersjami minor, e.. `1.2.54`, `1.4.11`]. Do takiej sytuacji może dojść w następujących przypadkach:
-
-1. Pobrana została wersja systemu niestabilna [np. bezpośrednio z głównego folderu GitHub]. System powinien zostać pobrany z tego miejsca: https://github.com/YetiForceCompany/YetiForceCRM/releases
-2. Została wgrana paczka aktualizacyjna dla wersji pośredniej. Można je pobrać np. z kanału developerskiego: https://github.com/YetiForceCompany/UpdatePackages/tree/developer/YetiForce%20CRM%201.x.x
-
-Niezależnie od przyczyny, należy pamiętać:
-
-1. Otwórz plik https://github.com/YetiForceCompany/YetiForceCRM/blob/master/config/version.php tylko na swoim serwerze gdzie zainstalowany jest system;
-2. Zmień numer wersji na stabilny np. z wersji 1.4.55 na 1.4.0 (zawsze zmniejszaj wersję).
-
-Mając odpowiednio dobraną wersję paczki aktualizacyjnej, możesz przejść do ręcznego sposobu jej wgrania, klikając w przycisk `Wgraj aktualizację`.
+Mając odpowiednio dobraną wersję paczki aktualizacyjnej, możesz przejść do jej instalacji, klikając w przycisk `Wgraj aktualizację`.
 
 ![update-2.jpg](update-2.jpg)
 
@@ -103,7 +93,7 @@ Po ukończeniu pobierania pakietu możemy od razu przejść do instalacji, klika
 
 ![update-5.jpg](update-5.jpg)
 
-Akceptacja licencji - jest to ostatni krok tak jak i w instalacji manualnej tak i w instalacji automatycznej. Jeśli wszystko przebiegło poprawnie, powinieneś zobaczyć okno z informacjami o numerze wersji i liście ważnych zmian, które wprowadza aktualizacja, i które mogą mieć wpływ na jej przebieg. Jeżeli jesteś gotowy i włączyłeś logi, to zaakceptuj licencję i rozpocznij aktualizację, wciskając przycisk `Tak`.
+Akceptacja licencji - jest to ostatni krok tak jak i w instalacji manualnej tak i w instalacji automatycznej. Jeśli wszystko przebiegło poprawnie, powinieneś zobaczyć okno z informacjami o numerze wersji i liście ważnych zmian, które wprowadza aktualizacja i które mogą mieć wpływ na jej przebieg. Jeżeli jesteś gotowy i włączyłeś logi, to zaakceptuj licencję i rozpocznij aktualizację, wciskając przycisk `Tak`.
 
 ![update-6.jpg](update-6.jpg)
 
@@ -134,4 +124,4 @@ Po zainstalowaniu aktualizacji możesz przejść do `Konfiguracja systemu → Lo
 
 ## Jak rozwiązać problemy
 
-Najważniejszą rzeczą jest wiedzieć, jak analizować logi, ponieważ 99% rozwiązań można tam znaleźć. Ważne są zarówno logi aplikacji jak i logi serwera - są one doskonałym źródłem informacji. Drugim krokiem może być opisanie problemu na GitHubie, gdzie nasza społeczność i zespół YetiForce zapewniają darmową pomoc. Zanim dodasz problem tutaj: https://github.com/YetiForceCompany/YetiForceCRM/issues przygotuj opis problemu krok po kroku, odpowiednie logi i ważne zrzuty ekranu, by pomóc nam odtworzyć błąd. Problem opisany w niewystarczającym stopniu znacznie wydłuży proces rozwiązywania problemu. Możesz również sięgnąć po profesjonalne i płatne wsparcie ze strony zespołu YetiForce; odwiedź nasz [Marketplace](https://yetiforce.com/pl/marketplace/wsparcie.html), aby zobaczyć naszą ofertę.
+Najważniejszą rzeczą jest wiedzieć, jak analizować logi, ponieważ 99% rozwiązań można tam znaleźć. Ważne są zarówno logi aplikacji jak i logi serwera - są one doskonałym źródłem informacji. Kolejnym krokiem może być opisanie problemu na GitHub-ie, gdzie nasza społeczność i zespół YetiForce oferują darmową pomoc. Zanim utworzysz zgłoszenie (https://github.com/YetiForceCompany/YetiForce/issues) przygotuj opis problemu krok po kroku, odpowiednie logi i zrzuty ekranu. Błędnie opisany problem może uniemożliwoć jego rozwiązanie. Możesz również sięgnąć po profesjonalne i płatne wsparcie ze strony zespołu YetiForce. Odwiedź naszą stronę [yetiforce.com](https://yetiforce.com/pl/uslugi/wsparcie-techniczne-i-biznesowe.html).

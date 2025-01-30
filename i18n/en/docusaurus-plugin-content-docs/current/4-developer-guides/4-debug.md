@@ -97,7 +97,7 @@ The parameter enables an additional plugin which is used to log/save all data re
 https://github.com/YetiForceCompany/YetiForceCRM/blob/developer/config/Debug.php#L105-L109
 ```
 
-## Podsumowanie
+## Summary
 
 ### YetiForce system logs - critical
 
