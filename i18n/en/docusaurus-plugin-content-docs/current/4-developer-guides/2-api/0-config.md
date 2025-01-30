@@ -34,7 +34,7 @@ A popup window will appear where you can add a new API Key:
 
 #### Name
 
-- any name that allows us to identify the added API Key
+- any name that will help you identify the new entry
 
 #### Password
 
@@ -42,7 +42,7 @@ A popup window will appear where you can add a new API Key:
 
 #### Status
 
-- leaving this checkbox unticked will cause the API to be inactive
+- leaving this checkbox unticked will cause the API Key to be inactive
 
 #### Type
 
