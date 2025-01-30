@@ -64,24 +64,14 @@ In the selected window, there are two options to choose between:
 
 In this type of installation, it is important to download the appropriate package.
 
-Paczkę aktualizacyjną można pobrać z kilku miejsc, jednakże zalecanym miejscem jest nasze repozytorium GitHub: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. Znajdują się tam paczki aktualizacyjne do wszystkich wersji. Należy wybrać tę paczkę, która odpowiada obecnej wersji systemu. Aktualizacja wymaga zachowania odpowiedniej kolejności paczek. Jeżeli masz wersje `1.1`. a chciałbyś uaktualnić system do wersji `2.0`, powinieneś pobrać następujące paczki aktualizacyjne:
+Update packages for version 6.5 are available in the GitHub repository: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. The update requires maintaining the correct order of packages. If you have version `1.1` and would like to update your system to version `2.0`, you should download the following update packages:
 
 - 1.1.0RC_to_1.2.0RC
 - 1.2.0RC_to_1.3.0RC
 - 1.3.0RC_to_1.4.0RC
 - 1.4.0RC_to_2.0.0
 
-There are built-in mechanisms that do not allow to upload incorrect packs, but they can be omitted. Although it is obviously not recommended, some might be tempted by the fact that it can save time. `1.2.0`, `1.4.0`] and it's impossible to update the system with versions that are in between [called minor versions, e.g. `1.2.54`, `1.4.11`]. This can happen in the following cases:
-
-1. directly from the main GitHub folder]. It should be downloaded from here: https://github.com/YetiForceCompany/YetiForceCRM/releases
-2. Update package for a minor version has been uploaded. It might be downloaded from the developer tree: https://github.com/YetiForceCompany/UpdatePackages/tree/developer/YetiForce%20CRM%201.x.x
-
-Regardless of the reason, it's important to remember to:
-
-1. Open this file: https://github.com/YetiForceCompany/YetiForceCRM/blob/master/config/version.php on the server where your system is located;
-2. from `1.4.55` version to `1.4.0` [always reduce the number].
-
-After selecting a proper version of the update package, you can proceed to the manual method of uploading it by clicking the `Upload update` button.
+Once you have selected the appropriate version of the update package, you can proceed to its installation by clicking the 'Upload update' button.
 
 ![update-2.jpg](update-2.jpg)
 
@@ -112,7 +102,7 @@ The properly performed installation will complete by displaying the summary wind
 ### Verify update
 
 - First check logs and search for any errors or warnings. Log files can sometimes contain 20 thousand lines of code so it is recommended to use keywords, e.g.
-- Wyłącz dzienniki po kilku dniach używania systemu w celu sprawdzenia, czy występują błędy ([Debug](/developer-guides/debug#podsumowanie))
+- Disable logs after using the system for several days to verify if there are any errors ([Debug](/developer-guides/debug#summary))
 - Update the languages in the system.
 - Update lib_roundcube library to the version corresponding to your system.
 - In the admin panel, in the [`Software configuration → Standard modules → Modules - installation`](/administrator-guides/standard-modules/modules-installation/)you can see whether a previously installed library requires updating.
@@ -132,4 +122,4 @@ After installing the update, you can go to the `Software Configuration → Logs 
 
 ## How to cope with problems
 
-The most important thing is to know how to analyze logs because 99% of solutions can be found there. Not only application logs are important but also server logs are an excellent source of information. The second step might be a description of a problem on GitHub where our community and YetiForce team provide free assistance. Before you add an issue here: https://github.com/YetiForceCompany/YetiForceCRM/issues you should prepare a step-by-step description, relevant logs, important screenshots that will help us to reproduce the error. An issue with insufficient description will extend the process of solving a problem. It is also possible to ask for professional and paid support from YetiForce team, visit our [Marketplace](https://yetiforce.com/en/marketplace/support.html) to see what we offer.
+The most important thing is to know how to analyze logs because 99% of solutions can be found there. Not only application logs are crucial but also server logs are an excellent source of information. The second step might be describing your problem on GitHub, where our community and YetiForce team provide free assistance. Before you add an issue (https://github.com/YetiForceCompany/YetiForce/issues) you should prepare a step-by-step description, relevant logs, essential screenshots that will help us to reproduce the error. An issue with insufficient description will extend the process of solving the problem. It is also possible to ask for professional and paid support from YetiForce team. Visit our [website](https://yetiforce.com/en/services/technical-and-business-support.html) for details.
