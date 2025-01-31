@@ -64,7 +64,7 @@ In the selected window, there are two options to choose between:
 
 In this type of installation, it is important to download the appropriate package.
 
-Update packages for version 6.5 are available in the GitHub repository: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. The update requires maintaining the correct order of packages. If you have version `1.1` and would like to update your system to version `2.0`, you should download the following update packages:
+Paczki aktualizacyjne do wersji 6.5 dostępne są w repozytorium GitHub: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. Aktualizacja wymaga zachowania odpowiedniej kolejności paczek. Jeżeli masz wersje `1.1`. a chciałbyś uaktualnić system do wersji `2.0`, powinieneś pobrać następujące paczki aktualizacyjne:
 
 - 1.1.0RC_to_1.2.0RC
 - 1.2.0RC_to_1.3.0RC
@@ -122,4 +122,4 @@ After installing the update, you can go to the `Software Configuration → Logs 
 
 ## How to cope with problems
 
-The most important thing is to know how to analyze logs because 99% of solutions can be found there. Not only application logs are crucial but also server logs are an excellent source of information. The second step might be describing your problem on GitHub, where our community and YetiForce team provide free assistance. Before you add an issue (https://github.com/YetiForceCompany/YetiForce/issues) you should prepare a step-by-step description, relevant logs, essential screenshots that will help us to reproduce the error. An issue with insufficient description will extend the process of solving the problem. It is also possible to ask for professional and paid support from YetiForce team. Visit our [website](https://yetiforce.com/en/services/technical-and-business-support.html) for details.
+Najważniejszą rzeczą jest wiedzieć, jak analizować logi, ponieważ 99% rozwiązań można tam znaleźć. Ważne są zarówno logi aplikacji jak i logi serwera - są one doskonałym źródłem informacji. Kolejnym krokiem może być opisanie problemu na GitHub-ie, gdzie nasza społeczność i zespół YetiForce oferują darmową pomoc. Zanim utworzysz zgłoszenie (https://github.com/YetiForceCompany/YetiForce/issues) przygotuj opis problemu krok po kroku, odpowiednie logi i zrzuty ekranu. Błędnie opisany problem może uniemożliwić jego rozwiązanie. Możesz również sięgnąć po profesjonalne i płatne wsparcie ze strony zespołu YetiForce. Odwiedź naszą stronę [yetiforce.com](https://yetiforce.com/uslugi/wsparcie-techniczne-i-biznesowe.html).
