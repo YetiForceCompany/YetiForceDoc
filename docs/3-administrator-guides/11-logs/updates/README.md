@@ -66,7 +66,7 @@ W wybranym oknie pojawią się dwie opcje do wyboru:
 
 W instalacji manualnej ważne jest, aby wcześniej pobrać odpowiednią paczkę dla danego systemu.
 
-Paczki aktualizacyjne do wersji 6.5 dostęþne są w repozytorium GitHub: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. Aktualizacja wymaga zachowania odpowiedniej kolejności paczek. Jeżeli masz wersje `1.1`. a chciałbyś uaktualnić system do wersji `2.0`, powinieneś pobrać następujące paczki aktualizacyjne:
+Paczki aktualizacyjne do wersji 6.5 dostępne są w repozytorium GitHub: https://github.com/YetiForceCompany/UpdatePackages/tree/master/. Aktualizacja wymaga zachowania odpowiedniej kolejności paczek. Jeżeli masz wersje `1.1`. a chciałbyś uaktualnić system do wersji `2.0`, powinieneś pobrać następujące paczki aktualizacyjne:
 
 - 1.1.0RC_to_1.2.0RC
 - 1.2.0RC_to_1.3.0RC
