@@ -11,34 +11,34 @@ tags:
 preview: pdf-1.jpg
 ---
 
-YetiForce oferuje szeroki wachlarz funkcji, w skład, których wchodzi generowanie raportów PDF. W systemie istnieją dwa główne silniki do generowania dokumentów PDF:
+YetiForce offers a wide range of features, including generating PDF reports. There are two main engines for generating PDF documents in the system:
 
-- darmowy, wbudowany silnik YetiForce
-- płatny **YetiForce PDF Premium** oparty o **Chromium**.
+- free, built-in YetiForce engine
+- paid **YetiForce PDF Premium** based on **Chromium**.
 
-System umożliwia połączenie danych z YetiForce z szablonami PDF, co pozwala na automatyczne generowanie spersonalizowanych dokumentów. Dzięki temu można dynamicznie wstawiać informacje z rekordów kontaktów, firm, ofert, faktur i innych modułów, co znacznie oszczędza czas i eliminuje błędy związane z ręcznym wprowadzaniem danych.
+The system allows you to connect data from YetiForce with PDF templates, which allows you to automatically generate personalized documents. This allows you to dynamically insert information from contact records, companies, offers, invoices and other modules, which significantly saves time and eliminates errors related to manual data entry.
 
-Podstawowa wersja funkcjonalności PDF jest dostępna za darmo w systemie YetiForce, natomiast **PDF Premium** to rozszerzenie, które umożliwia tworzenie bardziej zaawansowanych i profesjonalnych dokumentów PDF, niż standardowy silnik dostępny w systemie YetiForce. Wykorzystuje ono przeglądarkę Chromium do renderowania i generowania dokumentów PDF.
+The basic version of PDF functionality is available for free in YetiForce, while **PDF Premium** is an extension that allows you to create more advanced and professional PDF documents than the standard engine available in YetiForce. It uses the Chromium browser to render and generate PDF documents.
 
-#### Co wyróżnia YetiForce PDF Premium
+#### What makes YetiForce PDF Premium stand out
 
-- kompatybilność z CSS3 i HTML 5
-- kompatybilność ze wszystkimi technologiami obsługiwanymi przez przeglądarkę
-- w pełni obsługiwane znaki specjalne i czcionki
-- jedynym ograniczeniem są możliwości przeglądarki
-- wsparcie systemu operacyjnego: Linux, macOS, Windows
+- CSS3 and HTML 5 compatibility
+- compatibility with all browser supported technologies
+- fully supported special characters and fonts
+- the only limitation is the browser's capabilities
+- operating system support: Linux, macOS, Windows
 
-W tym artykule znajdziesz instrukcje, jak zainstalować i korzystać z tego modułu.
+This article will guide you through how to install and use this module.
 
 :::tip
 
-The Chromium/Chrome engine is necessary in order for this addon to work properly. Informacje jak go skonfigurować znajdziesz w [tym artykule](/administrator-guides/system-tools/pdf)
+The Chromium/Chrome engine is necessary in order for this addon to work properly. Information on how to configure it can be found [in this article](en//administrator-guides/system-tools/pdf)
 
 :::
 
 ## Purchasing the addon
 
-Dodatki najlepiej kupować w Marketplace, który znajduje się w sekcji administracyjnej systemu YetiForce. Jeżeli ktoś byłby zainteresowany innymi formami płatności i rozliczeń to możliwym jest również skorzystanie z naszej strony WWW lub skontaktowanie się z nami za pomocą formularza kontaktowego.
+It is best to buy add-ons in the Marketplace located in the administration section of the YetiForce system. You can also email us at hello@yetiforce.com to receive a pro forma in case you're interested in purchasing the add-on for a year in advance.
 
 ![pdf-1.jpg](pdf-1.jpg)
 

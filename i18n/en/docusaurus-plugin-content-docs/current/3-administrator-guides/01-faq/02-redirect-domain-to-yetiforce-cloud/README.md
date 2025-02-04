@@ -26,24 +26,24 @@ Dla klientów YetiForce usługa przekierowywania jest dostępna tylko dla produk
 
 Mamy aplikację pod domeną: crm.staryadres.com, a chcemy, aby nasi pracownicy widzieli ją pod nową domeną np. crm.nowyadres.com
 
-## Rozwiązanie
+## Solution
 
 Aby przekierować system na nowy adres, postępuj zgodnie z instrukcją poniżej:
 
-1. Przekieruj nowy adres www (np.: crm.nowyadres.com) za pomocą rekordu CNAME w DNS na adres, pod którym obecnie znajduje się aplikacja (np.: crm.staryadres.com) - dzięki takiemu przekierowaniu, każdy pracownik wpisujący nowy adres WWW będzie "w tle" przekierowywany na stary adres, pod którym znajduje się aplikacja, ale w pasku adresu będzie widział nowy adres www. Uwaga: zwróć szczególną uwagę, w jaki sposób dodajesz wpis CNAME, ponieważ najczęściej musisz podać na końcu kropkę np.: `crm.staryadres.com.` - jeżeli nie jesteś pewien jak zrobić to dobrze, przeczytaj o tym w internecie: https://www.google.com/search?q=domain+cname+example. Dodając rekord CNAME pamiętaj o ustawieniu TTL dla rekordu na 3600 sekund.
+1. Redirect the new address (e.g.: crm.newaddress.com) using a CNAME record in DNS to the address where the application is currently located (e.g.: crm.oldaddress.com) - thanks to this redirection, each employee entering the new address will be redirected "in the background" to the old address where the application is located, but will see the new address in the address bar.**Note**: pay special attention to how you add the CNAME entry, because most often you have to enter a dot at the end, e.g.: `crm.oldaddress.com.` - if you are not sure how to do it correctly, read about it on the Internet: https://www.google.com/search?q=domain+cname+example. When adding a CNAME record, remember to set the TTL for the record to 3600 seconds.
 
-2. Jeżeli dodałeś poprawnie rekord CNAME w DNS, to po pewnym czasie będziesz mógł posługiwać się nowym adresem WWW. Aby mieć pewność czy wszystko przebiegło pomyślnie, możesz skorzystać z narzędzi online, które pozwolą sprawdzić konfigurację DNS: https://www.google.com/search?q=check+dns+cname. Pamiętaj, że niektóre serwery DNS potrzebują minut, a nawet godzin, aby się uaktualnić, najczęściej jednak nie trwa to dłużej niż 15 minut.
+2. If you have correctly added the CNAME record in DNS, you will be able to use the new address after a while. To be sure that everything went well, you can use online tools that will allow you to check your DNS configuration: https://www.google.com/search?q=check+dns+cname. Remember that some DNS servers can take up to several hours to update the new settings, but most often it takes no longer than 15 minutes.
 
-3. Gdy już wykonałeś poprawnie przekierowanie, należy zmienić konfiguracje na serwerze i/lub w aplikacji docelowej (np.: nasz system przechowuje w pliku konfiguracyjnym adres www, pod którym działa aplikacja, wykorzystuje ten adres, aby chronić się przed niepożądanymi atakami — nie pozwalając na przyjmowanie żądań z innego adresu www). Każda aplikacja jak i każdy serwer, na którym znajduje się aplikacja, wymaga innej konfiguracji - zgłoś to do administratora serwera www i administratora aplikacji, oni będą wiedzieć, co robić.
+3. Once you have correctly performed the redirection, you should change the configuration on the server and/or in the target application (for example: our system stores the address in the configuration file where the application is running, it uses this address to protect itself from unwanted attacks - not allowing to accept requests from another address). Each application, as well as each server where the application is located, requires a different configuration - report this to the server administrator and the application administrator, they will know what to do.
 
-4. Ostatnim, ale bardzo ważnym krokiem jest dodanie certyfikatów HTTPS nowej domeny do serwera, pod którym jest stary adres WWW. Jeżeli tego nie zrobisz, to po przekierowaniu użytkownicy zobaczą ostrzeżenie o nieważnym certyfikacie (ponieważ domyślnie certyfikat jest skonfigurowany tak, aby działał poprawnie tylko pod nowym adresem WWW, a my musimy dodać certyfikat po to, aby po przekierowaniu stary adres www mógł też poprawnie nim się posługiwać). Aby to było możliwe, musisz przekazać dwa elementy administratorowi serwera, na którym znajduje się aplikacja:
-   - Klucz prywatny certyfikatu SSL
-   - Pośredni certyfikat SSL
+4. The last but very important step is to add the HTTPS certificates of the new domain to the server where the old address is. If you don't do this, after redirection, the users will see a warning about an invalid certificate (because by default the certificate is configured to work correctly only under the new address, and you need to add the certificate so that after redirection the old address can also use it correctly). To make this possible, you need to provide two elements to the administrator of the server where the application is located:
+   - SSL certificate private key
+   - Intermediate SSL certificate
 
-## Podsumowanie
+## Summary
 
-Chociaż sam proces jest bardzo prosty i bardzo szybki (łącznie nie zajmuje więcej niż 15 minut), to jest problematyczny, ponieważ musimy do tego zaangażować kilka osób w tym samym czasie:
+Although the process itself is very simple and very quick (it takes no more than 15 minutes in total), it is problematic because you have to involve several people at the same time:
 
-- Administrator nowej domeny, który zrobi przekierowanie i przekaże klucz prywatny i certyfikat pośredni nowej domeny.
-- Administrator serwera na którym jest aplikacja docelowa, który doda do serwera nową domenę (często należy ją dodać na vhost) oraz doda nowy certyfikat.
-- Administrator aplikacji, który zmieni w konfiguracji aplikacji adres na nowy.
+- New domain admin - who redirects and provides a private key and the new domain’s intermediate certificate.
+- Old server admin - who adds the new domain to the server (often it has to be added to vhost) and adds the new certificate.
+- App admin - who changes app address to the new one in app configuration.
