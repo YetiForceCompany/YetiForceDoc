@@ -32,7 +32,7 @@ This article will guide you through how to install and use this module.
 
 :::tip
 
-The Chromium/Chrome engine is necessary in order for this addon to work properly. Information on how to configure it can be found [in this article](en//administrator-guides/system-tools/pdf)
+The Chromium/Chrome engine is necessary in order for this addon to work properly. Information on how to configure it can be found [in this article](/administrator-guides/system-tools/pdf)
 
 :::
 

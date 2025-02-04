@@ -16,7 +16,7 @@ preview: pdf-2.jpg
 
 For the PDF Premium add-on to function properly, you must purchase the paid add-on **YetiForce PDF Premium**.
 
-You can find instructions on how to do this here: [YetiForce PDF Premium activation instructions](/en/administrator-guides/marketplace/addons/YetiForce-pdf-premium/)
+You can find instructions on how to do this here: [YetiForce PDF Premium activation instructions](/administrator-guides/marketplace/addons/YetiForce-pdf-premium/)
 
 :::
 
