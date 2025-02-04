@@ -1,6 +1,6 @@
 ---
-title: Personalizacja Brandingu
-description: Personalizacja Brandingu
+title: Disable Branding
+description: Disable Branding
 keywords:
   - marketplace
   - customisation
@@ -14,40 +14,41 @@ preview: branding-1.jpg
 
 :::warning
 
-Usługa Personalizacji Brandingu nie usuwa całkowicie systemowego brandingu YetiForce do własnych potrzeb. Przed zakupem prosimy dokładnie zapoznać się z opisem funkcji
+**This add-on does not completely remove YetiForce's branding.**
+Before purchasing, please read the description and FAQ at the bottom of the page.
 
 :::
 
-Dodatek personalizacji brandingu pozwala na pełniejsze dostosowanie wyglądu systemu YetiForce. Umożliwia wstawienie danych swojej firmy do stopki oraz ustawienie własnych linków do profili w mediach społecznościowych.
+The Disable Branding add-on allows for more extensive customization of the YetiForce system's appearance. It allows you to insert your company data into the footer and set your own links to social media profiles.
 
 ### Features
 
-- Dodanie do stopki odnośników z własnymi linkami do mediów społecznościowych
-- Usunięcie informacji o twórcy oprogramowania w stopce strony
-- Usunięcie stopki producenta z maili systemowych
-- Usunięcie stopki producenta z wydruków PDF
+- Remove YetiForce social media links from the footer and replace them with your own links
+- Remove information about the software producer from the footer
+- Remove YetiForce footer from system emails
+- Remove YetiForce footer from PDF printouts
 
-Należy pamiętać, że usługa personalizacji nie jest zamiennikiem tzw. “white labellingu” i nie usunie z systemu całkowicie wszystkich informacji o producencie systemu.
+Keep in mind that this service is not a replacement for the so-called “white labeling” and will not completely remove all information about the system producer from the system.
 
-### Personalizacja informacji widocznych w stopce strony
+### Customize information in the footer
 
-Dane o brandingu firmy ustawia się wybierając w sekcji administracyjnej z lewego menu `Narzędzia systemowe → System - konfiguracja`. Następnie należy wybrać zakładkę **Dane brandingu**. W tym miejscu będziemy mogli ustawić wartości jakie mają sie pojawić w stopce strony. Ikony mediów społecznościowych nie pokażą się w stopce jeśli odnośniki nie zostały uzupełnione w konfiguracji.
+Company branding data is set by selecting `System Tools → System - Configuration` from the left menu in the administration section. Then select the **Branding Data** tab. Here, you will be able to set the values ​​that will appear in the footer of the page. Social media icons will not appear in the footer if the links are empty.
 
 ![branding-1](branding-1.jpg)
 
-Stopka strony bez wykupionego brandingu
+Footer without the Disable Branding add-on
 
 ![branding-2](branding-2.jpg)
 
-Stopka strony z wykupionym brandingiem
+Footer with the Disable Branding add-on active
 
 ![branding-3](branding-3.jpg)
 
 ## FAQ
 
 <details>
-<summary>Czy usługa Disable Branding pozwala zmienić logo w systemie?</summary>
+<summary>Does "Disable YetiForce Branding" allow me to change the logo?</summary>
 
-Zmiana logo widocznego między innymi na stronie logowania możliwa jest bez konieczności wykupienia usługi Disable Branding. Szczegółowy opis jak zmienić logo w swoim systemie dostępny jest w naszej dokumentacji: [Jak zmienić logo YetiForce na własne?](https://doc.yetiforce.com/pl/administrator-guides/faq/how-to-change-logo/)
+You don't have to purchase the "Disable YetiForce Branding" service to change the logo you can see on the login page, for example. Follow the tutorial to find out [how to change the YetiForce logo to a custom one](https://doc.yetiforce.com/en/administrator-guides/faq/how-to-change-logo/).
 
 </details>

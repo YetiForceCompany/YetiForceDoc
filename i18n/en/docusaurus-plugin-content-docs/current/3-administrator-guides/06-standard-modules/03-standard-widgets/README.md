@@ -1,6 +1,6 @@
 ---
-title: Widżety Standardowe
-description: Opis działania i konfiguracja widgetów w systemie YetiForce
+title: Standard Widgets
+description: How to use and configure widgets in YetiForce
 keywords:
   - widgets
   - widget with filter
@@ -9,20 +9,20 @@ keywords:
 tags:
   - widgets
   - predefined widgets
-  - produktywność
+  - productivity
 preview: widgets-10
 ---
 
-Widżety w YetiForce to interaktywne elementy, które można umieszczać na pulpicie nawigacyjnym systemu. Umożliwiają one szybki dostęp do najważniejszych informacji i funkcji, a także personalizację interfejsu użytkownika zgodnie z indywidualnymi potrzebami.
+Widgets in YetiForce are interactive elements that can be placed on the system dashboard. They allow quick access to the most important information and functions, as well as customization of the user interface according to individual needs.
 
-Głównym celem stosowania widżetów w YetiForce jest:
+The main purpose of using widgets in YetiForce is:
 
-- **Zwiększenie produktywności**: Widżety pozwalają użytkownikom na szybki dostęp do kluczowych informacji i funkcji bez konieczności przechodzenia przez rozbudowane menu.
-- **Personalizacja interfejsu**: Użytkownicy mogą wybierać i układać widżety na pulpicie nawigacyjnym tak, aby odpowiadało to ich preferencjom i sposobowi pracy.
-- **Dostęp do danych w czasie rzeczywistym**: Wiele widżetów wyświetla aktualne dane, takie jak liczba leadów, stan zadań itp.
-- **Ułatwienie nawigacji**: Widżety mogą służyć jako skróty do często używanych modułów lub funkcji systemu.
+- **Increasing Productivity**: Widgets allow users to quickly access key information and features without having to navigate through extensive menus.
+- **Ui Customization**: Users can select and arrange widgets on the dashboard to suit their preferences and the way they work.
+- **Access to real-time data**: Many widgets display up-to-date data such as lead count, task status, and more.
+- **Easy navigation**: Widgets can be used as shortcuts to frequently used modules or system functions.
 
-Część widżetów jest predefiniowana i od razu gotowa do użycia. Jeżeli jednak potrzebujemy wyświetlić niestandardowe dane, możemy stworzyć widżet według własnych preferencji.
+Some widgets are predefined and ready to use right away. However, if you need to display non-standard data, you can create a widget according to your own preferences.
 
 import DocCardList from '@theme/DocCardList';
 

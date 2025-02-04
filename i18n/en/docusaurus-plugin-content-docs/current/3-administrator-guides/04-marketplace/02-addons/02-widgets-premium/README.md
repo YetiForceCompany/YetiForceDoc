@@ -1,64 +1,63 @@
 ---
-title: Widżety Premium
+title: Widgets Premium
 description: Konfiguracja Widgetu PDF Premium
 keywords:
   - Marketplace
   - Addons
   - Widgets
   - PDF
-  - Historia Zmian
+  - Change history
 tags:
   - Widgets
   - PDF
-  - Historia Zmian
+  - Change history
 preview: widgets-1.jpg
 ---
 
-**Widżety Premium** pozwalają na wyświetlenie na pulpicie i w podsumowaniu rekordu dodatkowych informacji, dzięki czemu wszystkie niezbędne szczegóły mogą być dostępne dla użytkownika na wyciągnięcie ręki. Aktualnie w zestawie dostępne są 2 widżety: **Podgląd PDF** oraz **Historia zmian**
+**Widgets Premium** allow you to display additional information on the desktop and in the record summary, making all the necessary details available to the user at their fingertips. Currently, the set includes 2 widgets - **PDF Preview** and **Updates**.
 
 :::warning
 
-Widżety Premium są dodatkiem płatnym i wymagają wykupienia subskrypcji.
+The Widgets Premium add-on is a paid extension and requires purchasing a subscription.
 
 :::
 
-## Podgląd PDF
+## PDF Preview
 
-Widżet umożliwiający podgląd dokumentów PDF przed ich wygenerowaniem! Ten dodatek znacznie ułatwi pracę użytkownikom systemu odpowiedzialnym za wystawianie i przesyłanie dokumentów PDF, gdyż umożliwia weryfikacje dokumentu przed jego wystawieniem.
+It is a widget that allows you to preview a system generated PDF document. This solution will significantly facilitate the work of users responsible for issuing and sending PDF documents by allowing to preview them before issuing them.
 
-**Korzyści:**
+**Benefits**
 
-- **Szybki podgląd**: Bądź na bieżąco z zawartością faktury lub innego dokumentu PDF na każdym etapie generowania.
-- **Lepsza kontrola**: Dokonuj korekt i zatwierdzaj dokumenty przed ich finalnym wygenerowaniem.
-- **Oszczędność czasu**: Unikaj błędów i konieczności ponownego generowania dokumentów.
-- **Wygoda dla użytkowników**: Ułatw pracę osobom odpowiedzialnym za wystawianie i wysyłanie dokumentów PDF.
-- **Zwiększona efektywność działu księgowego**: Weryfikuj dokumenty przed ich zatwierdzeniem, usprawniając procesy księgowe.
+- **Quick preview**: Stay up to date with the contents of an invoice or other PDF document at every stage of generation.
+- **Better control**: Make corrections and approve documents before they are finalized.
+- **Save time**: Avoid errors and the need to re-issue documents.
+- **User Convenience**: Make work easier for people responsible for issuing and sending PDF documents.
+- **Increased Accounting Efficiency**: Verify documents before approving them, streamlining accounting processes.
 
-### Konfiguracja Podglądu PDF
+### PDF Preview - configuration
 
-W pierwszej kolejności należy się upewnić, czy dla danego modułu posiadamy stworzony szablon PDF.
-Następnie możemy przejść do konfiguracji samego widżetu:
+First, make sure you have a PDF template created for the module.Then you can proceed to configuring the widget itself:
 
-1. Przejdź do sekcji administracyjnej YetiForce.
-2. Wybierz z lewego menu `Moduły standardowe ➜ Moduły widżety`.
-3. Z pola wyboru, po prawej stronie wybierz moduł, dla którego chcesz dodać widżet **Podgląd PDF**.
-4. Kliknij przycisk <kbd>Dodaj widżet</kbd>.
-5. Wybierz widżet **Podgląd PDF** z listy dostępnych widżetów.
-6. Wprowadź nazwę widżetu i zapisz zmiany.
+1. Go to the YetiForce administration section.
+2. Select `Standard Modules ➜ Modules - Widgets` from the left menu.
+3. From the dropdown list on the right, select the module where you want to add the **PDF Preview** widget.
+4. Click the <kbd>Add Widget</kbd> button.
+5. Select the **PDF Preview** widget from the list of available widgets.
+6. Enter a name for the widget and save changes.
 
 ![widgets-1.jpg](widgets-1.jpg)
 
-Widżet **Podgląd PDF** jest już gotowy do użycia. W sekcji użytkownika przejdź do modułu, dla którego go dodałeś, a następnie wybierz jeden z rekordów. Widżet powinien pojawić się na podsumowaniu rekordu.
+The **PDF Preview** widget is now ready to use. In the user section, go to the module where you added it and select one of the records. The widget should appear on the record summary.
 
 ![widgets-2.jpg](widgets-2.jpg)
 
-## Historia zmian
+## Change history
 
-Dodatek **Historia Zmian** w systemie YetiForce zapewnia kompleksowy wgląd w aktywność użytkowników i wprowadzane przez nich zmiany. Umożliwia śledzenie modyfikacji rekordów w wybranych modułach lub w całym systemie, identyfikując użytkowników odpowiedzialnych za każdą operację i szczegółowo rejestrując czas wprowadzonych zmian.
+The **Change History** add-on in the YetiForce system provides comprehensive insight into user activity and changes they make. It allows you to track record modifications in selected modules or in the entire system, identifying the users responsible for each operation and recording in detail the time of updates made.
 
-**Uzyskaj szczegółowy wgląd w zmiany wprowadzane przez użytkowników:**
+**Get detailed insight into updates made by users:**
 
-- Śledź modyfikacje w wybranym module lub w całym systemie.
+- Track modifications in a selected module or the entire system.
 - Zobacz listę otwieranych i modyfikowanych rekordów.
 - Poznaj czas przeprowadzonych akcji.
 - Zidentyfikuj użytkowników odpowiedzialnych za każdą operację.
@@ -83,7 +82,7 @@ Pamiętaj, by przy tworzeniu widżetu wybrać odpowiednią rolę oraz pulpit, na
 
 :::
 
-1. Przejdź do sekcji administracyjnej YetiForce.
+1. Go to the YetiForce administration section.
 2. Wybierz z lewego menu `Moduły standardowe ➜ Panel widżety`.
 3. Kliknij przycisk <kbd>Predefiniowane widżety</kbd>.
 4. Wybierz widżet **Historia aktualizacji systemu** z listy dostępnych widżetów.
