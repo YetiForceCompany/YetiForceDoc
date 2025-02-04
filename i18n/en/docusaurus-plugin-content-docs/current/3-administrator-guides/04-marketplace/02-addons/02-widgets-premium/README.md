@@ -26,7 +26,7 @@ The Widgets Premium add-on is a paid extension and requires purchasing a subscri
 
 It is a widget that allows you to preview a system generated PDF document. This solution will significantly facilitate the work of users responsible for issuing and sending PDF documents by allowing to preview them before issuing them.
 
-\*\*Benefits""
+**Benefits**
 
 - **Quick preview**: Stay up to date with the contents of an invoice or other PDF document at every stage of generation.
 - **Better control**: Make corrections and approve documents before they are finalized.
