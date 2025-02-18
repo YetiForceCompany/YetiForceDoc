@@ -51,7 +51,7 @@ Wybierz wszystkie elementy, które chcesz usunąć i zakres czasowy
 
 ![how-to-clear-browser-cache-4.jpg](how-to-clear-browser-cache-4.jpg)
 
-## Czyszczenie cache na urządzeniach mobilncyh `Google Chrome`
+## Czyszczenie cache na urządzeniach mobilnych `Google Chrome`
 
 1. Otwórz YetiForce w aplikacji Google Chrome
 2. Kliknij w ikonę przed adresem strony
