@@ -50,3 +50,24 @@ Wybierz wszystkie elementy, które chcesz usunąć i zakres czasowy
 4. W zakładce`Storage` w panelu po lewej stronie kliknij prawym przyciskiem myszy na adres URL YetiForce i wybierz `Delete All`
 
 ![how-to-clear-browser-cache-4.jpg](how-to-clear-browser-cache-4.jpg)
+
+## Czyszczenie cache na urządzeniach mobilncyh `Google Chrome`
+
+1. Otwórz YetiForce w aplikacji Google Chrome
+2. Kliknij w ikonę przed adresem strony
+
+   ![mobile-chrome-1.jpg](mobile-chrome-1.jpg)
+
+3. Wybierz z listy `Pliki cookie i dane witryny`
+
+   ![mobile-chrome-2.jpg](mobile-chrome-2.jpg)
+
+4. Następnie kliknij w ikonę kosza <kbd><i class="fa-solid fa-trash"></i></kbd>
+
+   ![mobile-chrome-3.jpg](mobile-chrome-3.jpg)
+
+5. Kliknij tekst <kbd>usuń</kbd>
+
+   ![mobile-chrome-4.jpg](mobile-chrome-4.jpg)
+
+   Po zakończeniu pokaże się ten sam widok co w punkcie 3.
