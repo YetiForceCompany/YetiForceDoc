@@ -5,73 +5,69 @@ keywords:
   - kanban
   - board
   - view
-  - ustawienia
+  - settings
   - YetiForce
 tags:
   - Kanban
-  - Tablica
+  - Board
 preview: kanban-1.png
 ---
 
-Tablice Kanban w systemie YetiForce to wizualne narzędzie do zarządzania procesami i projektami. Pozwalają one na organizację pracy poprzez podział na
-kolumny reprezentujące etapy procesu (np. "Do zrobienia", "W trakcie", "Zakończone") oraz karty symbolizujące konkretne zadania, które można przeciągać między
-kolumnami. Dzięki temu w łatwy sposób możemy śledzić postęp prac, identyfikować wąskie gardła i optymalizować przepływ zadań. Tablice Kanban są zintegrowane z
-innymi modułami YetiForce, co wspiera zarządzanie zadaniami w kontekście działań sprzedażowych, projektowych, serwisowych i innych.
+Kanban boards in the YetiForce system are a visual tool for managing processes and projects. They allow you to organize work by dividing it into columns representing process stages (e. g. "To do", "In progress", "Completed") and cards symbolizing specific tasks that can be moved between columns. This allows you to easily track work progress, identify bottlenecks and optimize the flow of tasks. Kanban boards are integrated with other YetiForce modules, which supports task management in the context of sales, design, service and other activities.
 
 :::warning
 
-Dodatek YetiForce Kanban Board jest dostępny do subskrypcji w naszym Marketplace. - [**Więcej informacji**](https://yetiforce.com/pl/tablica-kanban.html)
+YetiForce Kanban Board is available for subscription in our Marketplace. - [**More information**](https://yetiforce.com/en/kanban-board.html)
 
 :::
 
-![Widok ekranu konfiguracji](kanban-1.png)
+![Configuration view](kanban-1.png)
 
 ## Configuration
 
-Panel konfiguracyjny YetiForce Kanban Board znajduje się w <kbd>Konfiguracja oprogramowania → Standardowe moduły → Kanban</kbd>.
+The YetiForce Kanban Board configuration panel is located in <kbd>Software configuration → Standard modules → Kanban</kbd>.
 
-![Otwieranie widoku modułu kanban - otwarcie listy modułów](kanban-2-1.png)
-![Otwieranie widoku modułu kanban - wybór modułu](kanban-2-2.png)
+![Opening the kanban module view - opening the module list](kanban-2-1.png)
+![Opening the kanban module view - selecting a module](kanban-2-2.png)
 
-Z listy dostępnych modułów, widocznej w prawym górnym rogu ekranu (1), należy wybrać moduł (2), w którym powinny być dostępne tablice Kanban:
+From the list of available modules in the upper right corner of the screen (1), select the module (2) where the Kanban board should be available:
 
-![Wybór modułu systemowego](kanban-3.png)
+![Module selection](kanban-3.png)
 
-## Tworzenie tablic
+## Create boards
 
-Kliknij przycisk <kbd>+ Dodaj tablicę</kbd> i wybierz pole, które zostanie użyte do stworzenia tablicy w wybranym w poprzednim kroku module:
+Click <kbd>+ Add board</kbd> and select the field used to create a board in the module selected in the previous step:
 
-![Wybór pól z modułu](kanban-4.png)
+![Selecting fields from the module](kanban-4.png)
 
-Po kliknięciu przycisku <kbd>Dodaj</kbd>, tablica będzie dostępna w wybranym module.
+Once you click <kbd>Add</kbd> the board will be available in the selected module.
 
-![Widok wyboru pola](kanban-5.png)
+![Field selection view](kanban-5.png)
 
-## Parametry tablicy
+## Board parameters
 
-- Pola szczegółowe - lista pól w których mają się pojawić dane rekordu. Jeśli dane pole ma ustawioną ikonę, to będzie ona widoczna. Dostępne są wszystkie pola z systemu z uwzględnieniem uprawnień użytkownika.
+- Detailed fields - list of fields where the record data is to appear. If a field has an icon set, it will be visible. All fields from the system are available, taking into account user permissions.
 
-  ![Widok pól szczegółowych](kanban-6.png)
+  ![Detail field view](kanban-6.png)
 
 - Pola sumowania - lista pól które mają być poddane sumowaniu dla danej wartości (słupka kanbana), dla której jest wyświetlany kanban. Dostępne są tylko pola liczbowe, na których można wykonać operacje sumowania.
 
-  ![Widok sumowania](kanban-7.png)
+  ![Summary view](kanban-7.png)
 
 Dane na liście wyboru są zapisane automatycznie podczas każdej zmiany.
 
-## Privileges
+## Permissions
 
-Aby użytkownik mógł korzystać z widoku Kanban, musi posiadać on odpowiedni poziom uprawnień.
+In order for a user to use the Kanban view, they must have the appropriate level of permissions.
 
-W tym celu należy przejść do <kbd>[`Konfiguracja systemu → Uprawnienia → Profile`](/administrator-guides/permissions/profiles/)</kbd>, a następnie
-wybrać odpowiedni profil:
+To do this, go to <kbd>[`System configuration → Permissions → Profiles`](/administrator-guides/permissions/profiles/)</kbd>, and then select the relevant profile:
 
-![Wybór profilu](kanban-8-1.png)
+![Profile selection](kanban-8-1.png)
 
-po czym wybrać odpowiedni moduł, w którym, opcja Kanban powinna być dostępna
+then select the relevant module where the Kanban Board should be available
 
-![Wybór modułu](kanban-8-2.png)
+![Module selection](kanban-8-2.png)
 
-finalnie, dostosować opcje uprawnień.
+and customize permissions.
 
-![Zmiana uprawnień do akcji i widoków](kanban-8-3.png)
+![Change permissions for actions and views](kanban-8-3.png)

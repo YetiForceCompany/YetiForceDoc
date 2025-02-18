@@ -7,7 +7,7 @@ keywords:
   - ERP
   - XL
   - YetiForce
-  - Panel konfiguracyjny
+  - Settings
 tags:
   - Comarch
 ---
@@ -20,37 +20,37 @@ The integration between YetiForce and Comarch ERP guarantees fast and convenient
 
 ### Synchronization
 
-#### Kontrahenci
+#### Accounts
 
-##### Jednokierunkowa z YetiForce do Comarch
+##### One-way from YetiForce to Comarch
 
-Aby kontrahent został wysłany do Comarch wymagane jest odpowiednie ustawienie wartości w polach:
+In order for the Account to be sent to Comarch, it is necessary to set the appropriate values ​​in the following fields:
 
-- Comarch server - okreslenie do której instancji Comarch ma zostać wysłany wpis (jak jest jedna wartość i wszystkie faktury mają być wysyłane można ustawić wartość domyślną)
-- Nazwa skrócona - unikalna nazwa kontrahenta, tzw. akronim
-- Termin płatności (w dniach) - pole okreslajace termin płatności, wartość jest podana w dniach i używana przy wystawianiu faktur dla terminu płatności
+- Comarch server - specify to which Comarch instance the entry is to be sent (if there is one value and all invoices are to be sent, you can set the default value)
+- Short name - a unique name of the Account, the so-called acronym
+- Payment date (in days) - field specifying the payment date, the value is set in days and is used when issuing invoices for the payments
 
-#### Faktury
+#### Invoices
 
-##### Jednokierunkowa z YetiForce do Comarch
+##### One-way from YetiForce to Comarch
 
-Aby faktura została wysłana do Comarch wymagane jest odpowiednie ustawienie wartości w polach:
+In order for the invoice to be sent to Comarch, it is necessary to set the appropriate values ​​in the following fields:
 
-- Comarch server - okreslenie do której instancji Comarch ma zostać wysłany wpis (jak jest jedna wartość i wszystkie faktury mają być wysyłane można ustawić wartość domyślną)
-- Status integracji z Comarch - musi być ustawiony odpowiedni status dla integracji, poniżej opis wartości:
-  - Wersja robocza - możliwa edycja oraz wprowadzanie zmian bez wysłania do Comarch
-  - Do wysłania - oczekuje na wysłanie, po wysłaniu system automatycznie zmieni na `Wysłano` lub `Wystąpił błąd`
-  - Wysłano - faktura została prawidłowo wysłana do Comarch
-  - Wystąpił błąd - wystąpił nieoczekiwany błąd, faktura nie została wysłana. Należy zweryfikować komunikaty błędów w polu `Logi błędów Comarch`
-  - Pobrane z Comarch - wartość używana dla integracji gdy faktury są pobierane z Comarch (Kierunek synchronizacji faktur = `Jednokierunkowa z Comarch do YetiForce`)
-- Waluta - zgodna z walutą z bloku nad pozycjami (obok typu rabatu)
+- Comarch server - specify to which Comarch instance the entry is to be sent (if there is one value and all invoices are to be sent, you can set the default value)
+- Comarch integration status - the appropriate status for integration must be set, below is the description of the values:
+  - Draft - editing and changes possible without sending to Comarch
+  - To be sent - waiting to be sent, after sending, the system will automatically change the status to `Sent` or `An error occurred`
+  - Sent - the invoice has been successfully sent to Comarch
+  - An error occurred - an unexpected error occurred, the invoice was not sent. You should verify the error messages in the `Comarch error logs` field
+  - Downloaded from Comarch - value used for integration when invoices are downloaded from Comarch (Invoice synchronization direction = `One-way from Comarch to YetiForce`)
+- Currency - consistent with the currency from the block above the items (next to the discount type)
 
 ![crm-xl-fv-1.jpg](crm-xl-fv-1.jpg)
 
 ## Logs
 
-Pełne logi błędów i synchronizacji są dostepne w panelu logów.
+Full error and synchronization logs are available in the logs panel.
 
 ![comarch-logs](comarch-logs.jpg)
 
-Logi dotyczace błędów dla konkretnego rekordu są dostępne w polu `Logi błędów Comarch`
+Error logs for a specific record are available in the `Comarch error logs` field

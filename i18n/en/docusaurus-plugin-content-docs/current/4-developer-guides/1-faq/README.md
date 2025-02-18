@@ -1,11 +1,11 @@
 ---
 title: FAQ
-description: Lista najczęstszych pytań/problemów i ich rozwiązań.
+description: FAQ
 keywords:
   - faq
-  - pytania
+  - questions
   - problems
-  - rozwiązania
+  - solutions
   - developer documentation
   - YetiForce
 tags:

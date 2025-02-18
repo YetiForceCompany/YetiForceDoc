@@ -6,48 +6,48 @@ keywords:
   - ERP
   - Integration
   - YetiForce
-  - Panel konfiguracyjny
+  - Settings
 tags:
   - Wapro
   - ERP
   - Integration
-  - Panel konfiguracyjny
+  - Settings
 preview: wapro-erp.jpg
 ---
 
-## Wymagania i aktywacja Wapro ERP
+## Wapro ERP Requirements and Activation
 
 ![wapro-erp.jpg](wapro-erp.jpg)
 
-### Nie znaleziono wymaganej biblioteki PDO_SQLSRV
+### Could not find required PDO_SQLSRV library
 
-Jeśli widzisz poniższy komunikat to znaczy że nie masz zainstalowanego rozszerzenia `PDO Microsoft SQL Server Driver for PHP`
+If you see the message below, it means you do not have the `PDO Microsoft SQL Server Driver for PHP` extension installed
 
 ![Wapro-active-2.png](wapro-erp.jpg)
 
-Rozszerzenie jest wymagane na potrzeby integracji z Wapro ERP, dzięki temu jest możliwa komunikacja z bazą danych Microsoft SQL Server.
+The extension is required for integration with Wapro ERP, which enables communication with the Microsoft SQL Server database.
 
-### Instalacja PDO_SQLSRV
+### PDO_SQLSRV Installation
 
-Instrukcja instalacji znajduje się na stronie https://docs.microsoft.com/en-us/sql/connect/php/installation-tutorial-linux-mac
+More information: https://docs.microsoft.com/en-us/sql/connect/php/installation-tutorial-linux-mac
 
-#### Możliwe błędy
+#### Possible errors
 
 `SQLSTATE[08001]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x2746`
 
-Jeśli podczas dodawania dostępu do bazy danych pokaże się powyższy komunikat to należy zapoznać się z opisem rozwiązania tego problemu:
+If the above message appears when adding access to the database, please read the description of the solution to this problem:
 
 https://github.com/microsoft/msphpsql/issues/1021
 
-### Aktywacja
+### Activation
 
 ![Wapro-active-3.png](Wapro_active_3.png)
 
-Powyższy komunikat pokazuje się gdy nie została wgrana konfiguracja wymagana dla integracji lub została wyłączona/zmieniona.
+The above message is displayed when the configuration required for integration has not been uploaded or has been disabled/changed.
 
-Podczas aktywacji w systemie zostaną wprowadzone następujące zmiany:
+During activation, the following changes will be made to the system:
 
-- Tworzone są pola WAPRO ERP ID w modułach w których są synchronizowane dane
-- Tworzone jest pole Typ sumowania rabatu
-- Tworzone są tabele z konfiguracją oraz logami
-- Dodane zostaje zadanie w CRON
+- WAPRO ERP ID fields are created in the modules where the data is synchronized
+- The Discount Summation Type field is created
+- Tables with configuration and logs are created
+- A CRON task is added

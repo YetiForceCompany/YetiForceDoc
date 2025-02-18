@@ -18,7 +18,7 @@ Remember that system testing and bug reporting is also considered contribution t
 
 :::warning
 
-Przed rozpoczęciem zapoznaj się z artykułami:
+Before you begin, please read these articles:
 
 - [How to report bugs?](/developer-guides/github/how-to-report-bugs)
 - [Why was the issue ignored?](/developer-guides/github/why-was-the-issue-ignored)

@@ -58,48 +58,48 @@ The **Change History** add-on in the YetiForce system provides comprehensive ins
 **Get detailed insight into updates made by users:**
 
 - Track modifications in a selected module or the entire system.
-- Zobacz listę otwieranych i modyfikowanych rekordów.
-- Poznaj czas przeprowadzonych akcji.
-- Zidentyfikuj użytkowników odpowiedzialnych za każdą operację.
+- View a list of opened and modified records.
+- Find out the time of the actions.
+- Identify users responsible for each operation.
 
-**Wykorzystaj zaawansowane filtry, aby:**
+**Use advanced filters to:**
 
-- Skupić się na konkretnych rekordach lub użytkownikach.
-- Zlokalizować zmiany wprowadzone w określonym czasie.
-- Szybko odnaleźć interesujące Cię informacje.
+- Focus on specific records or users.
+- Locate changes made over a specific period.
+- Quickly find relevant information.
 
-**Korzyści ze stosowania dodatku Historia Zmian:**
+**Benefits of using the Updates add-on:**
 
-- **Zwiększona przejrzystość**: Zyskaj pełną widoczność aktywności użytkowników i wprowadzanych zmian, co ułatwia audyt i kontrolę nad systemem.
-- **Poprawa odpowiedzialności**: Jasno identyfikuj użytkowników odpowiedzialnych za modyfikacje, zapewniając rozliczalność i zapobiegając nieupoważnionym zmianom.
-- **Usprawnienie współpracy**: Ułatwiaj współpracę zespołową, udostępniając historię zmian i zapewniając kontekst dla wprowadzonych modyfikacji.
+- **Increased transparency**: Gain full visibility into user activity and changes, making it easier to audit and control your system.
+- **Improve Accountability**: Identify users responsible for modifications, ensuring accountability and preventing unauthorized changes.
+- **Enhance Collaboration**: Make it easier for teams to collaborate by sharing update history and providing context around changes made.
 
-### Konfiguracja Historii Zmian
+### Update history configuration
 
 :::warning
 
-Pamiętaj, by przy tworzeniu widżetu wybrać odpowiednią rolę oraz pulpit, na którym ma się on pojawić.
+When creating a widget, remember to select the role and dashboard where it should appear.
 
 :::
 
 1. Go to the YetiForce administration section.
-2. Wybierz z lewego menu `Moduły standardowe ➜ Panel widżety`.
-3. Kliknij przycisk <kbd>Predefiniowane widżety</kbd>.
-4. Wybierz widżet **Historia aktualizacji systemu** z listy dostępnych widżetów.
-5. Wprowadź parametry widżetu i zapisz zmiany.
+2. Select `Standard Modules ➜ Modules - Widgets` from the left menu.
+3. Click <kbd>Predefined widgets</kbd>.
+4. Select the **System Update History** widget from the list of available widgets.
+5. Enter a name for the widget and save changes.
 
 ![widgets-3.jpg](widgets-3.jpg)
 
-Widżet **Historia aktualizacji systemu** jest już gotowy do użycia. W sekcji użytkownika przejdź do Zakładki **Pulpit**, gdzie pojawi się widżet.
+The **System Update History** widget is now ready to use. In the user section, go to the **Dashboard** Tab, where the widget will appear.
 
-Pierwsza lista rozwijana pozwala nam wybrać moduł systemu, dla którego chcemy śledzić zmiany. Jeżeli z listy wybierzemy pozycję **Podsumowanie**, pojawi nam się historia aktualizacji w wybranym okresie dla całego systemu z podziałem na moduły.
+The first drop-down list allows you to select the system module where you want to track changes. If you select **Summary** from the list, you will see the update history for the selected period for the entire system, divided into modules.
 
 ![widgets-4.jpg](widgets-4.jpg)
 
-Wybierając natomiast z listy konkretny moduł, uzyskamy dodatkowe informacje, takie jak: kto wykonał akcję, na jakim rekordzie czy też, z jakich danych, na jakie zostały zmienione.
+By selecting a specific module from the list, you'll see additional information, such as: who performed the action, on which record, or on what data, and to what data they were changed.
 
 ![widgets-5.jpg](widgets-5.jpg)
 
-W prawym górnym rogu widżetu znajduje się ikona trybika, pozwalająca ustawić wyświetlane przez niego dane. Możemy wybrać jakie akcje chcemy, żeby zostały wyświetlone oraz z jakimi użytkownikami mają być one powiązane.
+In the upper right corner of the widget, you can find a gear icon that lets you set the data it displays. You can choose which actions you want to be displayed and which users you want them to be related to.
 
 ![widgets-6.jpg](widgets-6.jpg)

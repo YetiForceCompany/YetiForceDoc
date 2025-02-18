@@ -25,7 +25,7 @@ Documentation of available methods and API capabilities can be found in the foll
 
 ![WebserviceStandard.jpg](WebserviceStandard.jpg)
 
-### Dane dostępowe
+### Credentials
 
 Access to the `Webservice Standard` service requires creating an application with a username and password, necessary to communicate with the API.
 
