@@ -8,19 +8,19 @@ keywords:
 tags:
   - YFCLI
   - CLI
-  - Konsola
+  - Console
 preview: Eraser-0.jpg
 ---
 
 :::tip
 
-Ta funkcja jest dostępna dla YetiForce w wersji `6.4.146` i później
+This feature is available for YetiForce version `6.4.146` and later
 
 :::
 
 ![Eraser CLI](Eraser-0.jpg)
 
-### Śledzenie zmian - Usuń historię nieistniejących wpisów
+### ModTracker - Delete the history of non-existent entries
 
 ```bash
 php cli.php -m Eraser -a mtNonExist
@@ -28,7 +28,7 @@ php cli.php -m Eraser -a mtNonExist
 
 ![Eraser CLI](Eraser-1.jpg)
 
-### Śledzenie zmian - Usuń wszystkie wpisy
+### ModTracker - Delete all entries
 
 ```bash
 php cli.php -m Eraser -a mtAll
@@ -36,9 +36,9 @@ php cli.php -m Eraser -a mtAll
 
 ![Eraser CLI](Eraser-1.jpg)
 
-### Dane użytkownika - Usuń wszystkie wpisy
+### User data - Delete all entries
 
-Mechanizm usuwa dane z wszystkich modułów z pominięciem poniższych:
+The mechanism removes data from all the modules, excluding:
 
 - MultiCompany
 - OSSEmployees

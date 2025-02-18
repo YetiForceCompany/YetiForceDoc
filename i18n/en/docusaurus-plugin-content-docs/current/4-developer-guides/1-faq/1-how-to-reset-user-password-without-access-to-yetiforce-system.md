@@ -3,12 +3,12 @@ title: How to reset a user's password without access to the YetiForce system
 description: How to reset a user's password without access to the application.
 keywords:
   - reset
-  - hasło
+  - password
   - user
   - YetiForce
 tags:
   - reset
-  - hasło
+  - password
   - user
 ---
 
@@ -46,7 +46,7 @@ $password = ''; //Hasło, opcjonalnie
 
 ## 1.3 Run the script
 
-Jeśli uruchomisz skrypt przez przeglądarkę, wgraj plik do katalogu publicznego (jeśli webroot jest ustawiony na ten katalog) i uruchom adres CRM oraz nazwę skryptu, np. https://demo.yetiforce.com/PasswordReset.php
+If you run the script through a browser, upload the file to the public directory (if webroot is set to this directory) and run the CRM address plus the script name, e.g. https://demo.yetiforce.com/PasswordReset.php
 
 If you run the script from the CLI level, upload the script to the main directory and run the file.
 

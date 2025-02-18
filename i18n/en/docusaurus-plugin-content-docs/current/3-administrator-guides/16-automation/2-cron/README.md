@@ -18,7 +18,7 @@ CRON is a Unix daemon that triggers other programs periodically. It uses crontab
 
 ![cron](cron-1.jpg)
 
-## Jak uruchomić cron-a?
+## How to enable CRON?
 
 CRON can be enabled in a few simple steps:
 
@@ -54,7 +54,7 @@ CRON can be enabled in a few simple steps:
 
 ### Windows - it's not recommended to use Windows as a server for the YetiForce system.
 
-### Adres URL może być używany do uruchomienia CRON, np. https://demo.yetiforce.com/cron.php?app_key=xxxx
+### URL can be used to run CRON, e.g. https://demo.yetiforce.com/cron.php?app_key=xxxx
 
 The `app_key` is the key located in the [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_application_unique_key) file in the `$application_unique_key` variable.
 

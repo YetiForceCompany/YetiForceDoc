@@ -18,17 +18,17 @@ Redirecting a domain (or subdomain) to another www address (domain/subdomain) is
 
 :::warning
 
-Dla klientów YetiForce usługa przekierowywania jest dostępna tylko dla produktu YetiForce Cloud.
+For YetiForce customers the redirecting service is only available for the YetiForce Cloud product.
 
 :::
 
-## Opis problemu
+## Problem description
 
-Mamy aplikację pod domeną: crm.staryadres.com, a chcemy, aby nasi pracownicy widzieli ją pod nową domeną np. crm.nowyadres.com
+Your application is installed at yourcrm.yetiforce.eu and you want your employees to access it through crm.newaddress.com
 
 ## Solution
 
-Aby przekierować system na nowy adres, postępuj zgodnie z instrukcją poniżej:
+In order to redirect the system to a new address follow the instruction below:
 
 1. Redirect the new address (e.g.: crm.newaddress.com) using a CNAME record in DNS to the address where the application is currently located (e.g.: crm.oldaddress.com) - thanks to this redirection, each employee entering the new address will be redirected "in the background" to the old address where the application is located, but will see the new address in the address bar.**Note**: pay special attention to how you add the CNAME entry, because most often you have to enter a dot at the end, e.g.: `crm.oldaddress.com.` - if you are not sure how to do it correctly, read about it on the Internet: https://www.google.com/search?q=domain+cname+example. When adding a CNAME record, remember to set the TTL for the record to 3600 seconds.
 

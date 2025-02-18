@@ -7,13 +7,13 @@ keywords:
   - Integration
   - Synchronization
   - YetiForce
-  - Panel konfiguracyjny
+  - Settings
 tags:
   - Magento
   - eCommerce
   - Integration
   - Synchronization
-  - Panel konfiguracyjny
+  - Settings
 preview: magento.jpg
 ---
 
@@ -63,11 +63,11 @@ Accounts synchronization works technically very much like category synchronizati
 
 Unfortunately, the Magento system itself has very complicated mechanics of creating an account [data about the account can be completed in different places and at different times of creating an order], therefore the following logic has been implemented when it comes to searching and associating accounts between the systems:
 
-- [Magento] We check if the TAX ID number has been entered in the "Default billing address" block
-- [Magento] We check if the TAX ID number has been entered in the "Default delivery address" block;
-- If we do not find the TAX ID number, we look for an e-mail address in all fields of the "E-mail" type Account module;
+- [Magento] Check if the TAX ID number has been entered in the "Default billing address" block
+- [Magento] Check if the TAX ID number has been entered in the "Default delivery address" block;
+- If you don't find the TAX ID number, look for an e-mail address in all fields of the "E-mail" type Account module;
 
-If we do not find an account, it is created; if we find an account in YetiForce, it is linked to the order.
+If you don't find an account, it is created; if you find an account in YetiForce, it is linked to the order.
 
 #### Orders
 
@@ -192,7 +192,7 @@ Keep in mind that most of the fields are filled only during creation, which in p
    - [Default billing address] field [Postcode] [Magento]> [Main address] field [Postcode] [YetiForce]
    - [Default billing address] field [City] [Magento]> [Primary address] field [City] [YetiForce]
    - [Default billing address] field [Province] [Magento]> [Primary address] field [Province] [YetiForce]
-   - [Default billing address] field [Country] [Magento]> [Primary address] field [Country] [YetiForce
+   - [Default billing address] field [Country] [Magento]> [Primary address] field [Country] [YetiForce]
    - [Default delivery address] field [Street and building number 1] [Magento]> [Delivery address] field [Street] [YetiForce]
    - [Default delivery address] field [Street and building number 2] [Magento]> [Delivery address] field [Building number] [YetiForce]
    - [Default delivery address] field [Postcode] [Magento]> [Delivery address] field [Postcode] [YetiForce]

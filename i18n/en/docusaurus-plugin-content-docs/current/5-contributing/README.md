@@ -2,11 +2,11 @@
 title: Contributing / Community
 description: One of the many advantages of open source software is the fact that everyone can contribute to its development.
 keywords:
-  - Współtworzenie
+  - Contributing
   - Contributing / Community
   - YetiForce
 tags:
-  - Współtworzenie
+  - Contributing
   - Contributing / Community
 ---
 
@@ -16,7 +16,7 @@ import DocCardList from '@theme/DocCardList';
 
 One of the many advantages of open source software is the fact that everyone can contribute to its development. If you don't have any programming experience, but you would like to contribute to the YetiForce system, you can always help us develop our documentation or translate the language files. If you are a developer who would like to contribute to YetiForce, you can send us your comments regarding the code, bug fixes, or even entire functionalities.
 
-## Jak współtworzyć YetiForce
+## How to contribute
 
 <DocCardList />
 

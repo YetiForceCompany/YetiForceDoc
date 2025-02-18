@@ -8,7 +8,7 @@ keywords:
 tags:
   - YFCLI
   - CLI
-  - Konsola
+  - Console
 preview: Cleaner.png
 ---
 

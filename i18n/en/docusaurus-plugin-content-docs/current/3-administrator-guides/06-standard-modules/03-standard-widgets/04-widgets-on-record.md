@@ -1,6 +1,6 @@
 ---
 title: Widgets in record view
-description: Funkcja ta pozwala na spersonalizowanie widoku i szybki dostęp do najważniejszych informacji dotyczących danego elementu, bez konieczności przechodzenia do innych modułów.
+description: This function allows you to personalize your view and quickly access the most important information without having to go to other modules.
 keywords:
   - widgets
   - widgets in record detail view

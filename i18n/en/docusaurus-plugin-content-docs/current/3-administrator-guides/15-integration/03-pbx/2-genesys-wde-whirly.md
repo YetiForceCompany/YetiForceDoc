@@ -14,7 +14,7 @@ preview: genesys-wde-whirly.jpg
 
 :::tip
 
-Funkcjonalność dostępna od wersji YetiForce 7.0
+This functionality is available for YetiForce version 7.0 and later
 
 :::
 
@@ -28,7 +28,7 @@ PBX integration via Genesys Workspace Desktop Edition.
 
 Integration with the Genesys Contact Center platform requires dedicated integration implementation as it depends on the processes present in each company.
 
-Zalety i możliwości integracji:
+Advantages and capabilities:
 
 - works regardless of the logged in user
 - integrates with a dedicated API
@@ -53,7 +53,7 @@ Due to the high complexity of the processes, the integration requires an extensi
 
 In order to enable the integration, follow the steps below:
 
-### Dodanie konfiguracji do PBX
+### Add configuration to PBX
 
 Add an entry to the PBX with the following type: `Genesys WDE by Whirly`
 
@@ -101,6 +101,6 @@ Enter the following parameters in the Genesys Administrator panel:
 
 ![genesys-wde-whirly-6.jpg](genesys-wde-whirly-6.jpg)
 
-## Odnośniki zewnętrzne
+## External links
 
 - https://www.genesys.com/collateral/genesys-workspace

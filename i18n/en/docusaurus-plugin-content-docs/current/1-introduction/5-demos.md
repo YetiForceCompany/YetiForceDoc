@@ -1,5 +1,5 @@
 ---
-title: test version
+title: Test version
 description: YetiForce and YetiForce Portal public test versions
 tags:
   - demo

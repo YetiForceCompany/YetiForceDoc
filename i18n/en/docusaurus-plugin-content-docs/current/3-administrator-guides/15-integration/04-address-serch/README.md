@@ -16,45 +16,45 @@ tags:
 preview: panel.jpg
 ---
 
-System YetiForce daje użytkownikom wiele udogodnień. Jednym z nim jest możliwość integracji systemu z systemem map Google lub z OpenCage Geocoder, co pozwala później systemowi na "podpowiadanie" użytkownikowi, kiedy ten wpisuje adresy do bazy (np. adres kontrahenta).
+YetiForce offers its users many convenient functionalities. One of them is the ability to integrate it with the Google maps system or OpenCage Geocoder, which allows the system to later display "suggestions" to the user when they enter addresses into the database (e.g. the address of an Account).
 
 ![panel](panel.jpg)
 
-## Lista dostawców
+## Vendors List
 
 ### Google Geocoding
 
-Wyszukiwarka bazuje na usłudze `Geocoding API` firmy Google i mapach Google.
+The search engine is based on Google's `Geocoding API` service and Google Maps.
 
-- Dokumentacja: https://developers.google.com/maps/documentation/geocoding/
-- Panel konfiguracyjny: https://console.cloud.google.com/apis
-- Cennik: https://developers.google.com/maps/billing-and-pricing/pricing#geocoding
+- Documentation: https://developers.google.com/maps/documentation/geocoding/
+- Settings: https://console.cloud.google.com/apis
+- Pricing: https://developers.google.com/maps/billing-and-pricing/pricing#geocoding
 
-Wymaga utworzenia projektu z aktywną usługą `Geocoding API`
+Requires a project with active `Geocoding API` service
 
-#### Przykładowa konfiguracja
+#### Sample setup
 
 - key: cccaSyDX2hI1YTV9B06ayBQ_99oClRp82kCZJ_2
 
 ### Nominatim Geocoder
 
-Nominatim to usługa bazująca na mapach OSM
+Nominatim is a service based on OSM maps
 
-- Dokumentacja: https://nominatim.org/release-docs/develop/api/Search/
+- Documentation: https://nominatim.org/release-docs/develop/api/Search/
 
-#### Przykładowa konfiguracja
+#### Sample setup
 
 - Country code: pl
 - Map URL: https://nominatim.openstreetmap.org/search
 
 ### OpenCage Geocoder
 
-OpenCage to usługa bazująca na mapach OSM
+OpenCage is a service based on OSM maps
 
-- Dokumentacja: https://opencagedata.com/api
-- Cennik: https://opencagedata.com/pricing
+- Documentation: https://opencagedata.com/api
+- Pricing: https://opencagedata.com/pricing
 
-#### Przykładowa konfiguracja
+#### Sample setup
 
 - Country code: pl
 - key: 62672c4d90064d0589f6hbaeb058ll1c
