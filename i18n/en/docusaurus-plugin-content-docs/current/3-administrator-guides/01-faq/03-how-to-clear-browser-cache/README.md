@@ -53,3 +53,25 @@ Select all the items you want to remove and the time range
 4. In the `Storage` tab in the panel on the left side right-click your YetiForce's URL and select `Delete All`
 
 ![how-to-clear-browser-cache-4.jpg](how-to-clear-browser-cache-4.jpg)
+
+## Clearing `Google Chrome` cache on mobile devices
+
+1. Open your YetiForce in Google Chrome
+
+2. Click on the icon in front of the website address
+
+   ![mobile-chrome-1.jpg](mobile-chrome-1.jpg)
+
+3. Select `Cookies and site data` from the list
+
+   ![mobile-chrome-2.jpg](mobile-chrome-2.jpg)
+
+4. Click the trash can icon <kbd><i class="fa-solid fa-trash"></i></kbd>
+
+   ![mobile-chrome-3.jpg](mobile-chrome-3.jpg)
+
+5. Click <kbd>delete</kbd>
+
+   ![mobile-chrome-4.jpg](mobile-chrome-4.jpg)
+
+   Once finished, you will see the same view as in step 3.

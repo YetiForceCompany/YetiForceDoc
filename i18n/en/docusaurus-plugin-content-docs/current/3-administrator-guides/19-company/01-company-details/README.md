@@ -39,7 +39,7 @@ Fill out the registration form with real and true data relevant to your company;
 
 - The country where your company operates
 
-#### Branża
+#### Industry
 
 - Select the industry from the list
 
@@ -57,37 +57,36 @@ Once you send the form, please wait for the system to be registered.
 
 :::warning
 
-Klucze rejestracyjne generowane są automatycznie i wysyłane na adres email podany podczas rejestracji. W przypadku podania nieprawidłowych informacji, rejestracja zostanie odrzucona.
+Registration keys are generated automatically and sent to the email address provided during registration. If incorrect information is provided, registration will be rejected.
 
 :::
 
 ![registration-2.jpg](registration-2.jpg)
 
-Jeżeli dane podane w formularzu są poprawne, system zostanie zatwierdzony. Wówczas w polu **status rejestracji** pojawi się wartość **zarejestrowano** a na górze zniknie czerwony komunikat o braku rejestracji.
+If the data provided in the form is correct, the registration will be approved. Then, in the **registration status** field, the value **registered** will appear and warning at the top will disappear.
 
 ![registration-3.jpg](registration-3.jpg)
 
-## Sprawdź status
+## Check status
 
-Jeśli status rejestracji nie został automatycznie zaktualizowany, można odświeżyć go ręcznie za pomocą przycisku <kbd><i className="fas fa-refresh"></i></kbd>, który znajduje się na formularzu rejestracji w kolumnie **status rejestracji**
+If the registration status was not updated automatically, you can refresh it manually by clicking the <kbd><i className="fas fa-refresh"></i></kbd>, button in the registration form in the **registration status** column
 
 ![status.jpg](status.jpg)
 
-## Odrzucenie rejestracji
+## Incorrect registration
 
-W przypadku, gdy w formularzu znajdą się nieprawidłowe dane, rejestracja zostanie odrzucona. W celu ponownej weryfikacji, należy poprawnić formularz i ponownie go wysłać.
-W tym celu, przejdź do konfiguracji systemu za pomocą kółka zębatego <kbd><i className="ti ti-settings"></i></kbd> widocznego w prawym górnym rogu ekranu.
+If the form contains incorrect data, the registration will be rejected. To re-verify, correct the form and send it again. To do this, go to the system configuration using the cogwheel <kbd><i className="ti ti-settings"></i></kbd> visible in the upper right corner of the screen.
 
 ![registration-4.jpg](registration-4.jpg)
 
-W menu z lewej strony wybierz `Firma`, a następnie `Dane firmy`. Popraw dane w formularzu i ponownie go wyślij.
+In the left menu, select `Company`, then `Company Details`. Correct the data in the form and submit it again.
 
 ![registration-5.jpg](registration-5.jpg)
 
 :::warning
 
-Każdorazowa zmiana danych w formularzu, automatycznie zmieni status rejestracji na "**oczekuje na akceptację**" i będzie wymagana ponowna weryfikacja wprowadzonych danych.
+Each time you modify the data in the form, the system will automatically change your registration status to "**pending**", and your updated data will have to be verified.
 
 :::
 
-Dane wprowadzone w formularzu rejestracyjnym, zostaną przesłane do nas w celu weryfikacji. Weryfikacja nastąpi w ciągu 2 dni roboczych.
+The data entered in the registration form will be sent to us for verification. Verification will take place within 2 business days.

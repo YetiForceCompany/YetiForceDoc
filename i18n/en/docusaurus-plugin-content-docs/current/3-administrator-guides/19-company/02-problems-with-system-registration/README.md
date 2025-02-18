@@ -19,7 +19,7 @@ If the status has not changed a few days after registration, please follow the s
 
 ## Update the registration status
 
-Przejdź do ustawień aplikacji, w panelu menu po lewej stronie wybierz "Firma" a następnie "Dane firmy".
+Go to `System settings → Company → Company`
 
 Kliknij przycisk "Sprawdź status". Click the `Check status` button, on the right side the time of the last update should change to `a moment ago`.
 
@@ -45,7 +45,7 @@ Sometimes changes are made on the server after registration, which changes the [
 
 For this reason, the system cannot retrieve up-to-date information, because the ID is different from the one that was provided during registration and the new ID does not exist in the database.
 
-W tym przypadku wymagana jest ponowna rejestracja; przejdź do [`Konfiguracja systemu ➡ Firma ➡ Dane firmy`](/administrator-guides/company/company-details/#jak-zarejestrować-yetiforce)
+In this case, re-registration is required; please go the [`System settings → Company → Company`](administrator-guides/company/company-details/#how-to-register-yetiforce)
 
 ## Check your firewall
 
@@ -56,7 +56,7 @@ Check if your firewall is not blocking outgoing traffic to the following address
 
 These addresses are used for system registration and marketplace purchases.
 
-## Jeśli problemy nadal występują - napisz do nas
+## Email us if the issues persist
 
 :::warning
 
@@ -68,6 +68,6 @@ If you have a problem with registration and this article did not help you solve 
 
 - [APP ID](/administrator-guides/app-id/)
 - [CRM logs](/developer-guides/debug)
-- [Logi PHP](/developer-guides/debug#logi-php)
+- [PHP logs](/developer-guides/debug#php-logs)
 - web server logs
 - FPM login (optional)

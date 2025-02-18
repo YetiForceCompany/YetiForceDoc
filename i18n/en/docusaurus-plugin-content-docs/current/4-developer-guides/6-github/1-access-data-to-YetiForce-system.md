@@ -8,7 +8,7 @@ keywords:
   - report
   - YetiForce
 tags:
-  - dane dostępowe
+  - credentials
   - sla
 ---
 
@@ -20,47 +20,47 @@ If you are a YetiForce user and you have a problem that you would like to report
 
 :::important
 
-Użytkownik musi mieć uprawnienia administratora.
+Please provide access to a user with administrator permissions.
 
 :::
 
 - login
-- hasło
+- password
 
-#### 3. Dane dostępowe do FTP lub SFTP
+#### 3. Access data to FTP or SFTP
 
-Dostęp musi zawierać uprawnienia do odczytu i zapisu plików, a mianowicie:
+Access must include permissions to read and write files, namely:
 
-- adres serwera
+- server address
 - port
-- login (właściciel plików systemowych YetiForce)
-- hasło
-- sposób szyfrowania danych (np.: FTP przez TLS)
-- ścieżka pod którą znajduje się system
+- login (YetiForce system files owner)
+- password
+- encryption method (e.g.: FTP by TLS)
+- path to where the system is located
 
-Konfiguracja serwera zawsze musi być zgodna z aktualnymi wymogami konfiguracyjnymi opisanymi na [stronie](/introduction/requirements/). Niezgodność może powodować błędy w funkcjonowaniu systemu, dodatkowo nie będą działać mechanizmy debugowania. Do weryfikacji konfiguracji można wykorzystać narzędzie wbudowane w systemie i dostępne pod adresem https://demo.yetiforce.com/index.phpparent=Settings&module=ConfReport&view=Index&block=14&fieldid=65
+The server configuration must always follow the current configuration requirements described [**here**](/introduction/requirements/). Misconfiguration may cause errors in the system's operation, and debugging mechanisms will not work. To verify the configuration, you can use the [**built in tool**](/administrator-guides/logs/server-configuration)
 
-#### 4. Dostęp do bazy danych
+#### 4. Database access
 
-- adres bazy danych
+- database address
 - port
 - login
-- hasło
+- password
 
-Dostęp do bazy danych musi być możliwy przez klienta zewnętrznego, czyli musi być dostęp do bazy z zewnątrz lub musimy mieć dostęp do SSH aby tunelować połączenie.
+Access to the database must be possible for an external client, which means there must be external access to database or SSH access to tunnel the connection.
 
-#### 5. VPN - Opcjonalny
+#### 5. VPN - Optional
 
 :::warning
 
-Dotyczy tylko jeśli dostęp do Twoich danych wymaga VPN
+Applies only if access to your data requires a VPN
 
 :::
 
-Prosimy dodatkowo o podanie nazwy programu potrzebnego do połączenia z VPN oraz dane do konfiguracji tego programu (adres, port, login, hasło, oraz inne informacje wymagane przez konkretny program, jak np. certyfikat).
+Please specify the name of the program that you use to connect to the VPN and data used for its configuration (address, port, login, password and other information required by the program, e.g. certificate).
 
 :::tip
 
-Po realizacji przez nas zlecenia dane dostępowe należy zmienić a dostęp z zewnątrz należy wyłączyć zgodnie z dobrymi praktykami bezpieczeństwa.
+Once we complete all the work, change your access data and deactivate external access in accordance with good security practices.
 
 :::

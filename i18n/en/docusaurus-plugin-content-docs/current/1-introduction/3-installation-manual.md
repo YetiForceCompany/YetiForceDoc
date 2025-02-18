@@ -37,7 +37,7 @@ We recommend downloading the "complete" versions, for example `YetiForceCRM-7.0.
 :::
 
 - Unzip the file, with e.g [7-Zip](http://7-zip.org/).
-- Katalog z systemem CRM, który otrzymasz po rozpakowaniu pliku ZIP, skopiuj na serwer WWW, np. za pomocą programu [WinSCP](https://winscp.net/).
+- Copy the CRM system directory that you will get after unpacking the ZIP file to the web server, e.g. using the [WinSCP](https://winscp.net/) program.
 - Następnie postępuj zgodnie z kreatorem, którego wywołasz z poziomu WWW tam, gdzie skopiowałeś pliki YetiForce CRM.
 
 You can also use the bash console

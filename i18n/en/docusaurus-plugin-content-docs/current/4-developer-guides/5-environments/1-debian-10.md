@@ -17,45 +17,45 @@ This tutorial presents LEMP installation and configuration for YetiForce on Debi
 
 :::warning
 
-W artykule zakładamy, że masz przynajmniej podstawową wiedzę o Linux i wiesz jak korzystać z powłoki shell.
+This article assumes you have at least a basic understanding of Linux, and you know how to use the shell.
 
 :::
 
-Instalacja jest całkiem prosta i zakłada, że pracujesz na koncie root. Jeśli nie, może być konieczne dodanie `sudo` poleceń, aby uzyskać uprawnienia `root`.
+The installation is fairly easy and assumes that you're working on the root account. If not, you may have to add `sudo` to the commands to gain `root` privileges.
 
 :::tip
 
-Pełna lista wymagań dla systemu YetiForce jest na stronie: [Wymagania systemu YetiForce](/introduction/requirements/)
+The full list of requirements for the YetiForce system is available here: [YetiForce requirements](/introduction/requirements/)
 
 :::
 
-## 1. Aktualizacja wszystkich zainstalowanych pakietów do najnowszych dostępnych wersji
+## 1. Update all installed packages to the latest available versions
 
 ```bash
 apt-get update -y
 apt-get upgrade -y
 ```
 
-## 2. Zainstaluj wymagane pakiety
+## 2. Install required packages
 
 ```bash
 apt-get install -y --no-install-recommends apt-utils curl openssl wget ca-certificates apt-transport-https lsb-release gnupg zip unzip cron mc htop p7zip-full
 ```
 
-## 3. Dodaj wymagane repozytoria (źródła pakietów)
+## 3. Add required repositories (package sources)
 
-Domyślna wersja PHP używana w danej dystrybucji nie zawsze jest zgodna z wymaganiami, dlatego używamy dodatkowego źródła pakietów.
+The default PHP version used in a given distribution does not always match the requirements, so we use an additional package source.
 
-Zalecamy używanie https://deb.sury.org/, https://github.com/oerdnj/deb.sury.org zawiera najnowsze wersje oraz częste aktualizacje PHP.
+We recommend using https://deb.sury.org/, https://github.com/oerdnj/deb.sury.org as it has the latest versions and frequent PHP updates.
 
 ```bash
 wget -q -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list
 ```
 
-:::important Opcjonalnie
+:::important Optional
 
-Jeśli chcesz mieć najnowszą wersję silnika bazy danych, to możesz dodać dodatkowe repozytorium pakietów od MariaDB.
+If you want the latest version of the database engine then you can add an additional package repository from MariaDB.
 
 ```bash
 apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
@@ -97,9 +97,9 @@ mkdir -p /var/log/php/
 passwd yfprod
 ```
 
-:::important Opcjonalnie
+:::important Optional
 
-Utworzenie środowiska testowego
+Create a test environment
 
 ```bash
 groupadd yftest
@@ -131,9 +131,9 @@ The [www.conf](https://github.com/YetiForceCompany/YetiForceCRM/blob/stable/test
 
 :::
 
-:::important Opcjonalnie
+:::important Optional
 
-Utworzenie środowiska testowego, wymaga zmiany nazwy domeny
+Creating a test environment requires changing the domain name
 
 ```bash
 cp /etc/nginx/sites-available/yfprod.conf /etc/nginx/sites-available/yftest.conf
@@ -156,13 +156,13 @@ sed -i 's/output_buffering = "On"/output_buffering = "Off"/g' /etc/php/7.4/cli/c
 
 :::warning
 
-W przykładzie jest użyta wersja deweloperska, zalecamy aby pobrać pliki dla wersji systemu, która będzie instalowana np. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
+The example uses a development version, we recommend downloading the files for the system version that will be installed, e.g. https://github.com/YetiForceCompany/YetiForceCRM/blob/6.4.0/tests/setup/fpm/www.conf
 
 :::
 
-:::important Opcjonalnie
+:::important Optional
 
-Tworzenie środowiska testowego wymaga skopiowania pliku i zastąpienia `yfprod` `yftest`
+Creating a test environment requires copying the file and replacing `yfprod` with `yftest`
 
 ```bash
 cp /etc/php/7.4/fpm/pool.d/yfprod.conf /etc/php/7.4/fpm/pool.d/yftest.conf
@@ -270,7 +270,7 @@ A complete description of the YetiForce installation can be found in the article
 
 :::warning
 
-Po zakończeniu konfiguracji dostęp do SSH powinien zostać ograniczony tylko do zaufanych adresów IP lub VPN.
+Once setup is complete, SSH access should be restricted to trusted IP or VPN addresses only.
 
 We also recommend disabling root login directly via SSH and installing and configuring a firewall.
 

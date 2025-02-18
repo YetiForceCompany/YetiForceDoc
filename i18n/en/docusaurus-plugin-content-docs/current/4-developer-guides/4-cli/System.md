@@ -1,6 +1,6 @@
 ---
 title: System
-description: Opis funkcji zarządzania systemem YetiForce za pomocą CLI
+description: Description of the YetiForce system management functions via CLI
 keywords:
   - System
   - CLI
@@ -8,7 +8,7 @@ keywords:
 tags:
   - YFCLI
   - CLI
-  - Konsola
+  - Console
 preview: System.png
 ---
 

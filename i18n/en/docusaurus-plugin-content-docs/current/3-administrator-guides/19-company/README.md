@@ -4,7 +4,7 @@ description: Company
 keywords:
   - Company
   - YetiForce
-  - Panel konfiguracyjny
+  - Settings
 hide_table_of_contents: true
 ---
 
