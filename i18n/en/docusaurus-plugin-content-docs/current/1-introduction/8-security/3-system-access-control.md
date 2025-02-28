@@ -34,7 +34,7 @@ The system allows the use of other methods of standard or additional authenticat
 
 ### Authentication
 
-After correct identification and authentication, the system automatically verifies the functionalities and data the user has permissions for. Depending on the authentication, each user can see different system functionalities - each element of the system can be defined for the user, e.g.
+After correct identification and authentication, the system automatically verifies the functionalities and data the user has permissions for. Depending on the authentication, each user can see different system functionalities - each element of the system can be defined for the user, e.g. each user can see a different menu, functionalities, or data.
 
 ## Security mechanisms
 
@@ -46,7 +46,7 @@ The uniqueness of identifiers allows you to verify the activities of individual 
 
 ### Independence of the identifier from the permissions in the application
 
-The identifier does not in any way determine permissions in the application, as they are granted independently. Even if a user has the word "administrator" in their name or has been assigned to the "administrator" role, this does not grant them any administrative privileges.
+The identifier does not in any way determine permissions in the application, as they are granted independently. Even if a user has the word "administrator" in their name or has been assigned to the "administrator" role, this does not grant them any administrative permissions.
 
 ### Blocking and removing users
 

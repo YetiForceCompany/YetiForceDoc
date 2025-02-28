@@ -1,5 +1,5 @@
 ---
-title: Privileges
+title: Permissions
 description: In the system, you can manage users, map the organizational structure of the company, define permissions to data and functionalities, create and manage groups.
 keywords:
   - Privileges

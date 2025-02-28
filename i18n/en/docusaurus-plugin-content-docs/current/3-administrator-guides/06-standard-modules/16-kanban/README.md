@@ -50,11 +50,11 @@ Once you click <kbd>Add</kbd> the board will be available in the selected module
 
   ![Detail field view](kanban-6.png)
 
-- Pola sumowania - lista pól które mają być poddane sumowaniu dla danej wartości (słupka kanbana), dla której jest wyświetlany kanban. Dostępne są tylko pola liczbowe, na których można wykonać operacje sumowania.
+- Summary Fields - list of fields to be added up for a given value (kanban bar) where kanban is displayed. Only numeric fields are available where sum operations can be performed.
 
   ![Summary view](kanban-7.png)
 
-Dane na liście wyboru są zapisane automatycznie podczas każdej zmiany.
+The data in the pick list is saved automatically upon each change.
 
 ## Permissions
 

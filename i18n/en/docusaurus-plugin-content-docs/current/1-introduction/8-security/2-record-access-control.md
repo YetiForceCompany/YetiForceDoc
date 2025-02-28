@@ -12,7 +12,7 @@ tags:
   - records
 ---
 
-Limiting access to data is crucial for organizations that care about systems that meet the `need to know` principle - i.e.
+Limiting access to data is crucial from the perspective of organizations that want systems that meet the 'need to know' rule - i. e. assigning the minimum necessary access, and 'Separation of duties' - i. e. segregation of duties.
 
 ## Data access business logic
 
@@ -59,7 +59,7 @@ Due to the variety of responsibilities in the organization, there is often a nee
 
 One of the most important features is the ability to activate permissions granted due to access to the parent record, e.g., if you have access to an Account record, you can see all data (e.g., comments, calendar, service contracts, quotes, etc.). This functionality is particularly useful in companies that limit access on a single level (i.e. it grants access to the Account and all of their data).
 
-If we open a related record, such as an invoice on the Account, then the system verifies whether the user has the permissions to the parent record; if so, the system will allow you to open the record. At the same time, the record you opened from the Account level (e.g. an invoice) will not be available to the user in other views, e.g. in the list of all invoices.
+If you open a related record, such as an invoice on the Account, then the system verifies whether the user has the permissions to the parent record; if so, the system will allow you to open the record. At the same time, the record you opened from the Account level (e. g. an invoice) will not be available to the user in other views, e. g. in the list of all invoices.
 
 ### Permissions resulting from the hierarchy (upwards)
 

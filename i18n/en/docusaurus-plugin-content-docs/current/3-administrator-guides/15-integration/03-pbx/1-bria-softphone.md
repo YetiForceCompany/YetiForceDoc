@@ -47,9 +47,11 @@ import ReactPlayer from 'react-player';
             width="100%"
             height="500px"
             controls={true}
-        /></TabItem>
+        />
+    </TabItem>
     <TabItem value="yetiforce-sWyz4oqKYwI" label="🎥 YetiForce TV">
-        <ReactPlayer url="/video/integration-BriaSoftphone.mp4" width="100%" height="500px" controls={true} /></TabItem>
+        <ReactPlayer url="/video/integration-BriaSoftphone.mp4" width="100%" height="500px" controls={true} />
+    </TabItem>
 </Tabs>
 
 ## Configuration
