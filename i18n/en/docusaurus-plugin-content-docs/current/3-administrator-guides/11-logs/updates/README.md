@@ -37,9 +37,11 @@ Contact us to receive a quote.
             width="100%"
             height="500px"
             controls={true}
-        /></TabItem>
+        />
+    </TabItem>
     <TabItem value="yetiforce-zhh7fxZ293w" label="🎥 YetiForce TV">
-        <ReactPlayer url="/video/system-update.mp4" width="100%" height="500px" controls={true} /></TabItem>
+        <ReactPlayer url="/video/system-update.mp4" width="100%" height="500px" controls={true} />
+    </TabItem>
 </Tabs>
 
 System update can be divided into 3 types of activities, which involve quite important processes:

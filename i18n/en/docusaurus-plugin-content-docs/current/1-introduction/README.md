@@ -4,7 +4,7 @@ description: YetiForce is open source software used to manage customer relations
 keywords:
   - introduction
   - starts
-  - poradnik
+  - guide
   - YetiForce
 tags:
   - Introduction

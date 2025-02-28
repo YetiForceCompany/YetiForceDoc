@@ -20,16 +20,16 @@ Clearing browser cache is a very useful step that should be performed after upda
 
 2. Press <kbd>F12</kbd> or go to\*\* Developer tools.\*\*
 
-   To open Developer tools follow these steps:
+  To open Developer tools follow these steps:
 
-   ![how-to-clear-browser-cache-1.jpg](how-to-clear-browser-cache-1.jpg)
+  ![how-to-clear-browser-cache-1.jpg](how-to-clear-browser-cache-1.jpg)
 
 3. Select the `Application` tab in the popup window
 
 4. In the `Application` tab in the panel on the left select `Clear storage`
-   Click `Clear site data`
+  Click `Clear site data`
 
-   Then click `Clear site data`
+  Then click `Clear site data`
 
 ![how-to-clear-browser-cache-2.jpg](how-to-clear-browser-cache-2.jpg)
 
@@ -58,20 +58,20 @@ Select all the items you want to remove and the time range
 
 1. Open your YetiForce in Google Chrome
 
-2. Click on the icon in front of the website address
+2. Click the settings menu icon
 
-   ![mobile-chrome-1.jpg](mobile-chrome-1.jpg)
+  ![mobile-chrome-1.jpg](mobile-chrome-1.jpg)
 
-3. Select `Cookies and site data` from the list
+3. Choose `Delete browsing data` from the list
 
-   ![mobile-chrome-2.jpg](mobile-chrome-2.jpg)
+  ![mobile-chrome-2.jpg](mobile-chrome-2.jpg)
 
-4. Click the trash can icon <kbd><i class="fa-solid fa-trash"></i></kbd>
+4. Then click on `More options`
 
-   ![mobile-chrome-3.jpg](mobile-chrome-3.jpg)
+  ![mobile-chrome-3.jpg](mobile-chrome-3.jpg)
 
-5. Click <kbd>delete</kbd>
+5. Mark the items and click <kbd>Delete data</kbd>
 
-   ![mobile-chrome-4.jpg](mobile-chrome-4.jpg)
+  ![mobile-chrome-4.jpg](mobile-chrome-4.jpg)
 
-   Once finished, you will see the same view as in step 3.
+  Once finished, you will see the same view as in step 3.

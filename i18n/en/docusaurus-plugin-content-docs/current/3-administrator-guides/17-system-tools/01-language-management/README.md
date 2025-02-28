@@ -28,7 +28,9 @@ Tool that helps edit and manage translations in the system.
             width="100%"
             height="500px"
             controls={true}
-        /></TabItem>
+        />
+    </TabItem>
     <TabItem value="yetiforce" label="🎥 YetiForce TV">
-        <ReactPlayer url="/video/language-installation-update.mp4" width="100%" height="500px" controls={true} /></TabItem>
+        <ReactPlayer url="/video/language-installation-update.mp4" width="100%" height="500px" controls={true} />
+    </TabItem>
 </Tabs>
