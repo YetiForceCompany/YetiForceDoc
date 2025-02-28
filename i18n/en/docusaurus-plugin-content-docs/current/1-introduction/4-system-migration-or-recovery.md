@@ -14,7 +14,7 @@ tags:
   - backup
 ---
 
-Migrating or restoring the system from backup takes place in a few steps. By mieć pewność, że wykonujesz ją poprawnie, zapoznaj się z artykułem poniżej.
+Migrating or restoring the system from backup takes place in a few steps. To make sure you're doing it correctly, read the article below.
 
 ## Video guide
 
@@ -29,9 +29,11 @@ import ReactPlayer from 'react-player';
             width="100%"
             height="500px"
             controls={true}
-        /></TabItem>
+        />
+    </TabItem>
     <TabItem value="yetiforce-AAnD_Npa0ZM" label="🎥 YetiForce TV">
-        <ReactPlayer url="/video/system-migration.mp4" width="100%" height="500px" controls={true} /></TabItem>
+        <ReactPlayer url="/video/system-migration.mp4" width="100%" height="500px" controls={true} />
+    </TabItem>
 </Tabs>
 
 ## Upload files to the web root directory
@@ -62,7 +64,7 @@ tar -zcvf /var/www/html/`date +"%Y%m%d_%H%M"`.tar.gz /var/www/html/
 
 ## Upload the database
 
-Upload the database using the CLI console (recommended) or a database client eg.
+Upload the database using the CLI console (recommended) or a database client eg. DBeaver, Database Workbench , SQLyog
 
 ```sql
 mysql -P 3306 -h 127.0.0.1  -u yetiforce -p yetiforce < dump.sql
@@ -70,7 +72,7 @@ mysql -P 3306 -h 127.0.0.1  -u yetiforce -p yetiforce < dump.sql
 
 ## Update the configuration files
 
-After uploading the files and importing the database we should update the following files:
+After uploading the files and importing the database you should update the following files:
 
 - [config/Main.php](https://doc.yetiforce.com/code/classes/Config-Main.html#property_site_URL)
 
@@ -169,7 +171,7 @@ Migrating to a new server or restoring it from a backup requires [re-registratio
 
 ## Update addons
 
-[`System settings → Integration → Mail integration panel`](/administrator-guides/integration/mail-integration-panel/outlook).
+Some add-ons may require reconfiguration when changing the location or address of the YetiForce system, e.g. [`System settings → Integration → Mail integration panel`](/administrator-guides/integration/mail-integration-panel/outlook).
 
 ### YetiForce Outlook Integration Panel
 
@@ -181,7 +183,7 @@ The old addon installed in Outlook should be removed and the new XML file from t
 
 If you create a test environment, it is worth introducing some important changes that will help you distinguish and secure the environments.
 
-### Change user passowrds
+### Change user passwords
 
 ### Visual differentiation of environments
 

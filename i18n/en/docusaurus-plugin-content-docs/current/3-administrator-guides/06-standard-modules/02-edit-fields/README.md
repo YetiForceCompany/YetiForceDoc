@@ -35,12 +35,12 @@ If a field already exists in a given module, it won't be available in the field 
 
 The following fields can be added:
 
-- Właściciel rekordu
+- Assigned to
 - Created by
 - Last modified by
 - Created (time)
 - Modified (time)
-- Osoby współdzielące
+- Share with
 - Private
 - Web service application
 

@@ -20,7 +20,7 @@ This functionality is available for YetiForce version 7.0 and later
 
 :::warning
 
-Do integracji wykorzystuje dedykowane rozszerzenie od firmy Whirly, które obsługuje funkcjonujące procesy w systemie Genesys.
+A dedicated extension from Whirly that supports existing processes in the Genesys system is used for the integration.
 
 :::
 

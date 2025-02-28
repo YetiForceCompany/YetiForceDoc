@@ -1,5 +1,5 @@
 ---
-title: Widgety Predefiniowane
+title: Predefined Widgets
 description: Ready-to-use widgets that can be placed on your dashboard.
 keywords:
   - widgets
