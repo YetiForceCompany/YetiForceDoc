@@ -66,7 +66,7 @@ Wybierz wszystkie elementy, które chcesz usunąć i zakres czasowy
 
    ![mobile-chrome-3.jpg](mobile-chrome-3.jpg)
 
-5. Zaznacz poniższe opcje i klij w przycisk <kbd>Usuń dane</kbd>
+5. Oznacz elementy i klikj <kbd>Usuń dane</kbd>
 
    ![mobile-chrome-4.jpg](mobile-chrome-4.jpg)
 
