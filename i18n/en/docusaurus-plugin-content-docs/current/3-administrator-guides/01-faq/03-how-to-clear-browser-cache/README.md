@@ -70,7 +70,7 @@ Select all the items you want to remove and the time range
 
   ![mobile-chrome-3.jpg](mobile-chrome-3.jpg)
 
-5. Oznacz elementy i kliknij <kbd>Usuń dane</kbd>
+5. Mark the items and click <kbd>Delete data</kbd>
 
   ![mobile-chrome-4.jpg](mobile-chrome-4.jpg)
 
