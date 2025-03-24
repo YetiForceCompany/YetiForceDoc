@@ -44,7 +44,7 @@ You can also use the bash console
 
 ```bash
 cd /home/yfprod/html/
-wget -O YetiForceCRM.zip https://api.yetiforce.eu/download/crm/doc/7.0.3-complete
+wget -O YetiForceCRM.zip https://api.yetiforce.eu/download/crm/doc/7.0.4-complete
 unzip YetiForceCRM.zip
 chown -R yfprod:yfprod /home/yfprod/html/
 ```
