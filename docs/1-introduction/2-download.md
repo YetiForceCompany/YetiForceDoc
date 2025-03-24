@@ -13,7 +13,7 @@ Tutaj znajdziesz linki do pobrania najnowszej stabilnej wersji systemu.
 
 ## Gdzie znaleźć system YetiForce?
 
-- ### [Pobierz stabilną wersję z serwera YetiForce](https://api.yetiforce.eu/download/crm/doc/7.0.3-complete)
+- ### [Pobierz stabilną wersję z serwera YetiForce](https://api.yetiforce.eu/download/crm/doc/7.0.4-complete)
 - ### [Softaculous](https://www.softaculous.com/apps/erp/YetiForce)
 
 ## Wymagania systemu YetiForce

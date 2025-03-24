@@ -1,0 +1,39 @@
+```
+# YetiForce Change Log
+
+## 7.0.4 2025.03.24
+
+- Fix: Permissions to manually trigger workflow actions from the record card.
+- Fix: Updates of data in the "Values from the related module" fields (case of deleting only relationships).
+- Fix: Export to XLS (GitHub #89)
+- Fix: View record state in the user card.
+- Fix: Respecting certificate validation configurable in mail and SMTP server panels. (GitHub #91)
+- Fix: Generating queries for reference fields created in non-base tables (GitHub #85)
+- Fix: Calculating the progress of work on projects and project milestone.
+- Fix: Generating Gantt charts (php `deprecated` issue).
+- Fix: [Workflow] Division expression for empty fields (e.g. Unsupported operand types: string / int)
+- Fix: [Mail scanner] Decoding the email subject (GitHub #25).
+- Fix: [Mail scanner] Parsing an image where the imagick extension is not installed.
+- Fix: SMTP connection without encryption (GitHub #57). Check your SMTP configuration and if you didn't have encryption set, set it to TLS.
+- Fix: SLA policy without set criteria are not respected when determining ticket handling times (GitHub #101).
+- Fix: Generating advanced block records based on field mapping functionality (GitHub #97,#86).
+- Fix: Global search button styles (GitHub #93).
+- Fix: System update history dashboard widget (PHP Deprecated notice).
+- Fix: Displaying "Favorites" icons in the Modules-Relations panel.
+- Fix: Delay when getting back to YetiForce tab on Firefox (GitHub #77)
+- Fix: Generating PDF documents using the default YetiForcePDF engine.
+- Fix: [Workflow] Saving Reply-To field values in email sending actions.
+- Fix: Virtual fields on "Chart from filter" widgets.
+- Fix: Parsing email content when displaying. The case of emails containing many images in their content.
+- Fix: Reset password with token.
+
+- Enh: PDFViewer widget height configuration.
+- Enh: Calculating the progress of work on projects without the project milestone.
+- Enh: Possibility to delete values in a record for picklist fields via workflow actions.
+
+- Chg: [Mail scanner] SVG files are skipped by default, no more warnings (GitHub #25).
+- Chg: Updated dependent libraries [composer] (including `php-debugbar`, `yetiforcepdf` and others).
+- Chg: Updated dependent libraries [yarn].
+- Chg: Global system currency is set as default in advanced blocks, not from user preference as it was before.
+- Chg: Global search - operator list button, available in GUI via GLOBAL_SEARCH_OPERATOR_SELECT configuration parameter (config/Search.php). By default it is inactive.
+```
