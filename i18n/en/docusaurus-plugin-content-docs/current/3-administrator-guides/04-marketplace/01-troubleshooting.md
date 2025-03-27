@@ -15,7 +15,7 @@ The article below explains troubleshooting inactive or malfunctioning addons pur
 
 ## Update the registration status
 
-YetiForce must be correctly registered in order for the Marketplace and purchased addons to work properly. Jeśli mimo prawidłowej rejestracji Twój system nadal oczekuje na akceptację, możesz odświeżyć jej status klikając na przycisk `Sprawdź status` w panelu [`Konfiguracja systemu → Firma → Dane firmy`](/administrator-guides/company/company-details/#sprawdź-status).
+YetiForce must be correctly registered in order for the Marketplace and purchased addons to work properly. If, despite correct registration, the status is still `pending`, you can refresh its status by clicking the `Check status` button in the following panel: [`System configuration → Company → Company data`](/administrator-guides/company/company-details/#check-status).
 
 - More information about registration can be found in the [How to register YetiForce?](/administrator-guides/company/company-details/#how-to-register-yetiforce) manual.
 - In case of problems with registration you can find help in the [Problems with registration guide](/administrator-guides/company/problems-with-system-registration/).
@@ -58,4 +58,4 @@ If your issues persist you can contact us by sending an email and providing **al
 - screenshot of products purchased from Marketplace
 - screenshot of [installed updates](/administrator-guides/logs/updates/#activities-during-the-update)
 
-We recommend using encryption (PGP/GPG) to send us your credentials. The list of all required information can be found in the [Access data to the YetiForce CRM system article.](/developer-guides/github/access-data-to-YetiForce-system) ](/developer-guides/github/access-data-to-YetiForce-system) ](/developer-guides/github/access-data-to-YetiForce-system)
+We recommend using encryption (PGP/GPG) to send us your credentials. The list of all required information can be found in the [Access data to the YetiForce CRM system article.](/developer-guides/github/access-data-to-YetiForce-system)
