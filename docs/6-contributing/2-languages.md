@@ -12,7 +12,7 @@ tags:
   - crowdin
 ---
 
-![crowdin Localization Management Platform](https://support.crowdin.com/assets/logos/crowdin-logo-small-black.svg)
+![crowdin Localization Management Platform](https://support.crowdin.com/assets/logos/core-logo/png/crowdin-core-logo-cDark.png)
 
 ## Dostępne języki
 
