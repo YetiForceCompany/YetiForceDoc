@@ -24,7 +24,7 @@
 		"description": "Navbar item with label Contributing / Community"
 	},
 	"item.label.Portal": {
-		"message": "Portal",
+		"message": "Customer Portal",
 		"description": "Navbar item with label Portal"
 	}
 }
