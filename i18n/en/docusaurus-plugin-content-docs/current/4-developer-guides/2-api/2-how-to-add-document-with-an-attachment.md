@@ -43,11 +43,11 @@ Fields responsible for adding an attachment:
 
 - File type [filelocationtype]
 
- This field defines the type of attachment. Two values are available: I - Internal, E - External
+  This field defines the type of attachment. Two values are available: I - Internal, E - External
 
 - File name/WWW [filename]
 
- Attachment or link
+  Attachment or link
 
 Once you know what the structure of the Documents module looks like, you can proceed with API queries. Below you can find some examples of this type of queries:
 
@@ -119,21 +119,21 @@ You don't have to create separate API queries to relate the document, you can do
 
 - relationOperation (bool) /mandatory
 
- Determines that the created entry can be related
+  Determines that the created entry can be related
 
 - sourceModule (string) /mandatory
 
- Name of the module that the document should be related to
+  Name of the module that the document should be related to
 
 - sourceRecord (int) /mandatory
 
- ID of the record that the document should be related to
+  ID of the record that the document should be related to
 
 - relationId (int) /optional
 
- ID of the relation between modules
+  ID of the relation between modules
 
- Mandatory if there are more than one relation between modules
+  Mandatory if there are more than one relation between modules
 
 Example:
 
