@@ -11,9 +11,9 @@ tags:
 
 ## Opis
 
-YetiForce Portal to nowoczesny, dedykowany portal klienta zintegrowany z systemem YetiForce CRM, umożliwiający Twoim klientom dostęp do ich danych, między innymi takich jak zamówienia czy zgłoszenia. Portal pozwala na tworzenie kont użytkowników z przypisanymi rolami i profilami, które definiują zakres ich uprawnień i widoczność modułów. Dzięki temu klienci mogą samodzielnie przeglądać i zarządzać swoimi informacjami w bezpiecznym środowisku.
+Portal Klienta to dedykowane narzędzie umożliwiające komunikację Twojej firmy ze swoimi Klientami. Dzięki dostępowi do różnego rodzaju danych (np. zamówienia czy zgłoszenia) dbasz o przejrzysty przepływ informacji z Klientami, a także w znaczny sposób zmniejszysz liczbę pytań i telefonów od nich.
 
-Portal korzysta z rozszerzonego API Webservice Premium, które zapewnia pełną funkcjonalność i integrację z CRM. Konfiguracja portalu obejmuje ustawienie profili, ról, użytkowników oraz menu, co pozwala na precyzyjne dostosowanie dostępu i interfejsu do potrzeb użytkowników. W odróżnieniu od wersji 2 został stworzony z wykorzystaniem nowszych technologii (react), posiada więcej nowoczesnych funkcjonalności i jest kompatybilny z wersją 7.x systemu CRM.
+Portal Klienta korzysta z rozszerzonego API Webservice Premium, które zapewnia pełną funkcjonalność i integrację z systemem YetiForce. Konfiguracja Portalu obejmuje ustawienie ról, profili, użytkowników oraz menu, co pozwala na dostosowanie dostępu i interfejsu do potrzeb użytkowników. W porównaniu do poprzedniej wersji Portalu, jest on stworzony w technologii React, posiada więcej funkcjonalności i jest w pełni kompatybilny z najnowszą wersją systemu YetiForce (7.x).
 
 :::info
 
@@ -43,6 +43,6 @@ Potrzebujesz więcej informacji? Napisz do nas wiadomośc na hello@yetiforce.com
 
 ![Edycja rekordu](edit.jpg)
 
-### Tryb offline
+### Tryb offline, dostęp po utracie połączenia z internetem
 
 ![offline](offline.jpg)
