@@ -171,6 +171,11 @@ export default {
 					position: 'left',
 				},
 				{
+					to: 'portal',
+					label: 'Portal',
+					position: 'left',
+				},
+				{
 					to: 'contributing',
 					label: 'Contributing / Community',
 					position: 'left',
