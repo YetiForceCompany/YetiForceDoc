@@ -13,7 +13,7 @@ keywords:
 
 Zapraszamy do skorzystania z najnowszej, publicznej wersji demonstracyjnej systemu YetiForce. Jest to środowisko testowe, które zawiera wszystkie najnowsze funkcjonalności oraz poprawki.
 
-**Adres demo:** [demo.yetiforce.com](https://demo.yetiforce.com){:target="\_blank"}
+Adres: <a href="https://demo.yetiforce.com" target="_blank">demo.yetiforce.com</a>
 
 ### Dostęp do systemu
 
