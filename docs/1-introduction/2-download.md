@@ -9,21 +9,31 @@ tags:
   - pobierz
 ---
 
-Tutaj znajdziesz linki do pobrania najnowszej stabilnej wersji systemu.
+Pobranie i instalacja systemu są proste – poniżej znajdziesz wszystkie niezbędne informacje.
 
-## Gdzie znaleźć system YetiForce?
+## Skąd pobrać YetiForce?
 
-- ### [Pobierz stabilną wersję z serwera YetiForce](https://api.yetiforce.eu/download/crm/doc/7.0.4-complete)
-- ### [Softaculous](https://www.softaculous.com/apps/erp/YetiForce)
+Aby pobrać najnowszą, stabilną wersję systemu YetiForce, skorzystaj z poniższych opcji:
 
-## Wymagania systemu YetiForce
+- **[Pobierz stabilną wersję z oficjalnego serwera YetiForce](https://api.yetiforce.eu/download/crm/doc/7.0.4-complete)**
+- **[Instalacja przez Softaculous (automatyczny instalator)](https://www.softaculous.com/apps/erp/YetiForce)**
+
+## Jak rozpocząć?
+
+1. Wybierz jedną z powyższych opcji pobierania.
+2. Zapoznaj się z wymaganiami systemowymi (poniżej).
+3. Postępuj zgodnie z [instrukcją instalacji](/introduction/installation-manual).
+
+## Wymagania systemowe
 
 :::important
 
-Przed pobraniem zapoznaj się z wymaganiami dla serwera i oceń czy jest gotowy do rozpoczęcia procesu instalacji.
+Przed pobraniem upewnij się, że Twój serwer spełnia wymagania techniczne. Dzięki temu instalacja przebiegnie sprawnie i bez problemów.
 
 :::
 
-Pełna lista wymagań: [Wymagania systemu YetiForce](/introduction/requirements).
+Szczegółowa lista wymagań: [Wymagania systemu YetiForce](/introduction/requirements).
 
-Instrukcja krok po kroku: [Instrukcja instalacji systemu YetiForce](/introduction/installation-manual).
+## Potrzebujesz pomocy?
+
+Jeśli masz pytania lub napotkasz trudności, skorzystaj z oficjalnej dokumentacji lub skontaktuj się z naszym zespołem wsparcia. Jesteśmy tu, aby Ci pomóc!
