@@ -1,17 +1,19 @@
 ---
-title: Portal Klienta
-description: Portal Klienta
+title: Portal Klienta v3
+description: Portal Klienta v3 to dedykowane i nowoczesne narzędzie umożliwiające komunikację Twojej firmy ze swoimi klientami, partnerami i wszystkimi firmami zewnętrznymi.
 keywords:
   - YetiForce
-  - Klient
   - Portal
+  - Klienta
+  - Partnera
 tags:
   - Portal
+preview: detail.jpg
 ---
 
 ## Opis
 
-Portal Klienta to dedykowane narzędzie umożliwiające komunikację Twojej firmy ze swoimi Klientami. Dzięki dostępowi do różnego rodzaju danych (np. zamówienia czy zgłoszenia) dbasz o przejrzysty przepływ informacji z Klientami, a także w znaczny sposób zmniejszysz liczbę pytań i telefonów od nich.
+Portal Klienta v3 to dedykowane narzędzie umożliwiające komunikację Twojej firmy ze swoimi Klientami. Dzięki dostępowi do różnego rodzaju danych (np. zamówienia czy zgłoszenia) dbasz o przejrzysty przepływ informacji z Klientami, a także w znaczny sposób zmniejszysz liczbę pytań i telefonów od nich.
 
 Portal Klienta korzysta z rozszerzonego API Webservice Premium, które zapewnia pełną funkcjonalność i integrację z systemem YetiForce. Konfiguracja Portalu obejmuje ustawienie ról, profili, użytkowników oraz menu, co pozwala na dostosowanie dostępu i interfejsu do potrzeb użytkowników. W porównaniu do poprzedniej wersji Portalu, jest on stworzony w technologii React, posiada więcej funkcjonalności i jest w pełni kompatybilny z najnowszą wersją systemu YetiForce (7.x).
 
