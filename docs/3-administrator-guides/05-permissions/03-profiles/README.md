@@ -10,7 +10,7 @@ keywords:
 preview: profiles-01.jpg
 ---
 
-Profile pozwalają zdefiniować uprawnienia do wielu funkcji i widoków dostępnych w systemie.
+Profile pozwalają na określenie uprawnień do przeglądania, tworzenia, edycji, usuwania rekordów, w modułach, do których użytkownik ma dostęp. Dodatkowo w każdym module można określić listę pól, do których użytkownik ma uprawnienia (podgląd, edycja) oraz narzędzia, z jakich może korzystać.
 
 ![profiles-01.jpg](profiles-01.jpg)
 
