@@ -1,6 +1,6 @@
 ---
 title: Przydział właściciela rekordu
-description: Narzędzie to pozwala na określenie użytkowników/grup, jakie będą dostępne dla użytkownika przy tworzeniu rekordu w określonym module.
+description: Narzędzie umożliwia określenie użytkowników lub grup dostępnych przy tworzeniu rekordu w wybranym module.
 tags:
   - uprawnienia
   - przydział
@@ -14,4 +14,4 @@ preview: list.jpg
 
 ![list.jpg](list.jpg)
 
-Narzędzie to pozwala na określenie użytkowników/grup, jakie będą dostępne dla użytkownika przy tworzeniu rekordu w określonym module. Jeżeli dostępne opcje na roli przestają być wystarczające, wówczas z pomocą przychodzi to narzędzie.
+Narzędzie „Przydział właściciela rekordu” pozwala określić, którzy użytkownicy lub grupy będą dostępni do wyboru podczas tworzenia rekordu w wybranym module. Jeśli opcje dostępne w ramach roli są niewystarczające, to narzędzie umożliwia bardziej elastyczną konfigurację dostępności właścicieli rekordów.

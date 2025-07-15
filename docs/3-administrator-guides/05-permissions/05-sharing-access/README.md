@@ -1,16 +1,16 @@
 ---
 title: Dostęp do modułów
-description: Jednym z ważniejszych modułów zarządzających uprawnieniami, ponieważ określa on dostęp do rekordów, które nie należą do nas.
+description: Moduł umożliwia zarządzanie uprawnieniami do rekordów, które nie należą do użytkownika.
 tags:
   - uprawnienia
   - dostęp do modułów
 keywords:
   - uprawnienia
   - dostęp
-  - modułów
+  - moduły
 preview: list.jpg
 ---
 
 ![list.jpg](list.jpg)
 
-Jednym z ważniejszych modułów zarządzających uprawnieniami jest 'Dostęp do modułów', ponieważ określa on dostęp do rekordów, które nie należą do nas. Dodatkowo przy modułach można tworzyć wyjątki, które pozwalają nam na przegląd i edycję danych, które nie należą do nas.
+Moduł „Dostęp do modułów” jest kluczowym elementem zarządzania uprawnieniami w systemie YetiForce. Pozwala określić, kto może przeglądać i edytować rekordy, które nie należą do danego użytkownika. Dodatkowo, dla każdego modułu można ustawić wyjątki, które umożliwiają dostęp do wybranych danych innym osobom lub grupom, nawet jeśli nie są ich właścicielami.

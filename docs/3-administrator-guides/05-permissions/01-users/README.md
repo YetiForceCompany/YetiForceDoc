@@ -1,6 +1,6 @@
 ---
 title: Użytkownicy
-description: Moduł pozwala na wprowadzanie użytkowników (standardowych oraz administracyjnych) do systemu. Dzięki temu można decydować, kto ma dostęp i na jakim poziomie.
+description: Moduł pozwala na zarządzanie użytkownikami (standardowymi oraz administracyjnymi) w systemie YetiForce. Dzięki temu można decydować, kto ma dostęp i na jakim poziomie.
 keywords:
   - Użytkownicy
   - Panel konfiguracyjny
@@ -10,31 +10,31 @@ tags:
 preview: user_list.jpg
 ---
 
-Moduł `Użytkownicy` pozwala na wprowadzanie użytkowników (standardowych oraz administracyjnych) do systemu. Dzięki temu można decydować, kto ma dostęp i na jakim poziomie.
+Moduł `Użytkownicy` umożliwia zarządzanie wszystkimi użytkownikami systemu – zarówno standardowymi, jak i administracyjnymi. Pozwala to precyzyjnie określić, kto ma dostęp do systemu i jakie posiada uprawnienia.
 
 ## Lista użytkowników
 
 ![user_list.jpg][user_list.jpg]
 
-Bezpośrednio na liście użytkowników jest dostęp do takich narzędzi jak:
+Na liście użytkowników dostępne są następujące narzędzia:
 
-1. Masowa edycja - pozwala wprowadzać zmiany na wielu użytkownikach jednocześnie.
-2. Masowe resetowanie hasła - przydatne, gdy trzeba zmienić hasło dostępu dla wielu użytkowników jednocześnie.
-3. Import i eksport użytkowników pozwala na łatwe przenoszenie użytkowników pomiędzy różnymi systemami bazowymi.
-4. Dodawanie użytkownika - pozwala na ręczne dodanie użytkownika w systemie.
+1. **Masowa edycja** – umożliwia wprowadzanie zmian dla wielu użytkowników jednocześnie.
+2. **Masowe resetowanie haseł** – przydatne, gdy konieczna jest zmiana haseł dla wielu użytkowników naraz.
+3. **Import i eksport użytkowników** – pozwala łatwo przenosić użytkowników między różnymi systemami.
+4. **Dodawanie użytkownika** – umożliwia ręczne dodanie nowego użytkownika do systemu.
 
 ## Dodawanie użytkownika
 
 ![user_add.jpg][user_add.jpg]
 
-Dodając użytkownika do systemu, należy wypełnić wszystkie pola wymagane przez system (oznaczone gwiazdką) oraz prawidłowo skonfigurować takie informacje, jak waluta, strefa czasowa, formatowanie liczb, język itd.
+Podczas dodawania użytkownika należy wypełnić wszystkie wymagane pola (oznaczone gwiazdką) oraz poprawnie skonfigurować takie informacje jak waluta, strefa czasowa, formatowanie liczb czy język.
 
-Od strony uprawnień, najważniejszym polem jest `Rola`, ponieważ będzie ono definiowało zakres uprawnień i zakres dostępu do danych w całym systemie. Jednocześnie należy pamiętać, że żaden użytkownik nie powinien pracować na użytkowniku `administrator`, ponieważ uprawnienia administracyjne służą tylko do zmian administracyjnych w systemie.
+Najważniejszym polem z punktu widzenia uprawnień jest `Rola`, która definiuje zakres dostępu do danych w systemie. Zalecamy, aby na koncie `administrator` nie pracować na co dzień – uprawnienia administracyjne powinny być wykorzystywane wyłącznie do zarządzania systemem.
 
-System ma wbudowany mechanizm, który wymusza co określony czas zmianę hasła na nowe. Dodatkowo system posiada wsparcie dla 2FA.
+System posiada mechanizm wymuszający okresową zmianę hasła oraz obsługuje uwierzytelnianie dwuskładnikowe (2FA).
 
 ## Import użytkowników
 
 ![user_import.jpg][user_import.jpg]
 
-System umożliwia import użytkowników. Warto mieć na uwadze, że format danych powinien być zgodny z formatem danych przy eksporcie użytkowników.
+System umożliwia import użytkowników. Należy pamiętać, że format danych importowanych powinien być zgodny z formatem danych eksportowanych z systemu.

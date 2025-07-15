@@ -1,6 +1,6 @@
 ---
 title: Przydział osób współdzielących
-description: Ten panel działa tak samo jak w przypadku modułu 'Przydział właściciela rekordu', ale dotyczy on drugiego pola od uprawnień, czyli pola osób współdzielących.
+description: Panel umożliwia zarządzanie uprawnieniami do rekordów na podstawie pola osób współdzielących.
 tags:
   - uprawnienia
   - przydział
@@ -14,4 +14,6 @@ preview: list.jpg
 
 ![list.jpg](list.jpg)
 
-Jest to narzędzie, które pozwala na przeglądanie danych na liście rekordów, nie na podstawie tylko tego do kogo dane są przypisane, ale również na podstawie uprawnień wynikających z dziedziczenia. Moduł ten domyślnie działa wolno dla dużych systemów mających duże bazy danych i dużą ilość użytkowników. Dodatkowo mechanizm działa z pewnym opóźnieniem (czas oczekiwania zależy od konfiguracji CRON-a).
+Panel „Przydział osób współdzielących” działa podobnie jak moduł „Przydział właściciela rekordu”, ale dotyczy pola osób współdzielących. Narzędzie to pozwala przeglądać dane na liście rekordów nie tylko na podstawie właściciela, ale także uprawnień wynikających z dziedziczenia.
+
+Warto pamiętać, że w dużych systemach z rozbudowaną bazą danych i wieloma użytkownikami, moduł może działać wolniej. Dodatkowo, mechanizm przydziału działa z pewnym opóźnieniem – czas oczekiwania zależy od konfiguracji CRON-a.

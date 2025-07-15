@@ -12,13 +12,13 @@ preview: list.jpg
 
 ![list.jpg](list.jpg)
 
-Narzędzie pozwala ograniczać użytkownikom kopiowanie i wklejanie danych z i do systemu. Do podstawowych możliwości narzędzia możemy zaliczyć:
+Narzędzie pozwala ograniczać użytkownikom kopiowanie, wycinanie i wklejanie danych z oraz do systemu YetiForce. Do podstawowych możliwości narzędzia należą:
 
-- Blokadę wycinania
-- Blokadę kopiowania
-- Blokadę wklejania
-- Blokadę prawego klawisza myszki
-- Blokadę zaznaczenia
-- Blokadę przeciągania elementów strony
+- Blokada wycinania
+- Blokada kopiowania
+- Blokada wklejania
+- Blokada prawego przycisku myszy
+- Blokada zaznaczania
+- Blokada przeciągania elementów strony
 
-Należy pamiętać, że ograniczenia te są nakładane na warstwie przeglądarki, a więc jeżeli ktoś użyje przeglądarki, która nie wspiera tego typu zabezpieczeń, to nie będą one działać.
+Należy pamiętać, że te ograniczenia są nakładane na poziomie przeglądarki internetowej. Jeśli użytkownik korzysta z przeglądarki, która nie obsługuje tego typu zabezpieczeń, blokady mogą nie działać.

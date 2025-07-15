@@ -1,12 +1,11 @@
 ---
 title: Role
-description: W systemie istnieje wbudowany moduł ról, umożliwiający mapowanie struktury organizacyjnej firmy.
+description: Wbudowany moduł ról umożliwia odwzorowanie struktury organizacyjnej firmy w systemie YetiForce.
 keywords:
   - firma
-  - organizacyjna
-  - struktura
+  - struktura organizacyjna
   - role
-  - Ustawienia
+  - ustawienia
   - YetiForce
 tags:
   - role
@@ -14,28 +13,28 @@ tags:
 preview: role-1.jpg
 ---
 
-W systemie istnieje wbudowany moduł Ról, umożliwiający mapowanie struktury organizacyjnej firmy. Mechanizm ten może odzwierciedlać nawet najbardziej złożoną strukturę. Aby skonfigurować ten moduł, musisz przejść do "Konfiguracja systemu" i wybrać "Uprawnienia" i "Role".
+W systemie YetiForce dostępny jest moduł Ról, który pozwala odwzorować strukturę organizacyjną firmy – nawet bardzo złożoną. Aby skonfigurować role, przejdź do "Konfiguracja systemu" → "Uprawnienia" → "Role".
 
-Zacznijmy od przykładu organizacji, gdzie na samej górze mamy prezesa, pod nim dyrektora, pod nim trzech kierowników i każdy ma po jednym pracowniku. Jest to prosty przykład struktury, ale w systemie YetiForce nie ma ograniczeń jeśli chodzi o ilość poziomów, które można dodać.
+Przykładowa struktura może wyglądać następująco: na górze znajduje się prezes, pod nim dyrektor, następnie kilku kierowników, a pod każdym z nich pracownicy. W systemie nie ma ograniczeń co do liczby poziomów w strukturze.
 
 ## Drzewo ról
 
 ![role-1.jpg](role-1.jpg)
 
-Moduł `Role` jest modułem łączącym z jednej strony użytkowników, a z drugiej profile, z których użytkownik dziedziczy uprawnienia do modułów, narzędzi i akcji.
+Moduł `Role` łączy użytkowników z profilami, z których dziedziczą uprawnienia do modułów, narzędzi i akcji.
 
 ## Dodawanie roli
 
 ![role-add.jpg](role-add.jpg)
 
-Tworzenie roli daje ogromne możliwości na definiowanie uprawnień dla użytkowników, którzy zostali przypisani bezpośrednio do tej roli. Do najważniejszych możliwości modułu można zaliczyć:
+Tworząc rolę, możesz precyzyjnie określić uprawnienia dla użytkowników przypisanych do tej roli. Najważniejsze możliwości to:
 
-1. Określenie uprawnień do przypisywania użytkowników/grup dla pola 'właściciel rekordu' - uprawnienie działa globalnie.
-2. Określenie uprawnień do przypisywania użytkowników/grup dla pola 'osoby współdzielące' - uprawnienie działa globalnie.
-3. Przypisanie do profilu lub profili (w przypadku przydzielenie do wielu profili, system sumuje uprawnienia).
-4. Blokada zmiany właściciela rekordu (wówczas przy każdym tworzeniu rekordu to on jest jego właścicielem bez możliwości zmiany - pole jest nieaktywne).
+1. Ustalanie, kto może być właścicielem rekordu (globalnie dla całego systemu).
+2. Ustalanie, kto może być osobą współdzielącą rekord (globalnie).
+3. Przypisanie do jednego lub wielu profili (uprawnienia są sumowane).
+4. Blokada zmiany właściciela rekordu (wtedy nowo utworzony rekord zawsze ma przypisanego właściciela z tej roli, bez możliwości zmiany).
 
-Dla uprawnień opisanych w punktach 1. i 2., system pozwala na ustawienie następujących mechanizmów:
+Dla uprawnień z punktów 1 i 2 możesz wybrać jeden z poniższych mechanizmów:
 
 - Tylko ja - użytkownik, który jest zalogowany
 - Użytkownicy posiadający podrzędną rolę
@@ -43,27 +42,27 @@ Dla uprawnień opisanych w punktach 1. i 2., system pozwala na ustawienie nastę
 - Wszyscy użytkownicy
 - Z panelu przydziału rekordów
 
-W praktyce oznacza to, że gdy w punktach 1. i 2. zostanie ustawiona któraś z powyższych wartości, będzie można uzyskać dostęp do różnej listy użytkowników/grup jakie można przydzielać, tworząc rekord. Ostatnia opcja (z panelu) pozwala na dowolną inną konfigurację, którą można określić w niezależnym panelu opisanym również w tej dokumentacji.
+W zależności od wybranej opcji, podczas tworzenia rekordu dostępna będzie odpowiednia lista użytkowników lub grup do przypisania. Ostatnia opcja pozwala na dowolną konfigurację w niezależnym panelu.
 
-Następnie w roli można określić dodatkowe parametry decydujące o 'dziedziczeniu uprawnień':
+Dodatkowo, w roli można ustawić parametry dotyczące dziedziczenia uprawnień:
 
-1. Czy udostępnić listę do rekordów powiązanych z rekordem do którego mamy dostęp?
-2. Czy udostępnić podgląd do rekordów powiązanych z rekordem do którego mamy dostęp?
-3. Uprawnienia do rekordów powiązanych bazują na:
-   1. Właściciel rekordu
-   2. Osoby współdzielące
-   3. Dostęp do rekordu
-   4. Wyjątki zasad dostępu
+1. Czy udostępnić listę rekordów powiązanych z rekordem, do którego mamy dostęp?
+2. Czy udostępnić podgląd rekordów powiązanych?
+3. Na jakiej podstawie mają być przyznawane uprawnienia do rekordów powiązanych:
+   - Właściciel rekordu
+   - Osoby współdzielące
+   - Dostęp do rekordu
+   - Wyjątki zasad dostępu
 
-Parametry te, pozwalają na włączenie zależności dostępu do danych w zależności od hierarchii powiązania modułów, np. jeżeli mamy dostęp do klienta, to możemy mieć również dostęp do wszystkich rekordów powiązanych, np. kalendarz, dokumenty, komentarze, faktury nawet jeżeli użytkownik nie ma do nich bezpośrednio dostępu.
+Te ustawienia pozwalają na dostęp do powiązanych danych zgodnie z hierarchią – np. mając dostęp do klienta, możesz mieć dostęp do jego dokumentów, komentarzy czy faktur, nawet jeśli nie masz do nich bezpośrednich uprawnień.
 
-Dodatkowo jeżeli zostanie włączona opcja: 'Czy włączyć edycję do rekordów powiązanych - z naszym rekordem - których nie jesteśmy właścicielem?' wówczas system pozwoli nam na edycję rekordów, nawet jeżeli normalnie nie mielibyśmy do tego dostępu. Należy pamiętać, że dostęp mamy tylko wówczas, gdy system 'wie' z jakiego rekordu 'otrzymaliśmy' te uprawnienia.
+Możesz także włączyć opcję edycji rekordów powiązanych, których nie jesteś właścicielem – system pozwoli na edycję, jeśli uprawnienia wynikają z powiązania z innym rekordem.
 
-Na roli możemy określić poziom do wyszukiwarki oraz do danych jakie możemy wyszukiwać, możemy to ustawić za pomocą narzędzi:
+W roli można określić również poziom dostępu do wyszukiwarki i danych, które można wyszukiwać, np.:
 
-- Moduły w których można wyszukiwać bez uprawnień
-- Czy włączyć możliwość zaawansowanego wyszukiwania?
+- Moduły dostępne do wyszukiwania bez uprawnień
+- Możliwość zaawansowanego wyszukiwania
 
-W systemie można wyłączyć również możliwość podglądu innych kalendarzy (z poziomu graficznego interfejsu - 'Czy może przeglądać graficzny kalendarz innych użytkowników?').
+Możliwe jest także wyłączenie podglądu kalendarzy innych użytkowników (z poziomu graficznego interfejsu).
 
-Opcja 'Automatyczny przydział rekordów' pozwala na wykorzystanie panelu do automatycznego rozdzielania rekordów w systemie. Opcja ta jest szczególnie przydatna dla firm, które automatycznie ładują do systemu duże bazy leadów i szans sprzedażowych.
+Opcja "Automatyczny przydział rekordów" pozwala na automatyczne rozdzielanie rekordów w systemie, co jest szczególnie przydatne przy dużej liczbie leadów lub szans sprzedażowych.
