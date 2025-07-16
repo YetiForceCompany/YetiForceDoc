@@ -23,7 +23,7 @@ Przykładowa struktura może wyglądać następująco: na górze znajduje się p
 
 Moduł `Role` łączy użytkowników z profilami, z których dziedziczą uprawnienia do modułów, narzędzi i akcji.
 
-## Dodawanie roli
+## Tworzenie roli
 
 ![role-add.jpg](role-add.jpg)
 
