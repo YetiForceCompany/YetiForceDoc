@@ -14,7 +14,7 @@ Profile umożliwiają precyzyjne określenie uprawnień do przeglądania, tworze
 
 ![profiles-01.jpg](profiles-01.jpg)
 
-## Dodawanie nowego profilu
+## Tworzenie nowego profilu
 
 Domyślnie w systemie znajduje się jeden profil — Administrator. Aby dodać nowy profil z wstępnie skonfigurowanymi uprawnieniami, kliknij przycisk <kbd>+ Dodaj profil</kbd> w lewym górnym rogu ekranu. Następnie podaj nazwę i opcjonalnie opis profilu.
 

@@ -1,6 +1,6 @@
 ---
 title: Blokady
-description: Narzędzie pozwala ograniczać użytkownikom kopiowanie i wklejanie danych z i do systemu.
+description: Narzędzie pozwala ograniczać użytkownikom kopiowanie i wklejanie danych.
 tags:
   - uprawnienia
   - blokady

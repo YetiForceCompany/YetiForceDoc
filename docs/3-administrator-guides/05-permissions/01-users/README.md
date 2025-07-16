@@ -23,7 +23,7 @@ Na liście użytkowników dostępne są następujące narzędzia:
 3. **Import i eksport użytkowników** – pozwala łatwo przenosić użytkowników między różnymi systemami.
 4. **Dodawanie użytkownika** – umożliwia ręczne dodanie nowego użytkownika do systemu.
 
-## Dodawanie użytkownika
+## Tworzenie użytkownika
 
 ![user_add.jpg][user_add.jpg]
 
