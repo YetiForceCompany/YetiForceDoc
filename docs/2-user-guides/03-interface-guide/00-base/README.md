@@ -7,7 +7,7 @@ keywords:
   - YetiForce
 tags:
   - Akcje
-  - Pperacje
+  - Operacje
 ---
 
 ## Usuń rekord z systemu
