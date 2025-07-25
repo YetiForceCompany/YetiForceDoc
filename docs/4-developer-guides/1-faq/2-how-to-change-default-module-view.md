@@ -78,6 +78,12 @@ Aby zobaczyć, jakie widoki możesz ustawić:
 - **Calendar** – [Widok kalendarza, przydatny do zarządzania wydarzeniami i terminami.](/user-guides/interface-guide/calendar-view/)
 - **Kanban** – [Widok Kanban, umożliwiający zarządzanie zadaniami w formie kart.](/user-guides/interface-guide/kanban-view/)
 
+:::warning
+
+Każdy moduł może mieć inną listę dostępnych widoków
+
+:::
+
 ## Dodatkowe wskazówki
 
 - Jeśli nie masz dostępu do plików konfiguracyjnych, skontaktuj się z administratorem systemu.
