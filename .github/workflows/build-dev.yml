@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   build:
-    name: Build - node 18
+    name: Build - node 20
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,10 +22,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Use Node.js 18.x
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'yarn'
 
       - name: Install

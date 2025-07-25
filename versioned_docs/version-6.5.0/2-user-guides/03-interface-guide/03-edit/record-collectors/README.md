@@ -25,7 +25,7 @@ import ReactPlayer from 'react-player';
         />
     </TabItem>
     <TabItem value="yetiforce-XlIXiQpC9ug" label="🎥 YetiForce TV">
-        <ReactPlayer url="/video/record-collector.mp4" width="100%" height="500px" controls={true} />
+        <ReactPlayer url="https://public.yetiforce.com/tutorials/record-collector.mp4" width="100%" height="500px" controls={true} />
     </TabItem>
 </Tabs>
 

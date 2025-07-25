@@ -40,7 +40,7 @@ Artykuł omawia najważniejsze kwestie związane z dodatkiem Outlook do systemu 
         />
     </TabItem>
     <TabItem value="yetiforce-WwgE1yX6akE" label="🎥 YetiForce TV">
-        <ReactPlayer url="/video/outlook-integration-panel.mp4" width="100%" height="500px" controls={true} />
+        <ReactPlayer url="https://public.yetiforce.com/tutorials/outlook-integration-panel.mp4" width="100%" height="500px" controls={true} />
     </TabItem>
 </Tabs>
 
