@@ -27,7 +27,7 @@ YetiForce programmers will first review and verify the code you send us, and the
 
 CLA stands for **Contributor License Agreement** and is mandatory to add/modify our code. This document protects both you and our company from false copyright claims concerning the code. If we don't receive a signed CLA from you, we will unfortunately not be able to accept your Pull Requests.
 
-- Pobierz CLA: [YetiForce CLA.pdf](/files/YetiForce-CLA-PL.pdf)
+- Pobierz CLA: [YetiForce CLA.pdf](https://public.yetiforce.com/YetiForce-CLA-PL.pdf)
 
 ## Coding standards
 

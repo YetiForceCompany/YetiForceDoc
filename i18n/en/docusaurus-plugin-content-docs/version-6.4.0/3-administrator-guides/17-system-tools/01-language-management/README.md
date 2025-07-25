@@ -31,6 +31,6 @@ Tool that helps edit and manage languages and translations in the system.
 		/>
 	</TabItem>
 	<TabItem value="yetiforce" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/language-installation-update.mp4" width="100%" height="500px" controls={true} />
+		<ReactPlayer url="https://public.yetiforce.com/tutorials/language-installation-update.mp4" width="100%" height="500px" controls={true} />
 	</TabItem>
 </Tabs>

@@ -32,7 +32,7 @@ Proces aktualizacji systemu jest prostszy niż proces instalacji lub migracji, w
         />
     </TabItem>
     <TabItem value="yetiforce-zhh7fxZ293w" label="🎥 YetiForce TV">
-        <ReactPlayer url="/video/system-update.mp4" width="100%" height="500px" controls={true} />
+        <ReactPlayer url="https://public.yetiforce.com/tutorials/system-update.mp4" width="100%" height="500px" controls={true} />
     </TabItem>
 </Tabs>
 
