@@ -25,7 +25,7 @@ import ReactPlayer from 'react-player';
 		/>
 	</TabItem>
 	<TabItem value="yetiforce-XlIXiQpC9ug" label="🎥 YetiForce TV">
-		<ReactPlayer url="/video/record-collector.mp4" width="100%" height="500px" controls={true} />
+		<ReactPlayer url="https://public.yetiforce.com/tutorials/record-collector.mp4" width="100%" height="500px" controls={true} />
 	</TabItem>
 </Tabs>
 
@@ -41,7 +41,7 @@ Collectors can be configured in the following panel: [`Software configuration �
 
 ## Available collectors
 
-Below is a list of all currently available record collectors. Free collectors available in the system by default are marked with ★, the remaining ones can be purchased from the Marketplace. 
+Below is a list of all currently available record collectors. Free collectors available in the system by default are marked with ★, the remaining ones can be purchased from the Marketplace.
 We regularly add new record collectors to the YetiForce system.
 
 - GUS [PL] - Fetches data on Polish companies from the online REGON 1(BIR1) database provided by GUS

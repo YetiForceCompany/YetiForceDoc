@@ -132,27 +132,26 @@ export default {
 	themeConfig: {
 		metadata: [
 			{
-				name: 'keywords',
-				content: 'yetiforce,help,doc,docs,documentation,guides,wiki,knowledge,dokumentacja,baza wiedzy',
-			},
-			{
 				name: 'description',
 				content: 'Official YetiForce System documentation / guide / knowledge',
 			},
+			{
+				name: 'keywords',
+				content:
+					'yetiforce, crm, erp, help, doc, docs, documentation, guides, wiki, knowledge, dokumentacja, baza wiedzy',
+			},
+			{ name: 'twitter:card', content: 'summary_large_image' },
+			{ name: 'twitter:title', content: 'YetiForce Documentation' },
+			{ name: 'twitter:description', content: 'Official YetiForce System documentation / guide / knowledge' },
+			{ name: 'twitter:image', content: 'https://doc.yetiforce.com/img/logo/128x128.png' },
+			{ property: 'og:title', content: 'YetiForce Documentation' },
+			{ property: 'og:description', content: 'Official YetiForce System documentation / guide / knowledge' },
+			{ property: 'og:image', content: 'https://doc.yetiforce.com/img/logo/128x128.pngg' },
+			{ property: 'og:url', content: 'https://doc.yetiforce.com/' },
 		],
 		image: 'img/logo_horizontal.png',
 		prism: {
-			additionalLanguages: [
-				'ini',
-				'php',
-				'javadoclike',
-				'phpdoc',
-				'php-extras',
-				'apacheconf',
-				'nginx',
-				'http',
-				'apacheconf',
-			],
+			additionalLanguages: ['ini', 'php', 'javadoclike', 'phpdoc', 'php-extras', 'apacheconf', 'nginx', 'http'],
 		},
 		navbar: {
 			title: 'YetiForce Documentation',
