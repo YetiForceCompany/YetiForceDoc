@@ -71,12 +71,12 @@ Aby zobaczyć, jakie widoki możesz ustawić:
 
 ## Lista podstawowych widoków
 
-- **List** – Widok listy, umożliwiający przeglądanie danych w formie tabeli.
+- **List** – [Widok listy, umożliwiający przeglądanie danych w formie tabeli.](/user-guides/interface-guide/list-view/)
 - **ListPreview** – Widok listy z podglądem, pozwalający na szybki wgląd w szczegóły rekordów.
 - **DashBoard** – Widok pulpitu nawigacyjnego, umożliwiający szybki dostęp do najważniejszych informacji.
 - **Tiles** – Widok kafelkowy, idealny do wizualizacji danych.
-- **Calendar** – Widok kalendarza, przydatny do zarządzania wydarzeniami i terminami.
-- **Kanban** – Widok Kanban, umożliwiający zarządzanie zadaniami w formie kart.
+- **Calendar** – [Widok kalendarza, przydatny do zarządzania wydarzeniami i terminami.](/user-guides/interface-guide/calendar-view/)
+- **Kanban** – [Widok Kanban, umożliwiający zarządzanie zadaniami w formie kart.](/user-guides/interface-guide/kanban-view/)
 
 ## Dodatkowe wskazówki
 
