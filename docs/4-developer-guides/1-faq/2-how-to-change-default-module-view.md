@@ -1,6 +1,6 @@
 ---
 title: Jak zmienić domyślny widok modułu
-description: Artykuł opisuje, w jaki sposób zmienić domyślny widok tylko dla jednego modułu w YetiForce CRM.
+description: Dowiedz się, jak łatwo zmienić domyślny widok wybranego modułu w YetiForce.
 keywords:
   - domyślny
   - widok
@@ -13,23 +13,35 @@ tags:
 preview: 2-how-to-change-default-module-view-1.jpg
 ---
 
-Artykuł opisuje, w jaki sposób zmienić domyślny widok tylko dla jednego modułu w YetiForce CRM.
+## Wprowadzenie
+
+Ten poradnik wyjaśnia krok po kroku, jak zmienić domyślny widok wybranego modułu w systemie YetiForce. Dzięki tej funkcji możesz dostosować wygląd modułu do własnych preferencji i wygody pracy.
 
 ![2-how-to-change-default-module-view-1.jpg](2-how-to-change-default-module-view-1.jpg)
 
 :::tip
 
-Poniższy przykład dotyczy modułu Wydarzenia, ale można go zastosować do dowolnego modułu w YetiForce CRM.
-
-Nazwę modułu można znaleźć w pasku adresu przeglądarki w paramerze `module`, gdy jesteśmy w danym module. Na przykład, jeśli adres URL zawiera `https://demo.yetiforce.com/index.php?module=Occurrences&view=List&mid=162&parent=52`, to nazwa modułu to `Occurrences`.
+Przykład dotyczy modułu Wydarzenia, ale możesz zastosować te same kroki do dowolnego innego modułu w YetiForce.
 
 :::
 
-## Jak zmienić domyślny widok modułu
+## Jak znaleźć systemową nazwę modułu
 
-Aby zmienić domyślny widok modułu, należy utworzyć plik konfiguracyjny w katalogu `config/Modules/__NAZWA_MODUŁU__.php` o nazwie odpowiadającej systemowej nazwie modułu, np. `config/Modules/Occurrences.php` dla modułu Wydarzenia.
+Aby zmienić widok, najpierw sprawdź nazwę modułu, który chcesz dostosować. Nazwę znajdziesz w pasku adresu przeglądarki, w parametrze `module`. Przykład:
 
-W tym pliku należy zdefiniować statyczną właściwość `$defaultViewName`, która będzie zawierała nazwę domyślnego widoku, np.
+`https://demo.yetiforce.com/index.php?module=Occurrences&view=List&mid=162&parent=52`
+
+W tym przypadku nazwa modułu to **Occurrences**.
+
+## Zmiana domyślnego widoku modułu – instrukcja krok po kroku
+
+1. **Utwórz plik konfiguracyjny (jeśli nie istnieje)**
+
+   - Przejdź do katalogu `config/Modules/` na serwerze, gdzie zainstalowany jest YetiForce.
+   - Utwórz nowy plik (jeśli nie istnieje) o nazwie odpowiadającej nazwie systemowej modułu, np. `Occurrences.php` dla modułu Wydarzenia.
+
+2. **Wklej poniższy kod do pliku**
+   - Skopiuj i wklej poniższy kod, dostosowując nazwę klasy do wybranego modułu:
 
 ```php
 <?php
@@ -43,10 +55,31 @@ class Occurrences
 
 ```
 
-## Lista dostępnych widoków
+3. **Zapisz plik**
+   - Po zapisaniu pliku, domyślny widok modułu zostanie zmieniony na wybrany.
 
-Aby sprawdzić, jakie widoki są dostępne w danym module, wystarczy wejść do widoku listy i kliknąć przycisk w lewym górnym rogu. W menu rozwijanym pojawi się lista dostępnych widoków, z których można wybrać interesujacy nas widok.
+## Jak sprawdzić dostępne widoki
 
-Następnie znaleźć w adresie URL parametr `view`, który będzie zawierał nazwę wybranego widoku. Na przykład, jeśli adres URL zawiera `https://demo.yetiforce.com/index.php?module=Occurrences&view=Tiles`, to nazwa widoku to `Tiles`.
+Aby zobaczyć, jakie widoki możesz ustawić:
+
+- Wejdź do wybranego modułu w YetiForce.
+- Kliknij przycisk wyboru widoku w lewym górnym rogu listy.
+- W menu rozwijanym zobaczysz dostępne widoki.
+- W adresie URL pojawi się parametr `view` z nazwą wybranego widoku, np. `Tiles`, `List` itp.
 
 ![2-how-to-change-default-module-view-2.jpg](2-how-to-change-default-module-view-2.jpg)
+
+## Lista podstawowych widoków
+
+- **List** – Widok listy, umożliwiający przeglądanie danych w formie tabeli.
+- **ListPreview** – Widok listy z podglądem, pozwalający na szybki wgląd w szczegóły rekordów.
+- **DashBoard** – Widok pulpitu nawigacyjnego, umożliwiający szybki dostęp do najważniejszych informacji.
+- **Tiles** – Widok kafelkowy, idealny do wizualizacji danych.
+- **Calendar** – Widok kalendarza, przydatny do zarządzania wydarzeniami i terminami.
+- **Kanban** – Widok Kanban, umożliwiający zarządzanie zadaniami w formie kart.
+
+## Dodatkowe wskazówki
+
+- Jeśli nie masz dostępu do plików konfiguracyjnych, skontaktuj się z administratorem systemu.
+- Zmiana widoku nie wpływa na bezpieczeństwo ani działanie innych modułów.
+- W każdej chwili możesz przywrócić poprzedni widok, edytując plik konfiguracyjny.
