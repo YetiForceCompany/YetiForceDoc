@@ -1,17 +1,19 @@
 ---
-title: Customer Portal
-description: Customer Portal
+title: Portal Klienta v3
+description: Portal Klienta v3 to dedykowane i nowoczesne narzędzie umożliwiające komunikację Twojej firmy ze swoimi klientami, partnerami i wszystkimi firmami zewnętrznymi.
 keywords:
   - YetiForce
-  - Customer
   - Portal
+  - Klienta
+  - Partnera
 tags:
   - Portal
+preview: detail.jpg
 ---
 
 ## Description
 
-The Customer Portal is a dedicated tool that facilitates communication between your company to and its Customers. With access to various types of data (e. g. orders or tickets), you can ensure a transparent flow of information with Customers, and also significantly reduce the number of questions and phone calls from them.
+Portal Klienta v3 to dedykowane narzędzie umożliwiające komunikację Twojej firmy ze swoimi Klientami. Dzięki dostępowi do różnego rodzaju danych (np. zamówienia czy zgłoszenia) dbasz o przejrzysty przepływ informacji z Klientami, a także w znaczny sposób zmniejszysz liczbę pytań i telefonów od nich.
 
 The Customer Portal uses the extended Webservice Premium API, which provides full functionality and integration with the YetiForce system. Portal configuration includes setting roles, profiles, users and menus, which allows you to customize access and interface to the needs of users. In comparison to the previous version of the Portal, it is created in React technology, has more functionalities and is fully compatible with the latest version of the YetiForce system (7.x).
 
