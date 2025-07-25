@@ -21,7 +21,7 @@ If the status has not changed a few days after registration, please follow the s
 
 Go to `System settings → Company → Company`
 
-Kliknij przycisk "Sprawdź status". Click the `Check status` button, on the right side the time of the last update should change to `a moment ago`.
+Click the `Check status` button on the right side. The time of the last update should change to `a moment ago`.
 
 ![reg-1.jpg](reg-1.jpg)
 
