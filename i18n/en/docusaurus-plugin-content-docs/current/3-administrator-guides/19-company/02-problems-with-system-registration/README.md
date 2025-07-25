@@ -21,7 +21,7 @@ If the status has not changed a few days after registration, please follow the s
 
 Go to `System settings → Company → Company`
 
-Kliknij przycisk "Sprawdź status". Click the `Check status` button, on the right side the time of the last update should change to `a moment ago`.
+Click the `Check status` button on the right side. The time of the last update should change to `a moment ago`.
 
 ![reg-1.jpg](reg-1.jpg)
 
@@ -45,7 +45,7 @@ Sometimes changes are made on the server after registration, which changes the [
 
 For this reason, the system cannot retrieve up-to-date information, because the ID is different from the one that was provided during registration and the new ID does not exist in the database.
 
-In this case, re-registration is required; please go the [`System settings → Company → Company`](administrator-guides/company/company-details/#how-to-register-yetiforce)
+In this case, re-registration is required; please go the [`System settings → Company → Company`](/administrator-guides/company/company-details/#how-to-register-yetiforce)
 
 ## Check your firewall
 
