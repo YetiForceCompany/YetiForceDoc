@@ -4,12 +4,24 @@ description: Dowiedz się, jak łatwo zmienić domyślny widok wybranego modułu
 keywords:
   - domyślny
   - widok
+  - konfiguracja
   - modułu
   - YetiForce
 tags:
-  - domyślny
-  - widok
-  - modułu
+  - domyślny widok
+  - instrukcja
+  - konfiguracja
+  - moduły
+  - personalizacja
+  - YetiForce
+  - zarządzanie modułami
+  - zmiana widoku
+categories:
+  - instrukcja krok po kroku
+  - konfiguracja modułów
+  - personalizacja
+  - zarządzanie modułami
+  - zmiana widoku
 preview: 2-how-to-change-default-module-view-1.jpg
 ---
 
@@ -56,7 +68,12 @@ class Occurrences
 ```
 
 3. **Zapisz plik**
+
    - Po zapisaniu pliku, domyślny widok modułu zostanie zmieniony na wybrany.
+
+4. **Przebuduj menu**
+
+   - Aby zmiany zostały w pełni uwzględnione, konieczne jest [przebudowanie menu](/administrator-guides/standard-modules/menu/#odświeżanie-menu-w-systemie) w YetiForce, szczególnie dla pozycji menu powiązanych ze zmienionym modułem.
 
 ## Jak sprawdzić dostępne widoki
 
