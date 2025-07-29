@@ -1,32 +1,67 @@
 ---
 title: System
-description: Description of the YetiForce system management functions via CLI
+description: A guide to the basic administrative commands of the YetiForce system
 keywords:
   - System
   - CLI
   - YetiForce
+  - Management
+  - Administration
+  - Console
+  - YFCLI
 tags:
   - YFCLI
+  - system update
+  - security
   - CLI
-  - Console
+  - documentation
+  - admin commands
+  - modules
+  - system registration
+  - user permissions
+  - system management
+categories:
+  - administration
+  - updates
+  - security
+  - CLI
+  - modules
+  - registration
+  - Systems
+  - user permissions
+  - system management
 preview: System.png
 ---
 
+# YetiForce system management via the console
+
+This guide describes the basic console commands for managing the YetiForce system. All operations are performed via the command line interface (CLI), allowing for quick and efficient system management.
+
 ![System CLI](System.png)
 
-### History of uploaded updates
+## System update history
+
+To check the history of all installed updates, use the following command:
 
 ```bash
 php cli.php -m System -a history
 ```
 
-### Update
+## System update
+
+Different types of system updates are available:
+
+### Standard update
+
+Basic system update command:
 
 ```bash
 php cli.php -m System -a update
 ```
 
-Wgranie wszystkich dostępnych łatek (SecurityFix lub ServicePack)
+### Security fixes installation
+
+This command will install all available fixes and service packs:
 
 ```bash
 php cli.php -m System -a update -t patches
@@ -34,7 +69,7 @@ php cli.php -m System -a update -t patches
 
 ![System CLI](System-1.png)
 
-Aktualizacja systemu do kolejnej stabilnej wersji
+Update the system to the next stable version
 
 ```bash
 php cli.php -m System -a update -t version
@@ -42,32 +77,54 @@ php cli.php -m System -a update -t version
 
 ![System CLI](System-2.png)
 
+## Registration management
+
 ### Check registration status
+
+Check the current registration status:
 
 ```bash
 php cli.php -m System -a checkRegStatus
 ```
 
-### Delete registration data
+### Remove registration data
+
+In case you have to reset the system registration, use the following command:
 
 ```bash
 php cli.php -m System -a deleteRegistration
 ```
 
-### Show active products
+### Display active add-ons
+
+Display a list of all purchased add-ons in the system:
 
 ```bash
 php cli.php -m System -a showProducts
 ```
 
+## Refresh system components
+
 ### Reload modules
+
+Refresh all system modules (useful after making configuration changes):
 
 ```bash
 php cli.php -m System -a reloadModule
 ```
 
-### Reload users privileges
+### Update user permissions
+
+Update all user permissions in the system:
 
 ```bash
 php cli.php -m System -a reloadUserPrivileges
+```
+
+### Refresh menu
+
+Reload the menu structure in the system:
+
+```bash
+php cli.php -m System -a reloadMenus
 ```

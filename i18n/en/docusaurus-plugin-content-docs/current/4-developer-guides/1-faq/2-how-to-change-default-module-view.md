@@ -4,12 +4,24 @@ description: Find out how to easily change the default view in a selected YetiFo
 keywords:
   - default
   - view
+  - configuration
   - module
   - YetiForce
 tags:
-  - default
-  - view
-  - module
+  - default view
+  - manual
+  - configuration
+  - modules
+  - customisation
+  - YetiForce
+  - module management
+  - change view
+categories:
+  - step-by-step guide
+  - module configuration
+  - customisation
+  - module management
+  - change view
 preview: 2-how-to-change-default-module-view-1.jpg
 ---
 
@@ -56,7 +68,12 @@ class Occurrences
 ```
 
 3. **Save the file**
+
   - Once you save the file, the default view for the module will be changed to the one you selected.
+
+4. Rebuild the menu
+
+  - In order for the changes to take effect, you have to [rebuild the menu](/administrator-guides/standard-modules/menu/#przebudowanie-menu) in YetiForce, especially for the menu positions related to the modified module.
 
 ## Available views
 
