@@ -73,7 +73,7 @@ class Occurrences
 
 4. **Przebuduj menu**
 
-   - Aby zmiany zostały w pełni uwzględnione, konieczne jest [przebudowanie menu](/administrator-guides/standard-modules/menu/#przebudowanie-menu) w YetiForce, szczególnie dla pozycji menu powiązanych ze zmienionym modułem.
+   - Aby zmiany zostały w pełni uwzględnione, konieczne jest [przebudowanie menu](/administrator-guides/standard-modules/menu/#odświeżanie-menu-w-systemie) w YetiForce, szczególnie dla pozycji menu powiązanych ze zmienionym modułem.
 
 ## Jak sprawdzić dostępne widoki
 
