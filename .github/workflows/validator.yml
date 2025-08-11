@@ -1,0 +1,28 @@
+name: Markdown validator
+
+on:
+  push:
+    branches:
+      - release
+
+  pull_request:
+    branches:
+      - release
+
+permissions:
+  contents: read
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          # super-linter needs the full git history to get the
+          # list of files that changed across commits
+          fetch-depth: 0
+
+      - uses: DavidAnson/markdownlint-cli2-action@v17
+        with:
+          globs: 'docs/**/*.{md,mdx,markdown}'
