@@ -1,27 +1,31 @@
 ---
-title: Testuj
-description: Publiczna wersja testowa systemu YetiForce oraz Portalu klienta
+title: Wersja demonstracyjna
+description: Publiczna wersja demonstracyjna systemu YetiForce oraz Portalu Klienta
 tags:
   - demo
-  - wersja testowa
+  - wersja demonstracyjna
 keywords:
   - demo
-  - wersja testowa
+  - wersja demonstracyjna
 ---
 
 ## Wersja demonstracyjna systemu YetiForce
 
-Jest to najbardziej aktualna deweloperska wersja systemu, która zawiera wszystkie najnowsze poprawki. Z tego powodu może ona również zawierać błędy.
+Zapraszamy do skorzystania z najnowszej, publicznej wersji demonstracyjnej systemu YetiForce. Jest to środowisko testowe, które zawiera wszystkie najnowsze funkcjonalności oraz poprawki.
 
 Adres: <a href="https://demo.yetiforce.com" target="_blank">demo.yetiforce.com</a>
 
-- Uprawnienia administratora
+### Dostęp do systemu
 
-  - Login: admin
-  - Hasło: admin
+- **Administrator**
 
-- Uprawnienia użytkownika (podstawowy)
-  - Login: demo
-  - Hasło: demo
+  - Login: `admin`
+  - Hasło: `admin`
 
-Odświeżanie aplikacji w godzinach: 7, 12, 15, 22 CET
+- **Użytkownik podstawowy**
+  - Login: `demo`
+  - Hasło: `demo`
+
+Aplikacja jest automatycznie odświeżana codziennie o godzinach: **7:00, 12:00, 15:00, 22:00 CET**.
+
+Wszelkie dane wprowadzone w wersji demonstracyjnej mogą zostać usunięte podczas
