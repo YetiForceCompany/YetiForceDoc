@@ -1,21 +1,25 @@
 ---
-title: Integracja Poczty z YetiForce
-description: System YetiForce jako panel integracyjny w zewnętrznym kliencie poczty
+title: DAV - Integracja Kalendarza i Kontaktów 
+description: Integracja Kalendarza oraz Kontaktów pomiędzy YetiForce, a narzędziem pocztowym poprzez protokoły CalDAV i CardDAV
 tags:
   - poczta
   - DAV
   - CardDAV
   - CalDAV
+  - kalendarz
+  - kontakty
   - panel integracji
 keywords:
   - poczta
   - DAV
   - CardDAV
   - CalDAV
+  - kalendarz
+  - kontakty
   - panel integracji
 ---
 
-System YetiForce umożliwia integrację z innymi aplikacjami, co pozwala na płynne działanie we współpracujących programach jednocześnie, bez potrzeby ciągłego przełączania się między nimi. Wykorzystywane są do tego protokoły **CalDAV** i **CardDAV** służące do synchronizacji odpowiednio kalendarza i kontaktów między różnymi urządzeniami i aplikacjami. Pozwala na integrację YetiForce z klientami poczty, kalendarzami i aplikacjami kontaktowymi.
+System YetiForce umożliwia integrację z aplikacjami pocztowymi, pozwalając na wymianę danych pomiędzy systemem YetiForce, a programami zewnętrznymi. Wykorzystywane są do tego protokoły **CalDAV** i **CardDAV** służące do synchronizacji odpowiednio kalendarza i kontaktów między różnymi urządzeniami i aplikacjami. Pozwala to na integrację YetiForce z klientami poczty, kalendarzami i książkami kontaktowymi.
 
 **Co to oznacza dla użytkownika?**
 
@@ -28,31 +32,31 @@ System YetiForce umożliwia integrację z innymi aplikacjami, co pozwala na pły
 
 :::
 
-Poniżej znajduje się instrukcja, która krok po korku pokaże jak skonfigurować integrację DAV w systemie YetiForce.
+Poniżej znajduje się instrukcja, która krok po kroku pokaże jak skonfigurować integrację DAV w systemie YetiForce.
 
 ## 1. Konfiguracja systemu YetiForce
 
 W celu skorzystania z Dav należy najpierw upewnić się, że system YetiForce został odpowiednio skonfigurowany.
 
-### a. Ustawienie uprawień
+### a. Ustawienie uprawnień
 
 - Wybierz ikonę użytkownika znajdującą się w prawym górnym rogu.
 - Z menu, które się pojawiło, wybierz <kbd>Moje ustawienia</kbd>.
 - Na liście ustawień przejdź do sekcji `Integracja z DAV`.
-- Ustaw odpowiednie uprawienia dostępów dla CardDav i CalDav.
+- Ustaw odpowiednie uprawnienia dostępu dla CardDav i CalDav.
 
 ![dav-1](dav-1.jpg)
 
 ### b. Uruchomienie odpowiednich zadań Cron
 
-Zadania Cron odgrywają kluczową rolę w synchronizacji danych między YetiForce a zewnętrznymi usługami, takimi jak Dav. Umożliwiają one automatyczne uruchamianie skryptów w określonych odstępach czasu, co zapewnia ciągłą i bezproblemową wymianę informacji. Dlatego istotnym jest upewnienie się, że odpowiednie zadania Cron zostały uruchomione. W tym celu:
+Zadania Cron odgrywają kluczową rolę w synchronizacji danych między YetiForce, a zewnętrznymi usługami, takimi jak DAV. Umożliwiają one automatyczne uruchamianie skryptów w określonych odstępach czasu, co zapewnia ciągłą i bezproblemową wymianę informacji. Dlatego istotnym jest upewnienie się, że odpowiednie zadania Cron zostały uruchomione. W tym celu:
 
 - W sekcji administracyjnej w lewym menu wybierz `Automatyzacja ➔ CRON`
 - Upewnij się, że wyzwalacze `Integracja CardDav` i `Integracja CalDav` mają status `Aktywny`.
 
 ![dav-2](dav-2.jpg)
 
-### c. Uruchomienie w kodzie
+### c. Włączenie DAV w konfiguracji w kodzie PHP
 
 - Otwórz plik `config/Api.php`.
 - Do tablicy znajdującej się w zmiennej `$enabledServices` dodaj element `dav`.
@@ -71,7 +75,7 @@ public static $enableCalDAV = true;
 
 ---
 
-## 2. Dodanie klucza
+## 2. Dodanie klucza autoryzacyjnego
 
 Gdy system YetiForce jest odpowiednio przygotowany, należy wygenerować klucz, który umożliwi integrację z usługą DAV.
 
@@ -105,10 +109,13 @@ Zaprezentujemy, jak zintegrować YetiForce z narzędziem pocztowym, na przykład
   - **Nazwa użytkownika**: wartość `Login`, która się pojawiła przy wygenerowanym kluczu.
   - **Położenie**: Odpowiednio skonfigurowany adres, mający postać: `https://dev.yetiforce.eu/dav.php/calendars/(__dav_login__)/YFCalendar/`, gdzie ciąg `(__dav_login__)` zamieniamy na wartość `Login` z wygenerowanego klucza.
 - Naciskamy przycisk <kbd>Znajdź kalendarz</kbd>.
+- W oknie logowania do kalendarza należy podawać:
+  - **Nazwa użytkownika**: wartość `Login`, która się pojawiła przy wygenerowanym kluczu.
+  - **Hasło**: wartość `Klucz`, która się pojawiła przy wygenerowanym kluczu.
 
 ![caldav-3](caldav-3.jpg)
 
-Po wykonaniu opisanych powyżej kroków kalendarz YetiForce powinien zostać pomyślnie zsynchronizowany z narzędziem pocztowym. Oznacza to, że dodanie, edycja bądź usunięcie zdarzenia lub zadania w jednym miejscu będzie miało odzwierciedlenie w pozostałych.
+Po wykonaniu opisanych powyżej kroków kalendarz YetiForce powinien zostać pomyślnie zsynchronizowany z kalendarzem. Oznacza to, że dodanie, edycja bądź usunięcie zdarzenia lub zadania w jednym miejscu będzie miało odzwierciedlenie w pozostałych. Komunikacja między YetiForce a zewnętrzym kalendarzem będzie odbywać się automatycznie w obie strony poprzez mechanizm Cron zgodnie z ustaloną w nim częstotliwością, zapewniając spójność danych i ułatwiając zarządzanie wydarzeniami.
 
 ### b. CardDAV: Synchronizacja kontaktów
 
@@ -126,12 +133,23 @@ Po wykonaniu opisanych powyżej kroków kalendarz YetiForce powinien zostać pom
 
 ![carddav-2](carddav-2.jpg)
 
-- W kolejnym oknie modalnym, które się pojawi, należy wypełnić formularz:
+- W oknie logowania do książki adresowej należy podawać:
   - **Nazwa użytkownika**: wartość `Login`, która się pojawiła przy wygenerowanym kluczu.
-  - **Hasło**: wygenerowany klucz.
-- Naciskamy przycisk <kbd>OK</kbd>.
+  - **Hasło**: wartość `Klucz`, która się pojawiła przy wygenerowanym kluczu.
 
 ![carddav-3](carddav-3.jpg)
+
+Po wykonaniu opisanych powyżej kroków kontakty YetiForce powinny zostać pomyślnie zsynchronizowane z książką adresową. Oznacza to, że dodanie, edycja bądź usunięcie kontaktu w jednym miejscu będzie miało odzwierciedlenie w pozostałych. Komunikacja między YetiForce a książką adresową będzie odbywać się automatycznie w obie strony poprzez mechanizm Cron zgodnie z ustaloną w nim częstotliwością, zapewniając spójność danych i ułatwiając zarządzanie kontaktami.
+
+:::note
+Aby dane takie jak adres email z pola `Email podstawowy` poprawnie się pobierały z zewnętrznego narzędzia do YetiForce muszą być odpowiednio etykietowane w zewnętrznej aplikacji, np. w przypadku Thunderbird oznaczone jako "Praca" ("Work").
+:::
+
+![carddav-4](carddav-4.jpg)
+
+:::warning
+W przypadku korzystania z innych narzędzi pocztowych, proces integracji może się różnić. Warto zapoznać się z dokumentacją konkretnego narzędzia, aby uzyskać szczegółowe instrukcje dotyczące konfiguracji CalDAV i CardDAV.
+:::
 
 ### Powiązane Artykuły
 
