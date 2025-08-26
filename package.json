@@ -28,7 +28,7 @@
 		"prism-react-renderer": "^2.4.1",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0",
-		"react-player": "^2",
+		"react-player": "^3.3.2",
 		"redocusaurus": "^2.5.0",
 		"url": "^0.11.4"
 	},
