@@ -59,7 +59,7 @@ Jeżeli powyższy sposób nie działa na użytej dystrybucji serwera Linux może
 :::warning
 
 - skrypt musi być uruchamiany przez użytkownika z takimi samymi uprawnieniami jak właściciel plików systemowych.
-- w CRONTAB może być dodane tylko jedno wywołanie CRON dla systemu YetiForce.
+- w CRONTAB może być dodane tylko jedno zadanie CRON'a dla systemu YetiForce.
 
 :::
 
