@@ -56,7 +56,7 @@ Zadania Cron odgrywają kluczową rolę w synchronizacji danych między YetiForc
 
 ![dav-2](dav-2.jpg)
 
-### c. Włączenie DAV w konfiguracji w kodzie PHP
+### c. Aktywacja DAV w plikach konfiguracyjnych
 
 - Otwórz plik `config/Api.php`.
 - Do tablicy znajdującej się w zmiennej `$enabledServices` dodaj element `dav`.
@@ -140,12 +140,6 @@ Po wykonaniu opisanych powyżej kroków kalendarz YetiForce powinien zostać pom
 ![carddav-3](carddav-3.jpg)
 
 Po wykonaniu opisanych powyżej kroków kontakty YetiForce powinny zostać pomyślnie zsynchronizowane z książką adresową. Oznacza to, że dodanie, edycja bądź usunięcie kontaktu w jednym miejscu będzie miało odzwierciedlenie w pozostałych. Komunikacja między YetiForce a książką adresową będzie odbywać się automatycznie w obie strony poprzez mechanizm Cron zgodnie z ustaloną w nim częstotliwością, zapewniając spójność danych i ułatwiając zarządzanie kontaktami.
-
-:::note
-Aby dane takie jak adres email z pola `Email podstawowy` poprawnie się pobierały z zewnętrznego narzędzia do YetiForce muszą być odpowiednio etykietowane w zewnętrznej aplikacji, np. w przypadku Thunderbird oznaczone jako "Praca" ("Work").
-:::
-
-![carddav-4](carddav-4.jpg)
 
 :::warning
 W przypadku korzystania z innych narzędzi pocztowych, proces integracji może się różnić. Warto zapoznać się z dokumentacją konkretnego narzędzia, aby uzyskać szczegółowe instrukcje dotyczące konfiguracji CalDAV i CardDAV.
