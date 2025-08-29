@@ -37,8 +37,8 @@ In order to redirect the system to a new address follow the instruction below:
 3. Once you have correctly performed the redirection, you should change the configuration on the server and/or in the target application (for example: our system stores the address in the configuration file where the application is running, it uses this address to protect itself from unwanted attacks - not allowing to accept requests from another address). Each application, as well as each server where the application is located, requires a different configuration - report this to the server administrator and the application administrator, they will know what to do.
 
 4. The last but very important step is to add the HTTPS certificates of the new domain to the server where the old address is. If you don't do this, after redirection, the users will see a warning about an invalid certificate (because by default the certificate is configured to work correctly only under the new address, and you need to add the certificate so that after redirection the old address can also use it correctly). To make this possible, you need to provide two elements to the administrator of the server where the application is located:
-  - SSL certificate private key
-  - Intermediate SSL certificate
+   - SSL certificate private key
+   - Intermediate SSL certificate
 
 ## Summary
 
