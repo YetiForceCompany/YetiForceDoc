@@ -116,137 +116,137 @@ Keep in mind that most of the fields are filled only during creation, which in p
 
 1. Categories
 
-  - Category name [Magento] > Category name [YetiForce]
-  - Enable Category [Magento] > Active [YetiForce]
-  - Parent Category [Magento] > Parent Category [YetiForce]
+   - Category name [Magento] > Category name [YetiForce]
+   - Enable Category [Magento] > Active [YetiForce]
+   - Parent Category [Magento] > Parent Category [YetiForce]
 
 2. Products
 
-  - Product Name [Magento] > Product Name [YetiForce]
-  - Enable Product [Magento] > On sale [YetiForce]
-  - SKU [Magento] > SKU [YetiForce]
-  - Description [Magento] > Description [YetiForce]
+   - Product Name [Magento] > Product Name [YetiForce]
+   - Enable Product [Magento] > On sale [YetiForce]
+   - SKU [Magento] > SKU [YetiForce]
+   - Description [Magento] > Description [YetiForce]
 
 3. Contacts
 
-  - Gender [Magento] > Gender [YetiForce]
-  - First name [Magento] > First name [YetiForce]
-  - Surname [Magento] > Surname [ YetiForce]
-  - E-mail [Magento] > Primary email [YetiForce]
-  - Phone number [Magento] > Primary phone [YetiForce]
-  - Fax [Magento] > Secondary phone [YetiForce]
-  - Date of birth [Magento] > Date of birth [YetiForce]
-  - [Default billing address] field [Street and building number 1] [Magento] > [Primary address] field [Street] [YetiForce]
-  - [Default billing address] field [Street and building number 2] [Magento] > [Primary address] field [Building number] [YetiForce]
-  - [Default Billing Address] field [Postcode] [Magento] > [Primary Address] field [Postcode] [YetiForce]
-  - [Default billing address] field [City] [Magento] > [Primary address] field [City] [YetiForce]
-  - [Default billing address] field [Province] [Magento] > [Primary address] field [Province] [YetiForce]
-  - [Default billing address] field [Country] [Magento] > [Primary address] field [Country] [YetiForce]
-  - [Default delivery address] field [Street and number 1] [Magento] > [Delivery address] field [Street] [YetiForce]
-  - [Default delivery address] field [Street and number 2] [Magento] > [Delivery address] field [Building number] [YetiForce]
-  - [Default delivery address] field [Post code] [Magento] > [ Delivery address] field [Post code] [YetiForce]
-  - [Default delivery address] field [City] [Magento] > [Delivery address] field [City] [YetiForce]
-  - [Default delivery address] field [Province] [Magento] > [Delivery address] field [Province] [YetiForce]
-  - [Default delivery address] field [Country] [Magento] > [Delivery address] field [Country] [YetiForce]
+   - Gender [Magento] > Gender [YetiForce]
+   - First name [Magento] > First name [YetiForce]
+   - Surname [Magento] > Surname [ YetiForce]
+   - E-mail [Magento] > Primary email [YetiForce]
+   - Phone number [Magento] > Primary phone [YetiForce]
+   - Fax [Magento] > Secondary phone [YetiForce]
+   - Date of birth [Magento] > Date of birth [YetiForce]
+   - [Default billing address] field [Street and building number 1] [Magento] > [Primary address] field [Street] [YetiForce]
+   - [Default billing address] field [Street and building number 2] [Magento] > [Primary address] field [Building number] [YetiForce]
+   - [Default Billing Address] field [Postcode] [Magento] > [Primary Address] field [Postcode] [YetiForce]
+   - [Default billing address] field [City] [Magento] > [Primary address] field [City] [YetiForce]
+   - [Default billing address] field [Province] [Magento] > [Primary address] field [Province] [YetiForce]
+   - [Default billing address] field [Country] [Magento] > [Primary address] field [Country] [YetiForce]
+   - [Default delivery address] field [Street and number 1] [Magento] > [Delivery address] field [Street] [YetiForce]
+   - [Default delivery address] field [Street and number 2] [Magento] > [Delivery address] field [Building number] [YetiForce]
+   - [Default delivery address] field [Post code] [Magento] > [ Delivery address] field [Post code] [YetiForce]
+   - [Default delivery address] field [City] [Magento] > [Delivery address] field [City] [YetiForce]
+   - [Default delivery address] field [Province] [Magento] > [Delivery address] field [Province] [YetiForce]
+   - [Default delivery address] field [Country] [Magento] > [Delivery address] field [Country] [YetiForce]
 
 4. Accounts
 
-  - Company [Magento] > Account name [YetiForce] - if there is a private person in the order, the YetiForce system will create an Account designated as a private person, where the Account's name is his first and last name.
-  - TAX ID (EU VAT) [Magento]> TAX ID [YetiForce]
-  - E-mail [Magento] > Primary e-mail [YetiForce]
-  - Phone number [from the appropriate block] [Magento] > Primary phone [YetiForce]
-  - Fax [from the appropriate block] [Magento] > Secondary phone [YetiForce]
-  - [Default billing address] field [Street and building number 1] [Magento] > [Primary address] field [Street] [YetiForce]
-  - [Default billing address] field [Street and building number 2] [Magento] > [Primary Address] field [Building number] [YetiForce]
-  - [Default billing address] field [Postcode] [Magento] > [Primary Address] field [Postcode] [YetiForce]
-  - [Default billing address] field [City] [Magento] > [Primary address] field [City] [YetiForce]
-  - [Default billing address] field [Province] [Magento] > [Primary address] field [Province] [YetiForce]
-  - [Default billing address] field [Country] [Magento] > [Primary address] field [Country] [YetiForce]
-  - [Default delivery address] field [Street and building number 1] [Magento] > [Delivery address] field [Street] [YetiForce]
-  - [Default delivery address] field [Street and building number 2] [Magento] > [Delivery address] field [Building number] [YetiForce]
-  - [Default delivery address] field [Post code] [Magento] > [Delivery address] field [Post code] [YetiForce]
-  - [Default delivery address] field [City] [Magento]> [Delivery address] field [City] [YetiForce]
-  - [Default delivery address] field [Province] [Magento] > [Address for delivery ] field [Province] [YetiForce]
-  - [Default delivery address] field [Country] [Magento] > [Delivery address] field [Country] [YetiForce]
+   - Company [Magento] > Account name [YetiForce] - if there is a private person in the order, the YetiForce system will create an Account designated as a private person, where the Account's name is his first and last name.
+   - TAX ID (EU VAT) [Magento]> TAX ID [YetiForce]
+   - E-mail [Magento] > Primary e-mail [YetiForce]
+   - Phone number [from the appropriate block] [Magento] > Primary phone [YetiForce]
+   - Fax [from the appropriate block] [Magento] > Secondary phone [YetiForce]
+   - [Default billing address] field [Street and building number 1] [Magento] > [Primary address] field [Street] [YetiForce]
+   - [Default billing address] field [Street and building number 2] [Magento] > [Primary Address] field [Building number] [YetiForce]
+   - [Default billing address] field [Postcode] [Magento] > [Primary Address] field [Postcode] [YetiForce]
+   - [Default billing address] field [City] [Magento] > [Primary address] field [City] [YetiForce]
+   - [Default billing address] field [Province] [Magento] > [Primary address] field [Province] [YetiForce]
+   - [Default billing address] field [Country] [Magento] > [Primary address] field [Country] [YetiForce]
+   - [Default delivery address] field [Street and building number 1] [Magento] > [Delivery address] field [Street] [YetiForce]
+   - [Default delivery address] field [Street and building number 2] [Magento] > [Delivery address] field [Building number] [YetiForce]
+   - [Default delivery address] field [Post code] [Magento] > [Delivery address] field [Post code] [YetiForce]
+   - [Default delivery address] field [City] [Magento]> [Delivery address] field [City] [YetiForce]
+   - [Default delivery address] field [Province] [Magento] > [Address for delivery ] field [Province] [YetiForce]
+   - [Default delivery address] field [Country] [Magento] > [Delivery address] field [Country] [YetiForce]
 
 5. Sales orders
 
-  - Order number [Magento] > Subject [YetiForce]
-  - Account relationship [according to the logic described above] [YetiForce]
-  - Contact relationship [according to the logic described above] [YetiForce]
-  - Storage relationship [YetiForce] - field filled in automatically in YetiForce.
-  - Link to the previous order [Magento] - Parent sales order [YetiForce]
-  - Customer note [Magento] - Comments [YetiForce]
-  - Source [YetiForce] - the default value is Magento.
-  - Payment information [Magento] - Payment method [YetiForce] - mapped dictionary
-  - Payment status [Magento] - Payment status [YetiForce] - mapped dictionary
-  - Order date [Magento] > Start date [YetiForce]
-  - Order status [Magento] - Magento status, Status [YetiForce]
-  - First name [Magento] > First name [YetiForce] - for address blocks for printouts
-  - Last name [Magento] > Surname [YetiForce] - for address blocks for printouts
-  - Company name [Magento] > Company name [YetiForce] - for address blocks for printouts
-  - VAT ID [Magento]> VAT ID [YetiForce] - for address blocks for printouts
-  - Mail [Magento]> Email [YetiForce] - for address blocks for printouts
-  - [Default billing address] field [Street and number 1] [Magento] > [Main address] field [Street] [YetiForce]
-  - [Default billing address] field [Street and number 2] [Magento]> [Main address] field [Building number] [YetiForce]
-  - [Default billing address] field [Postcode] [Magento]> [Main address] field [Postcode] [YetiForce]
-  - [Default billing address] field [City] [Magento]> [Primary address] field [City] [YetiForce]
-  - [Default billing address] field [Province] [Magento]> [Primary address] field [Province] [YetiForce]
-  - [Default billing address] field [Country] [Magento]> [Primary address] field [Country] [YetiForce]
-  - [Default delivery address] field [Street and building number 1] [Magento]> [Delivery address] field [Street] [YetiForce]
-  - [Default delivery address] field [Street and building number 2] [Magento]> [Delivery address] field [Building number] [YetiForce]
-  - [Default delivery address] field [Postcode] [Magento]> [Delivery address] field [Postcode] [YetiForce]
-  - [Default delivery address] field [City] [Magento]> [Delivery address] field [City] [YetiForce]
-  - [Default delivery address] field [Province] [Magento]> [Delivery address] field [Province ] [YetiForce]
-  - [Default delivery address] field [Country] [Magento] > [Delivery address] field [Country] [YetiForce]
+   - Order number [Magento] > Subject [YetiForce]
+   - Account relationship [according to the logic described above] [YetiForce]
+   - Contact relationship [according to the logic described above] [YetiForce]
+   - Storage relationship [YetiForce] - field filled in automatically in YetiForce.
+   - Link to the previous order [Magento] - Parent sales order [YetiForce]
+   - Customer note [Magento] - Comments [YetiForce]
+   - Source [YetiForce] - the default value is Magento.
+   - Payment information [Magento] - Payment method [YetiForce] - mapped dictionary
+   - Payment status [Magento] - Payment status [YetiForce] - mapped dictionary
+   - Order date [Magento] > Start date [YetiForce]
+   - Order status [Magento] - Magento status, Status [YetiForce]
+   - First name [Magento] > First name [YetiForce] - for address blocks for printouts
+   - Last name [Magento] > Surname [YetiForce] - for address blocks for printouts
+   - Company name [Magento] > Company name [YetiForce] - for address blocks for printouts
+   - VAT ID [Magento]> VAT ID [YetiForce] - for address blocks for printouts
+   - Mail [Magento]> Email [YetiForce] - for address blocks for printouts
+   - [Default billing address] field [Street and number 1] [Magento] > [Main address] field [Street] [YetiForce]
+   - [Default billing address] field [Street and number 2] [Magento]> [Main address] field [Building number] [YetiForce]
+   - [Default billing address] field [Postcode] [Magento]> [Main address] field [Postcode] [YetiForce]
+   - [Default billing address] field [City] [Magento]> [Primary address] field [City] [YetiForce]
+   - [Default billing address] field [Province] [Magento]> [Primary address] field [Province] [YetiForce]
+   - [Default billing address] field [Country] [Magento]> [Primary address] field [Country] [YetiForce]
+   - [Default delivery address] field [Street and building number 1] [Magento]> [Delivery address] field [Street] [YetiForce]
+   - [Default delivery address] field [Street and building number 2] [Magento]> [Delivery address] field [Building number] [YetiForce]
+   - [Default delivery address] field [Postcode] [Magento]> [Delivery address] field [Postcode] [YetiForce]
+   - [Default delivery address] field [City] [Magento]> [Delivery address] field [City] [YetiForce]
+   - [Default delivery address] field [Province] [Magento]> [Delivery address] field [Province ] [YetiForce]
+   - [Default delivery address] field [Country] [Magento] > [Delivery address] field [Country] [YetiForce]
 
 6. Order - block with products/services
 
-  - Product [Magento]> Item name [YetiForce] - SKU mapping
-  - Quantity [Magento]> Quantity [YetiForce]Unit
-  - Price [Magento] > Price [YetiForce]
-  - Discount [Magento]> Discount [%] + Discount [value] [YetiForce]
-  - Tax [Magento]> Tax [YetiForce]
-  - Currency [set based on the order currency] [YetiForce]
-  - Discount type [set automatically to individual] [YetiForce ]
-  - Tax type [set automatically to individual] [YetiForce]
+   - Product [Magento]> Item name [YetiForce] - SKU mapping
+   - Quantity [Magento]> Quantity [YetiForce]Unit
+   - Price [Magento] > Price [YetiForce]
+   - Discount [Magento]> Discount [%] + Discount [value] [YetiForce]
+   - Tax [Magento]> Tax [YetiForce]
+   - Currency [set based on the order currency] [YetiForce]
+   - Discount type [set automatically to individual] [YetiForce ]
+   - Tax type [set automatically to individual] [YetiForce]
 
 7. Sales invoices
 
-  - Order number [Magento] > Topic [YetiForce]
-  - Account relationship [according to the logic described above] [YetiForce]
-  - Payment information [Magento] - Payment method [YetiForce] - mapped dictionary
-  - Payment method [Magento] - Payment method [YetiForce] - mapped dictionary
-  - Creation date [Magento] > Issue date [YetiForce]
-  - Creation date [Magento] > Sale date [YetiForce]
-  - Invoice status [Magento] - Status [YetiForce]
-  - First name [Magento] > First name [YetiForce] - for address blocks for printouts
-  - Last name [Magento] > Last name [YetiForce] - for address blocks for printouts
-  - Company name [Magento] > Company name [YetiForce] - for address blocks for printouts
-  - VAT ID [Magento] > VAT ID [YetiForce] - for address blocks for printouts
-  - E-mail [Magento] > E-mail [YetiForce] - for address blocks for printouts
-  - [Default billing address] field [Street and building number 1] [Magento] > [Primary address] field [Street] [YetiForce]
-  - [Default billing address] field [Street and building number 2] [Magento] > [Primary address] field [Building number] [YetiForce]
-  - [Default billing address] field [Post code] [Magento] > [Primary address] field [Post Code] [YetiForce]
-  - [Default billing address] field [City] [Magento] > [Primary address] field [City] [YetiForce]
-  - [Default billing address] field [Province] [Magento] > [Primary address] field [Province] [YetiForce]
-  - [Default billing address] field [Country] [Magento] > [Primary address] field [Country] [YetiForce
-  - [Default delivery address] field [Street and number 1] [Magento] > [Delivery address] field [Street] [YetiForce]
-  - [Default delivery address] field [Street and number 2] [Magento]> [Delivery address] field [Building number] [YetiForce]
-  - [Default delivery address] field [Postcode] [Magento]> [Delivery address] field [Postcode] [YetiForce]
-  - [Default delivery address] field [City] [Magento] > [Delivery address] field [City] [ YetiForce]
-  - [Default delivery address] field [Province] [Magento] > [Delivery address] field [Province] [YetiForce]
-  - [Default delivery address] field [Country] [Magento] > [Delivery address] field [Country] [YetiForce]
+   - Order number [Magento] > Topic [YetiForce]
+   - Account relationship [according to the logic described above] [YetiForce]
+   - Payment information [Magento] - Payment method [YetiForce] - mapped dictionary
+   - Payment method [Magento] - Payment method [YetiForce] - mapped dictionary
+   - Creation date [Magento] > Issue date [YetiForce]
+   - Creation date [Magento] > Sale date [YetiForce]
+   - Invoice status [Magento] - Status [YetiForce]
+   - First name [Magento] > First name [YetiForce] - for address blocks for printouts
+   - Last name [Magento] > Last name [YetiForce] - for address blocks for printouts
+   - Company name [Magento] > Company name [YetiForce] - for address blocks for printouts
+   - VAT ID [Magento] > VAT ID [YetiForce] - for address blocks for printouts
+   - E-mail [Magento] > E-mail [YetiForce] - for address blocks for printouts
+   - [Default billing address] field [Street and building number 1] [Magento] > [Primary address] field [Street] [YetiForce]
+   - [Default billing address] field [Street and building number 2] [Magento] > [Primary address] field [Building number] [YetiForce]
+   - [Default billing address] field [Post code] [Magento] > [Primary address] field [Post Code] [YetiForce]
+   - [Default billing address] field [City] [Magento] > [Primary address] field [City] [YetiForce]
+   - [Default billing address] field [Province] [Magento] > [Primary address] field [Province] [YetiForce]
+   - [Default billing address] field [Country] [Magento] > [Primary address] field [Country] [YetiForce
+   - [Default delivery address] field [Street and number 1] [Magento] > [Delivery address] field [Street] [YetiForce]
+   - [Default delivery address] field [Street and number 2] [Magento]> [Delivery address] field [Building number] [YetiForce]
+   - [Default delivery address] field [Postcode] [Magento]> [Delivery address] field [Postcode] [YetiForce]
+   - [Default delivery address] field [City] [Magento] > [Delivery address] field [City] [ YetiForce]
+   - [Default delivery address] field [Province] [Magento] > [Delivery address] field [Province] [YetiForce]
+   - [Default delivery address] field [Country] [Magento] > [Delivery address] field [Country] [YetiForce]
 
 8. Sales invoices - block with products/services
-  - Product [Magento]> Item name [YetiForce] - SKU mapping
-  - Quantity [Magento]> Quantity [YetiForce]
-  - Price [Magento]> Unit price [YetiForce]
-  - Discount [Magento]> Discount [%] + Discount [value] [YetiForce]
-  - Tax [Magento]> Tax [YetiForce]
-  - Currency [set based on the order currency] [YetiForce]
-  - Discount type [set automatically to individual] [YetiForce ]
-  - Tax type [set automatically to individual] [YetiForce]
+   - Product [Magento]> Item name [YetiForce] - SKU mapping
+   - Quantity [Magento]> Quantity [YetiForce]
+   - Price [Magento]> Unit price [YetiForce]
+   - Discount [Magento]> Discount [%] + Discount [value] [YetiForce]
+   - Tax [Magento]> Tax [YetiForce]
+   - Currency [set based on the order currency] [YetiForce]
+   - Discount type [set automatically to individual] [YetiForce ]
+   - Tax type [set automatically to individual] [YetiForce]
 
 ## Integration troubleshooting
 
