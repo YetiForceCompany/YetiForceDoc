@@ -40,6 +40,7 @@ Dodaj następującą linię:
 `__YETIFORCE_PATH__` jest pełną ścieżką bezwzględną do folderu systemu YetiForce, np. /var/www/yetiforce.
 
 :::note
+
 Jeżeli powyższy sposób nie działa na użytej dystrybucji serwera Linux możesz edytować bezpośrednio plik /etc/crontab lub utworzyć nowy plik /etc/cron.d/yetiforce i dodać jeden z poniższych wpisów:
 
 ```bash
@@ -88,7 +89,7 @@ php -v
 Jeżeli PHP nie jest aliasowany lub serwer ma zainstalowane wiele wersji PHP i chcesz wskazać na konkretną - ustaw w pliku `cron.sh` dokładną ścieżkę do PHP, np.:
 
 ```bash
-export USE_PHP=/usr/local/php83/bin/php83 
+export USE_PHP=/usr/local/php83/bin/php83
 ```
 
 :::warning
