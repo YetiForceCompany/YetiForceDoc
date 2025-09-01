@@ -23,24 +23,24 @@ A few important principles about the `Autoloader`:
 
 3. In order for the Autoloader to upload a file, a class with an appropriate name has to be triggered:
 
-  Example A:
+   Example A:
 
-  - class name: MyModule_xyz_Model
-  - loaded file: modules/MyModule/models/xyz.php
+   - class name: MyModule_xyz_Model
+   - loaded file: modules/MyModule/models/xyz.php
 
-  Example B:
+   Example B:
 
-  - class name: MyModules_helper_ComponentName_Lib
-  - loaded file: modules/myModule/helper/libs/ComponentName.php
+   - class name: MyModules_helper_ComponentName_Lib
+   - loaded file: modules/myModule/helper/libs/ComponentName.php
 
 4. Directory names (of directories with files to which you refer) have to end with "s" in order for the "Autoloader" to work whereas class names have to be without "s".
 
-  Example:
+   Example:
 
-  - modules/ModuleName/actions/ComponentName.php - ModuleName_ComponentName_Action
-  - modules/ModuleName/models/ComponentName.php - ModuleName_ComponentName_Model
-  - modules/ModuleName/uitypes/ComponentName.php - ModuleName_ComponentName_Uitype
-  - modules/Contacts/helper/libs/ComponentName.php - Contacts_helper_ComponentName_Lib
+   - modules/ModuleName/actions/ComponentName.php - ModuleName_ComponentName_Action
+   - modules/ModuleName/models/ComponentName.php - ModuleName_ComponentName_Model
+   - modules/ModuleName/uitypes/ComponentName.php - ModuleName_ComponentName_Uitype
+   - modules/Contacts/helper/libs/ComponentName.php - Contacts_helper_ComponentName_Lib
 
 ## Loader
 

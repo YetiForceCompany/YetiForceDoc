@@ -49,11 +49,11 @@ In this case, the system name of the module is **Occurrences**.
 
 1. **Create a configuration file (if it doesn't already exist)**
 
-  - Go to `config/Modules/` on the server where YetiForce is installed.
-  - Create a new file (if it doesn't already exist) with a name corresponding to the system name of the module, eg. `Occurrences.php` for the Occurrences module.
+   - Go to `config/Modules/` on the server where YetiForce is installed.
+   - Create a new file (if it doesn't already exist) with a name corresponding to the system name of the module, eg. `Occurrences.php` for the Occurrences module.
 
 2. **Paste the code below into the file**
-  - Copy and paste the code below, adapting the class name to your chosen module:
+   - Copy and paste the code below, adapting the class name to your chosen module:
 
 ```php
 <?php
@@ -69,11 +69,11 @@ class Occurrences
 
 3. **Save the file**
 
-  - Once you save the file, the default view for the module will be changed to the one you selected.
+   - Once you save the file, the default view for the module will be changed to the one you selected.
 
 4. Rebuild the menu
 
-  - Aby zmiany zostały w pełni uwzględnione, konieczne jest [przebudowanie menu](/administrator-guides/standard-modules/menu/#odświeżanie-menu-w-systemie) w YetiForce, szczególnie dla pozycji menu powiązanych ze zmienionym modułem.
+   - Aby zmiany zostały w pełni uwzględnione, konieczne jest [przebudowanie menu](/administrator-guides/standard-modules/menu/#odświeżanie-menu-w-systemie) w YetiForce, szczególnie dla pozycji menu powiązanych ze zmienionym modułem.
 
 ## Available views
 
