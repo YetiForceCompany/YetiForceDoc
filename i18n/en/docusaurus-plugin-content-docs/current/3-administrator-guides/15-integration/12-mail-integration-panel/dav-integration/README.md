@@ -1,21 +1,25 @@
 ---
-title: Integracja Poczty z YetiForce
-description: YetiForce system as an integration panel in an external mail client
+title: DAV - Calendar and Contact integration
+description: Calendar and Contacts integration between YetiForce and your email tool via CalDAV and CardDAV protocols
 tags:
   - mail
   - DAV
   - CardDAV
   - CalDAV
+  - calendar
+  - contacts
   - integration panel
 keywords:
   - mail
   - DAV
   - CardDAV
   - CalDAV
+  - calendar
+  - contacts
   - integration panel
 ---
 
-The YetiForce system enables integration with other applications, which allows for smooth cooperation between these programs simultaneously, without the need to constantly switch between them. The **CalDAV** and **CardDAV** protocols are used for this purpose, to synchronize the calendar and contacts, respectively, between different devices and applications. It allows for the integration of YetiForce with email clients, calendars, and contact applications.
+The YetiForce system enables integration with other email applications, which allows data exchange between YetiForce and external programs. The **CalDAV** and **CardDAV** protocols are used for this purpose, to synchronize the calendar and contacts, respectively, between different devices and applications. It allows for the integration of YetiForce with email clients, calendars, and address book applications.
 
 **What does this mean for the user?**
 
@@ -34,7 +38,7 @@ Below is a step-by-step guide to configuring DAV integration in the YetiForce sy
 
 To use the DAV service you must first make sure your YetiForce system has been properly configured.
 
-### a. Permissions
+### a. Permissions set up
 
 - Select the user icon in the upper right corner.
 - From the menu that appears, select <kbd>My Settings</kbd>.
@@ -52,7 +56,7 @@ CRON jobs play a key role in data synchronization between YetiForce and external
 
 ![dav-2](dav-2.jpg)
 
-### c. Activation in code
+### c. Enable DAV in configuration files
 
 - Open the file `config/Api.php`.
 - Add the `dav` element to the array in the `$enabledServices` variable.
@@ -71,7 +75,7 @@ public static $enableCalDAV = true;
 
 ---
 
-## 2. Add key
+## 2. Adding an authorization key
 
 Once the YetiForce system is properly set up, you need to generate a key that will enable integration with the DAV service.
 
@@ -105,10 +109,13 @@ We will demonstrate how to integrate YetiForce with an email tool, using Thunder
   - **Username**: the `Login` value that appeared with the generated key.
   - **Location**: An appropriately configured address, in the form: `https://dev.yetiforce.eu/dav.php/calendars/(__dav_login__)/YFCalendar/`, where the string `(__dav_login__)` is replaced with the `Login` value from the generated key.
 - Click the <kbd>Find calendar</kbd> button.
+- Provide the following in the calendar login window:
+  - **Username**: the `Login` value that appeared with the generated key.
+  - **Password**: the `Key` value that appeared with the generated key.
 
 ![caldav-3](caldav-3.jpg)
 
-After completing the steps described above, your YetiForce calendar should be successfully synced with your email tool. This means that adding, editing, or deleting an event or task in one place will be reflected in the others.
+After completing the steps above, the YetiForce calendar should successfully synchronize with your calendar. This means that adding, editing, or deleting an event or task in one application will be reflected in the others. Communication between YetiForce and the external calendar will occur automatically in both directions via the CRON mechanism, according to the frequency set in the calendar, ensuring data consistency and simplifying event management.
 
 ### b. CardDAV: Contacts Sync
 
@@ -126,12 +133,17 @@ After completing the steps described above, your YetiForce calendar should be su
 
 ![carddav-2](carddav-2.jpg)
 
-- Fill out the form in the popup window:
+- Provide the following in the address book login window:
   - **Username**: the `Login` value that appeared with the generated key.
-  - **Password**: generated key.
-- Click <kbd>OK</kbd>.
+  - **Password**: the `Key` value that appeared with the generated key.
 
 ![carddav-3](carddav-3.jpg)
+
+After completing the steps above, your YetiForce contacts should successfully synchronize with your address book. This means that adding, editing, or deleting a contact in one application will be reflected in the others. Communication between YetiForce and your address book will occur automatically in both directions via the CRON mechanism, according to the frequency you set, ensuring data consistency and simplifying contact management.
+
+:::warning
+If you're using other email tools, the integration process may vary. Please refer to the specific tool's documentation for detailed instructions on configuring CalDAV and CardDAV.
+:::
 
 ### Related articles
 
