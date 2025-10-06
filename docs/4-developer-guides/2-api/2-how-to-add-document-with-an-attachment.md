@@ -1,61 +1,54 @@
 ---
-title: How to add a document with an attachment via Rest API
-description: The article describes how to add a new entry with an attachment in the Documents module via Rest API.
+title: Jak przez API utworzyć dokument z załącznikiem
+description: W tym artykule znajdziesz informacje, jak za pomocą REST API dodać rekord w module Dokumenty wraz z załącznikiem
 keywords:
   - Webservice
   - API
   - RestAPI
-  - add
-  - document
-  - file
-  - attachment
+  - dodać
+  - dokument
+  - plik
+  - załącznik
   - YetiForce
 tags:
   - Webservice
   - API
   - Rest API
-  - Document with an attachment
+  - Dokument z załącznikiem
 ---
 
-:::tip
-
-This functionality is available for YetiForce version `6.2.0` and later
-
+:::tip Funkcjonalność dostępna od wersji YetiForce `6.2.0` i później
 :::
 
-The article describes how to add a new entry with an attachment in the Documents module via Rest API.
+Niniejszy artykuł przedstawia instrukcję, jak za pomocą API dodać rekord w module Dokumenty wraz z załącznikiem.
 
-Before continuing, please research the methods and ways of communication described here: https://doc.yetiforce.com/api/
+**Przed przejściem dalej należy zapoznać się z dostępnymi metodami i sposobem komunikacji z API opisanymi w [dokumentacji API](https://doc.yetiforce.com/api/).**
 
-## 1. Create a document with an attachment
+## 1. Tworzenie dokumentu wraz z załączeniem pliku
 
-To create an entry in the Documents module use an API method the allows for record creation, i.e.
+Do utworzenia rekordu w module Dokumenty należy wykorzystać metodę API umożliwiającą tworzenie rekordu, tj.
 
 ![create-record](create-record.png)
 
 https://doc.yetiforce.com/api/#/BaseModule/ea3b9bea091cbde741323b5393901825
 
-The difficult part when adding an attachment is the correct formulation of the query. As a standard, the module fields should be properly completed in the query, and in this case it will be no different.
+Utworzenie nowego rekordu w module Dokumenty wymaga podania następujących wartości:
 
-Field names are available in the field edition panel in Software configuration → Standard modules → Edit fields
+- `notes_title` - nazwa dokumentu.
 
-Fields responsible for adding an attachment:
+- `folderid` - identyfikator katalogu.
 
-- File type [filelocationtype]
+- `filelocationtype` - typ pliku. Pole to określa typ załącznika. Dostępne są dwie wartości: `I` - wewnętrzny (załącznik), `E` - zewnętrzny (odnośnik).
 
-  This field defines the type of attachment. Two values are available: I - Internal, E - External
+- `filename` - plik lub adres URL. Załącznik lub odnośnik.
 
-- File name/WWW [filename]
-
-  Attachment or link
-
-Once you know what the structure of the Documents module looks like, you can proceed with API queries. Below you can find some examples of this type of queries:
+Poniżej przedstawiono kilka przykładów konstrukcji zapytań API:
 
 ### Postman
 
 ![create record Postman](create-record-PostmanApiDoc2.png)
 
-### Guzzle, PHP HTTP client
+### Guzzle - klient HTTP dla PHP
 
 https://github.com/guzzle/guzzle
 
@@ -85,7 +78,7 @@ $options['multipart'] = [
 $response = $httpClient->request('POST', $uri, $options)->getBody()->getContents();
 ```
 
-### cURL, PHP
+### cURL - PHP
 
 ```php
 $url = 'https://example.com/webservice/RestApi/Documents/Record';
@@ -111,31 +104,19 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, ['notes_title' => 'Document pdf', 'fileloca
 $response = curl_exec($ch);
 ```
 
-## 2. Relating a document to another entry
+## 2. Powiązanie utworzonego dokumentu z innym wpisem
 
-The existence of an unrelated document in the system is pointless, therefore each entry in the Documents module should be related to a record in another module, for example Contact, Account, Ticket, or any other that can be related to a Document.
+Aby powiązać tworzony dokument z innym rekordem w systemie, do zapytania API z pkt. 1 należy dodać:
 
-You don't have to create separate API queries to relate the document, you can do it at the time of creating the document by adding a few additional variables, such as:
+- `relationOperation` (bool) - ustawiając wartość `true`, określamy, że tworzony wpis podlega powiązaniu w relacji.
 
-- relationOperation (bool) /mandatory
+- `sourceModule` (string) - nazwa modułu, z którym należy powiązać utworzony dokument.
 
-  Determines that the created entry can be related
+- `sourceRecord` (int) - identyfikator rekordu, z którym należy powiązać utworzony dokument.
 
-- sourceModule (string) /mandatory
+- `relationId` (int) - opcjonalne, identyfikator relacji między modułami. Uzupełniamy, jeśli istnieje więcej niż jedna relacja między modułami.
 
-  Name of the module that the document should be related to
-
-- sourceRecord (int) /mandatory
-
-  ID of the record that the document should be related to
-
-- relationId (int) /optional
-
-  ID of the relation between modules
-
-  Mandatory if there are more than one relation between modules
-
-Example:
+Przykładowa konstrukcja zapytania z powiązaniem relacji:
 
 ```php
 $httpClient = new \GuzzleHttp\Client($options);
