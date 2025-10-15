@@ -1,0 +1,92 @@
+````
+# YetiForce Change Log
+
+## 7.0.5 2025-10-15
+
+- Fix: [Advanced block] Generating records using field mapping functionality.
+- Fix: [Business Hours] Determining response times, e.g. on Tickets (GitHub #127)
+- Fix: [Import] Mandatory selection of fields for merging criteria.
+- Fix: Case sensitivity in file extension verification.
+- Fix: Installing the YF system with blank database password (GitHub #72)
+- Fix: Installation via CLI. Help command, setting default language, etc.
+- Fix: Filtering by roles in the condition builder view.
+- Fix: Division by zero in workflow action expressions.
+- Fix: Validation of the `File name/www` field in Documents module.
+- Fix: Smarty library updated to version 5. Full support for PHP8.x. No need to suppress `Deprecated` messages.
+- Fix: [Mail scanner] Emails omitted from mail scanner actions (case of no sender).
+- Fix: [Import] Assigning records that are in the trash to reference fields.
+- Fix: Export to XLS `Multi email` and `Related M:M` field.
+- Fix: Default value automatically saved when editing a record when it has been removed from a form field. Now default values will only be saved when a record is created and unless the values in the form have been cleared.
+- Fix: Conditioning checkbox fields in workflow actions when creating a record (case of no permissions to fields).
+- Fix: Total number of entries in the pagination section (related records tab).
+- Fix: [Reports] Handling of sharing owner fields in the Reports module.
+- Fix: [Reports] Duplicates, report preview and other minor fixes for the Reports module.
+- Fix: [Reports] Removed unsupported relationships.
+- Fix: [Reports] Generating SQL queries (QueryGenerator), which results in improved display of data from fields like Owner or SharedOwner from related records in the list view.
+- Fix: Accessibility permissions for the "Change History" widget on the record card.
+- Fix: Generating query conditions in a filter for multi-select picklists using the equal and not equal operators for multiple elements.
+- Fix: Comparing the values of edited fields. Incorrect validation occurs in text fields when the values are numeric (old GitHub #14550)
+- Fix: Generating charts from related records on the record’s page (Widget type: `Related module - chart`).
+- Fix: Hierarch count on Storage module record.
+- Fix: [GUI] DAV settings view column mismatch.
+- Fix: Export data with the advanced block (XLS).
+- Fix: Email communication in the case of external mail clients (GitHub #193).
+- Fix: Ticket email Reply button shows `[ticket_no]` in the Email subject instead of adding the ticket number (GitHub #174).
+- Fix: Replying directly from the email record (Firefox) when using an external email client (GitHub #174).
+- Fix: The "Unlink Relation" icon does not display correctly in the email widget.
+- Fix: The "Add to Favorites" icon does not display correctly in the related records list.
+- Fix: Data validation for more demanding access details: Mail scanner, SMTP.
+- Fix: [Mail scanner] Improved handling of emails from the mail client (Case of sudden email disappearance).
+- Fix: Removing rows from the advanced block when it is not mandatory.
+- Fix: Ensure opening the map from coordinate fields always displays the modal window instead of sometimes redirecting to Google Maps.
+- Fix: The date does not take the time zone into account in the email details modal window (Roundcube).
+- Fix: Function that removes role dependency for a picklist field.
+- Fix: [Mail scanner] Email address matching is case sensitive (GitHub #173).
+- Fix: Fixes and improvements in private mailbox configuration under user preferences.
+- Fix: Data validation in the SSO configuration panel (Authentication -> Azure AD).
+- Fix: Highlighting differences in the record merge modal window (List view).
+- Fix: Adjusting the clickable area of a checkbox.
+- Fix: Import/Export modules.
+- Fix: Improved cache clearing when deleting a field.
+- Fix: CardDAV incorrectly assigns email address and phone number values when no type is set (WORK, HOME).
+- Fix: Unable to edit the 'Update Record' workflow task when it contained a field that had been permanently removed from the system.
+- Fix: Block creation of Virtual field referencing another Virtual field.
+- Fix: Mail scanner should skip folders that are only labels and cannot contain emails.
+- Fix: [Mail scanner] Illegal value in the email subject (GitHub #180).
+- Fix: Date range filtering Dashboard Widget crash (GitHub #199).
+- Fix: Availability of data from virtual fields via API.
+- Fix: [Roundcube] Access to mailbox interrupted. The problem occurs with OAuth connections.
+- Fix: [CEIDG] Update API HD to v3.
+
+- Enh: Added `Transfer ownership` in mass actions in related records list.
+- Enh: Added `Mass edit` in mass actions in related records list.
+- Enh: Ability to compare fields between related modules in filter conditions (List view).
+- Enh: Group loading in the administration panel has been optimized by removing unused variables.
+- Enh: Descriptions for picklist values now available directly via popover.
+- Enh: Extend date/time field operators with "is empty" in workflow conditions.
+
+- Chg: Default values are now automatically filled in when creating an empty record model instance.
+- Chg: Updated dependent libraries [composer, yarn] (including `phpspreadsheet`, `fpdi`, `libphonenumber` and others).
+- Chg: Added a missing directory for cleaning temporary files and reduced the file retention period to 7 days.
+- Chg: Upgrade Roundcube Webmail dependency to version 1.6.11. This library needs to be updated manually in admin panel.
+
+- Rem: Removed redundant function `Vtiger_Record_Model::getListFieldsToGenerate()`
+- Rem: Removed mandatory IMAP library from ConfReport.
+
+### ⚠ BREAKING CHANGES
+
+Due to Smarty update to version 5, the following has been changed:
+
+- class name for the template engine base object from `Vtiger_Viewer` to `\App\Viewer`
+- Templates (\*.tpl) have been corrected to meet Smarty v5 requirements.
+
+If your system has been modified (by developers) by creating custom views, consider running the following commands, which should solve 99% of your problems.
+
+```bash
+grep -l ' key=\$' --include="*.tpl" -r . | xargs -r sed -i 's/ key=\$/ key=/g'
+grep -l ' item=\$' --include="*.tpl" -r . | xargs -r sed -i 's/ item=\$/  item=/g'
+grep -l '{reset(' --include="*.tpl" -r . | xargs -r sed -i 's/{reset(/ {current(/g'
+
+grep -l 'Vtiger_Viewer' --include="*.php" -r . | xargs -r sed -i 's/Vtiger_Viewer/\\App\\Viewer/g'
+```
+````
