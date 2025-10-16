@@ -1,57 +1,82 @@
 ```
-YetiForce regularly releases new versions of the software. Each new version includes bug fixes, enhancements and new functionalities. YetiForce 3.0 was released on 18 April 2016. The 3.0 version is marked as LTS [Long-term support], which in practice means that for 12 months we will release critical fixes for the system. It concerns only fixes related to security issues and problems with using all the tools available in the system. The list of changes for other releases can be found in different articles in the same sub-menu.
-Changes 2.3 > 3.0
-ADDED:
-New modern interface
-New modules: Partners, Competition, Bookkeeping, Proforma Invoice, Correction Invoice, Knowledge Base, Storage Turnover Notes, Storages, Goods Received Note, Goods Received Note Corrections, Goods Dispatched Notes, Goods Dispatched Notes Corrections, Internal Delivery Notes, Goods Issued Notes, Pre-oder, Storage Transfer Received Notes, Storage Transfer Dispatched Notes, Analyzer (available in our online shop!)
-Added a mechanism to manage field visibility in Inventory module
-Added renewal invoice
-Added a new workflow type : "on related"
-Added a new workflow type : "update related records"
-Added new panel : Fields – mapping
-Added new function : Favorites
-Added relations (Vendors with Documents, Payments Out, Payments In)
-Added relations (Opportunities with Products and Services)
-Added relations (Bookkeeping with Documents)
-Added a few new widgets
-Added an option to add shortcuts in configuration menu
-Added authorized user in WebService
-Added the option to block copying, pasting, cutting
-Added a functionality to import and export workflow records
-Added the preProcessAjax function
-Added PDF templates to: Goods Received Notes, Goods Dispatched Notes, Internal Delivery Notes, Goods Issued Notes, Storages
-Added hierarchy to Storages
-Added Changes Tracking functionality
-Added a new “Renewal” field in Assets
-Added notifications configuration
-Added new action : “Create view”
-Added shop
-Added tracking viewed records
-Added new panel : Record allocation
-REMOVED:
-Removed old user interface
-Removed modules: Sales Order, Purchase Order, Costs, Opportunities, Quote Enquiries, Requirement Cards, Calculations, Quotes, Single Orders, Periodically Recurring Orders, OSSPDF
-Removed the Dutch language – the files are available to download as a language pack
-Removed a few fields in the Projects module and the relation with Tickets
-Removed a variety of redundant and outdated translations, files, code fragments, buttons.
-FIXES & IMPROVEMENTS
-Improved Webforms
-Improved tables for phones and tablets
-Improved mass edition form in users module
-Rebuilt mail notifications in ticket support
-Changed Calendar appearance
-Reconstructed rules for creating relations
-Rebuilt the permission mechanism based on relations
-Moved Invoices module to Bookkeeping
-Corrected license info in system files
-Improved compatibility with PHP 5.4 and IE & Safari browsers
-Updated RoundCube to 1.1.4
-Changed the status values in Assets and Sold Services
-Improved export and import modules
-Improved Users module
-Fixed managing CustomView filters and a few others related to them
-Improved tons of translations in all available languages
-Fixed auto-login for e-mail
-Improved saving 'Share with users' field
-Fixed converting to Account
+YetiForce regularly releases new versions of the software. Each new version includes bug fixes, enhancements and new functionalities.
+YetiForce 2.2 GA was released on 31st August 2015. The list of changes for other releases can be found in different articles in the same sub-menu.
+
+Changes 2.1 > 2.2
+BUG FIXES:
+Fixed adding products and services in price books module.
+Fixed a bug that caused the vendor added to a contact not to appear in the contacts list in related modules in the vendors module.
+Fixed editing filter in Documents module.
+Fixed the users list. Now it's possible to add users who are not administrators.
+Disabled the email field in mass edition of users.
+Added missing min file.
+Fixed creating a To Do task.
+Fixed refreshing the folder list after adding a new folder.
+Fixed creating calendar's to do's from workflow level.
+Fixed the summary of Potentials.
+Fixed the summary of history.
+Fixed the blocks' background height.
+Fixed an error in database query that caused the “Cardinality violation 1222” error.
+Fixed a bug related to filtering conditions.
+Fixed a bug related to sending emails in Calendar module.
+Reverted a change in developer mode.
+Fixed the display of a button that indicates changes made in a record.
+Fixed an invalid variable in mail template tickets.
+Fixed expanding/closing blocks in modules.
+Fixed a SQL error that occurred when users added a picklist to a module.
+Fixed alignment of buttons with longer labels.
+Fixed exporting users.
+Fixed a bug in mail templates.
+Fixed csrfMagic in Reports.
+Fixed report generation.
+Fixed generation of date time ranges from string type.
+Fixed display of new calendar activities.
+Fixed a bug that redirected a user to an empty page while creating records in a custom module.
+Fixed display of the percent field in edit view when using a narrow row height.
+Fixed scrollbar.
+Fixed checkboxes in templates.
+Fixed tree manager.
+Fixed mass edition.
+Fixed creating relationships.
+Fixed merging duplicate contacts.
+Fixed a bug that would prevent users from creating new records.
+Fixed reactivating inactive fields.
+IMPROVEMENTS:
+Improved appearance of various fields, texts, buttons, labels, windows and icons.
+Improved translations.
+Improved selecting module in 'Add Widget'.
+Added and improved pagination in reports module.
+Improved saving field in detail view.
+Removed the possibility to change a module in data access validation.
+Changed column type.
+Improved the DataAccess validation mechanism.
+Improved adding and editing project modal windows.
+Rebuilt the email preview widge.t
+Added hiding the reminders panel if all reminders have been accepted.
+Separated dynamic search of addresses and address copy buttons from block header.
+Improved email printing.
+Rebuilt the email list.
+Added information about mandatory fields.
+Changed extensions of some files.
+Added relating the Vendor to the Tickets and the Project.
+Improved pagination display.
+Changed the name 'Organizations' to 'Accounts'.
+Modified the type of accepted files when importing modules.
+Improved pagination.
+Improved loading the field list in 'Mail Templates' module.
+Many visual improvements.
+Improvements in API for Portal 2.
+Improved the getConfig function.
+Added a new parameter in API.
+Added required field info.
+Updated requirements.
+Removed unnecessary titles.
+NEW FUNCTIONALITIES:
+Added a new widget.
+Added a Panel for configuring automatic currency exchange rates updates.
+Added record preview in API.
+Added text-trimming functions.
+Added new conditions for the mail scanner.
+Added a preview of all emails.
+Added 'Many to many' type relation for a Contact in modules: Letters outgoing, Letters incoming.
 ```
