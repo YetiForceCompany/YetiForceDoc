@@ -1,57 +1,30 @@
 ```
-YetiForce regularly releases new versions of the software. Each new version includes bug fixes, enhancements and new functionalities. YetiForce 3.0 was released on 18 April 2016. The 3.0 version is marked as LTS [Long-term support], which in practice means that for 12 months we will release critical fixes for the system. It concerns only fixes related to security issues and problems with using all the tools available in the system. The list of changes for other releases can be found in different articles in the same sub-menu.
-Changes 2.3 > 3.0
-ADDED:
-New modern interface
-New modules: Partners, Competition, Bookkeeping, Proforma Invoice, Correction Invoice, Knowledge Base, Storage Turnover Notes, Storages, Goods Received Note, Goods Received Note Corrections, Goods Dispatched Notes, Goods Dispatched Notes Corrections, Internal Delivery Notes, Goods Issued Notes, Pre-oder, Storage Transfer Received Notes, Storage Transfer Dispatched Notes, Analyzer (available in our online shop!)
-Added a mechanism to manage field visibility in Inventory module
-Added renewal invoice
-Added a new workflow type : "on related"
-Added a new workflow type : "update related records"
-Added new panel : Fields – mapping
-Added new function : Favorites
-Added relations (Vendors with Documents, Payments Out, Payments In)
-Added relations (Opportunities with Products and Services)
-Added relations (Bookkeeping with Documents)
-Added a few new widgets
-Added an option to add shortcuts in configuration menu
-Added authorized user in WebService
-Added the option to block copying, pasting, cutting
-Added a functionality to import and export workflow records
-Added the preProcessAjax function
-Added PDF templates to: Goods Received Notes, Goods Dispatched Notes, Internal Delivery Notes, Goods Issued Notes, Storages
-Added hierarchy to Storages
-Added Changes Tracking functionality
-Added a new “Renewal” field in Assets
-Added notifications configuration
-Added new action : “Create view”
-Added shop
-Added tracking viewed records
-Added new panel : Record allocation
-REMOVED:
-Removed old user interface
-Removed modules: Sales Order, Purchase Order, Costs, Opportunities, Quote Enquiries, Requirement Cards, Calculations, Quotes, Single Orders, Periodically Recurring Orders, OSSPDF
-Removed the Dutch language – the files are available to download as a language pack
-Removed a few fields in the Projects module and the relation with Tickets
-Removed a variety of redundant and outdated translations, files, code fragments, buttons.
-FIXES & IMPROVEMENTS
-Improved Webforms
-Improved tables for phones and tablets
-Improved mass edition form in users module
-Rebuilt mail notifications in ticket support
-Changed Calendar appearance
-Reconstructed rules for creating relations
-Rebuilt the permission mechanism based on relations
-Moved Invoices module to Bookkeeping
-Corrected license info in system files
-Improved compatibility with PHP 5.4 and IE & Safari browsers
-Updated RoundCube to 1.1.4
-Changed the status values in Assets and Sold Services
-Improved export and import modules
-Improved Users module
-Fixed managing CustomView filters and a few others related to them
-Improved tons of translations in all available languages
-Fixed auto-login for e-mail
-Improved saving 'Share with users' field
-Fixed converting to Account
+YetiForce regularly releases new versions of the software. Each new version includes bug fixes, enhancements and new functionalities.
+YetiForce 2.3 was released on 13 October 2015. The list of changes for other releases can be found in different articles in the same sub-menu.
+
+Changes 2.2 > 2.3
+NEW FUNCTIONALITIES:
+Added new module type [Advanced], where we can design a block with products/services. Everything can be managed in the field editor. Also, new panels to manage discounts and taxes were created [they work only with the new module type].
+Added new permission mechanisms [available in role configuration], which define the permissions regarding the account.
+Added the ability to control the filter tool in profiles.
+Added the ability to assign a filter to the menu [works for the Module type menu] in menu.
+Added a new field type [uitype 305], which allows you to search by related modules, eg. if we add the product to the account, then we will be able to search for accounts who have this product on the accounts list.
+Added new types of events in workflow.
+Added a mechanism for removing modules [works for the new modules].
+Added a mechanism in profiles to disable advanced search.
+Added ability to set a different menu name for the Module type menu.
+Added a mechanism that allows for logging on any user: https://gitdeveloper.yetiforce.com/index.php?module=Users&view=SwitchUsers&parent=Settings&block=4&fieldid=94
+OPTIMIZATION:
+Improved the login panel and added [optional] language selection.
+Improved record export to CSV files [including " character support].
+Standardized the calendar statuses [tasks/to do's] and the optimized calendar related widgets.
+Added a mechanism for closing tasks/to do's in widgets, notifications and record summary.
+Improved scanner mechanisms and mechanisms used for creating relations.
+Optimized dozens of engine functions and database queries.
+Improved the mechanism used for getting currency exchange rates.
+Rebuilt the mechanism responsible for loading from the vtiger_links table
+ISSUES:
+Fixed many reported bugs and issues, the full list can be found here: https://github.com/YetiForceCompany/YetiForceCRM/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22YetiForce+2.3+GA%22
+Removed 'my settings' tab [it can be enabled in: config/security.php]
+Removed the ability to reset passwords while logging in [it can be enabled in: config/security.php]
 ```
