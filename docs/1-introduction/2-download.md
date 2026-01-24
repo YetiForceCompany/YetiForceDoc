@@ -1,10 +1,11 @@
 ---
 title: Pobierz YetiForce
-description: Skąd pobrać system YetiForce?
+description: Skąd pobrać system YetiForce? Tutaj znajdziesz oficjalne linki do pobrania systemu.
 keywords:
-  - pobierz
-  - znaleźć
-  - YetiForce
+  - pobierz CRM
+  - darmowy CRM open source
+  - YetiForce download
+  - pliki instalacyjne YetiForce
 tags:
   - pobierz
 ---

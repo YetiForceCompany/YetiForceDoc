@@ -1,9 +1,11 @@
 ---
 title: Testuj
-description: Publiczna wersja testowa systemu YetiForce oraz Portalu klienta
+description: Wypróbuj publiczną wersję testową systemu YetiForce CRM oraz Portalu Klienta całkowicie za darmo. 
 tags:
-  - demo
+  - demo CRM
+  - YetiForce testuj online
   - wersja testowa
+  - darmowa wersja testowa CRM
 keywords:
   - demo
   - wersja testowa
@@ -11,7 +13,7 @@ keywords:
 
 ## Wersja demonstracyjna systemu YetiForce
 
-Jest to najbardziej aktualna deweloperska wersja systemu, która zawiera wszystkie najnowsze poprawki. Z tego powodu może ona również zawierać błędy.
+Jest to najbardziej aktualna ostatnia stabilna wersja systemu, która zawiera wszystkie najnowsze poprawki.
 
 Adres: <a href="https://demo.yetiforce.com" target="_blank">demo.yetiforce.com</a>
 
@@ -25,3 +27,4 @@ Adres: <a href="https://demo.yetiforce.com" target="_blank">demo.yetiforce.com</
   - Hasło: demo
 
 Odświeżanie aplikacji w godzinach: 7, 12, 15, 22 CET
+
