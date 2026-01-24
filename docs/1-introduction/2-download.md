@@ -15,7 +15,7 @@ Tutaj znajdziesz linki do pobrania najnowszej stabilnej wersji systemu.
 
 ## Gdzie bezpiecznie pobrać system YetiForce?
 
-YetiForce to zaawansowany system który oferuje więcej funkcji niż tradycyjny CRM. Poniżej znajdziesz linki do **zaufanych i bezpiecznych źródeł** pobrania najnowszej stabilnej wersji.
+YetiForce to zaawansowany system który oferuje więcej funkcji i możliwośći niż tradycyjny CRM. Poniżej znajdziesz linki do **zaufanych i bezpiecznych źródeł** pobrania najnowszej stabilnej wersji.
 
 ### 📦 Pobierz stabilną wersję z serwera YetiForce
 
