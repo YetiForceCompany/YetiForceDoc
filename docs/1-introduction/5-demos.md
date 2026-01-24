@@ -1,6 +1,6 @@
 ---
 title: Testuj YetiForce
-description: Przetestuj pełną funkcjonalność systemu YetiForce CRM i Portalu Klienta w publicznej wersji demo. Bez logowania, bez zobowiązań.
+description: Przetestuj pełną funkcjonalność systemu YetiForce i Portalu Klienta w publicznej wersji demo. Bez logowania, bez zobowiązań.
 keywords:
   - testuj YetiForce
   - wersja testowa
@@ -21,7 +21,7 @@ YetiForce udostępnia **pełną, działającą wersję demonstracyjną** systemu
 
 ### 🌐 Adres demo
 
-**Demo YetiForce CRM:** <a href="https://demo.yetiforce.com" target="_blank">demo.yetiforce.com</a>
+**Demo YetiForce:** <a href="https://demo.yetiforce.com" target="_blank">demo.yetiforce.com</a>
 
 ### 🔑 Dane logowania do demo
 
