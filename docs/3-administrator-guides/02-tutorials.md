@@ -1,12 +1,17 @@
 ---
-title: Tutoriale wideo
-description: A collection of video tutorials that present the administrative part of the YetiForce system
+title: Tutoriale wideo dla administratorów
+description: Zbiór filmów instruktażowych dla administratorów systemu YetiForce. Aktualizacje, migracje, konfiguracja bezpieczeństwa i zaawansowane narzędzia.
 keywords:
-  - wideo
-  - tutoriale
+  - tutoriale administratora YetiForce
+  - aktualizacja YetiForce
+  - migracja systemu
+  - konfiguracja bezpieczeństwa
+  - zarządzanie serwerem
 tags:
   - wideo
   - tutoriale
+  - administrator
+  - zaawansowane
 ---
 
 ## Aktualizacja systemu
