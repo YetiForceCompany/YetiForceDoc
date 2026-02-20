@@ -7,6 +7,7 @@ on:
       - 'docs/**'
       - 'i18n/**'
       - '!i18n/en/docusaurus-plugin-content-docs/**'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -23,7 +24,7 @@ jobs:
       - name: Use Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '20.19'
           cache: 'yarn'
 
       - name: Install

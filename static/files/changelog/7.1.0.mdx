@@ -1,0 +1,30 @@
+```
+# YetiForce Change Log
+
+## 7.1.0 2026-02-11
+
+- Fix: [PDF] Merging PDF documents using the default YetiForcePDF generator.
+- Fix: Positioning and responsiveness of some elements (css).
+- Fix: Tweak record list view horizontal scrolling (css).
+- Fix: Datepicker styling.
+- Fix: Currency field validation overflow.
+- Fix: Permissions for multi-profile roles.
+- Fix: Write permissions for the `Created by` field.
+- Fix: Permissions inherited from the role.
+- Fix: No WYSIWYG in quick creation modal when the field is used in dependencies.
+- Fix: Encryption mechanism
+- Fix: DMARC verification for mail messages
+- Fix: Default time in Calendar/Time Control/Reservations modules (GitHub #215)
+- Fix: Incorrect identification of missing libraries in the Licenses panel (GitHub #213)
+
+- Enh: Update quick date ranges - add weekly, quarterly and year to date options, hide less used ranges (config/Performance.php -> $datePickerDisabledRanges).
+- Enh: Add wildcard support for referer whitelist (GitHub #225).
+- Enh: Restore `search` and `clear` buttons on record list view.
+- Enh: Add support for PHP 8.4 and partial support for PHP 8.5 (dependent libraries).
+- Enh: Add integrations with KSeF.
+
+- Chg: Updated dependent libraries [composer].
+- Chg: LDAP configuration expanded (Bind DN / Service Account). Reconfiguration required after update.
+- Chg: Changed default database charset from utf8 to utf8mb4 [config/Db.php].
+- Chg: Upgrade Roundcube Webmail dependency to version 1.6.13. This library needs to be updated manually in admin panel.
+```
