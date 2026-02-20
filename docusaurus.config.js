@@ -10,10 +10,14 @@ export default {
 	url: 'https://doc.yetiforce.com',
 	baseUrl: '/',
 	onBrokenLinks: 'warn',
-	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
 	organizationName: 'YetiForceCompany',
 	projectName: 'YetiForceCRM',
+	markdown: {
+		hooks: {
+			onBrokenMarkdownLinks: 'warn',
+		},
+	},
 	i18n: {
 		defaultLocale: 'pl',
 		locales: ['pl', 'en'],
@@ -26,7 +30,7 @@ export default {
 				docs: {
 					routeBasePath: '/',
 					sidebarPath: require.resolve('./sidebars.js'),
-					editUrl: ({ locale, versionDocsDirPath, docPath }) => {
+					editUrl: ({ locale, docPath }) => {
 						if (locale !== 'pl') {
 							return `https://crowdin.com/project/yetiforcedoc/${locale}`;
 						}
@@ -146,7 +150,7 @@ export default {
 			{ name: 'twitter:image', content: 'https://doc.yetiforce.com/img/logo/128x128.png' },
 			{ property: 'og:title', content: 'YetiForce Documentation' },
 			{ property: 'og:description', content: 'Official YetiForce System documentation / guide / knowledge' },
-			{ property: 'og:image', content: 'https://doc.yetiforce.com/img/logo/128x128.pngg' },
+			{ property: 'og:image', content: 'https://doc.yetiforce.com/img/logo/128x128.png' },
 			{ property: 'og:url', content: 'https://doc.yetiforce.com/' },
 		],
 		image: 'img/logo_horizontal.png',
