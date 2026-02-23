@@ -23,6 +23,7 @@ jobs:
           upload_sources: false
           upload_translations: false
           download_translations: true
+          download_language: 'en'
           localization_branch_name: tmp_l10n_crowdin_translations
           create_pull_request: true
           pull_request_title: 'Crowdin Translations'
