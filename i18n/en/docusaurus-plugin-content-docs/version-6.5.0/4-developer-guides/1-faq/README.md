@@ -11,6 +11,7 @@ keywords:
 tags:
   - FAQ
 hide_table_of_contents: true
+sidebar_key: v6.5-faq-developer
 ---
 
 import DocCardList from '@theme/DocCardList';
