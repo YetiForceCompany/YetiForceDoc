@@ -9,6 +9,7 @@ tags:
   - FAQ
   - YetiForce
 hide_table_of_contents: true
+sidebar_key: security-introduction
 ---
 
 Wybór bezpiecznego oprogramowania jest jednym z najważniejszych etapów przygotowań do wdrożenia, dlatego przygotowaliśmy artykuły opisujące, w jaki sposób system YetiForce spełnia najwyższe standardy bezpieczeństwa.

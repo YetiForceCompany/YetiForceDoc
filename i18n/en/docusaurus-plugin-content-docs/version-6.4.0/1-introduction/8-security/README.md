@@ -9,6 +9,7 @@ tags:
   - FAQ
   - YetiForce
 hide_table_of_contents: true
+sidebar_key: v6.4-security-introduction
 ---
 
 Choosing secure software is one of the most important stages of preparation for implementation, therefore we have written articles that describe how the YetiForce system meets the highest security standards.
