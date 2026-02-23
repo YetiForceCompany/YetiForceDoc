@@ -8,7 +8,7 @@ keywords:
 tags:
   - Security
 hide_table_of_contents: true
-sidebar_key: v6.4-security-administrator
+sidebar_key: security-administrator
 ---
 
 Configure key policies, rules, and parameters for sensitive data to increase the overall level of security.
