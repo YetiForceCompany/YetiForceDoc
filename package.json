@@ -14,7 +14,7 @@
 		"crowdin": "crowdin"
 	},
 	"dependencies": {
-		"@crowdin/cli": "4.13.0",
+		"@crowdin/cli": "4.14.1",
 		"@docusaurus/core": "^3.9.2",
 		"@docusaurus/plugin-client-redirects": "^3.9.2",
 		"@docusaurus/plugin-content-docs": "^3.9.2",
