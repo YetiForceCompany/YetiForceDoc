@@ -30,7 +30,7 @@ Zalety i możliwości integracji:
 - synchronizacja całej historii połączeń
 - graficzna prezentacja statusu Twojego telefonu
 - Obsługiwane plany: Bria Solo, Bria Teams, Bria Enterprise (https://www.counterpath.com/product-comparison/). Nie obsługuje planu "Bria Solo Free".
-- integracja z YetiForce za pomocą aktywnego okna przeglądarki
+- Integracja z YetiForce za pomocą aktywnego okna przeglądarki
 
 ![bria-softphone-1.png](bria-softphone-1.png)
 
@@ -94,6 +94,8 @@ Gdy otrzymujemy połączenie przychodzące, system poinformuje o nim innym kolor
 
 ## Uprawnienia
 
+### Dostęp do `Aplikacje na urządzeniu` w przeglądarce
+
 Aby integracja działała prawidłowo, wymagane jest udzielenie zgody na dostęp do innych aplikacji i usług na tym urządzeniu.
 
 ![bria-softphone-10.jpg](bria-softphone-10.jpg)
@@ -101,6 +103,16 @@ Aby integracja działała prawidłowo, wymagane jest udzielenie zgody na dostęp
 Zgoda może zostać zmieniona w dowolnym momencie poprzez kliknięcie ikony informacji o witrynie.
 
 ![bria-softphone-11.jpg](bria-softphone-11.jpg)
+
+### Dostęp do aplikacji w kliencie BRIA
+
+Podczas pierwszego uruchomienia aplikacji Bria Softphone i podłączenia systemu YetiForce wymagane jest zezwolenia na komunikację pomiędzy aplikacjami.
+
+![bria-softphone-12.jpg](bria-softphone-12.jpg)
+
+Wszystkie zgody są przechowywane w `Preferencjach` aplikacji. Więcej informacji można znaleźć na stronie https://docs.counterpath.com/docs/DeskUG/clients/UserGuides/Desktop/reference/deskApiAccess.htm
+
+![bria-softphone-13.jpg](bria-softphone-13.jpg)
 
 ## Odnośniki zewnętrzne
 
