@@ -29,7 +29,7 @@ Zalety i możliwości integracji:
 - możliwość wybierania numeru telefonu z okna systemu YetiForce
 - synchronizacja całej historii połączeń
 - graficzna prezentacja statusu Twojego telefonu
-- Obsługiwane plany: Bria Solo, Bria Teams , Bria Enterprise (https://www.counterpath.com/product-comparison/) nie obsługuje planu "Bria Solo Free"
+- Obsługiwane plany: Bria Solo, Bria Teams, Bria Enterprise (https://www.counterpath.com/product-comparison/). Nie obsługuje planu "Bria Solo Free".
 - integracja z YetiForce za pomocą aktywnego okna przeglądarki
 
 ![bria-softphone-1.png](bria-softphone-1.png)
@@ -88,9 +88,19 @@ Po kliknięciu numeru lub ikony telefonu zostanie wywołana metoda do utworzenia
 
 ## Połączenia przychodzące
 
-Gdy otrzymujemy połączenie przychodzące system poinformuje o nim innym kolorem i ikoną oraz pokaże numer telefonu osoby dzwoniącej.
+Gdy otrzymujemy połączenie przychodzące, system poinformuje o nim innym kolorem i ikoną oraz pokaże numer telefonu osoby dzwoniącej.
 
 ![bria-softphone-8.png](bria-softphone-8.png)
+
+## Uprawnienia
+
+Aby integracja działała prawidłowo, wymagane jest udzielenie zgody na dostęp do innych aplikacji i usług na tym urządzeniu.
+
+![bria-softphone-10.jpg](bria-softphone-10.jpg)
+
+Zgoda może zostać zmieniona w dowolnym momencie poprzez kliknięcie ikony informacji o witrynie.
+
+![bria-softphone-11.jpg](bria-softphone-11.jpg)
 
 ## Odnośniki zewnętrzne
 
