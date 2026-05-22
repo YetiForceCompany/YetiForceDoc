@@ -1,0 +1,53 @@
+```
+# YetiForce Change Log
+
+## 7.1.1 2026-05-22
+
+- Fix: [ConfReport] Identification of supported PHP versions (GitHub #234).
+- Fix: [ConfReport] Identification of the output_buffering parameter (GitHub #234).
+- Fix: No saving when editing WYSIWYG fields quickly in Detail view (GitHub #235).
+- Fix: Referer whitelist verification (GitHub #236).
+- Fix: Displaying information about the "echarts" dependency.
+- Fix: SMTP configuration for OAuth2.
+- Fix: Entries in the Change History when a field value is modified multiple times before saving.
+- Fix: Handling empty values for the phone field.
+- Fix: Verification of dates in ISO 8601 format (time zone offsets).
+- Fix: Twig TextParser (PDF template). Composer cleanup.
+- Fix: Adjusted permissions handling for records that no longer exist, preventing a TypeError.
+- Fix: Prevented unintended records from being moved to trash during email deletion.
+- Fix: Ensure newly created users are available for role-based switching.
+- Fix: [PBX: Bria] Call trigger and record linking.
+- Fix: [PBX: Bria] Phone number parsing and search.
+- Fix: Prevent save error when removing folders from Mail Scanner settings (GitHub #192).
+- Fix: Menu generation for roles and update icons for expandable menu entries.
+- Fix: Prevent users from receiving notifications about their own changes (GitHub #244).
+- Fix: [CSS] Horizontal scroll on the record relation list.
+- Fix: Improve the import summary modal with error details.
+- Fix: Prevent incorrect field selection when disabled fields appear in mapping.
+- Fix: Use absolute paths for Imagick image (errors mostly occur on Windows).
+- Fix: Prevent error when displaying avatar of a deleted user in change history.
+- Fix: PHP Deprecated warnings about dynamic properties in module import/export.
+- Fix: Image field popover appears in the wrong position on the first click.
+- Fix: The custom system logo in the menu no longer has a permanent border.
+
+- Enh: [KSeF] Added support for advance and settlement invoices.
+- Enh: Extend workflow conditions with "has added/removed" for multipicklist fields.
+- Enh: APCu cache for multiple instances on a single host.
+- Enh: Added a password visibility toggle on the login page.
+- Enh: Extended identification of registered PHP error types.
+- Enh: Expanded the available Twig functions to include `join` and `raw`.
+- Enh: Added support for MySQL 8.4.
+- Enh: Module export/import now includes field dependencies and picklist dependencies.
+- Enh: More comprehensive logging added for workflow process execution.
+
+- Chg: Updated dependent libraries [composer].
+- Chg: Upgrade Roundcube Webmail dependency to version 1.6.15. This library needs to be updated manually in admin panel.
+- Chg: The unit price (UnitPrice) in advanced blocks supports up to 8 decimal places.
+- Chg: [KSeF] Changed default mapping for some fields.
+- Chg: Added several unused files to .yarnclean.
+- Chg: Additional information for the phone field is no longer displayed in the list of records.
+- Chg: Updated the default system logo in the menu.
+- Chg: All custom settings related to KSeF integration are reset.
+
+- Rem: [KSeF] Support for simplified invoices has been removed.
+```
