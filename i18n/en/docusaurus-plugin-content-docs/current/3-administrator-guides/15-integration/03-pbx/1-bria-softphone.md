@@ -29,12 +29,12 @@ Advantages and capabilities:
 - Ability to dial a phone number from the YetiForce system window
 - Synchronization of the entire call history
 - Graphical presentation of your phone's status
-- Supported plans: Bria Solo, Bria Teams, Bria Enterprise (https://www.counterpath.com/product-comparison/) does not support "Bria Solo Free" plan
+- Supported plans: Bria Solo, Bria Teams, Bria Enterprise (https://www.counterpath.com/product-comparison/). Does not support the "Bria Solo Free" plan.
 - Integration with YetiForce via an active browser window
 
 ![bria-softphone-1.png](bria-softphone-1.png)
 
-## Video presentation
+## Bria Softphone presentation
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -54,7 +54,7 @@ import ReactPlayer from 'react-player';
     </TabItem>
 </Tabs>
 
-## Configuration
+## Bria Softphone configuration
 
 ### Add configuration to PBX
 
@@ -62,9 +62,9 @@ Add a `BRIA Softphone` type entry
 
 ![bria-softphone-2.png](bria-softphone-2.png)
 
-### Enter internal number in users
+### Set internal number for users
 
-Enter the internal number for users whose Bria Softphone integration you want to activate.
+Enter the internal phone number for users whose Bria Softphone integration you want to activate.
 
 ![bria-softphone-3.png](bria-softphone-3.png)
 
@@ -78,7 +78,7 @@ The icon on the top bar shows the current Bria Softphone integration status.
 
 ![bria-softphone-6.png](bria-softphone-6.png) Incoming or outgoing call; shows the caller's name/number
 
-## Dialing
+## Dial a number in Bria Soft Phone
 
 If the integration has been activated correctly, all `phone` type fields will show an additional phone icon.
 
@@ -86,11 +86,33 @@ When you click on a phone number or icon, a method will be called to create a ca
 
 ![bria-softphone-7.png](bria-softphone-7.png)
 
-## Incoming calls
+## Handle incoming Bria Soft Phone calls
 
 When you receive an incoming call, the system will inform you about it using a different icon and color, and will display the caller's number.
 
 ![bria-softphone-8.png](bria-softphone-8.png)
+
+## Permissions
+
+### Browser permissions for Bria Soft Phone
+
+Access to other applications and services on the device is mandatory for the application to work properly.
+
+![bria-softphone-10.jpg](bria-softphone-10.jpg)
+
+You can change these settings at any point by clicking the website information icon.
+
+![bria-softphone-11.jpg](bria-softphone-11.jpg)
+
+### Permission to communicate with the Bria Soft Phone client
+
+When you first launch the Bria Softphone application and connect the YetiForce system, it is necessary to allow communication between these applications.
+
+![bria-softphone-12.jpg](bria-softphone-12.jpg)
+
+All permissions are stored in the application's 'Preferences'. For more information visit: https://docs.counterpath.com/docs/DeskUG/clients/UserGuides/Desktop/reference/deskApiAccess.htm
+
+![bria-softphone-13.jpg](bria-softphone-13.jpg)
 
 ## External links
 
