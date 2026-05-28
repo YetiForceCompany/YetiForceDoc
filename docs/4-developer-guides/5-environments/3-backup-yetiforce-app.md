@@ -125,7 +125,7 @@ Po zakończeniu procesu sprawdź, czy:
 - zrzut bazy danych nie został przerwany błędem,
 - kopie są zapisane w odpowiedniej lokalizacji,
 - hasła do zaszyfrowanych archiwów są przechowywane w bezpieczny sposób,
-- [procedura odtworzenia](system-migration-or-recovery) została przetestowana przynajmniej na środowisku testowym.
+- [procedura odtworzenia systemu](system-migration-or-recovery) została przetestowana przynajmniej na środowisku testowym.
 
 Jeżeli backup jest wykonywany cyklicznie z CRON-a, zadbaj także o logowanie wyniku zadania oraz powiadomienia o błędach. Dzięki temu szybciej wykryjesz sytuację, w której kopie przestały tworzyć się poprawnie.
 
@@ -145,4 +145,4 @@ Częstotliwość zależy od liczby zmian w systemie. Dla środowisk produkcyjnyc
 
 ### Jak sprawdzić, czy kopia zapasowa działa
 
-Najlepszą metodą jest testowe odtworzenie kopii na oddzielnym środowisku. Sama obecność pliku backupu nie oznacza jeszcze, że dane da się poprawnie przywrócić. Zapoznaj się z artykułem [przywracania systemu](system-migration-or-recovery).
+Najlepszą metodą jest testowe odtworzenie kopii na oddzielnym środowisku. Sama obecność pliku backupu nie oznacza jeszcze, że dane da się poprawnie przywrócić. Zapoznaj się z artykułem o [migracji lub przywracaniu systemu](system-migration-or-recovery).
