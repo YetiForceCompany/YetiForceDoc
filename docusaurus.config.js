@@ -155,7 +155,17 @@ export default {
 		],
 		image: 'img/logo_horizontal.png',
 		prism: {
-			additionalLanguages: ['ini', 'php', 'javadoclike', 'phpdoc', 'php-extras', 'apacheconf', 'nginx', 'http'],
+			additionalLanguages: [
+				'ini',
+				'php',
+				'javadoclike',
+				'phpdoc',
+				'php-extras',
+				'apacheconf',
+				'nginx',
+				'http',
+				'sql',
+			],
 		},
 		navbar: {
 			title: 'YetiForce Documentation',
@@ -240,6 +250,10 @@ export default {
 					{
 						from: '/apps',
 						to: '/administrator-guides/apps',
+					},
+					{
+						from: '/introduction/system-migration-or-recovery',
+						to: '/developer-guides/environments/backup-yetiforce-app',
 					},
 				],
 			},
