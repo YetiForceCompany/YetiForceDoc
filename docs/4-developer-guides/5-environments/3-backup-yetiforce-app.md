@@ -2,12 +2,11 @@
 title: Jak wykonać kopię zapasową aplikacji YetiForce
 description: 'Jak wykonać backup YetiForce: baza danych, pliki aplikacji, katalog storage, uprawnienia, retencja i weryfikacja kopii.'
 keywords:
-  - backup
-  - backup YetiForce
+  - kopia
   - kopia aplikacji YetiForce
   - kopia zapasowa
-  - kopia bazy danych
-  - kopia plików
+  - plików
+  - bazy danych
   - storage
   - mysqldump
   - YetiForce
@@ -16,9 +15,9 @@ tags:
 preview: 3-backup-yetiforce-app.jpg
 ---
 
-Ten artykuł pokazuje, jak wykonać pełny backup YetiForce krok po kroku. Poprawna kopia zapasowa YetiForce powinna obejmować bazę danych, pliki aplikacji oraz katalog `storage` z plikami użytkowników.
+Ten artykuł pokazuje, jak wykonać pełną kopię YetiForce krok po kroku. Poprawna kopia zapasowa YetiForce powinna obejmować bazę danych, pliki aplikacji oraz katalog `storage` z plikami użytkowników.
 
-Jeżeli szukasz krótkiej odpowiedzi: pełny backup YetiForce to osobny zrzut bazy danych, osobna kopia plików aplikacji i osobna kopia katalogu `storage`, najlepiej szyfrowana, z kontrolą uprawnień i regularnym testem odtworzenia.
+Jeżeli szukasz krótkiej odpowiedzi: pełną kopię YetiForce to osobny zrzut bazy danych, osobna kopia plików aplikacji i osobna kopia katalogu `storage`, najlepiej szyfrowana, z kontrolą uprawnień i regularnym testem odtworzenia.
 
 ![3-backup-yetiforce-app.jpg](3-backup-yetiforce-app.jpg)
 
