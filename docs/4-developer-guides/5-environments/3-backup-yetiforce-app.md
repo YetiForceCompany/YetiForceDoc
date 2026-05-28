@@ -1,35 +1,64 @@
 ---
-title: Jak wykonać kopię systemu
-description: Jak prawidłowo xxx kopii system YetiForce.
+title: Jak wykonać kopię zapasową aplikacji YetiForce
+description: 'Jak wykonać backup YetiForce: baza danych, pliki aplikacji, katalog storage, uprawnienia, retencja i weryfikacja kopii.'
 keywords:
-  - kopii
+  - backup
+  - backup YetiForce
+  - kopia aplikacji YetiForce
   - kopia zapasowa
+  - kopia bazy danych
+  - kopia plików
+  - storage
+  - mysqldump
   - YetiForce
 tags:
   - kopia zapasowa
+preview: 3-backup-yetiforce-app.jpg
 ---
 
-Artykuł opisuje jak prawidłowo wykonać kopię zapasową samej aplikacji YetiForce, niezależnie czy wykonujemy ją jednorazowo czy tworzymy skryptu cyklicznego backupu.
+Ten artykuł pokazuje, jak wykonać pełny backup YetiForce krok po kroku. Poprawna kopia zapasowa YetiForce powinna obejmować bazę danych, pliki aplikacji oraz katalog `storage` z plikami użytkowników.
 
-## Kopia bazy danych
+Jeżeli szukasz krótkiej odpowiedzi: pełny backup YetiForce to osobny zrzut bazy danych, osobna kopia plików aplikacji i osobna kopia katalogu `storage`, najlepiej szyfrowana, z kontrolą uprawnień i regularnym testem odtworzenia.
 
-Wykonania kopii zaczynamy od wykonania pełnego dump-a bazy danych. Samo polecenie `mysqldump` nie wystarczy.
+![3-backup-yetiforce-app.jpg](3-backup-yetiforce-app.jpg)
 
-Przykładowe zapytanie do wykonanania dump-a bazy, ważne aby zabezpieczyć się przed błędami któe mogą znajdować sie w strukturze bazy danych i które moga powodować przerwanie wykonywania kopii.
+## Zanim rozpoczniesz
 
-```sql
+Przed wykonaniem kopii zapasowej warto ograniczyć zmiany w systemie. Najbezpieczniej wykonać backup w czasie niskiej aktywności użytkowników oraz upewnić się, że w trakcie operacji nie są uruchamiane zadania CRON, importy ani procesy integracyjne zapisujące dane do bazy lub katalogu `storage`.
+
+:::tip
+
+Najlepszą praktyką jest okresowe testowanie odtworzenia kopii na osobnym środowisku. Backup, którego nie da się odtworzyć, nie jest skutecznym zabezpieczeniem.
+
+:::
+
+## Jak wykonać kopię bazy danych YetiForce
+
+Tworzenie kopii zapasowej rozpocznij od wykonania pełnego zrzutu bazy danych. To kluczowy element całej procedury.
+
+Przykładowe polecenie `mysqldump`:
+
+```bash
 mysqldump --single-transaction --skip-lock-tables --quick -f yetiforce_database_name
 ```
 
-## Kopia plików aplikacji
+Powyższe parametry pomagają ograniczyć ryzyko przerwania procesu backupu, na przykład w przypadku problemów ze strukturą bazy danych.
 
-Wykonujemy kopię prawie całego katalogu z systemem YetiForce. Można pominą poniższe katalogi:
+:::warning
+
+Samo wykonanie kopii plików bez zrzutu bazy danych nie pozwala na poprawne odtworzenie systemu.
+
+:::
+
+## Jak wykonać kopię plików aplikacji YetiForce
+
+W kolejnym kroku wykonaj kopię niemal całego katalogu aplikacji YetiForce. Podczas archiwizacji możesz pominąć poniższe katalogi:
 
 - `__YF_ROOT__`/cache/session/
 - `__YF_ROOT__`/cache/templates_c
 - `__YF_ROOT__`/storage
 
-W poniśzym przykłądzie wywołanie kopi jest z katalogu pinżej niż `__YF_ROOT__`.
+W poniższym przykładzie polecenie jest uruchamiane z katalogu nadrzędnego względem `__YF_ROOT__`.
 
 ```bash
 7z a -mx=4 $BC_PATH.7z html -x!html/storage/ -x!html/cache/session/ -x!html/cache/templates_c/ -P$BC_SECRET
@@ -37,30 +66,37 @@ W poniśzym przykłądzie wywołanie kopi jest z katalogu pinżej niż `__YF_ROO
 
 :::warning
 
-- `__YF_ROOT__` to główny katalog aplikacji, w którym znajdują się pliki aplikacji np. app_data, user_privileges.
-- Kopia powinna być zawsze szyfrowana i hasło przechowywać w bezpiecznym miejscu
+- `__YF_ROOT__` to główny katalog aplikacji, w którym znajdują się pliki systemu, na przykład `app_data` i `user_privileges`.
+- Kopia powinna być zawsze szyfrowana, a hasło przechowywane w bezpiecznym miejscu.
 
 :::
 
-## Kopia plików użytkownika
+## Jak wykonać kopię plików użytkowników
 
-Odzielnie od kopii samej aplikacji wykonujemy kopie katalogu z plikami użytkowników czyli katalog `__YF_ROOT__`/storage (np. /home/yfprod/html/storage). Kopię można wykonać z mniejszym stopniem kompresji z kilku powodów np. szybkości wykonania i przywrócenia.
+Oddzielnie od kopii samej aplikacji wykonaj kopię katalogu z plikami użytkowników, czyli `__YF_ROOT__`/storage (na przykład `/home/yfprod/html/storage`). Pozwala to rozdzielić kod aplikacji od danych użytkowników. Ma to szczególne znaczenie, gdy pliki użytkowników zajmują dużo miejsca i lepiej archiwizować je osobno, a przy większej skali danych nawet na oddzielnej maszynie wirtualnej. Tę kopię można wykonać z niższym stopniem kompresji, aby skrócić czas tworzenia i odtwarzania archiwum.
 
-W poniśzym przykłądzie wywołanie kopi znajduje się z katalogu pinżej niż `__YF_ROOT__`.
+W poniższym przykładzie polecenie jest uruchamiane z katalogu nadrzędnego względem `__YF_ROOT__`.
 
 ```bash
 7z a -mx=2 $BACKUP_PATH.7z html/storage/ -P$BACKUP_SECRET
 ```
 
-## Kopia całej maszyny wirtualnej to za mało
+## Czy kopia całej maszyny wirtualnej wystarczy
 
-Nie jedno krotnie widzieliśmy że przywrócenie snapshot-a lub backpu VM nie powodowało że system YetiForce od razu działał. Przyczyny były różne najczęściej problem był w bazie danych która nie uruchomiło się pop przywróceniu całej VM.
+W praktyce wielokrotnie spotykaliśmy sytuacje, w których przywrócenie snapshotu lub backupu całej maszyny wirtualnej nie wystarczało do natychmiastowego uruchomienia YetiForce. Najczęstszą przyczyną były problemy z bazą danych po odtworzeniu całej maszyny.
 
-Dlatego rekomendujemy żeby kopię zapasową wykonywać na kilku warstwach i przechwowywać w różnych miejscahc.
+Dlatego rekomendujemy wykonywanie kopii zapasowych na kilku warstwach oraz przechowywanie ich w różnych lokalizacjach.
 
-## Usuwanie starych kopii
+Przykładowy podział:
 
-Nie rekomendujemy usuwania starych kopii na podstawie tworzenia plików, bo gdy wykonanie kopii się nie powiedzie z różnych przyczyn (np. brak miejsca, problem z bazą danych) to zostajemy bez zaanej kopii. Zalecamy usuwanie bazujace na ilościach kopii.
+- kopia bazy danych,
+- kopia plików aplikacji,
+- kopia katalogu `storage`,
+- snapshot maszyny lub serwera jako dodatkowa warstwa bezpieczeństwa.
+
+## Jak usuwać stare kopie zapasowe
+
+Nie rekomendujemy usuwania starych kopii wyłącznie na podstawie wieku plików. Jeśli nowe wykonanie backupu zakończy się błędem, na przykład z powodu braku miejsca lub problemu z bazą danych, możesz zostać bez poprawnej kopii. Bezpieczniej jest zarządzać retencją na podstawie liczby zachowanych archiwów.
 
 Przykład:
 
@@ -70,11 +106,43 @@ ls $BACKUP_DIR/app/* -1t | tail -n +3 | xargs rm -f
 ls $BACKUP_DIR/storage/* -1t | tail -n +3 | xargs rm -f
 ```
 
-## Uprawnienia
+Powyższy przykład pozostawia dwie najnowsze kopie w każdym katalogu.
 
-PO wykonaniu plików warto zmienić uprawnienia aby tylko określony właściciel miał dostęp do plików kopii.
+## Jak ustawić uprawnienia do kopii
+
+Po utworzeniu kopii warto ograniczyć uprawnienia, aby dostęp do archiwów miał tylko wskazany właściciel.
 
 ```bash
 chown -R root:root $BACKUP_DIR
 chmod 700 $BACKUP_DIR
 ```
+
+## Jak sprawdzić, czy backup YetiForce jest poprawny
+
+Po zakończeniu procesu sprawdź, czy:
+
+- archiwa zostały utworzone i mają oczekiwany rozmiar,
+- zrzut bazy danych nie został przerwany błędem,
+- kopie są zapisane w odpowiedniej lokalizacji,
+- hasła do zaszyfrowanych archiwów są przechowywane w bezpieczny sposób,
+- [procedura odtworzenia](system-migration-or-recovery) została przetestowana przynajmniej na środowisku testowym.
+
+Jeżeli backup jest wykonywany cyklicznie z CRON-a, zadbaj także o logowanie wyniku zadania oraz powiadomienia o błędach. Dzięki temu szybciej wykryjesz sytuację, w której kopie przestały tworzyć się poprawnie.
+
+## FAQ
+
+### Co powinien zawierać pełny backup YetiForce
+
+Pełny backup YetiForce powinien zawierać trzy elementy: zrzut bazy danych, kopię plików aplikacji oraz kopię katalogu `storage`. Pominięcie któregoś z tych elementów może uniemożliwić poprawne odtworzenie systemu.
+
+### Czy sam snapshot serwera lub maszyny wirtualnej wystarczy
+
+Nie. Snapshot może być dodatkową warstwą zabezpieczenia, ale nie powinien zastępować osobnych kopii bazy danych i plików. W praktyce problemy po odtworzeniu najczęściej dotyczą właśnie bazy danych lub niespójnych danych zapisanych w trakcie działania systemu.
+
+### Jak często wykonywać backup YetiForce
+
+Częstotliwość zależy od liczby zmian w systemie. Dla środowisk produkcyjnych standardem jest regularny backup wykonywany automatycznie z użyciem CRON-a, co najmniej raz dziennie, a w systemach o dużej liczbie operacji nawet częściej.
+
+### Jak sprawdzić, czy kopia zapasowa działa
+
+Najlepszą metodą jest testowe odtworzenie kopii na oddzielnym środowisku. Sama obecność pliku backupu nie oznacza jeszcze, że dane da się poprawnie przywrócić. Zapoznaj się z artykułem [przywracania systemu](system-migration-or-recovery).
