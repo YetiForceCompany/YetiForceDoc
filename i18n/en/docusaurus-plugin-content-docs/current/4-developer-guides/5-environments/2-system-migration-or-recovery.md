@@ -7,16 +7,18 @@ keywords:
   - restore
   - copy
   - backup
+  - kopia aplikacji
   - server
   - YetiForce
 tags:
-  - migrate
+  - migration
+  - przywracanie
   - backup
 ---
 
 Migrating or restoring the system from backup takes place in a few steps. To make sure you're doing it correctly, read the article below.
 
-## Video guide
+## Video presentation
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
