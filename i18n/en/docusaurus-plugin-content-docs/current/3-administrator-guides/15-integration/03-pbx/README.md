@@ -15,6 +15,8 @@ tags:
 
 The PBX integration allows you to make and receive phone calls in YetiForce.
 
+![pbx.jpg](pbx.jpg)
+
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
