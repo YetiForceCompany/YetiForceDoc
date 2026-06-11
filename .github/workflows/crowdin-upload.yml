@@ -22,10 +22,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Use Node.js 20
+      - name: Use Node.js 22
         uses: actions/setup-node@v3
         with:
-          node-version: '20.19'
+          node-version: '22.19.0'
           cache: 'yarn'
 
       - name: Install
