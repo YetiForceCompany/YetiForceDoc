@@ -25,7 +25,7 @@
 		"clsx": "^2",
 		"docusaurus-plugin-image-zoom": "^3.0.1",
 		"docusaurus-plugin-matomo": "^0",
-		"js-yaml": "4.2.0",
+		"js-yaml": "5.1.0",
 		"lunr-languages": "^1.20.0",
 		"prism-react-renderer": "^2.4.1",
 		"react": "^19.2.7",
