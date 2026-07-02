@@ -26,15 +26,15 @@ Zalety i możliwości integracji:
 
 - Zgodność z wiodącymi na rynku serwerami połączeń lub usługami VoIP (https://www.counterpath.com/international-voip-providers/)
 - Dedykowana aplikacja dla użytkownika
-- możliwość wybierania numeru telefonu z okna systemu YetiForce
-- synchronizacja całej historii połączeń
-- graficzna prezentacja statusu Twojego telefonu
-- Obsługiwane plany: Bria Solo, Bria Teams , Bria Enterprise (https://www.counterpath.com/product-comparison/) nie obsługuje planu "Bria Solo Free"
-- integracja z YetiForce za pomocą aktywnego okna przeglądarki
+- Możliwość wybierania numeru telefonu z okna systemu YetiForce
+- Synchronizacja całej historii połączeń
+- Graficzna prezentacja statusu Twojego telefonu
+- Obsługiwane plany: Bria Solo, Bria Teams, Bria Enterprise (https://www.counterpath.com/product-comparison/). Nie obsługuje planu "Bria Solo Free".
+- Integracja z YetiForce za pomocą aktywnego okna przeglądarki
 
 ![bria-softphone-1.png](bria-softphone-1.png)
 
-## Prezentacja wideo
+## Prezentacja wideo Bria Softphone
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -54,7 +54,7 @@ import ReactPlayer from 'react-player';
     </TabItem>
 </Tabs>
 
-## Konfiguracja
+## Konfiguracja Bria Softphone
 
 ### Dodanie konfiguracji do PBX
 
@@ -62,13 +62,13 @@ Dodajemy wpis o typie `BRIA Softphone`
 
 ![bria-softphone-2.png](bria-softphone-2.png)
 
-### Wprowadzanie numeru wewnętrznego w użytkownikach
+### Ustawianie numeru wewnętrznego dla użytkowników
 
-Wprowadzamy wewnętrzny numer telefonu dla użytkowników, którzy mają mieć aktywną integrację z Softphone
+Wprowadź wewnętrzny numer telefonu dla użytkowników, którzy mają mieć aktywną integrację z Bria Softphone.
 
 ![bria-softphone-3.png](bria-softphone-3.png)
 
-## Status połączania z Softphone
+## Status połączenia Bria Softphone
 
 Ikona na górnej belce systemu pokazuje aktualny status integracji z aplikacją Bria Softphone.
 
@@ -78,7 +78,7 @@ Ikona na górnej belce systemu pokazuje aktualny status integracji z aplikacją 
 
 ![bria-softphone-6.png](bria-softphone-6.png) Rozmowa wychodząca lub przychodząca, pokazuje nazwę/numer rozmówcy
 
-## Dialing
+## Wybieranie numeru w Bria Softphone
 
 Jeśli integracja została aktywowana prawidłowo, to wszystkie pola o typie `telefon` będą miały dodatkową ikonę telefonu.
 
@@ -86,11 +86,33 @@ Po kliknięciu numeru lub ikony telefonu zostanie wywołana metoda do utworzenia
 
 ![bria-softphone-7.png](bria-softphone-7.png)
 
-## Połączenia przychodzące
+## Obsługa połączeń przychodzących Bria Softphone
 
-Gdy otrzymujemy połączenie przychodzące system poinformuje o nim innym kolorem i ikoną oraz pokaże numer telefonu osoby dzwoniącej.
+Gdy otrzymujemy połączenie przychodzące, system poinformuje o nim innym kolorem i ikoną oraz pokaże numer telefonu osoby dzwoniącej.
 
 ![bria-softphone-8.png](bria-softphone-8.png)
+
+## Uprawnienia
+
+### Uprawnienia przeglądarki dla Bria Softphone
+
+Aby integracja działała prawidłowo, wymagane jest udzielenie zgody na dostęp do innych aplikacji i usług na tym urządzeniu.
+
+![bria-softphone-10.jpg](bria-softphone-10.jpg)
+
+Zgoda może zostać zmieniona w dowolnym momencie poprzez kliknięcie ikony informacji o witrynie.
+
+![bria-softphone-11.jpg](bria-softphone-11.jpg)
+
+### Zezwolenie na komunikację z klientem Bria
+
+Podczas pierwszego uruchomienia aplikacji Bria Softphone i podłączenia systemu YetiForce wymagane jest zezwolenie na komunikację pomiędzy aplikacjami.
+
+![bria-softphone-12.jpg](bria-softphone-12.jpg)
+
+Wszystkie zgody są przechowywane w `Preferencjach` aplikacji. Więcej informacji można znaleźć na stronie https://docs.counterpath.com/docs/DeskUG/clients/UserGuides/Desktop/reference/deskApiAccess.htm
+
+![bria-softphone-13.jpg](bria-softphone-13.jpg)
 
 ## Odnośniki zewnętrzne
 

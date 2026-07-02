@@ -7,10 +7,12 @@ keywords:
   - przywrócić
   - kopii
   - kopia zapasowa
+  - kopia aplikacji
   - serwer
   - YetiForce
 tags:
   - migracja
+  - przywracanie
   - kopia zapasowa
 ---
 

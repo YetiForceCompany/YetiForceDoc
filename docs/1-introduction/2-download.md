@@ -19,7 +19,7 @@ YetiForce to zaawansowany system który oferuje więcej funkcji i możliwośći 
 
 ### 📦 Pobierz stabilną wersję z serwera YetiForce
 
-[Pobierz stabilną wersję z serwera YetiForce](https://api.yetiforce.eu/download/crm/doc/7.1.0-complete) – zalecany, bezpośredni link do najnowszej wersji „complete”.
+[Pobierz stabilną wersję z serwera YetiForce](https://api.yetiforce.eu/download/crm/doc/7.1.2-complete) – zalecany, bezpośredni link do najnowszej wersji „complete”.
 
 ### 🛠️ Instalacja przez Softaculous
 
