@@ -1,12 +1,13 @@
 ---
 title: Instalacja systemu YetiForce
-description: Jak zainstalować system YetiForce
+description: Kompletny poradnik instalacji YetiForce. Dowiedz się, jak skonfigurować serwer i uruchomić kreator instalacji systemu YetiForce.
 keywords:
-  - kreator
-  - instalacji
+  - kreator instalacji
+  - instalacja CRM
+  - konfiguracja YetiForce
   - instrukcja
   - YetiForce
-  - jak zainstalować
+  - jak zainstalować CRM na serwerze
 tags:
   - instalacja
 preview: install-1.png

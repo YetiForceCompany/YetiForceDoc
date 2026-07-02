@@ -1,11 +1,11 @@
 ---
 title: Wprowadzenie
-description: YetiForce to oprogramowanie typu open source, służące do zarządzania relacjami z klientami i obsługi procesów biznesowych zachodzących w każdej firmie.
+description: Poznaj YetiForce - najbardziej zaawansowany system CRM open source do zarządzania procesami biznesowymi w Twojej firmie. 
 keywords:
-  - wprowadzenie
-  - początek
-  - poradnik
-  - YetiForce
+  - CRM open source
+  - darmowy CRM
+  - YetiForce wprowadzenie
+  - system do zarządzania firmą
 tags:
   - Wprowadzenie
 hide_table_of_contents: true
@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 ![Awards](/img/awards.jpg)
 
-## O nas
+## O systemie YetiForce
 
 YetiForce to oprogramowanie typu open source, służące do zarządzania relacjami z klientami i obsługi procesów biznesowych zachodzących w każdej firmie.
 
