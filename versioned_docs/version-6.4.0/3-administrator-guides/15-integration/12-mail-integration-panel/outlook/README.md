@@ -33,14 +33,14 @@ Artykuł omawia najważniejsze kwestie związane z dodatkiem Outlook do systemu 
 <Tabs groupId="WwgE1yX6akE">
     <TabItem value="youtube-WwgE1yX6akE" label="🎬 YouTube">
         <ReactPlayer
-            url="https://www.youtube.com/watch?v=WwgE1yX6akE"
+            src="https://www.youtube.com/watch?v=WwgE1yX6akE"
             width="100%"
             height="500px"
             controls={true}
         />
     </TabItem>
     <TabItem value="yetiforce-WwgE1yX6akE" label="🎥 YetiForce TV">
-        <ReactPlayer url="https://public.yetiforce.com/tutorials/outlook-integration-panel.mp4" width="100%" height="500px" controls={true} />
+        <ReactPlayer src="https://public.yetiforce.com/tutorials/outlook-integration-panel.mp4" width="100%" height="500px" controls={true} />
     </TabItem>
 </Tabs>
 
@@ -82,7 +82,7 @@ Po zakupie należy aktywować dodatek, jest to jednorazowa operacja. Gdy w Marke
 
 ### Tutorial wideo
 
-<ReactPlayer url="https://www.youtube.com/watch?v=HTRG81waq54" width="100%" height="500px" controls={true} />
+<ReactPlayer src="https://www.youtube.com/watch?v=HTRG81waq54" width="100%" height="500px" controls={true} />
 
 ### Aktywuj
 
