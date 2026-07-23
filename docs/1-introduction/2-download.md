@@ -39,6 +39,6 @@ Po pobraniu plików, postępuj zgodnie z oficjalnym przewodnikiem: [Instrukcja i
 
 ## ❓ Najczęstsze pytania (FAQ)
 
-- **Czy mogę pobrać YetiForce za darmo?** Tak, YetiForce jest w pełni darmowym oprogramowaniem open-source.
-- **Którą wersję pobrać?** Zalecamy wersję „complete”, która zawiera wszystkie niezbędne biblioteki.
-- **Gdzie szukać pomocy?** Sprawdź [społeczność YetiForce](/contributing) lub [zgłoś problem](https://github.com/YetiForceCompany/YetiForce/issues).
+- **Czy można pobrać YetiForce bezpłatnie?** Tak.
+- **Którą wersję systemu wybrać?** Zawsze wybieraj najnowszą, ostatnio wydaną wersję.
+- **Gdzie szukać pomocy?** Sprawdź [społeczność YetiForce](https://github.com/YetiForceCompany/YetiForce/discussions) lub [zgłoś problem](https://github.com/YetiForceCompany/YetiForce/issues).

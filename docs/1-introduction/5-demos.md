@@ -45,7 +45,8 @@ Aby się zalogować, użyj jednego z poniższych kont:
 - **Czy mogę skonfigurować demo po swojemu?** Tak, ale zmiany zostaną usunięte podczas kolejnego odświeżenia.
 - **Gdzie mogę pobrać system do samodzielnej instalacji?** Przejdź do strony [Pobierz YetiForce](/introduction/download).
 
-## 🚀 Chcesz własną instalację?
+## 🚀 Przejdź do testów zaawansowanych
 
-Jeśli demo Ci się spodoba, pobierz system i zainstaluj go na własnym serwerze:
-[Pobierz YetiForce](/introduction/download) | [Instrukcja instalacji](/introduction/installation-manual)
+Po przeglądzie demo możesz uruchomić YetiForce na własnym serwerze albo skorzystać z oferty [Cloud](https://yetiforce.com/pl/marketplace/yetiforce-cloud.html), aby sprawdzić system w warunkach lepiej dopasowanych do Twoich potrzeb, w bezpiecznym środowisku.
+
+[Pobierz YetiForce](/introduction/download) | [Instrukcja instalacji](/introduction/installation-manual) | [Poznaj ofertę Cloud](https://yetiforce.com/pl/marketplace/yetiforce-cloud.html)
