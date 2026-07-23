@@ -1,6 +1,6 @@
 ---
-title: Pierwsze Połączenie
-description: Jak rozpocząć pierwsze połączenie
+title: Pierwsze połączenie
+description: Jak wykonać pierwsze połączenie do API (logowanie)
 keywords:
   - Webservice
   - API
@@ -15,39 +15,61 @@ tags:
 preview: request-3.jpg
 ---
 
-Posiadając już prawidłowo skonfigurowany klucz API i dane uwierzytelniające (zgodnie z instrukcją [konfiguracji](/developer-guides/api/config)), możemy nawiązać połączenie. By pobrać dane z serwera, należy najpierw uzyskać token uwierzytelniający. Poniższa instrukcja wyjaśnia, jak to zrobić.
+Mając już prawidłowo skonfigurowany klucz API i dane uwierzytelniające (zgodnie z instrukcją [konfiguracji](/developer-guides/api/config)), możemy nawiązać połączenie. Aby pobrać dane z serwera, należy najpierw uzyskać token uwierzytelniający. Poniższa instrukcja wyjaśnia, jak to zrobić.
 
-## Uzyskiwanie Tokenu uwierzytelniającego
+## Uzyskiwanie tokenu uwierzytelniającego
 
-W celu uzyskania tokenu, wysyłamy do naszego serwera żądanie pod adres:
+W celu uzyskania tokenu wysyłamy do naszego serwera żądanie pod adres:
 
 ![request 1](request-1.jpg)
 
-Do testowania tego procesu można użyć programu `Postman`. Na kolejnych zrzutach ekranu będzie przedstawione krok po kroku, jak to zrobić.
+Do testowania tego procesu można użyć programu `Postman`. Na kolejnych zrzutach ekranu zostanie przedstawione krok po kroku, jak to zrobić.
 
-W pierwszej kolejności będzie potrzebna wartość `API Key`. By ją pobrać, w sekcji administracyjnej wybierz z lewego menu `Integracja ➞ Web service - aplikacje` a następnie przy interesującym cię kluczu naciśnij przycisk <kbd><i class="fa-solid fa-copy"></i></kbd> by skopiować jego wartość.
+W pierwszej kolejności potrzebna będzie wartość `API Key`. Aby ją pobrać, w sekcji administracyjnej wybierz z lewego menu `Integracja ➞ Web service - aplikacje`, a następnie przy interesującym Cię kluczu naciśnij przycisk <kbd><i class="fa-solid fa-copy"></i></kbd>, aby skopiować jego wartość.
 
 ![api_key](api_key.jpg)
 
-W programie `Postman` dodajemy nagłówek `X-API-KEY`. Zamiast wartości `{{APi-KEY}}` wpisujemy wartość API Key skopiowaną z systemu YetiForce.
+Do zapytania API dodajemy nagłówki:
+
+- `X-API-KEY`. Jako wartość podajemy API Key skopiowany z systemu YetiForce.
+
+- `Authorization`. Dane uwierzytelniające w formacie `Basic base64(userName:password)`, gdzie `userName` i `password` to dane uwierzytelniające aplikacji zarejestrowanej do korzystania z API w sekcji administracyjnej (z panelu `Web service - aplikacje`), a `base64` oznacza zakodowanie ciągu znaków w standardzie base64.
+
+W ciele zapytania umieszamy dane w formacie JSON:
+
+- `userName` - nazwa użytkownika web service.
+- `password` - hasło użytkownika web service.
+- `params` - dodatkowe parametry (opcjonalne), np. język `"params": {"language": "en-EN"}`.
+
+Nazwa użytkownika i hasło przekazywane w ciele zapytania to dane ustalone w sekcji administracyjnej w zakładce `Web service - użytkownicy`.
+
+```json
+{
+  "userName": "apiuser",
+  "password": "apipassword",
+  "params": {
+    "language": "en-EN"
+  }
+}
+```
 
 ![request 2](request-2.jpg)
 
-Następnie podajemy dane do logowania, zgodnie z poniższym zrzutem ekranu. Zamiast zmiennej `{{URL}}` podajemy adres naszej platformy YetiForce. Dane uwierzytelniające `userName` i `password` wpisujemy zgodnie z wartościami ustalonymi w sekcji administracyjnej w zakładce `Integracja ➞ Web service - użytkownicy`.
+Następnie podajemy dane do logowania zgodnie z poniższym zrzutem ekranu. Zamiast zmiennej `{{URL}}` podajemy adres naszej platformy YetiForce. Dane uwierzytelniające `userName` i `password` wpisujemy zgodnie z wartościami ustalonymi w sekcji administracyjnej w zakładce `Integracja ➞ Web service - użytkownicy`.
 
-W informacji zwrotnej otrzymamy parametr `token`, który będziemy przekazywać w kolejnych requestach.
+W informacji zwrotnej otrzymamy parametr `token`, który będziemy przekazywać w kolejnych żądaniach.
 
 ![request 3](request-3.jpg)
 
-## Kolejne requesty
+## Kolejne żądania
 
-Po uzyskaniu wartości `token`, możemy przejść do odpytywania API o interesujące nas dane. W tym celu do kolejnych requestów dodajemy nagłówek `x-token` z wartością uzyskanego tokena.
+Po uzyskaniu wartości `token` możemy przejść do odpytywania API o interesujące nas dane. W tym celu do kolejnych żądań dodajemy nagłówek `x-token` z wartością uzyskanego tokena.
 
 ![request 4](request-4.jpg)
 
-W zależności od tego, czy mamy wykupioną usługę `WebService Premium` czy też korzystamy z `WebService Standard`, będziemy mieć do dyspozycji inny zakres dostępnych endpointów.
+W zależności od tego, czy mamy wykupioną usługę `Webservice Premium`, czy też korzystamy z `Webservice Standard`, będziemy mieć do dyspozycji inny zakres dostępnych punktów końcowych.
 
-### Lista Endpointów dla poszczególnych usług
+### Lista punktów końcowych dla poszczególnych usług
 
 - [Webservice Standard](/developer-guides/api/WebserviceStandard)
 - [Webservice Premium](/developer-guides/api/WebservicePremium)
