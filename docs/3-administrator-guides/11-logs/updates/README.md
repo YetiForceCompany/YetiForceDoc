@@ -33,14 +33,14 @@ Skontaktuj się z nami w celu przedstawienia oferty aktualizacji.
 <Tabs groupId="zhh7fxZ293w">
     <TabItem value="youtube-zhh7fxZ293w" label="🎬 YouTube">
         <ReactPlayer
-            url="https://www.youtube.com/watch?v=zhh7fxZ293w"
+            src="https://www.youtube.com/watch?v=zhh7fxZ293w"
             width="100%"
             height="500px"
             controls={true}
         />
     </TabItem>
     <TabItem value="yetiforce-zhh7fxZ293w" label="🎥 YetiForce TV">
-        <ReactPlayer url="https://public.yetiforce.com/tutorials/system-update.mp4" width="100%" height="500px" controls={true} />
+        <ReactPlayer src="https://public.yetiforce.com/tutorials/system-update.mp4" width="100%" height="500px" controls={true} />
     </TabItem>
 </Tabs>
 
