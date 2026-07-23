@@ -1,6 +1,6 @@
 ---
 title: Jak przez API dodać do pola plik graficzny
-description: Niniejszy dokument zawiera informacje, jak za pomocą REST API dodać plik graficzny w polach obsługujących takie pliki w YetiForce CRM.
+description: Niniejszy dokument zawiera informacje, jak za pomocą REST API dodać plik graficzny w YetiForce.
 keywords:
   - Webservice
   - API
