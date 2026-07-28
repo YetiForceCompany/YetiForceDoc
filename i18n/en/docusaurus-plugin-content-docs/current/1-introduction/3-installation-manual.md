@@ -1,12 +1,13 @@
 ---
 title: YetiForce installation
-description: How to install YetiForce
+description: The complete YetiForce installation guide. Learn how to configure your server and run the YetiForce installation wizard.
 keywords:
-  - wizard
-  - installation
+  - installation wizard
+  - CRM installation
+  - YetiForce configuration
   - manual
   - YetiForce
-  - how to install
+  - how to install CRM on a server
 tags:
   - installation
 preview: install-1.png

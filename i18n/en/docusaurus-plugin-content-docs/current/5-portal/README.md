@@ -1,50 +1,79 @@
 ---
 title: Customer Portal v3
-description: Customer Portal version 3 is a dedicated and modern tool that enables your company to communicate with its customers, partners and all external businesses.
+description: The YetiForce v3 Customer Portal is a dedicated tool for company communication with customers and partners. It provides access to orders and notifications, and API integration.
 keywords:
-  - YetiForce
-  - Portal
-  - Customer
-  - Partner
+  - YetiForce customer portal
+  - YetiForce partner portal
+  - communication with customers
+  - React portal
+  - CRM integration
+  - YetiForce Portal
+  - modern portal
 tags:
   - Portal
 preview: detail.jpg
 ---
 
-## Description
+## 🚀 Customer Portal v3 - modern communication with customers
 
-The Customer Portal version 3 is a dedicated tool that facilitates communication between your company to and its Customers. With access to various types of data (e. g. orders or tickets), you can ensure a transparent flow of information with Customers, and also significantly reduce the number of questions and phone calls from them.
+**Customer Portal v3** is a dedicated, modern tool enabling your company to effectively communicate with its customers, partners, and all external companies. Built with **React** technology, it offers improved performance and user experience.
 
-The Customer Portal uses the extended Webservice Premium API, which provides full functionality and integration with the YetiForce system. Portal configuration includes setting roles, profiles, users and menus, which allows you to customize access and interface to the needs of users. In comparison to the previous version of the Portal, it is created in React technology, has more functionalities and is fully compatible with the latest version of the YetiForce system (7.x).
+### 📊 Key business benefits
 
-:::info
+- **Transparent information flow:** Customers have direct access to their data (e.g. orders, tickets, invoices).
+- **Reduce the customer service team's workload:** Significantly reduce the number of customer questions and calls thanks to self-service.
+- **Full integration with the YetiForce system:** The portal uses the extended **Webservice Premium API**, ensuring secure and full data synchronization.
+- **Flexible configuration:** Ability to define roles, profiles, users and menus, allowing you to perfectly tailor access and interface to your needs.
 
-If you need more information, email us at hello@yetiforce.com
+### ⚙️ Technology and Compatibility
 
-:::
+- **Frontend:** Built in **React** for fast and smooth performance.
+- **Backend:** Integrates with YetiForce via **Webservice Premium API**.
+- **Compatibility:** Fully compatible with the latest version of the YetiForce system (7.x).
 
-## Screenshots
+## 🖼️ Screenshots
 
-### Login
+### 1. Login
+
+Modern and responsive login screen.
 
 ![Login](login.jpg)
 
-### Records list
+### 2. Records list
+
+Clear list views with advanced filters and sorting.
 
 ![Records list](list.jpg)
 
-### Record preview
+### 3. Record preview
+
+Detailed view of a single record with all related data.
 
 ![Record preview](detail.jpg)
 
-### Related module
+### 4. Related module
+
+Navigation between related records (e.g. Account → Orders).
 
 ![Related module](detail_releted.jpg)
 
-### Edit record
+### 5. Edit record
+
+Edit forms with validation and support for field dependencies.
 
 ![Edit record](edit.jpg)
 
-### Offline mode, access after losing internet connection
+### 6. Offline mode
+
+The portal works offline when internet connection is lost.
 
 ![offline](offline.jpg)
+
+## 📞 Looking for more information?
+
+Contact us to discuss implementing the Customer Portal v3 for your company:
+📧 **hello@yetiforce.com**
+
+---
+
+Customer Portal v3 is part of the YetiForce ecosystem - an open, free and advanced system that offers more possibilities than a regular CRM.

@@ -1,6 +1,6 @@
 ---
 title: How to add a document with an attachment via Rest API
-description: The article describes how to add a new entry with an attachment in the Documents module via Rest API.
+description: The article describes how to add a new entry with an attachment in the `Documents` module via Rest API
 keywords:
   - Webservice
   - API
@@ -17,45 +17,38 @@ tags:
   - Document with an attachment
 ---
 
-:::tip
-
-This functionality is available for YetiForce version `6.2.0` and later
-
+:::tip This functionality is available for YetiForce version `6.2.0` and later
 :::
 
-The article describes how to add a new entry with an attachment in the Documents module via Rest API.
+The article describes how to add a new entry with an attachment in the `Documents` module via Rest API.
 
 Before continuing, please research the methods and ways of communication described here: https://doc.yetiforce.com/api/
 
 ## 1. Create a document with an attachment
 
-To create an entry in the Documents module use an API method the allows for record creation, i.e.
+To create an entry in the `Documents` module use an API method the allows for record creation, i.e.
 
 ![create-record](create-record.png)
 
 https://doc.yetiforce.com/api/#/BaseModule/ea3b9bea091cbde741323b5393901825
 
-The difficult part when adding an attachment is the correct formulation of the query. As a standard, the module fields should be properly completed in the query, and in this case it will be no different.
+Creating a new record in the Documents module requires entering the following values:
 
-Field names are available in the field edition panel in Software configuration → Standard modules → Edit fields
+- `notes_title` - document name.
 
-Fields responsible for adding an attachment:
+- `folderid` - directory identifier.
 
-- File type [filelocationtype]
+- `filelocationtype` - file type. This field specifies the attachment type. Two values are available: `I` - internal (attachment), `E` - external (link).
 
-  This field defines the type of attachment. Two values are available: I - Internal, E - External
+- `filename` - file or URL. Attachment or link.
 
-- File name/WWW [filename]
-
-  Attachment or link
-
-Once you know what the structure of the Documents module looks like, you can proceed with API queries. Below you can find some examples of this type of queries:
+Below are some examples of API query construction:
 
 ### Postman
 
 ![create record Postman](create-record-PostmanApiDoc2.png)
 
-### Guzzle, PHP HTTP client
+### Guzzle - HTTP client for PHP
 
 https://github.com/guzzle/guzzle
 
@@ -85,7 +78,7 @@ $options['multipart'] = [
 $response = $httpClient->request('POST', $uri, $options)->getBody()->getContents();
 ```
 
-### cURL, PHP
+### cURL - PHP
 
 ```php
 $url = 'https://example.com/webservice/RestApi/Documents/Record';
@@ -113,29 +106,17 @@ $response = curl_exec($ch);
 
 ## 2. Relating a document to another entry
 
-The existence of an unrelated document in the system is pointless, therefore each entry in the Documents module should be related to a record in another module, for example Contact, Account, Ticket, or any other that can be related to a Document.
+To link the created document to another record in the system, add the following to the API query from point 1:
 
-You don't have to create separate API queries to relate the document, you can do it at the time of creating the document by adding a few additional variables, such as:
+- `relationOperation` (bool) - by setting the value `true`, we specify that the entry that is being created is subject to connection in a relation.
 
-- relationOperation (bool) /mandatory
+- `sourceModule` (string) - name of the module with which the created document should be associated.
 
-  Determines that the created entry can be related
+- `sourceRecord` (int) - the record identifier with which the created document should be associated.
 
-- sourceModule (string) /mandatory
+- `relationId` (int) - optional, identifier of the relationship between modules. Complete if there is more than one relationship between modules.
 
-  Name of the module that the document should be related to
-
-- sourceRecord (int) /mandatory
-
-  ID of the record that the document should be related to
-
-- relationId (int) /optional
-
-  ID of the relation between modules
-
-  Mandatory if there are more than one relation between modules
-
-Example:
+Example query structure with relational binding:
 
 ```php
 $httpClient = new \GuzzleHttp\Client($options);

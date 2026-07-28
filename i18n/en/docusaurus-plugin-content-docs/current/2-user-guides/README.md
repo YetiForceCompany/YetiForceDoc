@@ -4,11 +4,11 @@ description: Descriptions of modules and functionalities in the YetiForce user p
 keywords:
   - user
   - module
-  - poradnik
+  - guide
   - YetiForce
 tags:
   - user
-  - poradnik
+  - guide
 hide_table_of_contents: true
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: Introduction
-description: YetiForce is open source software used to manage customer relationships and support business processes that take place in all companies.
+description: Meet YetiForce - the most advanced open source CRM system for managing business processes in your company.
 keywords:
-  - introduction
-  - starts
-  - guide
-  - YetiForce
+  - CRM open source
+  - free CRM
+  - YetiForce introduction
+  - company management system
 tags:
   - Introduction
 hide_table_of_contents: true
@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 ![Awards](/img/awards.jpg)
 
-## About us
+## About YetiForce
 
 YetiForce is open source software used to manage customer relationships and support business processes that take place in all companies.
 
