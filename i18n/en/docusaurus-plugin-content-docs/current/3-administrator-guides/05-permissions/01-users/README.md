@@ -20,7 +20,7 @@ The following tools are available in the user list:
 
 1. **Mass Edit** – allows you to make changes for multiple users at once.
 2. **Mass Password Reset** – Useful when you need to change passwords for multiple users at once.
-3. **Import i eksport użytkowników** – pozwala łatwo przenosić użytkowników między różnymi systemami.
+3. **User Import and Export** – allows you to easily download and add users in bulk.
 4. **Adding User** – allows you to manually add a new user to the system.
 
 ## Create a user
