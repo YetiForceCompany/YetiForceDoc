@@ -1,6 +1,6 @@
 ---
-title: How to add an image via Rest API
-description: This article describes how to add images via Rest API in fields that support such files in YetiForce.
+title: How to add a graphic file to a field via API
+description: This page provides information on how to add an image file in YetiForce using the REST API.
 keywords:
   - Webservice
   - API
@@ -8,7 +8,7 @@ keywords:
   - add
   - file
   - attachment
-  - image
+  - graphic
   - field
   - YetiForce
 tags:
@@ -18,39 +18,33 @@ tags:
   - Image
 ---
 
-This article describes how to add images via Rest API in fields that support such files in YetiForce.
+Niniejszy dokument zawiera instrukcję, jak do rekordu za pomocą API dodać plik graficzny w polach obsługujących takie pliki.
 
-The application has two types of fields that support graphic files, namely:
+Before continuing, please research the methods and ways of communication described here: https://doc.yetiforce.com/api/
 
-- Image
-- Image (many)
+The YetiForce application has two types of fields that support graphic files:
+
+- Image file
+- Image files (many)
 
 ![graphic file](graphic-file.png)
 
-**Before continuing, please research the methods and ways of communication described here: https://doc.yetiforce.com/api/**
-
 ## Adding an image
 
-The difficulty with adding a graphic file is the proper preparation of fields in the query. At the beginning, you should prepare a list of fields that should be completed when creating / editing a record via API.
+To add an image file to a record, use the standard endpoint for creating or editing a record via the POST (create) or PUT (edit) method.
 
-Module field structure can be found in the field edition panel in [Software configuration → Standard modules → Edit fields](/administrator-guides/standard-modules/edit-fields/).
+```bash
+/webservice/WebserviceStandard/{moduleName}/Record
+```
 
-Once you're familiar with the structure you can move on to constructing the queries.
+The file field is added similarly to other record fields, with the difference that its value is not a text string or number, but an array of objects. An image file object created via the API requires three elements:
 
-Each graphic file created at the API level requires three variables:
+- `name` - file name.
 
-- **name**
+- `key` - a random string of characters, unique within the graphic files of a given field.
 
-  File name
+- `baseContent` - an image file converted to base64 format. Do not include the fragment with the MIME type (e.g. `data:image/jpeg;base64,`).
 
-- **key**
-
-  Random of characters string, unique within the pool of graphic files of a given field
-
-- **baseContent**
-
-  Graphic file converted to base64
-
-Below you can find an example of an image added to a Contact using Postman:
+Below is an example of adding an image file to a contact using Postman, where `imagename` is the field name specified in the module settings.
 
 ![graphic file postman](graphic-file-postman.png)

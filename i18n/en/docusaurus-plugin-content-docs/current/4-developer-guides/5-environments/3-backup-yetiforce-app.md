@@ -1,12 +1,12 @@
 ---
-title: Jak wykonać kopię zapasową aplikacji YetiForce
-description: 'Jak wykonać backup YetiForce: baza danych, pliki aplikacji, katalog storage, uprawnienia, retencja i weryfikacja kopii.'
+title: How to back up the YetiForce application
+description: 'How to perform a YetiForce backup: database, application files, storage directory, permissions, backup retention and verification.'
 keywords:
-  - kopia
-  - kopia aplikacji YetiForce
+  - copy
+  - YetiForce copy
   - backup
-  - plików
-  - bazy danych
+  - files
+  - databases
   - storage
   - mysqldump
   - YetiForce
@@ -15,49 +15,49 @@ tags:
 preview: 3-backup-yetiforce-app.jpg
 ---
 
-Ten artykuł pokazuje, jak wykonać pełną kopię YetiForce krok po kroku. Poprawna kopia zapasowa YetiForce powinna obejmować bazę danych, pliki aplikacji oraz katalog `storage` z plikami użytkowników.
+This article shows you how to perform a full YetiForce backup step by step. A successful YetiForce backup should include the database, application files, and the user `storage` directory.
 
-Jeżeli szukasz krótkiej odpowiedzi: pełną kopię YetiForce to osobny zrzut bazy danych, osobna kopia plików aplikacji i osobna kopia katalogu `storage`, najlepiej szyfrowana, z kontrolą uprawnień i regularnym testem odtworzenia.
+If you're looking for a short answer: a full YetiForce backup is a separate database dump, a separate copy of the application files, and a separate copy of the `storage` directory, preferably encrypted, with permissions control and regular recovery testing.
 
 ![3-backup-yetiforce-app.jpg](3-backup-yetiforce-app.jpg)
 
-## Zanim rozpoczniesz
+## Before you begin
 
-Przed wykonaniem kopii zapasowej warto ograniczyć zmiany w systemie. Najbezpieczniej wykonać backup w czasie niskiej aktywności użytkowników oraz upewnić się, że w trakcie operacji nie są uruchamiane zadania CRON, importy ani procesy integracyjne zapisujące dane do bazy lub katalogu `storage`.
+Before performing a backup, it's best to limit changes to the system. It's safest to perform the backup during a period of low user activity and ensure that no CRON tasks, imports, or integration processes that write data to the database or storage directory are running during the backup.
 
 :::tip
 
-Najlepszą praktyką jest okresowe testowanie odtworzenia kopii na osobnym środowisku. Backup, którego nie da się odtworzyć, nie jest skutecznym zabezpieczeniem.
+Best practice is to periodically test the backup restoration on a separate environment. A backup that cannot be restored is not an effective safeguard.
 
 :::
 
-## Jak wykonać kopię bazy danych YetiForce
+## How to backup the YetiForce database
 
-Tworzenie kopii zapasowej rozpocznij od wykonania pełnego zrzutu bazy danych. To kluczowy element całej procedury.
+Begin your backup by taking a full database dump. This is a key step in the entire process.
 
-Przykładowe polecenie `mysqldump`:
+Example `mysqldump` command:
 
 ```bash
 mysqldump --single-transaction --skip-lock-tables --quick -f yetiforce_database_name
 ```
 
-Powyższe parametry pomagają ograniczyć ryzyko przerwania procesu backupu, na przykład w przypadku problemów ze strukturą bazy danych.
+The above parameters help reduce the risk of interrupting the backup process, for example in the event of problems with the database structure.
 
 :::warning
 
-Samo wykonanie kopii plików bez zrzutu bazy danych nie pozwala na poprawne odtworzenie systemu.
+Making only a copy of the files without a database dump does not allow for correct system recovery.
 
 :::
 
-## Jak wykonać kopię plików aplikacji YetiForce
+## How to back up YetiForce application files
 
-W kolejnym kroku wykonaj kopię niemal całego katalogu aplikacji YetiForce. Podczas archiwizacji możesz pominąć poniższe katalogi:
+Next, back up almost the entire YetiForce application directory. You can skip the following directories during the backup:
 
 - `__YF_ROOT__`/cache/session/
 - `__YF_ROOT__`/cache/templates_c
 - `__YF_ROOT__`/storage
 
-W poniższym przykładzie polecenie jest uruchamiane z katalogu nadrzędnego względem `__YF_ROOT__`.
+In the following example, the command is run from the parent directory of `__YF_ROOT__`.
 
 ```bash
 7z a -mx=4 $BC_PATH.7z html -x!html/storage/ -x!html/cache/session/ -x!html/cache/templates_c/ -P$BC_SECRET
@@ -65,39 +65,39 @@ W poniższym przykładzie polecenie jest uruchamiane z katalogu nadrzędnego wzg
 
 :::warning
 
-- `__YF_ROOT__` to główny katalog aplikacji, w którym znajdują się pliki systemu, na przykład `app_data` i `user_privileges`.
-- Kopia powinna być zawsze szyfrowana, a hasło przechowywane w bezpiecznym miejscu.
+- `__YF_ROOT__` is the application's root directory, which contains system files such as `app_data` and `user_privileges`.
+- The copy should always be encrypted and the password safely stored.
 
 :::
 
-## Jak wykonać kopię plików użytkowników
+## How to back up user files
 
-Oddzielnie od kopii samej aplikacji wykonaj kopię katalogu z plikami użytkowników, czyli `__YF_ROOT__`/storage (na przykład `/home/yfprod/html/storage`). Pozwala to rozdzielić kod aplikacji od danych użytkowników. Ma to szczególne znaczenie, gdy pliki użytkowników zajmują dużo miejsca i lepiej archiwizować je osobno, a przy większej skali danych nawet na oddzielnej maszynie wirtualnej. Tę kopię można wykonać z niższym stopniem kompresji, aby skrócić czas tworzenia i odtwarzania archiwum.
+Separately from the copy of the application itself, make a copy of the user files directory, `__YF_ROOT__`/storage (for example, `/home/yfprod/html/storage`). This allows you to separate the application code from user data. This is especially important when user files take up a lot of space, and it's better to archive them separately, or even on a separate virtual machine for larger data scales. This copy can be made with a lower compression ratio to reduce archive creation and recovery times.
 
-W poniższym przykładzie polecenie jest uruchamiane z katalogu nadrzędnego względem `__YF_ROOT__`.
+In the following example, the command is run from the parent directory of `__YF_ROOT__`.
 
 ```bash
 7z a -mx=2 $BACKUP_PATH.7z html/storage/ -P$BACKUP_SECRET
 ```
 
-## Czy kopia całej maszyny wirtualnej wystarczy
+## Is a copy of the entire virtual machine enough?
 
-W praktyce wielokrotnie spotykaliśmy sytuacje, w których przywrócenie snapshotu lub backupu całej maszyny wirtualnej nie wystarczało do natychmiastowego uruchomienia YetiForce. Najczęstszą przyczyną były problemy z bazą danych po odtworzeniu całej maszyny.
+In practice, we've often encountered situations where restoring a snapshot or backup of the entire virtual machine wasn't enough to immediately get YetiForce up and running. The most common cause was database issues after restoring the entire machine.
 
-Dlatego rekomendujemy wykonywanie kopii zapasowych na kilku warstwach oraz przechowywanie ich w różnych lokalizacjach.
+Therefore, we recommend making backups on several layers and storing them in different locations.
 
-Przykładowy podział:
+Example:
 
-- kopia bazy danych,
-- kopia plików aplikacji,
-- kopia katalogu `storage`,
-- snapshot maszyny lub serwera jako dodatkowa warstwa bezpieczeństwa.
+- database backup
+- app files backup
+- `storage` directory backup
+- snapshot of the machine or server as an additional layer of security
 
-## Jak usuwać stare kopie zapasowe
+## Ho to remove old backups
 
-Nie rekomendujemy usuwania starych kopii wyłącznie na podstawie wieku plików. Jeśli nowe wykonanie backupu zakończy się błędem, na przykład z powodu braku miejsca lub problemu z bazą danych, możesz zostać bez poprawnej kopii. Bezpieczniej jest zarządzać retencją na podstawie liczby zachowanych archiwów.
+We don't recommend deleting old backups based solely on file age. If a new backup fails, for example due to insufficient space or a database issue, you may be left without a valid backup. It's safer to manage retention based on the number of archives retained.
 
-Przykład:
+Example:
 
 ```bash
 ls $BACKUP_DIR/db/* -1t | tail -n +3 | xargs rm -f
@@ -105,43 +105,43 @@ ls $BACKUP_DIR/app/* -1t | tail -n +3 | xargs rm -f
 ls $BACKUP_DIR/storage/* -1t | tail -n +3 | xargs rm -f
 ```
 
-Powyższy przykład pozostawia dwie najnowsze kopie w każdym katalogu.
+The above example keeps the two most recent copies in each directory.
 
-## Jak ustawić uprawnienia do kopii
+## How to set up backup permissions
 
-Po utworzeniu kopii warto ograniczyć uprawnienia, aby dostęp do archiwów miał tylko wskazany właściciel.
+After creating a copy, it is worth limiting permissions so that only the designated owner has access to the archives.
 
 ```bash
 chown -R root:root $BACKUP_DIR
 chmod 700 $BACKUP_DIR
 ```
 
-## Jak sprawdzić, czy backup YetiForce jest poprawny
+## How to check if the YetiForce backup is valid
 
-Po zakończeniu procesu sprawdź, czy:
+Once the process is complete, check that:
 
-- archiwa zostały utworzone i mają oczekiwany rozmiar,
-- zrzut bazy danych nie został przerwany błędem,
-- kopie są zapisane w odpowiedniej lokalizacji,
-- hasła do zaszyfrowanych archiwów są przechowywane w bezpieczny sposób,
-- [procedura odtworzenia systemu](system-migration-or-recovery) została przetestowana przynajmniej na środowisku testowym.
+- the archives have been created and have the expected size,
+- the database dump was not interrupted by an error,
+- the backups are saved in the correct location,
+- the passwords for encrypted archives are stored safely,
+- [system-migration-or-recovery procedure](system-migration-or-recovery) has been tested at least in a test environment.
 
-Jeżeli backup jest wykonywany cyklicznie z CRON-a, zadbaj także o logowanie wyniku zadania oraz powiadomienia o błędach. Dzięki temu szybciej wykryjesz sytuację, w której kopie przestały tworzyć się poprawnie.
+If backups are done periodically via CRON, be sure to also log job results and error notifications. This will help you more quickly detect situations where backups are no longer performing correctly.
 
 ## FAQ
 
-### Co powinien zawierać pełny backup YetiForce
+### What should a full YetiForce backup contain?
 
-Pełny backup YetiForce powinien zawierać trzy elementy: zrzut bazy danych, kopię plików aplikacji oraz kopię katalogu `storage`. Pominięcie któregoś z tych elementów może uniemożliwić poprawne odtworzenie systemu.
+A full YetiForce backup should contain three elements: a database dump, a copy of the application files, and a copy of the storage directory. Omitting any of these elements may prevent a successful system restore.
 
-### Czy sam snapshot serwera lub maszyny wirtualnej wystarczy
+### Is a snapshot of a server or virtual machine enough?
 
-Nie. Snapshot może być dodatkową warstwą zabezpieczenia, ale nie powinien zastępować osobnych kopii bazy danych i plików. W praktyce problemy po odtworzeniu najczęściej dotyczą właśnie bazy danych lub niespójnych danych zapisanych w trakcie działania systemu.
+No. Snapshots can provide an additional layer of security, but they shouldn't replace separate copies of the database and files. In practice, problems after a restore most often involve the database itself or inconsistent data saved during system operation.
 
-### Jak często wykonywać backup YetiForce
+### How often should YetiForce backups be performed?
 
-Częstotliwość zależy od liczby zmian w systemie. Dla środowisk produkcyjnych standardem jest regularny backup wykonywany automatycznie z użyciem CRON-a, co najmniej raz dziennie, a w systemach o dużej liczbie operacji nawet częściej.
+The frequency depends on the number of changes in the system. For production environments, regular backups are standard, performed automatically using CRON, at least once a day, and even more frequently in systems with high volumes of operations.
 
-### Jak sprawdzić, czy kopia zapasowa działa
+### How to check if the backup is working?
 
-Najlepszą metodą jest testowe odtworzenie kopii na oddzielnym środowisku. Sama obecność pliku backupu nie oznacza jeszcze, że dane da się poprawnie przywrócić. Zapoznaj się z artykułem o [migracji lub przywracaniu systemu](system-migration-or-recovery).
+The best method is to test the backup restoration in a separate environment. The mere presence of a backup file doesn't guarantee that the data can be successfully restored. Please see the article on [system migration or recovery](system-migration-or-recovery).

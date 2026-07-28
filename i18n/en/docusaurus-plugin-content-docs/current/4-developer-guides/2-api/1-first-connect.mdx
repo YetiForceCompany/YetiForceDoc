@@ -1,6 +1,6 @@
 ---
 title: First connection
-description: How to establish the first connection
+description: How to make your first API connection (login)
 keywords:
   - Webservice
   - API
@@ -23,23 +23,45 @@ To obtain a token, send a request to your server at the following address:
 
 ![request 1](request-1.jpg)
 
-You can use `Postman` to test this process. The following screenshots will guide you step by step how to do it.
+You can use `Postman` to test this process. The following screenshots will guide you step by step on how to do it.
 
-First, you will need the `API Key` value. To download it, in the administration section, select `Integration ➞ Web service - applications` from the left menu, select the relevant key, and click the <kbd><i class="fa-solid fa-copy"></i></kbd> button to copy its value.
+First, you will need the `API Key` value. To obtain it, in the administration section, select `Integration ➞ Web service - applications` from the left menu, select the relevant key, and click the <kbd><i class="fa-solid fa-copy"></i></kbd> button to copy its value.
 
 ![api_key](api_key.jpg)
 
-In `Postman` add the `X-API-KEY` header. Instead of the `{{APi-KEY}}` value enter the API Key value copied from the YetiForce system.
+Add the following headers to the API request:
+
+- `X-API-KEY`. The value is the API Key copied from the YetiForce system.
+
+- `Authorization`. Credentials in the format `Basic base64(userName:password)`, where `userName` and `password` are the credentials of the application registered to use the API in the administration section (from the `Web service - applications` panel), and `base64` denotes the base64 encoding of the string.
+
+W ciele zapytania umieszamy dane w formacie JSON:
+
+- `userName` - web service username.
+- `password` - web service user password.
+- `params` - additional parameters (optional), e.g. language `"params": {"language": "en-EN"}`.
+
+The username and password passed in the query body are the data set in the administration section in the `Web service - users` tab.
+
+```json
+{
+  "userName": "apiuser",
+  "password": "apipassword",
+  "params": {
+    "language": "en-EN"
+  }
+}
+```
 
 ![request 2](request-2.jpg)
 
-Then enter the credentials, according to the screenshot below. Instead of the `{{URL}}` variable, provide the address of your YetiForce platform. Enter the `userName` and `password` credentials according to the values ​​set in the administration section in the `Integration ➞ Web service - users` tab.
+Then enter your credentials, according to the screenshot below. Instead of the `{{URL}}` variable, provide the address of your YetiForce platform. Enter the `userName` and `password` credentials according to the values set in the administration section in the `Integration ➞ Web service - users` tab.
 
 You will receive the `token` parameter as feedback, which you will pass in subsequent requests.
 
 ![request 3](request-3.jpg)
 
-## Next requests
+## Subsequent requests
 
 Once you get the `token` value, you can proceed to query the API for the relevant data. To do this, add the `x-token` header with the value of the obtained token to subsequent requests.
 
@@ -47,7 +69,7 @@ Once you get the `token` value, you can proceed to query the API for the relevan
 
 Depending on whether you have purchased the `WebService Premium` service or use `WebService Standard`, you will have a different range of available endpoints at your disposal.
 
-### List of Endpoints for services
+### List of endpoints for individual services
 
 - [Webservice Standard](/developer-guides/api/WebserviceStandard)
 - [Webservice Premium](/developer-guides/api/WebservicePremium)

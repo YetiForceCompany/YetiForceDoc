@@ -1,12 +1,17 @@
 ---
-title: Video tutorials
-description: A collection of video tutorials that present the administrative part of the YetiForce system
+title: Video tutorials for administrators
+description: A collection of instructional videos for YetiForce system administrators. Covers updates, migrations, security configuration, and advanced tools.
 keywords:
-  - videos
-  - tutorials
+  - tutoriale administratora YetiForce
+  - aktualizacja YetiForce
+  - system migration
+  - security configuration
+  - server management
 tags:
   - videos
   - tutorials
+  - administrator
+  - advanced
 ---
 
 ## System update
