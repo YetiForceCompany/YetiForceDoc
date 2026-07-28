@@ -1,12 +1,15 @@
 ---
-title: Video tutorials
+title: Video tutorials for users
+description: Watch practical video tutorials that show you step-by-step how to use key features of YetiForce.
 keywords:
-  - videos
-  - tutorials
+  - YetiForce tutorials
+  - video tutorials
+  - how to use YetiForce
+  - CRM video trainings
+  - user guides
 tags:
   - videos
   - tutorials
-description: A collection of video tutorials that present the user part of the YetiForce system
 ---
 
 ## Change password

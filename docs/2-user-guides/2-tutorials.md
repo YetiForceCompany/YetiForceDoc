@@ -1,12 +1,15 @@
 ---
-title: Tutoriale wideo
+title: Tutoriale wideo dla użytkowników
+description: Obejrzyj praktyczne tutoriale wideo, które krok po kroku pokazują, jak korzystać z kluczowych funkcji systemu YetiForce.
 keywords:
-  - wideo
-  - tutoriale
+  - tutoriale YetiForce
+  - samouczki wideo
+  - jak używać YetiForce
+  - szkolenia wideo CRM
+  - poradniki użytkownika
 tags:
   - wideo
   - tutoriale
-description: Zbiór wideo tutoriali prezentujących część użytkownika systemu YetiForce
 ---
 
 ## Zmiana hasła

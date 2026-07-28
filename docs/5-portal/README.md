@@ -1,50 +1,79 @@
 ---
 title: Portal Klienta v3
-description: Portal Klienta v3 to dedykowane i nowoczesne narzędzie umożliwiające komunikację Twojej firmy ze swoimi klientami, partnerami i wszystkimi firmami zewnętrznymi.
+description: Portal Klienta YetiForce v3 to dedykowane narzędzie do komunikacji firmy z klientami i partnerami. Dostęp do zamówień, zgłoszeń, integracja z API.
 keywords:
-  - YetiForce
-  - Portal
-  - Klienta
-  - Partnera
+  - Portal Klienta YetiForce
+  - Portal Partnera YetiForce
+  - komunikacja z klientami
+  - React portal
+  - integracja z CRM
+  - YetiForce Portal
+  - nowoczesny portal
 tags:
   - Portal
 preview: detail.jpg
 ---
 
-## Opis
+## 🚀 Portal Klienta v3 – nowoczesna komunikacja z klientami
 
-Portal Klienta v3 to dedykowane narzędzie umożliwiające komunikację Twojej firmy ze swoimi Klientami. Dzięki dostępowi do różnego rodzaju danych (np. zamówienia czy zgłoszenia) dbasz o przejrzysty przepływ informacji z Klientami, a także w znaczny sposób zmniejszysz liczbę pytań i telefonów od nich.
+**Portal Klienta v3** to dedykowane i nowoczesne narzędzie umożliwiające efektywną komunikację Twojej firmy ze swoimi klientami, partnerami i wszystkimi firmami zewnętrznymi. Zbudowany w technologii **React**, oferuje lepszą wydajność i doświadczenie użytkownika.
 
-Portal Klienta korzysta z rozszerzonego API Webservice Premium, które zapewnia pełną funkcjonalność i integrację z systemem YetiForce. Konfiguracja Portalu obejmuje ustawienie ról, profili, użytkowników oraz menu, co pozwala na dostosowanie dostępu i interfejsu do potrzeb użytkowników. W porównaniu do poprzedniej wersji Portalu, jest on stworzony w technologii React, posiada więcej funkcjonalności i jest w pełni kompatybilny z najnowszą wersją systemu YetiForce (7.x).
+### 📊 Kluczowe korzyści biznesowe
 
-:::info
+- **Przejrzysty przepływ informacji:** Klienci mają bezpośredni dostęp do swoich danych (np. zamówienia, zgłoszenia, faktury).
+- **Redukcja obciążenia działu obsługi:** Znaczące zmniejszenie liczby pytań i telefonów od klientów dzięki samoobsłudze.
+- **Pełna integracja z systemem YetiForce:** Portal wykorzystuje rozszerzone **API Webservice Premium**, zapewniając bezpieczną i pełną synchronizację danych.
+- **Elastyczna konfiguracja:** Możliwość definiowania ról, profili, użytkowników i menu, co pozwala idealnie dopasować dostęp i interfejs do potrzeb.
 
-Potrzebujesz więcej informacji? Napisz do nas wiadomośc na hello@yetiforce.com
+### ⚙️ Technologie i kompatybilność
 
-:::
+- **Frontend:** Zbudowany w **React** dla szybkiego i płynnego działania.
+- **Backend:** Integruje się z YetiForce przez **Webservice Premium API**.
+- **Kompatybilność:** W pełni kompatybilny z najnowszą wersją systemu YetiForce (7.x).
 
-## Galeria
+## 🖼️ Galeria
 
-### Logowanie
+### 1. Logowanie
+
+Nowoczesny i responsywny ekran logowania.
 
 ![Logowanie](login.jpg)
 
-### Lista rekordów
+### 2. Lista rekordów
+
+Przejrzyste widoki list z zaawansowanymi filtrami i sortowaniem.
 
 ![Lista rekordów](list.jpg)
 
-### Podgląd rekordu
+### 3. Podgląd rekordu
+
+Szczegółowy podgląd pojedynczego rekordu ze wszystkimi powiązanymi danymi.
 
 ![Podgląd rekordu](detail.jpg)
 
-### Moduł powiązany
+### 4. Moduł powiązany
+
+Nawigacja między powiązanymi rekordami (np. kontrahent → zamówienia).
 
 ![Moduł powiązany](detail_releted.jpg)
 
-### Edycja rekordu
+### 5. Edycja rekordu
+
+Formularze edycji z walidacją i wsparciem dla zależności pól.
 
 ![Edycja rekordu](edit.jpg)
 
-### Tryb offline, dostęp po utracie połączenia z internetem
+### 6. Tryb offline
+
+Działanie w trybie offline po utracie połączenia z internetem.
 
 ![offline](offline.jpg)
+
+## 📞 Potrzebujesz więcej informacji?
+
+Skontaktuj się z nami, aby omówić wdrożenie Portalu Klienta dla Twojej firmy:
+📧 **hello@yetiforce.com**
+
+---
+
+Portal Klienta v3 jest częścią ekosystemu YetiForce – otwartego, darmowego i zaawansowanego system który możliwościami daje więcej niż to co zwykły CRM.

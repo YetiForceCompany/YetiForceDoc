@@ -27,14 +27,14 @@ import ReactPlayer from 'react-player';
 <Tabs groupId="AAnD_Npa0ZM">
     <TabItem value="youtube-AAnD_Npa0ZM" label="🎬 YouTube">
         <ReactPlayer
-            url="https://www.youtube.com/watch?v=AAnD_Npa0ZM"
+            src="https://www.youtube.com/watch?v=AAnD_Npa0ZM"
             width="100%"
             height="500px"
             controls={true}
         />
     </TabItem>
     <TabItem value="yetiforce-AAnD_Npa0ZM" label="🎥 YetiForce TV">
-        <ReactPlayer url="https://public.yetiforce.com/tutorials/system-migration.mp4" width="100%" height="500px" controls={true} />
+        <ReactPlayer src="https://public.yetiforce.com/tutorials/system-migration.mp4" width="100%" height="500px" controls={true} />
     </TabItem>
 </Tabs>
 

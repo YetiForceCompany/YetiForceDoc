@@ -18,7 +18,7 @@ preview: configuration-1.jpg
 
 To configure an API connection, you must first generate an API key and create a user for authorization.
 
-### Generate API Key
+### API key generation
 
 The first step to connect to the API is to generate an `API Key`. To do this, in the administration section, select `Integration` in the left menu and then `Web service - Applications`.
 
@@ -51,12 +51,12 @@ A popup window will appear where you can add a new API Key:
 #### Allowed IPs
 
 - Empty value - access from all servers.
-  If IP addresses are entered (after a comma), then API access will be allowed only from these IP addresses.
-  Example: x.x.x.x , y.y.y.y
+- If IP addresses are entered (separated by commas), then API access will only be allowed from those IP addresses.
+- Example: `x.x.x.x, y.y.y.y`
 
 #### Public URL address
 
-- The URL will be used to send email notifications where the URL address can be used in the content, e.g., password reset in the Customer Portal, link to view the record in the Customer Portal
+- The URL will be used to send email notifications where the URL address can be used in the content, e.g., password reset in the Customer Portal, link to view the record in the Customer Portal)
 
 ### Create user
 
@@ -68,7 +68,7 @@ The user will be added for a specific type of service, so first select the relev
 
 ![step 5](configuration-5.jpg)
 
-To add a new user, select the <kbd>Add record</kbd> button. A popup window will then appear, where you can configure credentials.
+To add a new user, select the <kbd>Add record</kbd> button. A pop-up window will then appear, where you can configure credentials.
 
 ![step 6](configuration-6.jpg)
 

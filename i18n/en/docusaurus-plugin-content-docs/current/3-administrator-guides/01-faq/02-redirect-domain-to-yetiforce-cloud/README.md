@@ -4,13 +4,13 @@ description: Redirecting WWW application to another domain
 keywords:
   - YetiForce
   - redirect
-  - domena
+  - domain
   - Cloud
   - DNS
   - CNAME
 tags:
   - redirect
-  - domena
+  - domain
   - Cloud
 ---
 
