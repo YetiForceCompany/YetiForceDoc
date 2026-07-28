@@ -33,6 +33,6 @@ This error is server-specific and requires an analysis of server logs, therefore
 
 ## How can the community help you solve this problem?
 
-If you submit a ticket in the [Issue tab](https://github.com/YetiForceCompany/YetiForceCRM/issues) of our GitHub repository, you can try to solve the problem together with the community. Remember to include the http server logs, because if you don’t provide them, identifying the problem will be hardly possible.
+If you submit a ticket in the [Issue tab](https://github.com/YetiForceCompany/YetiForce/issues) of our GitHub repository, you can try to solve the problem together with the community. Remember to include the http server logs, because if you don’t provide them, identifying the problem will be hardly possible.
 
 If you find an error message and you have no clue what to do with it, you should ask the operating system administrator to conduct an analysis, or research the problem on the Internet on your own. Our team can only offer advice as far as configuration and development of the YetiForce system is concerned. When it comes to assistance with server issues, we recommend contacting companies who specialize in this area. We have Linux server specialists, but they support us in the development of the product, and they also help us during the implementation of paid projects.

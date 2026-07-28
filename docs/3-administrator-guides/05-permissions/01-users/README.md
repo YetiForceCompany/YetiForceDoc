@@ -20,7 +20,7 @@ Na liście użytkowników dostępne są następujące narzędzia:
 
 1. **Masowa edycja** – umożliwia wprowadzanie zmian dla wielu użytkowników jednocześnie.
 2. **Masowe resetowanie haseł** – przydatne, gdy konieczna jest zmiana haseł dla wielu użytkowników naraz.
-3. **Import i eksport użytkowników** – pozwala łatwo przenosić użytkowników między różnymi systemami.
+3. **Import i eksport użytkowników** – pozwala łatwo pobierać oraz dodawać masowo użytkowników.
 4. **Dodawanie użytkownika** – umożliwia ręczne dodanie nowego użytkownika do systemu.
 
 ## Tworzenie użytkownika

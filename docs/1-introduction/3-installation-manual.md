@@ -17,7 +17,7 @@ W tym artykule znajdziesz wszystko, co powinieneś wiedzieć o instalacji YetiFo
 
 ## Jak zainstalować system YetiForce?
 
-Proces instalacji YetiForce jest bardzo prosty. Instalacja YetiForce odbywa podobnie do instalacji większości aplikacji webowych, czyli za pomocą kreatora przez przeglądarkę.
+Proces instalacji YetiForce jest bardzo prosty. Instalacja YetiForce odbywa się podobnie do instalacji większości aplikacji webowych, czyli za pomocą kreatora przez przeglądarkę.
 
 Przed instalacją sprawdź czy twój serwer jest zgodny z wymaganiami: [Wymagania systemu YetiForce](requirements) lub [Jak skonfigurować serwer z Debian 10 dla systemu YetiForce](/developer-guides/environments/debian-10)
 
@@ -92,7 +92,7 @@ W takim wypadku musisz cofnąć się do ekranu poprzedniego i prawidłowo wprowa
 
 ![step 6](install-6.png)
 
-## Step 7 - Zweryfikuj adres e-mail
+## Krok 7 - Zweryfikuj adres e-mail
 
 ![step 7](install-7.png)
 
