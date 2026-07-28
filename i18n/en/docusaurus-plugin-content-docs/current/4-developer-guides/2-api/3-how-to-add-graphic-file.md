@@ -1,6 +1,6 @@
 ---
 title: How to add a graphic file to a field via API
-description: This page provides information on how to add an image file in YetiForce using the REST API.
+description: Learn to add images to records in YetiForce - a complete guide to working with image fields via the API.
 keywords:
   - Webservice
   - API
@@ -18,7 +18,7 @@ tags:
   - Image
 ---
 
-Niniejszy dokument zawiera instrukcję, jak do rekordu za pomocą API dodać plik graficzny w polach obsługujących takie pliki.
+Learn the practical steps for adding graphics to records in YetiForce via API – the article explains the required parameters and shows a specific implementation example.
 
 Before continuing, please research the methods and ways of communication described here: https://doc.yetiforce.com/api/
 
