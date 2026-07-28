@@ -35,7 +35,9 @@
 		"url": "^0.11.4"
 	},
 	"resolutions": {
-		"serialize-javascript": "7.0.7"
+		"serialize-javascript": "^7.0.7",
+		"brace-expansion": "^5.0.8",
+		"js-yaml": "^4.3.0"
 	},
 	"browserslist": [
 		"last 2 version",
