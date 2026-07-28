@@ -60,6 +60,6 @@ If you have any additional information that will be helpful or you even found a 
 
 ## 4. Response time for submitted issues
 
-We respond when we have a spare moment. We are not able to guarantee a short response time for every submitted issue. We divide our time among projects for our customers, internal projects, development of YetiForce as well as trainings and business meetings. For those that require immediate response we offer a variety of support packages. Critical and security issues also have hight priority.
+We respond when we have a spare moment. We are not able to guarantee a short response time for every submitted issue. We divide our time among projects for our customers, internal projects, development of YetiForce as well as trainings and business meetings. For those that require immediate response we offer a variety of support packages. Critical and security issues also have high priority.
 
 It is important to properly describe the problem because it shortens our response time. When issues are well documented replies are often within the same day and we usually provide a patch that can be installed by a user. If you have any comments about our free support services, please email us, because your opinion is vital for us. Please note that when you are a community member, you can also solve other users' problems and share the solutions. By helping others, you also take part in the development of YetiForce.

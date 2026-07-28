@@ -35,13 +35,13 @@ Do zapytania API dodajemy nagłówki:
 
 - `Authorization`. Dane uwierzytelniające w formacie `Basic base64(userName:password)`, gdzie `userName` i `password` to dane uwierzytelniające aplikacji zarejestrowanej do korzystania z API w sekcji administracyjnej (z panelu `Web service - aplikacje`), a `base64` oznacza zakodowanie ciągu znaków w standardzie base64.
 
-W ciele zapytania umieszamy dane w formacie JSON:
+W treści zapytania umieszczamy dane w formacie JSON:
 
 - `userName` - nazwa użytkownika web service.
 - `password` - hasło użytkownika web service.
 - `params` - dodatkowe parametry (opcjonalne), np. język `"params": {"language": "en-EN"}`.
 
-Nazwa użytkownika i hasło przekazywane w ciele zapytania to dane ustalone w sekcji administracyjnej w zakładce `Web service - użytkownicy`.
+Nazwa użytkownika i hasło przekazywane w treści zapytania to dane ustalone w sekcji administracyjnej w zakładce `Web service - użytkownicy`.
 
 ```json
 {

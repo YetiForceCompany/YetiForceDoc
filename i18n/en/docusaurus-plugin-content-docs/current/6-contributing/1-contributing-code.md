@@ -35,6 +35,6 @@ We do our best to make sure the code follows all the most recent standards to en
 
 :::info
 
-Please get in touch with us before you begin writing a new module or functionality, so that we can confirm that a simiar one doesn't already exist or we're not currently working on one.
+Please get in touch with us before you begin writing a new module or functionality, so that we can confirm that a similar one doesn't already exist or we're not currently working on one.
 
 :::

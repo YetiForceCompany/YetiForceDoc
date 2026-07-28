@@ -1,4 +1,4 @@
 ---
-title: Gdzie zgłaszać problemy ?
+title: Gdzie zgłaszać problemy?
 draft: true
 ---

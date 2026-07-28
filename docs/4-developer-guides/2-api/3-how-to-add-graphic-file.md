@@ -1,6 +1,6 @@
 ---
 title: Jak przez API dodać do pola plik graficzny
-description: Niniejszy dokument zawiera informacje, jak za pomocą REST API dodać plik graficzny w YetiForce.
+description: Naucz się dodawać obrazy do rekordów w YetiForce – kompletny przewodnik po pracy z polami graficznymi przez API.
 keywords:
   - Webservice
   - API
@@ -18,7 +18,7 @@ tags:
   - Image
 ---
 
-Niniejszy dokument zawiera instrukcję, jak do rekordu za pomocą API dodać plik graficzny w polach obsługujących takie pliki.
+Poznaj praktyczne kroki dodawania grafiki do rekordów w YetiForce przez API – artykuł wyjaśnia wymagane parametry i pokazuje konkretny przykład implementacji.
 
 **Przed przejściem dalej należy zapoznać się z dostępnymi metodami i sposobem komunikacji z API opisanymi w [dokumentacji API](https://doc.yetiforce.com/api/).**
 

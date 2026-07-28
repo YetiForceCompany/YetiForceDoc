@@ -27,7 +27,7 @@ Opis interfejsu CLI (Command Line Interface) do obsługi niestandardowych operac
 
 ## Jak uruchomić YetiForce CLI
 
-Konsolę zawsze uruchamiany z głównego katalogu systemu YetiForce, czyli tam gdzie znajduje sie plik cli.php.
+Konsolę zawsze uruchamiany z głównego katalogu systemu YetiForce, czyli tam gdzie znajduje się plik cli.php.
 
 :::tip
 
