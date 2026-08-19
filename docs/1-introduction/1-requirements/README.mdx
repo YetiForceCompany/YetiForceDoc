@@ -63,7 +63,7 @@ import DocCardList from '@theme/DocCardList';
 - **Baza danych**
 
   - **MariaDB `10.6` (rekomendowany)** - zalecamy najnowsze stabilne wersje oprogramowania. Nie zalecamy wersji starszych niż wersja `10.1`.
-  - **MySQL `8.0.13`** - lub nowsza wersji. Zalecamy użycie najnowszej stabilnej wersji oprogramowania.
+  - **MySQL `8.0.13`** - lub nowsza wersja. Zalecamy użycie najnowszej stabilnej wersji oprogramowania.
 
 - **PHP `8.1, 8.2, 8.3`** Zalecamy używanie najnowszych stabilnych wersji oprogramowania `8.3.x`.
 
@@ -174,6 +174,8 @@ Przykładowa konfiguracja FPM:
 
 ## Serwer WWW
 
+### Konfiguracja APACHE
+
 import APACHE from '/static/files/apache.mdx';
 
 <details>
@@ -181,6 +183,78 @@ import APACHE from '/static/files/apache.mdx';
     <APACHE />
 
 </details>
+
+### Konfiguracja NGINX
+
+```nginx
+server {
+  ...
+  root /path/to/yetiforce/public_html;
+  index index.php index.html;
+
+  server_tokens off;
+  charset utf-8;
+  client_max_body_size 100M;
+  client_body_buffer_size 100M;
+  client_body_timeout 600;
+  send_timeout 600;
+  fastcgi_buffers 256 256k;
+  fastcgi_buffer_size 256k;
+
+  rewrite ^/webservice/(.*)/(.*)/(.*)/(.*)/(.*)$ /webservice.php?_container=$1&module=$2&action=$3&record=$4&param=$5 break;
+  rewrite ^/webservice/(.*)/(.*)/(.*)/(.*)$ /webservice.php?_container=$1&module=$2&action=$3&record=$4 break;
+  rewrite ^/webservice/(.*)/(.*)/(.*)$ /webservice.php?_container=$1&module=$2&action=$3 break;
+  rewrite ^/webservice/(.*)/(.*)$ /webservice.php?_container=$1&action=$2 break;
+
+  location ~* \.(?:css(\.map)?|js(\.map)?|jpe?g|png|gif|ico|cur|heic|webp|tiff?|mp3|m4a|aac|ogg|midi?|wav|mp4|mov|webm|mpe?g|avi|ogv|flv|wmv|ttf|ttc|otf|eot|woff2?)$ {
+    access_log off;
+    expires 1d;
+    log_not_found off;
+    etag on;
+  }
+
+  location ~ \.php$ {
+    try_files $uri =404;
+    include /etc/nginx/fastcgi_params;
+    fastcgi_pass php:9000;
+    fastcgi_index index.php;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    fastcgi_send_timeout 600;
+    fastcgi_read_timeout 600;
+    keepalive_timeout 600;
+    proxy_connect_timeout 600;
+    proxy_send_timeout 600;
+    proxy_read_timeout 600;
+  }
+}
+```
+
+#### SabreDAV i Roundcube
+
+Jeżeli korzystasz z **SabreDAV** lub **Roundcube**, dodaj poniższe reguły do bloku `server`.
+
+```nginx
+server {
+  ...
+  rewrite ^/.well-known/caldav /dav.php redirect;
+  rewrite ^/.well-known/carddav /dav.php redirect;
+
+  location ~ ^(.+\.php)(.*)$ {
+    try_files $fastcgi_script_name =404;
+    include /etc/nginx/fastcgi_params;
+    fastcgi_split_path_info ^(.+\.php)(.*)$;
+    fastcgi_pass php:9000;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    fastcgi_param PATH_INFO $fastcgi_path_info;
+    fastcgi_send_timeout 600;
+    fastcgi_read_timeout 600;
+    keepalive_timeout 600;
+    proxy_connect_timeout 600;
+    proxy_send_timeout 600;
+    proxy_read_timeout 600;
+  }
+}
+```
 
 ### Szyfrowanie HTTPS i HTTP2
 
@@ -265,7 +339,7 @@ Użytkownik powinien mieć zawsze najnowszą wersję przeglądarki, ponieważ ty
 
 ## Dodatkowa konfiguracja z użyciem .htaccess
 
-Część serwerów umożliwia zmianę konfiguracji za pomocą pliku `.htaccess`, poniżej pokazujemy kilka przykładów. Poniżej przedstawiamy kilka przykładów.
+Część serwerów umożliwia zmianę konfiguracji za pomocą pliku `.htaccess`. Poniżej przedstawiamy kilka przykładów.
 
 #### Apache module
 
@@ -350,27 +424,24 @@ request_terminate_timeout = 3600
 
 ```nginx
 server {
-   ...
-   client_body_timeout 3600;
-   send_timeout 3600;
+  ...
+  client_body_timeout 3600;
+  send_timeout 3600;
+  keepalive_timeout 3600;
+  proxy_connect_timeout 3600;
+  proxy_send_timeout 3600;
+  proxy_read_timeout 3600;
 
- location ~ \.php$ {
-   ...
-   fastcgi_send_timeout 3600;
-   fastcgi_read_timeout 3600;
-   keepalive_timeout 3600;
-   proxy_connect_timeout 3600;
-   proxy_send_timeout 3600;
-   proxy_read_timeout 3600;
- }
- location ~ ^(.+\.php)(.*)$ {
-   ...
-   fastcgi_send_timeout 3600;
-   fastcgi_read_timeout 3600;
-   keepalive_timeout 3600;
-   proxy_connect_timeout 3600;
-   proxy_send_timeout 3600;
-   proxy_read_timeout 3600;
- }
+  location ~ \.php$ {
+    ...
+    fastcgi_send_timeout 3600;
+    fastcgi_read_timeout 3600;
+  }
+
+  location ~ ^(.+\.php)(.*)$ {
+    ...
+    fastcgi_send_timeout 3600;
+    fastcgi_read_timeout 3600;
+  }
 }
 ```
