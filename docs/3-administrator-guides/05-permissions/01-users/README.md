@@ -14,7 +14,7 @@ Moduł `Użytkownicy` umożliwia zarządzanie wszystkimi użytkownikami systemu 
 
 ## Lista użytkowników
 
-![user_list.jpg][user_list.jpg]
+![user_list.jpg](user_list.jpg)
 
 Na liście użytkowników dostępne są następujące narzędzia:
 
@@ -25,7 +25,7 @@ Na liście użytkowników dostępne są następujące narzędzia:
 
 ## Tworzenie użytkownika
 
-![user_add.jpg][user_add.jpg]
+![user_add.jpg](user_add.jpg)
 
 Podczas dodawania użytkownika należy wypełnić wszystkie wymagane pola (oznaczone gwiazdką) oraz poprawnie skonfigurować takie informacje jak waluta, strefa czasowa, formatowanie liczb czy język.
 
@@ -35,6 +35,6 @@ System posiada mechanizm wymuszający okresową zmianę hasła oraz obsługuje u
 
 ## Import użytkowników
 
-![user_import.jpg][user_import.jpg]
+![user_import.jpg](user_import.jpg)
 
 System umożliwia import użytkowników. Należy pamiętać, że format danych importowanych powinien być zgodny z formatem danych eksportowanych z systemu.

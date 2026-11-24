@@ -1,6 +1,6 @@
 ---
 title: Akcje na rekordzie
-description: Podstawowe akcje/operacje dostepne dla danego rekordu
+description: Podstawowe akcje/operacje dostępne dla danego rekordu
 keywords:
   - akcje
   - operacje

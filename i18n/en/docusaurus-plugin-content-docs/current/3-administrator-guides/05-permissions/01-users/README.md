@@ -14,7 +14,7 @@ The Users module allows you to manage all system users—both standard and admin
 
 ## User List
 
-![user_list.jpg][user_list.jpg]
+![user_list.jpg](user_list.jpg)
 
 The following tools are available in the user list:
 
@@ -25,7 +25,7 @@ The following tools are available in the user list:
 
 ## Create a user
 
-![user_add.jpg][user_add.jpg]
+![user_add.jpg](user_add.jpg)
 
 When adding a user, please complete all required fields (marked with an asterisk) and configure information such as currency, time zone, number formatting, and language.
 
@@ -35,6 +35,6 @@ The system has a mechanism that forces periodic password changes and supports tw
 
 ## Import users
 
-![user_import.jpg][user_import.jpg]
+![user_import.jpg](user_import.jpg)
 
 The system allows you to import users. Please note that the format of the imported data must match the format of the data exported from the system.
